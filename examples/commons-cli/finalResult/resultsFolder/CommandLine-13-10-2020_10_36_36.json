@@ -1,0 +1,27 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "233"
+    ],
+    "sourceClass": "CommandLine"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR29",
+      "TR27"
+    ],
+    "affectedTest": [
+      "testGetParsedOptionValue",
+      "testGetParsedOptionValueWithChar",
+      "testGetParsedOptionValueWithOption"
+    ],
+    "testReran": [
+      "testGetParsedOptionValue",
+      "testGetParsedOptionValueWithOption",
+      "testGetParsedOptionValueWithChar"
+    ],
+    "unsatisfiedRequirement": [
+      "TR29"
+    ]
+  }
+}

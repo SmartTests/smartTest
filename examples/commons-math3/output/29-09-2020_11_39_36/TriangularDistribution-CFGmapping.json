@@ -1,0 +1,512 @@
+[
+  {
+    "v1": {
+      "line": "59",
+      "statement": "TriangularDistribution (double a, double c, double b)"
+    }
+  },
+  {
+    "v2": {
+      "line": "61",
+      "statement": "this(new Well19937c(), a, c, b)"
+    }
+  },
+  {
+    "v3": {
+      "line": "75",
+      "statement": "TriangularDistribution (RandomGenerator rng, double a, double c, double b)"
+    }
+  },
+  {
+    "v4": {
+      "line": "80",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v5": {
+      "line": "82",
+      "statement": "if (a >= b)"
+    }
+  },
+  {
+    "v6": {
+      "line": "83",
+      "statement": "throw new NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, a, b, false)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "87",
+      "statement": "if (c < a)"
+    }
+  },
+  {
+    "v9": {
+      "line": "88",
+      "statement": "throw new NumberIsTooSmallException( LocalizedFormats.NUMBER_TOO_SMALL, c, a, true)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "91",
+      "statement": "if (c > b)"
+    }
+  },
+  {
+    "v12": {
+      "line": "92",
+      "statement": "throw new NumberIsTooLargeException( LocalizedFormats.NUMBER_TOO_LARGE, c, b, true)"
+    }
+  },
+  {
+    "v13": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v14": {
+      "line": "96",
+      "statement": "this.a = a"
+    }
+  },
+  {
+    "v15": {
+      "line": "97",
+      "statement": "this.c = c"
+    }
+  },
+  {
+    "v16": {
+      "line": "98",
+      "statement": "this.b = b"
+    }
+  },
+  {
+    "v17": {
+      "line": "99",
+      "statement": "solverAbsoluteAccuracy = FastMath.max(FastMath.ulp(a), FastMath.ulp(b))"
+    }
+  },
+  {
+    "v18": {
+      "line": "107",
+      "statement": "double getMode()"
+    }
+  },
+  {
+    "v19": {
+      "line": "108",
+      "statement": "return c"
+    }
+  },
+  {
+    "v20": {
+      "line": "125",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v21": {
+      "line": "126",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v22": {
+      "line": "141",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v23": {
+      "line": "142",
+      "statement": "if (x < a)"
+    }
+  },
+  {
+    "v24": {
+      "line": "143",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "145",
+      "statement": "if (a <= x && x < c)"
+    }
+  },
+  {
+    "v27": {
+      "line": "146",
+      "statement": "double divident = 2 * (x - a)"
+    }
+  },
+  {
+    "v28": {
+      "line": "147",
+      "statement": "double divisor = (b - a) * (c - a)"
+    }
+  },
+  {
+    "v29": {
+      "line": "148",
+      "statement": "return divident / divisor"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v31": {
+      "line": "150",
+      "statement": "if (x == c)"
+    }
+  },
+  {
+    "v32": {
+      "line": "151",
+      "statement": "return 2 / (b - a)"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v34": {
+      "line": "153",
+      "statement": "if (c < x && x <= b)"
+    }
+  },
+  {
+    "v35": {
+      "line": "154",
+      "statement": "double divident = 2 * (b - x)"
+    }
+  },
+  {
+    "v36": {
+      "line": "155",
+      "statement": "double divisor = (b - a) * (b - c)"
+    }
+  },
+  {
+    "v37": {
+      "line": "156",
+      "statement": "return divident / divisor"
+    }
+  },
+  {
+    "v38": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v39": {
+      "line": "158",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v40": {
+      "line": "174",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v41": {
+      "line": "175",
+      "statement": "if (x < a)"
+    }
+  },
+  {
+    "v42": {
+      "line": "176",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v43": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v44": {
+      "line": "178",
+      "statement": "if (a <= x && x < c)"
+    }
+  },
+  {
+    "v45": {
+      "line": "179",
+      "statement": "double divident = (x - a) * (x - a)"
+    }
+  },
+  {
+    "v46": {
+      "line": "180",
+      "statement": "double divisor = (b - a) * (c - a)"
+    }
+  },
+  {
+    "v47": {
+      "line": "181",
+      "statement": "return divident / divisor"
+    }
+  },
+  {
+    "v48": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v49": {
+      "line": "183",
+      "statement": "if (x == c)"
+    }
+  },
+  {
+    "v50": {
+      "line": "184",
+      "statement": "return (c - a) / (b - a)"
+    }
+  },
+  {
+    "v51": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v52": {
+      "line": "186",
+      "statement": "if (c < x && x <= b)"
+    }
+  },
+  {
+    "v53": {
+      "line": "187",
+      "statement": "double divident = (b - x) * (b - x)"
+    }
+  },
+  {
+    "v54": {
+      "line": "188",
+      "statement": "double divisor = (b - a) * (b - c)"
+    }
+  },
+  {
+    "v55": {
+      "line": "189",
+      "statement": "return 1 - (divident / divisor)"
+    }
+  },
+  {
+    "v56": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v57": {
+      "line": "191",
+      "statement": "return 1"
+    }
+  },
+  {
+    "v58": {
+      "line": "200",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v59": {
+      "line": "201",
+      "statement": "return (a + b + c) / 3"
+    }
+  },
+  {
+    "v60": {
+      "line": "210",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v61": {
+      "line": "211",
+      "statement": "return (a * a + b * b + c * c - a * b - a * c - b * c) / 18"
+    }
+  },
+  {
+    "v62": {
+      "line": "222",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v63": {
+      "line": "223",
+      "statement": "return a"
+    }
+  },
+  {
+    "v64": {
+      "line": "234",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v65": {
+      "line": "235",
+      "statement": "return b"
+    }
+  },
+  {
+    "v66": {
+      "line": "239",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v67": {
+      "line": "240",
+      "statement": "return true"
+    }
+  },
+  {
+    "v68": {
+      "line": "244",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v69": {
+      "line": "245",
+      "statement": "return true"
+    }
+  },
+  {
+    "v70": {
+      "line": "255",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v71": {
+      "line": "256",
+      "statement": "return true"
+    }
+  },
+  {
+    "v72": {
+      "line": "260",
+      "statement": "double inverseCumulativeProbability(double p)"
+    }
+  },
+  {
+    "v73": {
+      "line": "262",
+      "statement": "if (p < 0 || p > 1)"
+    }
+  },
+  {
+    "v74": {
+      "line": "263",
+      "statement": "throw new OutOfRangeException(p, 0, 1)"
+    }
+  },
+  {
+    "v75": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v76": {
+      "line": "265",
+      "statement": "if (p == 0)"
+    }
+  },
+  {
+    "v77": {
+      "line": "266",
+      "statement": "return a"
+    }
+  },
+  {
+    "v78": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v79": {
+      "line": "268",
+      "statement": "if (p == 1)"
+    }
+  },
+  {
+    "v80": {
+      "line": "269",
+      "statement": "return b"
+    }
+  },
+  {
+    "v81": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v82": {
+      "line": "271",
+      "statement": "if (p < (c - a) / (b - a))"
+    }
+  },
+  {
+    "v83": {
+      "line": "272",
+      "statement": "return a + FastMath.sqrt(p * (b - a) * (c - a))"
+    }
+  },
+  {
+    "v84": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v85": {
+      "line": "274",
+      "statement": "return b - FastMath.sqrt((1 - p) * (b - a) * (b - c))"
+    }
+  }
+]

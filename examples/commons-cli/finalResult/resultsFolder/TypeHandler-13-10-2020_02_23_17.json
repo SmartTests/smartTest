@@ -1,0 +1,19 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "49"
+    ],
+    "sourceClass": "TypeHandler"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR1"
+    ],
+    "unsatisfiedRequirement": [
+      "TR1"
+    ],
+    "newTestRequirement": [
+      "TR1"
+    ]
+  }
+}

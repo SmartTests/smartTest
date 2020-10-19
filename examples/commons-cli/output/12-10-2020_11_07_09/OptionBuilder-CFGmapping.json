@@ -1,0 +1,518 @@
+[
+  {
+    "v1": {
+      "line": "61",
+      "statement": "static"
+    }
+  },
+  {
+    "v2": {
+      "line": "64",
+      "statement": "reset()"
+    }
+  },
+  {
+    "v3": {
+      "line": "70",
+      "statement": "OptionBuilder ()"
+    }
+  },
+  {
+    "v4": {
+      "line": "78",
+      "statement": "void reset()"
+    }
+  },
+  {
+    "v5": {
+      "line": "80",
+      "statement": "description = null"
+    }
+  },
+  {
+    "v6": {
+      "line": "81",
+      "statement": "argName = null"
+    }
+  },
+  {
+    "v7": {
+      "line": "82",
+      "statement": "longopt = null"
+    }
+  },
+  {
+    "v8": {
+      "line": "83",
+      "statement": "type = String.class"
+    }
+  },
+  {
+    "v9": {
+      "line": "84",
+      "statement": "required = false"
+    }
+  },
+  {
+    "v10": {
+      "line": "85",
+      "statement": "numberOfArgs = Option.UNINITIALIZED"
+    }
+  },
+  {
+    "v11": {
+      "line": "86",
+      "statement": "optionalArg = false"
+    }
+  },
+  {
+    "v12": {
+      "line": "87",
+      "statement": "valuesep = (char) 0"
+    }
+  },
+  {
+    "v13": {
+      "line": "96",
+      "statement": "OptionBuilder withLongOpt(final String newLongopt)"
+    }
+  },
+  {
+    "v14": {
+      "line": "98",
+      "statement": "OptionBuilder.longopt = newLongopt"
+    }
+  },
+  {
+    "v15": {
+      "line": "100",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v16": {
+      "line": "108",
+      "statement": "OptionBuilder hasArg()"
+    }
+  },
+  {
+    "v17": {
+      "line": "110",
+      "statement": "OptionBuilder.numberOfArgs = 1"
+    }
+  },
+  {
+    "v18": {
+      "line": "112",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v19": {
+      "line": "122",
+      "statement": "OptionBuilder hasArg(final boolean hasArg)"
+    }
+  },
+  {
+    "v20": {
+      "line": "124",
+      "statement": "OptionBuilder.numberOfArgs = hasArg ? 1"
+    }
+  },
+  {
+    "v21": {
+      "line": "126",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v22": {
+      "line": "135",
+      "statement": "OptionBuilder withArgName(final String name)"
+    }
+  },
+  {
+    "v23": {
+      "line": "137",
+      "statement": "OptionBuilder.argName = name"
+    }
+  },
+  {
+    "v24": {
+      "line": "139",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v25": {
+      "line": "147",
+      "statement": "OptionBuilder isRequired()"
+    }
+  },
+  {
+    "v26": {
+      "line": "149",
+      "statement": "OptionBuilder.required = true"
+    }
+  },
+  {
+    "v27": {
+      "line": "151",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v28": {
+      "line": "173",
+      "statement": "OptionBuilder withValueSeparator(final char sep)"
+    }
+  },
+  {
+    "v29": {
+      "line": "175",
+      "statement": "OptionBuilder.valuesep = sep"
+    }
+  },
+  {
+    "v30": {
+      "line": "177",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v31": {
+      "line": "196",
+      "statement": "OptionBuilder withValueSeparator()"
+    }
+  },
+  {
+    "v32": {
+      "line": "198",
+      "statement": "OptionBuilder.valuesep = '='"
+    }
+  },
+  {
+    "v33": {
+      "line": "200",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v34": {
+      "line": "210",
+      "statement": "OptionBuilder isRequired(final boolean newRequired)"
+    }
+  },
+  {
+    "v35": {
+      "line": "212",
+      "statement": "OptionBuilder.required = newRequired"
+    }
+  },
+  {
+    "v36": {
+      "line": "214",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v37": {
+      "line": "222",
+      "statement": "OptionBuilder hasArgs()"
+    }
+  },
+  {
+    "v38": {
+      "line": "224",
+      "statement": "OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES"
+    }
+  },
+  {
+    "v39": {
+      "line": "226",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v40": {
+      "line": "235",
+      "statement": "OptionBuilder hasArgs(final int num)"
+    }
+  },
+  {
+    "v41": {
+      "line": "237",
+      "statement": "OptionBuilder.numberOfArgs = num"
+    }
+  },
+  {
+    "v42": {
+      "line": "239",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v43": {
+      "line": "247",
+      "statement": "OptionBuilder hasOptionalArg()"
+    }
+  },
+  {
+    "v44": {
+      "line": "249",
+      "statement": "OptionBuilder.numberOfArgs = 1"
+    }
+  },
+  {
+    "v45": {
+      "line": "250",
+      "statement": "OptionBuilder.optionalArg = true"
+    }
+  },
+  {
+    "v46": {
+      "line": "252",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v47": {
+      "line": "260",
+      "statement": "OptionBuilder hasOptionalArgs()"
+    }
+  },
+  {
+    "v48": {
+      "line": "262",
+      "statement": "OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES"
+    }
+  },
+  {
+    "v49": {
+      "line": "263",
+      "statement": "OptionBuilder.optionalArg = false"
+    }
+  },
+  {
+    "v50": {
+      "line": "265",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v51": {
+      "line": "275",
+      "statement": "OptionBuilder hasOptionalArgs(final int numArgs)"
+    }
+  },
+  {
+    "v52": {
+      "line": "277",
+      "statement": "OptionBuilder.numberOfArgs = numArgs"
+    }
+  },
+  {
+    "v53": {
+      "line": "278",
+      "statement": "OptionBuilder.optionalArg = true"
+    }
+  },
+  {
+    "v54": {
+      "line": "280",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v55": {
+      "line": "295",
+      "statement": "OptionBuilder withType(final Object newType)"
+    }
+  },
+  {
+    "v56": {
+      "line": "297",
+      "statement": "return withType((Class<?>) newType)"
+    }
+  },
+  {
+    "v57": {
+      "line": "308",
+      "statement": "OptionBuilder withType(final Class<?> newType)"
+    }
+  },
+  {
+    "v58": {
+      "line": "310",
+      "statement": "OptionBuilder.type = newType"
+    }
+  },
+  {
+    "v59": {
+      "line": "312",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v60": {
+      "line": "321",
+      "statement": "OptionBuilder withDescription(final String newDescription)"
+    }
+  },
+  {
+    "v61": {
+      "line": "323",
+      "statement": "OptionBuilder.description = newDescription"
+    }
+  },
+  {
+    "v62": {
+      "line": "325",
+      "statement": "return INSTANCE"
+    }
+  },
+  {
+    "v63": {
+      "line": "337",
+      "statement": "Option create(final char opt)"
+    }
+  },
+  {
+    "v64": {
+      "line": "339",
+      "statement": "return create(String.valueOf(opt))"
+    }
+  },
+  {
+    "v65": {
+      "line": "348",
+      "statement": "Option create()"
+    }
+  },
+  {
+    "v66": {
+      "line": "350",
+      "statement": "if (longopt == null)"
+    }
+  },
+  {
+    "v67": {
+      "line": "352",
+      "statement": "OptionBuilder.reset()"
+    }
+  },
+  {
+    "v68": {
+      "line": "353",
+      "statement": "throw new IllegalArgumentException('must specify longopt')"
+    }
+  },
+  {
+    "v69": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v70": {
+      "line": "356",
+      "statement": "return create(null)"
+    }
+  },
+  {
+    "v71": {
+      "line": "369",
+      "statement": "Option create(final String opt)"
+    }
+  },
+  {
+    "v72": {
+      "line": "371",
+      "statement": "Option option = null"
+    }
+  },
+  {
+    "v73": {
+      "line": "372",
+      "statement": "try"
+    }
+  },
+  {
+    "v74": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v75": {
+      "line": "375",
+      "statement": "option = new Option(opt, description)"
+    }
+  },
+  {
+    "v76": {
+      "line": "378",
+      "statement": "option.setLongOpt(longopt)"
+    }
+  },
+  {
+    "v77": {
+      "line": "379",
+      "statement": "option.setRequired(required)"
+    }
+  },
+  {
+    "v78": {
+      "line": "380",
+      "statement": "option.setOptionalArg(optionalArg)"
+    }
+  },
+  {
+    "v79": {
+      "line": "381",
+      "statement": "option.setArgs(numberOfArgs)"
+    }
+  },
+  {
+    "v80": {
+      "line": "382",
+      "statement": "option.setType(type)"
+    }
+  },
+  {
+    "v81": {
+      "line": "383",
+      "statement": "option.setValueSeparator(valuesep)"
+    }
+  },
+  {
+    "v82": {
+      "line": "384",
+      "statement": "option.setArgName(argName)"
+    }
+  },
+  {
+    "v83": {
+      "line": "386",
+      "statement": "finally"
+    }
+  },
+  {
+    "v84": {
+      "line": "389",
+      "statement": "OptionBuilder.reset()"
+    }
+  },
+  {
+    "v85": {
+      "line": 0,
+      "statement": "\"end-finally"
+    }
+  },
+  {
+    "v86": {
+      "line": "393",
+      "statement": "return option"
+    }
+  }
+]

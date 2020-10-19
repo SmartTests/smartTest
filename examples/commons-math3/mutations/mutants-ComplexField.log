@@ -1,0 +1,6 @@
+1:EVR:<MEMBER_SELECT(org.apache.commons.math3.complex.ComplexField)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexField@getInstance():48:LazyHolder.INSTANCE |==> null
+2:EVR:<MEMBER_SELECT(org.apache.commons.math3.complex.Complex)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexField@getOne():53:Complex.ONE |==> null
+3:EVR:<MEMBER_SELECT(org.apache.commons.math3.complex.Complex)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexField@getZero():58:Complex.ZERO |==> null
+4:EVR:<MEMBER_SELECT(java.lang.Class<org.apache.commons.math3.complex.Complex>)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexField@getRuntimeClass():63:Complex.class |==> null
+5:EVR:<NEW_CLASS(org.apache.commons.math3.complex.ComplexField)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexField$LazyHolder:72:new ComplexField() |==> null
+6:EVR:<MEMBER_SELECT(org.apache.commons.math3.complex.ComplexField)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexField@readResolve():81:LazyHolder.INSTANCE |==> null

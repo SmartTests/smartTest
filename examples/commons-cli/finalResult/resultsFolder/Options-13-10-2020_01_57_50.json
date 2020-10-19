@@ -1,0 +1,21 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "130"
+    ],
+    "sourceClass": "Options"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR14"
+    ],
+    "affectedTest": [
+      "testDuplicateSimple",
+      "testSimple"
+    ],
+    "testReran": [
+      "testDuplicateSimple",
+      "testSimple"
+    ]
+  }
+}

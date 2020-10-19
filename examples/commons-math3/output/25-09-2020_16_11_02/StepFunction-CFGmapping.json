@@ -1,0 +1,146 @@
+[
+  {
+    "v1": {
+      "line": "61",
+      "statement": "StepFunction (double[] x, double[] y)"
+    }
+  },
+  {
+    "v2": {
+      "line": "65",
+      "statement": "if (x == null || y == null)"
+    }
+  },
+  {
+    "v3": {
+      "line": "67",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "69",
+      "statement": "if (x.length == 0 || y.length == 0)"
+    }
+  },
+  {
+    "v6": {
+      "line": "71",
+      "statement": "throw new NoDataException()"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "73",
+      "statement": "if (y.length != x.length)"
+    }
+  },
+  {
+    "v9": {
+      "line": "74",
+      "statement": "throw new DimensionMismatchException(y.length, x.length)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "76",
+      "statement": "MathArrays.checkOrder(x)"
+    }
+  },
+  {
+    "v12": {
+      "line": "78",
+      "statement": "abscissa = MathArrays.copyOf(x)"
+    }
+  },
+  {
+    "v13": {
+      "line": "79",
+      "statement": "ordinate = MathArrays.copyOf(y)"
+    }
+  },
+  {
+    "v14": {
+      "line": "83",
+      "statement": "double value(double x)"
+    }
+  },
+  {
+    "v15": {
+      "line": "84",
+      "statement": "int index = Arrays.binarySearch(abscissa, x)"
+    }
+  },
+  {
+    "v16": {
+      "line": "85",
+      "statement": "double fx = 0"
+    }
+  },
+  {
+    "v17": {
+      "line": "87",
+      "statement": "if (index < -1)"
+    }
+  },
+  {
+    "v18": {
+      "line": "89",
+      "statement": "fx = ordinate[-index-2"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "90",
+      "statement": "if (index >= 0)"
+    }
+  },
+  {
+    "v21": {
+      "line": "92",
+      "statement": "fx = ordinate[index"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v23": {
+      "line": "96",
+      "statement": "fx = ordinate[0"
+    }
+  },
+  {
+    "v24": {
+      "line": "99",
+      "statement": "return fx"
+    }
+  }
+]

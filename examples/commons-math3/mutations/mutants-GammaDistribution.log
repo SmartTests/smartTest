@@ -1,0 +1,404 @@
+1:LVR:0:POS:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):149:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):149:0 |==> -1
+3:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):149:shape <= 0 |==> shape < 0
+4:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):149:shape <= 0 |==> shape == 0
+5:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):149:shape <= 0 |==> true
+6:LVR:0:POS:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):152:0 |==> 1
+7:LVR:0:NEG:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):152:0 |==> -1
+8:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):152:scale <= 0 |==> scale < 0
+9:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):152:scale <= 0 |==> scale == 0
+10:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):152:scale <= 0 |==> true
+11:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):156:shape |==> 0.0
+12:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):157:scale |==> 0.0
+13:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):158:inverseCumAccuracy |==> 0.0
+14:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:shape + Gamma.LANCZOS_G |==> shape % Gamma.LANCZOS_G
+15:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:shape + Gamma.LANCZOS_G |==> shape * Gamma.LANCZOS_G
+16:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:shape + Gamma.LANCZOS_G |==> shape - Gamma.LANCZOS_G
+17:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:shape + Gamma.LANCZOS_G |==> shape / Gamma.LANCZOS_G
+18:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:0.5 |==> 0.0
+19:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:0.5 |==> -0.5
+20:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:shape + Gamma.LANCZOS_G + 0.5 |==> (shape + Gamma.LANCZOS_G) % 0.5
+21:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:shape + Gamma.LANCZOS_G + 0.5 |==> (shape + Gamma.LANCZOS_G) * 0.5
+22:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:shape + Gamma.LANCZOS_G + 0.5 |==> shape + Gamma.LANCZOS_G - 0.5
+23:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):159:shape + Gamma.LANCZOS_G + 0.5 |==> (shape + Gamma.LANCZOS_G) / 0.5
+24:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 |==> 0.0
+25:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 |==> -2.0
+26:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 * FastMath.PI |==> 2.0 % FastMath.PI
+27:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 * FastMath.PI |==> 2.0 + FastMath.PI
+28:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 * FastMath.PI |==> 2.0 - FastMath.PI
+29:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 * FastMath.PI |==> 2.0 / FastMath.PI
+30:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 * FastMath.PI * shiftedShape |==> 2.0 * FastMath.PI % shiftedShape
+31:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 * FastMath.PI * shiftedShape |==> 2.0 * FastMath.PI + shiftedShape
+32:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 * FastMath.PI * shiftedShape |==> 2.0 * FastMath.PI - shiftedShape
+33:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:2.0 * FastMath.PI * shiftedShape |==> 2.0 * FastMath.PI / shiftedShape
+34:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:FastMath.E / (2.0 * FastMath.PI * shiftedShape) |==> FastMath.E % (2.0 * FastMath.PI * shiftedShape)
+35:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:FastMath.E / (2.0 * FastMath.PI * shiftedShape) |==> FastMath.E * (2.0 * FastMath.PI * shiftedShape)
+36:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:FastMath.E / (2.0 * FastMath.PI * shiftedShape) |==> FastMath.E + (2.0 * FastMath.PI * shiftedShape)
+37:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):160:FastMath.E / (2.0 * FastMath.PI * shiftedShape) |==> FastMath.E - (2.0 * FastMath.PI * shiftedShape)
+38:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):161:shape * FastMath.sqrt(aux) |==> shape % FastMath.sqrt(aux)
+39:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):161:shape * FastMath.sqrt(aux) |==> shape + FastMath.sqrt(aux)
+40:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):161:shape * FastMath.sqrt(aux) |==> shape - FastMath.sqrt(aux)
+41:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):161:shape * FastMath.sqrt(aux) |==> shape / FastMath.sqrt(aux)
+42:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):161:shape * FastMath.sqrt(aux) / Gamma.lanczos(shape) |==> shape * FastMath.sqrt(aux) % Gamma.lanczos(shape)
+43:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):161:shape * FastMath.sqrt(aux) / Gamma.lanczos(shape) |==> shape * FastMath.sqrt(aux) * Gamma.lanczos(shape)
+44:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):161:shape * FastMath.sqrt(aux) / Gamma.lanczos(shape) |==> shape * FastMath.sqrt(aux) + Gamma.lanczos(shape)
+45:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):161:shape * FastMath.sqrt(aux) / Gamma.lanczos(shape) |==> shape * FastMath.sqrt(aux) - Gamma.lanczos(shape)
+46:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale |==> this.densityPrefactor2 % scale
+47:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale |==> this.densityPrefactor2 * scale
+48:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale |==> this.densityPrefactor2 + scale
+49:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale |==> this.densityPrefactor2 - scale
+50:ORU:-(double):+(double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):163:-shape |==> +shape
+51:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) |==> this.densityPrefactor2 / scale % FastMath.pow(shiftedShape, -shape)
+52:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) |==> this.densityPrefactor2 / scale + FastMath.pow(shiftedShape, -shape)
+53:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) |==> this.densityPrefactor2 / scale - FastMath.pow(shiftedShape, -shape)
+54:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) |==> this.densityPrefactor2 / scale / FastMath.pow(shiftedShape, -shape)
+55:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):164:shape + Gamma.LANCZOS_G |==> shape % Gamma.LANCZOS_G
+56:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):164:shape + Gamma.LANCZOS_G |==> shape * Gamma.LANCZOS_G
+57:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):164:shape + Gamma.LANCZOS_G |==> shape - Gamma.LANCZOS_G
+58:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):164:shape + Gamma.LANCZOS_G |==> shape / Gamma.LANCZOS_G
+59:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) * FastMath.exp(shape + Gamma.LANCZOS_G) |==> this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) % FastMath.exp(shape + Gamma.LANCZOS_G)
+60:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) * FastMath.exp(shape + Gamma.LANCZOS_G) |==> this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) + FastMath.exp(shape + Gamma.LANCZOS_G)
+61:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) * FastMath.exp(shape + Gamma.LANCZOS_G) |==> this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) - FastMath.exp(shape + Gamma.LANCZOS_G)
+62:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):162:this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) * FastMath.exp(shape + Gamma.LANCZOS_G) |==> this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) / FastMath.exp(shape + Gamma.LANCZOS_G)
+63:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):165:shape + Gamma.LANCZOS_G |==> shape % Gamma.LANCZOS_G
+64:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):165:shape + Gamma.LANCZOS_G |==> shape * Gamma.LANCZOS_G
+65:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):165:shape + Gamma.LANCZOS_G |==> shape - Gamma.LANCZOS_G
+66:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):165:shape + Gamma.LANCZOS_G |==> shape / Gamma.LANCZOS_G
+67:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):165:shape + Gamma.LANCZOS_G - FastMath.log(Double.MAX_VALUE) |==> (shape + Gamma.LANCZOS_G) % FastMath.log(Double.MAX_VALUE)
+68:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):165:shape + Gamma.LANCZOS_G - FastMath.log(Double.MAX_VALUE) |==> (shape + Gamma.LANCZOS_G) * FastMath.log(Double.MAX_VALUE)
+69:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):165:shape + Gamma.LANCZOS_G - FastMath.log(Double.MAX_VALUE) |==> shape + Gamma.LANCZOS_G + FastMath.log(Double.MAX_VALUE)
+70:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):165:shape + Gamma.LANCZOS_G - FastMath.log(Double.MAX_VALUE) |==> (shape + Gamma.LANCZOS_G) / FastMath.log(Double.MAX_VALUE)
+71:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:1.0 |==> 0.0
+72:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:1.0 |==> -1.0
+73:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:shape - 1.0 |==> shape % 1.0
+74:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:shape - 1.0 |==> shape * 1.0
+75:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:shape - 1.0 |==> shape + 1.0
+76:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:shape - 1.0 |==> shape / 1.0
+77:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:FastMath.log(Double.MAX_VALUE) / (shape - 1.0) |==> FastMath.log(Double.MAX_VALUE) % (shape - 1.0)
+78:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:FastMath.log(Double.MAX_VALUE) / (shape - 1.0) |==> FastMath.log(Double.MAX_VALUE) * (shape - 1.0)
+79:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:FastMath.log(Double.MAX_VALUE) / (shape - 1.0) |==> FastMath.log(Double.MAX_VALUE) + (shape - 1.0)
+80:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):166:FastMath.log(Double.MAX_VALUE) / (shape - 1.0) |==> FastMath.log(Double.MAX_VALUE) - (shape - 1.0)
+81:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@getAlpha():178:shape |==> 0.0
+82:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@getShape():188:shape |==> 0.0
+83:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@getBeta():200:scale |==> 0.0
+84:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@getScale():210:scale |==> 0.0
+85:LVR:0:POS:org.apache.commons.math3.distribution.GammaDistribution@density(double):253:0 |==> 1
+86:LVR:0:NEG:org.apache.commons.math3.distribution.GammaDistribution@density(double):253:0 |==> -1
+87:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):253:x < 0 |==> x != 0
+88:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):253:x < 0 |==> x <= 0
+89:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):253:x < 0 |==> false
+90:LVR:0:POS:org.apache.commons.math3.distribution.GammaDistribution@density(double):254:0 |==> 1
+91:LVR:0:NEG:org.apache.commons.math3.distribution.GammaDistribution@density(double):254:0 |==> -1
+92:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.GammaDistribution@density(double):254:return Config.__M_NO == 0 && Config.COVERED(90, 91) ? 0 : Config.__M_NO == 91 ? -1 : Config.__M_NO == 90 ? 1 : 0; |==> <NO-OP>
+93:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):256:x / scale |==> x % scale
+94:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):256:x / scale |==> x * scale
+95:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):256:x / scale |==> x + scale
+96:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):256:x / scale |==> x - scale
+97:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:y <= minY |==> y < minY
+98:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:y <= minY |==> y == minY
+99:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:y <= minY |==> true
+100:ROR:>=(double,double):==(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:FastMath.log(y) >= maxLogY |==> FastMath.log(y) == maxLogY
+101:ROR:>=(double,double):>(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:FastMath.log(y) >= maxLogY |==> FastMath.log(y) > maxLogY
+102:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:FastMath.log(y) >= maxLogY |==> true
+103:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:(y <= minY) || (FastMath.log(y) >= maxLogY) |==> (y <= minY) != (FastMath.log(y) >= maxLogY)
+104:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:(y <= minY) || (FastMath.log(y) >= maxLogY) |==> (y <= minY)
+105:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:(y <= minY) || (FastMath.log(y) >= maxLogY) |==> (FastMath.log(y) >= maxLogY)
+106:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.GammaDistribution@density(double):257:(y <= minY) || (FastMath.log(y) >= maxLogY) |==> true
+107:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):261:y - shiftedShape |==> y % shiftedShape
+108:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):261:y - shiftedShape |==> y * shiftedShape
+109:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):261:y - shiftedShape |==> y + shiftedShape
+110:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):261:y - shiftedShape |==> y / shiftedShape
+111:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):261:(y - shiftedShape) / shiftedShape |==> (y - shiftedShape) % shiftedShape
+112:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):261:(y - shiftedShape) / shiftedShape |==> (y - shiftedShape) * shiftedShape
+113:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):261:(y - shiftedShape) / shiftedShape |==> (y - shiftedShape) + shiftedShape
+114:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):261:(y - shiftedShape) / shiftedShape |==> (y - shiftedShape) - shiftedShape
+115:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):262:FastMath.log1p(aux1) - aux1 |==> FastMath.log1p(aux1) % aux1
+116:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):262:FastMath.log1p(aux1) - aux1 |==> FastMath.log1p(aux1) * aux1
+117:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):262:FastMath.log1p(aux1) - aux1 |==> FastMath.log1p(aux1) + aux1
+118:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):262:FastMath.log1p(aux1) - aux1 |==> FastMath.log1p(aux1) / aux1
+119:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):262:shape * (FastMath.log1p(aux1) - aux1) |==> shape % (FastMath.log1p(aux1) - aux1)
+120:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):262:shape * (FastMath.log1p(aux1) - aux1) |==> shape + (FastMath.log1p(aux1) - aux1)
+121:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):262:shape * (FastMath.log1p(aux1) - aux1) |==> shape - (FastMath.log1p(aux1) - aux1)
+122:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):262:shape * (FastMath.log1p(aux1) - aux1) |==> shape / (FastMath.log1p(aux1) - aux1)
+123:ORU:-(double):+(double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y |==> +y
+124:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@density(double):263:0.5 |==> 0.0
+125:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@density(double):263:0.5 |==> -0.5
+126:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:Gamma.LANCZOS_G + 0.5 |==> Gamma.LANCZOS_G % 0.5
+127:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:Gamma.LANCZOS_G + 0.5 |==> Gamma.LANCZOS_G * 0.5
+128:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:Gamma.LANCZOS_G + 0.5 |==> Gamma.LANCZOS_G - 0.5
+129:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:Gamma.LANCZOS_G + 0.5 |==> Gamma.LANCZOS_G / 0.5
+130:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) |==> -y % (Gamma.LANCZOS_G + 0.5)
+131:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) |==> -y + (Gamma.LANCZOS_G + 0.5)
+132:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) |==> -y - (Gamma.LANCZOS_G + 0.5)
+133:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) |==> -y / (Gamma.LANCZOS_G + 0.5)
+134:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape |==> -y * (Gamma.LANCZOS_G + 0.5) % shiftedShape
+135:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape |==> -y * (Gamma.LANCZOS_G + 0.5) * shiftedShape
+136:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape |==> -y * (Gamma.LANCZOS_G + 0.5) + shiftedShape
+137:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape |==> -y * (Gamma.LANCZOS_G + 0.5) - shiftedShape
+138:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G |==> -y * (Gamma.LANCZOS_G + 0.5) / shiftedShape % Gamma.LANCZOS_G
+139:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G |==> -y * (Gamma.LANCZOS_G + 0.5) / shiftedShape * Gamma.LANCZOS_G
+140:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G |==> -y * (Gamma.LANCZOS_G + 0.5) / shiftedShape - Gamma.LANCZOS_G
+141:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G |==> -y * (Gamma.LANCZOS_G + 0.5) / shiftedShape / Gamma.LANCZOS_G
+142:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G + aux2 |==> (-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G) % aux2
+143:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G + aux2 |==> (-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G) * aux2
+144:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G + aux2 |==> -y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G - aux2
+145:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):263:-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G + aux2 |==> (-y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G) / aux2
+146:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):265:densityPrefactor2 / x |==> densityPrefactor2 % x
+147:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):265:densityPrefactor2 / x |==> densityPrefactor2 * x
+148:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):265:densityPrefactor2 / x |==> densityPrefactor2 + x
+149:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):265:densityPrefactor2 / x |==> densityPrefactor2 - x
+150:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):265:densityPrefactor2 / x * FastMath.exp(aux3) |==> densityPrefactor2 / x % FastMath.exp(aux3)
+151:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):265:densityPrefactor2 / x * FastMath.exp(aux3) |==> densityPrefactor2 / x + FastMath.exp(aux3)
+152:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):265:densityPrefactor2 / x * FastMath.exp(aux3) |==> densityPrefactor2 / x - FastMath.exp(aux3)
+153:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):265:densityPrefactor2 / x * FastMath.exp(aux3) |==> densityPrefactor2 / x / FastMath.exp(aux3)
+154:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.GammaDistribution@density(double):265:return Config.__M_NO == 153 ? densityPrefactor2 / x / FastMath.exp(aux3) : Config.__M_NO == 152 ? densityPrefactor2 / x - FastMath.exp(aux3) : Config.__M_NO == 151 ? densityPrefactor2 / x + FastMath.exp(aux3) : Config.__M_NO == 150 ? densityPrefactor2 / x % FastMath.exp(aux3) : Config.__M_NO == 0 && Config.COVERED(150, 153) ? densityPrefactor2 / x * FastMath.exp(aux3) : (Config.__M_NO == 149 ? densityPrefactor2 - x : Config.__M_NO == 148 ? densityPrefactor2 + x : Config.__M_NO == 147 ? densityPrefactor2 * x : Config.__M_NO == 146 ? densityPrefactor2 % x : Config.__M_NO == 0 && Config.COVERED(146, 149) ? densityPrefactor2 / x : densityPrefactor2 / x) * FastMath.exp(aux3); |==> <NO-OP>
+155:ORU:-(double):+(double):org.apache.commons.math3.distribution.GammaDistribution@density(double):270:-y |==> +y
+156:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):270:densityPrefactor1 * FastMath.exp(-y) |==> densityPrefactor1 % FastMath.exp(-y)
+157:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):270:densityPrefactor1 * FastMath.exp(-y) |==> densityPrefactor1 + FastMath.exp(-y)
+158:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):270:densityPrefactor1 * FastMath.exp(-y) |==> densityPrefactor1 - FastMath.exp(-y)
+159:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):270:densityPrefactor1 * FastMath.exp(-y) |==> densityPrefactor1 / FastMath.exp(-y)
+160:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@density(double):271:1 |==> 0
+161:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@density(double):271:1 |==> -1
+162:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):271:shape - 1 |==> shape % 1
+163:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):271:shape - 1 |==> shape * 1
+164:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):271:shape - 1 |==> shape + 1
+165:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):271:shape - 1 |==> shape / 1
+166:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):270:densityPrefactor1 * FastMath.exp(-y) * FastMath.pow(y, shape - 1) |==> densityPrefactor1 * FastMath.exp(-y) % FastMath.pow(y, shape - 1)
+167:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):270:densityPrefactor1 * FastMath.exp(-y) * FastMath.pow(y, shape - 1) |==> densityPrefactor1 * FastMath.exp(-y) + FastMath.pow(y, shape - 1)
+168:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):270:densityPrefactor1 * FastMath.exp(-y) * FastMath.pow(y, shape - 1) |==> densityPrefactor1 * FastMath.exp(-y) - FastMath.pow(y, shape - 1)
+169:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@density(double):270:densityPrefactor1 * FastMath.exp(-y) * FastMath.pow(y, shape - 1) |==> densityPrefactor1 * FastMath.exp(-y) / FastMath.pow(y, shape - 1)
+170:LVR:0:POS:org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):291:0 |==> 1
+171:LVR:0:NEG:org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):291:0 |==> -1
+172:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):291:x <= 0 |==> x < 0
+173:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):291:x <= 0 |==> x == 0
+174:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):291:x <= 0 |==> true
+175:LVR:0:POS:org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):292:0 |==> 1
+176:LVR:0:NEG:org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):292:0 |==> -1
+177:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):294:x / scale |==> x % scale
+178:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):294:x / scale |==> x * scale
+179:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):294:x / scale |==> x + scale
+180:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):294:x / scale |==> x - scale
+181:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@cumulativeProbability(double):297:ret |==> 0.0
+182:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@getSolverAbsoluteAccuracy():303:solverAbsoluteAccuracy |==> 0.0
+183:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalMean():313:shape * scale |==> shape % scale
+184:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalMean():313:shape * scale |==> shape + scale
+185:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalMean():313:shape * scale |==> shape - scale
+186:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalMean():313:shape * scale |==> shape / scale
+187:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalVariance():325:shape * scale |==> shape % scale
+188:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalVariance():325:shape * scale |==> shape + scale
+189:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalVariance():325:shape * scale |==> shape - scale
+190:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalVariance():325:shape * scale |==> shape / scale
+191:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalVariance():325:shape * scale * scale |==> shape * scale % scale
+192:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalVariance():325:shape * scale * scale |==> shape * scale + scale
+193:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalVariance():325:shape * scale * scale |==> shape * scale - scale
+194:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@getNumericalVariance():325:shape * scale * scale |==> shape * scale / scale
+195:LVR:0:POS:org.apache.commons.math3.distribution.GammaDistribution@getSupportLowerBound():336:0 |==> 1
+196:LVR:0:NEG:org.apache.commons.math3.distribution.GammaDistribution@getSupportLowerBound():336:0 |==> -1
+197:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@getSupportUpperBound():348:Double.POSITIVE_INFINITY |==> 0.0
+198:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.GammaDistribution@isSupportLowerBoundInclusive():353:true |==> false
+199:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.GammaDistribution@isSupportUpperBoundInclusive():358:false |==> true
+200:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.GammaDistribution@isSupportConnected():369:true |==> false
+201:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():389:1 |==> 0
+202:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():389:1 |==> -1
+203:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():389:shape < 1 |==> shape != 1
+204:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():389:shape < 1 |==> shape <= 1
+205:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():389:shape < 1 |==> false
+206:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@sample():394:random.nextDouble() |==> 0.0
+207:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():395:1 |==> 0
+208:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():395:1 |==> -1
+209:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():395:shape / FastMath.E |==> shape % FastMath.E
+210:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():395:shape / FastMath.E |==> shape * FastMath.E
+211:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():395:shape / FastMath.E |==> shape + FastMath.E
+212:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():395:shape / FastMath.E |==> shape - FastMath.E
+213:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():395:1 + shape / FastMath.E |==> 1 % (shape / FastMath.E)
+214:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():395:1 + shape / FastMath.E |==> 1 * (shape / FastMath.E)
+215:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():395:1 + shape / FastMath.E |==> 1 - shape / FastMath.E
+216:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():395:1 + shape / FastMath.E |==> 1 / (shape / FastMath.E)
+217:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():396:bGS * u |==> bGS % u
+218:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():396:bGS * u |==> bGS + u
+219:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():396:bGS * u |==> bGS - u
+220:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():396:bGS * u |==> bGS / u
+221:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():398:1 |==> 0
+222:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():398:1 |==> -1
+223:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():398:p <= 1 |==> p < 1
+224:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():398:p <= 1 |==> p == 1
+225:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():398:p <= 1 |==> true
+226:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():401:1 |==> 0
+227:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():401:1 |==> -1
+228:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():401:1 / shape |==> 1 % shape
+229:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():401:1 / shape |==> 1 * shape
+230:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():401:1 / shape |==> 1 + shape
+231:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():401:1 / shape |==> 1 - shape
+232:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@sample():402:random.nextDouble() |==> 0.0
+233:ORU:-(double):+(double):org.apache.commons.math3.distribution.GammaDistribution@sample():404:-x |==> +x
+234:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():404:u2 > FastMath.exp(-x) |==> u2 != FastMath.exp(-x)
+235:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():404:u2 > FastMath.exp(-x) |==> u2 >= FastMath.exp(-x)
+236:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():404:u2 > FastMath.exp(-x) |==> false
+237:STD:<CONT>:<NO-OP>:org.apache.commons.math3.distribution.GammaDistribution@sample():406:continue; |==> <NO-OP>
+238:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():408:scale * x |==> scale % x
+239:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():408:scale * x |==> scale + x
+240:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():408:scale * x |==> scale - x
+241:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():408:scale * x |==> scale / x
+242:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.GammaDistribution@sample():408:return Config.__M_NO == 241 ? scale / x : Config.__M_NO == 240 ? scale - x : Config.__M_NO == 239 ? scale + x : Config.__M_NO == 238 ? scale % x : Config.__M_NO == 0 && Config.COVERED(238, 241) ? scale * x : scale * x; |==> <NO-OP>
+243:LVR:NEG:0:org.apache.commons.math3.distribution.GammaDistribution@sample():413:-1 |==> 0
+244:LVR:NEG:POS:org.apache.commons.math3.distribution.GammaDistribution@sample():413:-1 |==> 1
+245:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:bGS - p |==> bGS % p
+246:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:bGS - p |==> bGS * p
+247:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:bGS - p |==> bGS + p
+248:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:bGS - p |==> bGS / p
+249:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:(bGS - p) / shape |==> (bGS - p) % shape
+250:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:(bGS - p) / shape |==> (bGS - p) * shape
+251:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:(bGS - p) / shape |==> (bGS - p) + shape
+252:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:(bGS - p) / shape |==> (bGS - p) - shape
+253:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:-1 * FastMath.log((bGS - p) / shape) |==> -1 % FastMath.log((bGS - p) / shape)
+254:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:-1 * FastMath.log((bGS - p) / shape) |==> -1 + FastMath.log((bGS - p) / shape)
+255:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:-1 * FastMath.log((bGS - p) / shape) |==> -1 - FastMath.log((bGS - p) / shape)
+256:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():413:-1 * FastMath.log((bGS - p) / shape) |==> -1 / FastMath.log((bGS - p) / shape)
+257:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@sample():414:random.nextDouble() |==> 0.0
+258:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():416:1 |==> 0
+259:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():416:1 |==> -1
+260:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():416:shape - 1 |==> shape % 1
+261:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():416:shape - 1 |==> shape * 1
+262:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():416:shape - 1 |==> shape + 1
+263:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():416:shape - 1 |==> shape / 1
+264:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():416:u2 > FastMath.pow(x, shape - 1) |==> u2 != FastMath.pow(x, shape - 1)
+265:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():416:u2 > FastMath.pow(x, shape - 1) |==> u2 >= FastMath.pow(x, shape - 1)
+266:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():416:u2 > FastMath.pow(x, shape - 1) |==> false
+267:STD:<CONT>:<NO-OP>:org.apache.commons.math3.distribution.GammaDistribution@sample():418:continue; |==> <NO-OP>
+268:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():420:scale * x |==> scale % x
+269:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():420:scale * x |==> scale + x
+270:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():420:scale * x |==> scale - x
+271:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():420:scale * x |==> scale / x
+272:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.GammaDistribution@sample():420:return Config.__M_NO == 271 ? scale / x : Config.__M_NO == 270 ? scale - x : Config.__M_NO == 269 ? scale + x : Config.__M_NO == 268 ? scale % x : Config.__M_NO == 0 && Config.COVERED(268, 271) ? scale * x : scale * x; |==> <NO-OP>
+273:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():428:0.3333333333333333 |==> 0.0
+274:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():428:0.3333333333333333 |==> -0.3333333333333333
+275:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():428:shape - 0.3333333333333333 |==> shape % 0.3333333333333333
+276:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():428:shape - 0.3333333333333333 |==> shape * 0.3333333333333333
+277:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():428:shape - 0.3333333333333333 |==> shape + 0.3333333333333333
+278:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():428:shape - 0.3333333333333333 |==> shape / 0.3333333333333333
+279:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():429:1 |==> 0
+280:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():429:1 |==> -1
+281:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():429:3 |==> 0
+282:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():429:3 |==> -3
+283:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():429:3 * FastMath.sqrt(d) |==> 3 % FastMath.sqrt(d)
+284:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():429:3 * FastMath.sqrt(d) |==> 3 + FastMath.sqrt(d)
+285:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():429:3 * FastMath.sqrt(d) |==> 3 - FastMath.sqrt(d)
+286:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():429:3 * FastMath.sqrt(d) |==> 3 / FastMath.sqrt(d)
+287:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():429:1 / (3 * FastMath.sqrt(d)) |==> 1 % (3 * FastMath.sqrt(d))
+288:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():429:1 / (3 * FastMath.sqrt(d)) |==> 1 * (3 * FastMath.sqrt(d))
+289:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():429:1 / (3 * FastMath.sqrt(d)) |==> 1 + (3 * FastMath.sqrt(d))
+290:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():429:1 / (3 * FastMath.sqrt(d)) |==> 1 - (3 * FastMath.sqrt(d))
+291:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@sample():432:random.nextGaussian() |==> 0.0
+292:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 |==> 0
+293:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 |==> -1
+294:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c % x
+295:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c + x
+296:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c - x
+297:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c / x
+298:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 % (c * x)
+299:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 * (c * x)
+300:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 - c * x
+301:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 / (c * x)
+302:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 |==> 0
+303:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 |==> -1
+304:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c % x
+305:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c + x
+306:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c - x
+307:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c / x
+308:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 % (c * x)
+309:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 * (c * x)
+310:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 - c * x
+311:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 / (c * x)
+312:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:(1 + c * x) * (1 + c * x) |==> (1 + c * x) % (1 + c * x)
+313:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:(1 + c * x) * (1 + c * x) |==> (1 + c * x) + (1 + c * x)
+314:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:(1 + c * x) * (1 + c * x) |==> (1 + c * x) - (1 + c * x)
+315:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:(1 + c * x) * (1 + c * x) |==> (1 + c * x) / (1 + c * x)
+316:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 |==> 0
+317:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 |==> -1
+318:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c % x
+319:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c + x
+320:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c - x
+321:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:c * x |==> c / x
+322:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 % (c * x)
+323:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 * (c * x)
+324:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 - c * x
+325:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:1 + c * x |==> 1 / (c * x)
+326:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:(1 + c * x) * (1 + c * x) * (1 + c * x) |==> (1 + c * x) * (1 + c * x) % (1 + c * x)
+327:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:(1 + c * x) * (1 + c * x) * (1 + c * x) |==> (1 + c * x) * (1 + c * x) + (1 + c * x)
+328:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:(1 + c * x) * (1 + c * x) * (1 + c * x) |==> (1 + c * x) * (1 + c * x) - (1 + c * x)
+329:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():433:(1 + c * x) * (1 + c * x) * (1 + c * x) |==> (1 + c * x) * (1 + c * x) / (1 + c * x)
+330:LVR:0:POS:org.apache.commons.math3.distribution.GammaDistribution@sample():435:0 |==> 1
+331:LVR:0:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():435:0 |==> -1
+332:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():435:v <= 0 |==> v < 0
+333:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():435:v <= 0 |==> v == 0
+334:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():435:v <= 0 |==> true
+335:STD:<CONT>:<NO-OP>:org.apache.commons.math3.distribution.GammaDistribution@sample():436:continue; |==> <NO-OP>
+336:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():439:x * x |==> x % x
+337:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():439:x * x |==> x + x
+338:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():439:x * x |==> x - x
+339:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():439:x * x |==> x / x
+340:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.GammaDistribution@sample():440:random.nextDouble() |==> 0.0
+341:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():443:1 |==> 0
+342:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():443:1 |==> -1
+343:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 |==> 0.0
+344:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 |==> -0.0331
+345:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 * x2 |==> 0.0331 % x2
+346:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 * x2 |==> 0.0331 + x2
+347:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 * x2 |==> 0.0331 - x2
+348:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 * x2 |==> 0.0331 / x2
+349:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 * x2 * x2 |==> 0.0331 * x2 % x2
+350:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 * x2 * x2 |==> 0.0331 * x2 + x2
+351:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 * x2 * x2 |==> 0.0331 * x2 - x2
+352:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:0.0331 * x2 * x2 |==> 0.0331 * x2 / x2
+353:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:1 - 0.0331 * x2 * x2 |==> 1 % (0.0331 * x2 * x2)
+354:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:1 - 0.0331 * x2 * x2 |==> 1 * (0.0331 * x2 * x2)
+355:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:1 - 0.0331 * x2 * x2 |==> 1 + 0.0331 * x2 * x2
+356:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:1 - 0.0331 * x2 * x2 |==> 1 / (0.0331 * x2 * x2)
+357:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:u < 1 - 0.0331 * x2 * x2 |==> u != 1 - 0.0331 * x2 * x2
+358:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:u < 1 - 0.0331 * x2 * x2 |==> u <= 1 - 0.0331 * x2 * x2
+359:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():443:u < 1 - 0.0331 * x2 * x2 |==> false
+360:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():444:scale * d |==> scale % d
+361:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():444:scale * d |==> scale + d
+362:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():444:scale * d |==> scale - d
+363:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():444:scale * d |==> scale / d
+364:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():444:scale * d * v |==> scale * d % v
+365:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():444:scale * d * v |==> scale * d + v
+366:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():444:scale * d * v |==> scale * d - v
+367:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():444:scale * d * v |==> scale * d / v
+368:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.GammaDistribution@sample():444:return Config.__M_NO == 367 ? scale * d / v : Config.__M_NO == 366 ? scale * d - v : Config.__M_NO == 365 ? scale * d + v : Config.__M_NO == 364 ? scale * d % v : Config.__M_NO == 0 && Config.COVERED(364, 367) ? scale * d * v : (Config.__M_NO == 363 ? scale / d : Config.__M_NO == 362 ? scale - d : Config.__M_NO == 361 ? scale + d : Config.__M_NO == 360 ? scale % d : Config.__M_NO == 0 && Config.COVERED(360, 363) ? scale * d : scale * d) * v; |==> <NO-OP>
+369:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 |==> 0.0
+370:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 |==> -0.5
+371:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 * x2 |==> 0.5 % x2
+372:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 * x2 |==> 0.5 + x2
+373:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 * x2 |==> 0.5 - x2
+374:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 * x2 |==> 0.5 / x2
+375:LVR:POS:0:org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 |==> 0
+376:LVR:POS:NEG:org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 |==> -1
+377:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 - v |==> 1 % v
+378:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 - v |==> 1 * v
+379:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 - v |==> 1 + v
+380:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 - v |==> 1 / v
+381:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 - v + FastMath.log(v) |==> (1 - v) % FastMath.log(v)
+382:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 - v + FastMath.log(v) |==> (1 - v) * FastMath.log(v)
+383:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 - v + FastMath.log(v) |==> 1 - v - FastMath.log(v)
+384:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:1 - v + FastMath.log(v) |==> (1 - v) / FastMath.log(v)
+385:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:d * (1 - v + FastMath.log(v)) |==> d % (1 - v + FastMath.log(v))
+386:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:d * (1 - v + FastMath.log(v)) |==> d + (1 - v + FastMath.log(v))
+387:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:d * (1 - v + FastMath.log(v)) |==> d - (1 - v + FastMath.log(v))
+388:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:d * (1 - v + FastMath.log(v)) |==> d / (1 - v + FastMath.log(v))
+389:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 * x2 + d * (1 - v + FastMath.log(v)) |==> 0.5 * x2 % (d * (1 - v + FastMath.log(v)))
+390:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 * x2 + d * (1 - v + FastMath.log(v)) |==> 0.5 * x2 * (d * (1 - v + FastMath.log(v)))
+391:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 * x2 + d * (1 - v + FastMath.log(v)) |==> 0.5 * x2 - d * (1 - v + FastMath.log(v))
+392:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:0.5 * x2 + d * (1 - v + FastMath.log(v)) |==> 0.5 * x2 / (d * (1 - v + FastMath.log(v)))
+393:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:FastMath.log(u) < 0.5 * x2 + d * (1 - v + FastMath.log(v)) |==> FastMath.log(u) != 0.5 * x2 + d * (1 - v + FastMath.log(v))
+394:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:FastMath.log(u) < 0.5 * x2 + d * (1 - v + FastMath.log(v)) |==> FastMath.log(u) <= 0.5 * x2 + d * (1 - v + FastMath.log(v))
+395:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():447:FastMath.log(u) < 0.5 * x2 + d * (1 - v + FastMath.log(v)) |==> false
+396:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():448:scale * d |==> scale % d
+397:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():448:scale * d |==> scale + d
+398:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():448:scale * d |==> scale - d
+399:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():448:scale * d |==> scale / d
+400:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():448:scale * d * v |==> scale * d % v
+401:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():448:scale * d * v |==> scale * d + v
+402:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():448:scale * d * v |==> scale * d - v
+403:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.GammaDistribution@sample():448:scale * d * v |==> scale * d / v
+404:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.GammaDistribution@sample():448:return Config.__M_NO == 403 ? scale * d / v : Config.__M_NO == 402 ? scale * d - v : Config.__M_NO == 401 ? scale * d + v : Config.__M_NO == 400 ? scale * d % v : Config.__M_NO == 0 && Config.COVERED(400, 403) ? scale * d * v : (Config.__M_NO == 399 ? scale / d : Config.__M_NO == 398 ? scale - d : Config.__M_NO == 397 ? scale + d : Config.__M_NO == 396 ? scale % d : Config.__M_NO == 0 && Config.COVERED(396, 399) ? scale * d : scale * d) * v; |==> <NO-OP>

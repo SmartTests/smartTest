@@ -1,0 +1,2870 @@
+[
+  {
+    "v1": {
+      "line": "33",
+      "statement": "DfpMath ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "45",
+      "statement": "Dfp[] split(final DfpField field, final String a)"
+    }
+  },
+  {
+    "v3": {
+      "line": "46",
+      "statement": "Dfp result[] = new Dfp[2"
+    }
+  },
+  {
+    "v4": {
+      "line": "47",
+      "statement": "char[] buf"
+    }
+  },
+  {
+    "v5": {
+      "line": "48",
+      "statement": "boolean leading = true"
+    }
+  },
+  {
+    "v6": {
+      "line": "49",
+      "statement": "int sp = 0"
+    }
+  },
+  {
+    "v7": {
+      "line": "50",
+      "statement": "int sig = 0"
+    }
+  },
+  {
+    "v8": {
+      "line": "52",
+      "statement": "buf = new char[a.length()"
+    }
+  },
+  {
+    "v9": {
+      "line": "54",
+      "statement": "for (  int i = 0 ; i < buf.length ;   i++)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v13": {
+      "line": "55",
+      "statement": "buf[i] = a.charAt(i)"
+    }
+  },
+  {
+    "v14": {
+      "line": "57",
+      "statement": "if (buf[i] >= '1' && buf[i] <= '9')"
+    }
+  },
+  {
+    "v15": {
+      "line": "58",
+      "statement": "leading = false"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v17": {
+      "line": "61",
+      "statement": "if (buf[i] == '.')"
+    }
+  },
+  {
+    "v18": {
+      "line": "62",
+      "statement": "sig += (400 - sig) % 4"
+    }
+  },
+  {
+    "v19": {
+      "line": "63",
+      "statement": "leading = false"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v21": {
+      "line": "66",
+      "statement": "if (sig == (field.getRadixDigits() / 2) * 4)"
+    }
+  },
+  {
+    "v22": {
+      "line": "67",
+      "statement": "sp = i"
+    }
+  },
+  {
+    "v23": {
+      "line": "68",
+      "statement": "break"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "71",
+      "statement": "if (buf[i] >= '0' && buf[i] <= '9' && !leading)"
+    }
+  },
+  {
+    "v26": {
+      "line": "72",
+      "statement": "sig ++"
+    }
+  },
+  {
+    "v27": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v28": {
+      "line": "76",
+      "statement": "result[0] = field.newDfp(new String(buf, 0, sp))"
+    }
+  },
+  {
+    "v29": {
+      "line": "78",
+      "statement": "for (  int i = 0 ; i < buf.length ;   i++)"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v33": {
+      "line": "79",
+      "statement": "buf[i] = a.charAt(i)"
+    }
+  },
+  {
+    "v34": {
+      "line": "80",
+      "statement": "if (buf[i] >= '0' && buf[i] <= '9' && i < sp)"
+    }
+  },
+  {
+    "v35": {
+      "line": "81",
+      "statement": "buf[i] = '0'"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v37": {
+      "line": "85",
+      "statement": "result[1] = field.newDfp(new String(buf))"
+    }
+  },
+  {
+    "v38": {
+      "line": "87",
+      "statement": "return result"
+    }
+  },
+  {
+    "v39": {
+      "line": "94",
+      "statement": "Dfp[] split(final Dfp a)"
+    }
+  },
+  {
+    "v40": {
+      "line": "95",
+      "statement": "final Dfp[] result = new Dfp[2"
+    }
+  },
+  {
+    "v41": {
+      "line": "96",
+      "statement": "final Dfp shift = a.multiply(a.power10K(a.getRadixDigits() / 2))"
+    }
+  },
+  {
+    "v42": {
+      "line": "97",
+      "statement": "result[0] = a.add(shift).subtract(shift)"
+    }
+  },
+  {
+    "v43": {
+      "line": "98",
+      "statement": "result[1] = a.subtract(result[0])"
+    }
+  },
+  {
+    "v44": {
+      "line": "99",
+      "statement": "return result"
+    }
+  },
+  {
+    "v45": {
+      "line": "110",
+      "statement": "Dfp[] splitMult(final Dfp[] a, final Dfp[] b)"
+    }
+  },
+  {
+    "v46": {
+      "line": "111",
+      "statement": "final Dfp[] result = new Dfp[2"
+    }
+  },
+  {
+    "v47": {
+      "line": "113",
+      "statement": "result[1] = a[0].getZero()"
+    }
+  },
+  {
+    "v48": {
+      "line": "114",
+      "statement": "result[0] = a[0].multiply(b[0])"
+    }
+  },
+  {
+    "v49": {
+      "line": "120",
+      "statement": "if (result[0].classify() == Dfp.INFINITE || result[0].equals(result[1]))"
+    }
+  },
+  {
+    "v50": {
+      "line": "121",
+      "statement": "return result"
+    }
+  },
+  {
+    "v51": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v52": {
+      "line": "124",
+      "statement": "result[1] = a[0].multiply(b[1]).add(a[1].multiply(b[0])).add(a[1].multiply(b[1]))"
+    }
+  },
+  {
+    "v53": {
+      "line": "126",
+      "statement": "return result"
+    }
+  },
+  {
+    "v54": {
+      "line": "136",
+      "statement": "Dfp[] splitDiv(final Dfp[] a, final Dfp[] b)"
+    }
+  },
+  {
+    "v55": {
+      "line": "137",
+      "statement": "final Dfp[] result"
+    }
+  },
+  {
+    "v56": {
+      "line": "139",
+      "statement": "result = new Dfp[2"
+    }
+  },
+  {
+    "v57": {
+      "line": "141",
+      "statement": "result[0] = a[0].divide(b[0])"
+    }
+  },
+  {
+    "v58": {
+      "line": "142",
+      "statement": "result[1] = a[1].multiply(b[0]).subtract(a[0].multiply(b[1]))"
+    }
+  },
+  {
+    "v59": {
+      "line": "143",
+      "statement": "result[1] = result[1].divide(b[0].multiply(b[0]).add(b[0].multiply(b[1])))"
+    }
+  },
+  {
+    "v60": {
+      "line": "145",
+      "statement": "return result"
+    }
+  },
+  {
+    "v61": {
+      "line": "153",
+      "statement": "Dfp splitPow(final Dfp[] base, int a)"
+    }
+  },
+  {
+    "v62": {
+      "line": "154",
+      "statement": "boolean invert = false"
+    }
+  },
+  {
+    "v63": {
+      "line": "156",
+      "statement": "Dfp[] r = new Dfp[2"
+    }
+  },
+  {
+    "v64": {
+      "line": "158",
+      "statement": "Dfp[] result = new Dfp[2"
+    }
+  },
+  {
+    "v65": {
+      "line": "159",
+      "statement": "result[0] = base[0].getOne()"
+    }
+  },
+  {
+    "v66": {
+      "line": "160",
+      "statement": "result[1] = base[0].getZero()"
+    }
+  },
+  {
+    "v67": {
+      "line": "162",
+      "statement": "if (a == 0)"
+    }
+  },
+  {
+    "v68": {
+      "line": "164",
+      "statement": "return result[0].add(result[1])"
+    }
+  },
+  {
+    "v69": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v70": {
+      "line": "167",
+      "statement": "if (a < 0)"
+    }
+  },
+  {
+    "v71": {
+      "line": "169",
+      "statement": "invert = true"
+    }
+  },
+  {
+    "v72": {
+      "line": "170",
+      "statement": "a = -a"
+    }
+  },
+  {
+    "v73": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v74": {
+      "line": "174",
+      "statement": "do"
+    }
+  },
+  {
+    "v75": {
+      "line": "194",
+      "statement": "while (a >= 1)"
+    }
+  },
+  {
+    "v76": {
+      "line": 0,
+      "statement": "\"end-do-while"
+    }
+  },
+  {
+    "v77": {
+      "line": "175",
+      "statement": "r[0] = new Dfp(base[0])"
+    }
+  },
+  {
+    "v78": {
+      "line": "176",
+      "statement": "r[1] = new Dfp(base[1])"
+    }
+  },
+  {
+    "v79": {
+      "line": "177",
+      "statement": "int trial = 1"
+    }
+  },
+  {
+    "v80": {
+      "line": "179",
+      "statement": "int prevtrial"
+    }
+  },
+  {
+    "v81": {
+      "line": "180",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v82": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v83": {
+      "line": "181",
+      "statement": "prevtrial = trial"
+    }
+  },
+  {
+    "v84": {
+      "line": "182",
+      "statement": "trial = trial * 2"
+    }
+  },
+  {
+    "v85": {
+      "line": "183",
+      "statement": "if (trial > a)"
+    }
+  },
+  {
+    "v86": {
+      "line": "184",
+      "statement": "break"
+    }
+  },
+  {
+    "v87": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v88": {
+      "line": "186",
+      "statement": "r = splitMult(r, r)"
+    }
+  },
+  {
+    "v89": {
+      "line": "189",
+      "statement": "trial = prevtrial"
+    }
+  },
+  {
+    "v90": {
+      "line": "191",
+      "statement": "a -= trial"
+    }
+  },
+  {
+    "v91": {
+      "line": "192",
+      "statement": "result = splitMult(result, r)"
+    }
+  },
+  {
+    "v92": {
+      "line": "196",
+      "statement": "result[0] = result[0].add(result[1])"
+    }
+  },
+  {
+    "v93": {
+      "line": "198",
+      "statement": "if (invert)"
+    }
+  },
+  {
+    "v94": {
+      "line": "199",
+      "statement": "result[0] = base[0].getOne().divide(result[0])"
+    }
+  },
+  {
+    "v95": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v96": {
+      "line": "202",
+      "statement": "return result[0"
+    }
+  },
+  {
+    "v97": {
+      "line": "211",
+      "statement": "Dfp pow(Dfp base, int a)"
+    }
+  },
+  {
+    "v98": {
+      "line": "213",
+      "statement": "boolean invert = false"
+    }
+  },
+  {
+    "v99": {
+      "line": "215",
+      "statement": "Dfp result = base.getOne()"
+    }
+  },
+  {
+    "v100": {
+      "line": "217",
+      "statement": "if (a == 0)"
+    }
+  },
+  {
+    "v101": {
+      "line": "219",
+      "statement": "return result"
+    }
+  },
+  {
+    "v102": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v103": {
+      "line": "222",
+      "statement": "if (a < 0)"
+    }
+  },
+  {
+    "v104": {
+      "line": "223",
+      "statement": "invert = true"
+    }
+  },
+  {
+    "v105": {
+      "line": "224",
+      "statement": "a = -a"
+    }
+  },
+  {
+    "v106": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v107": {
+      "line": "228",
+      "statement": "do"
+    }
+  },
+  {
+    "v108": {
+      "line": "247",
+      "statement": "while (a >= 1)"
+    }
+  },
+  {
+    "v109": {
+      "line": 0,
+      "statement": "\"end-do-while"
+    }
+  },
+  {
+    "v110": {
+      "line": "229",
+      "statement": "Dfp r = new Dfp(base)"
+    }
+  },
+  {
+    "v111": {
+      "line": "230",
+      "statement": "Dfp prevr"
+    }
+  },
+  {
+    "v112": {
+      "line": "231",
+      "statement": "int trial = 1"
+    }
+  },
+  {
+    "v113": {
+      "line": "232",
+      "statement": "int prevtrial"
+    }
+  },
+  {
+    "v114": {
+      "line": "234",
+      "statement": "do"
+    }
+  },
+  {
+    "v115": {
+      "line": "239",
+      "statement": "while (a>trial)"
+    }
+  },
+  {
+    "v116": {
+      "line": 0,
+      "statement": "\"end-do-while"
+    }
+  },
+  {
+    "v117": {
+      "line": "235",
+      "statement": "prevr = new Dfp(r)"
+    }
+  },
+  {
+    "v118": {
+      "line": "236",
+      "statement": "prevtrial = trial"
+    }
+  },
+  {
+    "v119": {
+      "line": "237",
+      "statement": "r = r.multiply(r)"
+    }
+  },
+  {
+    "v120": {
+      "line": "238",
+      "statement": "trial = trial * 2"
+    }
+  },
+  {
+    "v121": {
+      "line": "241",
+      "statement": "r = prevr"
+    }
+  },
+  {
+    "v122": {
+      "line": "242",
+      "statement": "trial = prevtrial"
+    }
+  },
+  {
+    "v123": {
+      "line": "244",
+      "statement": "a = a - trial"
+    }
+  },
+  {
+    "v124": {
+      "line": "245",
+      "statement": "result = result.multiply(r)"
+    }
+  },
+  {
+    "v125": {
+      "line": "249",
+      "statement": "if (invert)"
+    }
+  },
+  {
+    "v126": {
+      "line": "250",
+      "statement": "result = base.getOne().divide(result)"
+    }
+  },
+  {
+    "v127": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v128": {
+      "line": "253",
+      "statement": "return base.newInstance(result)"
+    }
+  },
+  {
+    "v129": {
+      "line": "264",
+      "statement": "Dfp exp(final Dfp a)"
+    }
+  },
+  {
+    "v130": {
+      "line": "266",
+      "statement": "final Dfp inta = a.rint()"
+    }
+  },
+  {
+    "v131": {
+      "line": "267",
+      "statement": "final Dfp fraca = a.subtract(inta)"
+    }
+  },
+  {
+    "v132": {
+      "line": "269",
+      "statement": "final int ia = inta.intValue()"
+    }
+  },
+  {
+    "v133": {
+      "line": "270",
+      "statement": "if (ia > 2147483646)"
+    }
+  },
+  {
+    "v134": {
+      "line": "272",
+      "statement": "return a.newInstance((byte)1, Dfp.INFINITE)"
+    }
+  },
+  {
+    "v135": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v136": {
+      "line": "275",
+      "statement": "if (ia < -2147483646)"
+    }
+  },
+  {
+    "v137": {
+      "line": "277",
+      "statement": "return a.newInstance()"
+    }
+  },
+  {
+    "v138": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v139": {
+      "line": "280",
+      "statement": "final Dfp einta = splitPow(a.getField().getESplit(), ia)"
+    }
+  },
+  {
+    "v140": {
+      "line": "281",
+      "statement": "final Dfp efraca = expInternal(fraca)"
+    }
+  },
+  {
+    "v141": {
+      "line": "283",
+      "statement": "return einta.multiply(efraca)"
+    }
+  },
+  {
+    "v142": {
+      "line": "291",
+      "statement": "Dfp expInternal(final Dfp a)"
+    }
+  },
+  {
+    "v143": {
+      "line": "292",
+      "statement": "Dfp y = a.getOne()"
+    }
+  },
+  {
+    "v144": {
+      "line": "293",
+      "statement": "Dfp x = a.getOne()"
+    }
+  },
+  {
+    "v145": {
+      "line": "294",
+      "statement": "Dfp fact = a.getOne()"
+    }
+  },
+  {
+    "v146": {
+      "line": "295",
+      "statement": "Dfp py = new Dfp(y)"
+    }
+  },
+  {
+    "v147": {
+      "line": "297",
+      "statement": "for (  int i = 1 ; i < 90 ;   i++)"
+    }
+  },
+  {
+    "v150": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v151": {
+      "line": "298",
+      "statement": "x = x.multiply(a)"
+    }
+  },
+  {
+    "v152": {
+      "line": "299",
+      "statement": "fact = fact.divide(i)"
+    }
+  },
+  {
+    "v153": {
+      "line": "300",
+      "statement": "y = y.add(x.multiply(fact))"
+    }
+  },
+  {
+    "v154": {
+      "line": "301",
+      "statement": "if (y.equals(py))"
+    }
+  },
+  {
+    "v155": {
+      "line": "302",
+      "statement": "break"
+    }
+  },
+  {
+    "v156": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v157": {
+      "line": "304",
+      "statement": "py = new Dfp(y)"
+    }
+  },
+  {
+    "v158": {
+      "line": "307",
+      "statement": "return y"
+    }
+  },
+  {
+    "v159": {
+      "line": "317",
+      "statement": "Dfp log(Dfp a)"
+    }
+  },
+  {
+    "v160": {
+      "line": "318",
+      "statement": "int lr"
+    }
+  },
+  {
+    "v161": {
+      "line": "319",
+      "statement": "Dfp x"
+    }
+  },
+  {
+    "v162": {
+      "line": "320",
+      "statement": "int ix"
+    }
+  },
+  {
+    "v163": {
+      "line": "321",
+      "statement": "int p2 = 0"
+    }
+  },
+  {
+    "v164": {
+      "line": "324",
+      "statement": "if (a.equals(a.getZero()) || a.lessThan(a.getZero()) || a.isNaN())"
+    }
+  },
+  {
+    "v165": {
+      "line": "326",
+      "statement": "a.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v166": {
+      "line": "327",
+      "statement": "return a.dotrap(DfpField.FLAG_INVALID, 'ln', a, a.newInstance((byte)1, Dfp.QNAN))"
+    }
+  },
+  {
+    "v167": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v168": {
+      "line": "330",
+      "statement": "if (a.classify() == Dfp.INFINITE)"
+    }
+  },
+  {
+    "v169": {
+      "line": "331",
+      "statement": "return a"
+    }
+  },
+  {
+    "v170": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v171": {
+      "line": "334",
+      "statement": "x = new Dfp(a)"
+    }
+  },
+  {
+    "v172": {
+      "line": "335",
+      "statement": "lr = x.log10K()"
+    }
+  },
+  {
+    "v173": {
+      "line": "337",
+      "statement": "x = x.divide(pow(a.newInstance(10000), lr))"
+    }
+  },
+  {
+    "v174": {
+      "line": "338",
+      "statement": "ix = x.floor().intValue()"
+    }
+  },
+  {
+    "v175": {
+      "line": "340",
+      "statement": "while (ix > 2)"
+    }
+  },
+  {
+    "v176": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v177": {
+      "line": "341",
+      "statement": "ix >>= 1"
+    }
+  },
+  {
+    "v178": {
+      "line": "342",
+      "statement": "p2++"
+    }
+  },
+  {
+    "v179": {
+      "line": "346",
+      "statement": "Dfp[] spx = split(x)"
+    }
+  },
+  {
+    "v180": {
+      "line": "347",
+      "statement": "Dfp[] spy = new Dfp[2"
+    }
+  },
+  {
+    "v181": {
+      "line": "348",
+      "statement": "spy[0] = pow(a.getTwo(), p2)"
+    }
+  },
+  {
+    "v182": {
+      "line": "349",
+      "statement": "spx[0] = spx[0].divide(spy[0])"
+    }
+  },
+  {
+    "v183": {
+      "line": "350",
+      "statement": "spx[1] = spx[1].divide(spy[0])"
+    }
+  },
+  {
+    "v184": {
+      "line": "352",
+      "statement": "spy[0] = a.newInstance('1.33333')"
+    }
+  },
+  {
+    "v185": {
+      "line": "353",
+      "statement": "while (spx[0].add(spx[1]).greaterThan(spy[0]))"
+    }
+  },
+  {
+    "v186": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v187": {
+      "line": "354",
+      "statement": "spx[0] = spx[0].divide(2)"
+    }
+  },
+  {
+    "v188": {
+      "line": "355",
+      "statement": "spx[1] = spx[1].divide(2)"
+    }
+  },
+  {
+    "v189": {
+      "line": "356",
+      "statement": "p2++"
+    }
+  },
+  {
+    "v190": {
+      "line": "360",
+      "statement": "Dfp[] spz = logInternal(spx)"
+    }
+  },
+  {
+    "v191": {
+      "line": "362",
+      "statement": "spx[0] = a.newInstance(new StringBuilder().append(p2+4*lr).toString())"
+    }
+  },
+  {
+    "v192": {
+      "line": "363",
+      "statement": "spx[1] = a.getZero()"
+    }
+  },
+  {
+    "v193": {
+      "line": "364",
+      "statement": "spy = splitMult(a.getField().getLn2Split(), spx)"
+    }
+  },
+  {
+    "v194": {
+      "line": "366",
+      "statement": "spz[0] = spz[0].add(spy[0])"
+    }
+  },
+  {
+    "v195": {
+      "line": "367",
+      "statement": "spz[1] = spz[1].add(spy[1])"
+    }
+  },
+  {
+    "v196": {
+      "line": "369",
+      "statement": "spx[0] = a.newInstance(new StringBuilder().append(4*lr).toString())"
+    }
+  },
+  {
+    "v197": {
+      "line": "370",
+      "statement": "spx[1] = a.getZero()"
+    }
+  },
+  {
+    "v198": {
+      "line": "371",
+      "statement": "spy = splitMult(a.getField().getLn5Split(), spx)"
+    }
+  },
+  {
+    "v199": {
+      "line": "373",
+      "statement": "spz[0] = spz[0].add(spy[0])"
+    }
+  },
+  {
+    "v200": {
+      "line": "374",
+      "statement": "spz[1] = spz[1].add(spy[1])"
+    }
+  },
+  {
+    "v201": {
+      "line": "376",
+      "statement": "return a.newInstance(spz[0].add(spz[1]))"
+    }
+  },
+  {
+    "v202": {
+      "line": "435",
+      "statement": "Dfp[] logInternal(final Dfp a[])"
+    }
+  },
+  {
+    "v203": {
+      "line": "440",
+      "statement": "Dfp t = a[0].divide(4).add(a[1].divide(4))"
+    }
+  },
+  {
+    "v204": {
+      "line": "441",
+      "statement": "Dfp x = t.add(a[0].newInstance('-0.25')).divide(t.add(a[0].newInstance('0.25')))"
+    }
+  },
+  {
+    "v205": {
+      "line": "443",
+      "statement": "Dfp y = new Dfp(x)"
+    }
+  },
+  {
+    "v206": {
+      "line": "444",
+      "statement": "Dfp num = new Dfp(x)"
+    }
+  },
+  {
+    "v207": {
+      "line": "445",
+      "statement": "Dfp py = new Dfp(y)"
+    }
+  },
+  {
+    "v208": {
+      "line": "446",
+      "statement": "int den = 1"
+    }
+  },
+  {
+    "v209": {
+      "line": "447",
+      "statement": "for (  int i = 0 ; i < 10000 ;   i++)"
+    }
+  },
+  {
+    "v212": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v213": {
+      "line": "448",
+      "statement": "num = num.multiply(x)"
+    }
+  },
+  {
+    "v214": {
+      "line": "449",
+      "statement": "num = num.multiply(x)"
+    }
+  },
+  {
+    "v215": {
+      "line": "450",
+      "statement": "den = den + 2"
+    }
+  },
+  {
+    "v216": {
+      "line": "451",
+      "statement": "t = num.divide(den)"
+    }
+  },
+  {
+    "v217": {
+      "line": "452",
+      "statement": "y = y.add(t)"
+    }
+  },
+  {
+    "v218": {
+      "line": "453",
+      "statement": "if (y.equals(py))"
+    }
+  },
+  {
+    "v219": {
+      "line": "454",
+      "statement": "break"
+    }
+  },
+  {
+    "v220": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v221": {
+      "line": "456",
+      "statement": "py = new Dfp(y)"
+    }
+  },
+  {
+    "v222": {
+      "line": "459",
+      "statement": "y = y.multiply(a[0].getTwo())"
+    }
+  },
+  {
+    "v223": {
+      "line": "461",
+      "statement": "return split(y)"
+    }
+  },
+  {
+    "v224": {
+      "line": "505",
+      "statement": "Dfp pow(Dfp x, final Dfp y)"
+    }
+  },
+  {
+    "v225": {
+      "line": "508",
+      "statement": "if (x.getField().getRadixDigits() != y.getField().getRadixDigits())"
+    }
+  },
+  {
+    "v226": {
+      "line": "509",
+      "statement": "x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v227": {
+      "line": "510",
+      "statement": "final Dfp result = x.newInstance(x.getZero())"
+    }
+  },
+  {
+    "v228": {
+      "line": "511",
+      "statement": "result.nans = Dfp.QNAN"
+    }
+  },
+  {
+    "v229": {
+      "line": "512",
+      "statement": "return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, result)"
+    }
+  },
+  {
+    "v230": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v231": {
+      "line": "515",
+      "statement": "final Dfp zero = x.getZero()"
+    }
+  },
+  {
+    "v232": {
+      "line": "516",
+      "statement": "final Dfp one  = x.getOne()"
+    }
+  },
+  {
+    "v233": {
+      "line": "517",
+      "statement": "final Dfp two  = x.getTwo()"
+    }
+  },
+  {
+    "v234": {
+      "line": "518",
+      "statement": "boolean invert = false"
+    }
+  },
+  {
+    "v235": {
+      "line": "519",
+      "statement": "int ui"
+    }
+  },
+  {
+    "v236": {
+      "line": "522",
+      "statement": "if (y.equals(zero))"
+    }
+  },
+  {
+    "v237": {
+      "line": "523",
+      "statement": "return x.newInstance(one)"
+    }
+  },
+  {
+    "v238": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v239": {
+      "line": "526",
+      "statement": "if (y.equals(one))"
+    }
+  },
+  {
+    "v240": {
+      "line": "527",
+      "statement": "if (x.isNaN())"
+    }
+  },
+  {
+    "v241": {
+      "line": "529",
+      "statement": "x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v242": {
+      "line": "530",
+      "statement": "return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, x)"
+    }
+  },
+  {
+    "v243": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v244": {
+      "line": "532",
+      "statement": "return x"
+    }
+  },
+  {
+    "v245": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v246": {
+      "line": "535",
+      "statement": "if (x.isNaN() || y.isNaN())"
+    }
+  },
+  {
+    "v247": {
+      "line": "537",
+      "statement": "x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v248": {
+      "line": "538",
+      "statement": "return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, x.newInstance((byte)1, Dfp.QNAN))"
+    }
+  },
+  {
+    "v249": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v254": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v256": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v257": {
+      "line": "552",
+      "statement": "if (y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero))"
+    }
+  },
+  {
+    "v258": {
+      "line": "554",
+      "statement": "if (y.greaterThan(zero))"
+    }
+  },
+  {
+    "v259": {
+      "line": "555",
+      "statement": "return x.newInstance(zero.negate())"
+    }
+  },
+  {
+    "v260": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v261": {
+      "line": "557",
+      "statement": "return x.newInstance(x.newInstance((byte)-1, Dfp.INFINITE))"
+    }
+  },
+  {
+    "v262": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v263": {
+      "line": "561",
+      "statement": "if (y.greaterThan(zero))"
+    }
+  },
+  {
+    "v264": {
+      "line": "562",
+      "statement": "return x.newInstance(zero)"
+    }
+  },
+  {
+    "v265": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v266": {
+      "line": "564",
+      "statement": "return x.newInstance(x.newInstance((byte)1, Dfp.INFINITE))"
+    }
+  },
+  {
+    "v267": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v268": {
+      "line": "570",
+      "statement": "if (x.lessThan(zero))"
+    }
+  },
+  {
+    "v269": {
+      "line": "572",
+      "statement": "x = x.negate()"
+    }
+  },
+  {
+    "v270": {
+      "line": "573",
+      "statement": "invert = true"
+    }
+  },
+  {
+    "v271": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v272": {
+      "line": "576",
+      "statement": "if (x.greaterThan(one) && y.classify() == Dfp.INFINITE)"
+    }
+  },
+  {
+    "v273": {
+      "line": "577",
+      "statement": "if (y.greaterThan(zero))"
+    }
+  },
+  {
+    "v274": {
+      "line": "578",
+      "statement": "return y"
+    }
+  },
+  {
+    "v275": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v276": {
+      "line": "580",
+      "statement": "return x.newInstance(zero)"
+    }
+  },
+  {
+    "v277": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v278": {
+      "line": "584",
+      "statement": "if (x.lessThan(one) && y.classify() == Dfp.INFINITE)"
+    }
+  },
+  {
+    "v279": {
+      "line": "585",
+      "statement": "if (y.greaterThan(zero))"
+    }
+  },
+  {
+    "v280": {
+      "line": "586",
+      "statement": "return x.newInstance(zero)"
+    }
+  },
+  {
+    "v281": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v282": {
+      "line": "588",
+      "statement": "return x.newInstance(Dfp.copysign(y, one))"
+    }
+  },
+  {
+    "v283": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v284": {
+      "line": "592",
+      "statement": "if (x.equals(one) && y.classify() == Dfp.INFINITE)"
+    }
+  },
+  {
+    "v285": {
+      "line": "593",
+      "statement": "x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v286": {
+      "line": "594",
+      "statement": "return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, x.newInstance((byte)1, Dfp.QNAN))"
+    }
+  },
+  {
+    "v287": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v288": {
+      "line": "597",
+      "statement": "if (x.classify() == Dfp.INFINITE)"
+    }
+  },
+  {
+    "v289": {
+      "line": "599",
+      "statement": "if (invert)"
+    }
+  },
+  {
+    "v290": {
+      "line": "601",
+      "statement": "if (y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero))"
+    }
+  },
+  {
+    "v291": {
+      "line": "603",
+      "statement": "if (y.greaterThan(zero))"
+    }
+  },
+  {
+    "v292": {
+      "line": "604",
+      "statement": "return x.newInstance(x.newInstance((byte)-1, Dfp.INFINITE))"
+    }
+  },
+  {
+    "v293": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v294": {
+      "line": "606",
+      "statement": "return x.newInstance(zero.negate())"
+    }
+  },
+  {
+    "v295": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v296": {
+      "line": "610",
+      "statement": "if (y.greaterThan(zero))"
+    }
+  },
+  {
+    "v297": {
+      "line": "611",
+      "statement": "return x.newInstance(x.newInstance((byte)1, Dfp.INFINITE))"
+    }
+  },
+  {
+    "v298": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v299": {
+      "line": "613",
+      "statement": "return x.newInstance(zero)"
+    }
+  },
+  {
+    "v300": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v301": {
+      "line": "618",
+      "statement": "if (y.greaterThan(zero))"
+    }
+  },
+  {
+    "v302": {
+      "line": "619",
+      "statement": "return x"
+    }
+  },
+  {
+    "v303": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v304": {
+      "line": "621",
+      "statement": "return x.newInstance(zero)"
+    }
+  },
+  {
+    "v305": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v306": {
+      "line": "626",
+      "statement": "if (invert && !y.rint().equals(y))"
+    }
+  },
+  {
+    "v307": {
+      "line": "627",
+      "statement": "x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v308": {
+      "line": "628",
+      "statement": "return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, x.newInstance((byte)1, Dfp.QNAN))"
+    }
+  },
+  {
+    "v309": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v310": {
+      "line": "633",
+      "statement": "Dfp r"
+    }
+  },
+  {
+    "v311": {
+      "line": "634",
+      "statement": "if (y.lessThan(x.newInstance(100000000)) && y.greaterThan(x.newInstance(-100000000)))"
+    }
+  },
+  {
+    "v312": {
+      "line": "635",
+      "statement": "final Dfp u = y.rint()"
+    }
+  },
+  {
+    "v313": {
+      "line": "636",
+      "statement": "ui = u.intValue()"
+    }
+  },
+  {
+    "v314": {
+      "line": "638",
+      "statement": "final Dfp v = y.subtract(u)"
+    }
+  },
+  {
+    "v315": {
+      "line": "640",
+      "statement": "if (v.unequal(zero))"
+    }
+  },
+  {
+    "v316": {
+      "line": "641",
+      "statement": "final Dfp a = v.multiply(log(x))"
+    }
+  },
+  {
+    "v317": {
+      "line": "642",
+      "statement": "final Dfp b = a.divide(x.getField().getLn2()).rint()"
+    }
+  },
+  {
+    "v318": {
+      "line": "644",
+      "statement": "final Dfp c = a.subtract(b.multiply(x.getField().getLn2()))"
+    }
+  },
+  {
+    "v319": {
+      "line": "645",
+      "statement": "r = splitPow(split(x), ui)"
+    }
+  },
+  {
+    "v320": {
+      "line": "646",
+      "statement": "r = r.multiply(pow(two, b.intValue()))"
+    }
+  },
+  {
+    "v321": {
+      "line": "647",
+      "statement": "r = r.multiply(exp(c))"
+    }
+  },
+  {
+    "v322": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v323": {
+      "line": "649",
+      "statement": "r = splitPow(split(x), ui)"
+    }
+  },
+  {
+    "v324": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v325": {
+      "line": "653",
+      "statement": "r = exp(log(x).multiply(y))"
+    }
+  },
+  {
+    "v326": {
+      "line": "656",
+      "statement": "if (invert && y.rint().equals(y) && !y.remainder(two).equals(zero))"
+    }
+  },
+  {
+    "v327": {
+      "line": "658",
+      "statement": "r = r.negate()"
+    }
+  },
+  {
+    "v328": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v329": {
+      "line": "661",
+      "statement": "return x.newInstance(r)"
+    }
+  },
+  {
+    "v330": {
+      "line": "670",
+      "statement": "Dfp sinInternal(Dfp a[])"
+    }
+  },
+  {
+    "v331": {
+      "line": "672",
+      "statement": "Dfp c = a[0].add(a[1])"
+    }
+  },
+  {
+    "v332": {
+      "line": "673",
+      "statement": "Dfp y = c"
+    }
+  },
+  {
+    "v333": {
+      "line": "674",
+      "statement": "c = c.multiply(c)"
+    }
+  },
+  {
+    "v334": {
+      "line": "675",
+      "statement": "Dfp x = y"
+    }
+  },
+  {
+    "v335": {
+      "line": "676",
+      "statement": "Dfp fact = a[0].getOne()"
+    }
+  },
+  {
+    "v336": {
+      "line": "677",
+      "statement": "Dfp py = new Dfp(y)"
+    }
+  },
+  {
+    "v337": {
+      "line": "679",
+      "statement": "for (  int i = 3 ; i < 90 ;   i += 2)"
+    }
+  },
+  {
+    "v340": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v341": {
+      "line": "680",
+      "statement": "x = x.multiply(c)"
+    }
+  },
+  {
+    "v342": {
+      "line": "681",
+      "statement": "x = x.negate()"
+    }
+  },
+  {
+    "v343": {
+      "line": "683",
+      "statement": "fact = fact.divide((i-1)*i)"
+    }
+  },
+  {
+    "v344": {
+      "line": "684",
+      "statement": "y = y.add(x.multiply(fact))"
+    }
+  },
+  {
+    "v345": {
+      "line": "685",
+      "statement": "if (y.equals(py))"
+    }
+  },
+  {
+    "v346": {
+      "line": "686",
+      "statement": "break"
+    }
+  },
+  {
+    "v347": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v348": {
+      "line": "688",
+      "statement": "py = new Dfp(y)"
+    }
+  },
+  {
+    "v349": {
+      "line": "691",
+      "statement": "return y"
+    }
+  },
+  {
+    "v350": {
+      "line": "700",
+      "statement": "Dfp cosInternal(Dfp a[])"
+    }
+  },
+  {
+    "v351": {
+      "line": "701",
+      "statement": "final Dfp one = a[0].getOne()"
+    }
+  },
+  {
+    "v352": {
+      "line": "704",
+      "statement": "Dfp x = one"
+    }
+  },
+  {
+    "v353": {
+      "line": "705",
+      "statement": "Dfp y = one"
+    }
+  },
+  {
+    "v354": {
+      "line": "706",
+      "statement": "Dfp c = a[0].add(a[1])"
+    }
+  },
+  {
+    "v355": {
+      "line": "707",
+      "statement": "c = c.multiply(c)"
+    }
+  },
+  {
+    "v356": {
+      "line": "709",
+      "statement": "Dfp fact = one"
+    }
+  },
+  {
+    "v357": {
+      "line": "710",
+      "statement": "Dfp py = new Dfp(y)"
+    }
+  },
+  {
+    "v358": {
+      "line": "712",
+      "statement": "for (  int i = 2 ; i < 90 ;   i += 2)"
+    }
+  },
+  {
+    "v361": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v362": {
+      "line": "713",
+      "statement": "x = x.multiply(c)"
+    }
+  },
+  {
+    "v363": {
+      "line": "714",
+      "statement": "x = x.negate()"
+    }
+  },
+  {
+    "v364": {
+      "line": "716",
+      "statement": "fact = fact.divide((i - 1) * i)"
+    }
+  },
+  {
+    "v365": {
+      "line": "718",
+      "statement": "y = y.add(x.multiply(fact))"
+    }
+  },
+  {
+    "v366": {
+      "line": "719",
+      "statement": "if (y.equals(py))"
+    }
+  },
+  {
+    "v367": {
+      "line": "720",
+      "statement": "break"
+    }
+  },
+  {
+    "v368": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v369": {
+      "line": "722",
+      "statement": "py = new Dfp(y)"
+    }
+  },
+  {
+    "v370": {
+      "line": "725",
+      "statement": "return y"
+    }
+  },
+  {
+    "v371": {
+      "line": "733",
+      "statement": "Dfp sin(final Dfp a)"
+    }
+  },
+  {
+    "v372": {
+      "line": "734",
+      "statement": "final Dfp pi = a.getField().getPi()"
+    }
+  },
+  {
+    "v373": {
+      "line": "735",
+      "statement": "final Dfp zero = a.getField().getZero()"
+    }
+  },
+  {
+    "v374": {
+      "line": "736",
+      "statement": "boolean neg = false"
+    }
+  },
+  {
+    "v375": {
+      "line": "739",
+      "statement": "Dfp x = a.remainder(pi.multiply(2))"
+    }
+  },
+  {
+    "v376": {
+      "line": "743",
+      "statement": "if (x.lessThan(zero))"
+    }
+  },
+  {
+    "v377": {
+      "line": "744",
+      "statement": "x = x.negate()"
+    }
+  },
+  {
+    "v378": {
+      "line": "745",
+      "statement": "neg = true"
+    }
+  },
+  {
+    "v379": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v380": {
+      "line": "752",
+      "statement": "if (x.greaterThan(pi.divide(2)))"
+    }
+  },
+  {
+    "v381": {
+      "line": "753",
+      "statement": "x = pi.subtract(x)"
+    }
+  },
+  {
+    "v382": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v383": {
+      "line": "756",
+      "statement": "Dfp y"
+    }
+  },
+  {
+    "v384": {
+      "line": "757",
+      "statement": "if (x.lessThan(pi.divide(4)))"
+    }
+  },
+  {
+    "v385": {
+      "line": "758",
+      "statement": "Dfp c[] = new Dfp[2"
+    }
+  },
+  {
+    "v386": {
+      "line": "759",
+      "statement": "c[0] = x"
+    }
+  },
+  {
+    "v387": {
+      "line": "760",
+      "statement": "c[1] = zero"
+    }
+  },
+  {
+    "v388": {
+      "line": "763",
+      "statement": "y = sinInternal(split(x))"
+    }
+  },
+  {
+    "v389": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v390": {
+      "line": "765",
+      "statement": "final Dfp c[] = new Dfp[2"
+    }
+  },
+  {
+    "v391": {
+      "line": "766",
+      "statement": "final Dfp[] piSplit = a.getField().getPiSplit()"
+    }
+  },
+  {
+    "v392": {
+      "line": "767",
+      "statement": "c[0] = piSplit[0].divide(2).subtract(x)"
+    }
+  },
+  {
+    "v393": {
+      "line": "768",
+      "statement": "c[1] = piSplit[1].divide(2)"
+    }
+  },
+  {
+    "v394": {
+      "line": "769",
+      "statement": "y = cosInternal(c)"
+    }
+  },
+  {
+    "v395": {
+      "line": "772",
+      "statement": "if (neg)"
+    }
+  },
+  {
+    "v396": {
+      "line": "773",
+      "statement": "y = y.negate()"
+    }
+  },
+  {
+    "v397": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v398": {
+      "line": "776",
+      "statement": "return a.newInstance(y)"
+    }
+  },
+  {
+    "v403": {
+      "line": "790",
+      "statement": "Dfp x = a.remainder(pi.multiply(2))"
+    }
+  },
+  {
+    "v404": {
+      "line": "794",
+      "statement": "if (x.lessThan(zero))"
+    }
+  },
+  {
+    "v405": {
+      "line": "795",
+      "statement": "x = x.negate()"
+    }
+  },
+  {
+    "v406": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v407": {
+      "line": "802",
+      "statement": "if (x.greaterThan(pi.divide(2)))"
+    }
+  },
+  {
+    "v408": {
+      "line": "803",
+      "statement": "x = pi.subtract(x)"
+    }
+  },
+  {
+    "v409": {
+      "line": "804",
+      "statement": "neg = true"
+    }
+  },
+  {
+    "v410": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v411": {
+      "line": "807",
+      "statement": "Dfp y"
+    }
+  },
+  {
+    "v412": {
+      "line": "808",
+      "statement": "if (x.lessThan(pi.divide(4)))"
+    }
+  },
+  {
+    "v413": {
+      "line": "809",
+      "statement": "Dfp c[] = new Dfp[2"
+    }
+  },
+  {
+    "v414": {
+      "line": "810",
+      "statement": "c[0] = x"
+    }
+  },
+  {
+    "v415": {
+      "line": "811",
+      "statement": "c[1] = zero"
+    }
+  },
+  {
+    "v416": {
+      "line": "813",
+      "statement": "y = cosInternal(c)"
+    }
+  },
+  {
+    "v417": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v418": {
+      "line": "815",
+      "statement": "final Dfp c[] = new Dfp[2"
+    }
+  },
+  {
+    "v419": {
+      "line": "816",
+      "statement": "final Dfp[] piSplit = a.getField().getPiSplit()"
+    }
+  },
+  {
+    "v420": {
+      "line": "817",
+      "statement": "c[0] = piSplit[0].divide(2).subtract(x)"
+    }
+  },
+  {
+    "v421": {
+      "line": "818",
+      "statement": "c[1] = piSplit[1].divide(2)"
+    }
+  },
+  {
+    "v422": {
+      "line": "819",
+      "statement": "y = sinInternal(c)"
+    }
+  },
+  {
+    "v423": {
+      "line": "822",
+      "statement": "if (neg)"
+    }
+  },
+  {
+    "v424": {
+      "line": "823",
+      "statement": "y = y.negate()"
+    }
+  },
+  {
+    "v425": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v426": {
+      "line": "826",
+      "statement": "return a.newInstance(y)"
+    }
+  },
+  {
+    "v427": {
+      "line": "834",
+      "statement": "Dfp tan(final Dfp a)"
+    }
+  },
+  {
+    "v428": {
+      "line": "835",
+      "statement": "return sin(a).divide(cos(a))"
+    }
+  },
+  {
+    "v429": {
+      "line": "842",
+      "statement": "Dfp atanInternal(final Dfp a)"
+    }
+  },
+  {
+    "v430": {
+      "line": "844",
+      "statement": "Dfp y = new Dfp(a)"
+    }
+  },
+  {
+    "v431": {
+      "line": "845",
+      "statement": "Dfp x = new Dfp(y)"
+    }
+  },
+  {
+    "v432": {
+      "line": "846",
+      "statement": "Dfp py = new Dfp(y)"
+    }
+  },
+  {
+    "v433": {
+      "line": "848",
+      "statement": "for (  int i = 3 ; i < 90 ;   i += 2)"
+    }
+  },
+  {
+    "v436": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v437": {
+      "line": "849",
+      "statement": "x = x.multiply(a)"
+    }
+  },
+  {
+    "v438": {
+      "line": "850",
+      "statement": "x = x.multiply(a)"
+    }
+  },
+  {
+    "v439": {
+      "line": "851",
+      "statement": "x = x.negate()"
+    }
+  },
+  {
+    "v440": {
+      "line": "852",
+      "statement": "y = y.add(x.divide(i))"
+    }
+  },
+  {
+    "v441": {
+      "line": "853",
+      "statement": "if (y.equals(py))"
+    }
+  },
+  {
+    "v442": {
+      "line": "854",
+      "statement": "break"
+    }
+  },
+  {
+    "v443": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v444": {
+      "line": "856",
+      "statement": "py = new Dfp(y)"
+    }
+  },
+  {
+    "v445": {
+      "line": "859",
+      "statement": "return y"
+    }
+  },
+  {
+    "v446": {
+      "line": "876",
+      "statement": "Dfp atan(final Dfp a)"
+    }
+  },
+  {
+    "v447": {
+      "line": "877",
+      "statement": "final Dfp zero  = a.getField().getZero()"
+    }
+  },
+  {
+    "v448": {
+      "line": "878",
+      "statement": "final Dfp one = a.getField().getOne()"
+    }
+  },
+  {
+    "v449": {
+      "line": "879",
+      "statement": "final Dfp[] sqr2Split = a.getField().getSqr2Split()"
+    }
+  },
+  {
+    "v450": {
+      "line": "880",
+      "statement": "final Dfp[] piSplit = a.getField().getPiSplit()"
+    }
+  },
+  {
+    "v451": {
+      "line": "881",
+      "statement": "boolean recp = false"
+    }
+  },
+  {
+    "v452": {
+      "line": "882",
+      "statement": "boolean neg = false"
+    }
+  },
+  {
+    "v453": {
+      "line": "883",
+      "statement": "boolean sub = false"
+    }
+  },
+  {
+    "v454": {
+      "line": "885",
+      "statement": "final Dfp ty = sqr2Split[0].subtract(one).add(sqr2Split[1])"
+    }
+  },
+  {
+    "v455": {
+      "line": "887",
+      "statement": "Dfp x = new Dfp(a)"
+    }
+  },
+  {
+    "v456": {
+      "line": "888",
+      "statement": "if (x.lessThan(zero))"
+    }
+  },
+  {
+    "v457": {
+      "line": "889",
+      "statement": "neg = true"
+    }
+  },
+  {
+    "v458": {
+      "line": "890",
+      "statement": "x = x.negate()"
+    }
+  },
+  {
+    "v459": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v460": {
+      "line": "893",
+      "statement": "if (x.greaterThan(one))"
+    }
+  },
+  {
+    "v461": {
+      "line": "894",
+      "statement": "recp = true"
+    }
+  },
+  {
+    "v462": {
+      "line": "895",
+      "statement": "x = one.divide(x)"
+    }
+  },
+  {
+    "v463": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v464": {
+      "line": "898",
+      "statement": "if (x.greaterThan(ty))"
+    }
+  },
+  {
+    "v465": {
+      "line": "899",
+      "statement": "Dfp sty[] = new Dfp[2"
+    }
+  },
+  {
+    "v466": {
+      "line": "900",
+      "statement": "sub = true"
+    }
+  },
+  {
+    "v467": {
+      "line": "902",
+      "statement": "sty[0] = sqr2Split[0].subtract(one)"
+    }
+  },
+  {
+    "v468": {
+      "line": "903",
+      "statement": "sty[1] = sqr2Split[1"
+    }
+  },
+  {
+    "v469": {
+      "line": "905",
+      "statement": "Dfp[] xs = split(x)"
+    }
+  },
+  {
+    "v470": {
+      "line": "907",
+      "statement": "Dfp[] ds = splitMult(xs, sty)"
+    }
+  },
+  {
+    "v471": {
+      "line": "908",
+      "statement": "ds[0] = ds[0].add(one)"
+    }
+  },
+  {
+    "v472": {
+      "line": "910",
+      "statement": "xs[0] = xs[0].subtract(sty[0])"
+    }
+  },
+  {
+    "v473": {
+      "line": "911",
+      "statement": "xs[1] = xs[1].subtract(sty[1])"
+    }
+  },
+  {
+    "v474": {
+      "line": "913",
+      "statement": "xs = splitDiv(xs, ds)"
+    }
+  },
+  {
+    "v475": {
+      "line": "914",
+      "statement": "x = xs[0].add(xs[1])"
+    }
+  },
+  {
+    "v476": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v477": {
+      "line": "919",
+      "statement": "Dfp y = atanInternal(x)"
+    }
+  },
+  {
+    "v478": {
+      "line": "921",
+      "statement": "if (sub)"
+    }
+  },
+  {
+    "v479": {
+      "line": "922",
+      "statement": "y = y.add(piSplit[0].divide(8)).add(piSplit[1].divide(8))"
+    }
+  },
+  {
+    "v480": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v481": {
+      "line": "925",
+      "statement": "if (recp)"
+    }
+  },
+  {
+    "v482": {
+      "line": "926",
+      "statement": "y = piSplit[0].divide(2).subtract(y).add(piSplit[1].divide(2))"
+    }
+  },
+  {
+    "v483": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v484": {
+      "line": "929",
+      "statement": "if (neg)"
+    }
+  },
+  {
+    "v485": {
+      "line": "930",
+      "statement": "y = y.negate()"
+    }
+  },
+  {
+    "v486": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v487": {
+      "line": "933",
+      "statement": "return a.newInstance(y)"
+    }
+  },
+  {
+    "v488": {
+      "line": "941",
+      "statement": "Dfp asin(final Dfp a)"
+    }
+  },
+  {
+    "v489": {
+      "line": "942",
+      "statement": "return atan(a.divide(a.getOne().subtract(a.multiply(a)).sqrt()))"
+    }
+  },
+  {
+    "v490": {
+      "line": "949",
+      "statement": "Dfp acos(Dfp a)"
+    }
+  },
+  {
+    "v491": {
+      "line": "950",
+      "statement": "Dfp result"
+    }
+  },
+  {
+    "v492": {
+      "line": "951",
+      "statement": "boolean negative = false"
+    }
+  },
+  {
+    "v493": {
+      "line": "953",
+      "statement": "if (a.lessThan(a.getZero()))"
+    }
+  },
+  {
+    "v494": {
+      "line": "954",
+      "statement": "negative = true"
+    }
+  },
+  {
+    "v495": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v496": {
+      "line": "957",
+      "statement": "a = Dfp.copysign(a, a.getOne())"
+    }
+  },
+  {
+    "v497": {
+      "line": "959",
+      "statement": "result = atan(a.getOne().subtract(a.multiply(a)).sqrt().divide(a))"
+    }
+  },
+  {
+    "v498": {
+      "line": "961",
+      "statement": "if (negative)"
+    }
+  },
+  {
+    "v499": {
+      "line": "962",
+      "statement": "result = a.getField().getPi().subtract(result)"
+    }
+  },
+  {
+    "v500": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v501": {
+      "line": "965",
+      "statement": "return a.newInstance(result)"
+    }
+  }
+]

@@ -1,0 +1,334 @@
+1:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):70:x.length != y.length |==> x.length < y.length
+2:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):70:x.length != y.length |==> x.length > y.length
+3:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):70:x.length != y.length |==> true
+4:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):74:3 |==> 0
+5:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):74:3 |==> -3
+6:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):74:x.length < 3 |==> x.length != 3
+7:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):74:x.length < 3 |==> x.length <= 3
+8:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):74:x.length < 3 |==> false
+9:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):76:3 |==> 0
+10:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):76:3 |==> -3
+11:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):76:true |==> false
+12:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):80:1 |==> 0
+13:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):80:1 |==> -1
+14:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):80:x.length - 1 |==> x.length % 1
+15:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):80:x.length - 1 |==> x.length * 1
+16:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):80:x.length - 1 |==> x.length + 1
+17:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):80:x.length - 1 |==> x.length / 1
+18:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):82:MathArrays.checkOrder(x) |==> <NO-OP>
+19:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):85:new double[n] |==> null
+20:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):86:0 |==> 1
+21:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):86:0 |==> -1
+22:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):86:i < n |==> i != n
+23:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):86:i < n |==> i <= n
+24:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):86:i < n |==> false
+25:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:1 |==> 0
+26:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:1 |==> -1
+27:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:i + 1 |==> i % 1
+28:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:i + 1 |==> i * 1
+29:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:i + 1 |==> i - 1
+30:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:i + 1 |==> i / 1
+31:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:x[i + 1] - x[i] |==> x[i + 1] % x[i]
+32:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:x[i + 1] - x[i] |==> x[i + 1] * x[i]
+33:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:x[i + 1] - x[i] |==> x[i + 1] + x[i]
+34:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:x[i + 1] - x[i] |==> x[i + 1] / x[i]
+35:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):87:h[i] = x[i + 1] - x[i] |==> <NO-OP>
+36:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):90:new double[n] |==> null
+37:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):91:1 |==> 0
+38:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):91:1 |==> -1
+39:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):91:n + 1 |==> n % 1
+40:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):91:n + 1 |==> n * 1
+41:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):91:n + 1 |==> n - 1
+42:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):91:n + 1 |==> n / 1
+43:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):92:0 |==> 1
+44:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):92:0 |==> -1
+45:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):92:0.0 |==> 1.0
+46:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):92:0.0 |==> -1.0
+47:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):92:mu[0] = 0.0 |==> <NO-OP>
+48:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):93:0 |==> 1
+49:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):93:0 |==> -1
+50:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):93:0.0 |==> 1.0
+51:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):93:0.0 |==> -1.0
+52:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):93:z[0] = 0.0 |==> <NO-OP>
+53:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):94:0 |==> 1
+54:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):94:0 |==> -1
+55:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):95:1 |==> 0
+56:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):95:1 |==> -1
+57:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):95:i < n |==> i != n
+58:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):95:i < n |==> i <= n
+59:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):95:i < n |==> false
+60:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 |==> 0.0
+61:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 |==> -2.0
+62:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:1 |==> 0
+63:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:1 |==> -1
+64:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i + 1 |==> i % 1
+65:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i + 1 |==> i * 1
+66:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i + 1 |==> i - 1
+67:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i + 1 |==> i / 1
+68:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:1 |==> 0
+69:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:1 |==> -1
+70:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i % 1
+71:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i * 1
+72:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i + 1
+73:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i / 1
+74:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:x[i + 1] - x[i - 1] |==> x[i + 1] % x[i - 1]
+75:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:x[i + 1] - x[i - 1] |==> x[i + 1] * x[i - 1]
+76:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:x[i + 1] - x[i - 1] |==> x[i + 1] + x[i - 1]
+77:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:x[i + 1] - x[i - 1] |==> x[i + 1] / x[i - 1]
+78:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 * (x[i + 1] - x[i - 1]) |==> 2.0 % (x[i + 1] - x[i - 1])
+79:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 * (x[i + 1] - x[i - 1]) |==> 2.0 + (x[i + 1] - x[i - 1])
+80:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 * (x[i + 1] - x[i - 1]) |==> 2.0 - (x[i + 1] - x[i - 1])
+81:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 * (x[i + 1] - x[i - 1]) |==> 2.0 / (x[i + 1] - x[i - 1])
+82:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:1 |==> 0
+83:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:1 |==> -1
+84:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i % 1
+85:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i * 1
+86:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i + 1
+87:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i / 1
+88:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:1 |==> 0
+89:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:1 |==> -1
+90:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i % 1
+91:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i * 1
+92:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i + 1
+93:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:i - 1 |==> i / 1
+94:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:h[i - 1] * mu[i - 1] |==> h[i - 1] % mu[i - 1]
+95:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:h[i - 1] * mu[i - 1] |==> h[i - 1] + mu[i - 1]
+96:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:h[i - 1] * mu[i - 1] |==> h[i - 1] - mu[i - 1]
+97:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:h[i - 1] * mu[i - 1] |==> h[i - 1] / mu[i - 1]
+98:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 * (x[i + 1] - x[i - 1]) - h[i - 1] * mu[i - 1] |==> 2.0 * (x[i + 1] - x[i - 1]) % (h[i - 1] * mu[i - 1])
+99:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 * (x[i + 1] - x[i - 1]) - h[i - 1] * mu[i - 1] |==> 2.0 * (x[i + 1] - x[i - 1]) * (h[i - 1] * mu[i - 1])
+100:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 * (x[i + 1] - x[i - 1]) - h[i - 1] * mu[i - 1] |==> 2.0 * (x[i + 1] - x[i - 1]) + h[i - 1] * mu[i - 1]
+101:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:2.0 * (x[i + 1] - x[i - 1]) - h[i - 1] * mu[i - 1] |==> 2.0 * (x[i + 1] - x[i - 1]) / (h[i - 1] * mu[i - 1])
+102:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):96:g = 2.0 * (x[i + 1] - x[i - 1]) - h[i - 1] * mu[i - 1] |==> <NO-OP>
+103:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):97:h[i] / g |==> h[i] % g
+104:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):97:h[i] / g |==> h[i] * g
+105:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):97:h[i] / g |==> h[i] + g
+106:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):97:h[i] / g |==> h[i] - g
+107:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):97:mu[i] = h[i] / g |==> <NO-OP>
+108:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 |==> 0.0
+109:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 |==> -3.0
+110:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> 0
+111:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> -1
+112:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i + 1 |==> i % 1
+113:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i + 1 |==> i * 1
+114:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i + 1 |==> i - 1
+115:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i + 1 |==> i / 1
+116:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> 0
+117:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> -1
+118:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i % 1
+119:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i * 1
+120:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i + 1
+121:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i / 1
+122:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] |==> y[i + 1] % h[i - 1]
+123:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] |==> y[i + 1] + h[i - 1]
+124:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] |==> y[i + 1] - h[i - 1]
+125:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] |==> y[i + 1] / h[i - 1]
+126:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> 0
+127:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> -1
+128:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i + 1 |==> i % 1
+129:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i + 1 |==> i * 1
+130:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i + 1 |==> i - 1
+131:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i + 1 |==> i / 1
+132:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> 0
+133:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> -1
+134:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i % 1
+135:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i * 1
+136:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i + 1
+137:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i / 1
+138:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:x[i + 1] - x[i - 1] |==> x[i + 1] % x[i - 1]
+139:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:x[i + 1] - x[i - 1] |==> x[i + 1] * x[i - 1]
+140:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:x[i + 1] - x[i - 1] |==> x[i + 1] + x[i - 1]
+141:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:x[i + 1] - x[i - 1] |==> x[i + 1] / x[i - 1]
+142:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i] * (x[i + 1] - x[i - 1]) |==> y[i] % (x[i + 1] - x[i - 1])
+143:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i] * (x[i + 1] - x[i - 1]) |==> y[i] + (x[i + 1] - x[i - 1])
+144:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i] * (x[i + 1] - x[i - 1]) |==> y[i] - (x[i + 1] - x[i - 1])
+145:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i] * (x[i + 1] - x[i - 1]) |==> y[i] / (x[i + 1] - x[i - 1])
+146:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) |==> y[i + 1] * h[i - 1] % (y[i] * (x[i + 1] - x[i - 1]))
+147:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) |==> y[i + 1] * h[i - 1] * (y[i] * (x[i + 1] - x[i - 1]))
+148:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) |==> y[i + 1] * h[i - 1] + y[i] * (x[i + 1] - x[i - 1])
+149:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) |==> y[i + 1] * h[i - 1] / (y[i] * (x[i + 1] - x[i - 1]))
+150:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> 0
+151:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:1 |==> -1
+152:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i % 1
+153:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i * 1
+154:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i + 1
+155:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:i - 1 |==> i / 1
+156:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i - 1] * h[i] |==> y[i - 1] % h[i]
+157:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i - 1] * h[i] |==> y[i - 1] + h[i]
+158:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i - 1] * h[i] |==> y[i - 1] - h[i]
+159:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i - 1] * h[i] |==> y[i - 1] / h[i]
+160:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i] |==> (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1])) % (y[i - 1] * h[i])
+161:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i] |==> (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1])) * (y[i - 1] * h[i])
+162:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i] |==> y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) - y[i - 1] * h[i]
+163:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i] |==> (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1])) / (y[i - 1] * h[i])
+164:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) |==> 3.0 % (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i])
+165:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) |==> 3.0 + (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i])
+166:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) |==> 3.0 - (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i])
+167:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) |==> 3.0 / (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i])
+168:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:1 |==> 0
+169:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:1 |==> -1
+170:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i % 1
+171:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i * 1
+172:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i + 1
+173:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i / 1
+174:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:h[i - 1] * h[i] |==> h[i - 1] % h[i]
+175:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:h[i - 1] * h[i] |==> h[i - 1] + h[i]
+176:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:h[i - 1] * h[i] |==> h[i - 1] - h[i]
+177:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:h[i - 1] * h[i] |==> h[i - 1] / h[i]
+178:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) |==> 3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) % (h[i - 1] * h[i])
+179:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) |==> 3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) * (h[i - 1] * h[i])
+180:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) |==> 3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) + (h[i - 1] * h[i])
+181:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) |==> 3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) - (h[i - 1] * h[i])
+182:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:1 |==> 0
+183:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:1 |==> -1
+184:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i % 1
+185:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i * 1
+186:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i + 1
+187:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i / 1
+188:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:1 |==> 0
+189:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:1 |==> -1
+190:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i % 1
+191:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i * 1
+192:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i + 1
+193:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:i - 1 |==> i / 1
+194:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:h[i - 1] * z[i - 1] |==> h[i - 1] % z[i - 1]
+195:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:h[i - 1] * z[i - 1] |==> h[i - 1] + z[i - 1]
+196:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:h[i - 1] * z[i - 1] |==> h[i - 1] - z[i - 1]
+197:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):99:h[i - 1] * z[i - 1] |==> h[i - 1] / z[i - 1]
+198:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1] |==> 3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) % (h[i - 1] * z[i - 1])
+199:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1] |==> 3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) * (h[i - 1] * z[i - 1])
+200:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1] |==> 3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) + h[i - 1] * z[i - 1]
+201:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1] |==> 3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) / (h[i - 1] * z[i - 1])
+202:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:(3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1]) / g |==> (3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1]) % g
+203:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:(3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1]) / g |==> (3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1]) * g
+204:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:(3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1]) / g |==> (3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1]) + g
+205:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:(3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1]) / g |==> (3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1]) - g
+206:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):98:z[i] = (3.0 * (y[i + 1] * h[i - 1] - y[i] * (x[i + 1] - x[i - 1]) + y[i - 1] * h[i]) / (h[i - 1] * h[i]) - h[i - 1] * z[i - 1]) / g |==> <NO-OP>
+207:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):103:new double[n] |==> null
+208:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):104:1 |==> 0
+209:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):104:1 |==> -1
+210:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):104:n + 1 |==> n % 1
+211:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):104:n + 1 |==> n * 1
+212:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):104:n + 1 |==> n - 1
+213:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):104:n + 1 |==> n / 1
+214:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):105:new double[n] |==> null
+215:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):107:0.0 |==> 1.0
+216:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):107:0.0 |==> -1.0
+217:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):107:z[n] = 0.0 |==> <NO-OP>
+218:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):108:0.0 |==> 1.0
+219:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):108:0.0 |==> -1.0
+220:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):108:c[n] = 0.0 |==> <NO-OP>
+221:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:1 |==> 0
+222:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:1 |==> -1
+223:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:n - 1 |==> n % 1
+224:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:n - 1 |==> n * 1
+225:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:n - 1 |==> n + 1
+226:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:n - 1 |==> n / 1
+227:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:0 |==> 1
+228:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:0 |==> -1
+229:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:j >= 0 |==> j == 0
+230:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:j >= 0 |==> j > 0
+231:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):110:j >= 0 |==> true
+232:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:1 |==> 0
+233:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:1 |==> -1
+234:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:j + 1 |==> j % 1
+235:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:j + 1 |==> j * 1
+236:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:j + 1 |==> j - 1
+237:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:j + 1 |==> j / 1
+238:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:mu[j] * c[j + 1] |==> mu[j] % c[j + 1]
+239:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:mu[j] * c[j + 1] |==> mu[j] + c[j + 1]
+240:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:mu[j] * c[j + 1] |==> mu[j] - c[j + 1]
+241:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:mu[j] * c[j + 1] |==> mu[j] / c[j + 1]
+242:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:z[j] - mu[j] * c[j + 1] |==> z[j] % (mu[j] * c[j + 1])
+243:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:z[j] - mu[j] * c[j + 1] |==> z[j] * (mu[j] * c[j + 1])
+244:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:z[j] - mu[j] * c[j + 1] |==> z[j] + mu[j] * c[j + 1]
+245:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:z[j] - mu[j] * c[j + 1] |==> z[j] / (mu[j] * c[j + 1])
+246:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):111:c[j] = z[j] - mu[j] * c[j + 1] |==> <NO-OP>
+247:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:1 |==> 0
+248:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:1 |==> -1
+249:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:j + 1 |==> j % 1
+250:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:j + 1 |==> j * 1
+251:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:j + 1 |==> j - 1
+252:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:j + 1 |==> j / 1
+253:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:y[j + 1] - y[j] |==> y[j + 1] % y[j]
+254:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:y[j + 1] - y[j] |==> y[j + 1] * y[j]
+255:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:y[j + 1] - y[j] |==> y[j + 1] + y[j]
+256:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:y[j + 1] - y[j] |==> y[j + 1] / y[j]
+257:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:(y[j + 1] - y[j]) / h[j] |==> (y[j + 1] - y[j]) % h[j]
+258:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:(y[j + 1] - y[j]) / h[j] |==> (y[j + 1] - y[j]) * h[j]
+259:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:(y[j + 1] - y[j]) / h[j] |==> (y[j + 1] - y[j]) + h[j]
+260:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:(y[j + 1] - y[j]) / h[j] |==> (y[j + 1] - y[j]) - h[j]
+261:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:1 |==> 0
+262:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:1 |==> -1
+263:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:j + 1 |==> j % 1
+264:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:j + 1 |==> j * 1
+265:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:j + 1 |==> j - 1
+266:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:j + 1 |==> j / 1
+267:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:2.0 |==> 0.0
+268:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:2.0 |==> -2.0
+269:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:2.0 * c[j] |==> 2.0 % c[j]
+270:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:2.0 * c[j] |==> 2.0 + c[j]
+271:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:2.0 * c[j] |==> 2.0 - c[j]
+272:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:2.0 * c[j] |==> 2.0 / c[j]
+273:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:c[j + 1] + 2.0 * c[j] |==> c[j + 1] % (2.0 * c[j])
+274:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:c[j + 1] + 2.0 * c[j] |==> c[j + 1] * (2.0 * c[j])
+275:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:c[j + 1] + 2.0 * c[j] |==> c[j + 1] - 2.0 * c[j]
+276:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:c[j + 1] + 2.0 * c[j] |==> c[j + 1] / (2.0 * c[j])
+277:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:h[j] * (c[j + 1] + 2.0 * c[j]) |==> h[j] % (c[j + 1] + 2.0 * c[j])
+278:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:h[j] * (c[j + 1] + 2.0 * c[j]) |==> h[j] + (c[j + 1] + 2.0 * c[j])
+279:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:h[j] * (c[j + 1] + 2.0 * c[j]) |==> h[j] - (c[j + 1] + 2.0 * c[j])
+280:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:h[j] * (c[j + 1] + 2.0 * c[j]) |==> h[j] / (c[j + 1] + 2.0 * c[j])
+281:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:3.0 |==> 0.0
+282:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:3.0 |==> -3.0
+283:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0 |==> h[j] * (c[j + 1] + 2.0 * c[j]) % 3.0
+284:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0 |==> h[j] * (c[j + 1] + 2.0 * c[j]) * 3.0
+285:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0 |==> h[j] * (c[j + 1] + 2.0 * c[j]) + 3.0
+286:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0 |==> h[j] * (c[j + 1] + 2.0 * c[j]) - 3.0
+287:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:(y[j + 1] - y[j]) / h[j] - h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0 |==> (y[j + 1] - y[j]) / h[j] % (h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0)
+288:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:(y[j + 1] - y[j]) / h[j] - h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0 |==> (y[j + 1] - y[j]) / h[j] * (h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0)
+289:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:(y[j + 1] - y[j]) / h[j] - h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0 |==> (y[j + 1] - y[j]) / h[j] + h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0
+290:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:(y[j + 1] - y[j]) / h[j] - h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0 |==> (y[j + 1] - y[j]) / h[j] / (h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0)
+291:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):112:b[j] = (y[j + 1] - y[j]) / h[j] - h[j] * (c[j + 1] + 2.0 * c[j]) / 3.0 |==> <NO-OP>
+292:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:1 |==> 0
+293:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:1 |==> -1
+294:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:j + 1 |==> j % 1
+295:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:j + 1 |==> j * 1
+296:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:j + 1 |==> j - 1
+297:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:j + 1 |==> j / 1
+298:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:c[j + 1] - c[j] |==> c[j + 1] % c[j]
+299:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:c[j + 1] - c[j] |==> c[j + 1] * c[j]
+300:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:c[j + 1] - c[j] |==> c[j + 1] + c[j]
+301:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:c[j + 1] - c[j] |==> c[j + 1] / c[j]
+302:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:3.0 |==> 0.0
+303:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:3.0 |==> -3.0
+304:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:3.0 * h[j] |==> 3.0 % h[j]
+305:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:3.0 * h[j] |==> 3.0 + h[j]
+306:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:3.0 * h[j] |==> 3.0 - h[j]
+307:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:3.0 * h[j] |==> 3.0 / h[j]
+308:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:(c[j + 1] - c[j]) / (3.0 * h[j]) |==> (c[j + 1] - c[j]) % (3.0 * h[j])
+309:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:(c[j + 1] - c[j]) / (3.0 * h[j]) |==> (c[j + 1] - c[j]) * (3.0 * h[j])
+310:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:(c[j + 1] - c[j]) / (3.0 * h[j]) |==> (c[j + 1] - c[j]) + (3.0 * h[j])
+311:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:(c[j + 1] - c[j]) / (3.0 * h[j]) |==> (c[j + 1] - c[j]) - (3.0 * h[j])
+312:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):113:d[j] = (c[j + 1] - c[j]) / (3.0 * h[j]) |==> <NO-OP>
+313:EVR:<NEW_ARRAY(org.apache.commons.math3.analysis.polynomials.PolynomialFunction[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):116:new PolynomialFunction[n] |==> null
+314:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):117:4 |==> 0
+315:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):117:4 |==> -4
+316:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):118:0 |==> 1
+317:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):118:0 |==> -1
+318:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):118:i < n |==> i != n
+319:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):118:i < n |==> i <= n
+320:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):118:i < n |==> false
+321:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):119:0 |==> 1
+322:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):119:0 |==> -1
+323:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):119:coefficients[0] = y[i] |==> <NO-OP>
+324:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):120:1 |==> 0
+325:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):120:1 |==> -1
+326:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):120:coefficients[1] = b[i] |==> <NO-OP>
+327:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):121:2 |==> 0
+328:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):121:2 |==> -2
+329:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):121:coefficients[2] = c[i] |==> <NO-OP>
+330:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):122:3 |==> 0
+331:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):122:3 |==> -3
+332:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):122:coefficients[3] = d[i] |==> <NO-OP>
+333:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):123:polynomials[i] = new PolynomialFunction(coefficients) |==> <NO-OP>
+334:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.SplineInterpolator@interpolate(double[],double[]):126:new PolynomialSplineFunction(x, polynomials) |==> null

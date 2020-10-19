@@ -1,0 +1,21 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "265"
+    ],
+    "sourceClass": "CommandLine"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR35"
+    ],
+    "affectedTest": [
+      "testGetParsedOptionValue",
+      "testGetParsedOptionValueWithChar"
+    ],
+    "testReran": [
+      "testGetParsedOptionValueWithChar",
+      "testGetParsedOptionValue"
+    ]
+  }
+}

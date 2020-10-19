@@ -1,0 +1,266 @@
+[
+  {
+    "v1": {
+      "line": "82",
+      "statement": "PascalDistribution (int r, double p)"
+    }
+  },
+  {
+    "v2": {
+      "line": "84",
+      "statement": "this(new Well19937c(), r, p)"
+    }
+  },
+  {
+    "v3": {
+      "line": "99",
+      "statement": "PascalDistribution (RandomGenerator rng, int r, double p)"
+    }
+  },
+  {
+    "v4": {
+      "line": "103",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v5": {
+      "line": "105",
+      "statement": "if (r <= 0)"
+    }
+  },
+  {
+    "v6": {
+      "line": "106",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SUCCESSES,  r)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "109",
+      "statement": "if (p < 0 || p > 1)"
+    }
+  },
+  {
+    "v9": {
+      "line": "110",
+      "statement": "throw new OutOfRangeException(p, 0, 1)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "113",
+      "statement": "numberOfSuccesses = r"
+    }
+  },
+  {
+    "v12": {
+      "line": "114",
+      "statement": "probabilityOfSuccess = p"
+    }
+  },
+  {
+    "v13": {
+      "line": "122",
+      "statement": "int getNumberOfSuccesses()"
+    }
+  },
+  {
+    "v14": {
+      "line": "123",
+      "statement": "return numberOfSuccesses"
+    }
+  },
+  {
+    "v15": {
+      "line": "131",
+      "statement": "double getProbabilityOfSuccess()"
+    }
+  },
+  {
+    "v16": {
+      "line": "132",
+      "statement": "return probabilityOfSuccess"
+    }
+  },
+  {
+    "v17": {
+      "line": "136",
+      "statement": "double probability(int x)"
+    }
+  },
+  {
+    "v18": {
+      "line": "137",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v19": {
+      "line": "138",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v20": {
+      "line": "139",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "141",
+      "statement": "ret = CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) * FastMath.pow(1.0 - probabilityOfSuccess, x)"
+    }
+  },
+  {
+    "v23": {
+      "line": "146",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v24": {
+      "line": "150",
+      "statement": "double cumulativeProbability(int x)"
+    }
+  },
+  {
+    "v25": {
+      "line": "151",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v26": {
+      "line": "152",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v27": {
+      "line": "153",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "155",
+      "statement": "ret = Beta.regularizedBeta(probabilityOfSuccess, numberOfSuccesses, x + 1.0)"
+    }
+  },
+  {
+    "v30": {
+      "line": "158",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v31": {
+      "line": "167",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v32": {
+      "line": "168",
+      "statement": "final double p = getProbabilityOfSuccess()"
+    }
+  },
+  {
+    "v33": {
+      "line": "169",
+      "statement": "final double r = getNumberOfSuccesses()"
+    }
+  },
+  {
+    "v34": {
+      "line": "170",
+      "statement": "return (r * (1 - p)) / p"
+    }
+  },
+  {
+    "v35": {
+      "line": "179",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v36": {
+      "line": "180",
+      "statement": "final double p = getProbabilityOfSuccess()"
+    }
+  },
+  {
+    "v37": {
+      "line": "181",
+      "statement": "final double r = getNumberOfSuccesses()"
+    }
+  },
+  {
+    "v38": {
+      "line": "182",
+      "statement": "return r * (1 - p) / (p * p)"
+    }
+  },
+  {
+    "v39": {
+      "line": "192",
+      "statement": "int getSupportLowerBound()"
+    }
+  },
+  {
+    "v40": {
+      "line": "193",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v41": {
+      "line": "205",
+      "statement": "int getSupportUpperBound()"
+    }
+  },
+  {
+    "v42": {
+      "line": "206",
+      "statement": "return Integer.MAX_VALUE"
+    }
+  },
+  {
+    "v43": {
+      "line": "216",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v44": {
+      "line": "217",
+      "statement": "return true"
+    }
+  }
+]

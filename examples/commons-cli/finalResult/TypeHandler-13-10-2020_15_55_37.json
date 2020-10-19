@@ -1,0 +1,106 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "84",
+      "96",
+      "90",
+      "94",
+      "86",
+      "66",
+      "98",
+      "100",
+      "82",
+      "92",
+      "68",
+      "104",
+      "88"
+    ],
+    "sourceClass": "TypeHandler"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR9",
+      "TR5",
+      "TR2",
+      "TR6",
+      "TR7",
+      "TR4",
+      "TR10",
+      "TR8"
+    ],
+    "deletedTest": [
+      "testCreateValueDate",
+      "testCreateValueExistingFile",
+      "testCreateValueFile",
+      "testCreateValueFiles",
+      "testCreateValueInteger_failure",
+      "testCreateValueString",
+      "testCreateValueURL"
+    ],
+    "deletedRequirementYesTest": [
+      "TR17",
+      "TR14",
+      "TR16",
+      "TR11",
+      "TR15",
+      "TR18",
+      "TR13",
+      "TR3",
+      "TR20",
+      "TR12",
+      "TR19"
+    ],
+    "affectedTest": [
+      "testCreateValueClass",
+      "testCreateValueClass_notFound",
+      "testCreateValueDate",
+      "testCreateValueExistingFile",
+      "testCreateValueExistingFile_nonExistingFile",
+      "testCreateValueFile",
+      "testCreateValueFiles",
+      "testCreateValueInteger_failure",
+      "testCreateValueString",
+      "testCreateValueURL",
+      "testCreateValueURL_malformed",
+      "testCreateValueNumber_Double",
+      "testCreateValueNumber_Long",
+      "testCreateValueNumber_noNumber",
+      "testCreateValueObject_InstantiableClass",
+      "testCreateValueObject_notInstantiableClass",
+      "testCreateValueObject_unknownClass"
+    ],
+    "testReran": [
+      "testCreateValueObject_notInstantiableClass",
+      "testCreateValueInteger_failure",
+      "testCreateValueClass_notFound",
+      "testCreateValueURL_malformed",
+      "testCreateValueNumber_noNumber",
+      "testCreateValueFile",
+      "testCreateValueExistingFile",
+      "testCreateValueClass",
+      "testCreateValueURL",
+      "testCreateValueObject_InstantiableClass",
+      "testCreateValueNumber_Double",
+      "testCreateValueString",
+      "testCreateValueObject_unknownClass",
+      "testCreateValueDate",
+      "testCreateValueExistingFile_nonExistingFile",
+      "testCreateValueFiles",
+      "testCreateValueNumber_Long"
+    ],
+    "unsatisfiedRequirement": [
+      "TR3",
+      "TR2",
+      "TR4"
+    ],
+    "newTestRequirement": [
+      "TR11",
+      "TR19",
+      "TR20",
+      "TR9",
+      "TR15",
+      "TR17",
+      "TR13"
+    ]
+  }
+}

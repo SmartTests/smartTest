@@ -1,0 +1,1604 @@
+[
+  {
+    "v1": {
+      "line": "77",
+      "statement": "DefaultParser ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "78",
+      "statement": "this.allowPartialMatching = true"
+    }
+  },
+  {
+    "v3": {
+      "line": "100",
+      "statement": "DefaultParser (final boolean allowPartialMatching)"
+    }
+  },
+  {
+    "v4": {
+      "line": "101",
+      "statement": "this.allowPartialMatching = allowPartialMatching"
+    }
+  },
+  {
+    "v5": {
+      "line": "104",
+      "statement": "CommandLine parse(final Options options, final String[] arguments)"
+    }
+  },
+  {
+    "v6": {
+      "line": "106",
+      "statement": "return parse(options, arguments, null)"
+    }
+  },
+  {
+    "v7": {
+      "line": "120",
+      "statement": "CommandLine parse(final Options options, final String[] arguments, final Properties properties)"
+    }
+  },
+  {
+    "v8": {
+      "line": "122",
+      "statement": "return parse(options, arguments, properties, false)"
+    }
+  },
+  {
+    "v9": {
+      "line": "125",
+      "statement": "CommandLine parse(final Options options, final String[] arguments, final boolean stopAtNonOption)"
+    }
+  },
+  {
+    "v10": {
+      "line": "127",
+      "statement": "return parse(options, arguments, null, stopAtNonOption)"
+    }
+  },
+  {
+    "v11": {
+      "line": "145",
+      "statement": "CommandLine parse(final Options options, final String[] arguments, final Properties properties, final boolean stopAtNonOption)"
+    }
+  },
+  {
+    "v12": {
+      "line": "148",
+      "statement": "this.options = options"
+    }
+  },
+  {
+    "v13": {
+      "line": "149",
+      "statement": "this.stopAtNonOption = stopAtNonOption"
+    }
+  },
+  {
+    "v14": {
+      "line": "150",
+      "statement": "skipParsing = false"
+    }
+  },
+  {
+    "v15": {
+      "line": "151",
+      "statement": "currentOption = null"
+    }
+  },
+  {
+    "v16": {
+      "line": "152",
+      "statement": "expectedOpts = new ArrayList(options.getRequiredOptions())"
+    }
+  },
+  {
+    "v17": {
+      "line": "155",
+      "statement": "for (final OptionGroup group"
+    }
+  },
+  {
+    "v18": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v19": {
+      "line": "157",
+      "statement": "group.setSelected(null)"
+    }
+  },
+  {
+    "v20": {
+      "line": "160",
+      "statement": "cmd = new CommandLine()"
+    }
+  },
+  {
+    "v21": {
+      "line": "162",
+      "statement": "if (arguments != null)"
+    }
+  },
+  {
+    "v22": {
+      "line": "164",
+      "statement": "for (final String argument"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v24": {
+      "line": "166",
+      "statement": "handleToken(argument)"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "171",
+      "statement": "checkRequiredArgs()"
+    }
+  },
+  {
+    "v27": {
+      "line": "174",
+      "statement": "handleProperties(properties)"
+    }
+  },
+  {
+    "v28": {
+      "line": "176",
+      "statement": "checkRequiredOptions()"
+    }
+  },
+  {
+    "v29": {
+      "line": "178",
+      "statement": "return cmd"
+    }
+  },
+  {
+    "v30": {
+      "line": "186",
+      "statement": "void handleProperties(final Properties properties)"
+    }
+  },
+  {
+    "v31": {
+      "line": "188",
+      "statement": "if (properties == null)"
+    }
+  },
+  {
+    "v32": {
+      "line": "190",
+      "statement": "return"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v34": {
+      "line": "193",
+      "statement": "for (  final Enumeration<?> e = properties.propertyNames( ;    ; ) ; e.hasMoreElements(  final Enumeration<?> e = properties.propertyNames( ;    ; ) ;  ;    ; ) ;    ; )"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v38": {
+      "line": "195",
+      "statement": "final String option = e.nextElement().toString()"
+    }
+  },
+  {
+    "v39": {
+      "line": "197",
+      "statement": "final Option opt = options.getOption(option)"
+    }
+  },
+  {
+    "v40": {
+      "line": "198",
+      "statement": "if (opt == null)"
+    }
+  },
+  {
+    "v41": {
+      "line": "200",
+      "statement": "throw new UnrecognizedOptionException('Default option wasn't defined', option)"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": "204",
+      "statement": "final OptionGroup group = options.getOptionGroup(opt)"
+    }
+  },
+  {
+    "v44": {
+      "line": "205",
+      "statement": "final boolean selected = group != null && group.getSelected() != null"
+    }
+  },
+  {
+    "v45": {
+      "line": "207",
+      "statement": "if (!cmd.hasOption(option) && !selected)"
+    }
+  },
+  {
+    "v46": {
+      "line": "210",
+      "statement": "final String value = properties.getProperty(option)"
+    }
+  },
+  {
+    "v47": {
+      "line": "212",
+      "statement": "if (opt.hasArg())"
+    }
+  },
+  {
+    "v48": {
+      "line": "214",
+      "statement": "if (true)"
+    }
+  },
+  {
+    "v49": {
+      "line": "216",
+      "statement": "opt.addValueForProcessing(value)"
+    }
+  },
+  {
+    "v50": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v51": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v52": {
+      "line": "219",
+      "statement": "if (!('yes'.equalsIgnoreCase(value) || 'true'.equalsIgnoreCase(value) || '1'.equalsIgnoreCase(value)))"
+    }
+  },
+  {
+    "v53": {
+      "line": "224",
+      "statement": "continue"
+    }
+  },
+  {
+    "v54": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v55": {
+      "line": "227",
+      "statement": "handleOption(opt)"
+    }
+  },
+  {
+    "v56": {
+      "line": "228",
+      "statement": "currentOption = null"
+    }
+  },
+  {
+    "v57": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v58": {
+      "line": "240",
+      "statement": "void checkRequiredOptions()"
+    }
+  },
+  {
+    "v59": {
+      "line": "243",
+      "statement": "if (!expectedOpts.isEmpty())"
+    }
+  },
+  {
+    "v60": {
+      "line": "245",
+      "statement": "throw new MissingOptionException(expectedOpts)"
+    }
+  },
+  {
+    "v61": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v62": {
+      "line": "253",
+      "statement": "void checkRequiredArgs()"
+    }
+  },
+  {
+    "v63": {
+      "line": "255",
+      "statement": "if (currentOption != null && currentOption.requiresArg())"
+    }
+  },
+  {
+    "v64": {
+      "line": "257",
+      "statement": "throw new MissingArgumentException(currentOption)"
+    }
+  },
+  {
+    "v65": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v66": {
+      "line": "267",
+      "statement": "void handleToken(final String token)"
+    }
+  },
+  {
+    "v67": {
+      "line": "269",
+      "statement": "currentToken = token"
+    }
+  },
+  {
+    "v68": {
+      "line": "271",
+      "statement": "if (skipParsing)"
+    }
+  },
+  {
+    "v69": {
+      "line": "273",
+      "statement": "cmd.addArg(token)"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v71": {
+      "line": "275",
+      "statement": "if ('--'.equals(token))"
+    }
+  },
+  {
+    "v72": {
+      "line": "277",
+      "statement": "skipParsing = true"
+    }
+  },
+  {
+    "v73": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v74": {
+      "line": "279",
+      "statement": "if (currentOption != null && currentOption.acceptsArg() && isArgument(token))"
+    }
+  },
+  {
+    "v75": {
+      "line": "281",
+      "statement": "currentOption.addValueForProcessing(Util.stripLeadingAndTrailingQuotes(token))"
+    }
+  },
+  {
+    "v76": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v77": {
+      "line": "283",
+      "statement": "if (token.startsWith('--'))"
+    }
+  },
+  {
+    "v78": {
+      "line": "285",
+      "statement": "handleLongOption(token)"
+    }
+  },
+  {
+    "v79": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v80": {
+      "line": "287",
+      "statement": "if (token.startsWith('-') && !'-'.equals(token))"
+    }
+  },
+  {
+    "v81": {
+      "line": "289",
+      "statement": "handleShortAndLongOption(token)"
+    }
+  },
+  {
+    "v82": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v83": {
+      "line": "293",
+      "statement": "handleUnknownToken(token)"
+    }
+  },
+  {
+    "v84": {
+      "line": "296",
+      "statement": "if (currentOption != null && !currentOption.acceptsArg())"
+    }
+  },
+  {
+    "v85": {
+      "line": "298",
+      "statement": "currentOption = null"
+    }
+  },
+  {
+    "v86": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v87": {
+      "line": "307",
+      "statement": "boolean isArgument(final String token)"
+    }
+  },
+  {
+    "v88": {
+      "line": "309",
+      "statement": "return !isOption(token) || isNegativeNumber(token)"
+    }
+  },
+  {
+    "v89": {
+      "line": "317",
+      "statement": "boolean isNegativeNumber(final String token)"
+    }
+  },
+  {
+    "v90": {
+      "line": "319",
+      "statement": "try"
+    }
+  },
+  {
+    "v91": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v92": {
+      "line": "321",
+      "statement": "Double.parseDouble(token)"
+    }
+  },
+  {
+    "v93": {
+      "line": "322",
+      "statement": "return true"
+    }
+  },
+  {
+    "v94": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v95": {
+      "line": "324",
+      "statement": "catch (NumberFormatException e)"
+    }
+  },
+  {
+    "v96": {
+      "line": "326",
+      "statement": "return false"
+    }
+  },
+  {
+    "v97": {
+      "line": "335",
+      "statement": "boolean isOption(final String token)"
+    }
+  },
+  {
+    "v98": {
+      "line": "337",
+      "statement": "return isLongOption(token) || isShortOption(token)"
+    }
+  },
+  {
+    "v99": {
+      "line": "345",
+      "statement": "boolean isShortOption(final String token)"
+    }
+  },
+  {
+    "v100": {
+      "line": "348",
+      "statement": "if (!token.startsWith('-') || token.length() == 1)"
+    }
+  },
+  {
+    "v101": {
+      "line": "350",
+      "statement": "return false"
+    }
+  },
+  {
+    "v102": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v103": {
+      "line": "354",
+      "statement": "final int pos = token.indexOf('=')"
+    }
+  },
+  {
+    "v104": {
+      "line": "355",
+      "statement": "final String optName = pos == -1 ? token.substring(1)"
+    }
+  },
+  {
+    "v105": {
+      "line": "356",
+      "statement": "if (options.hasShortOption(optName))"
+    }
+  },
+  {
+    "v106": {
+      "line": "358",
+      "statement": "return true"
+    }
+  },
+  {
+    "v107": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v108": {
+      "line": "361",
+      "statement": "return optName.length() > 0 && options.hasShortOption(String.valueOf(optName.charAt(0)))"
+    }
+  },
+  {
+    "v109": {
+      "line": "369",
+      "statement": "boolean isLongOption(final String token)"
+    }
+  },
+  {
+    "v110": {
+      "line": "371",
+      "statement": "if (!token.startsWith('-') || token.length() == 1)"
+    }
+  },
+  {
+    "v111": {
+      "line": "373",
+      "statement": "return false"
+    }
+  },
+  {
+    "v112": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v113": {
+      "line": "376",
+      "statement": "final int pos = token.indexOf('=')"
+    }
+  },
+  {
+    "v114": {
+      "line": "377",
+      "statement": "final String t = pos == -1 ? token"
+    }
+  },
+  {
+    "v115": {
+      "line": "379",
+      "statement": "if (!getMatchingLongOptions(t).isEmpty())"
+    }
+  },
+  {
+    "v116": {
+      "line": "382",
+      "statement": "return true"
+    }
+  },
+  {
+    "v117": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v118": {
+      "line": "384",
+      "statement": "if (getLongPrefix(token) != null && !token.startsWith('--'))"
+    }
+  },
+  {
+    "v119": {
+      "line": "387",
+      "statement": "return true"
+    }
+  },
+  {
+    "v120": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v121": {
+      "line": "390",
+      "statement": "return false"
+    }
+  },
+  {
+    "v122": {
+      "line": "402",
+      "statement": "void handleUnknownToken(final String token)"
+    }
+  },
+  {
+    "v123": {
+      "line": "404",
+      "statement": "if (token.startsWith('-') && token.length() > 1 && !stopAtNonOption)"
+    }
+  },
+  {
+    "v124": {
+      "line": "406",
+      "statement": "throw new UnrecognizedOptionException('Unrecognized option"
+    }
+  },
+  {
+    "v125": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v126": {
+      "line": "409",
+      "statement": "cmd.addArg(token)"
+    }
+  },
+  {
+    "v127": {
+      "line": "410",
+      "statement": "if (stopAtNonOption)"
+    }
+  },
+  {
+    "v128": {
+      "line": "412",
+      "statement": "skipParsing = true"
+    }
+  },
+  {
+    "v129": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v130": {
+      "line": "426",
+      "statement": "void handleLongOption(final String token)"
+    }
+  },
+  {
+    "v131": {
+      "line": "428",
+      "statement": "if (token.indexOf('=') == -1)"
+    }
+  },
+  {
+    "v132": {
+      "line": "430",
+      "statement": "handleLongOptionWithoutEqual(token)"
+    }
+  },
+  {
+    "v133": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v134": {
+      "line": "434",
+      "statement": "handleLongOptionWithEqual(token)"
+    }
+  },
+  {
+    "v135": {
+      "line": "448",
+      "statement": "void handleLongOptionWithoutEqual(final String token)"
+    }
+  },
+  {
+    "v136": {
+      "line": "450",
+      "statement": "final List<String> matchingOpts = getMatchingLongOptions(token)"
+    }
+  },
+  {
+    "v137": {
+      "line": "451",
+      "statement": "if (matchingOpts.isEmpty())"
+    }
+  },
+  {
+    "v138": {
+      "line": "453",
+      "statement": "handleUnknownToken(currentToken)"
+    }
+  },
+  {
+    "v139": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v140": {
+      "line": "455",
+      "statement": "if (matchingOpts.size() > 1 && !options.hasLongOption(token))"
+    }
+  },
+  {
+    "v141": {
+      "line": "457",
+      "statement": "throw new AmbiguousOptionException(token, matchingOpts)"
+    }
+  },
+  {
+    "v142": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v143": {
+      "line": "461",
+      "statement": "final String key = options.hasLongOption(token) ? token"
+    }
+  },
+  {
+    "v144": {
+      "line": "462",
+      "statement": "handleOption(options.getOption(key))"
+    }
+  },
+  {
+    "v145": {
+      "line": "476",
+      "statement": "void handleLongOptionWithEqual(final String token)"
+    }
+  },
+  {
+    "v146": {
+      "line": "478",
+      "statement": "final int pos = token.indexOf('=')"
+    }
+  },
+  {
+    "v147": {
+      "line": "480",
+      "statement": "final String value = token.substring(pos + 1)"
+    }
+  },
+  {
+    "v148": {
+      "line": "482",
+      "statement": "final String opt = token.substring(0, pos)"
+    }
+  },
+  {
+    "v149": {
+      "line": "484",
+      "statement": "final List<String> matchingOpts = getMatchingLongOptions(opt)"
+    }
+  },
+  {
+    "v150": {
+      "line": "485",
+      "statement": "if (matchingOpts.isEmpty())"
+    }
+  },
+  {
+    "v151": {
+      "line": "487",
+      "statement": "handleUnknownToken(currentToken)"
+    }
+  },
+  {
+    "v152": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v153": {
+      "line": "489",
+      "statement": "if (matchingOpts.size() > 1 && !options.hasLongOption(opt))"
+    }
+  },
+  {
+    "v154": {
+      "line": "491",
+      "statement": "throw new AmbiguousOptionException(opt, matchingOpts)"
+    }
+  },
+  {
+    "v155": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v156": {
+      "line": "495",
+      "statement": "final String key = options.hasLongOption(opt) ? opt"
+    }
+  },
+  {
+    "v157": {
+      "line": "496",
+      "statement": "final Option option = options.getOption(key)"
+    }
+  },
+  {
+    "v158": {
+      "line": "498",
+      "statement": "if (option.acceptsArg())"
+    }
+  },
+  {
+    "v159": {
+      "line": "500",
+      "statement": "handleOption(option)"
+    }
+  },
+  {
+    "v160": {
+      "line": "501",
+      "statement": "currentOption.addValueForProcessing(value)"
+    }
+  },
+  {
+    "v161": {
+      "line": "502",
+      "statement": "currentOption = null"
+    }
+  },
+  {
+    "v162": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v163": {
+      "line": "506",
+      "statement": "handleUnknownToken(currentToken)"
+    }
+  },
+  {
+    "v164": {
+      "line": "530",
+      "statement": "void handleShortAndLongOption(final String token)"
+    }
+  },
+  {
+    "v165": {
+      "line": "532",
+      "statement": "final String t = Util.stripLeadingHyphens(token)"
+    }
+  },
+  {
+    "v166": {
+      "line": "534",
+      "statement": "final int pos = t.indexOf('=')"
+    }
+  },
+  {
+    "v167": {
+      "line": "536",
+      "statement": "if (t.length() == 1)"
+    }
+  },
+  {
+    "v168": {
+      "line": "539",
+      "statement": "if (options.hasShortOption(t))"
+    }
+  },
+  {
+    "v169": {
+      "line": "541",
+      "statement": "handleOption(options.getOption(t))"
+    }
+  },
+  {
+    "v170": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v171": {
+      "line": "545",
+      "statement": "handleUnknownToken(token)"
+    }
+  },
+  {
+    "v172": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v173": {
+      "line": "548",
+      "statement": "if (pos == -1)"
+    }
+  },
+  {
+    "v174": {
+      "line": "551",
+      "statement": "if (options.hasShortOption(t))"
+    }
+  },
+  {
+    "v175": {
+      "line": "553",
+      "statement": "handleOption(options.getOption(t))"
+    }
+  },
+  {
+    "v176": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v177": {
+      "line": "555",
+      "statement": "if (!getMatchingLongOptions(t).isEmpty())"
+    }
+  },
+  {
+    "v178": {
+      "line": "558",
+      "statement": "handleLongOptionWithoutEqual(token)"
+    }
+  },
+  {
+    "v179": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v180": {
+      "line": "563",
+      "statement": "final String opt = getLongPrefix(t)"
+    }
+  },
+  {
+    "v181": {
+      "line": "565",
+      "statement": "if (opt != null && options.getOption(opt).acceptsArg())"
+    }
+  },
+  {
+    "v182": {
+      "line": "567",
+      "statement": "handleOption(options.getOption(opt))"
+    }
+  },
+  {
+    "v183": {
+      "line": "568",
+      "statement": "currentOption.addValueForProcessing(t.substring(opt.length()))"
+    }
+  },
+  {
+    "v184": {
+      "line": "569",
+      "statement": "currentOption = null"
+    }
+  },
+  {
+    "v185": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v186": {
+      "line": "571",
+      "statement": "if (isJavaProperty(t))"
+    }
+  },
+  {
+    "v187": {
+      "line": "574",
+      "statement": "handleOption(options.getOption(t.substring(0, 1)))"
+    }
+  },
+  {
+    "v188": {
+      "line": "575",
+      "statement": "currentOption.addValueForProcessing(t.substring(1))"
+    }
+  },
+  {
+    "v189": {
+      "line": "576",
+      "statement": "currentOption = null"
+    }
+  },
+  {
+    "v190": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v191": {
+      "line": "581",
+      "statement": "handleConcatenatedOptions(token)"
+    }
+  },
+  {
+    "v192": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v193": {
+      "line": "588",
+      "statement": "final String opt = t.substring(0, pos)"
+    }
+  },
+  {
+    "v194": {
+      "line": "589",
+      "statement": "final String value = t.substring(pos + 1)"
+    }
+  },
+  {
+    "v195": {
+      "line": "591",
+      "statement": "if (opt.length() == 1)"
+    }
+  },
+  {
+    "v196": {
+      "line": "594",
+      "statement": "final Option option = options.getOption(opt)"
+    }
+  },
+  {
+    "v197": {
+      "line": "595",
+      "statement": "if (option != null && option.acceptsArg())"
+    }
+  },
+  {
+    "v198": {
+      "line": "597",
+      "statement": "handleOption(option)"
+    }
+  },
+  {
+    "v199": {
+      "line": "598",
+      "statement": "currentOption.addValueForProcessing(value)"
+    }
+  },
+  {
+    "v200": {
+      "line": "599",
+      "statement": "currentOption = null"
+    }
+  },
+  {
+    "v201": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v202": {
+      "line": "603",
+      "statement": "handleUnknownToken(token)"
+    }
+  },
+  {
+    "v203": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v204": {
+      "line": "606",
+      "statement": "if (isJavaProperty(opt))"
+    }
+  },
+  {
+    "v205": {
+      "line": "609",
+      "statement": "handleOption(options.getOption(opt.substring(0, 1)))"
+    }
+  },
+  {
+    "v206": {
+      "line": "610",
+      "statement": "currentOption.addValueForProcessing(opt.substring(1))"
+    }
+  },
+  {
+    "v207": {
+      "line": "611",
+      "statement": "currentOption.addValueForProcessing(value)"
+    }
+  },
+  {
+    "v208": {
+      "line": "612",
+      "statement": "currentOption = null"
+    }
+  },
+  {
+    "v209": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v210": {
+      "line": "617",
+      "statement": "handleLongOptionWithEqual(token)"
+    }
+  },
+  {
+    "v211": {
+      "line": "627",
+      "statement": "String getLongPrefix(final String token)"
+    }
+  },
+  {
+    "v212": {
+      "line": "629",
+      "statement": "final String t = Util.stripLeadingHyphens(token)"
+    }
+  },
+  {
+    "v213": {
+      "line": "631",
+      "statement": "int i"
+    }
+  },
+  {
+    "v214": {
+      "line": "632",
+      "statement": "String opt = null"
+    }
+  },
+  {
+    "v215": {
+      "line": "633",
+      "statement": "for (  i = t.length( ;   i--) - 2 ; i > 1 ;   i--)"
+    }
+  },
+  {
+    "v218": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v219": {
+      "line": "635",
+      "statement": "final String prefix = t.substring(0, i)"
+    }
+  },
+  {
+    "v220": {
+      "line": "636",
+      "statement": "if (options.hasLongOption(prefix))"
+    }
+  },
+  {
+    "v221": {
+      "line": "638",
+      "statement": "opt = prefix"
+    }
+  },
+  {
+    "v222": {
+      "line": "639",
+      "statement": "break"
+    }
+  },
+  {
+    "v223": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v224": {
+      "line": "643",
+      "statement": "return opt"
+    }
+  },
+  {
+    "v225": {
+      "line": "649",
+      "statement": "boolean isJavaProperty(final String token)"
+    }
+  },
+  {
+    "v226": {
+      "line": "651",
+      "statement": "final String opt = token.substring(0, 1)"
+    }
+  },
+  {
+    "v227": {
+      "line": "652",
+      "statement": "final Option option = options.getOption(opt)"
+    }
+  },
+  {
+    "v228": {
+      "line": "654",
+      "statement": "return option != null && (option.getArgs() >= 2 || option.getArgs() == Option.UNLIMITED_VALUES)"
+    }
+  },
+  {
+    "v229": {
+      "line": "657",
+      "statement": "void handleOption(Option option)"
+    }
+  },
+  {
+    "v230": {
+      "line": "660",
+      "statement": "checkRequiredArgs()"
+    }
+  },
+  {
+    "v231": {
+      "line": "662",
+      "statement": "option = (Option) option.clone()"
+    }
+  },
+  {
+    "v232": {
+      "line": "664",
+      "statement": "updateRequiredOptions(option)"
+    }
+  },
+  {
+    "v233": {
+      "line": "666",
+      "statement": "cmd.addOption(option)"
+    }
+  },
+  {
+    "v234": {
+      "line": "668",
+      "statement": "if (option.hasArg())"
+    }
+  },
+  {
+    "v235": {
+      "line": "670",
+      "statement": "currentOption = option"
+    }
+  },
+  {
+    "v236": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v237": {
+      "line": "674",
+      "statement": "currentOption = null"
+    }
+  },
+  {
+    "v238": {
+      "line": "683",
+      "statement": "void updateRequiredOptions(final Option option)"
+    }
+  },
+  {
+    "v239": {
+      "line": "685",
+      "statement": "if (option.isRequired())"
+    }
+  },
+  {
+    "v240": {
+      "line": "687",
+      "statement": "expectedOpts.remove(option.getKey())"
+    }
+  },
+  {
+    "v241": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v242": {
+      "line": "691",
+      "statement": "if (options.getOptionGroup(option) != null)"
+    }
+  },
+  {
+    "v243": {
+      "line": "693",
+      "statement": "final OptionGroup group = options.getOptionGroup(option)"
+    }
+  },
+  {
+    "v244": {
+      "line": "695",
+      "statement": "if (group.isRequired())"
+    }
+  },
+  {
+    "v245": {
+      "line": "697",
+      "statement": "expectedOpts.remove(group)"
+    }
+  },
+  {
+    "v246": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v247": {
+      "line": "700",
+      "statement": "group.setSelected(option)"
+    }
+  },
+  {
+    "v248": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v249": {
+      "line": "711",
+      "statement": "List<String> getMatchingLongOptions(final String token)"
+    }
+  },
+  {
+    "v250": {
+      "line": "713",
+      "statement": "if (allowPartialMatching)"
+    }
+  },
+  {
+    "v251": {
+      "line": "715",
+      "statement": "return options.getMatchingOptions(token)"
+    }
+  },
+  {
+    "v252": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v253": {
+      "line": "719",
+      "statement": "List<String> matches = new ArrayList<String>(1)"
+    }
+  },
+  {
+    "v254": {
+      "line": "720",
+      "statement": "if (options.hasLongOption(token))"
+    }
+  },
+  {
+    "v255": {
+      "line": "722",
+      "statement": "Option option = options.getOption(token)"
+    }
+  },
+  {
+    "v256": {
+      "line": "723",
+      "statement": "matches.add(option.getLongOpt())"
+    }
+  },
+  {
+    "v257": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v258": {
+      "line": "726",
+      "statement": "return matches"
+    }
+  },
+  {
+    "v259": {
+      "line": "757",
+      "statement": "void handleConcatenatedOptions(final String token)"
+    }
+  },
+  {
+    "v260": {
+      "line": "759",
+      "statement": "for (  int i = 1 ; i < token.length(  int i = 1 ;  ;   i++) ;   i++)"
+    }
+  },
+  {
+    "v263": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v264": {
+      "line": "761",
+      "statement": "final String ch = String.valueOf(token.charAt(i))"
+    }
+  },
+  {
+    "v265": {
+      "line": "763",
+      "statement": "if (options.hasOption(ch))"
+    }
+  },
+  {
+    "v266": {
+      "line": "765",
+      "statement": "handleOption(options.getOption(ch))"
+    }
+  },
+  {
+    "v267": {
+      "line": "767",
+      "statement": "if (currentOption != null && token.length() != i + 1)"
+    }
+  },
+  {
+    "v268": {
+      "line": "770",
+      "statement": "currentOption.addValueForProcessing(token.substring(i + 1))"
+    }
+  },
+  {
+    "v269": {
+      "line": "771",
+      "statement": "break"
+    }
+  },
+  {
+    "v270": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v271": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v272": {
+      "line": "776",
+      "statement": "handleUnknownToken(stopAtNonOption && i > 1 ? token.substring(i)"
+    }
+  },
+  {
+    "v273": {
+      "line": "777",
+      "statement": "break"
+    }
+  }
+]

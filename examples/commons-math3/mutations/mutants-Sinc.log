@@ -1,0 +1,427 @@
+1:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.function.Sinc@<init>():72:false |==> true
+2:EVR:<IDENTIFIER(boolean)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@<init>(boolean):82:normalized |==> false
+3:COR:normalized:TRUE:org.apache.commons.math3.analysis.function.Sinc@value(double):87:normalized |==> false
+4:COR:normalized:FALSE:org.apache.commons.math3.analysis.function.Sinc@value(double):87:normalized |==> true
+5:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):87:FastMath.PI * x |==> FastMath.PI % x
+6:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):87:FastMath.PI * x |==> FastMath.PI + x
+7:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):87:FastMath.PI * x |==> FastMath.PI - x
+8:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):87:FastMath.PI * x |==> FastMath.PI / x
+9:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):88:FastMath.abs(scaledX) <= SHORTCUT |==> FastMath.abs(scaledX) < SHORTCUT
+10:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):88:FastMath.abs(scaledX) <= SHORTCUT |==> FastMath.abs(scaledX) == SHORTCUT
+11:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):88:FastMath.abs(scaledX) <= SHORTCUT |==> true
+12:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):90:scaledX * scaledX |==> scaledX % scaledX
+13:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):90:scaledX * scaledX |==> scaledX + scaledX
+14:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):90:scaledX * scaledX |==> scaledX - scaledX
+15:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):90:scaledX * scaledX |==> scaledX / scaledX
+16:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(double):91:20 |==> 0
+17:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(double):91:20 |==> -20
+18:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:scaledX2 - 20 |==> scaledX2 % 20
+19:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:scaledX2 - 20 |==> scaledX2 * 20
+20:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:scaledX2 - 20 |==> scaledX2 + 20
+21:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:scaledX2 - 20 |==> scaledX2 / 20
+22:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:(scaledX2 - 20) * scaledX2 |==> (scaledX2 - 20) % scaledX2
+23:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:(scaledX2 - 20) * scaledX2 |==> (scaledX2 - 20) + scaledX2
+24:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:(scaledX2 - 20) * scaledX2 |==> (scaledX2 - 20) - scaledX2
+25:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:(scaledX2 - 20) * scaledX2 |==> (scaledX2 - 20) / scaledX2
+26:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(double):91:120 |==> 0
+27:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(double):91:120 |==> -120
+28:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:(scaledX2 - 20) * scaledX2 + 120 |==> (scaledX2 - 20) * scaledX2 % 120
+29:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:(scaledX2 - 20) * scaledX2 + 120 |==> (scaledX2 - 20) * scaledX2 * 120
+30:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:(scaledX2 - 20) * scaledX2 + 120 |==> (scaledX2 - 20) * scaledX2 - 120
+31:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:(scaledX2 - 20) * scaledX2 + 120 |==> (scaledX2 - 20) * scaledX2 / 120
+32:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(double):91:120 |==> 0
+33:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(double):91:120 |==> -120
+34:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:((scaledX2 - 20) * scaledX2 + 120) / 120 |==> ((scaledX2 - 20) * scaledX2 + 120) % 120
+35:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:((scaledX2 - 20) * scaledX2 + 120) / 120 |==> ((scaledX2 - 20) * scaledX2 + 120) * 120
+36:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:((scaledX2 - 20) * scaledX2 + 120) / 120 |==> ((scaledX2 - 20) * scaledX2 + 120) + 120
+37:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):91:((scaledX2 - 20) * scaledX2 + 120) / 120 |==> ((scaledX2 - 20) * scaledX2 + 120) - 120
+38:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):94:FastMath.sin(scaledX) / scaledX |==> FastMath.sin(scaledX) % scaledX
+39:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):94:FastMath.sin(scaledX) / scaledX |==> FastMath.sin(scaledX) * scaledX
+40:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):94:FastMath.sin(scaledX) / scaledX |==> FastMath.sin(scaledX) + scaledX
+41:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(double):94:FastMath.sin(scaledX) / scaledX |==> FastMath.sin(scaledX) - scaledX
+42:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.UnivariateFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@derivative():103:FunctionUtils.toDifferentiableUnivariateFunction(this).derivative() |==> null
+43:COR:normalized:TRUE:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):112:normalized |==> false
+44:COR:normalized:FALSE:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):112:normalized |==> true
+45:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):112:1 |==> 0
+46:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):112:1 |==> -1
+47:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):112:(normalized ? FastMath.PI : 1) * t.getValue() |==> (normalized ? FastMath.PI : 1) % t.getValue()
+48:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):112:(normalized ? FastMath.PI : 1) * t.getValue() |==> (normalized ? FastMath.PI : 1) + t.getValue()
+49:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):112:(normalized ? FastMath.PI : 1) * t.getValue() |==> (normalized ? FastMath.PI : 1) - t.getValue()
+50:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):112:(normalized ? FastMath.PI : 1) * t.getValue() |==> (normalized ? FastMath.PI : 1) / t.getValue()
+51:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):113:scaledX * scaledX |==> scaledX % scaledX
+52:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):113:scaledX * scaledX |==> scaledX + scaledX
+53:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):113:scaledX * scaledX |==> scaledX - scaledX
+54:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):113:scaledX * scaledX |==> scaledX / scaledX
+55:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):115:1 |==> 0
+56:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):115:1 |==> -1
+57:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):115:t.getOrder() + 1 |==> t.getOrder() % 1
+58:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):115:t.getOrder() + 1 |==> t.getOrder() * 1
+59:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):115:t.getOrder() + 1 |==> t.getOrder() - 1
+60:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):115:t.getOrder() + 1 |==> t.getOrder() / 1
+61:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):117:FastMath.abs(scaledX) <= SHORTCUT |==> FastMath.abs(scaledX) < SHORTCUT
+62:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):117:FastMath.abs(scaledX) <= SHORTCUT |==> FastMath.abs(scaledX) == SHORTCUT
+63:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):117:FastMath.abs(scaledX) <= SHORTCUT |==> true
+64:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):119:0 |==> 1
+65:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):119:0 |==> -1
+66:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):119:i < f.length |==> i != f.length
+67:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):119:i < f.length |==> i <= f.length
+68:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):119:i < f.length |==> false
+69:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):120:2 |==> 0
+70:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):120:2 |==> -2
+71:AOR:/(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):120:i / 2 |==> i % 2
+72:AOR:/(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):120:i / 2 |==> i * 2
+73:AOR:/(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):120:i / 2 |==> i + 2
+74:AOR:/(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):120:i / 2 |==> i - 2
+75:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):121:1 |==> 0
+76:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):121:1 |==> -1
+77:LOR:&(int,int):^(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):121:i & 1 |==> i ^ 1
+78:LOR:&(int,int):|(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):121:i & 1 |==> i | 1
+79:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):121:0 |==> 1
+80:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):121:0 |==> -1
+81:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):121:(i & 1) == 0 |==> (i & 1) <= 0
+82:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):121:(i & 1) == 0 |==> (i & 1) >= 0
+83:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):121:(i & 1) == 0 |==> false
+84:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:1 |==> 0
+85:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:1 |==> -1
+86:LOR:&(int,int):^(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:k & 1 |==> k ^ 1
+87:LOR:&(int,int):|(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:k & 1 |==> k | 1
+88:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:0 |==> 1
+89:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:0 |==> -1
+90:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:(k & 1) == 0 |==> (k & 1) <= 0
+91:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:(k & 1) == 0 |==> (k & 1) >= 0
+92:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:(k & 1) == 0 |==> false
+93:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:1 |==> 0
+94:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:1 |==> -1
+95:LVR:NEG:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:-1 |==> 0
+96:LVR:NEG:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:-1 |==> 1
+97:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 |==> 0.0
+98:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 |==> -1.0
+99:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1 |==> 0
+100:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1 |==> -1
+101:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:i + 1 |==> i % 1
+102:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:i + 1 |==> i * 1
+103:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:i + 1 |==> i - 1
+104:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:i + 1 |==> i / 1
+105:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (i + 1) |==> 1.0 % (i + 1)
+106:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (i + 1) |==> 1.0 * (i + 1)
+107:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (i + 1) |==> 1.0 + (i + 1)
+108:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (i + 1) |==> 1.0 - (i + 1)
+109:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 |==> 0.0
+110:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 |==> -1.0
+111:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 |==> 0
+112:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 |==> -2
+113:AOR:*(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 * i |==> 2 % i
+114:AOR:*(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 * i |==> 2 + i
+115:AOR:*(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 * i |==> 2 - i
+116:AOR:*(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 * i |==> 2 / i
+117:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:6 |==> 0
+118:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:6 |==> -6
+119:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 * i + 6 |==> 2 * i % 6
+120:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 * i + 6 |==> 2 * i * 6
+121:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 * i + 6 |==> 2 * i - 6
+122:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:2 * i + 6 |==> 2 * i / 6
+123:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (2 * i + 6) |==> 1.0 % (2 * i + 6)
+124:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (2 * i + 6) |==> 1.0 * (2 * i + 6)
+125:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (2 * i + 6) |==> 1.0 + (2 * i + 6)
+126:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (2 * i + 6) |==> 1.0 - (2 * i + 6)
+127:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 |==> 0
+128:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 |==> -24
+129:AOR:*(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 * i |==> 24 % i
+130:AOR:*(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 * i |==> 24 + i
+131:AOR:*(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 * i |==> 24 - i
+132:AOR:*(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 * i |==> 24 / i
+133:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:120 |==> 0
+134:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:120 |==> -120
+135:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 * i + 120 |==> 24 * i % 120
+136:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 * i + 120 |==> 24 * i * 120
+137:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 * i + 120 |==> 24 * i - 120
+138:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:24 * i + 120 |==> 24 * i / 120
+139:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:scaledX2 / (24 * i + 120) |==> scaledX2 % (24 * i + 120)
+140:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:scaledX2 / (24 * i + 120) |==> scaledX2 * (24 * i + 120)
+141:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:scaledX2 / (24 * i + 120) |==> scaledX2 + (24 * i + 120)
+142:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:scaledX2 / (24 * i + 120) |==> scaledX2 - (24 * i + 120)
+143:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120) |==> 1.0 / (2 * i + 6) % (scaledX2 / (24 * i + 120))
+144:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120) |==> 1.0 / (2 * i + 6) * (scaledX2 / (24 * i + 120))
+145:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120) |==> 1.0 / (2 * i + 6) + scaledX2 / (24 * i + 120)
+146:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120) |==> 1.0 / (2 * i + 6) / (scaledX2 / (24 * i + 120))
+147:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)) |==> scaledX2 % (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))
+148:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)) |==> scaledX2 + (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))
+149:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)) |==> scaledX2 - (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))
+150:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)) |==> scaledX2 / (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))
+151:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)) |==> 1.0 / (i + 1) % (scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)))
+152:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)) |==> 1.0 / (i + 1) * (scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)))
+153:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)) |==> 1.0 / (i + 1) + scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))
+154:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):124:1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)) |==> 1.0 / (i + 1) / (scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)))
+155:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:(((k & 1) == 0) ? 1 : -1) * (1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))) |==> (((k & 1) == 0) ? 1 : -1) % (1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)))
+156:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:(((k & 1) == 0) ? 1 : -1) * (1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))) |==> (((k & 1) == 0) ? 1 : -1) + (1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)))
+157:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:(((k & 1) == 0) ? 1 : -1) * (1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))) |==> (((k & 1) == 0) ? 1 : -1) - (1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)))
+158:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:(((k & 1) == 0) ? 1 : -1) * (1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))) |==> (((k & 1) == 0) ? 1 : -1) / (1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120)))
+159:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):123:f[i] = (((k & 1) == 0) ? 1 : -1) * (1.0 / (i + 1) - scaledX2 * (1.0 / (2 * i + 6) - scaledX2 / (24 * i + 120))) |==> <NO-OP>
+160:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:1 |==> 0
+161:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:1 |==> -1
+162:LOR:&(int,int):^(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:k & 1 |==> k ^ 1
+163:LOR:&(int,int):|(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:k & 1 |==> k | 1
+164:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:0 |==> 1
+165:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:0 |==> -1
+166:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:(k & 1) == 0 |==> (k & 1) <= 0
+167:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:(k & 1) == 0 |==> (k & 1) >= 0
+168:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:(k & 1) == 0 |==> false
+169:ORU:-(double):+(double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:-scaledX |==> +scaledX
+170:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 |==> 0.0
+171:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 |==> -1.0
+172:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:2 |==> 0
+173:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:2 |==> -2
+174:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:i + 2 |==> i % 2
+175:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:i + 2 |==> i * 2
+176:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:i + 2 |==> i - 2
+177:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:i + 2 |==> i / 2
+178:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (i + 2) |==> 1.0 % (i + 2)
+179:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (i + 2) |==> 1.0 * (i + 2)
+180:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (i + 2) |==> 1.0 + (i + 2)
+181:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (i + 2) |==> 1.0 - (i + 2)
+182:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 |==> 0.0
+183:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 |==> -1.0
+184:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 |==> 0
+185:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 |==> -6
+186:AOR:*(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 * i |==> 6 % i
+187:AOR:*(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 * i |==> 6 + i
+188:AOR:*(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 * i |==> 6 - i
+189:AOR:*(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 * i |==> 6 / i
+190:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:24 |==> 0
+191:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:24 |==> -24
+192:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 * i + 24 |==> 6 * i % 24
+193:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 * i + 24 |==> 6 * i * 24
+194:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 * i + 24 |==> 6 * i - 24
+195:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:6 * i + 24 |==> 6 * i / 24
+196:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (6 * i + 24) |==> 1.0 % (6 * i + 24)
+197:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (6 * i + 24) |==> 1.0 * (6 * i + 24)
+198:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (6 * i + 24) |==> 1.0 + (6 * i + 24)
+199:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (6 * i + 24) |==> 1.0 - (6 * i + 24)
+200:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 |==> 0
+201:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 |==> -120
+202:AOR:*(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 * i |==> 120 % i
+203:AOR:*(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 * i |==> 120 + i
+204:AOR:*(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 * i |==> 120 - i
+205:AOR:*(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 * i |==> 120 / i
+206:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:720 |==> 0
+207:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:720 |==> -720
+208:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 * i + 720 |==> 120 * i % 720
+209:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 * i + 720 |==> 120 * i * 720
+210:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 * i + 720 |==> 120 * i - 720
+211:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:120 * i + 720 |==> 120 * i / 720
+212:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:scaledX2 / (120 * i + 720) |==> scaledX2 % (120 * i + 720)
+213:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:scaledX2 / (120 * i + 720) |==> scaledX2 * (120 * i + 720)
+214:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:scaledX2 / (120 * i + 720) |==> scaledX2 + (120 * i + 720)
+215:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:scaledX2 / (120 * i + 720) |==> scaledX2 - (120 * i + 720)
+216:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720) |==> 1.0 / (6 * i + 24) % (scaledX2 / (120 * i + 720))
+217:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720) |==> 1.0 / (6 * i + 24) * (scaledX2 / (120 * i + 720))
+218:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720) |==> 1.0 / (6 * i + 24) + scaledX2 / (120 * i + 720)
+219:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720) |==> 1.0 / (6 * i + 24) / (scaledX2 / (120 * i + 720))
+220:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)) |==> scaledX2 % (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))
+221:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)) |==> scaledX2 + (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))
+222:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)) |==> scaledX2 - (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))
+223:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)) |==> scaledX2 / (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))
+224:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)) |==> 1.0 / (i + 2) % (scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)))
+225:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)) |==> 1.0 / (i + 2) * (scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)))
+226:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)) |==> 1.0 / (i + 2) + scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))
+227:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):128:1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)) |==> 1.0 / (i + 2) / (scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)))
+228:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:(((k & 1) == 0) ? -scaledX : scaledX) * (1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))) |==> (((k & 1) == 0) ? -scaledX : scaledX) % (1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)))
+229:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:(((k & 1) == 0) ? -scaledX : scaledX) * (1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))) |==> (((k & 1) == 0) ? -scaledX : scaledX) + (1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)))
+230:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:(((k & 1) == 0) ? -scaledX : scaledX) * (1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))) |==> (((k & 1) == 0) ? -scaledX : scaledX) - (1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)))
+231:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:(((k & 1) == 0) ? -scaledX : scaledX) * (1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))) |==> (((k & 1) == 0) ? -scaledX : scaledX) / (1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720)))
+232:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):127:f[i] = (((k & 1) == 0) ? -scaledX : scaledX) * (1.0 / (i + 2) - scaledX2 * (1.0 / (6 * i + 24) - scaledX2 / (120 * i + 720))) |==> <NO-OP>
+233:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):134:1 |==> 0
+234:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):134:1 |==> -1
+235:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):134:1 / scaledX |==> 1 % scaledX
+236:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):134:1 / scaledX |==> 1 * scaledX
+237:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):134:1 / scaledX |==> 1 + scaledX
+238:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):134:1 / scaledX |==> 1 - scaledX
+239:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):135:FastMath.cos(scaledX) |==> 0.0
+240:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):136:FastMath.sin(scaledX) |==> 0.0
+241:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):138:0 |==> 1
+242:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):138:0 |==> -1
+243:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):138:inv * sin |==> inv % sin
+244:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):138:inv * sin |==> inv + sin
+245:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):138:inv * sin |==> inv - sin
+246:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):138:inv * sin |==> inv / sin
+247:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):138:f[0] = inv * sin |==> <NO-OP>
+248:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):150:new double[f.length] |==> null
+249:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):151:0 |==> 1
+250:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):151:0 |==> -1
+251:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):151:1 |==> 0
+252:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):151:1 |==> -1
+253:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):151:sc[0] = 1 |==> <NO-OP>
+254:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):153:inv |==> 0.0
+255:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):154:1 |==> 0
+256:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):154:1 |==> -1
+257:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):154:n < f.length |==> n != f.length
+258:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):154:n < f.length |==> n <= f.length
+259:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):154:n < f.length |==> false
+260:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):156:0 |==> 1
+261:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):156:0 |==> -1
+262:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:0 |==> 1
+263:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:0 |==> -1
+264:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):161:1 |==> 0
+265:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):161:1 |==> -1
+266:LOR:&(int,int):^(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):161:n & 1 |==> n ^ 1
+267:LOR:&(int,int):|(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):161:n & 1 |==> n | 1
+268:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):161:0 |==> 1
+269:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):161:0 |==> -1
+270:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):161:(n & 1) == 0 |==> (n & 1) <= 0
+271:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):161:(n & 1) == 0 |==> (n & 1) >= 0
+272:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):161:(n & 1) == 0 |==> false
+273:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):163:0 |==> 1
+274:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):163:0 |==> -1
+275:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):163:sc[n] = 0 |==> <NO-OP>
+276:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):164:n |==> 0
+277:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):167:1 |==> 0
+278:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):167:1 |==> -1
+279:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):167:n - 1 |==> n % 1
+280:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):167:n - 1 |==> n * 1
+281:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):167:n - 1 |==> n + 1
+282:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):167:n - 1 |==> n / 1
+283:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):167:sc[n] = sc[n - 1] |==> <NO-OP>
+284:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):168:c = sc[n] |==> <NO-OP>
+285:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):169:1 |==> 0
+286:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):169:1 |==> -1
+287:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):169:n - 1 |==> n % 1
+288:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):169:n - 1 |==> n * 1
+289:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):169:n - 1 |==> n + 1
+290:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):169:n - 1 |==> n / 1
+291:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:kStart |==> 0
+292:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:1 |==> 0
+293:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:1 |==> -1
+294:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:k > 1 |==> k != 1
+295:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:k > 1 |==> k >= 1
+296:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:k > 1 |==> false
+297:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:2 |==> 0
+298:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:2 |==> -2
+299:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:k - n |==> k % n
+300:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:k - n |==> k * n
+301:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:k - n |==> k + n
+302:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:k - n |==> k / n
+303:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:(k - n) * sc[k] |==> (k - n) % sc[k]
+304:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:(k - n) * sc[k] |==> (k - n) + sc[k]
+305:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:(k - n) * sc[k] |==> (k - n) - sc[k]
+306:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:(k - n) * sc[k] |==> (k - n) / sc[k]
+307:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:1 |==> 0
+308:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:1 |==> -1
+309:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:k - 1 |==> k % 1
+310:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:k - 1 |==> k * 1
+311:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:k - 1 |==> k + 1
+312:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:k - 1 |==> k / 1
+313:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:(k - n) * sc[k] - sc[k - 1] |==> (k - n) * sc[k] % sc[k - 1]
+314:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:(k - n) * sc[k] - sc[k - 1] |==> (k - n) * sc[k] * sc[k - 1]
+315:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:(k - n) * sc[k] - sc[k - 1] |==> (k - n) * sc[k] + sc[k - 1]
+316:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:(k - n) * sc[k] - sc[k - 1] |==> (k - n) * sc[k] / sc[k - 1]
+317:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:sc[k] = (k - n) * sc[k] - sc[k - 1] |==> <NO-OP>
+318:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:s * scaledX2 |==> s % scaledX2
+319:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:s * scaledX2 |==> s + scaledX2
+320:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:s * scaledX2 |==> s - scaledX2
+321:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:s * scaledX2 |==> s / scaledX2
+322:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:s * scaledX2 + sc[k] |==> s * scaledX2 % sc[k]
+323:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:s * scaledX2 + sc[k] |==> s * scaledX2 * sc[k]
+324:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:s * scaledX2 + sc[k] |==> s * scaledX2 - sc[k]
+325:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:s * scaledX2 + sc[k] |==> s * scaledX2 / sc[k]
+326:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:s = s * scaledX2 + sc[k] |==> <NO-OP>
+327:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:1 |==> 0
+328:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:1 |==> -1
+329:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k % 1
+330:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k * 1
+331:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k + 1
+332:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k / 1
+333:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:1 |==> 0
+334:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:1 |==> -1
+335:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k % 1
+336:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k * 1
+337:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k + 1
+338:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k / 1
+339:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 - n |==> (k - 1) % n
+340:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 - n |==> (k - 1) * n
+341:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 - n |==> k - 1 + n
+342:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 - n |==> (k - 1) / n
+343:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:1 |==> 0
+344:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:1 |==> -1
+345:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k % 1
+346:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k * 1
+347:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k + 1
+348:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 1 |==> k / 1
+349:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:(k - 1 - n) * sc[k - 1] |==> (k - 1 - n) % sc[k - 1]
+350:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:(k - 1 - n) * sc[k - 1] |==> (k - 1 - n) + sc[k - 1]
+351:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:(k - 1 - n) * sc[k - 1] |==> (k - 1 - n) - sc[k - 1]
+352:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:(k - 1 - n) * sc[k - 1] |==> (k - 1 - n) / sc[k - 1]
+353:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:2 |==> 0
+354:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:2 |==> -2
+355:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 2 |==> k % 2
+356:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 2 |==> k * 2
+357:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 2 |==> k + 2
+358:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:k - 2 |==> k / 2
+359:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:(k - 1 - n) * sc[k - 1] + sc[k - 2] |==> (k - 1 - n) * sc[k - 1] % sc[k - 2]
+360:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:(k - 1 - n) * sc[k - 1] + sc[k - 2] |==> (k - 1 - n) * sc[k - 1] * sc[k - 2]
+361:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:(k - 1 - n) * sc[k - 1] + sc[k - 2] |==> (k - 1 - n) * sc[k - 1] - sc[k - 2]
+362:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:(k - 1 - n) * sc[k - 1] + sc[k - 2] |==> (k - 1 - n) * sc[k - 1] / sc[k - 2]
+363:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:sc[k - 1] = (k - 1 - n) * sc[k - 1] + sc[k - 2] |==> <NO-OP>
+364:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:c * scaledX2 |==> c % scaledX2
+365:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:c * scaledX2 |==> c + scaledX2
+366:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:c * scaledX2 |==> c - scaledX2
+367:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:c * scaledX2 |==> c / scaledX2
+368:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:1 |==> 0
+369:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:1 |==> -1
+370:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:k - 1 |==> k % 1
+371:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:k - 1 |==> k * 1
+372:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:k - 1 |==> k + 1
+373:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:k - 1 |==> k / 1
+374:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:c * scaledX2 + sc[k - 1] |==> c * scaledX2 % sc[k - 1]
+375:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:c * scaledX2 + sc[k - 1] |==> c * scaledX2 * sc[k - 1]
+376:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:c * scaledX2 + sc[k - 1] |==> c * scaledX2 - sc[k - 1]
+377:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:c * scaledX2 + sc[k - 1] |==> c * scaledX2 / sc[k - 1]
+378:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:c = c * scaledX2 + sc[k - 1] |==> <NO-OP>
+379:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):184:0 |==> 1
+380:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):184:0 |==> -1
+381:ORU:-(int):+(int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):184:-n |==> +n
+382:ORU:-(int):~(int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):184:-n |==> ~n
+383:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):184:sc[0] *= -n |==> <NO-OP>
+384:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:s * scaledX2 |==> s % scaledX2
+385:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:s * scaledX2 |==> s + scaledX2
+386:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:s * scaledX2 |==> s - scaledX2
+387:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:s * scaledX2 |==> s / scaledX2
+388:LVR:0:POS:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:0 |==> 1
+389:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:0 |==> -1
+390:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:s * scaledX2 + sc[0] |==> s * scaledX2 % sc[0]
+391:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:s * scaledX2 + sc[0] |==> s * scaledX2 * sc[0]
+392:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:s * scaledX2 + sc[0] |==> s * scaledX2 - sc[0]
+393:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:s * scaledX2 + sc[0] |==> s * scaledX2 / sc[0]
+394:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:s = s * scaledX2 + sc[0] |==> <NO-OP>
+395:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):187:coeff *= inv |==> <NO-OP>
+396:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:s * sin |==> s % sin
+397:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:s * sin |==> s + sin
+398:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:s * sin |==> s - sin
+399:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:s * sin |==> s / sin
+400:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:c * scaledX |==> c % scaledX
+401:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:c * scaledX |==> c + scaledX
+402:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:c * scaledX |==> c - scaledX
+403:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:c * scaledX |==> c / scaledX
+404:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:c * scaledX * cos |==> c * scaledX % cos
+405:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:c * scaledX * cos |==> c * scaledX + cos
+406:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:c * scaledX * cos |==> c * scaledX - cos
+407:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:c * scaledX * cos |==> c * scaledX / cos
+408:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:s * sin + c * scaledX * cos |==> s * sin % (c * scaledX * cos)
+409:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:s * sin + c * scaledX * cos |==> s * sin * (c * scaledX * cos)
+410:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:s * sin + c * scaledX * cos |==> s * sin - c * scaledX * cos
+411:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:s * sin + c * scaledX * cos |==> s * sin / (c * scaledX * cos)
+412:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:coeff * (s * sin + c * scaledX * cos) |==> coeff % (s * sin + c * scaledX * cos)
+413:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:coeff * (s * sin + c * scaledX * cos) |==> coeff + (s * sin + c * scaledX * cos)
+414:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:coeff * (s * sin + c * scaledX * cos) |==> coeff - (s * sin + c * scaledX * cos)
+415:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:coeff * (s * sin + c * scaledX * cos) |==> coeff / (s * sin + c * scaledX * cos)
+416:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):188:f[n] = coeff * (s * sin + c * scaledX * cos) |==> <NO-OP>
+417:COR:normalized:TRUE:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:normalized |==> false
+418:COR:normalized:FALSE:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:normalized |==> true
+419:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):195:FastMath.PI |==> 0.0
+420:LVR:POS:0:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:1 |==> 0
+421:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:1 |==> -1
+422:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:i < f.length |==> i != f.length
+423:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:i < f.length |==> i <= f.length
+424:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:i < f.length |==> false
+425:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:f[i] *= scale |==> <NO-OP>
+426:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):198:scale *= FastMath.PI |==> <NO-OP>
+427:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sinc@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:t.compose(f) |==> null

@@ -1,0 +1,43 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "79"
+    ],
+    "sourceClass": "GnuParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR20",
+      "TR22",
+      "TR23"
+    ],
+    "affectedTest": [
+      "testArgumentStartingWithHyphen",
+      "testLongWithEqualDoubleDash",
+      "testLongWithEqualSingleDash",
+      "testLongWithoutEqualDoubleDash",
+      "testNegativeArgument",
+      "testPropertiesOption1",
+      "testPropertiesOption2",
+      "testShortWithEqual",
+      "testShortWithoutEqual",
+      "testStopAtNonOptionLong",
+      "testStopAtNonOptionShort",
+      "testUnrecognizedOption"
+    ],
+    "testReran": [
+      "testNegativeArgument",
+      "testPropertiesOption1",
+      "testLongWithEqualSingleDash",
+      "testArgumentStartingWithHyphen",
+      "testShortWithEqual",
+      "testStopAtNonOptionShort",
+      "testLongWithEqualDoubleDash",
+      "testShortWithoutEqual",
+      "testPropertiesOption2",
+      "testLongWithoutEqualDoubleDash",
+      "testUnrecognizedOption",
+      "testStopAtNonOptionLong"
+    ]
+  }
+}

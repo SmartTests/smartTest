@@ -1,0 +1,200 @@
+[
+  {
+    "v1": {
+      "line": "57",
+      "statement": "SimpsonIntegrator (final double relativeAccuracy,  final double absoluteAccuracy,  final int minimalIterationCount,  final int maximalIterationCount)"
+    }
+  },
+  {
+    "v2": {
+      "line": "62",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v3": {
+      "line": "63",
+      "statement": "if (maximalIterationCount != SIMPSON_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v4": {
+      "line": "64",
+      "statement": "throw new NumberIsTooLargeException(maximalIterationCount, SIMPSON_MAX_ITERATIONS_COUNT, false)"
+    }
+  },
+  {
+    "v5": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v6": {
+      "line": "81",
+      "statement": "SimpsonIntegrator (final int minimalIterationCount,  final int maximalIterationCount)"
+    }
+  },
+  {
+    "v7": {
+      "line": "84",
+      "statement": "super(minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v8": {
+      "line": "85",
+      "statement": "if (maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v9": {
+      "line": "86",
+      "statement": "throw new NumberIsTooLargeException(maximalIterationCount, SIMPSON_MAX_ITERATIONS_COUNT, false)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "95",
+      "statement": "SimpsonIntegrator ()"
+    }
+  },
+  {
+    "v12": {
+      "line": "96",
+      "statement": "super(DEFAULT_MIN_ITERATIONS_COUNT, SIMPSON_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v13": {
+      "line": "101",
+      "statement": "double doIntegrate()"
+    }
+  },
+  {
+    "v14": {
+      "line": "104",
+      "statement": "TrapezoidIntegrator qtrap = new TrapezoidIntegrator()"
+    }
+  },
+  {
+    "v15": {
+      "line": "105",
+      "statement": "if (getMinimalIterationCount() == 1)"
+    }
+  },
+  {
+    "v16": {
+      "line": "106",
+      "statement": "return (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) / 3.0"
+    }
+  },
+  {
+    "v17": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v18": {
+      "line": "110",
+      "statement": "double olds = 0"
+    }
+  },
+  {
+    "v19": {
+      "line": "111",
+      "statement": "double oldt = qtrap.stage(this, 0)"
+    }
+  },
+  {
+    "v20": {
+      "line": "112",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v22": {
+      "line": "113",
+      "statement": "final double t = qtrap.stage(this, iterations.getCount())"
+    }
+  },
+  {
+    "v23": {
+      "line": "114",
+      "statement": "iterations.incrementCount()"
+    }
+  },
+  {
+    "v24": {
+      "line": "115",
+      "statement": "final double s = (4 * t - oldt) / 3.0"
+    }
+  },
+  {
+    "v25": {
+      "line": "116",
+      "statement": "if (iterations.getCount() >= getMinimalIterationCount())"
+    }
+  },
+  {
+    "v26": {
+      "line": "117",
+      "statement": "final double delta = FastMath.abs(s - olds)"
+    }
+  },
+  {
+    "v27": {
+      "line": "118",
+      "statement": "final double rLimit = getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5"
+    }
+  },
+  {
+    "v28": {
+      "line": "120",
+      "statement": "if ((delta <= rLimit) || (delta <= getAbsoluteAccuracy()))"
+    }
+  },
+  {
+    "v29": {
+      "line": "121",
+      "statement": "return s"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "124",
+      "statement": "olds = s"
+    }
+  },
+  {
+    "v33": {
+      "line": "125",
+      "statement": "oldt = t"
+    }
+  }
+]

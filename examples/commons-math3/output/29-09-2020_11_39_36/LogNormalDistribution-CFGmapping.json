@@ -1,0 +1,428 @@
+[
+  {
+    "v1": {
+      "line": "85",
+      "statement": "LogNormalDistribution ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "86",
+      "statement": "this(0, 1)"
+    }
+  },
+  {
+    "v3": {
+      "line": "96",
+      "statement": "LogNormalDistribution (double scale, double shape)"
+    }
+  },
+  {
+    "v4": {
+      "line": "98",
+      "statement": "this(scale, shape, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v5": {
+      "line": "110",
+      "statement": "LogNormalDistribution (double scale, double shape, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "112",
+      "statement": "this(new Well19937c(), scale, shape, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v7": {
+      "line": "124",
+      "statement": "LogNormalDistribution (RandomGenerator rng, double scale, double shape)"
+    }
+  },
+  {
+    "v8": {
+      "line": "126",
+      "statement": "this(rng, scale, shape, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v9": {
+      "line": "139",
+      "statement": "LogNormalDistribution (RandomGenerator rng,  double scale,  double shape,  double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v10": {
+      "line": "144",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v11": {
+      "line": "146",
+      "statement": "if (shape <= 0)"
+    }
+  },
+  {
+    "v12": {
+      "line": "147",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.SHAPE, shape)"
+    }
+  },
+  {
+    "v13": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v14": {
+      "line": "150",
+      "statement": "this.scale = scale"
+    }
+  },
+  {
+    "v15": {
+      "line": "151",
+      "statement": "this.shape = shape"
+    }
+  },
+  {
+    "v16": {
+      "line": "152",
+      "statement": "this.solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v17": {
+      "line": "160",
+      "statement": "double getScale()"
+    }
+  },
+  {
+    "v18": {
+      "line": "161",
+      "statement": "return scale"
+    }
+  },
+  {
+    "v19": {
+      "line": "169",
+      "statement": "double getShape()"
+    }
+  },
+  {
+    "v20": {
+      "line": "170",
+      "statement": "return shape"
+    }
+  },
+  {
+    "v21": {
+      "line": "184",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v22": {
+      "line": "185",
+      "statement": "if (x <= 0)"
+    }
+  },
+  {
+    "v23": {
+      "line": "186",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "188",
+      "statement": "final double x0 = FastMath.log(x) - scale"
+    }
+  },
+  {
+    "v26": {
+      "line": "189",
+      "statement": "final double x1 = x0 / shape"
+    }
+  },
+  {
+    "v27": {
+      "line": "190",
+      "statement": "return FastMath.exp(-0.5 * x1 * x1) / (shape * SQRT2PI * x)"
+    }
+  },
+  {
+    "v28": {
+      "line": "208",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v29": {
+      "line": "209",
+      "statement": "if (x <= 0)"
+    }
+  },
+  {
+    "v30": {
+      "line": "210",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "212",
+      "statement": "final double dev = FastMath.log(x) - scale"
+    }
+  },
+  {
+    "v33": {
+      "line": "213",
+      "statement": "if (FastMath.abs(dev) > 40 * shape)"
+    }
+  },
+  {
+    "v34": {
+      "line": "214",
+      "statement": "return dev < 0 ? 0.0d"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v36": {
+      "line": "216",
+      "statement": "return 0.5 + 0.5 * Erf.erf(dev / (shape * SQRT2))"
+    }
+  },
+  {
+    "v37": {
+      "line": "225",
+      "statement": "double cumulativeProbability(double x0, double x1)"
+    }
+  },
+  {
+    "v38": {
+      "line": "227",
+      "statement": "return probability(x0, x1)"
+    }
+  },
+  {
+    "v39": {
+      "line": "232",
+      "statement": "double probability(double x0, double x1)"
+    }
+  },
+  {
+    "v40": {
+      "line": "235",
+      "statement": "if (x0 > x1)"
+    }
+  },
+  {
+    "v41": {
+      "line": "236",
+      "statement": "throw new NumberIsTooLargeException(LocalizedFormats.LOWER_ENDPOINT_ABOVE_UPPER_ENDPOINT, x0, x1, true)"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": "239",
+      "statement": "if (x0 <= 0 || x1 <= 0)"
+    }
+  },
+  {
+    "v44": {
+      "line": "240",
+      "statement": "return super.probability(x0, x1)"
+    }
+  },
+  {
+    "v45": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v46": {
+      "line": "242",
+      "statement": "final double denom = shape * SQRT2"
+    }
+  },
+  {
+    "v47": {
+      "line": "243",
+      "statement": "final double v0 = (FastMath.log(x0) - scale) / denom"
+    }
+  },
+  {
+    "v48": {
+      "line": "244",
+      "statement": "final double v1 = (FastMath.log(x1) - scale) / denom"
+    }
+  },
+  {
+    "v49": {
+      "line": "245",
+      "statement": "return 0.5 * Erf.erf(v0, v1)"
+    }
+  },
+  {
+    "v50": {
+      "line": "250",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v51": {
+      "line": "251",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v52": {
+      "line": "260",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v53": {
+      "line": "261",
+      "statement": "double s = shape"
+    }
+  },
+  {
+    "v54": {
+      "line": "262",
+      "statement": "return FastMath.exp(scale + (s * s / 2))"
+    }
+  },
+  {
+    "v55": {
+      "line": "271",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v56": {
+      "line": "272",
+      "statement": "final double s = shape"
+    }
+  },
+  {
+    "v57": {
+      "line": "273",
+      "statement": "final double ss = s * s"
+    }
+  },
+  {
+    "v58": {
+      "line": "274",
+      "statement": "return (FastMath.exp(ss) - 1) * FastMath.exp(2 * scale + ss)"
+    }
+  },
+  {
+    "v59": {
+      "line": "284",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v60": {
+      "line": "285",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v61": {
+      "line": "297",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v62": {
+      "line": "298",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v63": {
+      "line": "302",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v64": {
+      "line": "303",
+      "statement": "return true"
+    }
+  },
+  {
+    "v65": {
+      "line": "307",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v66": {
+      "line": "308",
+      "statement": "return false"
+    }
+  },
+  {
+    "v67": {
+      "line": "318",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v68": {
+      "line": "319",
+      "statement": "return true"
+    }
+  },
+  {
+    "v69": {
+      "line": "324",
+      "statement": "double sample()"
+    }
+  },
+  {
+    "v70": {
+      "line": "325",
+      "statement": "final double n = random.nextGaussian()"
+    }
+  },
+  {
+    "v71": {
+      "line": "326",
+      "statement": "return FastMath.exp(scale + shape * n)"
+    }
+  }
+]

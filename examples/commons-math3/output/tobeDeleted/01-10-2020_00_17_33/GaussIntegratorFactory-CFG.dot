@@ -1,0 +1,47 @@
+digraph GaussIntegratorFactory_CFG {
+  // graph-vertices
+  v1  [label="50:  GaussIntegrator legendre(int numberOfPoints)"];
+  v2  [label="51:  return new GaussIntegrator(getRule(legendre, numberOfPoints));"];
+  v3  [label="66:  GaussIntegrator legendre(int numberOfPoints, double lowerBound, double upperBound)"];
+  v4  [label="70:  return new GaussIntegrator(transform(getRule(legendre, numberOfPoints),  lowerBound, upperBound));"];
+  v5  [label="85:  GaussIntegrator legendreHighPrecision(int numberOfPoints)"];
+  v6  [label="87:  return new GaussIntegrator(getRule(legendreHighPrecision, numberOfPoints));"];
+  v7  [label="101:  GaussIntegrator legendreHighPrecision(int numberOfPoints,  double lowerBound,  double upperBound)"];
+  v8  [label="105:  return new GaussIntegrator(transform(getRule(legendreHighPrecision, numberOfPoints),  lowerBound, upperBound));"];
+  v9  [label="125:  SymmetricGaussIntegrator hermite(int numberOfPoints)"];
+  v10  [label="126:  return new SymmetricGaussIntegrator(getRule(hermite, numberOfPoints));"];
+  v11  [label="137:  Pair<double[],double[]> getRule(BaseRuleFactory<? extends Number> factory, int numberOfPoints)"];
+  v12  [label="140:  return factory.getRule(numberOfPoints);"];
+  v13  [label="153:  Pair<double[],double[]> transform(Pair<double[], double[]> rule, double a, double b)"];
+  v14  [label="156:  final double[] points = rule.getFirst()"];
+  v15  [label="157:  final double[] weights = rule.getSecond()"];
+  v16  [label="160:  final double scale = (b - a) / 2"];
+  v17  [label="161:  final double shift = a + scale"];
+  v18  [label="163:  int i = 0"];
+  v19  [label="163:  for (i < points.length)"];
+  v20  [label="163:  i++"];
+  v21  [label="endfor"];
+  v22  [label="164:  points[i] = points[i] * scale + shift"];
+  v23  [label="165:  weights[i] *= scale"];
+  v24  [label="168:  return new Pair<double[], double[]>(points, weights);"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v5 -> v6;
+  v7 -> v8;
+  v9 -> v10;
+  v11 -> v12;
+  v13 -> v14;
+  v14 -> v15;
+  v15 -> v16;
+  v16 -> v17;
+  v17 -> v18;
+  v18 -> v19;
+  v19 -> v21  [label="False"];
+  v19 -> v22  [label="True"];
+  v22 -> v23;
+  v23 -> v20;
+  v20 -> v19;
+  v21 -> v24;
+  // end-of-graph
+}

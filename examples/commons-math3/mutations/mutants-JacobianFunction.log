@@ -1,0 +1,31 @@
+1:EVR:<IDENTIFIER(org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableVectorFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@<init>(org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableVectorFunction):40:f |==> null
+2:EVR:<NEW_ARRAY(org.apache.commons.math3.analysis.differentiation.DerivativeStructure[])>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):47:new DerivativeStructure[point.length] |==> null
+3:LVR:0:POS:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):48:0 |==> 1
+4:LVR:0:NEG:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):48:0 |==> -1
+5:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):48:i < point.length |==> i != point.length
+6:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):48:i < point.length |==> i <= point.length
+7:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):48:i < point.length |==> false
+8:LVR:POS:0:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):49:1 |==> 0
+9:LVR:POS:NEG:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):49:1 |==> -1
+10:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):49:dsX[i] = new DerivativeStructure(point.length, 1, i, point[i]) |==> <NO-OP>
+11:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.differentiation.DerivativeStructure[])>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):53:f.value(dsX) |==> null
+12:EVR:<NEW_ARRAY(double[][])>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):56:new double[dsY.length][point.length] |==> null
+13:EVR:<NEW_ARRAY(int[])>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):57:new int[point.length] |==> null
+14:LVR:0:POS:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):58:0 |==> 1
+15:LVR:0:NEG:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):58:0 |==> -1
+16:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):58:i < dsY.length |==> i != dsY.length
+17:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):58:i < dsY.length |==> i <= dsY.length
+18:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):58:i < dsY.length |==> false
+19:LVR:0:POS:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):59:0 |==> 1
+20:LVR:0:NEG:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):59:0 |==> -1
+21:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):59:j < point.length |==> j != point.length
+22:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):59:j < point.length |==> j <= point.length
+23:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):59:j < point.length |==> false
+24:LVR:POS:0:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):60:1 |==> 0
+25:LVR:POS:NEG:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):60:1 |==> -1
+26:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):60:orders[j] = 1 |==> <NO-OP>
+27:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):61:y[i][j] = dsY[i].getPartialDerivative(orders) |==> <NO-OP>
+28:LVR:0:POS:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):62:0 |==> 1
+29:LVR:0:NEG:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):62:0 |==> -1
+30:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):62:orders[j] = 0 |==> <NO-OP>
+31:EVR:<IDENTIFIER(double[][])>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.JacobianFunction@value(double[]):66:y |==> null

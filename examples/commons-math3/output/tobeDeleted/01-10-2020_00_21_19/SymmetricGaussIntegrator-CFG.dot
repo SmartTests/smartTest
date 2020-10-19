@@ -1,0 +1,66 @@
+digraph SymmetricGaussIntegrator_CFG {
+  // graph-vertices
+  v1  [label="44:  SymmetricGaussIntegrator (double[] points, double[] weights)"];
+  v2  [label="47:  super(points, weights)"];
+  v3  [label="60:  SymmetricGaussIntegrator (Pair<double[], double[]> pointsAndWeights)"];
+  v4  [label="62:  this(pointsAndWeights.getFirst(), pointsAndWeights.getSecond())"];
+  v5  [label="69:  double integrate(UnivariateFunction f)"];
+  v6  [label="70:  final int ruleLength = getNumberOfPoints()"];
+  v7  [label="72:  if (ruleLength == 1)"];
+  v8  [label="73:  return getWeight(0) * f.value(0d);"];
+  v9  [label="endif"];
+  v10  [label="76:  final int iMax = ruleLength / 2"];
+  v11  [label="77:  double s = 0"];
+  v12  [label="78:  double c = 0"];
+  v13  [label="79:  int i = 0"];
+  v14  [label="79:  for (i < iMax)"];
+  v15  [label="79:  i++"];
+  v16  [label="endfor"];
+  v17  [label="80:  final double p = getPoint(i)"];
+  v18  [label="81:  final double w = getWeight(i)"];
+  v19  [label="83:  final double f1 = f.value(p)"];
+  v20  [label="84:  final double f2 = f.value(-p)"];
+  v21  [label="86:  final double y = w * (f1 + f2) - c"];
+  v22  [label="87:  final double t = s + y"];
+  v23  [label="89:  c = (t - s) - y"];
+  v24  [label="90:  s = t"];
+  v25  [label="93:  if (ruleLength % 2 != 0)"];
+  v26  [label="94:  final double w = getWeight(iMax)"];
+  v27  [label="96:  final double y = w * f.value(0d) - c"];
+  v28  [label="97:  final double t = s + y"];
+  v29  [label="99:  s = t"];
+  v30  [label="endif"];
+  v31  [label="102:  return s;"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v5 -> v6;
+  v6 -> v7;
+  v7 -> v8  [label="True"];
+  v7 -> v9  [label="False"];
+  v9 -> v10;
+  v10 -> v11;
+  v11 -> v12;
+  v12 -> v13;
+  v13 -> v14;
+  v14 -> v16  [label="False"];
+  v14 -> v17  [label="True"];
+  v17 -> v18;
+  v18 -> v19;
+  v19 -> v20;
+  v20 -> v21;
+  v21 -> v22;
+  v22 -> v23;
+  v23 -> v24;
+  v24 -> v15;
+  v15 -> v14;
+  v16 -> v25;
+  v25 -> v26  [label="True"];
+  v26 -> v27;
+  v27 -> v28;
+  v28 -> v29;
+  v29 -> v30;
+  v25 -> v30  [label="False"];
+  v30 -> v31;
+  // end-of-graph
+}

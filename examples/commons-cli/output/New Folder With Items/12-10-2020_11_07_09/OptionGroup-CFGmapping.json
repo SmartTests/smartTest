@@ -1,0 +1,266 @@
+[
+  {
+    "v1": {
+      "line": "49",
+      "statement": "OptionGroup addOption(final Option option)"
+    }
+  },
+  {
+    "v2": {
+      "line": "53",
+      "statement": "optionMap.put(option.getKey(), option)"
+    }
+  },
+  {
+    "v3": {
+      "line": "55",
+      "statement": "return this"
+    }
+  },
+  {
+    "v4": {
+      "line": "62",
+      "statement": "Collection<String> getNames()"
+    }
+  },
+  {
+    "v5": {
+      "line": "65",
+      "statement": "return optionMap.keySet()"
+    }
+  },
+  {
+    "v6": {
+      "line": "71",
+      "statement": "Collection<Option> getOptions()"
+    }
+  },
+  {
+    "v7": {
+      "line": "74",
+      "statement": "return optionMap.values()"
+    }
+  },
+  {
+    "v8": {
+      "line": "84",
+      "statement": "void setSelected(final Option option)"
+    }
+  },
+  {
+    "v9": {
+      "line": "86",
+      "statement": "if (option == null)"
+    }
+  },
+  {
+    "v10": {
+      "line": "89",
+      "statement": "selected = null"
+    }
+  },
+  {
+    "v11": {
+      "line": "90",
+      "statement": "return"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v13": {
+      "line": "96",
+      "statement": "if (selected == null || selected.equals(option.getKey()))"
+    }
+  },
+  {
+    "v14": {
+      "line": "98",
+      "statement": "selected = option.getKey()"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "102",
+      "statement": "throw new AlreadySelectedException(this, option)"
+    }
+  },
+  {
+    "v17": {
+      "line": "109",
+      "statement": "String getSelected()"
+    }
+  },
+  {
+    "v18": {
+      "line": "111",
+      "statement": "return selected"
+    }
+  },
+  {
+    "v19": {
+      "line": "117",
+      "statement": "void setRequired(final boolean required)"
+    }
+  },
+  {
+    "v20": {
+      "line": "119",
+      "statement": "this.required = required"
+    }
+  },
+  {
+    "v21": {
+      "line": "127",
+      "statement": "boolean isRequired()"
+    }
+  },
+  {
+    "v22": {
+      "line": "129",
+      "statement": "return required"
+    }
+  },
+  {
+    "v23": {
+      "line": "138",
+      "statement": "String toString()"
+    }
+  },
+  {
+    "v24": {
+      "line": "140",
+      "statement": "final StringBuilder buff = new StringBuilder()"
+    }
+  },
+  {
+    "v25": {
+      "line": "142",
+      "statement": "final Iterator<Option> iter = getOptions().iterator()"
+    }
+  },
+  {
+    "v26": {
+      "line": "144",
+      "statement": "buff.append('[')"
+    }
+  },
+  {
+    "v27": {
+      "line": "146",
+      "statement": "while (iter.hasNext())"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v29": {
+      "line": "148",
+      "statement": "final Option option = iter.next()"
+    }
+  },
+  {
+    "v30": {
+      "line": "150",
+      "statement": "if (option.getOpt() != null)"
+    }
+  },
+  {
+    "v31": {
+      "line": "152",
+      "statement": "buff.append('-')"
+    }
+  },
+  {
+    "v32": {
+      "line": "153",
+      "statement": "buff.append(option.getOpt())"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v34": {
+      "line": "157",
+      "statement": "buff.append('--')"
+    }
+  },
+  {
+    "v35": {
+      "line": "158",
+      "statement": "buff.append(option.getLongOpt())"
+    }
+  },
+  {
+    "v36": {
+      "line": "161",
+      "statement": "if (option.getDescription() != null)"
+    }
+  },
+  {
+    "v37": {
+      "line": "163",
+      "statement": "buff.append(' ')"
+    }
+  },
+  {
+    "v38": {
+      "line": "164",
+      "statement": "buff.append(option.getDescription())"
+    }
+  },
+  {
+    "v39": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v40": {
+      "line": "167",
+      "statement": "if (iter.hasNext())"
+    }
+  },
+  {
+    "v41": {
+      "line": "169",
+      "statement": "buff.append(', ')"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": "173",
+      "statement": "buff.append(']')"
+    }
+  },
+  {
+    "v44": {
+      "line": "175",
+      "statement": "return buff.toString()"
+    }
+  }
+]

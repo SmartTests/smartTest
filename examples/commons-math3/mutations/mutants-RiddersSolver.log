@@ -1,0 +1,129 @@
+1:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():71:getMin() |==> 0.0
+2:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():72:getMax() |==> 0.0
+3:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():76:min |==> 0.0
+4:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():77:computeObjectiveValue(x1) |==> 0.0
+5:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():78:max |==> 0.0
+6:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():79:computeObjectiveValue(x2) |==> 0.0
+7:LVR:0:POS:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():82:0 |==> 1
+8:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():82:0 |==> -1
+9:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():82:y1 == 0 |==> y1 <= 0
+10:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():82:y1 == 0 |==> y1 >= 0
+11:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():82:y1 == 0 |==> false
+12:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():83:return min; |==> <NO-OP>
+13:LVR:0:POS:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():85:0 |==> 1
+14:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():85:0 |==> -1
+15:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():85:y2 == 0 |==> y2 <= 0
+16:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():85:y2 == 0 |==> y2 >= 0
+17:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():85:y2 == 0 |==> false
+18:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():86:return max; |==> <NO-OP>
+19:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():88:verifyBracketing(min, max) |==> <NO-OP>
+20:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():90:getAbsoluteAccuracy() |==> 0.0
+21:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():91:getFunctionValueAccuracy() |==> 0.0
+22:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():92:getRelativeAccuracy() |==> 0.0
+23:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():94:Double.POSITIVE_INFINITY |==> 0.0
+24:LVR:POS:0:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:0.5 |==> 0.0
+25:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:0.5 |==> -0.5
+26:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:x1 + x2 |==> x1 % x2
+27:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:x1 + x2 |==> x1 * x2
+28:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:x1 + x2 |==> x1 - x2
+29:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:x1 + x2 |==> x1 / x2
+30:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:0.5 * (x1 + x2) |==> 0.5 % (x1 + x2)
+31:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:0.5 * (x1 + x2) |==> 0.5 + (x1 + x2)
+32:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:0.5 * (x1 + x2) |==> 0.5 - (x1 + x2)
+33:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():97:0.5 * (x1 + x2) |==> 0.5 / (x1 + x2)
+34:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():98:computeObjectiveValue(x3) |==> 0.0
+35:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():99:FastMath.abs(y3) <= functionValueAccuracy |==> FastMath.abs(y3) < functionValueAccuracy
+36:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():99:FastMath.abs(y3) <= functionValueAccuracy |==> FastMath.abs(y3) == functionValueAccuracy
+37:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():99:FastMath.abs(y3) <= functionValueAccuracy |==> true
+38:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():100:return x3; |==> <NO-OP>
+39:LVR:POS:0:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:1 |==> 0
+40:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:1 |==> -1
+41:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:y1 * y2 |==> y1 % y2
+42:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:y1 * y2 |==> y1 + y2
+43:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:y1 * y2 |==> y1 - y2
+44:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:y1 * y2 |==> y1 / y2
+45:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:y3 * y3 |==> y3 % y3
+46:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:y3 * y3 |==> y3 + y3
+47:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:y3 * y3 |==> y3 - y3
+48:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:y3 * y3 |==> y3 / y3
+49:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:(y1 * y2) / (y3 * y3) |==> (y1 * y2) % (y3 * y3)
+50:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:(y1 * y2) / (y3 * y3) |==> (y1 * y2) * (y3 * y3)
+51:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:(y1 * y2) / (y3 * y3) |==> (y1 * y2) + (y3 * y3)
+52:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:(y1 * y2) / (y3 * y3) |==> (y1 * y2) - (y3 * y3)
+53:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:1 - (y1 * y2) / (y3 * y3) |==> 1 % ((y1 * y2) / (y3 * y3))
+54:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:1 - (y1 * y2) / (y3 * y3) |==> 1 * ((y1 * y2) / (y3 * y3))
+55:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:1 - (y1 * y2) / (y3 * y3) |==> 1 + (y1 * y2) / (y3 * y3)
+56:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():102:1 - (y1 * y2) / (y3 * y3) |==> 1 / ((y1 * y2) / (y3 * y3))
+57:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:FastMath.signum(y2) * FastMath.signum(y3) |==> FastMath.signum(y2) % FastMath.signum(y3)
+58:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:FastMath.signum(y2) * FastMath.signum(y3) |==> FastMath.signum(y2) + FastMath.signum(y3)
+59:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:FastMath.signum(y2) * FastMath.signum(y3) |==> FastMath.signum(y2) - FastMath.signum(y3)
+60:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:FastMath.signum(y2) * FastMath.signum(y3) |==> FastMath.signum(y2) / FastMath.signum(y3)
+61:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():104:x3 - x1 |==> x3 % x1
+62:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():104:x3 - x1 |==> x3 * x1
+63:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():104:x3 - x1 |==> x3 + x1
+64:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():104:x3 - x1 |==> x3 / x1
+65:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:(FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) |==> (FastMath.signum(y2) * FastMath.signum(y3)) % (x3 - x1)
+66:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:(FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) |==> (FastMath.signum(y2) * FastMath.signum(y3)) + (x3 - x1)
+67:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:(FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) |==> (FastMath.signum(y2) * FastMath.signum(y3)) - (x3 - x1)
+68:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:(FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) |==> (FastMath.signum(y2) * FastMath.signum(y3)) / (x3 - x1)
+69:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:(FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) / FastMath.sqrt(delta) |==> (FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) % FastMath.sqrt(delta)
+70:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:(FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) / FastMath.sqrt(delta) |==> (FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) * FastMath.sqrt(delta)
+71:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:(FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) / FastMath.sqrt(delta) |==> (FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) + FastMath.sqrt(delta)
+72:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():103:(FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) / FastMath.sqrt(delta) |==> (FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) - FastMath.sqrt(delta)
+73:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():105:x3 - correction |==> x3 % correction
+74:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():105:x3 - correction |==> x3 * correction
+75:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():105:x3 - correction |==> x3 + correction
+76:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():105:x3 - correction |==> x3 / correction
+77:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():106:computeObjectiveValue(x) |==> 0.0
+78:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():109:relativeAccuracy * FastMath.abs(x) |==> relativeAccuracy % FastMath.abs(x)
+79:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():109:relativeAccuracy * FastMath.abs(x) |==> relativeAccuracy + FastMath.abs(x)
+80:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():109:relativeAccuracy * FastMath.abs(x) |==> relativeAccuracy - FastMath.abs(x)
+81:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():109:relativeAccuracy * FastMath.abs(x) |==> relativeAccuracy / FastMath.abs(x)
+82:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():110:x - oldx |==> x % oldx
+83:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():110:x - oldx |==> x * oldx
+84:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():110:x - oldx |==> x + oldx
+85:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():110:x - oldx |==> x / oldx
+86:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():110:FastMath.abs(x - oldx) <= tolerance |==> FastMath.abs(x - oldx) < tolerance
+87:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():110:FastMath.abs(x - oldx) <= tolerance |==> FastMath.abs(x - oldx) == tolerance
+88:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():110:FastMath.abs(x - oldx) <= tolerance |==> true
+89:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():111:return x; |==> <NO-OP>
+90:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():113:FastMath.abs(y) <= functionValueAccuracy |==> FastMath.abs(y) < functionValueAccuracy
+91:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():113:FastMath.abs(y) <= functionValueAccuracy |==> FastMath.abs(y) == functionValueAccuracy
+92:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():113:FastMath.abs(y) <= functionValueAccuracy |==> true
+93:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():114:return x; |==> <NO-OP>
+94:LVR:0:POS:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():119:0.0 |==> 1.0
+95:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():119:0.0 |==> -1.0
+96:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():119:correction > 0.0 |==> correction != 0.0
+97:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():119:correction > 0.0 |==> correction >= 0.0
+98:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():119:correction > 0.0 |==> false
+99:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():120:FastMath.signum(y1) + FastMath.signum(y) |==> FastMath.signum(y1) % FastMath.signum(y)
+100:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():120:FastMath.signum(y1) + FastMath.signum(y) |==> FastMath.signum(y1) * FastMath.signum(y)
+101:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():120:FastMath.signum(y1) + FastMath.signum(y) |==> FastMath.signum(y1) - FastMath.signum(y)
+102:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():120:FastMath.signum(y1) + FastMath.signum(y) |==> FastMath.signum(y1) / FastMath.signum(y)
+103:LVR:0:POS:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():120:0.0 |==> 1.0
+104:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():120:0.0 |==> -1.0
+105:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():120:FastMath.signum(y1) + FastMath.signum(y) == 0.0 |==> FastMath.signum(y1) + FastMath.signum(y) <= 0.0
+106:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():120:FastMath.signum(y1) + FastMath.signum(y) == 0.0 |==> FastMath.signum(y1) + FastMath.signum(y) >= 0.0
+107:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():120:FastMath.signum(y1) + FastMath.signum(y) == 0.0 |==> false
+108:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():121:x2 = x |==> <NO-OP>
+109:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():122:y2 = y |==> <NO-OP>
+110:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():124:x1 = x |==> <NO-OP>
+111:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():125:x2 = x3 |==> <NO-OP>
+112:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():126:y1 = y |==> <NO-OP>
+113:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():127:y2 = y3 |==> <NO-OP>
+114:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():130:FastMath.signum(y2) + FastMath.signum(y) |==> FastMath.signum(y2) % FastMath.signum(y)
+115:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():130:FastMath.signum(y2) + FastMath.signum(y) |==> FastMath.signum(y2) * FastMath.signum(y)
+116:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():130:FastMath.signum(y2) + FastMath.signum(y) |==> FastMath.signum(y2) - FastMath.signum(y)
+117:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():130:FastMath.signum(y2) + FastMath.signum(y) |==> FastMath.signum(y2) / FastMath.signum(y)
+118:LVR:0:POS:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():130:0.0 |==> 1.0
+119:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():130:0.0 |==> -1.0
+120:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():130:FastMath.signum(y2) + FastMath.signum(y) == 0.0 |==> FastMath.signum(y2) + FastMath.signum(y) <= 0.0
+121:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():130:FastMath.signum(y2) + FastMath.signum(y) == 0.0 |==> FastMath.signum(y2) + FastMath.signum(y) >= 0.0
+122:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():130:FastMath.signum(y2) + FastMath.signum(y) == 0.0 |==> false
+123:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():131:x1 = x |==> <NO-OP>
+124:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():132:y1 = y |==> <NO-OP>
+125:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():134:x1 = x3 |==> <NO-OP>
+126:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():135:x2 = x |==> <NO-OP>
+127:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():136:y1 = y3 |==> <NO-OP>
+128:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():137:y2 = y |==> <NO-OP>
+129:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.RiddersSolver@doSolve():140:oldx = x |==> <NO-OP>

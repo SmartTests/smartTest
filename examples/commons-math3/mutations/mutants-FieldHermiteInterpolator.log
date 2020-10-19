@@ -1,0 +1,173 @@
+1:EVR:<NEW_CLASS(java.util.ArrayList<T>)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@<init>():65:new ArrayList<T>() |==> null
+2:EVR:<NEW_CLASS(java.util.ArrayList<T[]>)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@<init>():66:new ArrayList<T[]>() |==> null
+3:EVR:<NEW_CLASS(java.util.ArrayList<T[]>)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@<init>():67:new ArrayList<T[]>() |==> null
+4:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):95:MathUtils.checkNotNull(x) |==> <NO-OP>
+5:EVR:<METHOD_INVOCATION(T)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):96:x.getField().getOne() |==> null
+6:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):97:0 |==> 1
+7:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):97:0 |==> -1
+8:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):97:i < value.length |==> i != value.length
+9:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):97:i < value.length |==> i <= value.length
+10:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):97:i < value.length |==> false
+11:EVR:<METHOD_INVOCATION(T[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):99:value[i].clone() |==> null
+12:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):100:1 |==> 0
+13:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):100:1 |==> -1
+14:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):100:i > 1 |==> i != 1
+15:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):100:i > 1 |==> i >= 1
+16:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):100:i > 1 |==> false
+17:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):101:factorial = factorial.multiply(i) |==> <NO-OP>
+18:EVR:<METHOD_INVOCATION(T)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):102:factorial.reciprocal() |==> null
+19:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):103:0 |==> 1
+20:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):103:0 |==> -1
+21:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):103:j < y.length |==> j != y.length
+22:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):103:j < y.length |==> j <= y.length
+23:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):103:j < y.length |==> false
+24:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):104:y[j] = y[j].multiply(inv) |==> <NO-OP>
+25:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):109:abscissae.size() |==> 0
+26:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):110:n - i |==> n % i
+27:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):110:n - i |==> n * i
+28:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):110:n - i |==> n + i
+29:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):110:n - i |==> n / i
+30:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):110:bottomDiagonal.add(n - i, y) |==> <NO-OP>
+31:EVR:<IDENTIFIER(T[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):111:y |==> null
+32:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):112:i |==> 0
+33:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):112:j < n |==> j != n
+34:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):112:j < n |==> j <= n
+35:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):112:j < n |==> false
+36:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:1 |==> 0
+37:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:1 |==> -1
+38:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:j + 1 |==> j % 1
+39:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:j + 1 |==> j * 1
+40:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:j + 1 |==> j - 1
+41:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:j + 1 |==> j / 1
+42:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:n - (j + 1) |==> n % (j + 1)
+43:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:n - (j + 1) |==> n * (j + 1)
+44:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:n - (j + 1) |==> n + (j + 1)
+45:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):113:n - (j + 1) |==> n / (j + 1)
+46:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:1 |==> 0
+47:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:1 |==> -1
+48:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:j + 1 |==> j % 1
+49:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:j + 1 |==> j * 1
+50:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:j + 1 |==> j - 1
+51:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:j + 1 |==> j / 1
+52:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:n - (j + 1) |==> n % (j + 1)
+53:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:n - (j + 1) |==> n * (j + 1)
+54:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:n - (j + 1) |==> n + (j + 1)
+55:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:n - (j + 1) |==> n / (j + 1)
+56:COR:x.equals(abscissae.get(n - (j + 1))):TRUE:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:x.equals(abscissae.get(n - (j + 1))) |==> false
+57:COR:x.equals(abscissae.get(n - (j + 1))):FALSE:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):114:x.equals(abscissae.get(n - (j + 1))) |==> true
+58:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:1 |==> 0
+59:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:1 |==> -1
+60:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:j + 1 |==> j % 1
+61:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:j + 1 |==> j * 1
+62:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:j + 1 |==> j - 1
+63:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:j + 1 |==> j / 1
+64:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:n - (j + 1) |==> n % (j + 1)
+65:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:n - (j + 1) |==> n * (j + 1)
+66:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:n - (j + 1) |==> n + (j + 1)
+67:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):117:n - (j + 1) |==> n / (j + 1)
+68:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):118:0 |==> 1
+69:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):118:0 |==> -1
+70:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):118:k < y.length |==> k != y.length
+71:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):118:k < y.length |==> k <= y.length
+72:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):118:k < y.length |==> false
+73:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):119:bottom1[k] = inv.multiply(bottom0[k].subtract(bottom1[k])) |==> <NO-OP>
+74:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):121:bottom0 = bottom1 |==> <NO-OP>
+75:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):125:topDiagonal.add(bottom0.clone()) |==> <NO-OP>
+76:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@addSamplePoint(T,T[][]):128:abscissae.add(x) |==> <NO-OP>
+77:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):143:MathUtils.checkNotNull(x) |==> <NO-OP>
+78:COR:abscissae.isEmpty():TRUE:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):144:abscissae.isEmpty() |==> false
+79:COR:abscissae.isEmpty():FALSE:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):144:abscissae.isEmpty() |==> true
+80:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):148:0 |==> 1
+81:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):148:0 |==> -1
+82:EVR:<METHOD_INVOCATION(T)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):149:x.getField().getOne() |==> null
+83:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):150:0 |==> 1
+84:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):150:0 |==> -1
+85:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):150:i < topDiagonal.size() |==> i != topDiagonal.size()
+86:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):150:i < topDiagonal.size() |==> i <= topDiagonal.size()
+87:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):150:i < topDiagonal.size() |==> false
+88:EVR:<METHOD_INVOCATION(T[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):151:topDiagonal.get(i) |==> null
+89:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):152:0 |==> 1
+90:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):152:0 |==> -1
+91:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):152:k < value.length |==> k != value.length
+92:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):152:k < value.length |==> k <= value.length
+93:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):152:k < value.length |==> false
+94:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):153:value[k] = value[k].add(dividedDifference[k].multiply(valueCoeff)) |==> <NO-OP>
+95:EVR:<METHOD_INVOCATION(T)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):155:x.subtract(abscissae.get(i)) |==> null
+96:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):156:valueCoeff = valueCoeff.multiply(deltaX) |==> <NO-OP>
+97:EVR:<IDENTIFIER(T[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@value(T):159:value |==> null
+98:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):174:MathUtils.checkNotNull(x) |==> <NO-OP>
+99:COR:abscissae.isEmpty():TRUE:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):175:abscissae.isEmpty() |==> false
+100:COR:abscissae.isEmpty():FALSE:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):175:abscissae.isEmpty() |==> true
+101:EVR:<METHOD_INVOCATION(T)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):179:x.getField().getZero() |==> null
+102:EVR:<METHOD_INVOCATION(T)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):180:x.getField().getOne() |==> null
+103:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):181:1 |==> 0
+104:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):181:1 |==> -1
+105:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):181:order + 1 |==> order % 1
+106:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):181:order + 1 |==> order * 1
+107:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):181:order + 1 |==> order - 1
+108:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):181:order + 1 |==> order / 1
+109:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):182:0 |==> 1
+110:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):182:0 |==> -1
+111:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):182:tj[0] = zero |==> <NO-OP>
+112:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):183:0 |==> 1
+113:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):183:0 |==> -1
+114:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):183:i < order |==> i != order
+115:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):183:i < order |==> i <= order
+116:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):183:i < order |==> false
+117:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):184:1 |==> 0
+118:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):184:1 |==> -1
+119:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):184:i + 1 |==> i % 1
+120:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):184:i + 1 |==> i * 1
+121:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):184:i + 1 |==> i - 1
+122:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):184:i + 1 |==> i / 1
+123:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):184:tj[i + 1] = tj[i].add(one) |==> <NO-OP>
+124:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):188:1 |==> 0
+125:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):188:1 |==> -1
+126:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):188:order + 1 |==> order % 1
+127:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):188:order + 1 |==> order * 1
+128:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):188:order + 1 |==> order - 1
+129:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):188:order + 1 |==> order / 1
+130:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):188:0 |==> 1
+131:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):188:0 |==> -1
+132:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):189:1 |==> 0
+133:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):189:1 |==> -1
+134:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):189:order + 1 |==> order % 1
+135:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):189:order + 1 |==> order * 1
+136:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):189:order + 1 |==> order - 1
+137:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):189:order + 1 |==> order / 1
+138:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):190:0 |==> 1
+139:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):190:0 |==> -1
+140:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):190:valueCoeff[0] = x.getField().getOne() |==> <NO-OP>
+141:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):191:0 |==> 1
+142:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):191:0 |==> -1
+143:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):191:i < topDiagonal.size() |==> i != topDiagonal.size()
+144:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):191:i < topDiagonal.size() |==> i <= topDiagonal.size()
+145:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):191:i < topDiagonal.size() |==> false
+146:EVR:<METHOD_INVOCATION(T[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):192:topDiagonal.get(i) |==> null
+147:EVR:<METHOD_INVOCATION(T)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):193:x.subtract(abscissae.get(i)) |==> null
+148:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):194:order |==> 0
+149:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):194:0 |==> 1
+150:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):194:0 |==> -1
+151:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):194:j >= 0 |==> j == 0
+152:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):194:j >= 0 |==> j > 0
+153:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):194:j >= 0 |==> true
+154:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):195:0 |==> 1
+155:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):195:0 |==> -1
+156:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):195:k < derivatives[j].length |==> k != derivatives[j].length
+157:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):195:k < derivatives[j].length |==> k <= derivatives[j].length
+158:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):195:k < derivatives[j].length |==> false
+159:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):196:derivatives[j][k] = derivatives[j][k].add(dividedDifference[k].multiply(valueCoeff[j])) |==> <NO-OP>
+160:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):199:valueCoeff[j] = valueCoeff[j].multiply(deltaX) |==> <NO-OP>
+161:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):200:0 |==> 1
+162:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):200:0 |==> -1
+163:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):200:j > 0 |==> j != 0
+164:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):200:j > 0 |==> j >= 0
+165:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):200:j > 0 |==> false
+166:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):201:1 |==> 0
+167:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):201:1 |==> -1
+168:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):201:j - 1 |==> j % 1
+169:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):201:j - 1 |==> j * 1
+170:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):201:j - 1 |==> j + 1
+171:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):201:j - 1 |==> j / 1
+172:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):201:valueCoeff[j] = valueCoeff[j].add(tj[j].multiply(valueCoeff[j - 1])) |==> <NO-OP>
+173:EVR:<IDENTIFIER(T[][])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.FieldHermiteInterpolator@derivatives(T,int):206:derivatives |==> null

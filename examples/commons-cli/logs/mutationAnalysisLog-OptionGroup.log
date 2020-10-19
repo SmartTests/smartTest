@@ -1,0 +1,1528 @@
+OUTPUT FOLDER "13-10-2020_14_47_30" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_47_30/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_47_30/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_47_30/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_47_34" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_47_34/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_47_34/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_47_34/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_47_58" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_47_58/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_47_58/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_47_58/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_48_18" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_18/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_18/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_18/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_48_21" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_21/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_21/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_21/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_48_23" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_23/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_23/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_23/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_48_40" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_40/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_40/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_40/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_48_57" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_57/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_57/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_48_57/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_49_13" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_13/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_13/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_13/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_49_27" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_27/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_27/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_27/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_49_41" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_41/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_41/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_41/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_49_55" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_55/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_55/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_49_55/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_10" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_10/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_10/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_10/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_24" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_24/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_24/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_24/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_37" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_37/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_37/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_37/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_40" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_40/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_40/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_40/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_42" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_42/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_42/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_42/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_45" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_45/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_45/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_45/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_47" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_47/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_47/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_47/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_49" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_49/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_49/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_49/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_51" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_51/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_51/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_51/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_54" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_54/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_54/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_54/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_56" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_56/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_56/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_56/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_50_58" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_58/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_58/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_50_58/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_51_01" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_01/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_01/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_01/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_51_03" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_03/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_03/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_03/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_51_05" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_05/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_05/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_05/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+ANALYSIS OF MUTATION================ 1
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 1
+ANALYSIS OF MUTATION================ 2
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 2
+testFailed for mutation 2
+testFailed for mutation 2
+testFailed for mutation 2
+testFailed for mutation 2
+testFailed for mutation 2
+testFailed for mutation 2
+testFailed for mutation 2
+testFailed for mutation 2
+testFailed for mutation 2
+testFailed for mutation 2
+ANALYSIS OF MUTATION================ 3
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 3
+testFailed for mutation 3
+testFailed for mutation 3
+testFailed for mutation 3
+testFailed for mutation 3
+testFailed for mutation 3
+testFailed for mutation 3
+testFailed for mutation 3
+testFailed for mutation 3
+testFailed for mutation 3
+testFailed for mutation 3
+ANALYSIS OF MUTATION================ 4
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 4
+ANALYSIS OF MUTATION================ 5
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 5
+ANALYSIS OF MUTATION================ 6
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 6
+testFailed for mutation 6
+testFailed for mutation 6
+testFailed for mutation 6
+testFailed for mutation 6
+testFailed for mutation 6
+testFailed for mutation 6
+testFailed for mutation 6
+testFailed for mutation 6
+testFailed for mutation 6
+testFailed for mutation 6
+ANALYSIS OF MUTATION================ 7
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 7
+testFailed for mutation 7
+testFailed for mutation 7
+testFailed for mutation 7
+testFailed for mutation 7
+testFailed for mutation 7
+testFailed for mutation 7
+testFailed for mutation 7
+testFailed for mutation 7
+testFailed for mutation 7
+testFailed for mutation 7
+ANALYSIS OF MUTATION================ 8
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 8
+testFailed for mutation 8
+testFailed for mutation 8
+testFailed for mutation 8
+testFailed for mutation 8
+testFailed for mutation 8
+testFailed for mutation 8
+testFailed for mutation 8
+testFailed for mutation 8
+testFailed for mutation 8
+testFailed for mutation 8
+ANALYSIS OF MUTATION================ 9
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 9
+testFailed for mutation 9
+testFailed for mutation 9
+testFailed for mutation 9
+testFailed for mutation 9
+testFailed for mutation 9
+testFailed for mutation 9
+testFailed for mutation 9
+testFailed for mutation 9
+ANALYSIS OF MUTATION================ 10
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 10
+testFailed for mutation 10
+testFailed for mutation 10
+testFailed for mutation 10
+testFailed for mutation 10
+testFailed for mutation 10
+testFailed for mutation 10
+testFailed for mutation 10
+testFailed for mutation 10
+ANALYSIS OF MUTATION================ 11
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 11
+testFailed for mutation 11
+testFailed for mutation 11
+testFailed for mutation 11
+testFailed for mutation 11
+testFailed for mutation 11
+testFailed for mutation 11
+testFailed for mutation 11
+testFailed for mutation 11
+ANALYSIS OF MUTATION================ 12
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 12
+testFailed for mutation 12
+testFailed for mutation 12
+testFailed for mutation 12
+testFailed for mutation 12
+testFailed for mutation 12
+testFailed for mutation 12
+testFailed for mutation 12
+testFailed for mutation 12
+ANALYSIS OF MUTATION================ 13
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 13
+testFailed for mutation 13
+testFailed for mutation 13
+testFailed for mutation 13
+testFailed for mutation 13
+testFailed for mutation 13
+testFailed for mutation 13
+testFailed for mutation 13
+testFailed for mutation 13
+ANALYSIS OF MUTATION================ 14
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 14
+testFailed for mutation 14
+testFailed for mutation 14
+testFailed for mutation 14
+testFailed for mutation 14
+testFailed for mutation 14
+testFailed for mutation 14
+testFailed for mutation 14
+testFailed for mutation 14
+ANALYSIS OF MUTATION================ 15
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 15
+ANALYSIS OF MUTATION================ 16
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 16
+ANALYSIS OF MUTATION================ 17
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 17
+ANALYSIS OF MUTATION================ 18
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 18
+ANALYSIS OF MUTATION================ 19
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 19
+ANALYSIS OF MUTATION================ 20
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 20
+ANALYSIS OF MUTATION================ 21
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 21
+ANALYSIS OF MUTATION================ 22
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 22
+ANALYSIS OF MUTATION================ 23
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 23
+ANALYSIS OF MUTATION================ 24
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 24
+ANALYSIS OF MUTATION================ 25
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 25
+ANALYSIS OF MUTATION================ 26
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 26
+ANALYSIS OF MUTATION================ 27
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutationOUTPUT FOLDER "13-10-2020_14_51_08" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_08/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_08/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_08/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_51_10" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_10/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_10/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_10/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_51_12" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_12/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_12/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_12/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_51_14" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_14/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_14/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_14/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_51_17" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_17/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_17/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_17/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_51_19" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_19/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_19/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_19/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/Users/kesina/eclipse-workspace/commons-cli/PythonScripts). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+OUTPUT FOLDER "13-10-2020_14_51_22" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup
+=================CFG created for OptionGroup.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... OptionGroup.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_22/OptionGroup-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_22/OptionGroup-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_14_51_22/OptionGroup-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+ 27
+ANALYSIS OF MUTATION================ 28
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 28
+ANALYSIS OF MUTATION================ 29
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 29
+ANALYSIS OF MUTATION================ 30
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 30
+ANALYSIS OF MUTATION================ 31
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 31
+ANALYSIS OF MUTATION================ 32
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 32
+ANALYSIS OF MUTATION================ 33
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+testFailed for mutation 33
+ANALYSIS OF MUTATION================ 34
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup PROGEX
+Comparison Done
+No test to rerun
+Output saved
+==================TIME TAKEN FOR ANALYSIS======================== 232.13776206970215

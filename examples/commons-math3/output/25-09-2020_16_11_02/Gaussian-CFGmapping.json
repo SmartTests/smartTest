@@ -1,0 +1,440 @@
+[
+  {
+    "v1": {
+      "line": "59",
+      "statement": "Gaussian (double norm, double mean, double sigma)"
+    }
+  },
+  {
+    "v2": {
+      "line": "63",
+      "statement": "if (sigma <= 0)"
+    }
+  },
+  {
+    "v3": {
+      "line": "64",
+      "statement": "throw new NotStrictlyPositiveException(sigma)"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "67",
+      "statement": "this.norm = norm"
+    }
+  },
+  {
+    "v6": {
+      "line": "68",
+      "statement": "this.mean = mean"
+    }
+  },
+  {
+    "v7": {
+      "line": "69",
+      "statement": "this.is = 1 / sigma"
+    }
+  },
+  {
+    "v8": {
+      "line": "70",
+      "statement": "this.i2s2 = 0.5 * is * is"
+    }
+  },
+  {
+    "v9": {
+      "line": "80",
+      "statement": "Gaussian (double mean, double sigma)"
+    }
+  },
+  {
+    "v10": {
+      "line": "83",
+      "statement": "this(1 / (sigma * FastMath.sqrt(2 * Math.PI)), mean, sigma)"
+    }
+  },
+  {
+    "v11": {
+      "line": "89",
+      "statement": "Gaussian ()"
+    }
+  },
+  {
+    "v12": {
+      "line": "90",
+      "statement": "this(0, 1)"
+    }
+  },
+  {
+    "v13": {
+      "line": "94",
+      "statement": "double value(double x)"
+    }
+  },
+  {
+    "v14": {
+      "line": "95",
+      "statement": "return value(x - mean, norm, i2s2)"
+    }
+  },
+  {
+    "v15": {
+      "line": "102",
+      "statement": "UnivariateFunction derivative()"
+    }
+  },
+  {
+    "v16": {
+      "line": "103",
+      "statement": "return FunctionUtils.toDifferentiableUnivariateFunction(this).derivative()"
+    }
+  },
+  {
+    "v17": {
+      "line": "127",
+      "statement": "double value(double x, double ... param)"
+    }
+  },
+  {
+    "v18": {
+      "line": "131",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v19": {
+      "line": "133",
+      "statement": "final double diff = x - param[1"
+    }
+  },
+  {
+    "v20": {
+      "line": "134",
+      "statement": "final double i2s2 = 1 / (2 * param[2] * param[2])"
+    }
+  },
+  {
+    "v21": {
+      "line": "135",
+      "statement": "return Gaussian.value(diff, param[0], i2s2)"
+    }
+  },
+  {
+    "v22": {
+      "line": "152",
+      "statement": "double[] gradient(double x, double ... param)"
+    }
+  },
+  {
+    "v23": {
+      "line": "156",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v24": {
+      "line": "158",
+      "statement": "final double norm = param[0"
+    }
+  },
+  {
+    "v25": {
+      "line": "159",
+      "statement": "final double diff = x - param[1"
+    }
+  },
+  {
+    "v26": {
+      "line": "160",
+      "statement": "final double sigma = param[2"
+    }
+  },
+  {
+    "v27": {
+      "line": "161",
+      "statement": "final double i2s2 = 1 / (2 * sigma * sigma)"
+    }
+  },
+  {
+    "v28": {
+      "line": "163",
+      "statement": "final double n = Gaussian.value(diff, 1, i2s2)"
+    }
+  },
+  {
+    "v29": {
+      "line": "164",
+      "statement": "final double m = norm * n * 2 * i2s2 * diff"
+    }
+  },
+  {
+    "v30": {
+      "line": "165",
+      "statement": "final double s = m * diff / sigma"
+    }
+  },
+  {
+    "v31": {
+      "line": "167",
+      "statement": "return new double[] { n, m, s }"
+    }
+  },
+  {
+    "v32": {
+      "line": "181",
+      "statement": "void validateParameters(double[] param)"
+    }
+  },
+  {
+    "v33": {
+      "line": "185",
+      "statement": "if (param == null)"
+    }
+  },
+  {
+    "v34": {
+      "line": "186",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v36": {
+      "line": "188",
+      "statement": "if (param.length != 3)"
+    }
+  },
+  {
+    "v37": {
+      "line": "189",
+      "statement": "throw new DimensionMismatchException(param.length, 3)"
+    }
+  },
+  {
+    "v38": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v39": {
+      "line": "191",
+      "statement": "if (param[2] <= 0)"
+    }
+  },
+  {
+    "v40": {
+      "line": "192",
+      "statement": "throw new NotStrictlyPositiveException(param[2])"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v42": {
+      "line": "203",
+      "statement": "double value(double xMinusMean, double norm, double i2s2)"
+    }
+  },
+  {
+    "v43": {
+      "line": "206",
+      "statement": "return norm * FastMath.exp(-xMinusMean * xMinusMean * i2s2)"
+    }
+  },
+  {
+    "v44": {
+      "line": "212",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v45": {
+      "line": "215",
+      "statement": "final double u = is * (t.getValue() - mean)"
+    }
+  },
+  {
+    "v46": {
+      "line": "216",
+      "statement": "double[] f = new double[t.getOrder() + 1"
+    }
+  },
+  {
+    "v47": {
+      "line": "225",
+      "statement": "final double[] p = new double[f.length"
+    }
+  },
+  {
+    "v48": {
+      "line": "226",
+      "statement": "p[0] = 1"
+    }
+  },
+  {
+    "v49": {
+      "line": "227",
+      "statement": "final double u2 = u * u"
+    }
+  },
+  {
+    "v50": {
+      "line": "228",
+      "statement": "double coeff = norm * FastMath.exp(-0.5 * u2)"
+    }
+  },
+  {
+    "v51": {
+      "line": "229",
+      "statement": "if (coeff <= Precision.SAFE_MIN)"
+    }
+  },
+  {
+    "v52": {
+      "line": "230",
+      "statement": "Arrays.fill(f, 0.0)"
+    }
+  },
+  {
+    "v53": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v54": {
+      "line": "232",
+      "statement": "f[0] = coeff"
+    }
+  },
+  {
+    "v55": {
+      "line": "233",
+      "statement": "for (  int n = 1 ; n < f.length ;   ++n)"
+    }
+  },
+  {
+    "v58": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v59": {
+      "line": "236",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v60": {
+      "line": "237",
+      "statement": "p[n] = -p[n - 1"
+    }
+  },
+  {
+    "v61": {
+      "line": "238",
+      "statement": "for (  int k = n ; k >= 0 ;   k -= 2)"
+    }
+  },
+  {
+    "v64": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v65": {
+      "line": "239",
+      "statement": "v = v * u2 + p[k"
+    }
+  },
+  {
+    "v66": {
+      "line": "240",
+      "statement": "if (k > 2)"
+    }
+  },
+  {
+    "v67": {
+      "line": "241",
+      "statement": "p[k - 2] = (k - 1) * p[k - 1] - p[k - 3"
+    }
+  },
+  {
+    "v68": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v69": {
+      "line": "242",
+      "statement": "if (k == 2)"
+    }
+  },
+  {
+    "v70": {
+      "line": "243",
+      "statement": "p[0] = p[1"
+    }
+  },
+  {
+    "v71": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v72": {
+      "line": "246",
+      "statement": "if ((n & 0x1) == 1)"
+    }
+  },
+  {
+    "v73": {
+      "line": "247",
+      "statement": "v *= u"
+    }
+  },
+  {
+    "v74": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v75": {
+      "line": "250",
+      "statement": "coeff *= is"
+    }
+  },
+  {
+    "v76": {
+      "line": "251",
+      "statement": "f[n] = coeff * v"
+    }
+  },
+  {
+    "v77": {
+      "line": "256",
+      "statement": "return t.compose(f)"
+    }
+  }
+]

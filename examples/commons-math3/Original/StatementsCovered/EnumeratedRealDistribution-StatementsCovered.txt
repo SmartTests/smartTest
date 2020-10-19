@@ -1,0 +1,122 @@
+
+testCumulativeProbability : cumulativeProbability(D)D=[127,128
+128,130
+130,131
+131,134
+134,131
+131,132
+132,134
+134,136
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testDensity : density(D)D=[120,121
+];;probability(D)D=[107,108
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testExceptions : <init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[96,100
+100,101
+]
+
+testGetNumericalMean : getNumericalMean()D=[144,145
+145,147
+147,148
+148,149
+149,148
+149,151
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testGetNumericalVariance : getNumericalVariance()D=[159,160
+160,161
+161,163
+163,164
+164,165
+165,166
+166,164
+166,168
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testGetSupportLowerBound : getSupportLowerBound()D=[178,179
+179,180
+180,181
+181,182
+182,184
+184,181
+181,184
+184,186
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testGetSupportUpperBound : getSupportUpperBound()D=[196,197
+197,198
+198,199
+199,200
+200,202
+202,199
+199,202
+202,204
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testIsSupportConnected : isSupportConnected()Z=[236,237
+]
+
+testIsSupportLowerBoundInclusive : isSupportLowerBoundInclusive()Z=[214,215
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testIsSupportUpperBoundInclusive : isSupportUpperBoundInclusive()Z=[225,226
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testIssue942 : <init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testProbability : probability(D)D=[107,108
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]
+
+testSample : sample()D=[244,245
+];;getNumericalMean()D=[144,145
+145,147
+147,148
+148,149
+149,148
+149,151
+];;getNumericalVariance()D=[159,160
+160,161
+161,163
+163,164
+164,165
+165,166
+166,164
+166,168
+];;<init>([D[D)V=[67,68
+68,69
+];;<init>(Lorg/apache/commons/math3/random/RandomGenerator;[D[D)V=[100,101
+]

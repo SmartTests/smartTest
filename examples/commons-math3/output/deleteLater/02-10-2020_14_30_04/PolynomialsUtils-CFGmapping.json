@@ -1,0 +1,596 @@
+[
+  {
+    "v1": {
+      "line": "51",
+      "statement": "static"
+    }
+  },
+  {
+    "v2": {
+      "line": "55",
+      "statement": "CHEBYSHEV_COEFFICIENTS = new ArrayList<BigFraction>()"
+    }
+  },
+  {
+    "v3": {
+      "line": "56",
+      "statement": "CHEBYSHEV_COEFFICIENTS.add(BigFraction.ONE)"
+    }
+  },
+  {
+    "v4": {
+      "line": "57",
+      "statement": "CHEBYSHEV_COEFFICIENTS.add(BigFraction.ZERO)"
+    }
+  },
+  {
+    "v5": {
+      "line": "62",
+      "statement": "HERMITE_COEFFICIENTS = new ArrayList<BigFraction>()"
+    }
+  },
+  {
+    "v6": {
+      "line": "63",
+      "statement": "HERMITE_COEFFICIENTS.add(BigFraction.ONE)"
+    }
+  },
+  {
+    "v7": {
+      "line": "64",
+      "statement": "HERMITE_COEFFICIENTS.add(BigFraction.ZERO)"
+    }
+  },
+  {
+    "v8": {
+      "line": "65",
+      "statement": "HERMITE_COEFFICIENTS.add(BigFraction.TWO)"
+    }
+  },
+  {
+    "v9": {
+      "line": "69",
+      "statement": "LAGUERRE_COEFFICIENTS = new ArrayList<BigFraction>()"
+    }
+  },
+  {
+    "v10": {
+      "line": "70",
+      "statement": "LAGUERRE_COEFFICIENTS.add(BigFraction.ONE)"
+    }
+  },
+  {
+    "v11": {
+      "line": "71",
+      "statement": "LAGUERRE_COEFFICIENTS.add(BigFraction.ONE)"
+    }
+  },
+  {
+    "v12": {
+      "line": "72",
+      "statement": "LAGUERRE_COEFFICIENTS.add(BigFraction.MINUS_ONE)"
+    }
+  },
+  {
+    "v13": {
+      "line": "76",
+      "statement": "LEGENDRE_COEFFICIENTS = new ArrayList<BigFraction>()"
+    }
+  },
+  {
+    "v14": {
+      "line": "77",
+      "statement": "LEGENDRE_COEFFICIENTS.add(BigFraction.ONE)"
+    }
+  },
+  {
+    "v15": {
+      "line": "78",
+      "statement": "LEGENDRE_COEFFICIENTS.add(BigFraction.ZERO)"
+    }
+  },
+  {
+    "v16": {
+      "line": "79",
+      "statement": "LEGENDRE_COEFFICIENTS.add(BigFraction.ONE)"
+    }
+  },
+  {
+    "v17": {
+      "line": "82",
+      "statement": "JACOBI_COEFFICIENTS = new HashMap<JacobiKey, List<BigFraction>>()"
+    }
+  },
+  {
+    "v18": {
+      "line": "89",
+      "statement": "PolynomialsUtils ()"
+    }
+  },
+  {
+    "v19": {
+      "line": "105",
+      "statement": "PolynomialFunction createChebyshevPolynomial(final int degree)"
+    }
+  },
+  {
+    "v20": {
+      "line": "106",
+      "statement": "return buildPolynomial(degree, CHEBYSHEV_COEFFICIENTS, new RecurrenceCoefficientsGenerator() { private final BigFraction[] coeffs = { BigFraction.ZERO, BigFraction.TWO, BigFraction.ONE }; /** {@inheritDoc} */ public BigFraction[] generate(int k) { return coeffs; } })"
+    }
+  },
+  {
+    "v21": {
+      "line": "130",
+      "statement": "PolynomialFunction createHermitePolynomial(final int degree)"
+    }
+  },
+  {
+    "v22": {
+      "line": "131",
+      "statement": "return buildPolynomial(degree, HERMITE_COEFFICIENTS, new RecurrenceCoefficientsGenerator() { /** {@inheritDoc} */ public BigFraction[] generate(int k) { return new BigFraction[] { BigFraction.ZERO, BigFraction.TWO, new BigFraction(2 * k)}; } })"
+    }
+  },
+  {
+    "v23": {
+      "line": "156",
+      "statement": "PolynomialFunction createLaguerrePolynomial(final int degree)"
+    }
+  },
+  {
+    "v24": {
+      "line": "157",
+      "statement": "return buildPolynomial(degree, LAGUERRE_COEFFICIENTS, new RecurrenceCoefficientsGenerator() { /** {@inheritDoc} */ public BigFraction[] generate(int k) { final int kP1 = k + 1; return new BigFraction[] { new BigFraction(2 * k + 1, kP1), new BigFraction(-1, kP1), new BigFraction(k, kP1)}; } })"
+    }
+  },
+  {
+    "v25": {
+      "line": "183",
+      "statement": "PolynomialFunction createLegendrePolynomial(final int degree)"
+    }
+  },
+  {
+    "v26": {
+      "line": "184",
+      "statement": "return buildPolynomial(degree, LEGENDRE_COEFFICIENTS,  new RecurrenceCoefficientsGenerator() { /** {@inheritDoc} */ public BigFraction[] generate(int k) { final int kP1 = k + 1; return new BigFraction[] { BigFraction.ZERO, new BigFraction(k + kP1, kP1), new BigFraction(k, kP1)}; } })"
+    }
+  },
+  {
+    "v27": {
+      "line": "214",
+      "statement": "PolynomialFunction createJacobiPolynomial(final int degree, final int v, final int w)"
+    }
+  },
+  {
+    "v28": {
+      "line": "217",
+      "statement": "final JacobiKey key = new JacobiKey(v, w)"
+    }
+  },
+  {
+    "v29": {
+      "line": "219",
+      "statement": "if (!JACOBI_COEFFICIENTS.containsKey(key))"
+    }
+  },
+  {
+    "v30": {
+      "line": "222",
+      "statement": "final List<BigFraction> list = new ArrayList<BigFraction>()"
+    }
+  },
+  {
+    "v31": {
+      "line": "223",
+      "statement": "JACOBI_COEFFICIENTS.put(key, list)"
+    }
+  },
+  {
+    "v32": {
+      "line": "226",
+      "statement": "list.add(BigFraction.ONE)"
+    }
+  },
+  {
+    "v33": {
+      "line": "229",
+      "statement": "list.add(new BigFraction(v - w, 2))"
+    }
+  },
+  {
+    "v34": {
+      "line": "230",
+      "statement": "list.add(new BigFraction(2 + v + w, 2))"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v36": {
+      "line": "234",
+      "statement": "return buildPolynomial(degree, JACOBI_COEFFICIENTS.get(key),  new RecurrenceCoefficientsGenerator() { /** {@inheritDoc} */ public BigFraction[] generate(int k) { k++; final int kvw  = k + v + w; final int twoKvw = kvw + k; final int twoKvwM1 = twoKvw - 1; final int twoKvwM2 = twoKvw - 2; final int den  = 2 * k *  kvw * twoKvwM2;  return new BigFraction[] { new BigFraction(twoKvwM1 * (v * v - w * w), den), new BigFraction(twoKvwM1 * twoKvw * twoKvwM2, den), new BigFraction(2 * (k + v - 1) * (k + w - 1) * twoKvw, den) }; } })"
+    }
+  },
+  {
+    "v37": {
+      "line": "268",
+      "statement": "JacobiKey (final int v, final int w)"
+    }
+  },
+  {
+    "v38": {
+      "line": "269",
+      "statement": "this.v = v"
+    }
+  },
+  {
+    "v39": {
+      "line": "270",
+      "statement": "this.w = w"
+    }
+  },
+  {
+    "v40": {
+      "line": "277",
+      "statement": "int hashCode()"
+    }
+  },
+  {
+    "v41": {
+      "line": "278",
+      "statement": "return (v << 16) ^ w"
+    }
+  },
+  {
+    "v42": {
+      "line": "286",
+      "statement": "boolean equals(final Object key)"
+    }
+  },
+  {
+    "v43": {
+      "line": "288",
+      "statement": "if ((key == null) || !(key instanceof JacobiKey))"
+    }
+  },
+  {
+    "v44": {
+      "line": "289",
+      "statement": "return false"
+    }
+  },
+  {
+    "v45": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v46": {
+      "line": "292",
+      "statement": "final JacobiKey otherK = (JacobiKey) key"
+    }
+  },
+  {
+    "v47": {
+      "line": "293",
+      "statement": "return (v == otherK.v) && (w == otherK.w)"
+    }
+  },
+  {
+    "v48": {
+      "line": "322",
+      "statement": "double[] shift(final double[] coefficients,  final double shift)"
+    }
+  },
+  {
+    "v49": {
+      "line": "324",
+      "statement": "final int dp1 = coefficients.length"
+    }
+  },
+  {
+    "v50": {
+      "line": "325",
+      "statement": "final double[] newCoefficients = new double[dp1"
+    }
+  },
+  {
+    "v51": {
+      "line": "328",
+      "statement": "final int[][] coeff = new int[dp1][dp1"
+    }
+  },
+  {
+    "v52": {
+      "line": "329",
+      "statement": "for (  int i = 0 ; i < dp1 ;   i++)"
+    }
+  },
+  {
+    "v55": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v56": {
+      "line": "330",
+      "statement": "for (  int j = 0 ; j <= i ;   j++)"
+    }
+  },
+  {
+    "v59": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v60": {
+      "line": "331",
+      "statement": "coeff[i][j] = (int) CombinatoricsUtils.binomialCoefficient(i, j)"
+    }
+  },
+  {
+    "v61": {
+      "line": "336",
+      "statement": "for (  int i = 0 ; i < dp1 ;   i++)"
+    }
+  },
+  {
+    "v64": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v65": {
+      "line": "337",
+      "statement": "newCoefficients[0] += coefficients[i] * FastMath.pow(shift, i)"
+    }
+  },
+  {
+    "v66": {
+      "line": "341",
+      "statement": "final int d = dp1 - 1"
+    }
+  },
+  {
+    "v67": {
+      "line": "342",
+      "statement": "for (  int i = 0 ; i < d ;   i++)"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v71": {
+      "line": "343",
+      "statement": "for (  int j = i ; j < d ;   j++)"
+    }
+  },
+  {
+    "v74": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v75": {
+      "line": "344",
+      "statement": "newCoefficients[i + 1] += coeff[j + 1][j - i] * coefficients[j + 1] * FastMath.pow(shift, j - i)"
+    }
+  },
+  {
+    "v76": {
+      "line": "349",
+      "statement": "return newCoefficients"
+    }
+  },
+  {
+    "v77": {
+      "line": "359",
+      "statement": "PolynomialFunction buildPolynomial(final int degree, final List<BigFraction> coefficients, final RecurrenceCoefficientsGenerator generator)"
+    }
+  },
+  {
+    "v78": {
+      "line": "363",
+      "statement": "final int maxDegree = (int) FastMath.floor(FastMath.sqrt(2 * coefficients.size())) - 1"
+    }
+  },
+  {
+    "v79": {
+      "line": "364",
+      "statement": "synchronized (PolynomialsUtils.class)"
+    }
+  },
+  {
+    "v80": {
+      "line": "365",
+      "statement": "if (degree > maxDegree)"
+    }
+  },
+  {
+    "v81": {
+      "line": "366",
+      "statement": "computeUpToDegree(degree, maxDegree, generator, coefficients)"
+    }
+  },
+  {
+    "v82": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v83": {
+      "line": 0,
+      "statement": "\"end-synchronized"
+    }
+  },
+  {
+    "v84": {
+      "line": "378",
+      "statement": "final int start = degree * (degree + 1) / 2"
+    }
+  },
+  {
+    "v85": {
+      "line": "380",
+      "statement": "final double[] a = new double[degree + 1"
+    }
+  },
+  {
+    "v86": {
+      "line": "381",
+      "statement": "for (  int i = 0 ; i <= degree ;   ++i)"
+    }
+  },
+  {
+    "v89": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v90": {
+      "line": "382",
+      "statement": "a[i] = coefficients.get(start + i).doubleValue()"
+    }
+  },
+  {
+    "v91": {
+      "line": "386",
+      "statement": "return new PolynomialFunction(a)"
+    }
+  },
+  {
+    "v92": {
+      "line": "396",
+      "statement": "void computeUpToDegree(final int degree, final int maxDegree, final RecurrenceCoefficientsGenerator generator, final List<BigFraction> coefficients)"
+    }
+  },
+  {
+    "v93": {
+      "line": "400",
+      "statement": "int startK = (maxDegree - 1) * maxDegree / 2"
+    }
+  },
+  {
+    "v94": {
+      "line": "401",
+      "statement": "for (  int k = maxDegree ; k < degree ;   ++k)"
+    }
+  },
+  {
+    "v97": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v98": {
+      "line": "404",
+      "statement": "int startKm1 = startK"
+    }
+  },
+  {
+    "v99": {
+      "line": "405",
+      "statement": "startK += k"
+    }
+  },
+  {
+    "v100": {
+      "line": "408",
+      "statement": "BigFraction[] ai = generator.generate(k)"
+    }
+  },
+  {
+    "v101": {
+      "line": "410",
+      "statement": "BigFraction ck = coefficients.get(startK)"
+    }
+  },
+  {
+    "v102": {
+      "line": "411",
+      "statement": "BigFraction ckm1 = coefficients.get(startKm1)"
+    }
+  },
+  {
+    "v103": {
+      "line": "414",
+      "statement": "coefficients.add(ck.multiply(ai[0]).subtract(ckm1.multiply(ai[2])))"
+    }
+  },
+  {
+    "v104": {
+      "line": "417",
+      "statement": "for (  int i = 1 ; i < k ;   ++i)"
+    }
+  },
+  {
+    "v107": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v108": {
+      "line": "418",
+      "statement": "final BigFraction ckPrev = ck"
+    }
+  },
+  {
+    "v109": {
+      "line": "419",
+      "statement": "ck = coefficients.get(startK + i)"
+    }
+  },
+  {
+    "v110": {
+      "line": "420",
+      "statement": "ckm1 = coefficients.get(startKm1 + i)"
+    }
+  },
+  {
+    "v111": {
+      "line": "421",
+      "statement": "coefficients.add(ck.multiply(ai[0]).add(ckPrev.multiply(ai[1])).subtract(ckm1.multiply(ai[2])))"
+    }
+  },
+  {
+    "v112": {
+      "line": "425",
+      "statement": "final BigFraction ckPrev = ck"
+    }
+  },
+  {
+    "v113": {
+      "line": "426",
+      "statement": "ck = coefficients.get(startK + k)"
+    }
+  },
+  {
+    "v114": {
+      "line": "427",
+      "statement": "coefficients.add(ck.multiply(ai[0]).add(ckPrev.multiply(ai[1])))"
+    }
+  },
+  {
+    "v115": {
+      "line": "430",
+      "statement": "coefficients.add(ck.multiply(ai[1]))"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+1:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@solve(int,org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction,double,double):69:super.solve(maxEval, f, UnivariateSolverUtils.midpoint(min, max)) |==> 0.0
+2:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():78:getStartValue() |==> 0.0
+3:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():79:getAbsoluteAccuracy() |==> 0.0
+4:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():81:startValue |==> 0.0
+5:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():84:computeObjectiveValueAndDerivative(x0) |==> null
+6:LVR:POS:0:org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:1 |==> 0
+7:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:1 |==> -1
+8:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:y0.getValue() / y0.getPartialDerivative(1) |==> y0.getValue() % y0.getPartialDerivative(1)
+9:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:y0.getValue() / y0.getPartialDerivative(1) |==> y0.getValue() * y0.getPartialDerivative(1)
+10:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:y0.getValue() / y0.getPartialDerivative(1) |==> y0.getValue() + y0.getPartialDerivative(1)
+11:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:y0.getValue() / y0.getPartialDerivative(1) |==> y0.getValue() - y0.getPartialDerivative(1)
+12:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:x0 - (y0.getValue() / y0.getPartialDerivative(1)) |==> x0 % (y0.getValue() / y0.getPartialDerivative(1))
+13:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:x0 - (y0.getValue() / y0.getPartialDerivative(1)) |==> x0 * (y0.getValue() / y0.getPartialDerivative(1))
+14:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:x0 - (y0.getValue() / y0.getPartialDerivative(1)) |==> x0 + (y0.getValue() / y0.getPartialDerivative(1))
+15:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():85:x0 - (y0.getValue() / y0.getPartialDerivative(1)) |==> x0 / (y0.getValue() / y0.getPartialDerivative(1))
+16:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():86:x1 - x0 |==> x1 % x0
+17:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():86:x1 - x0 |==> x1 * x0
+18:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():86:x1 - x0 |==> x1 + x0
+19:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():86:x1 - x0 |==> x1 / x0
+20:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():86:FastMath.abs(x1 - x0) <= absoluteAccuracy |==> FastMath.abs(x1 - x0) < absoluteAccuracy
+21:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():86:FastMath.abs(x1 - x0) <= absoluteAccuracy |==> FastMath.abs(x1 - x0) == absoluteAccuracy
+22:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():86:FastMath.abs(x1 - x0) <= absoluteAccuracy |==> true
+23:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():87:return x1; |==> <NO-OP>
+24:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.NewtonRaphsonSolver@doSolve():90:x0 = x1 |==> <NO-OP>

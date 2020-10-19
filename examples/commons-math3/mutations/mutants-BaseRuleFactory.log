@@ -1,0 +1,35 @@
+1:EVR:<NEW_CLASS(java.util.TreeMap<java.lang.Integer,org.apache.commons.math3.util.Pair<T[],T[]>>)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory:40:new TreeMap<Integer, Pair<T[], T[]>>() |==> null
+2:EVR:<NEW_CLASS(java.util.TreeMap<java.lang.Integer,org.apache.commons.math3.util.Pair<double[],double[]>>)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory:43:new TreeMap<Integer, Pair<double[], double[]>>() |==> null
+3:LVR:0:POS:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):58:0 |==> 1
+4:LVR:0:NEG:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):58:0 |==> -1
+5:ROR:<=(int,int):<(int,int):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):58:numberOfPoints <= 0 |==> numberOfPoints < 0
+6:ROR:<=(int,int):==(int,int):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):58:numberOfPoints <= 0 |==> numberOfPoints == 0
+7:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):58:numberOfPoints <= 0 |==> true
+8:EVR:<METHOD_INVOCATION(org.apache.commons.math3.util.Pair<double[],double[]>)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):64:pointsAndWeightsDouble.get(numberOfPoints) |==> null
+9:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):66:cached == null |==> false
+10:EVR:<METHOD_INVOCATION(org.apache.commons.math3.util.Pair<T[],T[]>)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):70:getRuleInternal(numberOfPoints) |==> null
+11:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):71:cached = convertToDouble(rule) |==> <NO-OP>
+12:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):74:pointsAndWeightsDouble.put(numberOfPoints, cached) |==> <NO-OP>
+13:EVR:<NEW_CLASS(org.apache.commons.math3.util.Pair<double[],double[]>)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRule(int):78:new Pair<double[], double[]>(cached.getFirst().clone(), cached.getSecond().clone()) |==> null
+14:EVR:<METHOD_INVOCATION(org.apache.commons.math3.util.Pair<T[],T[]>)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRuleInternal(int):95:pointsAndWeights.get(numberOfPoints) |==> null
+15:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRuleInternal(int):96:rule == null |==> false
+16:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRuleInternal(int):97:addRule(computeRule(numberOfPoints)) |==> <NO-OP>
+17:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRuleInternal(int):99:return getRuleInternal(numberOfPoints); |==> <NO-OP>
+18:EVR:<IDENTIFIER(org.apache.commons.math3.util.Pair<T[],T[]>)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@getRuleInternal(int):101:rule |==> null
+19:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@addRule(org.apache.commons.math3.util.Pair<T[],T[]>):112:rule.getFirst().length != rule.getSecond().length |==> rule.getFirst().length < rule.getSecond().length
+20:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@addRule(org.apache.commons.math3.util.Pair<T[],T[]>):112:rule.getFirst().length != rule.getSecond().length |==> rule.getFirst().length > rule.getSecond().length
+21:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@addRule(org.apache.commons.math3.util.Pair<T[],T[]>):112:rule.getFirst().length != rule.getSecond().length |==> true
+22:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@addRule(org.apache.commons.math3.util.Pair<T[],T[]>):117:pointsAndWeights.put(rule.getFirst().length, rule) |==> <NO-OP>
+23:EVR:<METHOD_INVOCATION(T[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):140:rule.getFirst() |==> null
+24:EVR:<METHOD_INVOCATION(T[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):141:rule.getSecond() |==> null
+25:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):143:pT.length |==> 0
+26:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):144:new double[len] |==> null
+27:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):145:new double[len] |==> null
+28:LVR:0:POS:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):147:0 |==> 1
+29:LVR:0:NEG:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):147:0 |==> -1
+30:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):147:i < len |==> i != len
+31:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):147:i < len |==> i <= len
+32:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):147:i < len |==> false
+33:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):148:pD[i] = pT[i].doubleValue() |==> <NO-OP>
+34:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):149:wD[i] = wT[i].doubleValue() |==> <NO-OP>
+35:EVR:<NEW_CLASS(org.apache.commons.math3.util.Pair<double[],double[]>)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory@convertToDouble(org.apache.commons.math3.util.Pair<T[],T[]>):152:new Pair<double[], double[]>(pD, wD) |==> null

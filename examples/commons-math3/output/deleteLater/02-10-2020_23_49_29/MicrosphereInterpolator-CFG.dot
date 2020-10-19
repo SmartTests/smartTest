@@ -1,0 +1,30 @@
+digraph MicrosphereInterpolator_CFG {
+  // graph-vertices
+  v1  [label="62:  MicrosphereInterpolator ()"];
+  v2  [label="63:  this(DEFAULT_MICROSPHERE_ELEMENTS, DEFAULT_BRIGHTNESS_EXPONENT)"];
+  v3  [label="73:  MicrosphereInterpolator (final int elements,  final int exponent)"];
+  v4  [label="77:  if (exponent < 0)"];
+  v5  [label="78:  throw new NotPositiveException(exponent)"];
+  v6  [label="endif"];
+  v7  [label="80:  if (elements <= 0)"];
+  v8  [label="81:  throw new NotStrictlyPositiveException(elements)"];
+  v9  [label="endif"];
+  v10  [label="84:  microsphereElements = elements"];
+  v11  [label="85:  brightnessExponent = exponent"];
+  v12  [label="91:  MultivariateFunction interpolate(final double[][] xval, final double[] yval)"];
+  v13  [label="96:  final UnitSphereRandomVectorGenerator rand = new UnitSphereRandomVectorGenerator(xval[0].length)"];
+  v14  [label="98:  return new MicrosphereInterpolatingFunction(xval, yval, brightnessExponent, microsphereElements, rand);"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v4 -> v5  [label="True"];
+  v4 -> v6  [label="False"];
+  v6 -> v7;
+  v7 -> v8  [label="True"];
+  v7 -> v9  [label="False"];
+  v9 -> v10;
+  v10 -> v11;
+  v12 -> v13;
+  v13 -> v14;
+  // end-of-graph
+}

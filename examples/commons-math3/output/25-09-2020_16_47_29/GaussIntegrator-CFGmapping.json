@@ -1,0 +1,164 @@
+[
+  {
+    "v1": {
+      "line": "50",
+      "statement": "GaussIntegrator (double[] points,  double[] weights)"
+    }
+  },
+  {
+    "v2": {
+      "line": "53",
+      "statement": "if (points.length != weights.length)"
+    }
+  },
+  {
+    "v3": {
+      "line": "54",
+      "statement": "throw new DimensionMismatchException(points.length,  weights.length)"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "58",
+      "statement": "MathArrays.checkOrder(points, MathArrays.OrderDirection.INCREASING, true, true)"
+    }
+  },
+  {
+    "v6": {
+      "line": "60",
+      "statement": "this.points = points.clone()"
+    }
+  },
+  {
+    "v7": {
+      "line": "61",
+      "statement": "this.weights = weights.clone()"
+    }
+  },
+  {
+    "v8": {
+      "line": "74",
+      "statement": "GaussIntegrator (Pair<double[], double[]> pointsAndWeights)"
+    }
+  },
+  {
+    "v9": {
+      "line": "76",
+      "statement": "this(pointsAndWeights.getFirst(), pointsAndWeights.getSecond())"
+    }
+  },
+  {
+    "v10": {
+      "line": "89",
+      "statement": "double integrate(UnivariateFunction f)"
+    }
+  },
+  {
+    "v11": {
+      "line": "90",
+      "statement": "double s = 0"
+    }
+  },
+  {
+    "v12": {
+      "line": "91",
+      "statement": "double c = 0"
+    }
+  },
+  {
+    "v13": {
+      "line": "92",
+      "statement": "for (  int i = 0 ; i < points.length ;   i++)"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v17": {
+      "line": "93",
+      "statement": "final double x = points[i"
+    }
+  },
+  {
+    "v18": {
+      "line": "94",
+      "statement": "final double w = weights[i"
+    }
+  },
+  {
+    "v19": {
+      "line": "95",
+      "statement": "final double y = w * f.value(x) - c"
+    }
+  },
+  {
+    "v20": {
+      "line": "96",
+      "statement": "final double t = s + y"
+    }
+  },
+  {
+    "v21": {
+      "line": "97",
+      "statement": "c = (t - s) - y"
+    }
+  },
+  {
+    "v22": {
+      "line": "98",
+      "statement": "s = t"
+    }
+  },
+  {
+    "v23": {
+      "line": "100",
+      "statement": "return s"
+    }
+  },
+  {
+    "v24": {
+      "line": "107",
+      "statement": "int getNumberOfPoints()"
+    }
+  },
+  {
+    "v25": {
+      "line": "108",
+      "statement": "return points.length"
+    }
+  },
+  {
+    "v26": {
+      "line": "117",
+      "statement": "double getPoint(int index)"
+    }
+  },
+  {
+    "v27": {
+      "line": "118",
+      "statement": "return points[index"
+    }
+  },
+  {
+    "v28": {
+      "line": "127",
+      "statement": "double getWeight(int index)"
+    }
+  },
+  {
+    "v29": {
+      "line": "128",
+      "statement": "return weights[index"
+    }
+  }
+]

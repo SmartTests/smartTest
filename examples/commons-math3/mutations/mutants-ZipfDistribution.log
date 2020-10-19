@@ -1,0 +1,141 @@
+1:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution:40:Double.NaN |==> 0.0
+2:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.ZipfDistribution:42:false |==> true
+3:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution:44:Double.NaN |==> 0.0
+4:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.ZipfDistribution:46:false |==> true
+5:LVR:0:POS:org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):77:0 |==> 1
+6:LVR:0:NEG:org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):77:0 |==> -1
+7:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):77:numberOfElements <= 0 |==> numberOfElements < 0
+8:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):77:numberOfElements <= 0 |==> numberOfElements == 0
+9:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):77:numberOfElements <= 0 |==> true
+10:LVR:0:POS:org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):81:0 |==> 1
+11:LVR:0:NEG:org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):81:0 |==> -1
+12:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):81:exponent <= 0 |==> exponent < 0
+13:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):81:exponent <= 0 |==> exponent == 0
+14:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):81:exponent <= 0 |==> true
+15:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):86:numberOfElements |==> 0
+16:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):87:exponent |==> 0.0
+17:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@getNumberOfElements():96:numberOfElements |==> 0
+18:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@getExponent():105:exponent |==> 0.0
+19:LVR:0:POS:org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:0 |==> 1
+20:LVR:0:NEG:org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:0 |==> -1
+21:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x <= 0 |==> x < 0
+22:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x <= 0 |==> x == 0
+23:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x <= 0 |==> true
+24:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x > numberOfElements |==> x != numberOfElements
+25:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x > numberOfElements |==> x >= numberOfElements
+26:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x > numberOfElements |==> false
+27:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x <= 0 || x > numberOfElements |==> x <= 0 != x > numberOfElements
+28:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x <= 0 || x > numberOfElements |==> x <= 0
+29:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x <= 0 || x > numberOfElements |==> x > numberOfElements
+30:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):110:x <= 0 || x > numberOfElements |==> true
+31:LVR:0:POS:org.apache.commons.math3.distribution.ZipfDistribution@probability(int):111:0.0 |==> 1.0
+32:LVR:0:NEG:org.apache.commons.math3.distribution.ZipfDistribution@probability(int):111:0.0 |==> -1.0
+33:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.ZipfDistribution@probability(int):111:return Config.__M_NO == 0 && Config.COVERED(31, 32) ? 0.0 : Config.__M_NO == 32 ? -1.0 : Config.__M_NO == 31 ? 1.0 : 0.0; |==> <NO-OP>
+34:LVR:POS:0:org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:1.0 |==> 0.0
+35:LVR:POS:NEG:org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:1.0 |==> -1.0
+36:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:1.0 / FastMath.pow(x, exponent) |==> 1.0 % FastMath.pow(x, exponent)
+37:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:1.0 / FastMath.pow(x, exponent) |==> 1.0 * FastMath.pow(x, exponent)
+38:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:1.0 / FastMath.pow(x, exponent) |==> 1.0 + FastMath.pow(x, exponent)
+39:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:1.0 / FastMath.pow(x, exponent) |==> 1.0 - FastMath.pow(x, exponent)
+40:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:(1.0 / FastMath.pow(x, exponent)) / generalizedHarmonic(numberOfElements, exponent) |==> (1.0 / FastMath.pow(x, exponent)) % generalizedHarmonic(numberOfElements, exponent)
+41:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:(1.0 / FastMath.pow(x, exponent)) / generalizedHarmonic(numberOfElements, exponent) |==> (1.0 / FastMath.pow(x, exponent)) * generalizedHarmonic(numberOfElements, exponent)
+42:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:(1.0 / FastMath.pow(x, exponent)) / generalizedHarmonic(numberOfElements, exponent) |==> (1.0 / FastMath.pow(x, exponent)) + generalizedHarmonic(numberOfElements, exponent)
+43:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ZipfDistribution@probability(int):114:(1.0 / FastMath.pow(x, exponent)) / generalizedHarmonic(numberOfElements, exponent) |==> (1.0 / FastMath.pow(x, exponent)) - generalizedHarmonic(numberOfElements, exponent)
+44:LVR:0:POS:org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):119:0 |==> 1
+45:LVR:0:NEG:org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):119:0 |==> -1
+46:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):119:x <= 0 |==> x < 0
+47:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):119:x <= 0 |==> x == 0
+48:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):119:x <= 0 |==> true
+49:LVR:0:POS:org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):120:0.0 |==> 1.0
+50:LVR:0:NEG:org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):120:0.0 |==> -1.0
+51:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):120:return Config.__M_NO == 0 && Config.COVERED(49, 50) ? 0.0 : Config.__M_NO == 50 ? -1.0 : Config.__M_NO == 49 ? 1.0 : 0.0; |==> <NO-OP>
+52:ROR:>=(int,int):==(int,int):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):121:x >= numberOfElements |==> x == numberOfElements
+53:ROR:>=(int,int):>(int,int):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):121:x >= numberOfElements |==> x > numberOfElements
+54:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):121:x >= numberOfElements |==> true
+55:LVR:POS:0:org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):122:1.0 |==> 0.0
+56:LVR:POS:NEG:org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):122:1.0 |==> -1.0
+57:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):122:return Config.__M_NO == 0 && Config.COVERED(55, 56) ? 1.0 : Config.__M_NO == 56 ? -1.0 : Config.__M_NO == 55 ? 0.0 : 1.0; |==> <NO-OP>
+58:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):125:generalizedHarmonic(x, exponent) / generalizedHarmonic(numberOfElements, exponent) |==> generalizedHarmonic(x, exponent) % generalizedHarmonic(numberOfElements, exponent)
+59:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):125:generalizedHarmonic(x, exponent) / generalizedHarmonic(numberOfElements, exponent) |==> generalizedHarmonic(x, exponent) * generalizedHarmonic(numberOfElements, exponent)
+60:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):125:generalizedHarmonic(x, exponent) / generalizedHarmonic(numberOfElements, exponent) |==> generalizedHarmonic(x, exponent) + generalizedHarmonic(numberOfElements, exponent)
+61:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ZipfDistribution@cumulativeProbability(int):125:generalizedHarmonic(x, exponent) / generalizedHarmonic(numberOfElements, exponent) |==> generalizedHarmonic(x, exponent) - generalizedHarmonic(numberOfElements, exponent)
+62:COR:numericalMeanIsCalculated:TRUE:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalMean():139:numericalMeanIsCalculated |==> false
+63:COR:numericalMeanIsCalculated:FALSE:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalMean():139:numericalMeanIsCalculated |==> true
+64:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalMean():140:numericalMean = calculateNumericalMean() |==> <NO-OP>
+65:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalMean():141:true |==> false
+66:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalMean():141:numericalMeanIsCalculated = true |==> <NO-OP>
+67:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalMean():143:numericalMean |==> 0.0
+68:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():152:getNumberOfElements() |==> 0
+69:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():153:getExponent() |==> 0.0
+70:LVR:POS:0:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():155:1 |==> 0
+71:LVR:POS:NEG:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():155:1 |==> -1
+72:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():155:s - 1 |==> s % 1
+73:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():155:s - 1 |==> s * 1
+74:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():155:s - 1 |==> s + 1
+75:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():155:s - 1 |==> s / 1
+76:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():156:generalizedHarmonic(N, s) |==> 0.0
+77:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():158:Hs1 / Hs |==> Hs1 % Hs
+78:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():158:Hs1 / Hs |==> Hs1 * Hs
+79:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():158:Hs1 / Hs |==> Hs1 + Hs
+80:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalMean():158:Hs1 / Hs |==> Hs1 - Hs
+81:COR:numericalVarianceIsCalculated:TRUE:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalVariance():173:numericalVarianceIsCalculated |==> false
+82:COR:numericalVarianceIsCalculated:FALSE:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalVariance():173:numericalVarianceIsCalculated |==> true
+83:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalVariance():174:numericalVariance = calculateNumericalVariance() |==> <NO-OP>
+84:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalVariance():175:true |==> false
+85:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalVariance():175:numericalVarianceIsCalculated = true |==> <NO-OP>
+86:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@getNumericalVariance():177:numericalVariance |==> 0.0
+87:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():186:getNumberOfElements() |==> 0
+88:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():187:getExponent() |==> 0.0
+89:LVR:POS:0:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():189:2 |==> 0
+90:LVR:POS:NEG:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():189:2 |==> -2
+91:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():189:s - 2 |==> s % 2
+92:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():189:s - 2 |==> s * 2
+93:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():189:s - 2 |==> s + 2
+94:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():189:s - 2 |==> s / 2
+95:LVR:POS:0:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():190:1 |==> 0
+96:LVR:POS:NEG:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():190:1 |==> -1
+97:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():190:s - 1 |==> s % 1
+98:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():190:s - 1 |==> s * 1
+99:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():190:s - 1 |==> s + 1
+100:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():190:s - 1 |==> s / 1
+101:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():191:generalizedHarmonic(N, s) |==> 0.0
+102:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs2 / Hs |==> Hs2 % Hs
+103:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs2 / Hs |==> Hs2 * Hs
+104:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs2 / Hs |==> Hs2 + Hs
+105:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs2 / Hs |==> Hs2 - Hs
+106:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs1 * Hs1 |==> Hs1 % Hs1
+107:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs1 * Hs1 |==> Hs1 + Hs1
+108:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs1 * Hs1 |==> Hs1 - Hs1
+109:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs1 * Hs1 |==> Hs1 / Hs1
+110:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs * Hs |==> Hs % Hs
+111:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs * Hs |==> Hs + Hs
+112:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs * Hs |==> Hs - Hs
+113:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:Hs * Hs |==> Hs / Hs
+114:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:(Hs1 * Hs1) / (Hs * Hs) |==> (Hs1 * Hs1) % (Hs * Hs)
+115:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:(Hs1 * Hs1) / (Hs * Hs) |==> (Hs1 * Hs1) * (Hs * Hs)
+116:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:(Hs1 * Hs1) / (Hs * Hs) |==> (Hs1 * Hs1) + (Hs * Hs)
+117:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:(Hs1 * Hs1) / (Hs * Hs) |==> (Hs1 * Hs1) - (Hs * Hs)
+118:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:(Hs2 / Hs) - ((Hs1 * Hs1) / (Hs * Hs)) |==> (Hs2 / Hs) % ((Hs1 * Hs1) / (Hs * Hs))
+119:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:(Hs2 / Hs) - ((Hs1 * Hs1) / (Hs * Hs)) |==> (Hs2 / Hs) * ((Hs1 * Hs1) / (Hs * Hs))
+120:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:(Hs2 / Hs) - ((Hs1 * Hs1) / (Hs * Hs)) |==> (Hs2 / Hs) + ((Hs1 * Hs1) / (Hs * Hs))
+121:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.ZipfDistribution@calculateNumericalVariance():193:(Hs2 / Hs) - ((Hs1 * Hs1) / (Hs * Hs)) |==> (Hs2 / Hs) / ((Hs1 * Hs1) / (Hs * Hs))
+122:LVR:0:POS:org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):206:0 |==> 1
+123:LVR:0:NEG:org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):206:0 |==> -1
+124:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):207:n |==> 0
+125:LVR:0:POS:org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):207:0 |==> 1
+126:LVR:0:NEG:org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):207:0 |==> -1
+127:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):207:k > 0 |==> k != 0
+128:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):207:k > 0 |==> k >= 0
+129:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):207:k > 0 |==> false
+130:LVR:POS:0:org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):208:1.0 |==> 0.0
+131:LVR:POS:NEG:org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):208:1.0 |==> -1.0
+132:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):208:1.0 / FastMath.pow(k, m) |==> 1.0 % FastMath.pow(k, m)
+133:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):208:1.0 / FastMath.pow(k, m) |==> 1.0 * FastMath.pow(k, m)
+134:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):208:1.0 / FastMath.pow(k, m) |==> 1.0 + FastMath.pow(k, m)
+135:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):208:1.0 / FastMath.pow(k, m) |==> 1.0 - FastMath.pow(k, m)
+136:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):208:value += 1.0 / FastMath.pow(k, m) |==> <NO-OP>
+137:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@generalizedHarmonic(int,double):210:value |==> 0.0
+138:LVR:POS:0:org.apache.commons.math3.distribution.ZipfDistribution@getSupportLowerBound():221:1 |==> 0
+139:LVR:POS:NEG:org.apache.commons.math3.distribution.ZipfDistribution@getSupportLowerBound():221:1 |==> -1
+140:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.ZipfDistribution@getSupportUpperBound():232:getNumberOfElements() |==> 0
+141:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.ZipfDistribution@isSupportConnected():243:true |==> false

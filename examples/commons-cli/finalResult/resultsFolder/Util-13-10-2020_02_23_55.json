@@ -1,0 +1,20 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "63"
+    ],
+    "sourceClass": "Util"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR9",
+      "TR10",
+      "TR11"
+    ],
+    "unsatisfiedRequirement": [
+      "TR9",
+      "TR10",
+      "TR11"
+    ]
+  }
+}

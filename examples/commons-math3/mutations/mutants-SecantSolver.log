@@ -1,0 +1,67 @@
+1:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():79:getMin() |==> 0.0
+2:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():80:getMax() |==> 0.0
+3:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():81:computeObjectiveValue(x0) |==> 0.0
+4:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():82:computeObjectiveValue(x1) |==> 0.0
+5:LVR:0:POS:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():87:0.0 |==> 1.0
+6:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():87:0.0 |==> -1.0
+7:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():87:f0 == 0.0 |==> f0 <= 0.0
+8:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():87:f0 == 0.0 |==> f0 >= 0.0
+9:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():87:f0 == 0.0 |==> false
+10:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():88:return x0; |==> <NO-OP>
+11:LVR:0:POS:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():90:0.0 |==> 1.0
+12:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():90:0.0 |==> -1.0
+13:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():90:f1 == 0.0 |==> f1 <= 0.0
+14:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():90:f1 == 0.0 |==> f1 >= 0.0
+15:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():90:f1 == 0.0 |==> false
+16:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():91:return x1; |==> <NO-OP>
+17:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():95:verifyBracketing(x0, x1) |==> <NO-OP>
+18:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():98:getFunctionValueAccuracy() |==> 0.0
+19:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():99:getAbsoluteAccuracy() |==> 0.0
+20:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():100:getRelativeAccuracy() |==> 0.0
+21:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:x1 - x0 |==> x1 % x0
+22:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:x1 - x0 |==> x1 * x0
+23:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:x1 - x0 |==> x1 + x0
+24:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:x1 - x0 |==> x1 / x0
+25:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:f1 * (x1 - x0) |==> f1 % (x1 - x0)
+26:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:f1 * (x1 - x0) |==> f1 + (x1 - x0)
+27:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:f1 * (x1 - x0) |==> f1 - (x1 - x0)
+28:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:f1 * (x1 - x0) |==> f1 / (x1 - x0)
+29:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:f1 - f0 |==> f1 % f0
+30:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:f1 - f0 |==> f1 * f0
+31:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:f1 - f0 |==> f1 + f0
+32:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:f1 - f0 |==> f1 / f0
+33:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:(f1 * (x1 - x0)) / (f1 - f0) |==> (f1 * (x1 - x0)) % (f1 - f0)
+34:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:(f1 * (x1 - x0)) / (f1 - f0) |==> (f1 * (x1 - x0)) * (f1 - f0)
+35:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:(f1 * (x1 - x0)) / (f1 - f0) |==> (f1 * (x1 - x0)) + (f1 - f0)
+36:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:(f1 * (x1 - x0)) / (f1 - f0) |==> (f1 * (x1 - x0)) - (f1 - f0)
+37:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:x1 - ((f1 * (x1 - x0)) / (f1 - f0)) |==> x1 % ((f1 * (x1 - x0)) / (f1 - f0))
+38:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:x1 - ((f1 * (x1 - x0)) / (f1 - f0)) |==> x1 * ((f1 * (x1 - x0)) / (f1 - f0))
+39:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:x1 - ((f1 * (x1 - x0)) / (f1 - f0)) |==> x1 + ((f1 * (x1 - x0)) / (f1 - f0))
+40:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():105:x1 - ((f1 * (x1 - x0)) / (f1 - f0)) |==> x1 / ((f1 * (x1 - x0)) / (f1 - f0))
+41:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():106:computeObjectiveValue(x) |==> 0.0
+42:LVR:0:POS:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():111:0.0 |==> 1.0
+43:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():111:0.0 |==> -1.0
+44:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():111:fx == 0.0 |==> fx <= 0.0
+45:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():111:fx == 0.0 |==> fx >= 0.0
+46:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():111:fx == 0.0 |==> false
+47:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():112:return x; |==> <NO-OP>
+48:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():116:x0 = x1 |==> <NO-OP>
+49:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():117:f0 = f1 |==> <NO-OP>
+50:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():118:x1 = x |==> <NO-OP>
+51:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():119:f1 = fx |==> <NO-OP>
+52:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():124:FastMath.abs(f1) <= ftol |==> FastMath.abs(f1) < ftol
+53:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():124:FastMath.abs(f1) <= ftol |==> FastMath.abs(f1) == ftol
+54:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():124:FastMath.abs(f1) <= ftol |==> true
+55:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():125:return x1; |==> <NO-OP>
+56:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:x1 - x0 |==> x1 % x0
+57:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:x1 - x0 |==> x1 * x0
+58:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:x1 - x0 |==> x1 + x0
+59:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:x1 - x0 |==> x1 / x0
+60:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:rtol * FastMath.abs(x1) |==> rtol % FastMath.abs(x1)
+61:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:rtol * FastMath.abs(x1) |==> rtol + FastMath.abs(x1)
+62:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:rtol * FastMath.abs(x1) |==> rtol - FastMath.abs(x1)
+63:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:rtol * FastMath.abs(x1) |==> rtol / FastMath.abs(x1)
+64:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:FastMath.abs(x1 - x0) < FastMath.max(rtol * FastMath.abs(x1), atol) |==> FastMath.abs(x1 - x0) != FastMath.max(rtol * FastMath.abs(x1), atol)
+65:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:FastMath.abs(x1 - x0) < FastMath.max(rtol * FastMath.abs(x1), atol) |==> FastMath.abs(x1 - x0) <= FastMath.max(rtol * FastMath.abs(x1), atol)
+66:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():130:FastMath.abs(x1 - x0) < FastMath.max(rtol * FastMath.abs(x1), atol) |==> false
+67:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.SecantSolver@doSolve():131:return x1; |==> <NO-OP>

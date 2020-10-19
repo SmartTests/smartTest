@@ -1,0 +1,66 @@
+1:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):64:true |==> false
+2:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):64:PolynomialFunctionLagrangeForm.verifyInterpolationArray(x, y, true) |==> <NO-OP>
+3:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):74:1 |==> 0
+4:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):74:1 |==> -1
+5:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):74:x.length - 1 |==> x.length % 1
+6:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):74:x.length - 1 |==> x.length * 1
+7:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):74:x.length - 1 |==> x.length + 1
+8:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):74:x.length - 1 |==> x.length / 1
+9:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):75:0 |==> 1
+10:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):75:0 |==> -1
+11:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):75:0 |==> 1
+12:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):75:0 |==> -1
+13:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):75:System.arraycopy(x, 0, c, 0, c.length) |==> <NO-OP>
+14:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):77:computeDividedDifference(x, y) |==> null
+15:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@interpolate(double[],double[]):78:new PolynomialFunctionNewtonForm(a, c) |==> null
+16:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):103:true |==> false
+17:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):103:PolynomialFunctionLagrangeForm.verifyInterpolationArray(x, y, true) |==> <NO-OP>
+18:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):105:y.clone() |==> null
+19:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):107:x.length |==> 0
+20:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):108:new double[n] |==> null
+21:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):109:0 |==> 1
+22:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):109:0 |==> -1
+23:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):109:0 |==> 1
+24:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):109:0 |==> -1
+25:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):109:a[0] = divdiff[0] |==> <NO-OP>
+26:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):110:1 |==> 0
+27:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):110:1 |==> -1
+28:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):110:i < n |==> i != n
+29:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):110:i < n |==> i <= n
+30:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):110:i < n |==> false
+31:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):111:0 |==> 1
+32:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):111:0 |==> -1
+33:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):111:n - i |==> n % i
+34:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):111:n - i |==> n * i
+35:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):111:n - i |==> n + i
+36:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):111:n - i |==> n / i
+37:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):111:j < n - i |==> j != n - i
+38:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):111:j < n - i |==> j <= n - i
+39:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):111:j < n - i |==> false
+40:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):112:j + i |==> j % i
+41:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):112:j + i |==> j * i
+42:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):112:j + i |==> j - i
+43:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):112:j + i |==> j / i
+44:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):112:x[j + i] - x[j] |==> x[j + i] % x[j]
+45:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):112:x[j + i] - x[j] |==> x[j + i] * x[j]
+46:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):112:x[j + i] - x[j] |==> x[j + i] + x[j]
+47:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):112:x[j + i] - x[j] |==> x[j + i] / x[j]
+48:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:1 |==> 0
+49:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:1 |==> -1
+50:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:j + 1 |==> j % 1
+51:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:j + 1 |==> j * 1
+52:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:j + 1 |==> j - 1
+53:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:j + 1 |==> j / 1
+54:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:divdiff[j + 1] - divdiff[j] |==> divdiff[j + 1] % divdiff[j]
+55:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:divdiff[j + 1] - divdiff[j] |==> divdiff[j + 1] * divdiff[j]
+56:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:divdiff[j + 1] - divdiff[j] |==> divdiff[j + 1] + divdiff[j]
+57:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:divdiff[j + 1] - divdiff[j] |==> divdiff[j + 1] / divdiff[j]
+58:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:(divdiff[j + 1] - divdiff[j]) / denominator |==> (divdiff[j + 1] - divdiff[j]) % denominator
+59:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:(divdiff[j + 1] - divdiff[j]) / denominator |==> (divdiff[j + 1] - divdiff[j]) * denominator
+60:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:(divdiff[j + 1] - divdiff[j]) / denominator |==> (divdiff[j + 1] - divdiff[j]) + denominator
+61:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:(divdiff[j + 1] - divdiff[j]) / denominator |==> (divdiff[j + 1] - divdiff[j]) - denominator
+62:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):113:divdiff[j] = (divdiff[j + 1] - divdiff[j]) / denominator |==> <NO-OP>
+63:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):115:0 |==> 1
+64:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):115:0 |==> -1
+65:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):115:a[i] = divdiff[0] |==> <NO-OP>
+66:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator@computeDividedDifference(double[],double[]):118:a |==> null

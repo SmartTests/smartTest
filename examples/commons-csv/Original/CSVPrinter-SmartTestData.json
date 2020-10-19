@@ -1,0 +1,789 @@
+[
+  {
+    "info": "09-10-2020_00_59_42"
+  },
+  {
+    "requirements": {
+      "TR1": "94,95",
+      "TR2": "95,96",
+      "TR3": "96,98",
+      "TR4": "98,99",
+      "TR5": "99,102",
+      "TR6": "102,103",
+      "TR7": "102,109",
+      "TR8": "103,109",
+      "TR9": "103,104",
+      "TR10": "104,105",
+      "TR11": "104,103",
+      "TR12": "105,103",
+      "TR13": "109,110",
+      "TR14": "119,120",
+      "TR15": "131,132",
+      "TR16": "132,133",
+      "TR17": "132,135",
+      "TR18": "133,135",
+      "TR19": "135,136",
+      "TR20": "147,148",
+      "TR21": "148,149",
+      "TR22": "158,159",
+      "TR23": "170,171",
+      "TR24": "171,172",
+      "TR25": "196,197",
+      "TR26": "197,198",
+      "TR27": "197,200",
+      "TR28": "200,201",
+      "TR29": "200,203",
+      "TR30": "201,203",
+      "TR31": "203,204",
+      "TR32": "204,205",
+      "TR33": "205,223",
+      "TR34": "205,206",
+      "TR35": "206,207",
+      "TR36": "207,208",
+      "TR37": "208,209",
+      "TR38": "208,213",
+      "TR39": "209,210",
+      "TR40": "209,213",
+      "TR41": "210,213",
+      "TR42": "213,214",
+      "TR43": "213,218",
+      "TR44": "214,215",
+      "TR45": "215,216",
+      "TR46": "216,217",
+      "TR47": "217,205",
+      "TR48": "218,219",
+      "TR49": "219,220",
+      "TR50": "220,205",
+      "TR51": "232,233",
+      "TR52": "233,234",
+      "TR53": "250,251",
+      "TR54": "251,254",
+      "TR55": "251,252",
+      "TR56": "252,251",
+      "TR57": "270,271",
+      "TR58": "271,272",
+      "TR59": "314,315",
+      "TR60": "315,316",
+      "TR61": "316,317",
+      "TR62": "316,318",
+      "TR63": "317,315",
+      "TR64": "318,319",
+      "TR65": "318,321",
+      "TR66": "319,315",
+      "TR67": "321,315",
+      "TR68": "365,366",
+      "TR69": "379,380",
+      "TR70": "380,381",
+      "TR71": "381,382",
+      "TR72": "382,386",
+      "TR73": "382,383",
+      "TR74": "383,384",
+      "TR75": "384,382",
+      "TR76": "386,381"
+    }
+  },
+  {
+    "testCoverage": {
+      "testCloseBackwardCompatibility": [
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testCloseWithCsvFormatAutoFlushOff": [
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testCloseWithCsvFormatAutoFlushOn": [
+        "TR14",
+        "TR15",
+        "TR16",
+        "TR18",
+        "TR19",
+        "TR20",
+        "TR21"
+      ],
+      "testCloseWithFlushOff": [
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testCloseWithFlushOn": [
+        "TR15",
+        "TR16",
+        "TR18",
+        "TR19",
+        "TR20",
+        "TR21"
+      ],
+      "testDelimeterQuoteNone": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testDelimeterQuoted": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testDelimiterEscaped": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testDelimiterPlain": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testDisabledComment": [
+        "TR25",
+        "TR26",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testDontQuoteEuroFirstChar": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEolEscaped": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEolPlain": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEolQuoted": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeBackslash1": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeBackslash2": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeBackslash3": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeBackslash4": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeBackslash5": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeNull1": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeNull2": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeNull3": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeNull4": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testEscapeNull5": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testExcelPrintAllArrayOfArrays": [
+        "TR68",
+        "TR59",
+        "TR60",
+        "TR61",
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testExcelPrintAllArrayOfLists": [
+        "TR68",
+        "TR59",
+        "TR60",
+        "TR62",
+        "TR64",
+        "TR53",
+        "TR55",
+        "TR23",
+        "TR24",
+        "TR51",
+        "TR52",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testExcelPrintAllIterableOfArrays": [
+        "TR59",
+        "TR60",
+        "TR61",
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testExcelPrintAllIterableOfLists": [
+        "TR59",
+        "TR60",
+        "TR62",
+        "TR64",
+        "TR53",
+        "TR55",
+        "TR23",
+        "TR24",
+        "TR51",
+        "TR52",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testExcelPrinter1": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testExcelPrinter2": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testHeader": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testHeaderCommentExcel": [
+        "TR25",
+        "TR27",
+        "TR29",
+        "TR31",
+        "TR32",
+        "TR34",
+        "TR35",
+        "TR33",
+        "TR51",
+        "TR52",
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testHeaderNotSet": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testJdbcPrinter": [
+        "TR69",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testMongoDbCsvBasic": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testMongoDbCsvCommaInValue": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testMongoDbCsvDoubleQuoteInValue": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testMongoDbCsvTabInValue": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testMongoDbTsvBasic": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testMongoDbTsvCommaInValue": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testMongoDbTsvTabInValue": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testMultiLineComment": [
+        "TR25",
+        "TR27",
+        "TR29",
+        "TR31",
+        "TR32",
+        "TR34",
+        "TR35",
+        "TR44",
+        "TR45",
+        "TR46",
+        "TR47",
+        "TR33",
+        "TR51",
+        "TR52",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testMySqlNullOutput": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testNewCsvPrinterAppendableNullFormat": [
+        "TR2"
+      ],
+      "testNewCsvPrinterNullAppendableFormat": [],
+      "testParseCustomNullValues": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPlainEscaped": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPlainPlain": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPlainQuoted": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrint": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrintCustomNullValues": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrintNullValues": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrintOnePositiveInteger": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrintRecordsWithEmptyVector": [
+        "TR59",
+        "TR60",
+        "TR62",
+        "TR65",
+        "TR57",
+        "TR58"
+      ],
+      "testPrintRecordsWithObjectArray": [
+        "TR68",
+        "TR59",
+        "TR60",
+        "TR62",
+        "TR65",
+        "TR64",
+        "TR57",
+        "TR58",
+        "TR53",
+        "TR54",
+        "TR51",
+        "TR52",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrintRecordsWithResultSetOneRow": [
+        "TR69",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrintToFileWithCharsetUtf16Be": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrintToFileWithDefaultCharset": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrintToPathWithDefaultCharset": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrinter1": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrinter2": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrinter3": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrinter4": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrinter5": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrinter6": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testPrinter7": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testQuoteAll": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testQuoteCommaFirstChar": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testQuoteNonNumeric": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testRandomDefault": [
+        "TR57",
+        "TR58",
+        "TR20",
+        "TR21",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testRandomMySql": [
+        "TR57",
+        "TR58",
+        "TR20",
+        "TR21",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testRandomRfc4180": [
+        "TR57",
+        "TR58",
+        "TR20",
+        "TR21",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testRandomTdf": [
+        "TR57",
+        "TR58",
+        "TR20",
+        "TR21",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testSingleLineComment": [
+        "TR25",
+        "TR27",
+        "TR29",
+        "TR31",
+        "TR32",
+        "TR34",
+        "TR35",
+        "TR33",
+        "TR51",
+        "TR52",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testSingleQuoteQuoted": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testSkipHeaderRecordFalse": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testSkipHeaderRecordTrue": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testTrailingDelimiterOnTwoColumns": [
+        "TR57",
+        "TR58",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testTrimOffOneColumn": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testTrimOnOneColumn": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ],
+      "testTrimOnTwoColumns": [
+        "TR23",
+        "TR24",
+        "TR14",
+        "TR15",
+        "TR17",
+        "TR19"
+      ]
+    }
+  }
+]

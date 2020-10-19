@@ -1,0 +1,326 @@
+[
+  {
+    "v1": {
+      "line": "49",
+      "statement": "Logit ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "50",
+      "statement": "this(0, 1)"
+    }
+  },
+  {
+    "v3": {
+      "line": "59",
+      "statement": "Logit (double lo,  double hi)"
+    }
+  },
+  {
+    "v4": {
+      "line": "61",
+      "statement": "this.lo = lo"
+    }
+  },
+  {
+    "v5": {
+      "line": "62",
+      "statement": "this.hi = hi"
+    }
+  },
+  {
+    "v6": {
+      "line": "66",
+      "statement": "double value(double x)"
+    }
+  },
+  {
+    "v7": {
+      "line": "68",
+      "statement": "return value(x, lo, hi)"
+    }
+  },
+  {
+    "v8": {
+      "line": "75",
+      "statement": "UnivariateFunction derivative()"
+    }
+  },
+  {
+    "v9": {
+      "line": "76",
+      "statement": "return FunctionUtils.toDifferentiableUnivariateFunction(this).derivative()"
+    }
+  },
+  {
+    "v10": {
+      "line": "98",
+      "statement": "double value(double x, double ... param)"
+    }
+  },
+  {
+    "v11": {
+      "line": "101",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v12": {
+      "line": "102",
+      "statement": "return Logit.value(x, param[0], param[1])"
+    }
+  },
+  {
+    "v13": {
+      "line": "118",
+      "statement": "double[] gradient(double x, double ... param)"
+    }
+  },
+  {
+    "v14": {
+      "line": "121",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v15": {
+      "line": "123",
+      "statement": "final double lo = param[0"
+    }
+  },
+  {
+    "v16": {
+      "line": "124",
+      "statement": "final double hi = param[1"
+    }
+  },
+  {
+    "v17": {
+      "line": "126",
+      "statement": "return new double[] { 1 / (lo - x), 1 / (hi - x) }"
+    }
+  },
+  {
+    "v18": {
+      "line": "139",
+      "statement": "void validateParameters(double[] param)"
+    }
+  },
+  {
+    "v19": {
+      "line": "142",
+      "statement": "if (param == null)"
+    }
+  },
+  {
+    "v20": {
+      "line": "143",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "145",
+      "statement": "if (param.length != 2)"
+    }
+  },
+  {
+    "v23": {
+      "line": "146",
+      "statement": "throw new DimensionMismatchException(param.length, 2)"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "158",
+      "statement": "double value(double x, double lo, double hi)"
+    }
+  },
+  {
+    "v26": {
+      "line": "162",
+      "statement": "if (x < lo || x > hi)"
+    }
+  },
+  {
+    "v27": {
+      "line": "163",
+      "statement": "throw new OutOfRangeException(x, lo, hi)"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "165",
+      "statement": "return FastMath.log((x - lo) / (hi - x))"
+    }
+  },
+  {
+    "v30": {
+      "line": "172",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v31": {
+      "line": "174",
+      "statement": "final double x = t.getValue()"
+    }
+  },
+  {
+    "v32": {
+      "line": "175",
+      "statement": "if (x < lo || x > hi)"
+    }
+  },
+  {
+    "v33": {
+      "line": "176",
+      "statement": "throw new OutOfRangeException(x, lo, hi)"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v35": {
+      "line": "178",
+      "statement": "double[] f = new double[t.getOrder() + 1"
+    }
+  },
+  {
+    "v36": {
+      "line": "181",
+      "statement": "f[0] = FastMath.log((x - lo) / (hi - x))"
+    }
+  },
+  {
+    "v37": {
+      "line": "183",
+      "statement": "if (Double.isInfinite(f[0]))"
+    }
+  },
+  {
+    "v38": {
+      "line": "185",
+      "statement": "if (f.length > 1)"
+    }
+  },
+  {
+    "v39": {
+      "line": "186",
+      "statement": "f[1] = Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v41": {
+      "line": "193",
+      "statement": "for (  int i = 2 ; i < f.length ;   ++i)"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v45": {
+      "line": "194",
+      "statement": "f[i] = f[i - 2"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v47": {
+      "line": "200",
+      "statement": "final double invL = 1.0 / (x - lo)"
+    }
+  },
+  {
+    "v48": {
+      "line": "201",
+      "statement": "double xL = invL"
+    }
+  },
+  {
+    "v49": {
+      "line": "202",
+      "statement": "final double invH = 1.0 / (hi - x)"
+    }
+  },
+  {
+    "v50": {
+      "line": "203",
+      "statement": "double xH = invH"
+    }
+  },
+  {
+    "v51": {
+      "line": "204",
+      "statement": "for (  int i = 1 ; i < f.length ;   ++i)"
+    }
+  },
+  {
+    "v54": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v55": {
+      "line": "205",
+      "statement": "f[i] = xL + xH"
+    }
+  },
+  {
+    "v56": {
+      "line": "206",
+      "statement": "xL  *= -i * invL"
+    }
+  },
+  {
+    "v57": {
+      "line": "207",
+      "statement": "xH  *=  i * invH"
+    }
+  },
+  {
+    "v58": {
+      "line": "211",
+      "statement": "return t.compose(f)"
+    }
+  }
+]

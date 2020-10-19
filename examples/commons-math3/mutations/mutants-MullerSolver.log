@@ -1,0 +1,287 @@
+1:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():88:getMin() |==> 0.0
+2:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():89:getMax() |==> 0.0
+3:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():90:getStartValue() |==> 0.0
+4:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():92:getFunctionValueAccuracy() |==> 0.0
+5:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():94:verifySequence(min, initial, max) |==> <NO-OP>
+6:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():97:computeObjectiveValue(min) |==> 0.0
+7:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():98:FastMath.abs(fMin) < functionValueAccuracy |==> FastMath.abs(fMin) != functionValueAccuracy
+8:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():98:FastMath.abs(fMin) < functionValueAccuracy |==> FastMath.abs(fMin) <= functionValueAccuracy
+9:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():98:FastMath.abs(fMin) < functionValueAccuracy |==> false
+10:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():99:return min; |==> <NO-OP>
+11:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():101:computeObjectiveValue(max) |==> 0.0
+12:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():102:FastMath.abs(fMax) < functionValueAccuracy |==> FastMath.abs(fMax) != functionValueAccuracy
+13:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():102:FastMath.abs(fMax) < functionValueAccuracy |==> FastMath.abs(fMax) <= functionValueAccuracy
+14:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():102:FastMath.abs(fMax) < functionValueAccuracy |==> false
+15:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():103:return max; |==> <NO-OP>
+16:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():105:computeObjectiveValue(initial) |==> 0.0
+17:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():106:FastMath.abs(fInitial) < functionValueAccuracy |==> FastMath.abs(fInitial) != functionValueAccuracy
+18:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():106:FastMath.abs(fInitial) < functionValueAccuracy |==> FastMath.abs(fInitial) <= functionValueAccuracy
+19:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():106:FastMath.abs(fInitial) < functionValueAccuracy |==> false
+20:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():107:return initial; |==> <NO-OP>
+21:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():110:verifyBracketing(min, max) |==> <NO-OP>
+22:COR:isBracketing(min, initial):TRUE:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():112:isBracketing(min, initial) |==> false
+23:COR:isBracketing(min, initial):FALSE:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():112:isBracketing(min, initial) |==> true
+24:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():113:solve(min, initial, fMin, fInitial) |==> 0.0
+25:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@doSolve():115:solve(initial, max, fInitial, fMax) |==> 0.0
+26:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):133:getRelativeAccuracy() |==> 0.0
+27:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):134:getAbsoluteAccuracy() |==> 0.0
+28:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):135:getFunctionValueAccuracy() |==> 0.0
+29:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):142:min |==> 0.0
+30:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):143:fMin |==> 0.0
+31:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):144:max |==> 0.0
+32:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):145:fMax |==> 0.0
+33:LVR:POS:0:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:0.5 |==> 0.0
+34:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:0.5 |==> -0.5
+35:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:x0 + x2 |==> x0 % x2
+36:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:x0 + x2 |==> x0 * x2
+37:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:x0 + x2 |==> x0 - x2
+38:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:x0 + x2 |==> x0 / x2
+39:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:0.5 * (x0 + x2) |==> 0.5 % (x0 + x2)
+40:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:0.5 * (x0 + x2) |==> 0.5 + (x0 + x2)
+41:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:0.5 * (x0 + x2) |==> 0.5 - (x0 + x2)
+42:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):146:0.5 * (x0 + x2) |==> 0.5 / (x0 + x2)
+43:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):147:computeObjectiveValue(x1) |==> 0.0
+44:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):149:Double.POSITIVE_INFINITY |==> 0.0
+45:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:y1 - y0 |==> y1 % y0
+46:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:y1 - y0 |==> y1 * y0
+47:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:y1 - y0 |==> y1 + y0
+48:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:y1 - y0 |==> y1 / y0
+49:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:x1 - x0 |==> x1 % x0
+50:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:x1 - x0 |==> x1 * x0
+51:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:x1 - x0 |==> x1 + x0
+52:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:x1 - x0 |==> x1 / x0
+53:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:(y1 - y0) / (x1 - x0) |==> (y1 - y0) % (x1 - x0)
+54:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:(y1 - y0) / (x1 - x0) |==> (y1 - y0) * (x1 - x0)
+55:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:(y1 - y0) / (x1 - x0) |==> (y1 - y0) + (x1 - x0)
+56:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):155:(y1 - y0) / (x1 - x0) |==> (y1 - y0) - (x1 - x0)
+57:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:y2 - y1 |==> y2 % y1
+58:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:y2 - y1 |==> y2 * y1
+59:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:y2 - y1 |==> y2 + y1
+60:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:y2 - y1 |==> y2 / y1
+61:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:x2 - x1 |==> x2 % x1
+62:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:x2 - x1 |==> x2 * x1
+63:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:x2 - x1 |==> x2 + x1
+64:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:x2 - x1 |==> x2 / x1
+65:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:(y2 - y1) / (x2 - x1) |==> (y2 - y1) % (x2 - x1)
+66:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:(y2 - y1) / (x2 - x1) |==> (y2 - y1) * (x2 - x1)
+67:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:(y2 - y1) / (x2 - x1) |==> (y2 - y1) + (x2 - x1)
+68:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):156:(y2 - y1) / (x2 - x1) |==> (y2 - y1) - (x2 - x1)
+69:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:d12 - d01 |==> d12 % d01
+70:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:d12 - d01 |==> d12 * d01
+71:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:d12 - d01 |==> d12 + d01
+72:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:d12 - d01 |==> d12 / d01
+73:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:x2 - x0 |==> x2 % x0
+74:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:x2 - x0 |==> x2 * x0
+75:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:x2 - x0 |==> x2 + x0
+76:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:x2 - x0 |==> x2 / x0
+77:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:(d12 - d01) / (x2 - x0) |==> (d12 - d01) % (x2 - x0)
+78:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:(d12 - d01) / (x2 - x0) |==> (d12 - d01) * (x2 - x0)
+79:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:(d12 - d01) / (x2 - x0) |==> (d12 - d01) + (x2 - x0)
+80:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):157:(d12 - d01) / (x2 - x0) |==> (d12 - d01) - (x2 - x0)
+81:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:x1 - x0 |==> x1 % x0
+82:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:x1 - x0 |==> x1 * x0
+83:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:x1 - x0 |==> x1 + x0
+84:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:x1 - x0 |==> x1 / x0
+85:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:(x1 - x0) * d012 |==> (x1 - x0) % d012
+86:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:(x1 - x0) * d012 |==> (x1 - x0) + d012
+87:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:(x1 - x0) * d012 |==> (x1 - x0) - d012
+88:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:(x1 - x0) * d012 |==> (x1 - x0) / d012
+89:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:d01 + (x1 - x0) * d012 |==> d01 % ((x1 - x0) * d012)
+90:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:d01 + (x1 - x0) * d012 |==> d01 * ((x1 - x0) * d012)
+91:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:d01 + (x1 - x0) * d012 |==> d01 - (x1 - x0) * d012
+92:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):158:d01 + (x1 - x0) * d012 |==> d01 / ((x1 - x0) * d012)
+93:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:c1 * c1 |==> c1 % c1
+94:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:c1 * c1 |==> c1 + c1
+95:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:c1 * c1 |==> c1 - c1
+96:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:c1 * c1 |==> c1 / c1
+97:LVR:POS:0:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 |==> 0
+98:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 |==> -4
+99:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 * y1 |==> 4 % y1
+100:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 * y1 |==> 4 + y1
+101:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 * y1 |==> 4 - y1
+102:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 * y1 |==> 4 / y1
+103:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 * y1 * d012 |==> 4 * y1 % d012
+104:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 * y1 * d012 |==> 4 * y1 + d012
+105:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 * y1 * d012 |==> 4 * y1 - d012
+106:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:4 * y1 * d012 |==> 4 * y1 / d012
+107:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:c1 * c1 - 4 * y1 * d012 |==> c1 * c1 % (4 * y1 * d012)
+108:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:c1 * c1 - 4 * y1 * d012 |==> c1 * c1 * (4 * y1 * d012)
+109:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:c1 * c1 - 4 * y1 * d012 |==> c1 * c1 + 4 * y1 * d012
+110:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):159:c1 * c1 - 4 * y1 * d012 |==> c1 * c1 / (4 * y1 * d012)
+111:ORU:-(double):+(double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:-2.0 |==> +2.0
+112:LVR:POS:0:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:2.0 |==> 0.0
+113:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:2.0 |==> -2.0
+114:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:-2.0 * y1 |==> -2.0 % y1
+115:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:-2.0 * y1 |==> -2.0 + y1
+116:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:-2.0 * y1 |==> -2.0 - y1
+117:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:-2.0 * y1 |==> -2.0 / y1
+118:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:c1 + FastMath.sqrt(delta) |==> c1 % FastMath.sqrt(delta)
+119:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:c1 + FastMath.sqrt(delta) |==> c1 * FastMath.sqrt(delta)
+120:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:c1 + FastMath.sqrt(delta) |==> c1 - FastMath.sqrt(delta)
+121:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:c1 + FastMath.sqrt(delta) |==> c1 / FastMath.sqrt(delta)
+122:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:(-2.0 * y1) / (c1 + FastMath.sqrt(delta)) |==> (-2.0 * y1) % (c1 + FastMath.sqrt(delta))
+123:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:(-2.0 * y1) / (c1 + FastMath.sqrt(delta)) |==> (-2.0 * y1) * (c1 + FastMath.sqrt(delta))
+124:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:(-2.0 * y1) / (c1 + FastMath.sqrt(delta)) |==> (-2.0 * y1) + (c1 + FastMath.sqrt(delta))
+125:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:(-2.0 * y1) / (c1 + FastMath.sqrt(delta)) |==> (-2.0 * y1) - (c1 + FastMath.sqrt(delta))
+126:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:x1 + (-2.0 * y1) / (c1 + FastMath.sqrt(delta)) |==> x1 % ((-2.0 * y1) / (c1 + FastMath.sqrt(delta)))
+127:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:x1 + (-2.0 * y1) / (c1 + FastMath.sqrt(delta)) |==> x1 * ((-2.0 * y1) / (c1 + FastMath.sqrt(delta)))
+128:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:x1 + (-2.0 * y1) / (c1 + FastMath.sqrt(delta)) |==> x1 - (-2.0 * y1) / (c1 + FastMath.sqrt(delta))
+129:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):160:x1 + (-2.0 * y1) / (c1 + FastMath.sqrt(delta)) |==> x1 / ((-2.0 * y1) / (c1 + FastMath.sqrt(delta)))
+130:ORU:-(double):+(double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:-2.0 |==> +2.0
+131:LVR:POS:0:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:2.0 |==> 0.0
+132:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:2.0 |==> -2.0
+133:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:-2.0 * y1 |==> -2.0 % y1
+134:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:-2.0 * y1 |==> -2.0 + y1
+135:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:-2.0 * y1 |==> -2.0 - y1
+136:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:-2.0 * y1 |==> -2.0 / y1
+137:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:c1 - FastMath.sqrt(delta) |==> c1 % FastMath.sqrt(delta)
+138:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:c1 - FastMath.sqrt(delta) |==> c1 * FastMath.sqrt(delta)
+139:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:c1 - FastMath.sqrt(delta) |==> c1 + FastMath.sqrt(delta)
+140:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:c1 - FastMath.sqrt(delta) |==> c1 / FastMath.sqrt(delta)
+141:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:(-2.0 * y1) / (c1 - FastMath.sqrt(delta)) |==> (-2.0 * y1) % (c1 - FastMath.sqrt(delta))
+142:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:(-2.0 * y1) / (c1 - FastMath.sqrt(delta)) |==> (-2.0 * y1) * (c1 - FastMath.sqrt(delta))
+143:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:(-2.0 * y1) / (c1 - FastMath.sqrt(delta)) |==> (-2.0 * y1) + (c1 - FastMath.sqrt(delta))
+144:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:(-2.0 * y1) / (c1 - FastMath.sqrt(delta)) |==> (-2.0 * y1) - (c1 - FastMath.sqrt(delta))
+145:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:x1 + (-2.0 * y1) / (c1 - FastMath.sqrt(delta)) |==> x1 % ((-2.0 * y1) / (c1 - FastMath.sqrt(delta)))
+146:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:x1 + (-2.0 * y1) / (c1 - FastMath.sqrt(delta)) |==> x1 * ((-2.0 * y1) / (c1 - FastMath.sqrt(delta)))
+147:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:x1 + (-2.0 * y1) / (c1 - FastMath.sqrt(delta)) |==> x1 - (-2.0 * y1) / (c1 - FastMath.sqrt(delta))
+148:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):161:x1 + (-2.0 * y1) / (c1 - FastMath.sqrt(delta)) |==> x1 / ((-2.0 * y1) / (c1 - FastMath.sqrt(delta)))
+149:COR:isSequence(x0, xplus, x2):TRUE:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):164:isSequence(x0, xplus, x2) |==> false
+150:COR:isSequence(x0, xplus, x2):FALSE:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):164:isSequence(x0, xplus, x2) |==> true
+151:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):165:computeObjectiveValue(x) |==> 0.0
+152:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):168:relativeAccuracy * FastMath.abs(x) |==> relativeAccuracy % FastMath.abs(x)
+153:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):168:relativeAccuracy * FastMath.abs(x) |==> relativeAccuracy + FastMath.abs(x)
+154:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):168:relativeAccuracy * FastMath.abs(x) |==> relativeAccuracy - FastMath.abs(x)
+155:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):168:relativeAccuracy * FastMath.abs(x) |==> relativeAccuracy / FastMath.abs(x)
+156:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:x - oldx |==> x % oldx
+157:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:x - oldx |==> x * oldx
+158:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:x - oldx |==> x + oldx
+159:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:x - oldx |==> x / oldx
+160:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:FastMath.abs(x - oldx) <= tolerance |==> FastMath.abs(x - oldx) < tolerance
+161:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:FastMath.abs(x - oldx) <= tolerance |==> FastMath.abs(x - oldx) == tolerance
+162:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:FastMath.abs(x - oldx) <= tolerance |==> true
+163:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):170:FastMath.abs(y) <= functionValueAccuracy |==> FastMath.abs(y) < functionValueAccuracy
+164:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):170:FastMath.abs(y) <= functionValueAccuracy |==> FastMath.abs(y) == functionValueAccuracy
+165:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):170:FastMath.abs(y) <= functionValueAccuracy |==> true
+166:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:FastMath.abs(x - oldx) <= tolerance || FastMath.abs(y) <= functionValueAccuracy |==> FastMath.abs(x - oldx) <= tolerance != FastMath.abs(y) <= functionValueAccuracy
+167:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:FastMath.abs(x - oldx) <= tolerance || FastMath.abs(y) <= functionValueAccuracy |==> FastMath.abs(x - oldx) <= tolerance
+168:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):170:FastMath.abs(x - oldx) <= tolerance || FastMath.abs(y) <= functionValueAccuracy |==> FastMath.abs(y) <= functionValueAccuracy
+169:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):169:FastMath.abs(x - oldx) <= tolerance || FastMath.abs(y) <= functionValueAccuracy |==> true
+170:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):171:return x; |==> <NO-OP>
+171:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x < x1 |==> x != x1
+172:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x < x1 |==> x <= x1
+173:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x < x1 |==> false
+174:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x1 - x0 |==> x1 % x0
+175:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x1 - x0 |==> x1 * x0
+176:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x1 - x0 |==> x1 + x0
+177:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x1 - x0 |==> x1 / x0
+178:LVR:POS:0:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:0.95 |==> 0.0
+179:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:0.95 |==> -0.95
+180:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x2 - x0 |==> x2 % x0
+181:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x2 - x0 |==> x2 * x0
+182:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x2 - x0 |==> x2 + x0
+183:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x2 - x0 |==> x2 / x0
+184:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:0.95 * (x2 - x0) |==> 0.95 % (x2 - x0)
+185:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:0.95 * (x2 - x0) |==> 0.95 + (x2 - x0)
+186:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:0.95 * (x2 - x0) |==> 0.95 - (x2 - x0)
+187:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:0.95 * (x2 - x0) |==> 0.95 / (x2 - x0)
+188:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:(x1 - x0) > 0.95 * (x2 - x0) |==> (x1 - x0) != 0.95 * (x2 - x0)
+189:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:(x1 - x0) > 0.95 * (x2 - x0) |==> (x1 - x0) >= 0.95 * (x2 - x0)
+190:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:(x1 - x0) > 0.95 * (x2 - x0) |==> false
+191:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x < x1 && (x1 - x0) > 0.95 * (x2 - x0) |==> x < x1 == (x1 - x0) > 0.95 * (x2 - x0)
+192:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x < x1 && (x1 - x0) > 0.95 * (x2 - x0) |==> false
+193:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x < x1 && (x1 - x0) > 0.95 * (x2 - x0) |==> x < x1
+194:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:x < x1 && (x1 - x0) > 0.95 * (x2 - x0) |==> (x1 - x0) > 0.95 * (x2 - x0)
+195:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x > x1 |==> x != x1
+196:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x > x1 |==> x >= x1
+197:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x > x1 |==> false
+198:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x2 - x1 |==> x2 % x1
+199:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x2 - x1 |==> x2 * x1
+200:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x2 - x1 |==> x2 + x1
+201:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x2 - x1 |==> x2 / x1
+202:LVR:POS:0:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:0.95 |==> 0.0
+203:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:0.95 |==> -0.95
+204:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x2 - x0 |==> x2 % x0
+205:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x2 - x0 |==> x2 * x0
+206:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x2 - x0 |==> x2 + x0
+207:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x2 - x0 |==> x2 / x0
+208:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:0.95 * (x2 - x0) |==> 0.95 % (x2 - x0)
+209:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:0.95 * (x2 - x0) |==> 0.95 + (x2 - x0)
+210:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:0.95 * (x2 - x0) |==> 0.95 - (x2 - x0)
+211:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:0.95 * (x2 - x0) |==> 0.95 / (x2 - x0)
+212:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:(x2 - x1) > 0.95 * (x2 - x0) |==> (x2 - x1) != 0.95 * (x2 - x0)
+213:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:(x2 - x1) > 0.95 * (x2 - x0) |==> (x2 - x1) >= 0.95 * (x2 - x0)
+214:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:(x2 - x1) > 0.95 * (x2 - x0) |==> false
+215:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x > x1 && (x2 - x1) > 0.95 * (x2 - x0) |==> x > x1 == (x2 - x1) > 0.95 * (x2 - x0)
+216:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x > x1 && (x2 - x1) > 0.95 * (x2 - x0) |==> false
+217:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x > x1 && (x2 - x1) > 0.95 * (x2 - x0) |==> x > x1
+218:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:x > x1 && (x2 - x1) > 0.95 * (x2 - x0) |==> (x2 - x1) > 0.95 * (x2 - x0)
+219:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:(x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0)) |==> (x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) != (x > x1 && (x2 - x1) > 0.95 * (x2 - x0))
+220:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:(x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0)) |==> (x < x1 && (x1 - x0) > 0.95 * (x2 - x0))
+221:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:(x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0)) |==> (x > x1 && (x2 - x1) > 0.95 * (x2 - x0))
+222:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:(x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0)) |==> true
+223:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):180:x == x1 |==> x <= x1
+224:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):180:x == x1 |==> x >= x1
+225:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):180:x == x1 |==> false
+226:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:(x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0)) || (x == x1) |==> ((x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0))) != (x == x1)
+227:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):178:(x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0)) || (x == x1) |==> (x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0))
+228:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):180:(x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0)) || (x == x1) |==> (x == x1)
+229:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):179:(x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) || (x > x1 && (x2 - x1) > 0.95 * (x2 - x0)) || (x == x1) |==> true
+230:COR:bisect:TRUE:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):182:bisect |==> false
+231:COR:bisect:FALSE:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):182:bisect |==> true
+232:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):183:x < x1 |==> x != x1
+233:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):183:x < x1 |==> x <= x1
+234:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):183:x < x1 |==> false
+235:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):183:x0 = x < x1 ? x0 : x1 |==> <NO-OP>
+236:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):184:x < x1 |==> x != x1
+237:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):184:x < x1 |==> x <= x1
+238:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):184:x < x1 |==> false
+239:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):184:y0 = x < x1 ? y0 : y1 |==> <NO-OP>
+240:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):185:x > x1 |==> x != x1
+241:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):185:x > x1 |==> x >= x1
+242:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):185:x > x1 |==> false
+243:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):185:x2 = x > x1 ? x2 : x1 |==> <NO-OP>
+244:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):186:x > x1 |==> x != x1
+245:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):186:x > x1 |==> x >= x1
+246:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):186:x > x1 |==> false
+247:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):186:y2 = x > x1 ? y2 : y1 |==> <NO-OP>
+248:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):187:x1 = x |==> <NO-OP>
+249:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):187:y1 = y |==> <NO-OP>
+250:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):188:oldx = x |==> <NO-OP>
+251:LVR:POS:0:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:0.5 |==> 0.0
+252:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:0.5 |==> -0.5
+253:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:x0 + x2 |==> x0 % x2
+254:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:x0 + x2 |==> x0 * x2
+255:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:x0 + x2 |==> x0 - x2
+256:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:x0 + x2 |==> x0 / x2
+257:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:0.5 * (x0 + x2) |==> 0.5 % (x0 + x2)
+258:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:0.5 * (x0 + x2) |==> 0.5 + (x0 + x2)
+259:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:0.5 * (x0 + x2) |==> 0.5 - (x0 + x2)
+260:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):190:0.5 * (x0 + x2) |==> 0.5 / (x0 + x2)
+261:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):191:computeObjectiveValue(xm) |==> 0.0
+262:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):192:FastMath.signum(y0) + FastMath.signum(ym) |==> FastMath.signum(y0) % FastMath.signum(ym)
+263:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):192:FastMath.signum(y0) + FastMath.signum(ym) |==> FastMath.signum(y0) * FastMath.signum(ym)
+264:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):192:FastMath.signum(y0) + FastMath.signum(ym) |==> FastMath.signum(y0) - FastMath.signum(ym)
+265:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):192:FastMath.signum(y0) + FastMath.signum(ym) |==> FastMath.signum(y0) / FastMath.signum(ym)
+266:LVR:0:POS:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):192:0.0 |==> 1.0
+267:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):192:0.0 |==> -1.0
+268:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):192:FastMath.signum(y0) + FastMath.signum(ym) == 0.0 |==> FastMath.signum(y0) + FastMath.signum(ym) <= 0.0
+269:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):192:FastMath.signum(y0) + FastMath.signum(ym) == 0.0 |==> FastMath.signum(y0) + FastMath.signum(ym) >= 0.0
+270:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):192:FastMath.signum(y0) + FastMath.signum(ym) == 0.0 |==> false
+271:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):193:x2 = xm |==> <NO-OP>
+272:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):193:y2 = ym |==> <NO-OP>
+273:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):195:x0 = xm |==> <NO-OP>
+274:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):195:y0 = ym |==> <NO-OP>
+275:LVR:POS:0:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:0.5 |==> 0.0
+276:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:0.5 |==> -0.5
+277:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:x0 + x2 |==> x0 % x2
+278:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:x0 + x2 |==> x0 * x2
+279:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:x0 + x2 |==> x0 - x2
+280:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:x0 + x2 |==> x0 / x2
+281:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:0.5 * (x0 + x2) |==> 0.5 % (x0 + x2)
+282:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:0.5 * (x0 + x2) |==> 0.5 + (x0 + x2)
+283:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:0.5 * (x0 + x2) |==> 0.5 - (x0 + x2)
+284:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:0.5 * (x0 + x2) |==> 0.5 / (x0 + x2)
+285:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):197:x1 = 0.5 * (x0 + x2) |==> <NO-OP>
+286:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):198:y1 = computeObjectiveValue(x1) |==> <NO-OP>
+287:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.MullerSolver@solve(double,double,double,double):199:oldx = Double.POSITIVE_INFINITY |==> <NO-OP>

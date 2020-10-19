@@ -1,0 +1,14 @@
+[
+  {
+    "v1": {
+      "line": "43",
+      "statement": "String[] flatten(@SuppressWarnings('unused') final Options options, final String[] arguments, @SuppressWarnings('unused') final boolean stopAtNonOption)"
+    }
+  },
+  {
+    "v2": {
+      "line": "48",
+      "statement": "return null"
+    }
+  }
+]

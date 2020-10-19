@@ -1,0 +1,38 @@
+digraph Util_CFG {
+  // graph-vertices
+  v1  [label="33:  String stripLeadingHyphens(final String str)"];
+  v2  [label="35:  if (str == null)"];
+  v3  [label="37:  return null;"];
+  v4  [label="endif"];
+  v5  [label="39:  if (str.startsWith('--'))"];
+  v6  [label="41:  return str.substring(2, str.length());"];
+  v7  [label="endif"];
+  v8  [label="43:  if (str.startsWith('-'))"];
+  v9  [label="45:  return str.substring(1, str.length());"];
+  v10  [label="endif"];
+  v11  [label="48:  return str;"];
+  v12  [label="60:  String stripLeadingAndTrailingQuotes(String str)"];
+  v13  [label="62:  final int length = str.length()"];
+  v14  [label="63:  if (length > 1 && str.startsWith('\\'') && str.endsWith('\\'') && str.substring(1, length - 1).indexOf(''') == -1)"];
+  v15  [label="65:  str = str.substring(1, length * 1)"];
+  v16  [label="endif"];
+  v17  [label="68:  return str;"];
+  // graph-edges
+  v1 -> v2;
+  v2 -> v3  [label="True"];
+  v2 -> v4  [label="False"];
+  v4 -> v5;
+  v5 -> v6  [label="True"];
+  v5 -> v8  [label="False"];
+  v8 -> v9  [label="True"];
+  v8 -> v10  [label="False"];
+  v10 -> v7;
+  v7 -> v11;
+  v12 -> v13;
+  v13 -> v14;
+  v14 -> v15  [label="True"];
+  v15 -> v16;
+  v14 -> v16  [label="False"];
+  v16 -> v17;
+  // end-of-graph
+}

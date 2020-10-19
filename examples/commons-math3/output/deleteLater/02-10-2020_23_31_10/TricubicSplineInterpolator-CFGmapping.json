@@ -1,0 +1,620 @@
+[
+  {
+    "v1": {
+      "line": "36",
+      "statement": "TricubicSplineInterpolatingFunction interpolate(final double[] xval,  final double[] yval,  final double[] zval,  final double[][][] fval)"
+    }
+  },
+  {
+    "v2": {
+      "line": "42",
+      "statement": "if (xval.length == 1 || yval.length == 0 || zval.length == 0 || fval.length == 0)"
+    }
+  },
+  {
+    "v3": {
+      "line": "43",
+      "statement": "throw new NoDataException()"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "45",
+      "statement": "if (xval.length != fval.length)"
+    }
+  },
+  {
+    "v6": {
+      "line": "46",
+      "statement": "throw new DimensionMismatchException(xval.length, fval.length)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "49",
+      "statement": "MathArrays.checkOrder(xval)"
+    }
+  },
+  {
+    "v9": {
+      "line": "50",
+      "statement": "MathArrays.checkOrder(yval)"
+    }
+  },
+  {
+    "v10": {
+      "line": "51",
+      "statement": "MathArrays.checkOrder(zval)"
+    }
+  },
+  {
+    "v11": {
+      "line": "53",
+      "statement": "final int xLen = xval.length"
+    }
+  },
+  {
+    "v12": {
+      "line": "54",
+      "statement": "final int yLen = yval.length"
+    }
+  },
+  {
+    "v13": {
+      "line": "55",
+      "statement": "final int zLen = zval.length"
+    }
+  },
+  {
+    "v14": {
+      "line": "60",
+      "statement": "final double[][][] fvalXY = new double[zLen][xLen][yLen"
+    }
+  },
+  {
+    "v15": {
+      "line": "61",
+      "statement": "final double[][][] fvalZX = new double[yLen][zLen][xLen"
+    }
+  },
+  {
+    "v16": {
+      "line": "62",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v20": {
+      "line": "63",
+      "statement": "if (fval[i].length != yLen)"
+    }
+  },
+  {
+    "v21": {
+      "line": "64",
+      "statement": "throw new DimensionMismatchException(fval[i].length, yLen)"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v23": {
+      "line": "67",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v26": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v27": {
+      "line": "68",
+      "statement": "if (fval[i][j].length != zLen)"
+    }
+  },
+  {
+    "v28": {
+      "line": "69",
+      "statement": "throw new DimensionMismatchException(fval[i][j].length, zLen)"
+    }
+  },
+  {
+    "v29": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v30": {
+      "line": "72",
+      "statement": "for (  int k = 0 ; k < zLen ;   k++)"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v34": {
+      "line": "73",
+      "statement": "final double v = fval[i][j][k"
+    }
+  },
+  {
+    "v35": {
+      "line": "74",
+      "statement": "fvalXY[k][i][j] = v"
+    }
+  },
+  {
+    "v36": {
+      "line": "75",
+      "statement": "fvalZX[j][k][i] = v"
+    }
+  },
+  {
+    "v37": {
+      "line": "80",
+      "statement": "final BicubicSplineInterpolator bsi = new BicubicSplineInterpolator()"
+    }
+  },
+  {
+    "v38": {
+      "line": "83",
+      "statement": "final BicubicSplineInterpolatingFunction[] xSplineYZ = new BicubicSplineInterpolatingFunction[xLen"
+    }
+  },
+  {
+    "v39": {
+      "line": "85",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v43": {
+      "line": "86",
+      "statement": "xSplineYZ[i] = bsi.interpolate(yval, zval, fval[i])"
+    }
+  },
+  {
+    "v44": {
+      "line": "90",
+      "statement": "final BicubicSplineInterpolatingFunction[] ySplineZX = new BicubicSplineInterpolatingFunction[yLen"
+    }
+  },
+  {
+    "v45": {
+      "line": "92",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v48": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v49": {
+      "line": "93",
+      "statement": "ySplineZX[j] = bsi.interpolate(zval, xval, fvalZX[j])"
+    }
+  },
+  {
+    "v50": {
+      "line": "97",
+      "statement": "final BicubicSplineInterpolatingFunction[] zSplineXY = new BicubicSplineInterpolatingFunction[zLen"
+    }
+  },
+  {
+    "v51": {
+      "line": "99",
+      "statement": "for (  int k = 0 ; k < zLen ;   k++)"
+    }
+  },
+  {
+    "v54": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v55": {
+      "line": "100",
+      "statement": "zSplineXY[k] = bsi.interpolate(xval, yval, fvalXY[k])"
+    }
+  },
+  {
+    "v56": {
+      "line": "104",
+      "statement": "final double[][][] dFdX = new double[xLen][yLen][zLen"
+    }
+  },
+  {
+    "v57": {
+      "line": "105",
+      "statement": "final double[][][] dFdY = new double[xLen][yLen][zLen"
+    }
+  },
+  {
+    "v58": {
+      "line": "106",
+      "statement": "final double[][][] d2FdXdY = new double[xLen][yLen][zLen"
+    }
+  },
+  {
+    "v59": {
+      "line": "107",
+      "statement": "for (  int k = 0 ; k < zLen ;   k++)"
+    }
+  },
+  {
+    "v62": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v63": {
+      "line": "108",
+      "statement": "final BicubicSplineInterpolatingFunction f = zSplineXY[k"
+    }
+  },
+  {
+    "v64": {
+      "line": "109",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v67": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v68": {
+      "line": "110",
+      "statement": "final double x = xval[i"
+    }
+  },
+  {
+    "v69": {
+      "line": "111",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v72": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v73": {
+      "line": "112",
+      "statement": "final double y = yval[j"
+    }
+  },
+  {
+    "v74": {
+      "line": "113",
+      "statement": "dFdX[i][j][k] = f.partialDerivativeX(x, y)"
+    }
+  },
+  {
+    "v75": {
+      "line": "114",
+      "statement": "dFdY[i][j][k] = f.partialDerivativeY(x, y)"
+    }
+  },
+  {
+    "v76": {
+      "line": "115",
+      "statement": "d2FdXdY[i][j][k] = f.partialDerivativeXY(x, y)"
+    }
+  },
+  {
+    "v77": {
+      "line": "121",
+      "statement": "final double[][][] dFdZ = new double[xLen][yLen][zLen"
+    }
+  },
+  {
+    "v78": {
+      "line": "122",
+      "statement": "final double[][][] d2FdYdZ = new double[xLen][yLen][zLen"
+    }
+  },
+  {
+    "v79": {
+      "line": "123",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v82": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v83": {
+      "line": "124",
+      "statement": "final BicubicSplineInterpolatingFunction f = xSplineYZ[i"
+    }
+  },
+  {
+    "v84": {
+      "line": "125",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v87": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v88": {
+      "line": "126",
+      "statement": "final double y = yval[j"
+    }
+  },
+  {
+    "v89": {
+      "line": "127",
+      "statement": "for (  int k = 0 ; k < zLen ;   k++)"
+    }
+  },
+  {
+    "v92": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v93": {
+      "line": "128",
+      "statement": "final double z = zval[k"
+    }
+  },
+  {
+    "v94": {
+      "line": "129",
+      "statement": "dFdZ[i][j][k] = f.partialDerivativeY(y, z)"
+    }
+  },
+  {
+    "v95": {
+      "line": "130",
+      "statement": "d2FdYdZ[i][j][k] = f.partialDerivativeXY(y, z)"
+    }
+  },
+  {
+    "v96": {
+      "line": "136",
+      "statement": "final double[][][] d2FdZdX = new double[xLen][yLen][zLen"
+    }
+  },
+  {
+    "v97": {
+      "line": "137",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v100": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v101": {
+      "line": "138",
+      "statement": "final BicubicSplineInterpolatingFunction f = ySplineZX[j"
+    }
+  },
+  {
+    "v102": {
+      "line": "139",
+      "statement": "for (  int k = 0 ; k < zLen ;   k++)"
+    }
+  },
+  {
+    "v105": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v106": {
+      "line": "140",
+      "statement": "final double z = zval[k"
+    }
+  },
+  {
+    "v107": {
+      "line": "141",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v110": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v111": {
+      "line": "142",
+      "statement": "final double x = xval[i"
+    }
+  },
+  {
+    "v112": {
+      "line": "143",
+      "statement": "d2FdZdX[i][j][k] = f.partialDerivativeXY(z, x)"
+    }
+  },
+  {
+    "v113": {
+      "line": "149",
+      "statement": "final double[][][] d3FdXdYdZ = new double[xLen][yLen][zLen"
+    }
+  },
+  {
+    "v114": {
+      "line": "150",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v117": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v118": {
+      "line": "151",
+      "statement": "final int nI = nextIndex(i, xLen)"
+    }
+  },
+  {
+    "v119": {
+      "line": "152",
+      "statement": "final int pI = previousIndex(i)"
+    }
+  },
+  {
+    "v120": {
+      "line": "153",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v123": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v124": {
+      "line": "154",
+      "statement": "final int nJ = nextIndex(j, yLen)"
+    }
+  },
+  {
+    "v125": {
+      "line": "155",
+      "statement": "final int pJ = previousIndex(j)"
+    }
+  },
+  {
+    "v126": {
+      "line": "156",
+      "statement": "for (  int k = 0 ; k < zLen ;   k++)"
+    }
+  },
+  {
+    "v129": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v130": {
+      "line": "157",
+      "statement": "final int nK = nextIndex(k, zLen)"
+    }
+  },
+  {
+    "v131": {
+      "line": "158",
+      "statement": "final int pK = previousIndex(k)"
+    }
+  },
+  {
+    "v132": {
+      "line": "161",
+      "statement": "d3FdXdYdZ[i][j][k] = (fval[nI][nJ][nK] - fval[nI][pJ][nK] - fval[pI][nJ][nK] + fval[pI][pJ][nK] - fval[nI][nJ][pK] + fval[nI][pJ][pK] + fval[pI][nJ][pK] - fval[pI][pJ][pK]) / ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]) * (zval[nK] - zval[pK]))"
+    }
+  },
+  {
+    "v133": {
+      "line": "171",
+      "statement": "return new TricubicSplineInterpolatingFunction(xval, yval, zval, fval,  dFdX, dFdY, dFdZ,  d2FdXdY, d2FdZdX, d2FdYdZ,  d3FdXdYdZ)"
+    }
+  },
+  {
+    "v134": {
+      "line": "185",
+      "statement": "int nextIndex(int i, int max)"
+    }
+  },
+  {
+    "v135": {
+      "line": "186",
+      "statement": "final int index = i + 1"
+    }
+  },
+  {
+    "v136": {
+      "line": "187",
+      "statement": "return index < max ? index"
+    }
+  },
+  {
+    "v137": {
+      "line": "196",
+      "statement": "int previousIndex(int i)"
+    }
+  },
+  {
+    "v138": {
+      "line": "197",
+      "statement": "final int index = i - 1"
+    }
+  },
+  {
+    "v139": {
+      "line": "198",
+      "statement": "return index >= 0 ? index"
+    }
+  }
+]

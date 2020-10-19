@@ -1,0 +1,273 @@
+1:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.Lexer:41:Character.toString(CR) |==> null
+2:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.Lexer:42:Character.toString(LF) |==> null
+3:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.Lexer@getFirstEol():64:firstEol |==> null
+4:EVR:<IDENTIFIER(org.apache.commons.csv.ExtendedBufferedReader)>:<DEFAULT>:org.apache.commons.csv.Lexer@<init>(org.apache.commons.csv.CSVFormat,org.apache.commons.csv.ExtendedBufferedReader):68:reader |==> null
+5:EVR:<METHOD_INVOCATION(char)>:<DEFAULT>:org.apache.commons.csv.Lexer@<init>(org.apache.commons.csv.CSVFormat,org.apache.commons.csv.ExtendedBufferedReader):69:format.getDelimiter() |==> 0
+6:EVR:<METHOD_INVOCATION(char)>:<DEFAULT>:org.apache.commons.csv.Lexer@<init>(org.apache.commons.csv.CSVFormat,org.apache.commons.csv.ExtendedBufferedReader):70:mapNullToDisabled(format.getEscapeCharacter()) |==> 0
+7:EVR:<METHOD_INVOCATION(char)>:<DEFAULT>:org.apache.commons.csv.Lexer@<init>(org.apache.commons.csv.CSVFormat,org.apache.commons.csv.ExtendedBufferedReader):71:mapNullToDisabled(format.getQuoteCharacter()) |==> 0
+8:EVR:<METHOD_INVOCATION(char)>:<DEFAULT>:org.apache.commons.csv.Lexer@<init>(org.apache.commons.csv.CSVFormat,org.apache.commons.csv.ExtendedBufferedReader):72:mapNullToDisabled(format.getCommentMarker()) |==> 0
+9:EVR:<METHOD_INVOCATION(boolean)>:<DEFAULT>:org.apache.commons.csv.Lexer@<init>(org.apache.commons.csv.CSVFormat,org.apache.commons.csv.ExtendedBufferedReader):73:format.getIgnoreSurroundingSpaces() |==> false
+10:EVR:<METHOD_INVOCATION(boolean)>:<DEFAULT>:org.apache.commons.csv.Lexer@<init>(org.apache.commons.csv.CSVFormat,org.apache.commons.csv.ExtendedBufferedReader):74:format.getIgnoreEmptyLines() |==> false
+11:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):92:reader.getLastChar() |==> 0
+12:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):95:reader.read() |==> 0
+13:EVR:<METHOD_INVOCATION(boolean)>:<DEFAULT>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):100:readEndOfLine(c) |==> false
+14:COR:ignoreEmptyLines:TRUE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):103:ignoreEmptyLines |==> false
+15:COR:ignoreEmptyLines:FALSE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):103:ignoreEmptyLines |==> true
+16:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):104:eol && isStartOfLine(lastChar) |==> eol == isStartOfLine(lastChar)
+17:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):104:eol && isStartOfLine(lastChar) |==> false
+18:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):104:eol && isStartOfLine(lastChar) |==> eol
+19:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):104:eol && isStartOfLine(lastChar) |==> isStartOfLine(lastChar)
+20:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):106:lastChar = c |==> <NO-OP>
+21:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):107:c = reader.read() |==> <NO-OP>
+22:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):108:eol = readEndOfLine(c) |==> <NO-OP>
+23:COR:isEndOfFile(c):TRUE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):110:isEndOfFile(c) |==> false
+24:COR:isEndOfFile(c):FALSE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):110:isEndOfFile(c) |==> true
+25:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):111:token.type = EOF |==> <NO-OP>
+26:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):113:return token; |==> <NO-OP>
+27:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):119:!isDelimiter(lastChar) && isEndOfFile(c) |==> !isDelimiter(lastChar) == isEndOfFile(c)
+28:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):119:!isDelimiter(lastChar) && isEndOfFile(c) |==> false
+29:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):119:!isDelimiter(lastChar) && isEndOfFile(c) |==> !isDelimiter(lastChar)
+30:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):119:!isDelimiter(lastChar) && isEndOfFile(c) |==> isEndOfFile(c)
+31:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):119:isEndOfFile(lastChar) || !isDelimiter(lastChar) && isEndOfFile(c) |==> isEndOfFile(lastChar) != (!isDelimiter(lastChar) && isEndOfFile(c))
+32:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):119:isEndOfFile(lastChar) || !isDelimiter(lastChar) && isEndOfFile(c) |==> isEndOfFile(lastChar)
+33:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):119:isEndOfFile(lastChar) || !isDelimiter(lastChar) && isEndOfFile(c) |==> !isDelimiter(lastChar) && isEndOfFile(c)
+34:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):119:isEndOfFile(lastChar) || !isDelimiter(lastChar) && isEndOfFile(c) |==> true
+35:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):120:token.type = EOF |==> <NO-OP>
+36:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):122:return token; |==> <NO-OP>
+37:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):125:isStartOfLine(lastChar) && isCommentStart(c) |==> isStartOfLine(lastChar) == isCommentStart(c)
+38:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):125:isStartOfLine(lastChar) && isCommentStart(c) |==> false
+39:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):125:isStartOfLine(lastChar) && isCommentStart(c) |==> isStartOfLine(lastChar)
+40:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):125:isStartOfLine(lastChar) && isCommentStart(c) |==> isCommentStart(c)
+41:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):126:reader.readLine() |==> null
+42:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):127:line == null |==> false
+43:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):128:token.type = EOF |==> <NO-OP>
+44:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):130:return token; |==> <NO-OP>
+45:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):132:line.trim() |==> null
+46:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):133:token.content.append(comment) |==> <NO-OP>
+47:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):134:token.type = COMMENT |==> <NO-OP>
+48:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):135:return token; |==> <NO-OP>
+49:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):139:token.type == INVALID |==> false
+50:COR:ignoreSurroundingSpaces:TRUE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):141:ignoreSurroundingSpaces |==> false
+51:COR:ignoreSurroundingSpaces:FALSE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):141:ignoreSurroundingSpaces |==> true
+52:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):142:isWhitespace(c) && !eol |==> isWhitespace(c) == !eol
+53:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):142:isWhitespace(c) && !eol |==> false
+54:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):142:isWhitespace(c) && !eol |==> isWhitespace(c)
+55:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):142:isWhitespace(c) && !eol |==> !eol
+56:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):143:c = reader.read() |==> <NO-OP>
+57:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):144:eol = readEndOfLine(c) |==> <NO-OP>
+58:COR:isDelimiter(c):TRUE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):149:isDelimiter(c) |==> false
+59:COR:isDelimiter(c):FALSE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):149:isDelimiter(c) |==> true
+60:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):151:token.type = TOKEN |==> <NO-OP>
+61:COR:eol:TRUE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):152:eol |==> false
+62:COR:eol:FALSE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):152:eol |==> true
+63:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):155:token.type = EORECORD |==> <NO-OP>
+64:COR:isQuoteChar(c):TRUE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):156:isQuoteChar(c) |==> false
+65:COR:isQuoteChar(c):FALSE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):156:isQuoteChar(c) |==> true
+66:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):158:parseEncapsulatedToken(token) |==> <NO-OP>
+67:COR:isEndOfFile(c):TRUE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):159:isEndOfFile(c) |==> false
+68:COR:isEndOfFile(c):FALSE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):159:isEndOfFile(c) |==> true
+69:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):162:token.type = EOF |==> <NO-OP>
+70:LVR:TRUE:FALSE:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):163:true |==> false
+71:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):163:token.isReady = true |==> <NO-OP>
+72:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):167:parseSimpleToken(token, c) |==> <NO-OP>
+73:EVR:<IDENTIFIER(org.apache.commons.csv.Token)>:<DEFAULT>:org.apache.commons.csv.Lexer@nextToken(org.apache.commons.csv.Token):170:token |==> null
+74:COR:readEndOfLine(ch):TRUE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):195:readEndOfLine(ch) |==> false
+75:COR:readEndOfLine(ch):FALSE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):195:readEndOfLine(ch) |==> true
+76:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):196:token.type = EORECORD |==> <NO-OP>
+77:STD:<BREAK>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):197:break; |==> <NO-OP>
+78:COR:isEndOfFile(ch):TRUE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):198:isEndOfFile(ch) |==> false
+79:COR:isEndOfFile(ch):FALSE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):198:isEndOfFile(ch) |==> true
+80:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):199:token.type = EOF |==> <NO-OP>
+81:LVR:TRUE:FALSE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):200:true |==> false
+82:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):200:token.isReady = true |==> <NO-OP>
+83:STD:<BREAK>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):201:break; |==> <NO-OP>
+84:COR:isDelimiter(ch):TRUE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):202:isDelimiter(ch) |==> false
+85:COR:isDelimiter(ch):FALSE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):202:isDelimiter(ch) |==> true
+86:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):203:token.type = TOKEN |==> <NO-OP>
+87:STD:<BREAK>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):204:break; |==> <NO-OP>
+88:COR:isEscape(ch):TRUE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):205:isEscape(ch) |==> false
+89:COR:isEscape(ch):FALSE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):205:isEscape(ch) |==> true
+90:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):206:readEscape() |==> 0
+91:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):207:unescaped == END_OF_STREAM |==> unescaped <= END_OF_STREAM
+92:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):207:unescaped == END_OF_STREAM |==> unescaped >= END_OF_STREAM
+93:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):207:unescaped == END_OF_STREAM |==> false
+94:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):208:token.content.append((char)ch).append((char)reader.getLastChar()) |==> <NO-OP>
+95:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):210:token.content.append((char)unescaped) |==> <NO-OP>
+96:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):212:ch = reader.read() |==> <NO-OP>
+97:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):214:token.content.append((char)ch) |==> <NO-OP>
+98:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):215:ch = reader.read() |==> <NO-OP>
+99:COR:ignoreSurroundingSpaces:TRUE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):219:ignoreSurroundingSpaces |==> false
+100:COR:ignoreSurroundingSpaces:FALSE:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):219:ignoreSurroundingSpaces |==> true
+101:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):220:trimTrailingSpaces(token.content) |==> <NO-OP>
+102:EVR:<IDENTIFIER(org.apache.commons.csv.Token)>:<DEFAULT>:org.apache.commons.csv.Lexer@parseSimpleToken(org.apache.commons.csv.Token,int):223:token |==> null
+103:EVR:<METHOD_INVOCATION(long)>:<DEFAULT>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):248:getCurrentLineNumber() |==> 0L
+104:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):251:reader.read() |==> 0
+105:COR:isEscape(c):TRUE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):253:isEscape(c) |==> false
+106:COR:isEscape(c):FALSE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):253:isEscape(c) |==> true
+107:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):254:readEscape() |==> 0
+108:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):255:unescaped == END_OF_STREAM |==> unescaped <= END_OF_STREAM
+109:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):255:unescaped == END_OF_STREAM |==> unescaped >= END_OF_STREAM
+110:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):255:unescaped == END_OF_STREAM |==> false
+111:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):256:token.content.append((char)c).append((char)reader.getLastChar()) |==> <NO-OP>
+112:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):258:token.content.append((char)unescaped) |==> <NO-OP>
+113:COR:isQuoteChar(c):TRUE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):260:isQuoteChar(c) |==> false
+114:COR:isQuoteChar(c):FALSE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):260:isQuoteChar(c) |==> true
+115:COR:isQuoteChar(reader.lookAhead()):TRUE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):261:isQuoteChar(reader.lookAhead()) |==> false
+116:COR:isQuoteChar(reader.lookAhead()):FALSE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):261:isQuoteChar(reader.lookAhead()) |==> true
+117:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):263:c = reader.read() |==> <NO-OP>
+118:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):264:token.content.append((char)c) |==> <NO-OP>
+119:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):268:c = reader.read() |==> <NO-OP>
+120:COR:isDelimiter(c):TRUE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):269:isDelimiter(c) |==> false
+121:COR:isDelimiter(c):FALSE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):269:isDelimiter(c) |==> true
+122:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):270:token.type = TOKEN |==> <NO-OP>
+123:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):271:return token; |==> <NO-OP>
+124:COR:isEndOfFile(c):TRUE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):272:isEndOfFile(c) |==> false
+125:COR:isEndOfFile(c):FALSE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):272:isEndOfFile(c) |==> true
+126:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):273:token.type = EOF |==> <NO-OP>
+127:LVR:TRUE:FALSE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):274:true |==> false
+128:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):274:token.isReady = true |==> <NO-OP>
+129:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):275:return token; |==> <NO-OP>
+130:COR:readEndOfLine(c):TRUE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):276:readEndOfLine(c) |==> false
+131:COR:readEndOfLine(c):FALSE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):276:readEndOfLine(c) |==> true
+132:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):277:token.type = EORECORD |==> <NO-OP>
+133:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):278:return token; |==> <NO-OP>
+134:COR:isWhitespace(c):TRUE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):279:isWhitespace(c) |==> false
+135:COR:isWhitespace(c):FALSE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):279:isWhitespace(c) |==> true
+136:COR:isEndOfFile(c):TRUE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):286:isEndOfFile(c) |==> false
+137:COR:isEndOfFile(c):FALSE:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):286:isEndOfFile(c) |==> true
+138:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@parseEncapsulatedToken(org.apache.commons.csv.Token):292:token.content.append((char)c) |==> <NO-OP>
+139:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.csv.Lexer@mapNullToDisabled(java.lang.Character):298:c == null |==> false
+140:EVR:<METHOD_INVOCATION(long)>:<DEFAULT>:org.apache.commons.csv.Lexer@getCurrentLineNumber():307:reader.getCurrentLineNumber() |==> 0L
+141:EVR:<METHOD_INVOCATION(long)>:<DEFAULT>:org.apache.commons.csv.Lexer@getCharacterPosition():316:reader.getPosition() |==> 0L
+142:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.Lexer@readEscape():333:reader.read() |==> 0
+143:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@readEscape():336:return CR; |==> <NO-OP>
+144:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@readEscape():338:return LF; |==> <NO-OP>
+145:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@readEscape():340:return TAB; |==> <NO-OP>
+146:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@readEscape():342:return BACKSPACE; |==> <NO-OP>
+147:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@readEscape():344:return FF; |==> <NO-OP>
+148:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@readEscape():350:return ch; |==> <NO-OP>
+149:COR:isMetaChar(ch):TRUE:org.apache.commons.csv.Lexer@readEscape():355:isMetaChar(ch) |==> false
+150:COR:isMetaChar(ch):FALSE:org.apache.commons.csv.Lexer@readEscape():355:isMetaChar(ch) |==> true
+151:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.Lexer@readEscape():356:return ch; |==> <NO-OP>
+152:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.csv.Lexer@readEscape():359:END_OF_STREAM |==> 0
+153:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):364:buffer.length() |==> 0
+154:LVR:0:POS:org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:0 |==> 1
+155:LVR:0:NEG:org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:0 |==> -1
+156:ROR:>(int,int):!=(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length > 0 |==> length != 0
+157:ROR:>(int,int):>=(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length > 0 |==> length >= 0
+158:ROR:>(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length > 0 |==> false
+159:LVR:POS:0:org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:1 |==> 0
+160:LVR:POS:NEG:org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:1 |==> -1
+161:AOR:-(int,int):%(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length - 1 |==> length % 1
+162:AOR:-(int,int):*(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length - 1 |==> length * 1
+163:AOR:-(int,int):+(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length - 1 |==> length + 1
+164:AOR:-(int,int):/(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length - 1 |==> length / 1
+165:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length > 0 && Character.isWhitespace(buffer.charAt(length - 1)) |==> length > 0 == Character.isWhitespace(buffer.charAt(length - 1))
+166:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length > 0 && Character.isWhitespace(buffer.charAt(length - 1)) |==> false
+167:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length > 0 && Character.isWhitespace(buffer.charAt(length - 1)) |==> length > 0
+168:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):365:length > 0 && Character.isWhitespace(buffer.charAt(length - 1)) |==> Character.isWhitespace(buffer.charAt(length - 1))
+169:LVR:POS:0:org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):366:1 |==> 0
+170:LVR:POS:NEG:org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):366:1 |==> -1
+171:AOR:-(int,int):%(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):366:length - 1 |==> length % 1
+172:AOR:-(int,int):*(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):366:length - 1 |==> length * 1
+173:AOR:-(int,int):+(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):366:length - 1 |==> length + 1
+174:AOR:-(int,int):/(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):366:length - 1 |==> length / 1
+175:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):366:length = length - 1 |==> <NO-OP>
+176:ROR:!=(int,int):<(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):368:length != buffer.length() |==> length < buffer.length()
+177:ROR:!=(int,int):>(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):368:length != buffer.length() |==> length > buffer.length()
+178:ROR:!=(int,int):TRUE(int,int):org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):368:length != buffer.length() |==> true
+179:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@trimTrailingSpaces(java.lang.StringBuilder):369:buffer.setLength(length) |==> <NO-OP>
+180:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):380:ch == CR |==> ch <= CR
+181:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):380:ch == CR |==> ch >= CR
+182:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):380:ch == CR |==> false
+183:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):380:reader.lookAhead() == LF |==> reader.lookAhead() <= LF
+184:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):380:reader.lookAhead() == LF |==> reader.lookAhead() >= LF
+185:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):380:reader.lookAhead() == LF |==> false
+186:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.Lexer@readEndOfLine(int):380:ch == CR && reader.lookAhead() == LF |==> ch == CR == (reader.lookAhead() == LF)
+187:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.Lexer@readEndOfLine(int):380:ch == CR && reader.lookAhead() == LF |==> false
+188:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@readEndOfLine(int):380:ch == CR && reader.lookAhead() == LF |==> ch == CR
+189:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@readEndOfLine(int):380:ch == CR && reader.lookAhead() == LF |==> reader.lookAhead() == LF
+190:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@readEndOfLine(int):382:ch = reader.read() |==> <NO-OP>
+191:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.csv.Lexer@readEndOfLine(int):384:firstEol == null |==> false
+192:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@readEndOfLine(int):385:this.firstEol = Constants.CRLF |==> <NO-OP>
+193:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.csv.Lexer@readEndOfLine(int):389:firstEol == null |==> false
+194:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):390:ch == LF |==> ch <= LF
+195:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):390:ch == LF |==> ch >= LF
+196:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):390:ch == LF |==> false
+197:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@readEndOfLine(int):391:this.firstEol = LF_STRING |==> <NO-OP>
+198:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):392:ch == CR |==> ch <= CR
+199:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):392:ch == CR |==> ch >= CR
+200:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):392:ch == CR |==> false
+201:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.Lexer@readEndOfLine(int):393:this.firstEol = CR_STRING |==> <NO-OP>
+202:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == LF |==> ch <= LF
+203:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == LF |==> ch >= LF
+204:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == LF |==> false
+205:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == CR |==> ch <= CR
+206:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == CR |==> ch >= CR
+207:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == CR |==> false
+208:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == LF || ch == CR |==> ch == LF != (ch == CR)
+209:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == LF || ch == CR |==> ch == LF
+210:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == LF || ch == CR |==> ch == CR
+211:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.Lexer@readEndOfLine(int):397:ch == LF || ch == CR |==> true
+212:EVR:<METHOD_INVOCATION(boolean)>:<DEFAULT>:org.apache.commons.csv.Lexer@isClosed():401:reader.isClosed() |==> false
+213:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.Lexer@isWhitespace(int):408:!isDelimiter(ch) && Character.isWhitespace((char)ch) |==> !isDelimiter(ch) == Character.isWhitespace((char)ch)
+214:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.Lexer@isWhitespace(int):408:!isDelimiter(ch) && Character.isWhitespace((char)ch) |==> false
+215:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@isWhitespace(int):408:!isDelimiter(ch) && Character.isWhitespace((char)ch) |==> !isDelimiter(ch)
+216:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@isWhitespace(int):408:!isDelimiter(ch) && Character.isWhitespace((char)ch) |==> Character.isWhitespace((char)ch)
+217:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF |==> ch <= LF
+218:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF |==> ch >= LF
+219:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF |==> false
+220:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == CR |==> ch <= CR
+221:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == CR |==> ch >= CR
+222:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == CR |==> false
+223:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF || ch == CR |==> ch == LF != (ch == CR)
+224:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF || ch == CR |==> ch == LF
+225:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF || ch == CR |==> ch == CR
+226:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF || ch == CR |==> true
+227:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == UNDEFINED |==> ch <= UNDEFINED
+228:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == UNDEFINED |==> ch >= UNDEFINED
+229:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == UNDEFINED |==> false
+230:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF || ch == CR || ch == UNDEFINED |==> (ch == LF || ch == CR) != (ch == UNDEFINED)
+231:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF || ch == CR || ch == UNDEFINED |==> ch == LF || ch == CR
+232:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF || ch == CR || ch == UNDEFINED |==> ch == UNDEFINED
+233:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.Lexer@isStartOfLine(int):418:ch == LF || ch == CR || ch == UNDEFINED |==> true
+234:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isEndOfFile(int):425:ch == END_OF_STREAM |==> ch <= END_OF_STREAM
+235:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isEndOfFile(int):425:ch == END_OF_STREAM |==> ch >= END_OF_STREAM
+236:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isEndOfFile(int):425:ch == END_OF_STREAM |==> false
+237:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isDelimiter(int):429:ch == delimiter |==> ch <= delimiter
+238:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isDelimiter(int):429:ch == delimiter |==> ch >= delimiter
+239:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isDelimiter(int):429:ch == delimiter |==> false
+240:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isEscape(int):433:ch == escape |==> ch <= escape
+241:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isEscape(int):433:ch == escape |==> ch >= escape
+242:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isEscape(int):433:ch == escape |==> false
+243:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isQuoteChar(int):437:ch == quoteChar |==> ch <= quoteChar
+244:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isQuoteChar(int):437:ch == quoteChar |==> ch >= quoteChar
+245:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isQuoteChar(int):437:ch == quoteChar |==> false
+246:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isCommentStart(int):441:ch == commentStart |==> ch <= commentStart
+247:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isCommentStart(int):441:ch == commentStart |==> ch >= commentStart
+248:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isCommentStart(int):441:ch == commentStart |==> false
+249:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter |==> ch <= delimiter
+250:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter |==> ch >= delimiter
+251:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter |==> false
+252:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):446:ch == escape |==> ch <= escape
+253:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):446:ch == escape |==> ch >= escape
+254:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):446:ch == escape |==> false
+255:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter || ch == escape |==> ch == delimiter != (ch == escape)
+256:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter || ch == escape |==> ch == delimiter
+257:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):446:ch == delimiter || ch == escape |==> ch == escape
+258:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter || ch == escape |==> true
+259:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):447:ch == quoteChar |==> ch <= quoteChar
+260:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):447:ch == quoteChar |==> ch >= quoteChar
+261:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):447:ch == quoteChar |==> false
+262:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter || ch == escape || ch == quoteChar |==> (ch == delimiter || ch == escape) != (ch == quoteChar)
+263:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter || ch == escape || ch == quoteChar |==> ch == delimiter || ch == escape
+264:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):447:ch == delimiter || ch == escape || ch == quoteChar |==> ch == quoteChar
+265:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):446:ch == delimiter || ch == escape || ch == quoteChar |==> true
+266:ROR:==(int,int):<=(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):448:ch == commentStart |==> ch <= commentStart
+267:ROR:==(int,int):>=(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):448:ch == commentStart |==> ch >= commentStart
+268:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.Lexer@isMetaChar(int):448:ch == commentStart |==> false
+269:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter || ch == escape || ch == quoteChar || ch == commentStart |==> (ch == delimiter || ch == escape || ch == quoteChar) != (ch == commentStart)
+270:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):445:ch == delimiter || ch == escape || ch == quoteChar || ch == commentStart |==> ch == delimiter || ch == escape || ch == quoteChar
+271:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):448:ch == delimiter || ch == escape || ch == quoteChar || ch == commentStart |==> ch == commentStart
+272:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.Lexer@isMetaChar(int):447:ch == delimiter || ch == escape || ch == quoteChar || ch == commentStart |==> true
+273:STD:<CALL>:<NO-OP>:org.apache.commons.csv.Lexer@close():459:reader.close() |==> <NO-OP>

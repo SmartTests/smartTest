@@ -1,0 +1,254 @@
+[
+  {
+    "v1": {
+      "line": "58",
+      "statement": "RombergIntegrator (final double relativeAccuracy,  final double absoluteAccuracy,  final int minimalIterationCount,  final int maximalIterationCount)"
+    }
+  },
+  {
+    "v2": {
+      "line": "63",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v3": {
+      "line": "64",
+      "statement": "if (maximalIterationCount > ROMBERG_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v4": {
+      "line": "65",
+      "statement": "throw new NumberIsTooLargeException(maximalIterationCount, ROMBERG_MAX_ITERATIONS_COUNT, false)"
+    }
+  },
+  {
+    "v5": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v6": {
+      "line": "82",
+      "statement": "RombergIntegrator (final int minimalIterationCount,  final int maximalIterationCount)"
+    }
+  },
+  {
+    "v7": {
+      "line": "85",
+      "statement": "super(minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v8": {
+      "line": "86",
+      "statement": "if (maximalIterationCount > ROMBERG_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v9": {
+      "line": "87",
+      "statement": "throw new NumberIsTooLargeException(maximalIterationCount, ROMBERG_MAX_ITERATIONS_COUNT, false)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "96",
+      "statement": "RombergIntegrator ()"
+    }
+  },
+  {
+    "v12": {
+      "line": "97",
+      "statement": "super(DEFAULT_MIN_ITERATIONS_COUNT, ROMBERG_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v13": {
+      "line": "102",
+      "statement": "double doIntegrate()"
+    }
+  },
+  {
+    "v14": {
+      "line": "105",
+      "statement": "final int m = iterations.getMaximalCount() + 1"
+    }
+  },
+  {
+    "v15": {
+      "line": "106",
+      "statement": "double previousRow[] = new double[m"
+    }
+  },
+  {
+    "v16": {
+      "line": "107",
+      "statement": "double currentRow[]  = new double[m"
+    }
+  },
+  {
+    "v17": {
+      "line": "109",
+      "statement": "TrapezoidIntegrator qtrap = new TrapezoidIntegrator()"
+    }
+  },
+  {
+    "v18": {
+      "line": "110",
+      "statement": "currentRow[0] = qtrap.stage(this, 0)"
+    }
+  },
+  {
+    "v19": {
+      "line": "111",
+      "statement": "iterations.incrementCount()"
+    }
+  },
+  {
+    "v20": {
+      "line": "112",
+      "statement": "double olds = currentRow[0"
+    }
+  },
+  {
+    "v21": {
+      "line": "113",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v23": {
+      "line": "115",
+      "statement": "final int i = iterations.getCount()"
+    }
+  },
+  {
+    "v24": {
+      "line": "118",
+      "statement": "final double[] tmpRow = previousRow"
+    }
+  },
+  {
+    "v25": {
+      "line": "119",
+      "statement": "previousRow = currentRow"
+    }
+  },
+  {
+    "v26": {
+      "line": "120",
+      "statement": "currentRow = tmpRow"
+    }
+  },
+  {
+    "v27": {
+      "line": "122",
+      "statement": "currentRow[0] = qtrap.stage(this, i)"
+    }
+  },
+  {
+    "v28": {
+      "line": "123",
+      "statement": "iterations.incrementCount()"
+    }
+  },
+  {
+    "v29": {
+      "line": "124",
+      "statement": "for (  int j = 1 ; j <= i ;   j++)"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v33": {
+      "line": "126",
+      "statement": "final double r = (1L << (2 * j)) - 1"
+    }
+  },
+  {
+    "v34": {
+      "line": "127",
+      "statement": "final double tIJm1 = currentRow[j - 1"
+    }
+  },
+  {
+    "v35": {
+      "line": "128",
+      "statement": "currentRow[j] = tIJm1 + (tIJm1 - previousRow[j - 1]) / r"
+    }
+  },
+  {
+    "v36": {
+      "line": "130",
+      "statement": "final double s = currentRow[i"
+    }
+  },
+  {
+    "v37": {
+      "line": "131",
+      "statement": "if (i >= getMinimalIterationCount())"
+    }
+  },
+  {
+    "v38": {
+      "line": "132",
+      "statement": "final double delta  = FastMath.abs(s - olds)"
+    }
+  },
+  {
+    "v39": {
+      "line": "133",
+      "statement": "final double rLimit = getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5"
+    }
+  },
+  {
+    "v40": {
+      "line": "134",
+      "statement": "if ((delta <= rLimit) || (delta <= getAbsoluteAccuracy()))"
+    }
+  },
+  {
+    "v41": {
+      "line": "135",
+      "statement": "return s"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v44": {
+      "line": "138",
+      "statement": "olds = s"
+    }
+  }
+]

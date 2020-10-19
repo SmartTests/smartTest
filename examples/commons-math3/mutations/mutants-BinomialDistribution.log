@@ -1,0 +1,111 @@
+1:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):70:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):70:0 |==> -1
+3:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):70:trials < 0 |==> trials != 0
+4:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):70:trials < 0 |==> trials <= 0
+5:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):70:trials < 0 |==> false
+6:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:0 |==> 1
+7:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:0 |==> -1
+8:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p < 0 |==> p != 0
+9:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p < 0 |==> p <= 0
+10:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p < 0 |==> false
+11:LVR:POS:0:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:1 |==> 0
+12:LVR:POS:NEG:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:1 |==> -1
+13:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p > 1 |==> p != 1
+14:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p > 1 |==> p >= 1
+15:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p > 1 |==> false
+16:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p < 0 || p > 1 |==> p < 0 != p > 1
+17:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p < 0 || p > 1 |==> p < 0
+18:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p < 0 || p > 1 |==> p > 1
+19:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):74:p < 0 || p > 1 |==> true
+20:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):75:0 |==> 1
+21:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):75:0 |==> -1
+22:LVR:POS:0:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):75:1 |==> 0
+23:LVR:POS:NEG:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):75:1 |==> -1
+24:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):78:p |==> 0.0
+25:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.BinomialDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):79:trials |==> 0
+26:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.BinomialDistribution@getNumberOfTrials():88:numberOfTrials |==> 0
+27:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BinomialDistribution@getProbabilityOfSuccess():97:probabilityOfSuccess |==> 0.0
+28:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:0 |==> 1
+29:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:0 |==> -1
+30:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x < 0 |==> x != 0
+31:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x < 0 |==> x <= 0
+32:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x < 0 |==> false
+33:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x > numberOfTrials |==> x != numberOfTrials
+34:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x > numberOfTrials |==> x >= numberOfTrials
+35:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x > numberOfTrials |==> false
+36:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x < 0 || x > numberOfTrials |==> x < 0 != x > numberOfTrials
+37:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x < 0 || x > numberOfTrials |==> x < 0
+38:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x < 0 || x > numberOfTrials |==> x > numberOfTrials
+39:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):103:x < 0 || x > numberOfTrials |==> true
+40:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@probability(int):104:0.0 |==> 1.0
+41:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@probability(int):104:0.0 |==> -1.0
+42:LVR:POS:0:org.apache.commons.math3.distribution.BinomialDistribution@probability(int):108:1.0 |==> 0.0
+43:LVR:POS:NEG:org.apache.commons.math3.distribution.BinomialDistribution@probability(int):108:1.0 |==> -1.0
+44:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):108:1.0 - probabilityOfSuccess |==> 1.0 % probabilityOfSuccess
+45:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):108:1.0 - probabilityOfSuccess |==> 1.0 * probabilityOfSuccess
+46:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):108:1.0 - probabilityOfSuccess |==> 1.0 + probabilityOfSuccess
+47:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.BinomialDistribution@probability(int):108:1.0 - probabilityOfSuccess |==> 1.0 / probabilityOfSuccess
+48:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BinomialDistribution@probability(int):110:ret |==> 0.0
+49:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):116:0 |==> 1
+50:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):116:0 |==> -1
+51:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):116:x < 0 |==> x != 0
+52:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):116:x < 0 |==> x <= 0
+53:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):116:x < 0 |==> false
+54:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):117:0.0 |==> 1.0
+55:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):117:0.0 |==> -1.0
+56:ROR:>=(int,int):==(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):118:x >= numberOfTrials |==> x == numberOfTrials
+57:ROR:>=(int,int):>(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):118:x >= numberOfTrials |==> x > numberOfTrials
+58:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):118:x >= numberOfTrials |==> true
+59:LVR:POS:0:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):119:1.0 |==> 0.0
+60:LVR:POS:NEG:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):119:1.0 |==> -1.0
+61:LVR:POS:0:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):121:1.0 |==> 0.0
+62:LVR:POS:NEG:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):121:1.0 |==> -1.0
+63:LVR:POS:0:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:1.0 |==> 0.0
+64:LVR:POS:NEG:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:1.0 |==> -1.0
+65:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:x + 1.0 |==> x % 1.0
+66:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:x + 1.0 |==> x * 1.0
+67:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:x + 1.0 |==> x - 1.0
+68:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:x + 1.0 |==> x / 1.0
+69:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:numberOfTrials - x |==> numberOfTrials % x
+70:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:numberOfTrials - x |==> numberOfTrials * x
+71:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:numberOfTrials - x |==> numberOfTrials + x
+72:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):122:numberOfTrials - x |==> numberOfTrials / x
+73:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):121:1.0 - Beta.regularizedBeta(probabilityOfSuccess, x + 1.0, numberOfTrials - x) |==> 1.0 % Beta.regularizedBeta(probabilityOfSuccess, x + 1.0, numberOfTrials - x)
+74:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):121:1.0 - Beta.regularizedBeta(probabilityOfSuccess, x + 1.0, numberOfTrials - x) |==> 1.0 * Beta.regularizedBeta(probabilityOfSuccess, x + 1.0, numberOfTrials - x)
+75:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):121:1.0 - Beta.regularizedBeta(probabilityOfSuccess, x + 1.0, numberOfTrials - x) |==> 1.0 + Beta.regularizedBeta(probabilityOfSuccess, x + 1.0, numberOfTrials - x)
+76:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):121:1.0 - Beta.regularizedBeta(probabilityOfSuccess, x + 1.0, numberOfTrials - x) |==> 1.0 / Beta.regularizedBeta(probabilityOfSuccess, x + 1.0, numberOfTrials - x)
+77:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BinomialDistribution@cumulativeProbability(int):124:ret |==> 0.0
+78:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalMean():134:numberOfTrials * probabilityOfSuccess |==> numberOfTrials % probabilityOfSuccess
+79:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalMean():134:numberOfTrials * probabilityOfSuccess |==> numberOfTrials + probabilityOfSuccess
+80:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalMean():134:numberOfTrials * probabilityOfSuccess |==> numberOfTrials - probabilityOfSuccess
+81:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalMean():134:numberOfTrials * probabilityOfSuccess |==> numberOfTrials / probabilityOfSuccess
+82:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():144:probabilityOfSuccess |==> 0.0
+83:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:numberOfTrials * p |==> numberOfTrials % p
+84:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:numberOfTrials * p |==> numberOfTrials + p
+85:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:numberOfTrials * p |==> numberOfTrials - p
+86:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:numberOfTrials * p |==> numberOfTrials / p
+87:LVR:POS:0:org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:1 |==> 0
+88:LVR:POS:NEG:org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:1 |==> -1
+89:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:1 - p |==> 1 % p
+90:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:1 - p |==> 1 * p
+91:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:1 - p |==> 1 + p
+92:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:1 - p |==> 1 / p
+93:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:numberOfTrials * p * (1 - p) |==> numberOfTrials * p % (1 - p)
+94:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:numberOfTrials * p * (1 - p) |==> numberOfTrials * p + (1 - p)
+95:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:numberOfTrials * p * (1 - p) |==> numberOfTrials * p - (1 - p)
+96:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getNumericalVariance():145:numberOfTrials * p * (1 - p) |==> numberOfTrials * p / (1 - p)
+97:LVR:POS:0:org.apache.commons.math3.distribution.BinomialDistribution@getSupportLowerBound():157:1.0 |==> 0.0
+98:LVR:POS:NEG:org.apache.commons.math3.distribution.BinomialDistribution@getSupportLowerBound():157:1.0 |==> -1.0
+99:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getSupportLowerBound():157:probabilityOfSuccess < 1.0 |==> probabilityOfSuccess != 1.0
+100:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getSupportLowerBound():157:probabilityOfSuccess < 1.0 |==> probabilityOfSuccess <= 1.0
+101:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getSupportLowerBound():157:probabilityOfSuccess < 1.0 |==> false
+102:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@getSupportLowerBound():157:0 |==> 1
+103:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@getSupportLowerBound():157:0 |==> -1
+104:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@getSupportUpperBound():169:0.0 |==> 1.0
+105:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@getSupportUpperBound():169:0.0 |==> -1.0
+106:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getSupportUpperBound():169:probabilityOfSuccess > 0.0 |==> probabilityOfSuccess != 0.0
+107:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getSupportUpperBound():169:probabilityOfSuccess > 0.0 |==> probabilityOfSuccess >= 0.0
+108:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BinomialDistribution@getSupportUpperBound():169:probabilityOfSuccess > 0.0 |==> false
+109:LVR:0:POS:org.apache.commons.math3.distribution.BinomialDistribution@getSupportUpperBound():169:0 |==> 1
+110:LVR:0:NEG:org.apache.commons.math3.distribution.BinomialDistribution@getSupportUpperBound():169:0 |==> -1
+111:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.BinomialDistribution@isSupportConnected():180:true |==> false

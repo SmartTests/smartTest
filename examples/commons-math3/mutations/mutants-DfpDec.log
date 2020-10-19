@@ -1,0 +1,554 @@
+1:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@<init>(org.apache.commons.math3.dfp.DfpField,double):66:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@<init>(org.apache.commons.math3.dfp.DfpField,double):66:0 |==> -1
+3:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@<init>(org.apache.commons.math3.dfp.DfpField,double):66:round(0) |==> <NO-OP>
+4:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@<init>(org.apache.commons.math3.dfp.Dfp):74:0 |==> 1
+5:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@<init>(org.apache.commons.math3.dfp.Dfp):74:0 |==> -1
+6:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@<init>(org.apache.commons.math3.dfp.Dfp):74:round(0) |==> <NO-OP>
+7:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@<init>(org.apache.commons.math3.dfp.DfpField,java.lang.String):83:0 |==> 1
+8:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@<init>(org.apache.commons.math3.dfp.DfpField,java.lang.String):83:0 |==> -1
+9:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@<init>(org.apache.commons.math3.dfp.DfpField,java.lang.String):83:round(0) |==> <NO-OP>
+10:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.DfpDec)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@newInstance():99:new DfpDec(getField()) |==> null
+11:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.DfpDec)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@newInstance(byte):105:new DfpDec(getField(), x) |==> null
+12:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.DfpDec)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@newInstance(int):111:new DfpDec(getField(), x) |==> null
+13:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.DfpDec)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@newInstance(long):117:new DfpDec(getField(), x) |==> null
+14:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.DfpDec)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@newInstance(double):123:new DfpDec(getField(), x) |==> null
+15:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@newInstance(org.apache.commons.math3.dfp.Dfp):131:getField().getRadixDigits() != d.getField().getRadixDigits() |==> getField().getRadixDigits() < d.getField().getRadixDigits()
+16:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@newInstance(org.apache.commons.math3.dfp.Dfp):131:getField().getRadixDigits() != d.getField().getRadixDigits() |==> getField().getRadixDigits() > d.getField().getRadixDigits()
+17:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@newInstance(org.apache.commons.math3.dfp.Dfp):131:getField().getRadixDigits() != d.getField().getRadixDigits() |==> true
+18:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@newInstance(org.apache.commons.math3.dfp.Dfp):132:getField().setIEEEFlagsBits(DfpField.FLAG_INVALID) |==> <NO-OP>
+19:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@newInstance(org.apache.commons.math3.dfp.Dfp):133:newInstance(getZero()) |==> null
+20:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@newInstance(org.apache.commons.math3.dfp.Dfp):134:result.nans = QNAN |==> <NO-OP>
+21:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@newInstance(org.apache.commons.math3.dfp.Dfp):135:return dotrap(DfpField.FLAG_INVALID, "newInstance", d, result); |==> <NO-OP>
+22:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.DfpDec)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@newInstance(org.apache.commons.math3.dfp.Dfp):138:new DfpDec(d) |==> null
+23:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.DfpDec)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@newInstance(java.lang.String):145:new DfpDec(getField(), s) |==> null
+24:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.DfpDec)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@newInstance(byte,byte):151:new DfpDec(getField(), sign, nans) |==> null
+25:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:4 |==> 0
+26:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:4 |==> -4
+27:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:getRadixDigits() * 4 |==> getRadixDigits() % 4
+28:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:getRadixDigits() * 4 |==> getRadixDigits() + 4
+29:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:getRadixDigits() * 4 |==> getRadixDigits() - 4
+30:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:getRadixDigits() * 4 |==> getRadixDigits() / 4
+31:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:3 |==> 0
+32:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:3 |==> -3
+33:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:getRadixDigits() * 4 - 3 |==> getRadixDigits() * 4 % 3
+34:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:getRadixDigits() * 4 - 3 |==> getRadixDigits() * 4 * 3
+35:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:getRadixDigits() * 4 - 3 |==> getRadixDigits() * 4 + 3
+36:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@getDecimalDigits():160:getRadixDigits() * 4 - 3 |==> getRadixDigits() * 4 / 3
+37:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):167:1 |==> 0
+38:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):167:1 |==> -1
+39:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):167:mant.length - 1 |==> mant.length % 1
+40:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):167:mant.length - 1 |==> mant.length * 1
+41:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):167:mant.length - 1 |==> mant.length + 1
+42:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):167:mant.length - 1 |==> mant.length / 1
+43:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):168:0 |==> 1
+44:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):168:0 |==> -1
+45:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):168:msb == 0 |==> msb <= 0
+46:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):168:msb == 0 |==> msb >= 0
+47:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):168:msb == 0 |==> false
+48:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):170:0 |==> 1
+49:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):170:0 |==> -1
+50:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):170:return Config.__M_NO == 0 && Config.COVERED(48, 49) ? 0 : Config.__M_NO == 49 ? -1 : Config.__M_NO == 48 ? 1 : 0; |==> <NO-OP>
+51:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):173:4 |==> 0
+52:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):173:4 |==> -4
+53:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):173:mant.length * 4 |==> mant.length % 4
+54:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):173:mant.length * 4 |==> mant.length + 4
+55:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):173:mant.length * 4 |==> mant.length - 4
+56:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):173:mant.length * 4 |==> mant.length / 4
+57:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):174:1000 |==> 0
+58:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):174:1000 |==> -1000
+59:ROR:>(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):175:lsbthreshold > msb |==> lsbthreshold != msb
+60:ROR:>(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):175:lsbthreshold > msb |==> lsbthreshold >= msb
+61:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):175:lsbthreshold > msb |==> false
+62:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):176:10 |==> 0
+63:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):176:10 |==> -10
+64:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):176:lsbthreshold /= 10 |==> <NO-OP>
+65:STD:<DEC>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):177:cmaxdigits-- |==> <NO-OP>
+66:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@round(int):181:getDecimalDigits() |==> 0
+67:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):182:cmaxdigits - digits |==> cmaxdigits % digits
+68:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):182:cmaxdigits - digits |==> cmaxdigits * digits
+69:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):182:cmaxdigits - digits |==> cmaxdigits + digits
+70:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):182:cmaxdigits - digits |==> cmaxdigits / digits
+71:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):183:4 |==> 0
+72:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):183:4 |==> -4
+73:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):183:lsbshift / 4 |==> lsbshift % 4
+74:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):183:lsbshift / 4 |==> lsbshift * 4
+75:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):183:lsbshift / 4 |==> lsbshift + 4
+76:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):183:lsbshift / 4 |==> lsbshift - 4
+77:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):185:1 |==> 0
+78:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):185:1 |==> -1
+79:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):185:lsbthreshold = 1 |==> <NO-OP>
+80:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):186:0 |==> 1
+81:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):186:0 |==> -1
+82:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):186:4 |==> 0
+83:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):186:4 |==> -4
+84:AOR:%(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):186:lsbshift % 4 |==> lsbshift * 4
+85:AOR:%(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):186:lsbshift % 4 |==> lsbshift + 4
+86:AOR:%(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):186:lsbshift % 4 |==> lsbshift - 4
+87:AOR:%(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):186:lsbshift % 4 |==> lsbshift / 4
+88:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):186:i < lsbshift % 4 |==> i != lsbshift % 4
+89:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):186:i < lsbshift % 4 |==> i <= lsbshift % 4
+90:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):186:i < lsbshift % 4 |==> false
+91:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):187:10 |==> 0
+92:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):187:10 |==> -10
+93:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):187:lsbthreshold *= 10 |==> <NO-OP>
+94:EVR:<ARRAY_ACCESS(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@round(int):190:mant[lsd] |==> 0
+95:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):192:1 |==> 0
+96:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):192:1 |==> -1
+97:ROR:<=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:lsbthreshold <= 1 |==> lsbthreshold < 1
+98:ROR:<=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:lsbthreshold <= 1 |==> lsbthreshold == 1
+99:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:lsbthreshold <= 1 |==> true
+100:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):192:4 |==> 0
+101:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):192:4 |==> -4
+102:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:4 * mant.length |==> 4 % mant.length
+103:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:4 * mant.length |==> 4 + mant.length
+104:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:4 * mant.length |==> 4 - mant.length
+105:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:4 * mant.length |==> 4 / mant.length
+106:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):192:3 |==> 0
+107:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):192:3 |==> -3
+108:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:4 * mant.length - 3 |==> 4 * mant.length % 3
+109:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:4 * mant.length - 3 |==> 4 * mant.length * 3
+110:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:4 * mant.length - 3 |==> 4 * mant.length + 3
+111:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:4 * mant.length - 3 |==> 4 * mant.length / 3
+112:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:digits == 4 * mant.length - 3 |==> digits <= 4 * mant.length - 3
+113:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:digits == 4 * mant.length - 3 |==> digits >= 4 * mant.length - 3
+114:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):192:digits == 4 * mant.length - 3 |==> false
+115:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):192:lsbthreshold <= 1 && digits == 4 * mant.length - 3 |==> lsbthreshold <= 1 == (digits == 4 * mant.length - 3)
+116:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):192:lsbthreshold <= 1 && digits == 4 * mant.length - 3 |==> false
+117:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):192:lsbthreshold <= 1 && digits == 4 * mant.length - 3 |==> lsbthreshold <= 1
+118:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):192:lsbthreshold <= 1 && digits == 4 * mant.length - 3 |==> digits == 4 * mant.length - 3
+119:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):193:return super.round(in); |==> <NO-OP>
+120:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@round(int):196:in |==> 0
+121:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):198:1 |==> 0
+122:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):198:1 |==> -1
+123:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):198:lsbthreshold == 1 |==> lsbthreshold <= 1
+124:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):198:lsbthreshold == 1 |==> lsbthreshold >= 1
+125:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):198:lsbthreshold == 1 |==> false
+126:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):200:1 |==> 0
+127:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):200:1 |==> -1
+128:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:lsd - 1 |==> lsd % 1
+129:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:lsd - 1 |==> lsd * 1
+130:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:lsd - 1 |==> lsd + 1
+131:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:lsd - 1 |==> lsd / 1
+132:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):200:1000 |==> 0
+133:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):200:1000 |==> -1000
+134:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:mant[lsd - 1] / 1000 |==> mant[lsd - 1] % 1000
+135:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:mant[lsd - 1] / 1000 |==> mant[lsd - 1] * 1000
+136:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:mant[lsd - 1] / 1000 |==> mant[lsd - 1] + 1000
+137:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:mant[lsd - 1] / 1000 |==> mant[lsd - 1] - 1000
+138:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):200:10 |==> 0
+139:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):200:10 |==> -10
+140:AOR:%(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:(mant[lsd - 1] / 1000) % 10 |==> (mant[lsd - 1] / 1000) * 10
+141:AOR:%(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:(mant[lsd - 1] / 1000) % 10 |==> (mant[lsd - 1] / 1000) + 10
+142:AOR:%(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:(mant[lsd - 1] / 1000) % 10 |==> (mant[lsd - 1] / 1000) - 10
+143:AOR:%(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):200:(mant[lsd - 1] / 1000) % 10 |==> (mant[lsd - 1] / 1000) / 10
+144:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):201:1 |==> 0
+145:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):201:1 |==> -1
+146:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):201:lsd - 1 |==> lsd % 1
+147:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):201:lsd - 1 |==> lsd * 1
+148:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):201:lsd - 1 |==> lsd + 1
+149:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):201:lsd - 1 |==> lsd / 1
+150:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):201:1000 |==> 0
+151:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):201:1000 |==> -1000
+152:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):201:mant[lsd - 1] %= 1000 |==> <NO-OP>
+153:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):202:1 |==> 0
+154:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):202:1 |==> -1
+155:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):202:lsd - 1 |==> lsd % 1
+156:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):202:lsd - 1 |==> lsd * 1
+157:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):202:lsd - 1 |==> lsd + 1
+158:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):202:lsd - 1 |==> lsd / 1
+159:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):202:discarded |= mant[lsd - 1] |==> <NO-OP>
+160:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):204:10 |==> 0
+161:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):204:10 |==> -10
+162:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:lsb * 10 |==> lsb % 10
+163:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:lsb * 10 |==> lsb + 10
+164:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:lsb * 10 |==> lsb - 10
+165:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:lsb * 10 |==> lsb / 10
+166:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:lsb * 10 / lsbthreshold |==> lsb * 10 % lsbthreshold
+167:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:lsb * 10 / lsbthreshold |==> lsb * 10 * lsbthreshold
+168:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:lsb * 10 / lsbthreshold |==> lsb * 10 + lsbthreshold
+169:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:lsb * 10 / lsbthreshold |==> lsb * 10 - lsbthreshold
+170:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):204:10 |==> 0
+171:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):204:10 |==> -10
+172:AOR:%(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:(lsb * 10 / lsbthreshold) % 10 |==> (lsb * 10 / lsbthreshold) * 10
+173:AOR:%(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:(lsb * 10 / lsbthreshold) % 10 |==> (lsb * 10 / lsbthreshold) + 10
+174:AOR:%(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:(lsb * 10 / lsbthreshold) % 10 |==> (lsb * 10 / lsbthreshold) - 10
+175:AOR:%(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):204:(lsb * 10 / lsbthreshold) % 10 |==> (lsb * 10 / lsbthreshold) / 10
+176:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):205:10 |==> 0
+177:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):205:10 |==> -10
+178:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):205:lsbthreshold / 10 |==> lsbthreshold % 10
+179:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):205:lsbthreshold / 10 |==> lsbthreshold * 10
+180:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):205:lsbthreshold / 10 |==> lsbthreshold + 10
+181:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):205:lsbthreshold / 10 |==> lsbthreshold - 10
+182:AOR:%(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):205:lsb % (lsbthreshold / 10) |==> lsb * (lsbthreshold / 10)
+183:AOR:%(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):205:lsb % (lsbthreshold / 10) |==> lsb + (lsbthreshold / 10)
+184:AOR:%(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):205:lsb % (lsbthreshold / 10) |==> lsb - (lsbthreshold / 10)
+185:AOR:%(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):205:lsb % (lsbthreshold / 10) |==> lsb / (lsbthreshold / 10)
+186:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):205:discarded |= lsb % (lsbthreshold / 10) |==> <NO-OP>
+187:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):208:0 |==> 1
+188:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):208:0 |==> -1
+189:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):208:i < lsd |==> i != lsd
+190:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):208:i < lsd |==> i <= lsd
+191:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):208:i < lsd |==> false
+192:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):209:discarded |= mant[i] |==> <NO-OP>
+193:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):210:0 |==> 1
+194:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):210:0 |==> -1
+195:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):210:mant[i] = 0 |==> <NO-OP>
+196:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):213:lsb / lsbthreshold |==> lsb % lsbthreshold
+197:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):213:lsb / lsbthreshold |==> lsb * lsbthreshold
+198:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):213:lsb / lsbthreshold |==> lsb + lsbthreshold
+199:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):213:lsb / lsbthreshold |==> lsb - lsbthreshold
+200:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):213:lsb / lsbthreshold * lsbthreshold |==> lsb / lsbthreshold % lsbthreshold
+201:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):213:lsb / lsbthreshold * lsbthreshold |==> lsb / lsbthreshold + lsbthreshold
+202:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):213:lsb / lsbthreshold * lsbthreshold |==> lsb / lsbthreshold - lsbthreshold
+203:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):213:lsb / lsbthreshold * lsbthreshold |==> lsb / lsbthreshold / lsbthreshold
+204:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):213:mant[lsd] = lsb / lsbthreshold * lsbthreshold |==> <NO-OP>
+205:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpDec@round(int):218:false |==> true
+206:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):222:0 |==> 1
+207:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):222:0 |==> -1
+208:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):222:n != 0 |==> n < 0
+209:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):222:n != 0 |==> n > 0
+210:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):222:n != 0 |==> true
+211:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):222:0 |==> 1
+212:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):222:0 |==> -1
+213:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):222:discarded != 0 |==> discarded < 0
+214:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):222:discarded != 0 |==> discarded > 0
+215:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):222:discarded != 0 |==> true
+216:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):222:(n != 0) || (discarded != 0) |==> (n != 0) != (discarded != 0)
+217:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):222:(n != 0) || (discarded != 0) |==> (n != 0)
+218:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):222:(n != 0) || (discarded != 0) |==> (discarded != 0)
+219:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):222:(n != 0) || (discarded != 0) |==> true
+220:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):226:5 |==> 0
+221:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):226:5 |==> -5
+222:ROR:>=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):226:n >= 5 |==> n == 5
+223:ROR:>=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):226:n >= 5 |==> n > 5
+224:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):226:n >= 5 |==> true
+225:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):230:5 |==> 0
+226:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):230:5 |==> -5
+227:ROR:>(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):230:n > 5 |==> n != 5
+228:ROR:>(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):230:n > 5 |==> n >= 5
+229:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):230:n > 5 |==> false
+230:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):234:5 |==> 0
+231:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):234:5 |==> -5
+232:ROR:>(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):234:n > 5 |==> n != 5
+233:ROR:>(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):234:n > 5 |==> n >= 5
+234:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):234:n > 5 |==> false
+235:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):235:5 |==> 0
+236:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):235:5 |==> -5
+237:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):235:n == 5 |==> n <= 5
+238:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):235:n == 5 |==> n >= 5
+239:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):235:n == 5 |==> false
+240:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):235:0 |==> 1
+241:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):235:0 |==> -1
+242:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):235:discarded != 0 |==> discarded < 0
+243:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):235:discarded != 0 |==> discarded > 0
+244:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):235:discarded != 0 |==> true
+245:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):235:n == 5 && discarded != 0 |==> n == 5 == (discarded != 0)
+246:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):235:n == 5 && discarded != 0 |==> false
+247:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):235:n == 5 && discarded != 0 |==> n == 5
+248:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):235:n == 5 && discarded != 0 |==> discarded != 0
+249:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):234:(n > 5) || (n == 5 && discarded != 0) |==> (n > 5) != (n == 5 && discarded != 0)
+250:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):234:(n > 5) || (n == 5 && discarded != 0) |==> (n > 5)
+251:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):235:(n > 5) || (n == 5 && discarded != 0) |==> (n == 5 && discarded != 0)
+252:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):234:(n > 5) || (n == 5 && discarded != 0) |==> true
+253:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):236:5 |==> 0
+254:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):236:5 |==> -5
+255:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 |==> n <= 5
+256:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 |==> n >= 5
+257:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 |==> false
+258:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):236:0 |==> 1
+259:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):236:0 |==> -1
+260:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:discarded == 0 |==> discarded <= 0
+261:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:discarded == 0 |==> discarded >= 0
+262:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:discarded == 0 |==> false
+263:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 && discarded == 0 |==> n == 5 == (discarded == 0)
+264:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 && discarded == 0 |==> false
+265:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 && discarded == 0 |==> n == 5
+266:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 && discarded == 0 |==> discarded == 0
+267:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:lsb / lsbthreshold |==> lsb % lsbthreshold
+268:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:lsb / lsbthreshold |==> lsb * lsbthreshold
+269:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:lsb / lsbthreshold |==> lsb + lsbthreshold
+270:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:lsb / lsbthreshold |==> lsb - lsbthreshold
+271:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):236:1 |==> 0
+272:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):236:1 |==> -1
+273:LOR:&(int,int):^(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:(lsb / lsbthreshold) & 1 |==> (lsb / lsbthreshold) ^ 1
+274:LOR:&(int,int):|(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:(lsb / lsbthreshold) & 1 |==> (lsb / lsbthreshold) | 1
+275:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):236:1 |==> 0
+276:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):236:1 |==> -1
+277:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:((lsb / lsbthreshold) & 1) == 1 |==> ((lsb / lsbthreshold) & 1) <= 1
+278:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:((lsb / lsbthreshold) & 1) == 1 |==> ((lsb / lsbthreshold) & 1) >= 1
+279:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):236:((lsb / lsbthreshold) & 1) == 1 |==> false
+280:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1 |==> (n == 5 && discarded == 0) == (((lsb / lsbthreshold) & 1) == 1)
+281:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1 |==> false
+282:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1 |==> n == 5 && discarded == 0
+283:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):236:n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1 |==> ((lsb / lsbthreshold) & 1) == 1
+284:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):234:(n > 5) || (n == 5 && discarded != 0) || (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1) |==> ((n > 5) || (n == 5 && discarded != 0)) != (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1)
+285:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):234:(n > 5) || (n == 5 && discarded != 0) || (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1) |==> (n > 5) || (n == 5 && discarded != 0)
+286:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):236:(n > 5) || (n == 5 && discarded != 0) || (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1) |==> (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1)
+287:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):235:(n > 5) || (n == 5 && discarded != 0) || (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 1) |==> true
+288:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):240:5 |==> 0
+289:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):240:5 |==> -5
+290:ROR:>(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):240:n > 5 |==> n != 5
+291:ROR:>(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):240:n > 5 |==> n >= 5
+292:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):240:n > 5 |==> false
+293:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):241:5 |==> 0
+294:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):241:5 |==> -5
+295:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):241:n == 5 |==> n <= 5
+296:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):241:n == 5 |==> n >= 5
+297:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):241:n == 5 |==> false
+298:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):241:0 |==> 1
+299:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):241:0 |==> -1
+300:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):241:discarded != 0 |==> discarded < 0
+301:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):241:discarded != 0 |==> discarded > 0
+302:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):241:discarded != 0 |==> true
+303:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):241:n == 5 && discarded != 0 |==> n == 5 == (discarded != 0)
+304:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):241:n == 5 && discarded != 0 |==> false
+305:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):241:n == 5 && discarded != 0 |==> n == 5
+306:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):241:n == 5 && discarded != 0 |==> discarded != 0
+307:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):240:(n > 5) || (n == 5 && discarded != 0) |==> (n > 5) != (n == 5 && discarded != 0)
+308:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):240:(n > 5) || (n == 5 && discarded != 0) |==> (n > 5)
+309:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):241:(n > 5) || (n == 5 && discarded != 0) |==> (n == 5 && discarded != 0)
+310:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):240:(n > 5) || (n == 5 && discarded != 0) |==> true
+311:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):242:5 |==> 0
+312:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):242:5 |==> -5
+313:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 |==> n <= 5
+314:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 |==> n >= 5
+315:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 |==> false
+316:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):242:0 |==> 1
+317:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):242:0 |==> -1
+318:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:discarded == 0 |==> discarded <= 0
+319:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:discarded == 0 |==> discarded >= 0
+320:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:discarded == 0 |==> false
+321:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 && discarded == 0 |==> n == 5 == (discarded == 0)
+322:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 && discarded == 0 |==> false
+323:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 && discarded == 0 |==> n == 5
+324:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 && discarded == 0 |==> discarded == 0
+325:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:lsb / lsbthreshold |==> lsb % lsbthreshold
+326:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:lsb / lsbthreshold |==> lsb * lsbthreshold
+327:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:lsb / lsbthreshold |==> lsb + lsbthreshold
+328:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:lsb / lsbthreshold |==> lsb - lsbthreshold
+329:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):242:1 |==> 0
+330:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):242:1 |==> -1
+331:LOR:&(int,int):^(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:(lsb / lsbthreshold) & 1 |==> (lsb / lsbthreshold) ^ 1
+332:LOR:&(int,int):|(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:(lsb / lsbthreshold) & 1 |==> (lsb / lsbthreshold) | 1
+333:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):242:0 |==> 1
+334:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):242:0 |==> -1
+335:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:((lsb / lsbthreshold) & 1) == 0 |==> ((lsb / lsbthreshold) & 1) <= 0
+336:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:((lsb / lsbthreshold) & 1) == 0 |==> ((lsb / lsbthreshold) & 1) >= 0
+337:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):242:((lsb / lsbthreshold) & 1) == 0 |==> false
+338:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0 |==> (n == 5 && discarded == 0) == (((lsb / lsbthreshold) & 1) == 0)
+339:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0 |==> false
+340:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0 |==> n == 5 && discarded == 0
+341:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):242:n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0 |==> ((lsb / lsbthreshold) & 1) == 0
+342:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):240:(n > 5) || (n == 5 && discarded != 0) || (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0) |==> ((n > 5) || (n == 5 && discarded != 0)) != (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0)
+343:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):240:(n > 5) || (n == 5 && discarded != 0) || (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0) |==> (n > 5) || (n == 5 && discarded != 0)
+344:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):242:(n > 5) || (n == 5 && discarded != 0) || (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0) |==> (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0)
+345:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):241:(n > 5) || (n == 5 && discarded != 0) || (n == 5 && discarded == 0 && ((lsb / lsbthreshold) & 1) == 0) |==> true
+346:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):246:1 |==> 0
+347:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):246:1 |==> -1
+348:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):246:sign == 1 |==> sign <= 1
+349:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):246:sign == 1 |==> sign >= 1
+350:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):246:sign == 1 |==> false
+351:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):246:0 |==> 1
+352:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):246:0 |==> -1
+353:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):246:n != 0 |==> n < 0
+354:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):246:n != 0 |==> n > 0
+355:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):246:n != 0 |==> true
+356:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):246:0 |==> 1
+357:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):246:0 |==> -1
+358:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):246:discarded != 0 |==> discarded < 0
+359:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):246:discarded != 0 |==> discarded > 0
+360:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):246:discarded != 0 |==> true
+361:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):246:n != 0 || discarded != 0 |==> n != 0 != (discarded != 0)
+362:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):246:n != 0 || discarded != 0 |==> n != 0
+363:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):246:n != 0 || discarded != 0 |==> discarded != 0
+364:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):246:n != 0 || discarded != 0 |==> true
+365:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):246:(sign == 1) && (n != 0 || discarded != 0) |==> (sign == 1) == (n != 0 || discarded != 0)
+366:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):246:(sign == 1) && (n != 0 || discarded != 0) |==> false
+367:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):246:(sign == 1) && (n != 0 || discarded != 0) |==> (sign == 1)
+368:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):246:(sign == 1) && (n != 0 || discarded != 0) |==> (n != 0 || discarded != 0)
+369:LVR:NEG:0:org.apache.commons.math3.dfp.DfpDec@round(int):251:-1 |==> 0
+370:LVR:NEG:POS:org.apache.commons.math3.dfp.DfpDec@round(int):251:-1 |==> 1
+371:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):251:sign == -1 |==> sign <= -1
+372:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):251:sign == -1 |==> sign >= -1
+373:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):251:sign == -1 |==> false
+374:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):251:0 |==> 1
+375:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):251:0 |==> -1
+376:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):251:n != 0 |==> n < 0
+377:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):251:n != 0 |==> n > 0
+378:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):251:n != 0 |==> true
+379:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):251:0 |==> 1
+380:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):251:0 |==> -1
+381:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):251:discarded != 0 |==> discarded < 0
+382:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):251:discarded != 0 |==> discarded > 0
+383:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):251:discarded != 0 |==> true
+384:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):251:n != 0 || discarded != 0 |==> n != 0 != (discarded != 0)
+385:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):251:n != 0 || discarded != 0 |==> n != 0
+386:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):251:n != 0 || discarded != 0 |==> discarded != 0
+387:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):251:n != 0 || discarded != 0 |==> true
+388:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):251:(sign == -1) && (n != 0 || discarded != 0) |==> (sign == -1) == (n != 0 || discarded != 0)
+389:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):251:(sign == -1) && (n != 0 || discarded != 0) |==> false
+390:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):251:(sign == -1) && (n != 0 || discarded != 0) |==> (sign == -1)
+391:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):251:(sign == -1) && (n != 0 || discarded != 0) |==> (n != 0 || discarded != 0)
+392:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):252:break; |==> <NO-OP>
+393:COR:inc:TRUE:org.apache.commons.math3.dfp.DfpDec@round(int):255:inc |==> false
+394:COR:inc:FALSE:org.apache.commons.math3.dfp.DfpDec@round(int):255:inc |==> true
+395:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@round(int):257:lsbthreshold |==> 0
+396:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@round(int):258:lsd |==> 0
+397:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):258:i < mant.length |==> i != mant.length
+398:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):258:i < mant.length |==> i <= mant.length
+399:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):258:i < mant.length |==> false
+400:AOR:+(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):259:mant[i] + rh |==> mant[i] % rh
+401:AOR:+(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):259:mant[i] + rh |==> mant[i] * rh
+402:AOR:+(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):259:mant[i] + rh |==> mant[i] - rh
+403:AOR:+(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):259:mant[i] + rh |==> mant[i] / rh
+404:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):260:r / RADIX |==> r % RADIX
+405:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):260:r / RADIX |==> r * RADIX
+406:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):260:r / RADIX |==> r + RADIX
+407:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):260:r / RADIX |==> r - RADIX
+408:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):260:rh = r / RADIX |==> <NO-OP>
+409:AOR:%(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):261:r % RADIX |==> r * RADIX
+410:AOR:%(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):261:r % RADIX |==> r + RADIX
+411:AOR:%(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):261:r % RADIX |==> r - RADIX
+412:AOR:%(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):261:r % RADIX |==> r / RADIX
+413:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):261:mant[i] = r % RADIX |==> <NO-OP>
+414:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):264:0 |==> 1
+415:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):264:0 |==> -1
+416:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):264:rh != 0 |==> rh < 0
+417:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):264:rh != 0 |==> rh > 0
+418:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):264:rh != 0 |==> true
+419:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):265:shiftRight() |==> <NO-OP>
+420:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@round(int):266:1 |==> 0
+421:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):266:1 |==> -1
+422:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):266:mant.length - 1 |==> mant.length % 1
+423:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):266:mant.length - 1 |==> mant.length * 1
+424:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):266:mant.length - 1 |==> mant.length + 1
+425:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):266:mant.length - 1 |==> mant.length / 1
+426:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):266:mant[mant.length - 1] = rh |==> <NO-OP>
+427:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):271:exp < MIN_EXP |==> exp != MIN_EXP
+428:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):271:exp < MIN_EXP |==> exp <= MIN_EXP
+429:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):271:exp < MIN_EXP |==> false
+430:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):273:getField().setIEEEFlagsBits(DfpField.FLAG_UNDERFLOW) |==> <NO-OP>
+431:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):274:return DfpField.FLAG_UNDERFLOW; |==> <NO-OP>
+432:ROR:>(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):277:exp > MAX_EXP |==> exp != MAX_EXP
+433:ROR:>(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):277:exp > MAX_EXP |==> exp >= MAX_EXP
+434:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):277:exp > MAX_EXP |==> false
+435:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):279:getField().setIEEEFlagsBits(DfpField.FLAG_OVERFLOW) |==> <NO-OP>
+436:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):280:return DfpField.FLAG_OVERFLOW; |==> <NO-OP>
+437:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):283:0 |==> 1
+438:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):283:0 |==> -1
+439:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):283:n != 0 |==> n < 0
+440:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):283:n != 0 |==> n > 0
+441:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):283:n != 0 |==> true
+442:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):283:0 |==> 1
+443:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):283:0 |==> -1
+444:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):283:discarded != 0 |==> discarded < 0
+445:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):283:discarded != 0 |==> discarded > 0
+446:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@round(int):283:discarded != 0 |==> true
+447:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):283:n != 0 || discarded != 0 |==> n != 0 != (discarded != 0)
+448:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):283:n != 0 || discarded != 0 |==> n != 0
+449:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):283:n != 0 || discarded != 0 |==> discarded != 0
+450:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@round(int):283:n != 0 || discarded != 0 |==> true
+451:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):285:getField().setIEEEFlagsBits(DfpField.FLAG_INEXACT) |==> <NO-OP>
+452:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@round(int):286:return DfpField.FLAG_INEXACT; |==> <NO-OP>
+453:LVR:0:POS:org.apache.commons.math3.dfp.DfpDec@round(int):288:0 |==> 1
+454:LVR:0:NEG:org.apache.commons.math3.dfp.DfpDec@round(int):288:0 |==> -1
+455:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):298:getField().getRadixDigits() != x.getField().getRadixDigits() |==> getField().getRadixDigits() < x.getField().getRadixDigits()
+456:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):298:getField().getRadixDigits() != x.getField().getRadixDigits() |==> getField().getRadixDigits() > x.getField().getRadixDigits()
+457:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):298:getField().getRadixDigits() != x.getField().getRadixDigits() |==> true
+458:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):299:getField().setIEEEFlagsBits(DfpField.FLAG_INVALID) |==> <NO-OP>
+459:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):300:newInstance(getZero()) |==> null
+460:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):301:result.nans = QNAN |==> <NO-OP>
+461:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):302:return dotrap(DfpField.FLAG_INVALID, trapName, x, result); |==> <NO-OP>
+462:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):305:false |==> true
+463:COR:this.lessThan(x):TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):310:this.lessThan(x) |==> false
+464:COR:this.lessThan(x):FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):310:this.lessThan(x) |==> true
+465:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):311:true |==> false
+466:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):311:up = true |==> <NO-OP>
+467:COR:equals(x):TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):314:equals(x) |==> false
+468:COR:equals(x):FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):314:equals(x) |==> true
+469:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):315:return newInstance(x); |==> <NO-OP>
+470:COR:lessThan(getZero()):TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):318:lessThan(getZero()) |==> false
+471:COR:lessThan(getZero()):FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):318:lessThan(getZero()) |==> true
+472:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):319:up = !up |==> <NO-OP>
+473:COR:up:TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):322:up |==> false
+474:COR:up:FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):322:up |==> true
+475:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:intLog10() - getDecimalDigits() |==> intLog10() % getDecimalDigits()
+476:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:intLog10() - getDecimalDigits() |==> intLog10() * getDecimalDigits()
+477:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:intLog10() - getDecimalDigits() |==> intLog10() + getDecimalDigits()
+478:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:intLog10() - getDecimalDigits() |==> intLog10() / getDecimalDigits()
+479:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:1 |==> 0
+480:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:1 |==> -1
+481:AOR:+(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:intLog10() - getDecimalDigits() + 1 |==> (intLog10() - getDecimalDigits()) % 1
+482:AOR:+(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:intLog10() - getDecimalDigits() + 1 |==> (intLog10() - getDecimalDigits()) * 1
+483:AOR:+(int,int):-(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:intLog10() - getDecimalDigits() + 1 |==> intLog10() - getDecimalDigits() - 1
+484:AOR:+(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):323:intLog10() - getDecimalDigits() + 1 |==> (intLog10() - getDecimalDigits()) / 1
+485:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):324:inc = copysign(inc, this) |==> <NO-OP>
+486:COR:this.equals(getZero()):TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):326:this.equals(getZero()) |==> false
+487:COR:this.equals(getZero()):FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):326:this.equals(getZero()) |==> true
+488:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:MIN_EXP - mant.length |==> MIN_EXP % mant.length
+489:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:MIN_EXP - mant.length |==> MIN_EXP * mant.length
+490:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:MIN_EXP - mant.length |==> MIN_EXP + mant.length
+491:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:MIN_EXP - mant.length |==> MIN_EXP / mant.length
+492:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:1 |==> 0
+493:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:1 |==> -1
+494:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:MIN_EXP - mant.length - 1 |==> (MIN_EXP - mant.length) % 1
+495:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:MIN_EXP - mant.length - 1 |==> (MIN_EXP - mant.length) * 1
+496:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:MIN_EXP - mant.length - 1 |==> MIN_EXP - mant.length + 1
+497:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:MIN_EXP - mant.length - 1 |==> (MIN_EXP - mant.length) / 1
+498:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):327:inc = power10K(MIN_EXP - mant.length - 1) |==> <NO-OP>
+499:COR:inc.equals(getZero()):TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):330:inc.equals(getZero()) |==> false
+500:COR:inc.equals(getZero()):FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):330:inc.equals(getZero()) |==> true
+501:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):331:copysign(newInstance(getZero()), this) |==> null
+502:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):333:add(inc) |==> null
+503:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):336:power10(intLog10()) |==> null
+504:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):337:inc = copysign(inc, this) |==> <NO-OP>
+505:COR:this.equals(inc):TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):339:this.equals(inc) |==> false
+506:COR:this.equals(inc):FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):339:this.equals(inc) |==> true
+507:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):340:inc = inc.divide(power10(getDecimalDigits())) |==> <NO-OP>
+508:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):342:1 |==> 0
+509:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):342:1 |==> -1
+510:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):342:getDecimalDigits() - 1 |==> getDecimalDigits() % 1
+511:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):342:getDecimalDigits() - 1 |==> getDecimalDigits() * 1
+512:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):342:getDecimalDigits() - 1 |==> getDecimalDigits() + 1
+513:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):342:getDecimalDigits() - 1 |==> getDecimalDigits() / 1
+514:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):342:inc = inc.divide(power10(getDecimalDigits() - 1)) |==> <NO-OP>
+515:COR:this.equals(getZero()):TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):345:this.equals(getZero()) |==> false
+516:COR:this.equals(getZero()):FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):345:this.equals(getZero()) |==> true
+517:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:MIN_EXP - mant.length |==> MIN_EXP % mant.length
+518:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:MIN_EXP - mant.length |==> MIN_EXP * mant.length
+519:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:MIN_EXP - mant.length |==> MIN_EXP + mant.length
+520:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:MIN_EXP - mant.length |==> MIN_EXP / mant.length
+521:LVR:POS:0:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:1 |==> 0
+522:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:1 |==> -1
+523:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:MIN_EXP - mant.length - 1 |==> (MIN_EXP - mant.length) % 1
+524:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:MIN_EXP - mant.length - 1 |==> (MIN_EXP - mant.length) * 1
+525:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:MIN_EXP - mant.length - 1 |==> MIN_EXP - mant.length + 1
+526:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:MIN_EXP - mant.length - 1 |==> (MIN_EXP - mant.length) / 1
+527:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):346:inc = power10K(MIN_EXP - mant.length - 1) |==> <NO-OP>
+528:COR:inc.equals(getZero()):TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):349:inc.equals(getZero()) |==> false
+529:COR:inc.equals(getZero()):FALSE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):349:inc.equals(getZero()) |==> true
+530:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):350:copysign(newInstance(getZero()), this) |==> null
+531:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):352:subtract(inc) |==> null
+532:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:result.classify() == INFINITE |==> result.classify() <= INFINITE
+533:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:result.classify() == INFINITE |==> result.classify() >= INFINITE
+534:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:result.classify() == INFINITE |==> false
+535:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:this.classify() != INFINITE |==> this.classify() < INFINITE
+536:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:this.classify() != INFINITE |==> this.classify() > INFINITE
+537:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:this.classify() != INFINITE |==> true
+538:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:result.classify() == INFINITE && this.classify() != INFINITE |==> result.classify() == INFINITE == (this.classify() != INFINITE)
+539:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:result.classify() == INFINITE && this.classify() != INFINITE |==> false
+540:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:result.classify() == INFINITE && this.classify() != INFINITE |==> result.classify() == INFINITE
+541:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):356:result.classify() == INFINITE && this.classify() != INFINITE |==> this.classify() != INFINITE
+542:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):357:getField().setIEEEFlagsBits(DfpField.FLAG_INEXACT) |==> <NO-OP>
+543:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):358:result = dotrap(DfpField.FLAG_INEXACT, trapName, x, result) |==> <NO-OP>
+544:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):361:false |==> true
+545:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):361:this.equals(getZero()) == false |==> false
+546:ROR:==(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):361:this.equals(getZero()) == false |==> this.equals(getZero())
+547:ROR:==(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):361:this.equals(getZero()) == false |==> false
+548:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):361:result.equals(getZero()) && this.equals(getZero()) == false |==> result.equals(getZero()) == (this.equals(getZero()) == false)
+549:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):361:result.equals(getZero()) && this.equals(getZero()) == false |==> false
+550:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):361:result.equals(getZero()) && this.equals(getZero()) == false |==> result.equals(getZero())
+551:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):361:result.equals(getZero()) && this.equals(getZero()) == false |==> this.equals(getZero()) == false
+552:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):362:getField().setIEEEFlagsBits(DfpField.FLAG_INEXACT) |==> <NO-OP>
+553:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):363:result = dotrap(DfpField.FLAG_INEXACT, trapName, x, result) |==> <NO-OP>
+554:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpDec@nextAfter(org.apache.commons.math3.dfp.Dfp):366:result |==> null

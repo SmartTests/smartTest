@@ -1,0 +1,505 @@
+1:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):112:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):112:0 |==> -1
+3:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):112:p <= 0 |==> p < 0
+4:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):112:p <= 0 |==> p == 0
+5:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):112:p <= 0 |==> true
+6:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):115:p |==> 0.0
+7:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):116:epsilon |==> 0.0
+8:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):117:maxIterations |==> 0
+9:EVR:<NEW_CLASS(org.apache.commons.math3.distribution.NormalDistribution)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):120:new NormalDistribution(rng, p, FastMath.sqrt(p), NormalDistribution.DEFAULT_INVERSE_ABSOLUTE_ACCURACY) |==> null
+10:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):122:1 |==> 0
+11:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,int):122:1 |==> -1
+12:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@getMean():159:mean |==> 0.0
+13:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:0 |==> 1
+14:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:0 |==> -1
+15:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x < 0 |==> x != 0
+16:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x < 0 |==> x <= 0
+17:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x < 0 |==> false
+18:ROR:==(int,int):<=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x == Integer.MAX_VALUE |==> x <= Integer.MAX_VALUE
+19:ROR:==(int,int):>=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x == Integer.MAX_VALUE |==> x >= Integer.MAX_VALUE
+20:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x == Integer.MAX_VALUE |==> false
+21:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x < 0 || x == Integer.MAX_VALUE |==> x < 0 != (x == Integer.MAX_VALUE)
+22:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x < 0 || x == Integer.MAX_VALUE |==> x < 0
+23:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x < 0 || x == Integer.MAX_VALUE |==> x == Integer.MAX_VALUE
+24:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):165:x < 0 || x == Integer.MAX_VALUE |==> true
+25:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@probability(int):166:0.0 |==> 1.0
+26:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@probability(int):166:0.0 |==> -1.0
+27:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@probability(int):167:0 |==> 1
+28:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@probability(int):167:0 |==> -1
+29:ROR:==(int,int):<=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):167:x == 0 |==> x <= 0
+30:ROR:==(int,int):>=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):167:x == 0 |==> x >= 0
+31:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):167:x == 0 |==> false
+32:ORU:-(double):+(double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):168:-mean |==> +mean
+33:ORU:-(double):+(double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):170:-SaddlePointExpansion.getStirlingError(x) |==> +SaddlePointExpansion.getStirlingError(x)
+34:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):170:-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean) |==> -SaddlePointExpansion.getStirlingError(x) % SaddlePointExpansion.getDeviancePart(x, mean)
+35:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):170:-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean) |==> -SaddlePointExpansion.getStirlingError(x) * SaddlePointExpansion.getDeviancePart(x, mean)
+36:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):170:-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean) |==> -SaddlePointExpansion.getStirlingError(x) + SaddlePointExpansion.getDeviancePart(x, mean)
+37:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):170:-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean) |==> -SaddlePointExpansion.getStirlingError(x) / SaddlePointExpansion.getDeviancePart(x, mean)
+38:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):172:MathUtils.TWO_PI * x |==> MathUtils.TWO_PI % x
+39:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):172:MathUtils.TWO_PI * x |==> MathUtils.TWO_PI + x
+40:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):172:MathUtils.TWO_PI * x |==> MathUtils.TWO_PI - x
+41:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):172:MathUtils.TWO_PI * x |==> MathUtils.TWO_PI / x
+42:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):170:FastMath.exp(-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean)) / FastMath.sqrt(MathUtils.TWO_PI * x) |==> FastMath.exp(-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean)) % FastMath.sqrt(MathUtils.TWO_PI * x)
+43:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):170:FastMath.exp(-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean)) / FastMath.sqrt(MathUtils.TWO_PI * x) |==> FastMath.exp(-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean)) * FastMath.sqrt(MathUtils.TWO_PI * x)
+44:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):170:FastMath.exp(-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean)) / FastMath.sqrt(MathUtils.TWO_PI * x) |==> FastMath.exp(-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean)) + FastMath.sqrt(MathUtils.TWO_PI * x)
+45:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@probability(int):170:FastMath.exp(-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean)) / FastMath.sqrt(MathUtils.TWO_PI * x) |==> FastMath.exp(-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean)) - FastMath.sqrt(MathUtils.TWO_PI * x)
+46:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@probability(int):174:ret |==> 0.0
+47:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):179:0 |==> 1
+48:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):179:0 |==> -1
+49:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):179:x < 0 |==> x != 0
+50:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):179:x < 0 |==> x <= 0
+51:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):179:x < 0 |==> false
+52:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):180:0 |==> 1
+53:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):180:0 |==> -1
+54:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):180:return Config.__M_NO == 0 && Config.COVERED(52, 53) ? 0 : Config.__M_NO == 53 ? -1 : Config.__M_NO == 52 ? 1 : 0; |==> <NO-OP>
+55:ROR:==(int,int):<=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):182:x == Integer.MAX_VALUE |==> x <= Integer.MAX_VALUE
+56:ROR:==(int,int):>=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):182:x == Integer.MAX_VALUE |==> x >= Integer.MAX_VALUE
+57:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):182:x == Integer.MAX_VALUE |==> false
+58:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):183:1 |==> 0
+59:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):183:1 |==> -1
+60:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):183:return Config.__M_NO == 0 && Config.COVERED(58, 59) ? 1 : Config.__M_NO == 59 ? -1 : Config.__M_NO == 58 ? 0 : 1; |==> <NO-OP>
+61:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):185:1 |==> 0
+62:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):185:1 |==> -1
+63:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):185:(double)x + 1 |==> (double)x % 1
+64:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):185:(double)x + 1 |==> (double)x * 1
+65:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):185:(double)x + 1 |==> (double)x - 1
+66:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@cumulativeProbability(int):185:(double)x + 1 |==> (double)x / 1
+67:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@normalApproximateProbability(int):202:0.5 |==> 0.0
+68:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@normalApproximateProbability(int):202:0.5 |==> -0.5
+69:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@normalApproximateProbability(int):202:x + 0.5 |==> x % 0.5
+70:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@normalApproximateProbability(int):202:x + 0.5 |==> x * 0.5
+71:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@normalApproximateProbability(int):202:x + 0.5 |==> x - 0.5
+72:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@normalApproximateProbability(int):202:x + 0.5 |==> x / 0.5
+73:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@getNumericalMean():211:getMean() |==> 0.0
+74:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@getNumericalVariance():220:getMean() |==> 0.0
+75:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@getSupportLowerBound():231:0 |==> 1
+76:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@getSupportLowerBound():231:0 |==> -1
+77:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@getSupportUpperBound():245:Integer.MAX_VALUE |==> 0
+78:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.PoissonDistribution@isSupportConnected():256:true |==> false
+79:EVR:<TYPE_CAST(int)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@sample():283:(int)FastMath.min(nextPoisson(mean), Integer.MAX_VALUE) |==> 0
+80:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):292:meanPoisson < pivot |==> meanPoisson != pivot
+81:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):292:meanPoisson < pivot |==> meanPoisson <= pivot
+82:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):292:meanPoisson < pivot |==> false
+83:ORU:-(double):+(double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):293:-meanPoisson |==> +meanPoisson
+84:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):294:0 |==> 1
+85:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):294:0 |==> -1
+86:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):295:1.0 |==> 0.0
+87:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):295:1.0 |==> -1.0
+88:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):296:1.0 |==> 0.0
+89:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):296:1.0 |==> -1.0
+90:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):298:1000 |==> 0
+91:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):298:1000 |==> -1000
+92:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):298:1000 * meanPoisson |==> 1000 % meanPoisson
+93:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):298:1000 * meanPoisson |==> 1000 + meanPoisson
+94:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):298:1000 * meanPoisson |==> 1000 - meanPoisson
+95:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):298:1000 * meanPoisson |==> 1000 / meanPoisson
+96:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):298:n < 1000 * meanPoisson |==> n != 1000 * meanPoisson
+97:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):298:n < 1000 * meanPoisson |==> n <= 1000 * meanPoisson
+98:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):298:n < 1000 * meanPoisson |==> false
+99:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):299:rnd = random.nextDouble() |==> <NO-OP>
+100:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):300:r * rnd |==> r % rnd
+101:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):300:r * rnd |==> r + rnd
+102:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):300:r * rnd |==> r - rnd
+103:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):300:r * rnd |==> r / rnd
+104:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):300:r = r * rnd |==> <NO-OP>
+105:ROR:>=(double,double):==(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):301:r >= p |==> r == p
+106:ROR:>=(double,double):>(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):301:r >= p |==> r > p
+107:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):301:r >= p |==> true
+108:STD:<INC>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):302:n++ |==> <NO-OP>
+109:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):304:return n; |==> <NO-OP>
+110:EVR:<IDENTIFIER(long)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):307:n |==> 0L
+111:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):309:FastMath.floor(meanPoisson) |==> 0.0
+112:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):310:meanPoisson - lambda |==> meanPoisson % lambda
+113:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):310:meanPoisson - lambda |==> meanPoisson * lambda
+114:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):310:meanPoisson - lambda |==> meanPoisson + lambda
+115:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):310:meanPoisson - lambda |==> meanPoisson / lambda
+116:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):311:FastMath.log(lambda) |==> 0.0
+117:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):312:CombinatoricsUtils.factorialLog((int)lambda) |==> 0.0
+118:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):313:lambdaFractional < Double.MIN_VALUE |==> lambdaFractional != Double.MIN_VALUE
+119:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):313:lambdaFractional < Double.MIN_VALUE |==> lambdaFractional <= Double.MIN_VALUE
+120:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):313:lambdaFractional < Double.MIN_VALUE |==> false
+121:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):313:0 |==> 1
+122:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):313:0 |==> -1
+123:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 |==> 0
+124:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 |==> -32
+125:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda |==> 32 % lambda
+126:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda |==> 32 + lambda
+127:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda |==> 32 - lambda
+128:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda |==> 32 / lambda
+129:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda / FastMath.PI |==> 32 * lambda % FastMath.PI
+130:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda / FastMath.PI |==> 32 * lambda * FastMath.PI
+131:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda / FastMath.PI |==> 32 * lambda + FastMath.PI
+132:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda / FastMath.PI |==> 32 * lambda - FastMath.PI
+133:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:1 |==> 0
+134:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:1 |==> -1
+135:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda / FastMath.PI + 1 |==> 32 * lambda / FastMath.PI % 1
+136:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda / FastMath.PI + 1 |==> 32 * lambda / FastMath.PI * 1
+137:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda / FastMath.PI + 1 |==> 32 * lambda / FastMath.PI - 1
+138:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:32 * lambda / FastMath.PI + 1 |==> 32 * lambda / FastMath.PI / 1
+139:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:lambda * FastMath.log(32 * lambda / FastMath.PI + 1) |==> lambda % FastMath.log(32 * lambda / FastMath.PI + 1)
+140:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:lambda * FastMath.log(32 * lambda / FastMath.PI + 1) |==> lambda + FastMath.log(32 * lambda / FastMath.PI + 1)
+141:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:lambda * FastMath.log(32 * lambda / FastMath.PI + 1) |==> lambda - FastMath.log(32 * lambda / FastMath.PI + 1)
+142:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):314:lambda * FastMath.log(32 * lambda / FastMath.PI + 1) |==> lambda / FastMath.log(32 * lambda / FastMath.PI + 1)
+143:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):315:2 |==> 0
+144:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):315:2 |==> -2
+145:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):315:delta / 2 |==> delta % 2
+146:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):315:delta / 2 |==> delta * 2
+147:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):315:delta / 2 |==> delta + 2
+148:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):315:delta / 2 |==> delta - 2
+149:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 |==> 0
+150:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 |==> -2
+151:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 * lambda |==> 2 % lambda
+152:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 * lambda |==> 2 + lambda
+153:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 * lambda |==> 2 - lambda
+154:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 * lambda |==> 2 / lambda
+155:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 * lambda + delta |==> 2 * lambda % delta
+156:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 * lambda + delta |==> 2 * lambda * delta
+157:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 * lambda + delta |==> 2 * lambda - delta
+158:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):316:2 * lambda + delta |==> 2 * lambda / delta
+159:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:FastMath.PI * twolpd |==> FastMath.PI % twolpd
+160:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:FastMath.PI * twolpd |==> FastMath.PI + twolpd
+161:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:FastMath.PI * twolpd |==> FastMath.PI - twolpd
+162:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:FastMath.PI * twolpd |==> FastMath.PI / twolpd
+163:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 |==> 0
+164:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 |==> -1
+165:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:8 |==> 0
+166:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:8 |==> -8
+167:AOR:/(int,int):%(int,int):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 / 8 |==> 1 % 8
+168:AOR:/(int,int):*(int,int):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 / 8 |==> 1 * 8
+169:AOR:/(int,int):+(int,int):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 / 8 |==> 1 + 8
+170:AOR:/(int,int):-(int,int):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 / 8 |==> 1 - 8
+171:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 / 8 * lambda |==> 1 / 8 % lambda
+172:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 / 8 * lambda |==> 1 / 8 + lambda
+173:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 / 8 * lambda |==> 1 / 8 - lambda
+174:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:1 / 8 * lambda |==> 1 / 8 / lambda
+175:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:FastMath.sqrt(FastMath.PI * twolpd) * FastMath.exp(1 / 8 * lambda) |==> FastMath.sqrt(FastMath.PI * twolpd) % FastMath.exp(1 / 8 * lambda)
+176:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:FastMath.sqrt(FastMath.PI * twolpd) * FastMath.exp(1 / 8 * lambda) |==> FastMath.sqrt(FastMath.PI * twolpd) + FastMath.exp(1 / 8 * lambda)
+177:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:FastMath.sqrt(FastMath.PI * twolpd) * FastMath.exp(1 / 8 * lambda) |==> FastMath.sqrt(FastMath.PI * twolpd) - FastMath.exp(1 / 8 * lambda)
+178:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):317:FastMath.sqrt(FastMath.PI * twolpd) * FastMath.exp(1 / 8 * lambda) |==> FastMath.sqrt(FastMath.PI * twolpd) / FastMath.exp(1 / 8 * lambda)
+179:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:twolpd / delta |==> twolpd % delta
+180:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:twolpd / delta |==> twolpd * delta
+181:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:twolpd / delta |==> twolpd + delta
+182:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:twolpd / delta |==> twolpd - delta
+183:ORU:-(double):+(double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:-delta |==> +delta
+184:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:1 |==> 0
+185:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:1 |==> -1
+186:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:1 + delta |==> 1 % delta
+187:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:1 + delta |==> 1 * delta
+188:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:1 + delta |==> 1 - delta
+189:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:1 + delta |==> 1 / delta
+190:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:-delta * (1 + delta) |==> -delta % (1 + delta)
+191:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:-delta * (1 + delta) |==> -delta + (1 + delta)
+192:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:-delta * (1 + delta) |==> -delta - (1 + delta)
+193:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:-delta * (1 + delta) |==> -delta / (1 + delta)
+194:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:-delta * (1 + delta) / twolpd |==> -delta * (1 + delta) % twolpd
+195:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:-delta * (1 + delta) / twolpd |==> -delta * (1 + delta) * twolpd
+196:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:-delta * (1 + delta) / twolpd |==> -delta * (1 + delta) + twolpd
+197:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:-delta * (1 + delta) / twolpd |==> -delta * (1 + delta) - twolpd
+198:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:(twolpd / delta) * FastMath.exp(-delta * (1 + delta) / twolpd) |==> (twolpd / delta) % FastMath.exp(-delta * (1 + delta) / twolpd)
+199:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:(twolpd / delta) * FastMath.exp(-delta * (1 + delta) / twolpd) |==> (twolpd / delta) + FastMath.exp(-delta * (1 + delta) / twolpd)
+200:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:(twolpd / delta) * FastMath.exp(-delta * (1 + delta) / twolpd) |==> (twolpd / delta) - FastMath.exp(-delta * (1 + delta) / twolpd)
+201:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):318:(twolpd / delta) * FastMath.exp(-delta * (1 + delta) / twolpd) |==> (twolpd / delta) / FastMath.exp(-delta * (1 + delta) / twolpd)
+202:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:a1 + a2 |==> a1 % a2
+203:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:a1 + a2 |==> a1 * a2
+204:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:a1 + a2 |==> a1 - a2
+205:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:a1 + a2 |==> a1 / a2
+206:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:1 |==> 0
+207:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:1 |==> -1
+208:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:a1 + a2 + 1 |==> (a1 + a2) % 1
+209:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:a1 + a2 + 1 |==> (a1 + a2) * 1
+210:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:a1 + a2 + 1 |==> a1 + a2 - 1
+211:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):319:a1 + a2 + 1 |==> (a1 + a2) / 1
+212:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):320:a1 / aSum |==> a1 % aSum
+213:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):320:a1 / aSum |==> a1 * aSum
+214:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):320:a1 / aSum |==> a1 + aSum
+215:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):320:a1 / aSum |==> a1 - aSum
+216:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):321:a2 / aSum |==> a2 % aSum
+217:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):321:a2 / aSum |==> a2 * aSum
+218:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):321:a2 / aSum |==> a2 + aSum
+219:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):321:a2 / aSum |==> a2 - aSum
+220:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:1 |==> 0
+221:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:1 |==> -1
+222:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:8 |==> 0
+223:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:8 |==> -8
+224:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:8 * lambda |==> 8 % lambda
+225:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:8 * lambda |==> 8 + lambda
+226:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:8 * lambda |==> 8 - lambda
+227:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:8 * lambda |==> 8 / lambda
+228:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:1 / (8 * lambda) |==> 1 % (8 * lambda)
+229:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:1 / (8 * lambda) |==> 1 * (8 * lambda)
+230:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:1 / (8 * lambda) |==> 1 + (8 * lambda)
+231:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):322:1 / (8 * lambda) |==> 1 - (8 * lambda)
+232:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):324:0 |==> 1
+233:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):324:0 |==> -1
+234:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):325:0 |==> 1
+235:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):325:0 |==> -1
+236:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):326:0 |==> 1
+237:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):326:0 |==> -1
+238:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):327:0 |==> 1
+239:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):327:0 |==> -1
+240:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):328:0 |==> 1
+241:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):328:0 |==> -1
+242:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):329:0 |==> 1
+243:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):329:0 |==> -1
+244:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):330:0 |==> 1
+245:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):330:0 |==> -1
+246:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):332:random.nextDouble() |==> 0.0
+247:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):333:u <= p1 |==> u < p1
+248:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):333:u <= p1 |==> u == p1
+249:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):333:u <= p1 |==> true
+250:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):334:random.nextGaussian() |==> 0.0
+251:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:lambda + halfDelta |==> lambda % halfDelta
+252:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:lambda + halfDelta |==> lambda * halfDelta
+253:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:lambda + halfDelta |==> lambda - halfDelta
+254:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:lambda + halfDelta |==> lambda / halfDelta
+255:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:n * FastMath.sqrt(lambda + halfDelta) |==> n % FastMath.sqrt(lambda + halfDelta)
+256:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:n * FastMath.sqrt(lambda + halfDelta) |==> n + FastMath.sqrt(lambda + halfDelta)
+257:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:n * FastMath.sqrt(lambda + halfDelta) |==> n - FastMath.sqrt(lambda + halfDelta)
+258:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:n * FastMath.sqrt(lambda + halfDelta) |==> n / FastMath.sqrt(lambda + halfDelta)
+259:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:0.5 |==> 0.0
+260:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:0.5 |==> -0.5
+261:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:n * FastMath.sqrt(lambda + halfDelta) - 0.5 |==> n * FastMath.sqrt(lambda + halfDelta) % 0.5
+262:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:n * FastMath.sqrt(lambda + halfDelta) - 0.5 |==> n * FastMath.sqrt(lambda + halfDelta) * 0.5
+263:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:n * FastMath.sqrt(lambda + halfDelta) - 0.5 |==> n * FastMath.sqrt(lambda + halfDelta) + 0.5
+264:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:n * FastMath.sqrt(lambda + halfDelta) - 0.5 |==> n * FastMath.sqrt(lambda + halfDelta) / 0.5
+265:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):335:x = n * FastMath.sqrt(lambda + halfDelta) - 0.5 |==> <NO-OP>
+266:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x > delta |==> x != delta
+267:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x > delta |==> x >= delta
+268:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x > delta |==> false
+269:ORU:-(double):+(double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:-lambda |==> +lambda
+270:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x < -lambda |==> x != -lambda
+271:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x < -lambda |==> x <= -lambda
+272:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x < -lambda |==> false
+273:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x > delta || x < -lambda |==> x > delta != x < -lambda
+274:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x > delta || x < -lambda |==> x > delta
+275:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x > delta || x < -lambda |==> x < -lambda
+276:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):336:x > delta || x < -lambda |==> true
+277:STD:<CONT>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):337:continue; |==> <NO-OP>
+278:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):339:0 |==> 1
+279:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):339:0 |==> -1
+280:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):339:x < 0 |==> x != 0
+281:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):339:x < 0 |==> x <= 0
+282:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):339:x < 0 |==> false
+283:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):339:y = x < 0 ? FastMath.floor(x) : FastMath.ceil(x) |==> <NO-OP>
+284:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):340:exponential.sample() |==> 0.0
+285:ORU:-(double):+(double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:-e |==> +e
+286:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:n * n |==> n % n
+287:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:n * n |==> n + n
+288:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:n * n |==> n - n
+289:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:n * n |==> n / n
+290:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:2 |==> 0
+291:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:2 |==> -2
+292:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:n * n / 2 |==> n * n % 2
+293:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:n * n / 2 |==> n * n * 2
+294:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:n * n / 2 |==> n * n + 2
+295:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:n * n / 2 |==> n * n - 2
+296:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:-e - (n * n / 2) |==> -e % (n * n / 2)
+297:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:-e - (n * n / 2) |==> -e * (n * n / 2)
+298:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:-e - (n * n / 2) |==> -e + (n * n / 2)
+299:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:-e - (n * n / 2) |==> -e / (n * n / 2)
+300:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:-e - (n * n / 2) + c1 |==> (-e - (n * n / 2)) % c1
+301:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:-e - (n * n / 2) + c1 |==> (-e - (n * n / 2)) * c1
+302:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:-e - (n * n / 2) + c1 |==> -e - (n * n / 2) - c1
+303:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:-e - (n * n / 2) + c1 |==> (-e - (n * n / 2)) / c1
+304:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):341:v = -e - (n * n / 2) + c1 |==> <NO-OP>
+305:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):343:p1 + p2 |==> p1 % p2
+306:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):343:p1 + p2 |==> p1 * p2
+307:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):343:p1 + p2 |==> p1 - p2
+308:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):343:p1 + p2 |==> p1 / p2
+309:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):343:u > p1 + p2 |==> u != p1 + p2
+310:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):343:u > p1 + p2 |==> u >= p1 + p2
+311:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):343:u > p1 + p2 |==> false
+312:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):344:y = lambda |==> <NO-OP>
+313:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):345:break; |==> <NO-OP>
+314:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:twolpd / delta |==> twolpd % delta
+315:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:twolpd / delta |==> twolpd * delta
+316:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:twolpd / delta |==> twolpd + delta
+317:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:twolpd / delta |==> twolpd - delta
+318:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:(twolpd / delta) * exponential.sample() |==> (twolpd / delta) % exponential.sample()
+319:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:(twolpd / delta) * exponential.sample() |==> (twolpd / delta) + exponential.sample()
+320:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:(twolpd / delta) * exponential.sample() |==> (twolpd / delta) - exponential.sample()
+321:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:(twolpd / delta) * exponential.sample() |==> (twolpd / delta) / exponential.sample()
+322:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:delta + (twolpd / delta) * exponential.sample() |==> delta % ((twolpd / delta) * exponential.sample())
+323:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:delta + (twolpd / delta) * exponential.sample() |==> delta * ((twolpd / delta) * exponential.sample())
+324:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:delta + (twolpd / delta) * exponential.sample() |==> delta - (twolpd / delta) * exponential.sample()
+325:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:delta + (twolpd / delta) * exponential.sample() |==> delta / ((twolpd / delta) * exponential.sample())
+326:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):347:x = delta + (twolpd / delta) * exponential.sample() |==> <NO-OP>
+327:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):348:y = FastMath.ceil(x) |==> <NO-OP>
+328:ORU:-(double):+(double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:-exponential.sample() |==> +exponential.sample()
+329:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:1 |==> 0
+330:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:1 |==> -1
+331:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:x + 1 |==> x % 1
+332:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:x + 1 |==> x * 1
+333:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:x + 1 |==> x - 1
+334:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:x + 1 |==> x / 1
+335:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:delta * (x + 1) |==> delta % (x + 1)
+336:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:delta * (x + 1) |==> delta + (x + 1)
+337:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:delta * (x + 1) |==> delta - (x + 1)
+338:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:delta * (x + 1) |==> delta / (x + 1)
+339:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:delta * (x + 1) / twolpd |==> delta * (x + 1) % twolpd
+340:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:delta * (x + 1) / twolpd |==> delta * (x + 1) * twolpd
+341:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:delta * (x + 1) / twolpd |==> delta * (x + 1) + twolpd
+342:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:delta * (x + 1) / twolpd |==> delta * (x + 1) - twolpd
+343:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:-exponential.sample() - delta * (x + 1) / twolpd |==> -exponential.sample() % (delta * (x + 1) / twolpd)
+344:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:-exponential.sample() - delta * (x + 1) / twolpd |==> -exponential.sample() * (delta * (x + 1) / twolpd)
+345:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:-exponential.sample() - delta * (x + 1) / twolpd |==> -exponential.sample() + delta * (x + 1) / twolpd
+346:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:-exponential.sample() - delta * (x + 1) / twolpd |==> -exponential.sample() / (delta * (x + 1) / twolpd)
+347:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):349:v = -exponential.sample() - delta * (x + 1) / twolpd |==> <NO-OP>
+348:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:0 |==> 1
+349:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:0 |==> -1
+350:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:x < 0 |==> x != 0
+351:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:x < 0 |==> x <= 0
+352:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:x < 0 |==> false
+353:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:1 |==> 0
+354:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:1 |==> -1
+355:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:0 |==> 1
+356:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:0 |==> -1
+357:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):352:a = x < 0 ? 1 : 0 |==> <NO-OP>
+358:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:1 |==> 0
+359:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:1 |==> -1
+360:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y + 1 |==> y % 1
+361:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y + 1 |==> y * 1
+362:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y + 1 |==> y - 1
+363:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y + 1 |==> y / 1
+364:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y * (y + 1) |==> y % (y + 1)
+365:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y * (y + 1) |==> y + (y + 1)
+366:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y * (y + 1) |==> y - (y + 1)
+367:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y * (y + 1) |==> y / (y + 1)
+368:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:2 |==> 0
+369:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:2 |==> -2
+370:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:2 * lambda |==> 2 % lambda
+371:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:2 * lambda |==> 2 + lambda
+372:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:2 * lambda |==> 2 - lambda
+373:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:2 * lambda |==> 2 / lambda
+374:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y * (y + 1) / (2 * lambda) |==> y * (y + 1) % (2 * lambda)
+375:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y * (y + 1) / (2 * lambda) |==> y * (y + 1) * (2 * lambda)
+376:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y * (y + 1) / (2 * lambda) |==> y * (y + 1) + (2 * lambda)
+377:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:y * (y + 1) / (2 * lambda) |==> y * (y + 1) - (2 * lambda)
+378:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):353:t = y * (y + 1) / (2 * lambda) |==> <NO-OP>
+379:ORU:-(double):+(double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:-t |==> +t
+380:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:v < -t |==> v != -t
+381:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:v < -t |==> v <= -t
+382:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:v < -t |==> false
+383:LVR:0:POS:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:0 |==> 1
+384:LVR:0:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:0 |==> -1
+385:ROR:==(int,int):<=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:a == 0 |==> a <= 0
+386:ROR:==(int,int):>=(int,int):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:a == 0 |==> a >= 0
+387:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:a == 0 |==> false
+388:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:v < -t && a == 0 |==> v < -t == (a == 0)
+389:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:v < -t && a == 0 |==> false
+390:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:v < -t && a == 0 |==> v < -t
+391:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):354:v < -t && a == 0 |==> a == 0
+392:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):355:lambda + y |==> lambda % y
+393:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):355:lambda + y |==> lambda * y
+394:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):355:lambda + y |==> lambda - y
+395:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):355:lambda + y |==> lambda / y
+396:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):355:y = lambda + y |==> <NO-OP>
+397:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):356:break; |==> <NO-OP>
+398:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 |==> 0
+399:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 |==> -2
+400:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 * y |==> 2 % y
+401:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 * y |==> 2 + y
+402:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 * y |==> 2 - y
+403:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 * y |==> 2 / y
+404:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:1 |==> 0
+405:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:1 |==> -1
+406:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 * y + 1 |==> 2 * y % 1
+407:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 * y + 1 |==> 2 * y * 1
+408:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 * y + 1 |==> 2 * y - 1
+409:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:2 * y + 1 |==> 2 * y / 1
+410:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:6 |==> 0
+411:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:6 |==> -6
+412:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:6 * lambda |==> 6 % lambda
+413:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:6 * lambda |==> 6 + lambda
+414:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:6 * lambda |==> 6 - lambda
+415:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:6 * lambda |==> 6 / lambda
+416:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:(2 * y + 1) / (6 * lambda) |==> (2 * y + 1) % (6 * lambda)
+417:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:(2 * y + 1) / (6 * lambda) |==> (2 * y + 1) * (6 * lambda)
+418:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:(2 * y + 1) / (6 * lambda) |==> (2 * y + 1) + (6 * lambda)
+419:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:(2 * y + 1) / (6 * lambda) |==> (2 * y + 1) - (6 * lambda)
+420:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:1 |==> 0
+421:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:1 |==> -1
+422:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:(2 * y + 1) / (6 * lambda) - 1 |==> (2 * y + 1) / (6 * lambda) % 1
+423:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:(2 * y + 1) / (6 * lambda) - 1 |==> (2 * y + 1) / (6 * lambda) * 1
+424:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:(2 * y + 1) / (6 * lambda) - 1 |==> (2 * y + 1) / (6 * lambda) + 1
+425:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:(2 * y + 1) / (6 * lambda) - 1 |==> (2 * y + 1) / (6 * lambda) / 1
+426:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:t * ((2 * y + 1) / (6 * lambda) - 1) |==> t % ((2 * y + 1) / (6 * lambda) - 1)
+427:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:t * ((2 * y + 1) / (6 * lambda) - 1) |==> t + ((2 * y + 1) / (6 * lambda) - 1)
+428:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:t * ((2 * y + 1) / (6 * lambda) - 1) |==> t - ((2 * y + 1) / (6 * lambda) - 1)
+429:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:t * ((2 * y + 1) / (6 * lambda) - 1) |==> t / ((2 * y + 1) / (6 * lambda) - 1)
+430:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):358:qr = t * ((2 * y + 1) / (6 * lambda) - 1) |==> <NO-OP>
+431:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:t * t |==> t % t
+432:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:t * t |==> t + t
+433:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:t * t |==> t - t
+434:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:t * t |==> t / t
+435:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:3 |==> 0
+436:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:3 |==> -3
+437:LVR:POS:0:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:1 |==> 0
+438:LVR:POS:NEG:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:1 |==> -1
+439:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:y + 1 |==> y % 1
+440:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:y + 1 |==> y * 1
+441:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:y + 1 |==> y - 1
+442:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:y + 1 |==> y / 1
+443:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:a * (y + 1) |==> a % (y + 1)
+444:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:a * (y + 1) |==> a + (y + 1)
+445:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:a * (y + 1) |==> a - (y + 1)
+446:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:a * (y + 1) |==> a / (y + 1)
+447:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:lambda + a * (y + 1) |==> lambda % (a * (y + 1))
+448:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:lambda + a * (y + 1) |==> lambda * (a * (y + 1))
+449:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:lambda + a * (y + 1) |==> lambda - a * (y + 1)
+450:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:lambda + a * (y + 1) |==> lambda / (a * (y + 1))
+451:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:3 * (lambda + a * (y + 1)) |==> 3 % (lambda + a * (y + 1))
+452:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:3 * (lambda + a * (y + 1)) |==> 3 + (lambda + a * (y + 1))
+453:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:3 * (lambda + a * (y + 1)) |==> 3 - (lambda + a * (y + 1))
+454:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:3 * (lambda + a * (y + 1)) |==> 3 / (lambda + a * (y + 1))
+455:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:(t * t) / (3 * (lambda + a * (y + 1))) |==> (t * t) % (3 * (lambda + a * (y + 1)))
+456:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:(t * t) / (3 * (lambda + a * (y + 1))) |==> (t * t) * (3 * (lambda + a * (y + 1)))
+457:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:(t * t) / (3 * (lambda + a * (y + 1))) |==> (t * t) + (3 * (lambda + a * (y + 1)))
+458:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:(t * t) / (3 * (lambda + a * (y + 1))) |==> (t * t) - (3 * (lambda + a * (y + 1)))
+459:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:qr - (t * t) / (3 * (lambda + a * (y + 1))) |==> qr % ((t * t) / (3 * (lambda + a * (y + 1))))
+460:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:qr - (t * t) / (3 * (lambda + a * (y + 1))) |==> qr * ((t * t) / (3 * (lambda + a * (y + 1))))
+461:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:qr - (t * t) / (3 * (lambda + a * (y + 1))) |==> qr + (t * t) / (3 * (lambda + a * (y + 1)))
+462:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:qr - (t * t) / (3 * (lambda + a * (y + 1))) |==> qr / ((t * t) / (3 * (lambda + a * (y + 1))))
+463:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):359:qa = qr - (t * t) / (3 * (lambda + a * (y + 1))) |==> <NO-OP>
+464:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):360:v < qa |==> v != qa
+465:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):360:v < qa |==> v <= qa
+466:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):360:v < qa |==> false
+467:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):361:lambda + y |==> lambda % y
+468:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):361:lambda + y |==> lambda * y
+469:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):361:lambda + y |==> lambda - y
+470:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):361:lambda + y |==> lambda / y
+471:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):361:y = lambda + y |==> <NO-OP>
+472:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):362:break; |==> <NO-OP>
+473:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):364:v > qr |==> v != qr
+474:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):364:v > qr |==> v >= qr
+475:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):364:v > qr |==> false
+476:STD:<CONT>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):365:continue; |==> <NO-OP>
+477:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda |==> y % logLambda
+478:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda |==> y + logLambda
+479:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda |==> y - logLambda
+480:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda |==> y / logLambda
+481:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y + lambda |==> y % lambda
+482:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y + lambda |==> y * lambda
+483:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y + lambda |==> y - lambda
+484:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y + lambda |==> y / lambda
+485:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) |==> y * logLambda % CombinatoricsUtils.factorialLog((int)(y + lambda))
+486:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) |==> y * logLambda * CombinatoricsUtils.factorialLog((int)(y + lambda))
+487:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) |==> y * logLambda + CombinatoricsUtils.factorialLog((int)(y + lambda))
+488:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) |==> y * logLambda / CombinatoricsUtils.factorialLog((int)(y + lambda))
+489:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) + logLambdaFactorial |==> (y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda))) % logLambdaFactorial
+490:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) + logLambdaFactorial |==> (y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda))) * logLambdaFactorial
+491:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) + logLambdaFactorial |==> y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) - logLambdaFactorial
+492:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) + logLambdaFactorial |==> (y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda))) / logLambdaFactorial
+493:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:v < y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) + logLambdaFactorial |==> v != y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) + logLambdaFactorial
+494:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:v < y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) + logLambdaFactorial |==> v <= y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) + logLambdaFactorial
+495:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):367:v < y * logLambda - CombinatoricsUtils.factorialLog((int)(y + lambda)) + logLambdaFactorial |==> false
+496:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):368:lambda + y |==> lambda % y
+497:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):368:lambda + y |==> lambda * y
+498:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):368:lambda + y |==> lambda - y
+499:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):368:lambda + y |==> lambda / y
+500:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):368:y = lambda + y |==> <NO-OP>
+501:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):369:break; |==> <NO-OP>
+502:AOR:+(long,long):%(long,long):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):372:y2 + (long)y |==> y2 % (long)y
+503:AOR:+(long,long):*(long,long):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):372:y2 + (long)y |==> y2 * (long)y
+504:AOR:+(long,long):-(long,long):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):372:y2 + (long)y |==> y2 - (long)y
+505:AOR:+(long,long):/(long,long):org.apache.commons.math3.distribution.PoissonDistribution@nextPoisson(double):372:y2 + (long)y |==> y2 / (long)y

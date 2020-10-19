@@ -1,0 +1,374 @@
+[
+  {
+    "v1": {
+      "line": "65",
+      "statement": "EnumeratedRealDistribution (final double[] singletons, final double[] probabilities)"
+    }
+  },
+  {
+    "v2": {
+      "line": "68",
+      "statement": "this(new Well19937c(), singletons, probabilities)"
+    }
+  },
+  {
+    "v3": {
+      "line": "85",
+      "statement": "EnumeratedRealDistribution (final RandomGenerator rng, final double[] singletons, final double[] probabilities)"
+    }
+  },
+  {
+    "v4": {
+      "line": "89",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v5": {
+      "line": "90",
+      "statement": "if (singletons.length != probabilities.length)"
+    }
+  },
+  {
+    "v6": {
+      "line": "91",
+      "statement": "throw new DimensionMismatchException(probabilities.length, singletons.length)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "94",
+      "statement": "List<Pair<Double, Double>> samples = new ArrayList<Pair<Double, Double>>(singletons.length)"
+    }
+  },
+  {
+    "v9": {
+      "line": "96",
+      "statement": "for (  int i = 0 ; i < singletons.length ;   i++)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v13": {
+      "line": "97",
+      "statement": "samples.add(new Pair<Double, Double>(singletons[i], probabilities[i]))"
+    }
+  },
+  {
+    "v14": {
+      "line": "100",
+      "statement": "innerDistribution = new EnumeratedDistribution<Double>(rng, samples)"
+    }
+  },
+  {
+    "v15": {
+      "line": "107",
+      "statement": "double probability(final double x)"
+    }
+  },
+  {
+    "v16": {
+      "line": "108",
+      "statement": "return innerDistribution.probability(x)"
+    }
+  },
+  {
+    "v17": {
+      "line": "120",
+      "statement": "double density(final double x)"
+    }
+  },
+  {
+    "v18": {
+      "line": "121",
+      "statement": "return probability(x)"
+    }
+  },
+  {
+    "v19": {
+      "line": "127",
+      "statement": "double cumulativeProbability(final double x)"
+    }
+  },
+  {
+    "v20": {
+      "line": "128",
+      "statement": "double probability = 0"
+    }
+  },
+  {
+    "v21": {
+      "line": "130",
+      "statement": "for (final Pair<Double, Double> sample"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v23": {
+      "line": "131",
+      "statement": "if (sample.getKey() <= x)"
+    }
+  },
+  {
+    "v24": {
+      "line": "132",
+      "statement": "probability += sample.getValue()"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "136",
+      "statement": "return probability"
+    }
+  },
+  {
+    "v27": {
+      "line": "144",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v28": {
+      "line": "145",
+      "statement": "double mean = 0"
+    }
+  },
+  {
+    "v29": {
+      "line": "147",
+      "statement": "for (final Pair<Double, Double> sample"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v31": {
+      "line": "148",
+      "statement": "mean += sample.getValue() * sample.getKey()"
+    }
+  },
+  {
+    "v32": {
+      "line": "151",
+      "statement": "return mean"
+    }
+  },
+  {
+    "v33": {
+      "line": "159",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v34": {
+      "line": "160",
+      "statement": "double mean = 0"
+    }
+  },
+  {
+    "v35": {
+      "line": "161",
+      "statement": "double meanOfSquares = 0"
+    }
+  },
+  {
+    "v36": {
+      "line": "163",
+      "statement": "for (final Pair<Double, Double> sample"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v38": {
+      "line": "164",
+      "statement": "mean += sample.getValue() * sample.getKey()"
+    }
+  },
+  {
+    "v39": {
+      "line": "165",
+      "statement": "meanOfSquares += sample.getValue() * sample.getKey() * sample.getKey()"
+    }
+  },
+  {
+    "v40": {
+      "line": "168",
+      "statement": "return meanOfSquares - mean * mean"
+    }
+  },
+  {
+    "v41": {
+      "line": "178",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v42": {
+      "line": "179",
+      "statement": "double min = Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v43": {
+      "line": "180",
+      "statement": "for (final Pair<Double, Double> sample"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v45": {
+      "line": "181",
+      "statement": "if (sample.getKey() < min && sample.getValue() > 0)"
+    }
+  },
+  {
+    "v46": {
+      "line": "182",
+      "statement": "min = sample.getKey()"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v48": {
+      "line": "186",
+      "statement": "return min"
+    }
+  },
+  {
+    "v49": {
+      "line": "196",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v50": {
+      "line": "197",
+      "statement": "double max = Double.NEGATIVE_INFINITY"
+    }
+  },
+  {
+    "v51": {
+      "line": "198",
+      "statement": "for (final Pair<Double, Double> sample"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v53": {
+      "line": "199",
+      "statement": "if (sample.getKey() > max && sample.getValue() > 0)"
+    }
+  },
+  {
+    "v54": {
+      "line": "200",
+      "statement": "max = sample.getKey()"
+    }
+  },
+  {
+    "v55": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v56": {
+      "line": "204",
+      "statement": "return max"
+    }
+  },
+  {
+    "v57": {
+      "line": "214",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v58": {
+      "line": "215",
+      "statement": "return true"
+    }
+  },
+  {
+    "v59": {
+      "line": "225",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v60": {
+      "line": "226",
+      "statement": "return true"
+    }
+  },
+  {
+    "v61": {
+      "line": "236",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v62": {
+      "line": "237",
+      "statement": "return true"
+    }
+  },
+  {
+    "v63": {
+      "line": "244",
+      "statement": "double sample()"
+    }
+  },
+  {
+    "v64": {
+      "line": "245",
+      "statement": "return innerDistribution.sample()"
+    }
+  }
+]

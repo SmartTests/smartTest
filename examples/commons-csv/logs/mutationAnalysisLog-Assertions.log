@@ -1,0 +1,14 @@
+OUTPUT FOLDER "09-10-2020_10_10_20" created
+/Users/kesina/eclipse-workspace/commons-csv/src/main/java/org/apache/commons/csv/Assertions
+=================CFG created for Assertions.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... Assertions.java
+/Users/kesina/eclipse-workspace/commons-csv/output/09-10-2020_10_10_20/Assertions-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-csv/output/09-10-2020_10_10_20/Assertions-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-csv/output/09-10-2020_10_10_20/Assertions-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+/Users/kesina/eclipse-workspace/commons-csv/src/main/java/org/apache/commons/csv/Assertions
+ANALYSIS OF MUTATION================ 1
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-csv/src/main/java/org/apache/commons/csv/Assertions PROGEX

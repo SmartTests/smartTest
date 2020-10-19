@@ -1,0 +1,48 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "352",
+      "358",
+      "363",
+      "354",
+      "355",
+      "368",
+      "360"
+    ],
+    "sourceClass": "CommandLine"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR55",
+      "TR53",
+      "TR46",
+      "TR56",
+      "TR49",
+      "TR47"
+    ],
+    "deletedRequirementYesTest": [
+      "TR48",
+      "TR51",
+      "TR50",
+      "TR54",
+      "TR52"
+    ],
+    "affectedTest": [
+      "testGetOptionPropertiesWithOption"
+    ],
+    "testReran": [
+      "testGetOptionPropertiesWithOption"
+    ],
+    "unsatisfiedRequirement": [
+      "TR55",
+      "TR46",
+      "TR56",
+      "TR49",
+      "TR53"
+    ],
+    "newTestRequirement": [
+      "TR52",
+      "TR46"
+    ]
+  }
+}

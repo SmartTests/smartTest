@@ -1,0 +1,17 @@
+digraph PegasusSolver_CFG {
+  // graph-vertices
+  v1  [label="49:  PegasusSolver ()"];
+  v2  [label="50:  super(DEFAULT_ABSOLUTE_ACCURACY, Method.PEGASUS)"];
+  v3  [label="58:  PegasusSolver (final double absoluteAccuracy)"];
+  v4  [label="59:  super(absoluteAccuracy, Method.PEGASUS)"];
+  v5  [label="68:  PegasusSolver (final double relativeAccuracy,  final double absoluteAccuracy)"];
+  v6  [label="70:  super(relativeAccuracy, absoluteAccuracy, Method.PEGASUS)"];
+  v7  [label="80:  PegasusSolver (final double relativeAccuracy,  final double absoluteAccuracy,  final double functionValueAccuracy)"];
+  v8  [label="83:  super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy, Method.PEGASUS)"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v5 -> v6;
+  v7 -> v8;
+  // end-of-graph
+}

@@ -1,0 +1,19 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "106"
+    ],
+    "sourceClass": "DefaultParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR3"
+    ],
+    "unsatisfiedRequirement": [
+      "TR3"
+    ],
+    "newTestRequirement": [
+      "TR3"
+    ]
+  }
+}

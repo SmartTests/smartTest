@@ -1,0 +1,135 @@
+1:LVR:0:POS:org.apache.commons.math3.distribution.UniformRealDistribution@<init>():53:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@<init>():53:0 |==> -1
+3:LVR:POS:0:org.apache.commons.math3.distribution.UniformRealDistribution@<init>():53:1 |==> 0
+4:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@<init>():53:1 |==> -1
+5:ROR:>=(double,double):==(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):120:lower >= upper |==> lower == upper
+6:ROR:>=(double,double):>(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):120:lower >= upper |==> lower > upper
+7:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):120:lower >= upper |==> true
+8:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.UniformRealDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):123:false |==> true
+9:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformRealDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):126:lower |==> 0.0
+10:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformRealDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):127:upper |==> 0.0
+11:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x < lower |==> x != lower
+12:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x < lower |==> x <= lower
+13:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x < lower |==> false
+14:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x > upper |==> x != upper
+15:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x > upper |==> x >= upper
+16:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x > upper |==> false
+17:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x < lower || x > upper |==> x < lower != x > upper
+18:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x < lower || x > upper |==> x < lower
+19:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x < lower || x > upper |==> x > upper
+20:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):132:x < lower || x > upper |==> true
+21:LVR:0:POS:org.apache.commons.math3.distribution.UniformRealDistribution@density(double):133:0.0 |==> 1.0
+22:LVR:0:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@density(double):133:0.0 |==> -1.0
+23:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.UniformRealDistribution@density(double):133:return Config.__M_NO == 0 && Config.COVERED(21, 22) ? 0.0 : Config.__M_NO == 22 ? -1.0 : Config.__M_NO == 21 ? 1.0 : 0.0; |==> <NO-OP>
+24:LVR:POS:0:org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:1 |==> 0
+25:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:1 |==> -1
+26:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:upper - lower |==> upper % lower
+27:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:upper - lower |==> upper * lower
+28:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:upper - lower |==> upper + lower
+29:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:upper - lower |==> upper / lower
+30:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:1 / (upper - lower) |==> 1 % (upper - lower)
+31:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:1 / (upper - lower) |==> 1 * (upper - lower)
+32:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:1 / (upper - lower) |==> 1 + (upper - lower)
+33:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@density(double):135:1 / (upper - lower) |==> 1 - (upper - lower)
+34:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):140:x <= lower |==> x < lower
+35:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):140:x <= lower |==> x == lower
+36:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):140:x <= lower |==> true
+37:LVR:0:POS:org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):141:0 |==> 1
+38:LVR:0:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):141:0 |==> -1
+39:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):141:return Config.__M_NO == 0 && Config.COVERED(37, 38) ? 0 : Config.__M_NO == 38 ? -1 : Config.__M_NO == 37 ? 1 : 0; |==> <NO-OP>
+40:ROR:>=(double,double):==(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):143:x >= upper |==> x == upper
+41:ROR:>=(double,double):>(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):143:x >= upper |==> x > upper
+42:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):143:x >= upper |==> true
+43:LVR:POS:0:org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):144:1 |==> 0
+44:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):144:1 |==> -1
+45:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):144:return Config.__M_NO == 0 && Config.COVERED(43, 44) ? 1 : Config.__M_NO == 44 ? -1 : Config.__M_NO == 43 ? 0 : 1; |==> <NO-OP>
+46:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:x - lower |==> x % lower
+47:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:x - lower |==> x * lower
+48:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:x - lower |==> x + lower
+49:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:x - lower |==> x / lower
+50:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:upper - lower |==> upper % lower
+51:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:upper - lower |==> upper * lower
+52:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:upper - lower |==> upper + lower
+53:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:upper - lower |==> upper / lower
+54:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:(x - lower) / (upper - lower) |==> (x - lower) % (upper - lower)
+55:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:(x - lower) / (upper - lower) |==> (x - lower) * (upper - lower)
+56:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:(x - lower) / (upper - lower) |==> (x - lower) + (upper - lower)
+57:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@cumulativeProbability(double):146:(x - lower) / (upper - lower) |==> (x - lower) - (upper - lower)
+58:LVR:0:POS:org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:0.0 |==> 1.0
+59:LVR:0:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:0.0 |==> -1.0
+60:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p < 0.0 |==> p != 0.0
+61:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p < 0.0 |==> p <= 0.0
+62:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p < 0.0 |==> false
+63:LVR:POS:0:org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:1.0 |==> 0.0
+64:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:1.0 |==> -1.0
+65:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p > 1.0 |==> p != 1.0
+66:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p > 1.0 |==> p >= 1.0
+67:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p > 1.0 |==> false
+68:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p < 0.0 || p > 1.0 |==> p < 0.0 != p > 1.0
+69:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p < 0.0 || p > 1.0 |==> p < 0.0
+70:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p < 0.0 || p > 1.0 |==> p > 1.0
+71:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):152:p < 0.0 || p > 1.0 |==> true
+72:LVR:0:POS:org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):153:0 |==> 1
+73:LVR:0:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):153:0 |==> -1
+74:LVR:POS:0:org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):153:1 |==> 0
+75:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):153:1 |==> -1
+76:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:upper - lower |==> upper % lower
+77:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:upper - lower |==> upper * lower
+78:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:upper - lower |==> upper + lower
+79:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:upper - lower |==> upper / lower
+80:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:p * (upper - lower) |==> p % (upper - lower)
+81:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:p * (upper - lower) |==> p + (upper - lower)
+82:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:p * (upper - lower) |==> p - (upper - lower)
+83:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:p * (upper - lower) |==> p / (upper - lower)
+84:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:p * (upper - lower) + lower |==> p * (upper - lower) % lower
+85:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:p * (upper - lower) + lower |==> p * (upper - lower) * lower
+86:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:p * (upper - lower) + lower |==> p * (upper - lower) - lower
+87:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@inverseCumulativeProbability(double):155:p * (upper - lower) + lower |==> p * (upper - lower) / lower
+88:LVR:POS:0:org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:0.5 |==> 0.0
+89:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:0.5 |==> -0.5
+90:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:lower + upper |==> lower % upper
+91:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:lower + upper |==> lower * upper
+92:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:lower + upper |==> lower - upper
+93:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:lower + upper |==> lower / upper
+94:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:0.5 * (lower + upper) |==> 0.5 % (lower + upper)
+95:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:0.5 * (lower + upper) |==> 0.5 + (lower + upper)
+96:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:0.5 * (lower + upper) |==> 0.5 - (lower + upper)
+97:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalMean():165:0.5 * (lower + upper) |==> 0.5 / (lower + upper)
+98:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():175:upper - lower |==> upper % lower
+99:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():175:upper - lower |==> upper * lower
+100:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():175:upper - lower |==> upper + lower
+101:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():175:upper - lower |==> upper / lower
+102:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:ul * ul |==> ul % ul
+103:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:ul * ul |==> ul + ul
+104:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:ul * ul |==> ul - ul
+105:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:ul * ul |==> ul / ul
+106:LVR:POS:0:org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:12 |==> 0
+107:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:12 |==> -12
+108:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:ul * ul / 12 |==> ul * ul % 12
+109:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:ul * ul / 12 |==> ul * ul * 12
+110:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:ul * ul / 12 |==> ul * ul + 12
+111:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@getNumericalVariance():176:ul * ul / 12 |==> ul * ul - 12
+112:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformRealDistribution@getSupportLowerBound():188:lower |==> 0.0
+113:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformRealDistribution@getSupportUpperBound():200:upper |==> 0.0
+114:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.UniformRealDistribution@isSupportLowerBoundInclusive():205:true |==> false
+115:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.UniformRealDistribution@isSupportUpperBoundInclusive():210:true |==> false
+116:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.UniformRealDistribution@isSupportConnected():221:true |==> false
+117:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformRealDistribution@sample():227:random.nextDouble() |==> 0.0
+118:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:u * upper |==> u % upper
+119:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:u * upper |==> u + upper
+120:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:u * upper |==> u - upper
+121:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:u * upper |==> u / upper
+122:LVR:POS:0:org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:1 |==> 0
+123:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:1 |==> -1
+124:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:1 - u |==> 1 % u
+125:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:1 - u |==> 1 * u
+126:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:1 - u |==> 1 + u
+127:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:1 - u |==> 1 / u
+128:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:(1 - u) * lower |==> (1 - u) % lower
+129:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:(1 - u) * lower |==> (1 - u) + lower
+130:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:(1 - u) * lower |==> (1 - u) - lower
+131:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:(1 - u) * lower |==> (1 - u) / lower
+132:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:u * upper + (1 - u) * lower |==> u * upper % ((1 - u) * lower)
+133:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:u * upper + (1 - u) * lower |==> u * upper * ((1 - u) * lower)
+134:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:u * upper + (1 - u) * lower |==> u * upper - (1 - u) * lower
+135:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.UniformRealDistribution@sample():228:u * upper + (1 - u) * lower |==> u * upper / ((1 - u) * lower)

@@ -1,0 +1,230 @@
+[
+  {
+    "v1": {
+      "line": "46",
+      "statement": "GeometricDistribution (double p)"
+    }
+  },
+  {
+    "v2": {
+      "line": "47",
+      "statement": "this(new Well19937c(), p)"
+    }
+  },
+  {
+    "v3": {
+      "line": "57",
+      "statement": "GeometricDistribution (RandomGenerator rng, double p)"
+    }
+  },
+  {
+    "v4": {
+      "line": "58",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v5": {
+      "line": "60",
+      "statement": "if (p <= 0 || p > 1)"
+    }
+  },
+  {
+    "v6": {
+      "line": "61",
+      "statement": "throw new OutOfRangeException(LocalizedFormats.OUT_OF_RANGE_LEFT, p, 0, 1)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "64",
+      "statement": "probabilityOfSuccess = p"
+    }
+  },
+  {
+    "v9": {
+      "line": "72",
+      "statement": "double getProbabilityOfSuccess()"
+    }
+  },
+  {
+    "v10": {
+      "line": "73",
+      "statement": "return probabilityOfSuccess"
+    }
+  },
+  {
+    "v11": {
+      "line": "77",
+      "statement": "double probability(int x)"
+    }
+  },
+  {
+    "v12": {
+      "line": "78",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v13": {
+      "line": "79",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v14": {
+      "line": "80",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "82",
+      "statement": "final double p = probabilityOfSuccess"
+    }
+  },
+  {
+    "v17": {
+      "line": "83",
+      "statement": "ret = FastMath.pow(1 - p, x) * p"
+    }
+  },
+  {
+    "v18": {
+      "line": "85",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v19": {
+      "line": "89",
+      "statement": "double cumulativeProbability(int x)"
+    }
+  },
+  {
+    "v20": {
+      "line": "90",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v21": {
+      "line": "91",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v22": {
+      "line": "92",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v24": {
+      "line": "94",
+      "statement": "final double p = probabilityOfSuccess"
+    }
+  },
+  {
+    "v25": {
+      "line": "95",
+      "statement": "ret = 1.0 - FastMath.pow(1 - p, x + 1)"
+    }
+  },
+  {
+    "v26": {
+      "line": "97",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v27": {
+      "line": "105",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v28": {
+      "line": "106",
+      "statement": "final double p = probabilityOfSuccess"
+    }
+  },
+  {
+    "v29": {
+      "line": "107",
+      "statement": "return (1 - p) / p"
+    }
+  },
+  {
+    "v30": {
+      "line": "116",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v31": {
+      "line": "117",
+      "statement": "final double p = probabilityOfSuccess"
+    }
+  },
+  {
+    "v32": {
+      "line": "118",
+      "statement": "return (1 - p) / (p * p)"
+    }
+  },
+  {
+    "v33": {
+      "line": "128",
+      "statement": "int getSupportLowerBound()"
+    }
+  },
+  {
+    "v34": {
+      "line": "129",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v35": {
+      "line": "140",
+      "statement": "int getSupportUpperBound()"
+    }
+  },
+  {
+    "v36": {
+      "line": "141",
+      "statement": "return Integer.MAX_VALUE"
+    }
+  },
+  {
+    "v37": {
+      "line": "151",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v38": {
+      "line": "152",
+      "statement": "return true"
+    }
+  }
+]

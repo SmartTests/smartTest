@@ -1,0 +1,31 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "148"
+    ],
+    "sourceClass": "Options"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR15",
+      "TR16"
+    ],
+    "affectedTest": [
+      "testDuplicateLong",
+      "testDuplicateSimple",
+      "testLong",
+      "testSimple",
+      "testToString"
+    ],
+    "testReran": [
+      "testToString",
+      "testDuplicateLong",
+      "testSimple",
+      "testLong",
+      "testDuplicateSimple"
+    ],
+    "unsatisfiedRequirement": [
+      "TR15"
+    ]
+  }
+}

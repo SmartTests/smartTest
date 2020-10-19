@@ -1,0 +1,42 @@
+
+testGetPoints : <init>(Lorg/apache/commons/math3/util/Pair;)V=[76,77
+];;<init>([D[D)V=[51,52
+52,53
+53,58
+58,60
+60,61
+61,62
+];;getNumberOfPoints()I=[107,108
+];;getPoint(I)D=[117,118
+]
+
+testGetWeights : <init>(Lorg/apache/commons/math3/util/Pair;)V=[76,77
+];;<init>([D[D)V=[51,52
+52,53
+53,58
+58,60
+60,61
+61,62
+];;getNumberOfPoints()I=[107,108
+];;getWeight(I)D=[127,128
+]
+
+testIntegrate : <init>(Lorg/apache/commons/math3/util/Pair;)V=[76,77
+];;<init>([D[D)V=[51,52
+52,53
+53,58
+58,60
+60,61
+61,62
+];;integrate(Lorg/apache/commons/math3/analysis/UnivariateFunction;)D=[89,90
+90,91
+91,92
+92,93
+93,94
+94,95
+95,96
+96,97
+97,98
+98,92
+92,100
+]

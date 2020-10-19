@@ -1,0 +1,69 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "75"
+    ],
+    "sourceClass": "GnuParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR19",
+      "TR21"
+    ],
+    "affectedTest": [
+      "testArgumentStartingWithHyphen",
+      "testDoubleDash1",
+      "testMissingArg",
+      "testMissingRequiredGroup",
+      "testMissingRequiredOption",
+      "testMissingRequiredOptions",
+      "testMultiple",
+      "testMultipleWithLong",
+      "testNegativeArgument",
+      "testOptionAndRequiredOption",
+      "testOptionGroup",
+      "testOptionGroupLong",
+      "testPropertiesOption1",
+      "testPropertiesOption2",
+      "testPropertyOptionGroup",
+      "testReuseOptionsTwice",
+      "testSimpleLong",
+      "testSimpleShort",
+      "testSingleDash",
+      "testStopAtExpectedArg",
+      "testStopAtUnexpectedArg",
+      "testUnlimitedArgs",
+      "testUnrecognizedOption",
+      "testWithRequiredOption"
+    ],
+    "testReran": [
+      "testMissingRequiredOptions",
+      "testStopAtUnexpectedArg",
+      "testMissingRequiredOption",
+      "testMissingArg",
+      "testUnlimitedArgs",
+      "testPropertyOptionGroup",
+      "testOptionGroup",
+      "testStopAtExpectedArg",
+      "testOptionGroupLong",
+      "testPropertiesOption2",
+      "testArgumentStartingWithHyphen",
+      "testMultipleWithLong",
+      "testUnrecognizedOption",
+      "testWithRequiredOption",
+      "testReuseOptionsTwice",
+      "testPropertiesOption1",
+      "testSimpleShort",
+      "testSimpleLong",
+      "testSingleDash",
+      "testMissingRequiredGroup",
+      "testMultiple",
+      "testDoubleDash1",
+      "testOptionAndRequiredOption",
+      "testNegativeArgument"
+    ],
+    "unsatisfiedRequirement": [
+      "TR21"
+    ]
+  }
+}

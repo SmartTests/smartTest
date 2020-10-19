@@ -1,0 +1,186 @@
+1:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid@<init>():53:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid@<init>():53:0 |==> -1
+3:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@<init>():53:1 |==> 0
+4:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@<init>():53:1 |==> -1
+5:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sigmoid@<init>(double,double):64:lo |==> 0.0
+6:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sigmoid@<init>(double,double):65:hi |==> 0.0
+7:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.UnivariateFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sigmoid@derivative():73:FunctionUtils.toDifferentiableUnivariateFunction(this).derivative() |==> null
+8:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sigmoid@value(double):78:value(x, lo, hi) |==> 0.0
+9:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@value(double,double[]):104:validateParameters(param) |==> <NO-OP>
+10:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@value(double,double[]):105:0 |==> 1
+11:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@value(double,double[]):105:0 |==> -1
+12:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@value(double,double[]):105:1 |==> 0
+13:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@value(double,double[]):105:1 |==> -1
+14:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):124:validateParameters(param) |==> <NO-OP>
+15:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 |==> 0
+16:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 |==> -1
+17:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 |==> 0
+18:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 |==> -1
+19:ORU:-(double):+(double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:-x |==> +x
+20:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 + FastMath.exp(-x) |==> 1 % FastMath.exp(-x)
+21:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 + FastMath.exp(-x) |==> 1 * FastMath.exp(-x)
+22:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 + FastMath.exp(-x) |==> 1 - FastMath.exp(-x)
+23:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 + FastMath.exp(-x) |==> 1 / FastMath.exp(-x)
+24:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 / (1 + FastMath.exp(-x)) |==> 1 % (1 + FastMath.exp(-x))
+25:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 / (1 + FastMath.exp(-x)) |==> 1 * (1 + FastMath.exp(-x))
+26:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 / (1 + FastMath.exp(-x)) |==> 1 + (1 + FastMath.exp(-x))
+27:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):126:1 / (1 + FastMath.exp(-x)) |==> 1 - (1 + FastMath.exp(-x))
+28:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):128:1 |==> 0
+29:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):128:1 |==> -1
+30:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):128:1 - invExp1 |==> 1 % invExp1
+31:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):128:1 - invExp1 |==> 1 * invExp1
+32:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):128:1 - invExp1 |==> 1 + invExp1
+33:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@gradient(double,double[]):128:1 - invExp1 |==> 1 / invExp1
+34:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@validateParameters(double[]):144:param == null |==> false
+35:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@validateParameters(double[]):147:2 |==> 0
+36:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@validateParameters(double[]):147:2 |==> -2
+37:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@validateParameters(double[]):147:param.length != 2 |==> param.length < 2
+38:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@validateParameters(double[]):147:param.length != 2 |==> param.length > 2
+39:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.function.Sigmoid$Parametric@validateParameters(double[]):147:param.length != 2 |==> true
+40:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@validateParameters(double[]):148:2 |==> 0
+41:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid$Parametric@validateParameters(double[]):148:2 |==> -2
+42:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:hi - lo |==> hi % lo
+43:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:hi - lo |==> hi * lo
+44:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:hi - lo |==> hi + lo
+45:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:hi - lo |==> hi / lo
+46:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:1 |==> 0
+47:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:1 |==> -1
+48:ORU:-(double):+(double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:-x |==> +x
+49:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:1 + FastMath.exp(-x) |==> 1 % FastMath.exp(-x)
+50:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:1 + FastMath.exp(-x) |==> 1 * FastMath.exp(-x)
+51:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:1 + FastMath.exp(-x) |==> 1 - FastMath.exp(-x)
+52:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:1 + FastMath.exp(-x) |==> 1 / FastMath.exp(-x)
+53:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:(hi - lo) / (1 + FastMath.exp(-x)) |==> (hi - lo) % (1 + FastMath.exp(-x))
+54:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:(hi - lo) / (1 + FastMath.exp(-x)) |==> (hi - lo) * (1 + FastMath.exp(-x))
+55:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:(hi - lo) / (1 + FastMath.exp(-x)) |==> (hi - lo) + (1 + FastMath.exp(-x))
+56:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:(hi - lo) / (1 + FastMath.exp(-x)) |==> (hi - lo) - (1 + FastMath.exp(-x))
+57:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:lo + (hi - lo) / (1 + FastMath.exp(-x)) |==> lo % ((hi - lo) / (1 + FastMath.exp(-x)))
+58:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:lo + (hi - lo) / (1 + FastMath.exp(-x)) |==> lo * ((hi - lo) / (1 + FastMath.exp(-x)))
+59:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:lo + (hi - lo) / (1 + FastMath.exp(-x)) |==> lo - (hi - lo) / (1 + FastMath.exp(-x))
+60:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(double,double,double):162:lo + (hi - lo) / (1 + FastMath.exp(-x)) |==> lo / ((hi - lo) / (1 + FastMath.exp(-x)))
+61:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:1 |==> 0
+62:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:1 |==> -1
+63:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:t.getOrder() + 1 |==> t.getOrder() % 1
+64:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:t.getOrder() + 1 |==> t.getOrder() * 1
+65:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:t.getOrder() + 1 |==> t.getOrder() - 1
+66:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:t.getOrder() + 1 |==> t.getOrder() / 1
+67:ORU:-(double):+(double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):172:-t.getValue() |==> +t.getValue()
+68:COR:Double.isInfinite(exp):TRUE:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:Double.isInfinite(exp) |==> false
+69:COR:Double.isInfinite(exp):FALSE:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:Double.isInfinite(exp) |==> true
+70:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:0 |==> 1
+71:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:0 |==> -1
+72:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:f[0] = lo |==> <NO-OP>
+73:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:1 |==> 0
+74:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:1 |==> -1
+75:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:0.0 |==> 1.0
+76:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:0.0 |==> -1.0
+77:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):177:Arrays.fill(f, 1, f.length, 0.0) |==> <NO-OP>
+78:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):187:new double[f.length] |==> null
+79:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 |==> 0
+80:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 |==> -1
+81:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 |==> 0
+82:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 |==> -1
+83:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 + exp |==> 1 % exp
+84:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 + exp |==> 1 * exp
+85:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 + exp |==> 1 - exp
+86:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 + exp |==> 1 / exp
+87:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 / (1 + exp) |==> 1 % (1 + exp)
+88:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 / (1 + exp) |==> 1 * (1 + exp)
+89:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 / (1 + exp) |==> 1 + (1 + exp)
+90:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):189:1 / (1 + exp) |==> 1 - (1 + exp)
+91:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):190:hi - lo |==> hi % lo
+92:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):190:hi - lo |==> hi * lo
+93:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):190:hi - lo |==> hi + lo
+94:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):190:hi - lo |==> hi / lo
+95:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):191:0 |==> 1
+96:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):191:0 |==> -1
+97:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):191:n < f.length |==> n != f.length
+98:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):191:n < f.length |==> n <= f.length
+99:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):191:n < f.length |==> false
+100:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:0 |==> 1
+101:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:0 |==> -1
+102:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):195:1 |==> 0
+103:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):195:1 |==> -1
+104:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):195:p[n] = 1 |==> <NO-OP>
+105:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:n |==> 0
+106:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:0 |==> 1
+107:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:0 |==> -1
+108:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:k >= 0 |==> k == 0
+109:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:k >= 0 |==> k > 0
+110:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):196:k >= 0 |==> true
+111:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:v * exp |==> v % exp
+112:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:v * exp |==> v + exp
+113:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:v * exp |==> v - exp
+114:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:v * exp |==> v / exp
+115:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:v * exp + p[k] |==> v * exp % p[k]
+116:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:v * exp + p[k] |==> v * exp * p[k]
+117:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:v * exp + p[k] |==> v * exp - p[k]
+118:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:v * exp + p[k] |==> v * exp / p[k]
+119:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):197:v = v * exp + p[k] |==> <NO-OP>
+120:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):198:1 |==> 0
+121:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):198:1 |==> -1
+122:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):198:k > 1 |==> k != 1
+123:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):198:k > 1 |==> k >= 1
+124:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):198:k > 1 |==> false
+125:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:1 |==> 0
+126:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:1 |==> -1
+127:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k % 1
+128:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k * 1
+129:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k + 1
+130:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k / 1
+131:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:n - k |==> n % k
+132:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:n - k |==> n * k
+133:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:n - k |==> n + k
+134:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:n - k |==> n / k
+135:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:2 |==> 0
+136:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:2 |==> -2
+137:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:n - k + 2 |==> (n - k) % 2
+138:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:n - k + 2 |==> (n - k) * 2
+139:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:n - k + 2 |==> n - k - 2
+140:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:n - k + 2 |==> (n - k) / 2
+141:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:2 |==> 0
+142:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:2 |==> -2
+143:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 2 |==> k % 2
+144:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 2 |==> k * 2
+145:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 2 |==> k + 2
+146:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 2 |==> k / 2
+147:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(n - k + 2) * p[k - 2] |==> (n - k + 2) % p[k - 2]
+148:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(n - k + 2) * p[k - 2] |==> (n - k + 2) + p[k - 2]
+149:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(n - k + 2) * p[k - 2] |==> (n - k + 2) - p[k - 2]
+150:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(n - k + 2) * p[k - 2] |==> (n - k + 2) / p[k - 2]
+151:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:1 |==> 0
+152:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:1 |==> -1
+153:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k % 1
+154:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k * 1
+155:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k + 1
+156:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k / 1
+157:LVR:POS:0:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:1 |==> 0
+158:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:1 |==> -1
+159:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k % 1
+160:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k * 1
+161:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k + 1
+162:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:k - 1 |==> k / 1
+163:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(k - 1) * p[k - 1] |==> (k - 1) % p[k - 1]
+164:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(k - 1) * p[k - 1] |==> (k - 1) + p[k - 1]
+165:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(k - 1) * p[k - 1] |==> (k - 1) - p[k - 1]
+166:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(k - 1) * p[k - 1] |==> (k - 1) / p[k - 1]
+167:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(n - k + 2) * p[k - 2] - (k - 1) * p[k - 1] |==> (n - k + 2) * p[k - 2] % ((k - 1) * p[k - 1])
+168:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(n - k + 2) * p[k - 2] - (k - 1) * p[k - 1] |==> (n - k + 2) * p[k - 2] * ((k - 1) * p[k - 1])
+169:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(n - k + 2) * p[k - 2] - (k - 1) * p[k - 1] |==> (n - k + 2) * p[k - 2] + (k - 1) * p[k - 1]
+170:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:(n - k + 2) * p[k - 2] - (k - 1) * p[k - 1] |==> (n - k + 2) * p[k - 2] / ((k - 1) * p[k - 1])
+171:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):199:p[k - 1] = (n - k + 2) * p[k - 2] - (k - 1) * p[k - 1] |==> <NO-OP>
+172:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):201:0 |==> 1
+173:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):201:0 |==> -1
+174:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):201:0 |==> 1
+175:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):201:0 |==> -1
+176:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):201:p[0] = 0 |==> <NO-OP>
+177:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):205:coeff *= inv |==> <NO-OP>
+178:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:coeff * v |==> coeff % v
+179:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:coeff * v |==> coeff + v
+180:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:coeff * v |==> coeff - v
+181:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:coeff * v |==> coeff / v
+182:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:f[n] = coeff * v |==> <NO-OP>
+183:LVR:0:POS:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):211:0 |==> 1
+184:LVR:0:NEG:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):211:0 |==> -1
+185:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):211:f[0] += lo |==> <NO-OP>
+186:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sigmoid@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):215:t.compose(f) |==> null

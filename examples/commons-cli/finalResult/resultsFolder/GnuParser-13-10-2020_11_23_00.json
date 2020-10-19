@@ -1,0 +1,24 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "82"
+    ],
+    "sourceClass": "GnuParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR24",
+      "TR22"
+    ],
+    "affectedTest": [
+      "testLongWithEqualDoubleDash",
+      "testLongWithEqualSingleDash",
+      "testShortWithEqual"
+    ],
+    "testReran": [
+      "testShortWithEqual",
+      "testLongWithEqualSingleDash",
+      "testLongWithEqualDoubleDash"
+    ]
+  }
+}

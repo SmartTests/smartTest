@@ -1,0 +1,14 @@
+[
+  {
+    "v1": {
+      "line": "55",
+      "statement": "PolynomialFunctionLagrangeForm interpolate(double x[], double y[])"
+    }
+  },
+  {
+    "v2": {
+      "line": "59",
+      "statement": "return new PolynomialFunctionLagrangeForm(x, y)"
+    }
+  }
+]

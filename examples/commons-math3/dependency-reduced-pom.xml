@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.commons</groupId>
+  <artifactId>commons-math3</artifactId>
+  <name>Commons Math</name>
+  <version>3.3-SNAPSHOT</version>
+  <description>The Math project is a library of lightweight, self-contained mathematics and statistics components addressing the most common practical problems not immediately available in the Java programming language or commons-lang.</description>
+  <url>http://commons.apache.org/proper/commons-math/</url>
+  <inceptionYear>2003</inceptionYear>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.3.1</version>
+        <configuration>
+          <archive>
+            <manifestFile>resources/META-INF/MANIFEST.MF</manifestFile>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5</version>
+        <configuration>
+          <source>${maven.compiler.target}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.18.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <argLine>-Xbootclasspath/a:${project.build.directory}/${project.build.finalName}.jar
+						-javaagent:${project.build.directory}/${project.build.finalName}.jar</argLine>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.3</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <minimizeJar>false</minimizeJar>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M4</version>
+        <configuration>
+          <forkCount>3</forkCount>
+          <reuseForks>true</reuseForks>
+          <argLine>-Xmx1024m</argLine>
+          <useSystemClassLoader>true</useSystemClassLoader>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+    <commons.release.version>3.3</commons.release.version>
+    <commons.encoding>UTF-8</commons.encoding>
+    <commons.release.desc>(requires Java 1.5+)</commons.release.desc>
+    <commons.binary.suffix>-bin</commons.binary.suffix>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <commons.jira.id>MATH</commons.jira.id>
+    <commons.jira.pid>12310485</commons.jira.pid>
+    <math.findbugs.version>2.5.1</math.findbugs.version>
+    <math.checkstyle.version>2.9.1</math.checkstyle.version>
+    <commons.release.2.name>commons-math-${commons.release.2.version}</commons.release.2.name>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <commons.componentid>math</commons.componentid>
+    <math.pmd.version>2.7.1</math.pmd.version>
+    <commons.jacoco.version>0.6.2.201302030002</commons.jacoco.version>
+    <commons.release.2.desc>(requires Java 1.5+)</commons.release.2.desc>
+    <commons.osgi.symbolicName>org.apache.commons.math3</commons.osgi.symbolicName>
+    <commons.release.2.version>2.2</commons.release.2.version>
+  </properties>
+</project>
+

@@ -1,0 +1,422 @@
+[
+  {
+    "v1": {
+      "line": "62",
+      "statement": "FDistribution (double numeratorDegreesOfFreedom,  double denominatorDegreesOfFreedom)"
+    }
+  },
+  {
+    "v2": {
+      "line": "65",
+      "statement": "this(numeratorDegreesOfFreedom, denominatorDegreesOfFreedom,  DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "82",
+      "statement": "FDistribution (double numeratorDegreesOfFreedom,  double denominatorDegreesOfFreedom,  double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "86",
+      "statement": "this(new Well19937c(), numeratorDegreesOfFreedom,  denominatorDegreesOfFreedom, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "100",
+      "statement": "FDistribution (RandomGenerator rng,  double numeratorDegreesOfFreedom,  double denominatorDegreesOfFreedom)"
+    }
+  },
+  {
+    "v6": {
+      "line": "104",
+      "statement": "this(rng, numeratorDegreesOfFreedom, denominatorDegreesOfFreedom, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v7": {
+      "line": "119",
+      "statement": "FDistribution (RandomGenerator rng,  double numeratorDegreesOfFreedom,  double denominatorDegreesOfFreedom,  double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "124",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v9": {
+      "line": "126",
+      "statement": "if (numeratorDegreesOfFreedom <= 0)"
+    }
+  },
+  {
+    "v10": {
+      "line": "127",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.DEGREES_OF_FREEDOM,  numeratorDegreesOfFreedom)"
+    }
+  },
+  {
+    "v11": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v12": {
+      "line": "130",
+      "statement": "if (denominatorDegreesOfFreedom <= 0)"
+    }
+  },
+  {
+    "v13": {
+      "line": "131",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.DEGREES_OF_FREEDOM,  denominatorDegreesOfFreedom)"
+    }
+  },
+  {
+    "v14": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v15": {
+      "line": "134",
+      "statement": "this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom"
+    }
+  },
+  {
+    "v16": {
+      "line": "135",
+      "statement": "this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom"
+    }
+  },
+  {
+    "v17": {
+      "line": "136",
+      "statement": "solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v18": {
+      "line": "144",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v19": {
+      "line": "145",
+      "statement": "final double nhalf = numeratorDegreesOfFreedom / 2"
+    }
+  },
+  {
+    "v20": {
+      "line": "146",
+      "statement": "final double mhalf = denominatorDegreesOfFreedom / 2"
+    }
+  },
+  {
+    "v21": {
+      "line": "147",
+      "statement": "final double logx = FastMath.log(x)"
+    }
+  },
+  {
+    "v22": {
+      "line": "148",
+      "statement": "final double logn = FastMath.log(numeratorDegreesOfFreedom)"
+    }
+  },
+  {
+    "v23": {
+      "line": "149",
+      "statement": "final double logm = FastMath.log(denominatorDegreesOfFreedom)"
+    }
+  },
+  {
+    "v24": {
+      "line": "150",
+      "statement": "final double lognxm = FastMath.log(numeratorDegreesOfFreedom * x +  denominatorDegreesOfFreedom)"
+    }
+  },
+  {
+    "v25": {
+      "line": "152",
+      "statement": "return FastMath.exp(nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm - Beta.logBeta(nhalf, mhalf))"
+    }
+  },
+  {
+    "v26": {
+      "line": "168",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v27": {
+      "line": "169",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v28": {
+      "line": "170",
+      "statement": "if (x <= 0)"
+    }
+  },
+  {
+    "v29": {
+      "line": "171",
+      "statement": "ret = 0"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v31": {
+      "line": "173",
+      "statement": "double n = numeratorDegreesOfFreedom"
+    }
+  },
+  {
+    "v32": {
+      "line": "174",
+      "statement": "double m = denominatorDegreesOfFreedom"
+    }
+  },
+  {
+    "v33": {
+      "line": "176",
+      "statement": "ret = Beta.regularizedBeta((n * x) / (m + n * x), 0.5 * n, 0.5 * m)"
+    }
+  },
+  {
+    "v34": {
+      "line": "180",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v35": {
+      "line": "188",
+      "statement": "double getNumeratorDegreesOfFreedom()"
+    }
+  },
+  {
+    "v36": {
+      "line": "189",
+      "statement": "return numeratorDegreesOfFreedom"
+    }
+  },
+  {
+    "v37": {
+      "line": "197",
+      "statement": "double getDenominatorDegreesOfFreedom()"
+    }
+  },
+  {
+    "v38": {
+      "line": "198",
+      "statement": "return denominatorDegreesOfFreedom"
+    }
+  },
+  {
+    "v39": {
+      "line": "203",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v40": {
+      "line": "204",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v41": {
+      "line": "216",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v42": {
+      "line": "217",
+      "statement": "final double denominatorDF = getDenominatorDegreesOfFreedom()"
+    }
+  },
+  {
+    "v43": {
+      "line": "219",
+      "statement": "if (denominatorDF > 2)"
+    }
+  },
+  {
+    "v44": {
+      "line": "220",
+      "statement": "return denominatorDF / (denominatorDF - 2)"
+    }
+  },
+  {
+    "v45": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v46": {
+      "line": "223",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v47": {
+      "line": "239",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v48": {
+      "line": "240",
+      "statement": "if (!numericalVarianceIsCalculated)"
+    }
+  },
+  {
+    "v49": {
+      "line": "241",
+      "statement": "numericalVariance = calculateNumericalVariance()"
+    }
+  },
+  {
+    "v50": {
+      "line": "242",
+      "statement": "numericalVarianceIsCalculated = true"
+    }
+  },
+  {
+    "v51": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v52": {
+      "line": "244",
+      "statement": "return numericalVariance"
+    }
+  },
+  {
+    "v53": {
+      "line": "252",
+      "statement": "double calculateNumericalVariance()"
+    }
+  },
+  {
+    "v54": {
+      "line": "253",
+      "statement": "final double denominatorDF = getDenominatorDegreesOfFreedom()"
+    }
+  },
+  {
+    "v55": {
+      "line": "255",
+      "statement": "if (denominatorDF > 4)"
+    }
+  },
+  {
+    "v56": {
+      "line": "256",
+      "statement": "final double numeratorDF = getNumeratorDegreesOfFreedom()"
+    }
+  },
+  {
+    "v57": {
+      "line": "257",
+      "statement": "final double denomDFMinusTwo = denominatorDF - 2"
+    }
+  },
+  {
+    "v58": {
+      "line": "259",
+      "statement": "return ( 2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) ) /  ( (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)) )"
+    }
+  },
+  {
+    "v59": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v60": {
+      "line": "263",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v61": {
+      "line": "273",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v62": {
+      "line": "274",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v63": {
+      "line": "285",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v64": {
+      "line": "286",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v65": {
+      "line": "290",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v66": {
+      "line": "291",
+      "statement": "return false"
+    }
+  },
+  {
+    "v67": {
+      "line": "295",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v68": {
+      "line": "296",
+      "statement": "return false"
+    }
+  },
+  {
+    "v69": {
+      "line": "306",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v70": {
+      "line": "307",
+      "statement": "return true"
+    }
+  }
+]

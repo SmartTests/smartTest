@@ -1,0 +1,734 @@
+[
+  {
+    "v1": {
+      "line": "52",
+      "statement": "CommandLine ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "64",
+      "statement": "boolean hasOption(final Option opt)"
+    }
+  },
+  {
+    "v3": {
+      "line": "66",
+      "statement": "return options.contains(opt)"
+    }
+  },
+  {
+    "v4": {
+      "line": "75",
+      "statement": "boolean hasOption(final String opt)"
+    }
+  },
+  {
+    "v5": {
+      "line": "77",
+      "statement": "return hasOption(resolveOption(opt))"
+    }
+  },
+  {
+    "v6": {
+      "line": "86",
+      "statement": "boolean hasOption(final char opt)"
+    }
+  },
+  {
+    "v7": {
+      "line": "88",
+      "statement": "return hasOption(String.valueOf(opt))"
+    }
+  },
+  {
+    "v8": {
+      "line": "99",
+      "statement": "Object getOptionObject(final String opt)"
+    }
+  },
+  {
+    "v9": {
+      "line": "101",
+      "statement": "try"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v11": {
+      "line": "103",
+      "statement": "return getParsedOptionValue(opt)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v13": {
+      "line": "105",
+      "statement": "catch (ParseException pe)"
+    }
+  },
+  {
+    "v14": {
+      "line": "107",
+      "statement": "System.err.println('Exception found converting ' + opt + ' to desired type"
+    }
+  },
+  {
+    "v15": {
+      "line": "108",
+      "statement": "return null"
+    }
+  },
+  {
+    "v16": {
+      "line": "121",
+      "statement": "Object getParsedOptionValue(final Option option)"
+    }
+  },
+  {
+    "v17": {
+      "line": "123",
+      "statement": "if (option == null)"
+    }
+  },
+  {
+    "v18": {
+      "line": "125",
+      "statement": "return null"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "127",
+      "statement": "final String res = getOptionValue(option)"
+    }
+  },
+  {
+    "v21": {
+      "line": "128",
+      "statement": "if (res == null)"
+    }
+  },
+  {
+    "v22": {
+      "line": "130",
+      "statement": "return null"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v24": {
+      "line": "132",
+      "statement": "return TypeHandler.createValue(res, option.getType())"
+    }
+  },
+  {
+    "v25": {
+      "line": "144",
+      "statement": "Object getParsedOptionValue(final String opt)"
+    }
+  },
+  {
+    "v26": {
+      "line": "146",
+      "statement": "return getParsedOptionValue(resolveOption(opt))"
+    }
+  },
+  {
+    "v27": {
+      "line": "158",
+      "statement": "Object getParsedOptionValue(final char opt)"
+    }
+  },
+  {
+    "v28": {
+      "line": "160",
+      "statement": "return getParsedOptionValue(String.valueOf(opt))"
+    }
+  },
+  {
+    "v29": {
+      "line": "170",
+      "statement": "Object getOptionObject(final char opt)"
+    }
+  },
+  {
+    "v30": {
+      "line": "172",
+      "statement": "return getOptionObject(String.valueOf(opt))"
+    }
+  },
+  {
+    "v31": {
+      "line": "183",
+      "statement": "String getOptionValue(final Option option)"
+    }
+  },
+  {
+    "v32": {
+      "line": "185",
+      "statement": "if (option == null)"
+    }
+  },
+  {
+    "v33": {
+      "line": "187",
+      "statement": "return null"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v35": {
+      "line": "189",
+      "statement": "final String[] values = getOptionValues(option)"
+    }
+  },
+  {
+    "v36": {
+      "line": "190",
+      "statement": "return (values == null) ? null"
+    }
+  },
+  {
+    "v37": {
+      "line": "200",
+      "statement": "String getOptionValue(final String opt)"
+    }
+  },
+  {
+    "v38": {
+      "line": "202",
+      "statement": "return getOptionValue(resolveOption(opt))"
+    }
+  },
+  {
+    "v39": {
+      "line": "212",
+      "statement": "String getOptionValue(final char opt)"
+    }
+  },
+  {
+    "v40": {
+      "line": "214",
+      "statement": "return getOptionValue(String.valueOf(opt))"
+    }
+  },
+  {
+    "v41": {
+      "line": "225",
+      "statement": "String[] getOptionValues(final Option option)"
+    }
+  },
+  {
+    "v42": {
+      "line": "227",
+      "statement": "final List<String> values = new ArrayList<String>()"
+    }
+  },
+  {
+    "v43": {
+      "line": "229",
+      "statement": "for (final Option processedOption"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v45": {
+      "line": "231",
+      "statement": "if (processedOption.equals(option))"
+    }
+  },
+  {
+    "v46": {
+      "line": "233",
+      "statement": "values.addAll(processedOption.getValuesList())"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v48": {
+      "line": "237",
+      "statement": "return values.isEmpty() ? null"
+    }
+  },
+  {
+    "v49": {
+      "line": "247",
+      "statement": "String[] getOptionValues(final String opt)"
+    }
+  },
+  {
+    "v50": {
+      "line": "249",
+      "statement": "return getOptionValues(resolveOption(opt))"
+    }
+  },
+  {
+    "v51": {
+      "line": "258",
+      "statement": "Option resolveOption(String opt)"
+    }
+  },
+  {
+    "v52": {
+      "line": "260",
+      "statement": "opt = Util.stripLeadingHyphens(opt)"
+    }
+  },
+  {
+    "v53": {
+      "line": "261",
+      "statement": "for (final Option option"
+    }
+  },
+  {
+    "v54": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v55": {
+      "line": "263",
+      "statement": "if (opt.equals(option.getOpt()))"
+    }
+  },
+  {
+    "v56": {
+      "line": "265",
+      "statement": "return option"
+    }
+  },
+  {
+    "v57": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v58": {
+      "line": "268",
+      "statement": "if (opt.equals(option.getLongOpt()))"
+    }
+  },
+  {
+    "v59": {
+      "line": "270",
+      "statement": "return option"
+    }
+  },
+  {
+    "v60": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v61": {
+      "line": "274",
+      "statement": "return null"
+    }
+  },
+  {
+    "v62": {
+      "line": "284",
+      "statement": "String[] getOptionValues(final char opt)"
+    }
+  },
+  {
+    "v63": {
+      "line": "286",
+      "statement": "return getOptionValues(String.valueOf(opt))"
+    }
+  },
+  {
+    "v64": {
+      "line": "299",
+      "statement": "String getOptionValue(final Option option, final String defaultValue)"
+    }
+  },
+  {
+    "v65": {
+      "line": "301",
+      "statement": "final String answer = getOptionValue(option)"
+    }
+  },
+  {
+    "v66": {
+      "line": "302",
+      "statement": "return (answer != null) ? answer"
+    }
+  },
+  {
+    "v67": {
+      "line": "314",
+      "statement": "String getOptionValue(final String opt, final String defaultValue)"
+    }
+  },
+  {
+    "v68": {
+      "line": "316",
+      "statement": "return getOptionValue(resolveOption(opt), defaultValue)"
+    }
+  },
+  {
+    "v69": {
+      "line": "328",
+      "statement": "String getOptionValue(final char opt, final String defaultValue)"
+    }
+  },
+  {
+    "v70": {
+      "line": "330",
+      "statement": "return getOptionValue(String.valueOf(opt), defaultValue)"
+    }
+  },
+  {
+    "v71": {
+      "line": "346",
+      "statement": "Properties getOptionProperties(final Option option)"
+    }
+  },
+  {
+    "v72": {
+      "line": "348",
+      "statement": "final Properties props = new Properties()"
+    }
+  },
+  {
+    "v73": {
+      "line": "350",
+      "statement": "for (final Option processedOption"
+    }
+  },
+  {
+    "v74": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v75": {
+      "line": "352",
+      "statement": "if (processedOption.equals(option))"
+    }
+  },
+  {
+    "v76": {
+      "line": "354",
+      "statement": "final List<String> values = processedOption.getValuesList()"
+    }
+  },
+  {
+    "v77": {
+      "line": "355",
+      "statement": "if (values.size() >= 2)"
+    }
+  },
+  {
+    "v78": {
+      "line": "358",
+      "statement": "props.put(values.get(0), values.get(1))"
+    }
+  },
+  {
+    "v79": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v80": {
+      "line": "360",
+      "statement": "if (values.size() == 1)"
+    }
+  },
+  {
+    "v81": {
+      "line": "363",
+      "statement": "props.put(values.get(0), 'true')"
+    }
+  },
+  {
+    "v82": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v83": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v84": {
+      "line": "368",
+      "statement": "return props"
+    }
+  },
+  {
+    "v85": {
+      "line": "384",
+      "statement": "Properties getOptionProperties(final String opt)"
+    }
+  },
+  {
+    "v86": {
+      "line": "386",
+      "statement": "final Properties props = new Properties()"
+    }
+  },
+  {
+    "v87": {
+      "line": "388",
+      "statement": "for (final Option option"
+    }
+  },
+  {
+    "v88": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v89": {
+      "line": "390",
+      "statement": "if (opt.equals(option.getOpt()) || opt.equals(option.getLongOpt()))"
+    }
+  },
+  {
+    "v90": {
+      "line": "392",
+      "statement": "final List<String> values = option.getValuesList()"
+    }
+  },
+  {
+    "v91": {
+      "line": "393",
+      "statement": "if (values.size() >= 2)"
+    }
+  },
+  {
+    "v92": {
+      "line": "396",
+      "statement": "props.put(values.get(0), values.get(1))"
+    }
+  },
+  {
+    "v93": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v94": {
+      "line": "398",
+      "statement": "if (values.size() == 1)"
+    }
+  },
+  {
+    "v95": {
+      "line": "401",
+      "statement": "props.put(values.get(0), 'true')"
+    }
+  },
+  {
+    "v96": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v97": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v98": {
+      "line": "406",
+      "statement": "return props"
+    }
+  },
+  {
+    "v99": {
+      "line": "414",
+      "statement": "String[] getArgs()"
+    }
+  },
+  {
+    "v100": {
+      "line": "416",
+      "statement": "final String[] answer = new String[args.size()"
+    }
+  },
+  {
+    "v101": {
+      "line": "418",
+      "statement": "args.toArray(answer)"
+    }
+  },
+  {
+    "v102": {
+      "line": "420",
+      "statement": "return answer"
+    }
+  },
+  {
+    "v103": {
+      "line": "428",
+      "statement": "List<String> getArgList()"
+    }
+  },
+  {
+    "v104": {
+      "line": "430",
+      "statement": "return args"
+    }
+  },
+  {
+    "v105": {
+      "line": "460",
+      "statement": "void addArg(final String arg)"
+    }
+  },
+  {
+    "v106": {
+      "line": "462",
+      "statement": "args.add(arg)"
+    }
+  },
+  {
+    "v107": {
+      "line": "470",
+      "statement": "void addOption(final Option opt)"
+    }
+  },
+  {
+    "v108": {
+      "line": "472",
+      "statement": "options.add(opt)"
+    }
+  },
+  {
+    "v109": {
+      "line": "481",
+      "statement": "Iterator<Option> iterator()"
+    }
+  },
+  {
+    "v110": {
+      "line": "483",
+      "statement": "return options.iterator()"
+    }
+  },
+  {
+    "v111": {
+      "line": "491",
+      "statement": "Option[] getOptions()"
+    }
+  },
+  {
+    "v112": {
+      "line": "493",
+      "statement": "final Collection<Option> processed = options"
+    }
+  },
+  {
+    "v113": {
+      "line": "496",
+      "statement": "final Option[] optionsArray = new Option[processed.size()"
+    }
+  },
+  {
+    "v114": {
+      "line": "499",
+      "statement": "return processed.toArray(optionsArray)"
+    }
+  },
+  {
+    "v115": {
+      "line": "522",
+      "statement": "Builder addOption(final Option opt)"
+    }
+  },
+  {
+    "v116": {
+      "line": "524",
+      "statement": "commandLine.addOption(opt)"
+    }
+  },
+  {
+    "v117": {
+      "line": "525",
+      "statement": "return this"
+    }
+  },
+  {
+    "v118": {
+      "line": "535",
+      "statement": "Builder addArg(final String arg)"
+    }
+  },
+  {
+    "v119": {
+      "line": "537",
+      "statement": "commandLine.addArg(arg)"
+    }
+  },
+  {
+    "v120": {
+      "line": "538",
+      "statement": "return this"
+    }
+  },
+  {
+    "v121": {
+      "line": "541",
+      "statement": "CommandLine build()"
+    }
+  },
+  {
+    "v122": {
+      "line": "543",
+      "statement": "return commandLine"
+    }
+  }
+]

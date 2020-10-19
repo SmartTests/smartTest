@@ -1,0 +1,512 @@
+1:ORU:-(double):+(double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:60:-1.0 |==> +1.0
+2:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:60:1.0 |==> 0.0
+3:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:60:1.0 |==> -1.0
+4:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:60:3.0 |==> 0.0
+5:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:60:3.0 |==> -3.0
+6:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:60:-1.0 / FastMath.sqrt(3.0) |==> -1.0 % FastMath.sqrt(3.0)
+7:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:60:-1.0 / FastMath.sqrt(3.0) |==> -1.0 * FastMath.sqrt(3.0)
+8:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:60:-1.0 / FastMath.sqrt(3.0) |==> -1.0 + FastMath.sqrt(3.0)
+9:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:60:-1.0 / FastMath.sqrt(3.0) |==> -1.0 - FastMath.sqrt(3.0)
+10:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:61:1.0 |==> 0.0
+11:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:61:1.0 |==> -1.0
+12:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:61:3.0 |==> 0.0
+13:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:61:3.0 |==> -3.0
+14:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:61:1.0 / FastMath.sqrt(3.0) |==> 1.0 % FastMath.sqrt(3.0)
+15:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:61:1.0 / FastMath.sqrt(3.0) |==> 1.0 * FastMath.sqrt(3.0)
+16:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:61:1.0 / FastMath.sqrt(3.0) |==> 1.0 + FastMath.sqrt(3.0)
+17:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:61:1.0 / FastMath.sqrt(3.0) |==> 1.0 - FastMath.sqrt(3.0)
+18:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:66:1.0 |==> 0.0
+19:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:66:1.0 |==> -1.0
+20:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:67:1.0 |==> 0.0
+21:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:67:1.0 |==> -1.0
+22:ORU:-(double):+(double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:72:-FastMath.sqrt(0.6) |==> +FastMath.sqrt(0.6)
+23:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:72:0.6 |==> 0.0
+24:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:72:0.6 |==> -0.6
+25:LVR:0:POS:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:73:0.0 |==> 1.0
+26:LVR:0:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:73:0.0 |==> -1.0
+27:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:74:0.6 |==> 0.0
+28:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:74:0.6 |==> -0.6
+29:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:79:5.0 |==> 0.0
+30:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:79:5.0 |==> -5.0
+31:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:79:9.0 |==> 0.0
+32:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:79:9.0 |==> -9.0
+33:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:79:5.0 / 9.0 |==> 5.0 % 9.0
+34:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:79:5.0 / 9.0 |==> 5.0 * 9.0
+35:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:79:5.0 / 9.0 |==> 5.0 + 9.0
+36:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:79:5.0 / 9.0 |==> 5.0 - 9.0
+37:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:80:8.0 |==> 0.0
+38:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:80:8.0 |==> -8.0
+39:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:80:9.0 |==> 0.0
+40:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:80:9.0 |==> -9.0
+41:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:80:8.0 / 9.0 |==> 8.0 % 9.0
+42:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:80:8.0 / 9.0 |==> 8.0 * 9.0
+43:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:80:8.0 / 9.0 |==> 8.0 + 9.0
+44:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:80:8.0 / 9.0 |==> 8.0 - 9.0
+45:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:81:5.0 |==> 0.0
+46:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:81:5.0 |==> -5.0
+47:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:81:9.0 |==> 0.0
+48:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:81:9.0 |==> -9.0
+49:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:81:5.0 / 9.0 |==> 5.0 % 9.0
+50:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:81:5.0 / 9.0 |==> 5.0 * 9.0
+51:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:81:5.0 / 9.0 |==> 5.0 + 9.0
+52:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:81:5.0 / 9.0 |==> 5.0 - 9.0
+53:ORU:-(double):+(double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:-FastMath.sqrt((15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0) |==> +FastMath.sqrt((15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0)
+54:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:15.0 |==> 0.0
+55:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:15.0 |==> -15.0
+56:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:2.0 |==> 0.0
+57:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:2.0 |==> -2.0
+58:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:30.0 |==> 0.0
+59:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:30.0 |==> -30.0
+60:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:2.0 * FastMath.sqrt(30.0) |==> 2.0 % FastMath.sqrt(30.0)
+61:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:2.0 * FastMath.sqrt(30.0) |==> 2.0 + FastMath.sqrt(30.0)
+62:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:2.0 * FastMath.sqrt(30.0) |==> 2.0 - FastMath.sqrt(30.0)
+63:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:2.0 * FastMath.sqrt(30.0) |==> 2.0 / FastMath.sqrt(30.0)
+64:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:15.0 + 2.0 * FastMath.sqrt(30.0) |==> 15.0 % (2.0 * FastMath.sqrt(30.0))
+65:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:15.0 + 2.0 * FastMath.sqrt(30.0) |==> 15.0 * (2.0 * FastMath.sqrt(30.0))
+66:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:15.0 + 2.0 * FastMath.sqrt(30.0) |==> 15.0 - 2.0 * FastMath.sqrt(30.0)
+67:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:15.0 + 2.0 * FastMath.sqrt(30.0) |==> 15.0 / (2.0 * FastMath.sqrt(30.0))
+68:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:35.0 |==> 0.0
+69:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:35.0 |==> -35.0
+70:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:(15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 + 2.0 * FastMath.sqrt(30.0)) % 35.0
+71:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:(15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 + 2.0 * FastMath.sqrt(30.0)) * 35.0
+72:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:(15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 + 2.0 * FastMath.sqrt(30.0)) + 35.0
+73:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:86:(15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 + 2.0 * FastMath.sqrt(30.0)) - 35.0
+74:ORU:-(double):+(double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:-FastMath.sqrt((15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0) |==> +FastMath.sqrt((15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0)
+75:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:15.0 |==> 0.0
+76:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:15.0 |==> -15.0
+77:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:2.0 |==> 0.0
+78:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:2.0 |==> -2.0
+79:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:30.0 |==> 0.0
+80:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:30.0 |==> -30.0
+81:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:2.0 * FastMath.sqrt(30.0) |==> 2.0 % FastMath.sqrt(30.0)
+82:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:2.0 * FastMath.sqrt(30.0) |==> 2.0 + FastMath.sqrt(30.0)
+83:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:2.0 * FastMath.sqrt(30.0) |==> 2.0 - FastMath.sqrt(30.0)
+84:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:2.0 * FastMath.sqrt(30.0) |==> 2.0 / FastMath.sqrt(30.0)
+85:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:15.0 - 2.0 * FastMath.sqrt(30.0) |==> 15.0 % (2.0 * FastMath.sqrt(30.0))
+86:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:15.0 - 2.0 * FastMath.sqrt(30.0) |==> 15.0 * (2.0 * FastMath.sqrt(30.0))
+87:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:15.0 - 2.0 * FastMath.sqrt(30.0) |==> 15.0 + 2.0 * FastMath.sqrt(30.0)
+88:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:15.0 - 2.0 * FastMath.sqrt(30.0) |==> 15.0 / (2.0 * FastMath.sqrt(30.0))
+89:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:35.0 |==> 0.0
+90:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:35.0 |==> -35.0
+91:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:(15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 - 2.0 * FastMath.sqrt(30.0)) % 35.0
+92:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:(15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 - 2.0 * FastMath.sqrt(30.0)) * 35.0
+93:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:(15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 - 2.0 * FastMath.sqrt(30.0)) + 35.0
+94:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:87:(15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 - 2.0 * FastMath.sqrt(30.0)) - 35.0
+95:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:15.0 |==> 0.0
+96:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:15.0 |==> -15.0
+97:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:2.0 |==> 0.0
+98:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:2.0 |==> -2.0
+99:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:30.0 |==> 0.0
+100:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:30.0 |==> -30.0
+101:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:2.0 * FastMath.sqrt(30.0) |==> 2.0 % FastMath.sqrt(30.0)
+102:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:2.0 * FastMath.sqrt(30.0) |==> 2.0 + FastMath.sqrt(30.0)
+103:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:2.0 * FastMath.sqrt(30.0) |==> 2.0 - FastMath.sqrt(30.0)
+104:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:2.0 * FastMath.sqrt(30.0) |==> 2.0 / FastMath.sqrt(30.0)
+105:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:15.0 - 2.0 * FastMath.sqrt(30.0) |==> 15.0 % (2.0 * FastMath.sqrt(30.0))
+106:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:15.0 - 2.0 * FastMath.sqrt(30.0) |==> 15.0 * (2.0 * FastMath.sqrt(30.0))
+107:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:15.0 - 2.0 * FastMath.sqrt(30.0) |==> 15.0 + 2.0 * FastMath.sqrt(30.0)
+108:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:15.0 - 2.0 * FastMath.sqrt(30.0) |==> 15.0 / (2.0 * FastMath.sqrt(30.0))
+109:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:35.0 |==> 0.0
+110:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:35.0 |==> -35.0
+111:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:(15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 - 2.0 * FastMath.sqrt(30.0)) % 35.0
+112:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:(15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 - 2.0 * FastMath.sqrt(30.0)) * 35.0
+113:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:(15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 - 2.0 * FastMath.sqrt(30.0)) + 35.0
+114:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:88:(15.0 - 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 - 2.0 * FastMath.sqrt(30.0)) - 35.0
+115:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:15.0 |==> 0.0
+116:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:15.0 |==> -15.0
+117:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:2.0 |==> 0.0
+118:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:2.0 |==> -2.0
+119:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:30.0 |==> 0.0
+120:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:30.0 |==> -30.0
+121:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:2.0 * FastMath.sqrt(30.0) |==> 2.0 % FastMath.sqrt(30.0)
+122:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:2.0 * FastMath.sqrt(30.0) |==> 2.0 + FastMath.sqrt(30.0)
+123:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:2.0 * FastMath.sqrt(30.0) |==> 2.0 - FastMath.sqrt(30.0)
+124:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:2.0 * FastMath.sqrt(30.0) |==> 2.0 / FastMath.sqrt(30.0)
+125:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:15.0 + 2.0 * FastMath.sqrt(30.0) |==> 15.0 % (2.0 * FastMath.sqrt(30.0))
+126:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:15.0 + 2.0 * FastMath.sqrt(30.0) |==> 15.0 * (2.0 * FastMath.sqrt(30.0))
+127:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:15.0 + 2.0 * FastMath.sqrt(30.0) |==> 15.0 - 2.0 * FastMath.sqrt(30.0)
+128:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:15.0 + 2.0 * FastMath.sqrt(30.0) |==> 15.0 / (2.0 * FastMath.sqrt(30.0))
+129:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:35.0 |==> 0.0
+130:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:35.0 |==> -35.0
+131:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:(15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 + 2.0 * FastMath.sqrt(30.0)) % 35.0
+132:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:(15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 + 2.0 * FastMath.sqrt(30.0)) * 35.0
+133:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:(15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 + 2.0 * FastMath.sqrt(30.0)) + 35.0
+134:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:89:(15.0 + 2.0 * FastMath.sqrt(30.0)) / 35.0 |==> (15.0 + 2.0 * FastMath.sqrt(30.0)) - 35.0
+135:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:90.0 |==> 0.0
+136:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:90.0 |==> -90.0
+137:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:5.0 |==> 0.0
+138:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:5.0 |==> -5.0
+139:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:30.0 |==> 0.0
+140:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:30.0 |==> -30.0
+141:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:5.0 * FastMath.sqrt(30.0) |==> 5.0 % FastMath.sqrt(30.0)
+142:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:5.0 * FastMath.sqrt(30.0) |==> 5.0 + FastMath.sqrt(30.0)
+143:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:5.0 * FastMath.sqrt(30.0) |==> 5.0 - FastMath.sqrt(30.0)
+144:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:5.0 * FastMath.sqrt(30.0) |==> 5.0 / FastMath.sqrt(30.0)
+145:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:90.0 - 5.0 * FastMath.sqrt(30.0) |==> 90.0 % (5.0 * FastMath.sqrt(30.0))
+146:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:90.0 - 5.0 * FastMath.sqrt(30.0) |==> 90.0 * (5.0 * FastMath.sqrt(30.0))
+147:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:90.0 - 5.0 * FastMath.sqrt(30.0) |==> 90.0 + 5.0 * FastMath.sqrt(30.0)
+148:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:90.0 - 5.0 * FastMath.sqrt(30.0) |==> 90.0 / (5.0 * FastMath.sqrt(30.0))
+149:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:180.0 |==> 0.0
+150:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:180.0 |==> -180.0
+151:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:(90.0 - 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 - 5.0 * FastMath.sqrt(30.0)) % 180.0
+152:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:(90.0 - 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 - 5.0 * FastMath.sqrt(30.0)) * 180.0
+153:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:(90.0 - 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 - 5.0 * FastMath.sqrt(30.0)) + 180.0
+154:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:94:(90.0 - 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 - 5.0 * FastMath.sqrt(30.0)) - 180.0
+155:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:90.0 |==> 0.0
+156:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:90.0 |==> -90.0
+157:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:5.0 |==> 0.0
+158:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:5.0 |==> -5.0
+159:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:30.0 |==> 0.0
+160:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:30.0 |==> -30.0
+161:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:5.0 * FastMath.sqrt(30.0) |==> 5.0 % FastMath.sqrt(30.0)
+162:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:5.0 * FastMath.sqrt(30.0) |==> 5.0 + FastMath.sqrt(30.0)
+163:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:5.0 * FastMath.sqrt(30.0) |==> 5.0 - FastMath.sqrt(30.0)
+164:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:5.0 * FastMath.sqrt(30.0) |==> 5.0 / FastMath.sqrt(30.0)
+165:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:90.0 + 5.0 * FastMath.sqrt(30.0) |==> 90.0 % (5.0 * FastMath.sqrt(30.0))
+166:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:90.0 + 5.0 * FastMath.sqrt(30.0) |==> 90.0 * (5.0 * FastMath.sqrt(30.0))
+167:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:90.0 + 5.0 * FastMath.sqrt(30.0) |==> 90.0 - 5.0 * FastMath.sqrt(30.0)
+168:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:90.0 + 5.0 * FastMath.sqrt(30.0) |==> 90.0 / (5.0 * FastMath.sqrt(30.0))
+169:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:180.0 |==> 0.0
+170:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:180.0 |==> -180.0
+171:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:(90.0 + 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 + 5.0 * FastMath.sqrt(30.0)) % 180.0
+172:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:(90.0 + 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 + 5.0 * FastMath.sqrt(30.0)) * 180.0
+173:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:(90.0 + 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 + 5.0 * FastMath.sqrt(30.0)) + 180.0
+174:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:95:(90.0 + 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 + 5.0 * FastMath.sqrt(30.0)) - 180.0
+175:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:90.0 |==> 0.0
+176:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:90.0 |==> -90.0
+177:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:5.0 |==> 0.0
+178:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:5.0 |==> -5.0
+179:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:30.0 |==> 0.0
+180:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:30.0 |==> -30.0
+181:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:5.0 * FastMath.sqrt(30.0) |==> 5.0 % FastMath.sqrt(30.0)
+182:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:5.0 * FastMath.sqrt(30.0) |==> 5.0 + FastMath.sqrt(30.0)
+183:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:5.0 * FastMath.sqrt(30.0) |==> 5.0 - FastMath.sqrt(30.0)
+184:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:5.0 * FastMath.sqrt(30.0) |==> 5.0 / FastMath.sqrt(30.0)
+185:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:90.0 + 5.0 * FastMath.sqrt(30.0) |==> 90.0 % (5.0 * FastMath.sqrt(30.0))
+186:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:90.0 + 5.0 * FastMath.sqrt(30.0) |==> 90.0 * (5.0 * FastMath.sqrt(30.0))
+187:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:90.0 + 5.0 * FastMath.sqrt(30.0) |==> 90.0 - 5.0 * FastMath.sqrt(30.0)
+188:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:90.0 + 5.0 * FastMath.sqrt(30.0) |==> 90.0 / (5.0 * FastMath.sqrt(30.0))
+189:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:180.0 |==> 0.0
+190:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:180.0 |==> -180.0
+191:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:(90.0 + 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 + 5.0 * FastMath.sqrt(30.0)) % 180.0
+192:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:(90.0 + 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 + 5.0 * FastMath.sqrt(30.0)) * 180.0
+193:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:(90.0 + 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 + 5.0 * FastMath.sqrt(30.0)) + 180.0
+194:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:96:(90.0 + 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 + 5.0 * FastMath.sqrt(30.0)) - 180.0
+195:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:90.0 |==> 0.0
+196:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:90.0 |==> -90.0
+197:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:5.0 |==> 0.0
+198:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:5.0 |==> -5.0
+199:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:30.0 |==> 0.0
+200:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:30.0 |==> -30.0
+201:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:5.0 * FastMath.sqrt(30.0) |==> 5.0 % FastMath.sqrt(30.0)
+202:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:5.0 * FastMath.sqrt(30.0) |==> 5.0 + FastMath.sqrt(30.0)
+203:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:5.0 * FastMath.sqrt(30.0) |==> 5.0 - FastMath.sqrt(30.0)
+204:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:5.0 * FastMath.sqrt(30.0) |==> 5.0 / FastMath.sqrt(30.0)
+205:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:90.0 - 5.0 * FastMath.sqrt(30.0) |==> 90.0 % (5.0 * FastMath.sqrt(30.0))
+206:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:90.0 - 5.0 * FastMath.sqrt(30.0) |==> 90.0 * (5.0 * FastMath.sqrt(30.0))
+207:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:90.0 - 5.0 * FastMath.sqrt(30.0) |==> 90.0 + 5.0 * FastMath.sqrt(30.0)
+208:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:90.0 - 5.0 * FastMath.sqrt(30.0) |==> 90.0 / (5.0 * FastMath.sqrt(30.0))
+209:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:180.0 |==> 0.0
+210:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:180.0 |==> -180.0
+211:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:(90.0 - 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 - 5.0 * FastMath.sqrt(30.0)) % 180.0
+212:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:(90.0 - 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 - 5.0 * FastMath.sqrt(30.0)) * 180.0
+213:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:(90.0 - 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 - 5.0 * FastMath.sqrt(30.0)) + 180.0
+214:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:97:(90.0 - 5.0 * FastMath.sqrt(30.0)) / 180.0 |==> (90.0 - 5.0 * FastMath.sqrt(30.0)) - 180.0
+215:ORU:-(double):+(double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:-FastMath.sqrt((35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0) |==> +FastMath.sqrt((35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0)
+216:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:35.0 |==> 0.0
+217:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:35.0 |==> -35.0
+218:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:2.0 |==> 0.0
+219:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:2.0 |==> -2.0
+220:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:70.0 |==> 0.0
+221:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:70.0 |==> -70.0
+222:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:2.0 * FastMath.sqrt(70.0) |==> 2.0 % FastMath.sqrt(70.0)
+223:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:2.0 * FastMath.sqrt(70.0) |==> 2.0 + FastMath.sqrt(70.0)
+224:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:2.0 * FastMath.sqrt(70.0) |==> 2.0 - FastMath.sqrt(70.0)
+225:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:2.0 * FastMath.sqrt(70.0) |==> 2.0 / FastMath.sqrt(70.0)
+226:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:35.0 + 2.0 * FastMath.sqrt(70.0) |==> 35.0 % (2.0 * FastMath.sqrt(70.0))
+227:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:35.0 + 2.0 * FastMath.sqrt(70.0) |==> 35.0 * (2.0 * FastMath.sqrt(70.0))
+228:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:35.0 + 2.0 * FastMath.sqrt(70.0) |==> 35.0 - 2.0 * FastMath.sqrt(70.0)
+229:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:35.0 + 2.0 * FastMath.sqrt(70.0) |==> 35.0 / (2.0 * FastMath.sqrt(70.0))
+230:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:63.0 |==> 0.0
+231:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:63.0 |==> -63.0
+232:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:(35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 + 2.0 * FastMath.sqrt(70.0)) % 63.0
+233:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:(35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 + 2.0 * FastMath.sqrt(70.0)) * 63.0
+234:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:(35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 + 2.0 * FastMath.sqrt(70.0)) + 63.0
+235:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:102:(35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 + 2.0 * FastMath.sqrt(70.0)) - 63.0
+236:ORU:-(double):+(double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:-FastMath.sqrt((35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0) |==> +FastMath.sqrt((35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0)
+237:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:35.0 |==> 0.0
+238:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:35.0 |==> -35.0
+239:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:2.0 |==> 0.0
+240:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:2.0 |==> -2.0
+241:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:70.0 |==> 0.0
+242:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:70.0 |==> -70.0
+243:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:2.0 * FastMath.sqrt(70.0) |==> 2.0 % FastMath.sqrt(70.0)
+244:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:2.0 * FastMath.sqrt(70.0) |==> 2.0 + FastMath.sqrt(70.0)
+245:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:2.0 * FastMath.sqrt(70.0) |==> 2.0 - FastMath.sqrt(70.0)
+246:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:2.0 * FastMath.sqrt(70.0) |==> 2.0 / FastMath.sqrt(70.0)
+247:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:35.0 - 2.0 * FastMath.sqrt(70.0) |==> 35.0 % (2.0 * FastMath.sqrt(70.0))
+248:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:35.0 - 2.0 * FastMath.sqrt(70.0) |==> 35.0 * (2.0 * FastMath.sqrt(70.0))
+249:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:35.0 - 2.0 * FastMath.sqrt(70.0) |==> 35.0 + 2.0 * FastMath.sqrt(70.0)
+250:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:35.0 - 2.0 * FastMath.sqrt(70.0) |==> 35.0 / (2.0 * FastMath.sqrt(70.0))
+251:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:63.0 |==> 0.0
+252:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:63.0 |==> -63.0
+253:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:(35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 - 2.0 * FastMath.sqrt(70.0)) % 63.0
+254:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:(35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 - 2.0 * FastMath.sqrt(70.0)) * 63.0
+255:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:(35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 - 2.0 * FastMath.sqrt(70.0)) + 63.0
+256:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:103:(35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 - 2.0 * FastMath.sqrt(70.0)) - 63.0
+257:LVR:0:POS:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:104:0.0 |==> 1.0
+258:LVR:0:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:104:0.0 |==> -1.0
+259:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:35.0 |==> 0.0
+260:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:35.0 |==> -35.0
+261:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:2.0 |==> 0.0
+262:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:2.0 |==> -2.0
+263:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:70.0 |==> 0.0
+264:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:70.0 |==> -70.0
+265:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:2.0 * FastMath.sqrt(70.0) |==> 2.0 % FastMath.sqrt(70.0)
+266:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:2.0 * FastMath.sqrt(70.0) |==> 2.0 + FastMath.sqrt(70.0)
+267:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:2.0 * FastMath.sqrt(70.0) |==> 2.0 - FastMath.sqrt(70.0)
+268:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:2.0 * FastMath.sqrt(70.0) |==> 2.0 / FastMath.sqrt(70.0)
+269:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:35.0 - 2.0 * FastMath.sqrt(70.0) |==> 35.0 % (2.0 * FastMath.sqrt(70.0))
+270:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:35.0 - 2.0 * FastMath.sqrt(70.0) |==> 35.0 * (2.0 * FastMath.sqrt(70.0))
+271:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:35.0 - 2.0 * FastMath.sqrt(70.0) |==> 35.0 + 2.0 * FastMath.sqrt(70.0)
+272:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:35.0 - 2.0 * FastMath.sqrt(70.0) |==> 35.0 / (2.0 * FastMath.sqrt(70.0))
+273:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:63.0 |==> 0.0
+274:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:63.0 |==> -63.0
+275:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:(35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 - 2.0 * FastMath.sqrt(70.0)) % 63.0
+276:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:(35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 - 2.0 * FastMath.sqrt(70.0)) * 63.0
+277:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:(35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 - 2.0 * FastMath.sqrt(70.0)) + 63.0
+278:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:105:(35.0 - 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 - 2.0 * FastMath.sqrt(70.0)) - 63.0
+279:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:35.0 |==> 0.0
+280:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:35.0 |==> -35.0
+281:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:2.0 |==> 0.0
+282:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:2.0 |==> -2.0
+283:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:70.0 |==> 0.0
+284:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:70.0 |==> -70.0
+285:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:2.0 * FastMath.sqrt(70.0) |==> 2.0 % FastMath.sqrt(70.0)
+286:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:2.0 * FastMath.sqrt(70.0) |==> 2.0 + FastMath.sqrt(70.0)
+287:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:2.0 * FastMath.sqrt(70.0) |==> 2.0 - FastMath.sqrt(70.0)
+288:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:2.0 * FastMath.sqrt(70.0) |==> 2.0 / FastMath.sqrt(70.0)
+289:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:35.0 + 2.0 * FastMath.sqrt(70.0) |==> 35.0 % (2.0 * FastMath.sqrt(70.0))
+290:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:35.0 + 2.0 * FastMath.sqrt(70.0) |==> 35.0 * (2.0 * FastMath.sqrt(70.0))
+291:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:35.0 + 2.0 * FastMath.sqrt(70.0) |==> 35.0 - 2.0 * FastMath.sqrt(70.0)
+292:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:35.0 + 2.0 * FastMath.sqrt(70.0) |==> 35.0 / (2.0 * FastMath.sqrt(70.0))
+293:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:63.0 |==> 0.0
+294:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:63.0 |==> -63.0
+295:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:(35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 + 2.0 * FastMath.sqrt(70.0)) % 63.0
+296:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:(35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 + 2.0 * FastMath.sqrt(70.0)) * 63.0
+297:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:(35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 + 2.0 * FastMath.sqrt(70.0)) + 63.0
+298:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:106:(35.0 + 2.0 * FastMath.sqrt(70.0)) / 63.0 |==> (35.0 + 2.0 * FastMath.sqrt(70.0)) - 63.0
+299:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:322.0 |==> 0.0
+300:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:322.0 |==> -322.0
+301:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:13.0 |==> 0.0
+302:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:13.0 |==> -13.0
+303:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:70.0 |==> 0.0
+304:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:70.0 |==> -70.0
+305:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:13.0 * FastMath.sqrt(70.0) |==> 13.0 % FastMath.sqrt(70.0)
+306:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:13.0 * FastMath.sqrt(70.0) |==> 13.0 + FastMath.sqrt(70.0)
+307:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:13.0 * FastMath.sqrt(70.0) |==> 13.0 - FastMath.sqrt(70.0)
+308:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:13.0 * FastMath.sqrt(70.0) |==> 13.0 / FastMath.sqrt(70.0)
+309:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:322.0 - 13.0 * FastMath.sqrt(70.0) |==> 322.0 % (13.0 * FastMath.sqrt(70.0))
+310:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:322.0 - 13.0 * FastMath.sqrt(70.0) |==> 322.0 * (13.0 * FastMath.sqrt(70.0))
+311:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:322.0 - 13.0 * FastMath.sqrt(70.0) |==> 322.0 + 13.0 * FastMath.sqrt(70.0)
+312:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:322.0 - 13.0 * FastMath.sqrt(70.0) |==> 322.0 / (13.0 * FastMath.sqrt(70.0))
+313:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:900.0 |==> 0.0
+314:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:900.0 |==> -900.0
+315:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:(322.0 - 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 - 13.0 * FastMath.sqrt(70.0)) % 900.0
+316:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:(322.0 - 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 - 13.0 * FastMath.sqrt(70.0)) * 900.0
+317:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:(322.0 - 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 - 13.0 * FastMath.sqrt(70.0)) + 900.0
+318:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:111:(322.0 - 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 - 13.0 * FastMath.sqrt(70.0)) - 900.0
+319:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:322.0 |==> 0.0
+320:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:322.0 |==> -322.0
+321:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:13.0 |==> 0.0
+322:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:13.0 |==> -13.0
+323:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:70.0 |==> 0.0
+324:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:70.0 |==> -70.0
+325:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:13.0 * FastMath.sqrt(70.0) |==> 13.0 % FastMath.sqrt(70.0)
+326:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:13.0 * FastMath.sqrt(70.0) |==> 13.0 + FastMath.sqrt(70.0)
+327:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:13.0 * FastMath.sqrt(70.0) |==> 13.0 - FastMath.sqrt(70.0)
+328:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:13.0 * FastMath.sqrt(70.0) |==> 13.0 / FastMath.sqrt(70.0)
+329:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:322.0 + 13.0 * FastMath.sqrt(70.0) |==> 322.0 % (13.0 * FastMath.sqrt(70.0))
+330:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:322.0 + 13.0 * FastMath.sqrt(70.0) |==> 322.0 * (13.0 * FastMath.sqrt(70.0))
+331:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:322.0 + 13.0 * FastMath.sqrt(70.0) |==> 322.0 - 13.0 * FastMath.sqrt(70.0)
+332:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:322.0 + 13.0 * FastMath.sqrt(70.0) |==> 322.0 / (13.0 * FastMath.sqrt(70.0))
+333:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:900.0 |==> 0.0
+334:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:900.0 |==> -900.0
+335:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:(322.0 + 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 + 13.0 * FastMath.sqrt(70.0)) % 900.0
+336:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:(322.0 + 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 + 13.0 * FastMath.sqrt(70.0)) * 900.0
+337:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:(322.0 + 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 + 13.0 * FastMath.sqrt(70.0)) + 900.0
+338:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:112:(322.0 + 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 + 13.0 * FastMath.sqrt(70.0)) - 900.0
+339:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:113:128.0 |==> 0.0
+340:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:113:128.0 |==> -128.0
+341:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:113:225.0 |==> 0.0
+342:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:113:225.0 |==> -225.0
+343:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:113:128.0 / 225.0 |==> 128.0 % 225.0
+344:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:113:128.0 / 225.0 |==> 128.0 * 225.0
+345:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:113:128.0 / 225.0 |==> 128.0 + 225.0
+346:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:113:128.0 / 225.0 |==> 128.0 - 225.0
+347:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:322.0 |==> 0.0
+348:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:322.0 |==> -322.0
+349:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:13.0 |==> 0.0
+350:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:13.0 |==> -13.0
+351:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:70.0 |==> 0.0
+352:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:70.0 |==> -70.0
+353:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:13.0 * FastMath.sqrt(70.0) |==> 13.0 % FastMath.sqrt(70.0)
+354:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:13.0 * FastMath.sqrt(70.0) |==> 13.0 + FastMath.sqrt(70.0)
+355:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:13.0 * FastMath.sqrt(70.0) |==> 13.0 - FastMath.sqrt(70.0)
+356:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:13.0 * FastMath.sqrt(70.0) |==> 13.0 / FastMath.sqrt(70.0)
+357:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:322.0 + 13.0 * FastMath.sqrt(70.0) |==> 322.0 % (13.0 * FastMath.sqrt(70.0))
+358:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:322.0 + 13.0 * FastMath.sqrt(70.0) |==> 322.0 * (13.0 * FastMath.sqrt(70.0))
+359:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:322.0 + 13.0 * FastMath.sqrt(70.0) |==> 322.0 - 13.0 * FastMath.sqrt(70.0)
+360:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:322.0 + 13.0 * FastMath.sqrt(70.0) |==> 322.0 / (13.0 * FastMath.sqrt(70.0))
+361:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:900.0 |==> 0.0
+362:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:900.0 |==> -900.0
+363:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:(322.0 + 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 + 13.0 * FastMath.sqrt(70.0)) % 900.0
+364:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:(322.0 + 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 + 13.0 * FastMath.sqrt(70.0)) * 900.0
+365:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:(322.0 + 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 + 13.0 * FastMath.sqrt(70.0)) + 900.0
+366:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:114:(322.0 + 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 + 13.0 * FastMath.sqrt(70.0)) - 900.0
+367:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:322.0 |==> 0.0
+368:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:322.0 |==> -322.0
+369:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:13.0 |==> 0.0
+370:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:13.0 |==> -13.0
+371:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:70.0 |==> 0.0
+372:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:70.0 |==> -70.0
+373:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:13.0 * FastMath.sqrt(70.0) |==> 13.0 % FastMath.sqrt(70.0)
+374:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:13.0 * FastMath.sqrt(70.0) |==> 13.0 + FastMath.sqrt(70.0)
+375:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:13.0 * FastMath.sqrt(70.0) |==> 13.0 - FastMath.sqrt(70.0)
+376:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:13.0 * FastMath.sqrt(70.0) |==> 13.0 / FastMath.sqrt(70.0)
+377:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:322.0 - 13.0 * FastMath.sqrt(70.0) |==> 322.0 % (13.0 * FastMath.sqrt(70.0))
+378:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:322.0 - 13.0 * FastMath.sqrt(70.0) |==> 322.0 * (13.0 * FastMath.sqrt(70.0))
+379:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:322.0 - 13.0 * FastMath.sqrt(70.0) |==> 322.0 + 13.0 * FastMath.sqrt(70.0)
+380:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:322.0 - 13.0 * FastMath.sqrt(70.0) |==> 322.0 / (13.0 * FastMath.sqrt(70.0))
+381:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:900.0 |==> 0.0
+382:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:900.0 |==> -900.0
+383:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:(322.0 - 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 - 13.0 * FastMath.sqrt(70.0)) % 900.0
+384:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:(322.0 - 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 - 13.0 * FastMath.sqrt(70.0)) * 900.0
+385:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:(322.0 - 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 - 13.0 * FastMath.sqrt(70.0)) + 900.0
+386:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator:115:(322.0 - 13.0 * FastMath.sqrt(70.0)) / 900.0 |==> (322.0 - 13.0 * FastMath.sqrt(70.0)) - 900.0
+387:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):146:ABSCISSAS_2 |==> null
+388:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):147:WEIGHTS_2 |==> null
+389:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):150:ABSCISSAS_3 |==> null
+390:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):151:WEIGHTS_3 |==> null
+391:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):154:ABSCISSAS_4 |==> null
+392:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):155:WEIGHTS_4 |==> null
+393:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):158:ABSCISSAS_5 |==> null
+394:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):159:WEIGHTS_5 |==> null
+395:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):160:break; |==> <NO-OP>
+396:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):164:2 |==> 0
+397:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):164:2 |==> -2
+398:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):164:5 |==> 0
+399:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@<init>(int,double,double,int,int):164:5 |==> -5
+400:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():209:1 |==> 0
+401:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():209:1 |==> -1
+402:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():211:2 |==> 0
+403:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():211:2 |==> -2
+404:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():215:stage(n) |==> 0.0
+405:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():218:t - oldt |==> t % oldt
+406:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():218:t - oldt |==> t * oldt
+407:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():218:t - oldt |==> t + oldt
+408:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():218:t - oldt |==> t / oldt
+409:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:FastMath.abs(oldt) + FastMath.abs(t) |==> FastMath.abs(oldt) % FastMath.abs(t)
+410:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:FastMath.abs(oldt) + FastMath.abs(t) |==> FastMath.abs(oldt) * FastMath.abs(t)
+411:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:FastMath.abs(oldt) + FastMath.abs(t) |==> FastMath.abs(oldt) - FastMath.abs(t)
+412:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:FastMath.abs(oldt) + FastMath.abs(t) |==> FastMath.abs(oldt) / FastMath.abs(t)
+413:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) |==> getRelativeAccuracy() % (FastMath.abs(oldt) + FastMath.abs(t))
+414:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) |==> getRelativeAccuracy() + (FastMath.abs(oldt) + FastMath.abs(t))
+415:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) |==> getRelativeAccuracy() - (FastMath.abs(oldt) + FastMath.abs(t))
+416:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) |==> getRelativeAccuracy() / (FastMath.abs(oldt) + FastMath.abs(t))
+417:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:0.5 |==> 0.0
+418:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:0.5 |==> -0.5
+419:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) % 0.5
+420:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) + 0.5
+421:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) - 0.5
+422:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():221:getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) / 0.5
+423:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:1 |==> 0
+424:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:1 |==> -1
+425:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:iterations.getCount() + 1 |==> iterations.getCount() % 1
+426:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:iterations.getCount() + 1 |==> iterations.getCount() * 1
+427:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:iterations.getCount() + 1 |==> iterations.getCount() - 1
+428:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:iterations.getCount() + 1 |==> iterations.getCount() / 1
+429:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:iterations.getCount() + 1 >= getMinimalIterationCount() |==> iterations.getCount() + 1 == getMinimalIterationCount()
+430:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:iterations.getCount() + 1 >= getMinimalIterationCount() |==> iterations.getCount() + 1 > getMinimalIterationCount()
+431:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:iterations.getCount() + 1 >= getMinimalIterationCount() |==> true
+432:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:delta <= limit |==> delta < limit
+433:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:delta <= limit |==> delta == limit
+434:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:delta <= limit |==> true
+435:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:(iterations.getCount() + 1 >= getMinimalIterationCount()) && (delta <= limit) |==> (iterations.getCount() + 1 >= getMinimalIterationCount()) == (delta <= limit)
+436:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:(iterations.getCount() + 1 >= getMinimalIterationCount()) && (delta <= limit) |==> false
+437:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:(iterations.getCount() + 1 >= getMinimalIterationCount()) && (delta <= limit) |==> (iterations.getCount() + 1 >= getMinimalIterationCount())
+438:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():224:(iterations.getCount() + 1 >= getMinimalIterationCount()) && (delta <= limit) |==> (delta <= limit)
+439:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():225:return t; |==> <NO-OP>
+440:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:4 |==> 0
+441:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:4 |==> -4
+442:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:delta / limit |==> delta % limit
+443:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:delta / limit |==> delta * limit
+444:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:delta / limit |==> delta + limit
+445:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:delta / limit |==> delta - limit
+446:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:0.5 |==> 0.0
+447:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:0.5 |==> -0.5
+448:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:0.5 / abscissas.length |==> 0.5 % abscissas.length
+449:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:0.5 / abscissas.length |==> 0.5 * abscissas.length
+450:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:0.5 / abscissas.length |==> 0.5 + abscissas.length
+451:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():229:0.5 / abscissas.length |==> 0.5 - abscissas.length
+452:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:ratio * n |==> ratio % n
+453:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:ratio * n |==> ratio + n
+454:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:ratio * n |==> ratio - n
+455:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:ratio * n |==> ratio / n
+456:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:1 |==> 0
+457:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:1 |==> -1
+458:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:n + 1 |==> n % 1
+459:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:n + 1 |==> n * 1
+460:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:n + 1 |==> n - 1
+461:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:n + 1 |==> n / 1
+462:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():230:n = FastMath.max((int)(ratio * n), n + 1) |==> <NO-OP>
+463:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():231:oldt = t |==> <NO-OP>
+464:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@doIntegrate():232:iterations.incrementCount() |==> <NO-OP>
+465:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):249:getMax() - getMin() |==> getMax() % getMin()
+466:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):249:getMax() - getMin() |==> getMax() * getMin()
+467:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):249:getMax() - getMin() |==> getMax() + getMin()
+468:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):249:getMax() - getMin() |==> getMax() / getMin()
+469:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):249:(getMax() - getMin()) / n |==> (getMax() - getMin()) % n
+470:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):249:(getMax() - getMin()) / n |==> (getMax() - getMin()) * n
+471:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):249:(getMax() - getMin()) / n |==> (getMax() - getMin()) + n
+472:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):249:(getMax() - getMin()) / n |==> (getMax() - getMin()) - n
+473:LVR:POS:0:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):250:2.0 |==> 0.0
+474:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):250:2.0 |==> -2.0
+475:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):250:step / 2.0 |==> step % 2.0
+476:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):250:step / 2.0 |==> step * 2.0
+477:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):250:step / 2.0 |==> step + 2.0
+478:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):250:step / 2.0 |==> step - 2.0
+479:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):253:getMin() + halfStep |==> getMin() % halfStep
+480:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):253:getMin() + halfStep |==> getMin() * halfStep
+481:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):253:getMin() + halfStep |==> getMin() - halfStep
+482:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):253:getMin() + halfStep |==> getMin() / halfStep
+483:LVR:0:POS:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):254:0.0 |==> 1.0
+484:LVR:0:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):254:0.0 |==> -1.0
+485:LVR:0:POS:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):255:0 |==> 1
+486:LVR:0:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):255:0 |==> -1
+487:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):255:i < n |==> i != n
+488:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):255:i < n |==> i <= n
+489:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):255:i < n |==> false
+490:LVR:0:POS:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):256:0 |==> 1
+491:LVR:0:NEG:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):256:0 |==> -1
+492:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):256:j < abscissas.length |==> j != abscissas.length
+493:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):256:j < abscissas.length |==> j <= abscissas.length
+494:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):256:j < abscissas.length |==> false
+495:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:halfStep * abscissas[j] |==> halfStep % abscissas[j]
+496:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:halfStep * abscissas[j] |==> halfStep + abscissas[j]
+497:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:halfStep * abscissas[j] |==> halfStep - abscissas[j]
+498:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:halfStep * abscissas[j] |==> halfStep / abscissas[j]
+499:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:midPoint + halfStep * abscissas[j] |==> midPoint % (halfStep * abscissas[j])
+500:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:midPoint + halfStep * abscissas[j] |==> midPoint * (halfStep * abscissas[j])
+501:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:midPoint + halfStep * abscissas[j] |==> midPoint - halfStep * abscissas[j]
+502:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:midPoint + halfStep * abscissas[j] |==> midPoint / (halfStep * abscissas[j])
+503:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:weights[j] * computeObjectiveValue(midPoint + halfStep * abscissas[j]) |==> weights[j] % computeObjectiveValue(midPoint + halfStep * abscissas[j])
+504:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:weights[j] * computeObjectiveValue(midPoint + halfStep * abscissas[j]) |==> weights[j] + computeObjectiveValue(midPoint + halfStep * abscissas[j])
+505:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:weights[j] * computeObjectiveValue(midPoint + halfStep * abscissas[j]) |==> weights[j] - computeObjectiveValue(midPoint + halfStep * abscissas[j])
+506:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:weights[j] * computeObjectiveValue(midPoint + halfStep * abscissas[j]) |==> weights[j] / computeObjectiveValue(midPoint + halfStep * abscissas[j])
+507:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):257:sum += weights[j] * computeObjectiveValue(midPoint + halfStep * abscissas[j]) |==> <NO-OP>
+508:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):259:midPoint += step |==> <NO-OP>
+509:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):262:halfStep * sum |==> halfStep % sum
+510:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):262:halfStep * sum |==> halfStep + sum
+511:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):262:halfStep * sum |==> halfStep - sum
+512:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.LegendreGaussIntegrator@stage(int):262:halfStep * sum |==> halfStep / sum

@@ -1,0 +1,42 @@
+digraph JacobianFunction_CFG {
+  // graph-vertices
+  v1  [label="39:  JacobianFunction (final MultivariateDifferentiableVectorFunction f)"];
+  v2  [label="40:  this.f = f"];
+  v3  [label="44:  double[][] value(double[] point)"];
+  v4  [label="47:  final DerivativeStructure[] dsX = new DerivativeStructure[point.length]"];
+  v5  [label="48:  for (  int i = 0 ; i < point.length ;   ++i)"];
+  v8  [label="endfor"];
+  v9  [label="49:  dsX[i] = new DerivativeStructure(point.length, 1, i, point[i])"];
+  v10  [label="53:  final DerivativeStructure[] dsY = f.value(dsX)"];
+  v11  [label="56:  final double[][] y = new double[dsY.length][point.length]"];
+  v12  [label="57:  final int[] orders = new int[point.length]"];
+  v13  [label="58:  for (  int i = 0 ; i < dsY.length ;   ++i)"];
+  v16  [label="endfor"];
+  v17  [label="59:  for (  int j = 0 ; j < point.length ;   ++j)"];
+  v20  [label="endfor"];
+  v21  [label="60:  orders[j] = 1"];
+  v22  [label="61:  y[i][j] = dsY[i].getPartialDerivative(orders)"];
+  v23  [label="62:  orders[j] = 0"];
+  v24  [label="66:  return y;"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v4 -> v5;
+  v5 -> v8  [label="False"];
+  v5 -> v9  [label="True"];
+  v9 -> v5;
+  v8 -> v10;
+  v10 -> v11;
+  v11 -> v12;
+  v12 -> v13;
+  v13 -> v16  [label="False"];
+  v13 -> v17  [label="True"];
+  v17 -> v20  [label="False"];
+  v17 -> v21  [label="True"];
+  v21 -> v22;
+  v22 -> v23;
+  v23 -> v17;
+  v20 -> v13;
+  v16 -> v24;
+  // end-of-graph
+}

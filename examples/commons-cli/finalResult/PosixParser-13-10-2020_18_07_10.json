@@ -1,0 +1,20 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "143"
+    ],
+    "sourceClass": "PosixParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR29",
+      "TR28",
+      "TR14"
+    ],
+    "unsatisfiedRequirement": [
+      "TR29",
+      "TR28",
+      "TR14"
+    ]
+  }
+}

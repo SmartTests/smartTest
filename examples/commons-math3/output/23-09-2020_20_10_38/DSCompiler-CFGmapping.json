@@ -1,0 +1,4262 @@
+[
+  {
+    "v1": {
+      "line": "162",
+      "statement": "DSCompiler (final int parameters, final int order,  final DSCompiler valueCompiler, final DSCompiler derivativeCompiler)"
+    }
+  },
+  {
+    "v2": {
+      "line": "166",
+      "statement": "this.parameters = parameters"
+    }
+  },
+  {
+    "v3": {
+      "line": "167",
+      "statement": "this.order  = order"
+    }
+  },
+  {
+    "v4": {
+      "line": "168",
+      "statement": "this.sizes  = compileSizes(parameters, order, valueCompiler)"
+    }
+  },
+  {
+    "v5": {
+      "line": "169",
+      "statement": "this.derivativesIndirection = compileDerivativesIndirection(parameters, order, valueCompiler, derivativeCompiler)"
+    }
+  },
+  {
+    "v6": {
+      "line": "172",
+      "statement": "this.lowerIndirection = compileLowerIndirection(parameters, order, valueCompiler, derivativeCompiler)"
+    }
+  },
+  {
+    "v7": {
+      "line": "175",
+      "statement": "this.multIndirection = compileMultiplicationIndirection(parameters, order,  valueCompiler, derivativeCompiler, lowerIndirection)"
+    }
+  },
+  {
+    "v8": {
+      "line": "178",
+      "statement": "this.compIndirection = compileCompositionIndirection(parameters, order, valueCompiler, derivativeCompiler, sizes, derivativesIndirection)"
+    }
+  },
+  {
+    "v9": {
+      "line": "191",
+      "statement": "DSCompiler getCompiler(int parameters, int order)"
+    }
+  },
+  {
+    "v10": {
+      "line": "195",
+      "statement": "final DSCompiler[][] cache = compilers.get()"
+    }
+  },
+  {
+    "v11": {
+      "line": "196",
+      "statement": "if (cache != null && cache.length > parameters && cache[parameters].length > order && cache[parameters][order] != null)"
+    }
+  },
+  {
+    "v12": {
+      "line": "199",
+      "statement": "return cache[parameters][order"
+    }
+  },
+  {
+    "v13": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v14": {
+      "line": "203",
+      "statement": "final int maxParameters = FastMath.max(parameters, cache == null ? 0"
+    }
+  },
+  {
+    "v15": {
+      "line": "204",
+      "statement": "final int maxOrder  = FastMath.max(order, cache == null ? 0"
+    }
+  },
+  {
+    "v16": {
+      "line": "205",
+      "statement": "final DSCompiler[][] newCache = new DSCompiler[maxParameters + 1][maxOrder + 1"
+    }
+  },
+  {
+    "v17": {
+      "line": "207",
+      "statement": "if (cache != null)"
+    }
+  },
+  {
+    "v18": {
+      "line": "209",
+      "statement": "for (  int i = 0 ; i < cache.length ;   ++i)"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v22": {
+      "line": "210",
+      "statement": "System.arraycopy(cache[i], 0, newCache[i], 0, cache[i].length)"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v24": {
+      "line": "215",
+      "statement": "for (  int diag = 0 ; diag <= parameters + order ;   ++diag)"
+    }
+  },
+  {
+    "v27": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v28": {
+      "line": "216",
+      "statement": "for (  int o = FastMath.max(0, diag - parameters ;   ++o) ; o <= FastMath.min(  int o = FastMath.max(0, diag - parameters ;   ++o) ; order, diag ;   ++o) ;   ++o)"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v32": {
+      "line": "217",
+      "statement": "final int p = diag - o"
+    }
+  },
+  {
+    "v33": {
+      "line": "218",
+      "statement": "if (newCache[p][o] == null)"
+    }
+  },
+  {
+    "v34": {
+      "line": "219",
+      "statement": "final DSCompiler valueCompiler  = (p == 0) ? null"
+    }
+  },
+  {
+    "v35": {
+      "line": "220",
+      "statement": "final DSCompiler derivativeCompiler = (o == 0) ? null"
+    }
+  },
+  {
+    "v36": {
+      "line": "221",
+      "statement": "newCache[p][o] = new DSCompiler(p, o, valueCompiler, derivativeCompiler)"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v38": {
+      "line": "227",
+      "statement": "compilers.compareAndSet(cache, newCache)"
+    }
+  },
+  {
+    "v39": {
+      "line": "229",
+      "statement": "return newCache[parameters][order"
+    }
+  },
+  {
+    "v40": {
+      "line": "239",
+      "statement": "int[][] compileSizes(final int parameters, final int order, final DSCompiler valueCompiler)"
+    }
+  },
+  {
+    "v41": {
+      "line": "242",
+      "statement": "final int[][] sizes = new int[parameters + 1][order + 1"
+    }
+  },
+  {
+    "v42": {
+      "line": "243",
+      "statement": "if (parameters == 0)"
+    }
+  },
+  {
+    "v43": {
+      "line": "244",
+      "statement": "Arrays.fill(sizes[0], 1)"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v45": {
+      "line": "246",
+      "statement": "System.arraycopy(valueCompiler.sizes, 0, sizes, 0, parameters)"
+    }
+  },
+  {
+    "v46": {
+      "line": "247",
+      "statement": "sizes[parameters][0] = 1"
+    }
+  },
+  {
+    "v47": {
+      "line": "248",
+      "statement": "for (  int i = 0 ; i < order ;   ++i)"
+    }
+  },
+  {
+    "v50": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v51": {
+      "line": "249",
+      "statement": "sizes[parameters][i + 1] = sizes[parameters][i] + sizes[parameters - 1][i + 1"
+    }
+  },
+  {
+    "v52": {
+      "line": "253",
+      "statement": "return sizes"
+    }
+  },
+  {
+    "v53": {
+      "line": "264",
+      "statement": "int[][] compileDerivativesIndirection(final int parameters, final int order, final DSCompiler valueCompiler, final DSCompiler derivativeCompiler)"
+    }
+  },
+  {
+    "v54": {
+      "line": "268",
+      "statement": "if (parameters == 0 || order == 0)"
+    }
+  },
+  {
+    "v55": {
+      "line": "269",
+      "statement": "return new int[1][parameters"
+    }
+  },
+  {
+    "v56": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v57": {
+      "line": "272",
+      "statement": "final int vSize = valueCompiler.derivativesIndirection.length"
+    }
+  },
+  {
+    "v58": {
+      "line": "273",
+      "statement": "final int dSize = derivativeCompiler.derivativesIndirection.length"
+    }
+  },
+  {
+    "v59": {
+      "line": "274",
+      "statement": "final int[][] derivativesIndirection = new int[vSize + dSize][parameters"
+    }
+  },
+  {
+    "v60": {
+      "line": "277",
+      "statement": "for (  int i = 0 ; i < vSize ;   ++i)"
+    }
+  },
+  {
+    "v63": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v64": {
+      "line": "279",
+      "statement": "System.arraycopy(valueCompiler.derivativesIndirection[i], 0,  derivativesIndirection[i], 0,  parameters - 1)"
+    }
+  },
+  {
+    "v65": {
+      "line": "285",
+      "statement": "for (  int i = 0 ; i < dSize ;   ++i)"
+    }
+  },
+  {
+    "v68": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v69": {
+      "line": "288",
+      "statement": "System.arraycopy(derivativeCompiler.derivativesIndirection[i], 0,  derivativesIndirection[vSize + i], 0,  parameters)"
+    }
+  },
+  {
+    "v70": {
+      "line": "293",
+      "statement": "derivativesIndirection[vSize + i][parameters - 1]++"
+    }
+  },
+  {
+    "v71": {
+      "line": "297",
+      "statement": "return derivativesIndirection"
+    }
+  },
+  {
+    "v72": {
+      "line": "312",
+      "statement": "int[] compileLowerIndirection(final int parameters, final int order, final DSCompiler valueCompiler, final DSCompiler derivativeCompiler)"
+    }
+  },
+  {
+    "v73": {
+      "line": "316",
+      "statement": "if (parameters == 0 || order <= 1)"
+    }
+  },
+  {
+    "v74": {
+      "line": "317",
+      "statement": "return new int[] { 0 }"
+    }
+  },
+  {
+    "v75": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v76": {
+      "line": "321",
+      "statement": "final int vSize = valueCompiler.lowerIndirection.length"
+    }
+  },
+  {
+    "v77": {
+      "line": "322",
+      "statement": "final int dSize = derivativeCompiler.lowerIndirection.length"
+    }
+  },
+  {
+    "v78": {
+      "line": "323",
+      "statement": "final int[] lowerIndirection = new int[vSize + dSize"
+    }
+  },
+  {
+    "v79": {
+      "line": "324",
+      "statement": "System.arraycopy(valueCompiler.lowerIndirection, 0, lowerIndirection, 0, vSize)"
+    }
+  },
+  {
+    "v80": {
+      "line": "325",
+      "statement": "for (  int i = 0 ; i < dSize ;   ++i)"
+    }
+  },
+  {
+    "v83": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v84": {
+      "line": "326",
+      "statement": "lowerIndirection[vSize + i] = valueCompiler.getSize() + derivativeCompiler.lowerIndirection[i"
+    }
+  },
+  {
+    "v85": {
+      "line": "329",
+      "statement": "return lowerIndirection"
+    }
+  },
+  {
+    "v86": {
+      "line": "346",
+      "statement": "int[][][] compileMultiplicationIndirection(final int parameters, final int order,  final DSCompiler valueCompiler,  final DSCompiler derivativeCompiler,  final int[] lowerIndirection)"
+    }
+  },
+  {
+    "v87": {
+      "line": "351",
+      "statement": "if ((parameters == 0) || (order == 0))"
+    }
+  },
+  {
+    "v88": {
+      "line": "352",
+      "statement": "return new int[][][] { { { 1, 0, 0 } } }"
+    }
+  },
+  {
+    "v89": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v90": {
+      "line": "356",
+      "statement": "final int vSize = valueCompiler.multIndirection.length"
+    }
+  },
+  {
+    "v91": {
+      "line": "357",
+      "statement": "final int dSize = derivativeCompiler.multIndirection.length"
+    }
+  },
+  {
+    "v92": {
+      "line": "358",
+      "statement": "final int[][][] multIndirection = new int[vSize + dSize][]["
+    }
+  },
+  {
+    "v93": {
+      "line": "360",
+      "statement": "System.arraycopy(valueCompiler.multIndirection, 0, multIndirection, 0, vSize)"
+    }
+  },
+  {
+    "v94": {
+      "line": "362",
+      "statement": "for (  int i = 0 ; i < dSize ;   ++i)"
+    }
+  },
+  {
+    "v97": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v98": {
+      "line": "363",
+      "statement": "final int[][] dRow = derivativeCompiler.multIndirection[i"
+    }
+  },
+  {
+    "v99": {
+      "line": "364",
+      "statement": "List<int[]> row = new ArrayList<int[]>(dRow.length * 2)"
+    }
+  },
+  {
+    "v100": {
+      "line": "365",
+      "statement": "for (  int j = 0 ; j < dRow.length ;   ++j)"
+    }
+  },
+  {
+    "v103": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v104": {
+      "line": "366",
+      "statement": "row.add(new int[] { dRow[j][0], lowerIndirection[dRow[j][1]], vSize + dRow[j][2] })"
+    }
+  },
+  {
+    "v105": {
+      "line": "367",
+      "statement": "row.add(new int[] { dRow[j][0], vSize + dRow[j][1], lowerIndirection[dRow[j][2]] })"
+    }
+  },
+  {
+    "v106": {
+      "line": "371",
+      "statement": "final List<int[]> combined = new ArrayList<int[]>(row.size())"
+    }
+  },
+  {
+    "v107": {
+      "line": "372",
+      "statement": "for (  int j = 0 ; j < row.size(  int j = 0 ;  ;   ++j) ;   ++j)"
+    }
+  },
+  {
+    "v110": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v111": {
+      "line": "373",
+      "statement": "final int[] termJ = row.get(j)"
+    }
+  },
+  {
+    "v112": {
+      "line": "374",
+      "statement": "if (termJ[0] > 0)"
+    }
+  },
+  {
+    "v113": {
+      "line": "375",
+      "statement": "for (  int k = j + 1 ; k < row.size(  int k = j + 1 ;  ;   ++k) ;   ++k)"
+    }
+  },
+  {
+    "v116": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v117": {
+      "line": "376",
+      "statement": "final int[] termK = row.get(k)"
+    }
+  },
+  {
+    "v118": {
+      "line": "377",
+      "statement": "if (termJ[1] == termK[1] && termJ[2] == termK[2])"
+    }
+  },
+  {
+    "v119": {
+      "line": "379",
+      "statement": "termJ[0] += termK[0"
+    }
+  },
+  {
+    "v120": {
+      "line": "381",
+      "statement": "termK[0] = 0"
+    }
+  },
+  {
+    "v121": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v122": {
+      "line": "384",
+      "statement": "combined.add(termJ)"
+    }
+  },
+  {
+    "v123": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v124": {
+      "line": "388",
+      "statement": "multIndirection[vSize + i] = combined.toArray(new int[combined.size()][])"
+    }
+  },
+  {
+    "v125": {
+      "line": "392",
+      "statement": "return multIndirection"
+    }
+  },
+  {
+    "v126": {
+      "line": "411",
+      "statement": "int[][][] compileCompositionIndirection(final int parameters, final int order,  final DSCompiler valueCompiler,  final DSCompiler derivativeCompiler,  final int[][] sizes,  final int[][] derivativesIndirection)"
+    }
+  },
+  {
+    "v127": {
+      "line": "418",
+      "statement": "if ((parameters == 0) || (order == 0))"
+    }
+  },
+  {
+    "v128": {
+      "line": "419",
+      "statement": "return new int[][][] { { { 1, 0 } } }"
+    }
+  },
+  {
+    "v129": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v130": {
+      "line": "422",
+      "statement": "final int vSize = valueCompiler.compIndirection.length"
+    }
+  },
+  {
+    "v131": {
+      "line": "423",
+      "statement": "final int dSize = derivativeCompiler.compIndirection.length"
+    }
+  },
+  {
+    "v132": {
+      "line": "424",
+      "statement": "final int[][][] compIndirection = new int[vSize + dSize][]["
+    }
+  },
+  {
+    "v133": {
+      "line": "427",
+      "statement": "System.arraycopy(valueCompiler.compIndirection, 0, compIndirection, 0, vSize)"
+    }
+  },
+  {
+    "v134": {
+      "line": "433",
+      "statement": "for (  int i = 0 ; i < dSize ;   ++i)"
+    }
+  },
+  {
+    "v137": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v138": {
+      "line": "434",
+      "statement": "List<int[]> row = new ArrayList<int[]>()"
+    }
+  },
+  {
+    "v139": {
+      "line": "435",
+      "statement": "for (int[] term"
+    }
+  },
+  {
+    "v140": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v141": {
+      "line": "440",
+      "statement": "int[] derivedTermF = new int[term.length + 1"
+    }
+  },
+  {
+    "v142": {
+      "line": "441",
+      "statement": "derivedTermF[0] = term[0"
+    }
+  },
+  {
+    "v143": {
+      "line": "442",
+      "statement": "derivedTermF[1] = term[1] + 1"
+    }
+  },
+  {
+    "v144": {
+      "line": "443",
+      "statement": "int[] orders = new int[parameters"
+    }
+  },
+  {
+    "v145": {
+      "line": "444",
+      "statement": "orders[parameters - 1] = 1"
+    }
+  },
+  {
+    "v146": {
+      "line": "445",
+      "statement": "derivedTermF[term.length] = getPartialDerivativeIndex(parameters, order, sizes, orders)"
+    }
+  },
+  {
+    "v147": {
+      "line": "446",
+      "statement": "for (  int j = 2 ; j < term.length ;   ++j)"
+    }
+  },
+  {
+    "v150": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v151": {
+      "line": "449",
+      "statement": "derivedTermF[j] = convertIndex(term[j], parameters,  derivativeCompiler.derivativesIndirection,  parameters, order, sizes)"
+    }
+  },
+  {
+    "v152": {
+      "line": "453",
+      "statement": "Arrays.sort(derivedTermF, 2, derivedTermF.length)"
+    }
+  },
+  {
+    "v153": {
+      "line": "454",
+      "statement": "row.add(derivedTermF)"
+    }
+  },
+  {
+    "v154": {
+      "line": "457",
+      "statement": "for (  int l = 2 ; l < term.length ;   ++l)"
+    }
+  },
+  {
+    "v157": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v158": {
+      "line": "458",
+      "statement": "int[] derivedTermG = new int[term.length"
+    }
+  },
+  {
+    "v159": {
+      "line": "459",
+      "statement": "derivedTermG[0] = term[0"
+    }
+  },
+  {
+    "v160": {
+      "line": "460",
+      "statement": "derivedTermG[1] = term[1"
+    }
+  },
+  {
+    "v161": {
+      "line": "461",
+      "statement": "for (  int j = 2 ; j < term.length ;   ++j)"
+    }
+  },
+  {
+    "v164": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v165": {
+      "line": "464",
+      "statement": "derivedTermG[j] = convertIndex(term[j], parameters,  derivativeCompiler.derivativesIndirection,  parameters, order, sizes)"
+    }
+  },
+  {
+    "v166": {
+      "line": "467",
+      "statement": "if (j == l)"
+    }
+  },
+  {
+    "v167": {
+      "line": "469",
+      "statement": "System.arraycopy(derivativesIndirection[derivedTermG[j]], 0, orders, 0, parameters)"
+    }
+  },
+  {
+    "v168": {
+      "line": "470",
+      "statement": "orders[parameters - 1]++"
+    }
+  },
+  {
+    "v169": {
+      "line": "471",
+      "statement": "derivedTermG[j] = getPartialDerivativeIndex(parameters, order, sizes, orders)"
+    }
+  },
+  {
+    "v170": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v171": {
+      "line": "474",
+      "statement": "Arrays.sort(derivedTermG, 2, derivedTermG.length)"
+    }
+  },
+  {
+    "v172": {
+      "line": "475",
+      "statement": "row.add(derivedTermG)"
+    }
+  },
+  {
+    "v173": {
+      "line": "481",
+      "statement": "final List<int[]> combined = new ArrayList<int[]>(row.size())"
+    }
+  },
+  {
+    "v174": {
+      "line": "482",
+      "statement": "for (  int j = 0 ; j < row.size(  int j = 0 ;  ;   ++j) ;   ++j)"
+    }
+  },
+  {
+    "v177": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v178": {
+      "line": "483",
+      "statement": "final int[] termJ = row.get(j)"
+    }
+  },
+  {
+    "v179": {
+      "line": "484",
+      "statement": "if (termJ[0] > 0)"
+    }
+  },
+  {
+    "v180": {
+      "line": "485",
+      "statement": "for (  int k = j + 1 ; k < row.size(  int k = j + 1 ;  ;   ++k) ;   ++k)"
+    }
+  },
+  {
+    "v183": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v184": {
+      "line": "486",
+      "statement": "final int[] termK = row.get(k)"
+    }
+  },
+  {
+    "v185": {
+      "line": "487",
+      "statement": "boolean equals = termJ.length == termK.length"
+    }
+  },
+  {
+    "v186": {
+      "line": "488",
+      "statement": "for (  int l = 1 ; equals && l < termJ.length ;   ++l)"
+    }
+  },
+  {
+    "v189": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v190": {
+      "line": "489",
+      "statement": "equals &= termJ[l] == termK[l"
+    }
+  },
+  {
+    "v191": {
+      "line": "491",
+      "statement": "if (equals)"
+    }
+  },
+  {
+    "v192": {
+      "line": "493",
+      "statement": "termJ[0] += termK[0"
+    }
+  },
+  {
+    "v193": {
+      "line": "495",
+      "statement": "termK[0] = 0"
+    }
+  },
+  {
+    "v194": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v195": {
+      "line": "498",
+      "statement": "combined.add(termJ)"
+    }
+  },
+  {
+    "v196": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v197": {
+      "line": "502",
+      "statement": "compIndirection[vSize + i] = combined.toArray(new int[combined.size()][])"
+    }
+  },
+  {
+    "v198": {
+      "line": "506",
+      "statement": "return compIndirection"
+    }
+  },
+  {
+    "v199": {
+      "line": "542",
+      "statement": "int getPartialDerivativeIndex(final int ... orders)"
+    }
+  },
+  {
+    "v200": {
+      "line": "546",
+      "statement": "if (orders.length != getFreeParameters())"
+    }
+  },
+  {
+    "v201": {
+      "line": "547",
+      "statement": "throw new DimensionMismatchException(orders.length, getFreeParameters())"
+    }
+  },
+  {
+    "v202": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v203": {
+      "line": "550",
+      "statement": "return getPartialDerivativeIndex(parameters, order, sizes, orders)"
+    }
+  },
+  {
+    "v204": {
+      "line": "564",
+      "statement": "int getPartialDerivativeIndex(final int parameters, final int order,  final int[][] sizes, final int ... orders)"
+    }
+  },
+  {
+    "v205": {
+      "line": "570",
+      "statement": "int index = 0"
+    }
+  },
+  {
+    "v206": {
+      "line": "571",
+      "statement": "int m = order"
+    }
+  },
+  {
+    "v207": {
+      "line": "572",
+      "statement": "int ordersSum = 0"
+    }
+  },
+  {
+    "v208": {
+      "line": "573",
+      "statement": "for (  int i = parameters - 1 ; i >= 0 ;   --i)"
+    }
+  },
+  {
+    "v211": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v212": {
+      "line": "576",
+      "statement": "int derivativeOrder = orders[i"
+    }
+  },
+  {
+    "v213": {
+      "line": "579",
+      "statement": "ordersSum += derivativeOrder"
+    }
+  },
+  {
+    "v214": {
+      "line": "580",
+      "statement": "if (ordersSum > order)"
+    }
+  },
+  {
+    "v215": {
+      "line": "581",
+      "statement": "throw new NumberIsTooLargeException(ordersSum, order, true)"
+    }
+  },
+  {
+    "v216": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v217": {
+      "line": "584",
+      "statement": "while (derivativeOrder-- > 0)"
+    }
+  },
+  {
+    "v218": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v219": {
+      "line": "588",
+      "statement": "index += sizes[i][m--"
+    }
+  },
+  {
+    "v220": {
+      "line": "593",
+      "statement": "return index"
+    }
+  },
+  {
+    "v221": {
+      "line": "609",
+      "statement": "int convertIndex(final int index, final int srcP, final int[][] srcDerivativesIndirection, final int destP, final int destO, final int[][] destSizes)"
+    }
+  },
+  {
+    "v222": {
+      "line": "613",
+      "statement": "int[] orders = new int[destP"
+    }
+  },
+  {
+    "v223": {
+      "line": "614",
+      "statement": "System.arraycopy(srcDerivativesIndirection[index], 0, orders, 0, FastMath.min(srcP, destP))"
+    }
+  },
+  {
+    "v224": {
+      "line": "615",
+      "statement": "return getPartialDerivativeIndex(destP, destO, destSizes, orders)"
+    }
+  },
+  {
+    "v225": {
+      "line": "626",
+      "statement": "int[] getPartialDerivativeOrders(final int index)"
+    }
+  },
+  {
+    "v226": {
+      "line": "627",
+      "statement": "return derivativesIndirection[index"
+    }
+  },
+  {
+    "v227": {
+      "line": "633",
+      "statement": "int getFreeParameters()"
+    }
+  },
+  {
+    "v228": {
+      "line": "634",
+      "statement": "return parameters"
+    }
+  },
+  {
+    "v229": {
+      "line": "640",
+      "statement": "int getOrder()"
+    }
+  },
+  {
+    "v230": {
+      "line": "641",
+      "statement": "return order"
+    }
+  },
+  {
+    "v231": {
+      "line": "651",
+      "statement": "int getSize()"
+    }
+  },
+  {
+    "v232": {
+      "line": "652",
+      "statement": "return sizes[parameters][order"
+    }
+  },
+  {
+    "v233": {
+      "line": "667",
+      "statement": "void linearCombination(final double a1, final double[] c1, final int offset1, final double a2, final double[] c2, final int offset2, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v234": {
+      "line": "670",
+      "statement": "for (  int i = 0 ; i < getSize(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v237": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v238": {
+      "line": "671",
+      "statement": "result[resultOffset + i] = MathArrays.linearCombination(a1, c1[offset1 + i], a2, c2[offset2 + i])"
+    }
+  },
+  {
+    "v239": {
+      "line": "691",
+      "statement": "void linearCombination(final double a1, final double[] c1, final int offset1, final double a2, final double[] c2, final int offset2, final double a3, final double[] c3, final int offset3, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v240": {
+      "line": "695",
+      "statement": "for (  int i = 0 ; i < getSize(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v243": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v244": {
+      "line": "696",
+      "statement": "result[resultOffset + i] = MathArrays.linearCombination(a1, c1[offset1 + i],  a2, c2[offset2 + i],  a3, c3[offset3 + i])"
+    }
+  },
+  {
+    "v245": {
+      "line": "721",
+      "statement": "void linearCombination(final double a1, final double[] c1, final int offset1, final double a2, final double[] c2, final int offset2, final double a3, final double[] c3, final int offset3, final double a4, final double[] c4, final int offset4, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v246": {
+      "line": "726",
+      "statement": "for (  int i = 0 ; i < getSize(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v249": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v250": {
+      "line": "727",
+      "statement": "result[resultOffset + i] = MathArrays.linearCombination(a1, c1[offset1 + i],  a2, c2[offset2 + i],  a3, c3[offset3 + i],  a4, c4[offset4 + i])"
+    }
+  },
+  {
+    "v251": {
+      "line": "744",
+      "statement": "void add(final double[] lhs, final int lhsOffset, final double[] rhs, final int rhsOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v252": {
+      "line": "747",
+      "statement": "for (  int i = 0 ; i < getSize(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v255": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v256": {
+      "line": "748",
+      "statement": "result[resultOffset + i] = lhs[lhsOffset + i] + rhs[rhsOffset + i"
+    }
+  },
+  {
+    "v257": {
+      "line": "760",
+      "statement": "void subtract(final double[] lhs, final int lhsOffset,  final double[] rhs, final int rhsOffset,  final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v258": {
+      "line": "763",
+      "statement": "for (  int i = 0 ; i < getSize(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v261": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v262": {
+      "line": "764",
+      "statement": "result[resultOffset + i] = lhs[lhsOffset + i] - rhs[rhsOffset + i"
+    }
+  },
+  {
+    "v263": {
+      "line": "778",
+      "statement": "void multiply(final double[] lhs, final int lhsOffset,  final double[] rhs, final int rhsOffset,  final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v264": {
+      "line": "781",
+      "statement": "for (  int i = 0 ; i < multIndirection.length ;   ++i)"
+    }
+  },
+  {
+    "v267": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v268": {
+      "line": "782",
+      "statement": "final int[][] mappingI = multIndirection[i"
+    }
+  },
+  {
+    "v269": {
+      "line": "783",
+      "statement": "double r = 0"
+    }
+  },
+  {
+    "v270": {
+      "line": "784",
+      "statement": "for (  int j = 0 ; j < mappingI.length ;   ++j)"
+    }
+  },
+  {
+    "v273": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v274": {
+      "line": "785",
+      "statement": "r += mappingI[j][0] *  lhs[lhsOffset + mappingI[j][1]] *  rhs[rhsOffset + mappingI[j][2"
+    }
+  },
+  {
+    "v275": {
+      "line": "789",
+      "statement": "result[resultOffset + i] = r"
+    }
+  },
+  {
+    "v276": {
+      "line": "803",
+      "statement": "void divide(final double[] lhs, final int lhsOffset,  final double[] rhs, final int rhsOffset,  final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v277": {
+      "line": "806",
+      "statement": "final double[] reciprocal = new double[getSize()"
+    }
+  },
+  {
+    "v278": {
+      "line": "807",
+      "statement": "pow(rhs, lhsOffset, -1, reciprocal, 0)"
+    }
+  },
+  {
+    "v279": {
+      "line": "808",
+      "statement": "multiply(lhs, lhsOffset, reciprocal, 0, result, resultOffset)"
+    }
+  },
+  {
+    "v280": {
+      "line": "820",
+      "statement": "void remainder(final double[] lhs, final int lhsOffset, final double[] rhs, final int rhsOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v281": {
+      "line": "825",
+      "statement": "final double rem = FastMath.IEEEremainder(lhs[lhsOffset], rhs[rhsOffset])"
+    }
+  },
+  {
+    "v282": {
+      "line": "826",
+      "statement": "final double k = FastMath.rint((lhs[lhsOffset] - rem) / rhs[rhsOffset])"
+    }
+  },
+  {
+    "v283": {
+      "line": "829",
+      "statement": "result[resultOffset] = rem"
+    }
+  },
+  {
+    "v284": {
+      "line": "832",
+      "statement": "for (  int i = 1 ; i < getSize(  int i = 1 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v287": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v288": {
+      "line": "833",
+      "statement": "result[resultOffset + i] = lhs[lhsOffset + i] - k * rhs[rhsOffset + i"
+    }
+  },
+  {
+    "v289": {
+      "line": "848",
+      "statement": "void pow(final double a, final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v290": {
+      "line": "854",
+      "statement": "final double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v291": {
+      "line": "855",
+      "statement": "if (a == 0)"
+    }
+  },
+  {
+    "v292": {
+      "line": "856",
+      "statement": "if (operand[operandOffset] == 0)"
+    }
+  },
+  {
+    "v293": {
+      "line": "857",
+      "statement": "function[0] = 1"
+    }
+  },
+  {
+    "v294": {
+      "line": "858",
+      "statement": "double infinity = Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v295": {
+      "line": "859",
+      "statement": "for (  int i = 1 ; i < function.length ;   ++i)"
+    }
+  },
+  {
+    "v298": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v299": {
+      "line": "860",
+      "statement": "infinity = -infinity"
+    }
+  },
+  {
+    "v300": {
+      "line": "861",
+      "statement": "function[i] = infinity"
+    }
+  },
+  {
+    "v301": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v302": {
+      "line": "863",
+      "statement": "if (operand[operandOffset] < 0)"
+    }
+  },
+  {
+    "v303": {
+      "line": "864",
+      "statement": "Arrays.fill(function, Double.NaN)"
+    }
+  },
+  {
+    "v304": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v305": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v306": {
+      "line": "867",
+      "statement": "function[0] = FastMath.pow(a, operand[operandOffset])"
+    }
+  },
+  {
+    "v307": {
+      "line": "868",
+      "statement": "final double lnA = FastMath.log(a)"
+    }
+  },
+  {
+    "v308": {
+      "line": "869",
+      "statement": "for (  int i = 1 ; i < function.length ;   ++i)"
+    }
+  },
+  {
+    "v311": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v312": {
+      "line": "870",
+      "statement": "function[i] = lnA * function[i - 1"
+    }
+  },
+  {
+    "v313": {
+      "line": "876",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v314": {
+      "line": "889",
+      "statement": "void pow(final double[] operand, final int operandOffset, final double p, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v315": {
+      "line": "894",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v316": {
+      "line": "895",
+      "statement": "double xk = FastMath.pow(operand[operandOffset], p - order)"
+    }
+  },
+  {
+    "v317": {
+      "line": "896",
+      "statement": "for (  int i = order ; i > 0 ;   --i)"
+    }
+  },
+  {
+    "v320": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v321": {
+      "line": "897",
+      "statement": "function[i] = xk"
+    }
+  },
+  {
+    "v322": {
+      "line": "898",
+      "statement": "xk *= operand[operandOffset"
+    }
+  },
+  {
+    "v323": {
+      "line": "900",
+      "statement": "function[0] = xk"
+    }
+  },
+  {
+    "v324": {
+      "line": "901",
+      "statement": "double coefficient = p"
+    }
+  },
+  {
+    "v325": {
+      "line": "902",
+      "statement": "for (  int i = 1 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v328": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v329": {
+      "line": "903",
+      "statement": "function[i] *= coefficient"
+    }
+  },
+  {
+    "v330": {
+      "line": "904",
+      "statement": "coefficient *= p - i"
+    }
+  },
+  {
+    "v331": {
+      "line": "908",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v332": {
+      "line": "921",
+      "statement": "void pow(final double[] operand, final int operandOffset, final int n, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v333": {
+      "line": "924",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v334": {
+      "line": "926",
+      "statement": "result[resultOffset] = 1.0"
+    }
+  },
+  {
+    "v335": {
+      "line": "927",
+      "statement": "Arrays.fill(result, resultOffset + 1, resultOffset + getSize(), 0)"
+    }
+  },
+  {
+    "v336": {
+      "line": "928",
+      "statement": "return"
+    }
+  },
+  {
+    "v337": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v338": {
+      "line": "933",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v339": {
+      "line": "935",
+      "statement": "if (n > 0)"
+    }
+  },
+  {
+    "v340": {
+      "line": "937",
+      "statement": "final int maxOrder = FastMath.min(order, n)"
+    }
+  },
+  {
+    "v341": {
+      "line": "938",
+      "statement": "double xk = FastMath.pow(operand[operandOffset], n - maxOrder)"
+    }
+  },
+  {
+    "v342": {
+      "line": "939",
+      "statement": "for (  int i = maxOrder ; i > 0 ;   --i)"
+    }
+  },
+  {
+    "v345": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v346": {
+      "line": "940",
+      "statement": "function[i] = xk"
+    }
+  },
+  {
+    "v347": {
+      "line": "941",
+      "statement": "xk *= operand[operandOffset"
+    }
+  },
+  {
+    "v348": {
+      "line": "943",
+      "statement": "function[0] = xk"
+    }
+  },
+  {
+    "v349": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v350": {
+      "line": "946",
+      "statement": "final double inv = 1.0 / operand[operandOffset"
+    }
+  },
+  {
+    "v351": {
+      "line": "947",
+      "statement": "double xk = FastMath.pow(inv, -n)"
+    }
+  },
+  {
+    "v352": {
+      "line": "948",
+      "statement": "for (  int i = 0 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v355": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v356": {
+      "line": "949",
+      "statement": "function[i] = xk"
+    }
+  },
+  {
+    "v357": {
+      "line": "950",
+      "statement": "xk *= inv"
+    }
+  },
+  {
+    "v358": {
+      "line": "954",
+      "statement": "double coefficient = n"
+    }
+  },
+  {
+    "v359": {
+      "line": "955",
+      "statement": "for (  int i = 1 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v362": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v363": {
+      "line": "956",
+      "statement": "function[i] *= coefficient"
+    }
+  },
+  {
+    "v364": {
+      "line": "957",
+      "statement": "coefficient *= n - i"
+    }
+  },
+  {
+    "v365": {
+      "line": "961",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v366": {
+      "line": "975",
+      "statement": "void pow(final double[] x, final int xOffset, final double[] y, final int yOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v367": {
+      "line": "978",
+      "statement": "final double[] logX = new double[getSize()"
+    }
+  },
+  {
+    "v368": {
+      "line": "979",
+      "statement": "log(x, xOffset, logX, 0)"
+    }
+  },
+  {
+    "v369": {
+      "line": "980",
+      "statement": "final double[] yLogX = new double[getSize()"
+    }
+  },
+  {
+    "v370": {
+      "line": "981",
+      "statement": "multiply(logX, 0, y, yOffset, yLogX, 0)"
+    }
+  },
+  {
+    "v371": {
+      "line": "982",
+      "statement": "exp(yLogX, 0, result, resultOffset)"
+    }
+  },
+  {
+    "v372": {
+      "line": "994",
+      "statement": "void rootN(final double[] operand, final int operandOffset, final int n, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v373": {
+      "line": "999",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v374": {
+      "line": "1000",
+      "statement": "double xk"
+    }
+  },
+  {
+    "v375": {
+      "line": "1001",
+      "statement": "if (n == 2)"
+    }
+  },
+  {
+    "v376": {
+      "line": "1002",
+      "statement": "function[0] = FastMath.sqrt(operand[operandOffset])"
+    }
+  },
+  {
+    "v377": {
+      "line": "1003",
+      "statement": "xk  = 0.5 / function[0"
+    }
+  },
+  {
+    "v378": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v379": {
+      "line": "1004",
+      "statement": "if (n == 3)"
+    }
+  },
+  {
+    "v380": {
+      "line": "1005",
+      "statement": "function[0] = FastMath.cbrt(operand[operandOffset])"
+    }
+  },
+  {
+    "v381": {
+      "line": "1006",
+      "statement": "xk  = 1.0 / (3.0 * function[0] * function[0])"
+    }
+  },
+  {
+    "v382": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v383": {
+      "line": "1008",
+      "statement": "function[0] = FastMath.pow(operand[operandOffset], 1.0 / n)"
+    }
+  },
+  {
+    "v384": {
+      "line": "1009",
+      "statement": "xk  = 1.0 / (n * FastMath.pow(function[0], n - 1))"
+    }
+  },
+  {
+    "v385": {
+      "line": "1011",
+      "statement": "final double nReciprocal = 1.0 / n"
+    }
+  },
+  {
+    "v386": {
+      "line": "1012",
+      "statement": "final double xReciprocal = 1.0 / operand[operandOffset"
+    }
+  },
+  {
+    "v387": {
+      "line": "1013",
+      "statement": "for (  int i = 1 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v390": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v391": {
+      "line": "1014",
+      "statement": "function[i] = xk"
+    }
+  },
+  {
+    "v392": {
+      "line": "1015",
+      "statement": "xk *= xReciprocal * (nReciprocal - i)"
+    }
+  },
+  {
+    "v393": {
+      "line": "1019",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v394": {
+      "line": "1031",
+      "statement": "void exp(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v395": {
+      "line": "1035",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v396": {
+      "line": "1036",
+      "statement": "Arrays.fill(function, FastMath.exp(operand[operandOffset]))"
+    }
+  },
+  {
+    "v397": {
+      "line": "1039",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v398": {
+      "line": "1051",
+      "statement": "void expm1(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v399": {
+      "line": "1055",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v400": {
+      "line": "1056",
+      "statement": "function[0] = FastMath.expm1(operand[operandOffset])"
+    }
+  },
+  {
+    "v401": {
+      "line": "1057",
+      "statement": "Arrays.fill(function, 1, 1 + order, FastMath.exp(operand[operandOffset]))"
+    }
+  },
+  {
+    "v402": {
+      "line": "1060",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v403": {
+      "line": "1072",
+      "statement": "void log(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v404": {
+      "line": "1076",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v405": {
+      "line": "1077",
+      "statement": "function[0] = FastMath.log(operand[operandOffset])"
+    }
+  },
+  {
+    "v406": {
+      "line": "1078",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v407": {
+      "line": "1079",
+      "statement": "double inv = 1.0 / operand[operandOffset"
+    }
+  },
+  {
+    "v408": {
+      "line": "1080",
+      "statement": "double xk  = inv"
+    }
+  },
+  {
+    "v409": {
+      "line": "1081",
+      "statement": "for (  int i = 1 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v412": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v413": {
+      "line": "1082",
+      "statement": "function[i] = xk"
+    }
+  },
+  {
+    "v414": {
+      "line": "1083",
+      "statement": "xk *= -i * inv"
+    }
+  },
+  {
+    "v415": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v416": {
+      "line": "1088",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v417": {
+      "line": "1099",
+      "statement": "void log1p(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v418": {
+      "line": "1103",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v419": {
+      "line": "1104",
+      "statement": "function[0] = FastMath.log1p(operand[operandOffset])"
+    }
+  },
+  {
+    "v420": {
+      "line": "1105",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v421": {
+      "line": "1106",
+      "statement": "double inv = 1.0 / (1.0 + operand[operandOffset])"
+    }
+  },
+  {
+    "v422": {
+      "line": "1107",
+      "statement": "double xk  = inv"
+    }
+  },
+  {
+    "v423": {
+      "line": "1108",
+      "statement": "for (  int i = 1 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v426": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v427": {
+      "line": "1109",
+      "statement": "function[i] = xk"
+    }
+  },
+  {
+    "v428": {
+      "line": "1110",
+      "statement": "xk *= -i * inv"
+    }
+  },
+  {
+    "v429": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v430": {
+      "line": "1115",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v431": {
+      "line": "1126",
+      "statement": "void log10(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v432": {
+      "line": "1130",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v433": {
+      "line": "1131",
+      "statement": "function[0] = FastMath.log10(operand[operandOffset])"
+    }
+  },
+  {
+    "v434": {
+      "line": "1132",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v435": {
+      "line": "1133",
+      "statement": "double inv = 1.0 / operand[operandOffset"
+    }
+  },
+  {
+    "v436": {
+      "line": "1134",
+      "statement": "double xk  = inv / FastMath.log(10.0)"
+    }
+  },
+  {
+    "v437": {
+      "line": "1135",
+      "statement": "for (  int i = 1 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v440": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v441": {
+      "line": "1136",
+      "statement": "function[i] = xk"
+    }
+  },
+  {
+    "v442": {
+      "line": "1137",
+      "statement": "xk *= -i * inv"
+    }
+  },
+  {
+    "v443": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v444": {
+      "line": "1142",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v445": {
+      "line": "1154",
+      "statement": "void cos(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v446": {
+      "line": "1158",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v447": {
+      "line": "1159",
+      "statement": "function[0] = FastMath.cos(operand[operandOffset])"
+    }
+  },
+  {
+    "v448": {
+      "line": "1160",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v449": {
+      "line": "1161",
+      "statement": "function[1] = -FastMath.sin(operand[operandOffset])"
+    }
+  },
+  {
+    "v450": {
+      "line": "1162",
+      "statement": "for (  int i = 2 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v453": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v454": {
+      "line": "1163",
+      "statement": "function[i] = -function[i - 2"
+    }
+  },
+  {
+    "v455": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v456": {
+      "line": "1168",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v457": {
+      "line": "1180",
+      "statement": "void sin(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v458": {
+      "line": "1184",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v459": {
+      "line": "1185",
+      "statement": "function[0] = FastMath.sin(operand[operandOffset])"
+    }
+  },
+  {
+    "v460": {
+      "line": "1186",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v461": {
+      "line": "1187",
+      "statement": "function[1] = FastMath.cos(operand[operandOffset])"
+    }
+  },
+  {
+    "v462": {
+      "line": "1188",
+      "statement": "for (  int i = 2 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v465": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v466": {
+      "line": "1189",
+      "statement": "function[i] = -function[i - 2"
+    }
+  },
+  {
+    "v467": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v468": {
+      "line": "1194",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v469": {
+      "line": "1206",
+      "statement": "void tan(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v470": {
+      "line": "1210",
+      "statement": "final double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v471": {
+      "line": "1211",
+      "statement": "final double t = FastMath.tan(operand[operandOffset])"
+    }
+  },
+  {
+    "v472": {
+      "line": "1212",
+      "statement": "function[0] = t"
+    }
+  },
+  {
+    "v473": {
+      "line": "1214",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v474": {
+      "line": "1223",
+      "statement": "final double[] p = new double[order + 2"
+    }
+  },
+  {
+    "v475": {
+      "line": "1224",
+      "statement": "p[1] = 1"
+    }
+  },
+  {
+    "v476": {
+      "line": "1225",
+      "statement": "final double t2 = t * t"
+    }
+  },
+  {
+    "v477": {
+      "line": "1226",
+      "statement": "for (  int n = 1 ; n <= order ;   ++n)"
+    }
+  },
+  {
+    "v480": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v481": {
+      "line": "1229",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v482": {
+      "line": "1230",
+      "statement": "p[n + 1] = n * p[n"
+    }
+  },
+  {
+    "v483": {
+      "line": "1231",
+      "statement": "for (  int k = n + 1 ; k >= 0 ;   k -= 2)"
+    }
+  },
+  {
+    "v486": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v487": {
+      "line": "1232",
+      "statement": "v = v * t2 + p[k"
+    }
+  },
+  {
+    "v488": {
+      "line": "1233",
+      "statement": "if (k > 2)"
+    }
+  },
+  {
+    "v489": {
+      "line": "1234",
+      "statement": "p[k - 2] = (k - 1) * p[k - 1] + (k - 3) * p[k - 3"
+    }
+  },
+  {
+    "v490": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v491": {
+      "line": "1235",
+      "statement": "if (k == 2)"
+    }
+  },
+  {
+    "v492": {
+      "line": "1236",
+      "statement": "p[0] = p[1"
+    }
+  },
+  {
+    "v493": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v494": {
+      "line": "1239",
+      "statement": "if ((n & 0x1) == 0)"
+    }
+  },
+  {
+    "v495": {
+      "line": "1240",
+      "statement": "v *= t"
+    }
+  },
+  {
+    "v496": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v497": {
+      "line": "1243",
+      "statement": "function[n] = v"
+    }
+  },
+  {
+    "v498": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v499": {
+      "line": "1249",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v500": {
+      "line": "1261",
+      "statement": "void acos(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v501": {
+      "line": "1265",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v502": {
+      "line": "1266",
+      "statement": "final double x = operand[operandOffset"
+    }
+  },
+  {
+    "v503": {
+      "line": "1267",
+      "statement": "function[0] = FastMath.acos(x)"
+    }
+  },
+  {
+    "v504": {
+      "line": "1268",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v505": {
+      "line": "1276",
+      "statement": "final double[] p = new double[order"
+    }
+  },
+  {
+    "v506": {
+      "line": "1277",
+      "statement": "p[0] = -1"
+    }
+  },
+  {
+    "v507": {
+      "line": "1278",
+      "statement": "final double x2  = x * x"
+    }
+  },
+  {
+    "v508": {
+      "line": "1279",
+      "statement": "final double f = 1.0 / (1 - x2)"
+    }
+  },
+  {
+    "v509": {
+      "line": "1280",
+      "statement": "double coeff = FastMath.sqrt(f)"
+    }
+  },
+  {
+    "v510": {
+      "line": "1281",
+      "statement": "function[1] = coeff * p[0"
+    }
+  },
+  {
+    "v511": {
+      "line": "1282",
+      "statement": "for (  int n = 2 ; n <= order ;   ++n)"
+    }
+  },
+  {
+    "v514": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v515": {
+      "line": "1285",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v516": {
+      "line": "1286",
+      "statement": "p[n - 1] = (n - 1) * p[n - 2"
+    }
+  },
+  {
+    "v517": {
+      "line": "1287",
+      "statement": "for (  int k = n - 1 ; k >= 0 ;   k -= 2)"
+    }
+  },
+  {
+    "v520": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v521": {
+      "line": "1288",
+      "statement": "v = v * x2 + p[k"
+    }
+  },
+  {
+    "v522": {
+      "line": "1289",
+      "statement": "if (k > 2)"
+    }
+  },
+  {
+    "v523": {
+      "line": "1290",
+      "statement": "p[k - 2] = (k - 1) * p[k - 1] + (2 * n - k) * p[k - 3"
+    }
+  },
+  {
+    "v524": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v525": {
+      "line": "1291",
+      "statement": "if (k == 2)"
+    }
+  },
+  {
+    "v526": {
+      "line": "1292",
+      "statement": "p[0] = p[1"
+    }
+  },
+  {
+    "v527": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v528": {
+      "line": "1295",
+      "statement": "if ((n & 0x1) == 0)"
+    }
+  },
+  {
+    "v529": {
+      "line": "1296",
+      "statement": "v *= x"
+    }
+  },
+  {
+    "v530": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v531": {
+      "line": "1299",
+      "statement": "coeff *= f"
+    }
+  },
+  {
+    "v532": {
+      "line": "1300",
+      "statement": "function[n] = coeff * v"
+    }
+  },
+  {
+    "v533": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v534": {
+      "line": "1306",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v535": {
+      "line": "1318",
+      "statement": "void asin(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v536": {
+      "line": "1322",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v537": {
+      "line": "1323",
+      "statement": "final double x = operand[operandOffset"
+    }
+  },
+  {
+    "v538": {
+      "line": "1324",
+      "statement": "function[0] = FastMath.asin(x)"
+    }
+  },
+  {
+    "v539": {
+      "line": "1325",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v540": {
+      "line": "1333",
+      "statement": "final double[] p = new double[order"
+    }
+  },
+  {
+    "v541": {
+      "line": "1334",
+      "statement": "p[0] = 1"
+    }
+  },
+  {
+    "v542": {
+      "line": "1335",
+      "statement": "final double x2  = x * x"
+    }
+  },
+  {
+    "v543": {
+      "line": "1336",
+      "statement": "final double f = 1.0 / (1 - x2)"
+    }
+  },
+  {
+    "v544": {
+      "line": "1337",
+      "statement": "double coeff = FastMath.sqrt(f)"
+    }
+  },
+  {
+    "v545": {
+      "line": "1338",
+      "statement": "function[1] = coeff * p[0"
+    }
+  },
+  {
+    "v546": {
+      "line": "1339",
+      "statement": "for (  int n = 2 ; n <= order ;   ++n)"
+    }
+  },
+  {
+    "v549": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v550": {
+      "line": "1342",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v551": {
+      "line": "1343",
+      "statement": "p[n - 1] = (n - 1) * p[n - 2"
+    }
+  },
+  {
+    "v552": {
+      "line": "1344",
+      "statement": "for (  int k = n - 1 ; k >= 0 ;   k -= 2)"
+    }
+  },
+  {
+    "v555": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v556": {
+      "line": "1345",
+      "statement": "v = v * x2 + p[k"
+    }
+  },
+  {
+    "v557": {
+      "line": "1346",
+      "statement": "if (k > 2)"
+    }
+  },
+  {
+    "v558": {
+      "line": "1347",
+      "statement": "p[k - 2] = (k - 1) * p[k - 1] + (2 * n - k) * p[k - 3"
+    }
+  },
+  {
+    "v559": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v560": {
+      "line": "1348",
+      "statement": "if (k == 2)"
+    }
+  },
+  {
+    "v561": {
+      "line": "1349",
+      "statement": "p[0] = p[1"
+    }
+  },
+  {
+    "v562": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v563": {
+      "line": "1352",
+      "statement": "if ((n & 0x1) == 0)"
+    }
+  },
+  {
+    "v564": {
+      "line": "1353",
+      "statement": "v *= x"
+    }
+  },
+  {
+    "v565": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v566": {
+      "line": "1356",
+      "statement": "coeff *= f"
+    }
+  },
+  {
+    "v567": {
+      "line": "1357",
+      "statement": "function[n] = coeff * v"
+    }
+  },
+  {
+    "v568": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v569": {
+      "line": "1363",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v570": {
+      "line": "1375",
+      "statement": "void atan(final double[] operand, final int operandOffset,  final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v571": {
+      "line": "1379",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v572": {
+      "line": "1380",
+      "statement": "final double x = operand[operandOffset"
+    }
+  },
+  {
+    "v573": {
+      "line": "1381",
+      "statement": "function[0] = FastMath.atan(x)"
+    }
+  },
+  {
+    "v574": {
+      "line": "1382",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v575": {
+      "line": "1390",
+      "statement": "final double[] q = new double[order"
+    }
+  },
+  {
+    "v576": {
+      "line": "1391",
+      "statement": "q[0] = 1"
+    }
+  },
+  {
+    "v577": {
+      "line": "1392",
+      "statement": "final double x2  = x * x"
+    }
+  },
+  {
+    "v578": {
+      "line": "1393",
+      "statement": "final double f = 1.0 / (1 + x2)"
+    }
+  },
+  {
+    "v579": {
+      "line": "1394",
+      "statement": "double coeff = f"
+    }
+  },
+  {
+    "v580": {
+      "line": "1395",
+      "statement": "function[1] = coeff * q[0"
+    }
+  },
+  {
+    "v581": {
+      "line": "1396",
+      "statement": "for (  int n = 2 ; n <= order ;   ++n)"
+    }
+  },
+  {
+    "v584": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v585": {
+      "line": "1399",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v586": {
+      "line": "1400",
+      "statement": "q[n - 1] = -n * q[n - 2"
+    }
+  },
+  {
+    "v587": {
+      "line": "1401",
+      "statement": "for (  int k = n - 1 ; k >= 0 ;   k -= 2)"
+    }
+  },
+  {
+    "v590": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v591": {
+      "line": "1402",
+      "statement": "v = v * x2 + q[k"
+    }
+  },
+  {
+    "v592": {
+      "line": "1403",
+      "statement": "if (k > 2)"
+    }
+  },
+  {
+    "v593": {
+      "line": "1404",
+      "statement": "q[k - 2] = (k - 1) * q[k - 1] + (k - 1 - 2 * n) * q[k - 3"
+    }
+  },
+  {
+    "v594": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v595": {
+      "line": "1405",
+      "statement": "if (k == 2)"
+    }
+  },
+  {
+    "v596": {
+      "line": "1406",
+      "statement": "q[0] = q[1"
+    }
+  },
+  {
+    "v597": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v598": {
+      "line": "1409",
+      "statement": "if ((n & 0x1) == 0)"
+    }
+  },
+  {
+    "v599": {
+      "line": "1410",
+      "statement": "v *= x"
+    }
+  },
+  {
+    "v600": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v601": {
+      "line": "1413",
+      "statement": "coeff *= f"
+    }
+  },
+  {
+    "v602": {
+      "line": "1414",
+      "statement": "function[n] = coeff * v"
+    }
+  },
+  {
+    "v603": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v604": {
+      "line": "1420",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v605": {
+      "line": "1434",
+      "statement": "void atan2(final double[] y, final int yOffset, final double[] x, final int xOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v606": {
+      "line": "1439",
+      "statement": "double[] tmp1 = new double[getSize()"
+    }
+  },
+  {
+    "v607": {
+      "line": "1440",
+      "statement": "multiply(x, xOffset, x, xOffset, tmp1, 0)"
+    }
+  },
+  {
+    "v608": {
+      "line": "1441",
+      "statement": "double[] tmp2 = new double[getSize()"
+    }
+  },
+  {
+    "v609": {
+      "line": "1442",
+      "statement": "multiply(y, yOffset, y, yOffset, tmp2, 0)"
+    }
+  },
+  {
+    "v610": {
+      "line": "1443",
+      "statement": "add(tmp1, 0, tmp2, 0, tmp2, 0)"
+    }
+  },
+  {
+    "v611": {
+      "line": "1444",
+      "statement": "rootN(tmp2, 0, 2, tmp1, 0)"
+    }
+  },
+  {
+    "v612": {
+      "line": "1446",
+      "statement": "if (x[xOffset] >= 0)"
+    }
+  },
+  {
+    "v613": {
+      "line": "1449",
+      "statement": "add(tmp1, 0, x, xOffset, tmp2, 0)"
+    }
+  },
+  {
+    "v614": {
+      "line": "1450",
+      "statement": "divide(y, yOffset, tmp2, 0, tmp1, 0)"
+    }
+  },
+  {
+    "v615": {
+      "line": "1451",
+      "statement": "atan(tmp1, 0, tmp2, 0)"
+    }
+  },
+  {
+    "v616": {
+      "line": "1452",
+      "statement": "for (  int i = 0 ; i < tmp2.length ;   ++i)"
+    }
+  },
+  {
+    "v619": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v620": {
+      "line": "1453",
+      "statement": "result[resultOffset + i] = 2 * tmp2[i"
+    }
+  },
+  {
+    "v621": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v622": {
+      "line": "1459",
+      "statement": "subtract(tmp1, 0, x, xOffset, tmp2, 0)"
+    }
+  },
+  {
+    "v623": {
+      "line": "1460",
+      "statement": "divide(y, yOffset, tmp2, 0, tmp1, 0)"
+    }
+  },
+  {
+    "v624": {
+      "line": "1461",
+      "statement": "atan(tmp1, 0, tmp2, 0)"
+    }
+  },
+  {
+    "v625": {
+      "line": "1462",
+      "statement": "result[resultOffset] = ((tmp2[0] <= 0) ? -FastMath.PI"
+    }
+  },
+  {
+    "v626": {
+      "line": "1464",
+      "statement": "for (  int i = 1 ; i < tmp2.length ;   ++i)"
+    }
+  },
+  {
+    "v629": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v630": {
+      "line": "1465",
+      "statement": "result[resultOffset + i] = -2 * tmp2[i"
+    }
+  },
+  {
+    "v631": {
+      "line": "1471",
+      "statement": "result[resultOffset] = FastMath.atan2(y[yOffset], x[xOffset])"
+    }
+  },
+  {
+    "v632": {
+      "line": "1483",
+      "statement": "void cosh(final double[] operand, final int operandOffset,  final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v633": {
+      "line": "1487",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v634": {
+      "line": "1488",
+      "statement": "function[0] = FastMath.cosh(operand[operandOffset])"
+    }
+  },
+  {
+    "v635": {
+      "line": "1489",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v636": {
+      "line": "1490",
+      "statement": "function[1] = FastMath.sinh(operand[operandOffset])"
+    }
+  },
+  {
+    "v637": {
+      "line": "1491",
+      "statement": "for (  int i = 2 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v640": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v641": {
+      "line": "1492",
+      "statement": "function[i] = function[i - 2"
+    }
+  },
+  {
+    "v642": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v643": {
+      "line": "1497",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v644": {
+      "line": "1509",
+      "statement": "void sinh(final double[] operand, final int operandOffset,  final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v645": {
+      "line": "1513",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v646": {
+      "line": "1514",
+      "statement": "function[0] = FastMath.sinh(operand[operandOffset])"
+    }
+  },
+  {
+    "v647": {
+      "line": "1515",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v648": {
+      "line": "1516",
+      "statement": "function[1] = FastMath.cosh(operand[operandOffset])"
+    }
+  },
+  {
+    "v649": {
+      "line": "1517",
+      "statement": "for (  int i = 2 ; i <= order ;   ++i)"
+    }
+  },
+  {
+    "v652": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v653": {
+      "line": "1518",
+      "statement": "function[i] = function[i - 2"
+    }
+  },
+  {
+    "v654": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v655": {
+      "line": "1523",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v656": {
+      "line": "1535",
+      "statement": "void tanh(final double[] operand, final int operandOffset,  final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v657": {
+      "line": "1539",
+      "statement": "final double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v658": {
+      "line": "1540",
+      "statement": "final double t = FastMath.tanh(operand[operandOffset])"
+    }
+  },
+  {
+    "v659": {
+      "line": "1541",
+      "statement": "function[0] = t"
+    }
+  },
+  {
+    "v660": {
+      "line": "1543",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v661": {
+      "line": "1552",
+      "statement": "final double[] p = new double[order + 2"
+    }
+  },
+  {
+    "v662": {
+      "line": "1553",
+      "statement": "p[1] = 1"
+    }
+  },
+  {
+    "v663": {
+      "line": "1554",
+      "statement": "final double t2 = t * t"
+    }
+  },
+  {
+    "v664": {
+      "line": "1555",
+      "statement": "for (  int n = 1 ; n <= order ;   ++n)"
+    }
+  },
+  {
+    "v667": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v668": {
+      "line": "1558",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v669": {
+      "line": "1559",
+      "statement": "p[n + 1] = -n * p[n"
+    }
+  },
+  {
+    "v670": {
+      "line": "1560",
+      "statement": "for (  int k = n + 1 ; k >= 0 ;   k -= 2)"
+    }
+  },
+  {
+    "v673": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v674": {
+      "line": "1561",
+      "statement": "v = v * t2 + p[k"
+    }
+  },
+  {
+    "v675": {
+      "line": "1562",
+      "statement": "if (k > 2)"
+    }
+  },
+  {
+    "v676": {
+      "line": "1563",
+      "statement": "p[k - 2] = (k - 1) * p[k - 1] - (k - 3) * p[k - 3"
+    }
+  },
+  {
+    "v677": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v678": {
+      "line": "1564",
+      "statement": "if (k == 2)"
+    }
+  },
+  {
+    "v679": {
+      "line": "1565",
+      "statement": "p[0] = p[1"
+    }
+  },
+  {
+    "v680": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v681": {
+      "line": "1568",
+      "statement": "if ((n & 0x1) == 0)"
+    }
+  },
+  {
+    "v682": {
+      "line": "1569",
+      "statement": "v *= t"
+    }
+  },
+  {
+    "v683": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v684": {
+      "line": "1572",
+      "statement": "function[n] = v"
+    }
+  },
+  {
+    "v685": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v686": {
+      "line": "1578",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v687": {
+      "line": "1590",
+      "statement": "void acosh(final double[] operand, final int operandOffset,  final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v688": {
+      "line": "1594",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v689": {
+      "line": "1595",
+      "statement": "final double x = operand[operandOffset"
+    }
+  },
+  {
+    "v690": {
+      "line": "1596",
+      "statement": "function[0] = FastMath.acosh(x)"
+    }
+  },
+  {
+    "v691": {
+      "line": "1597",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v692": {
+      "line": "1605",
+      "statement": "final double[] p = new double[order"
+    }
+  },
+  {
+    "v693": {
+      "line": "1606",
+      "statement": "p[0] = 1"
+    }
+  },
+  {
+    "v694": {
+      "line": "1607",
+      "statement": "final double x2  = x * x"
+    }
+  },
+  {
+    "v695": {
+      "line": "1608",
+      "statement": "final double f = 1.0 / (x2 - 1)"
+    }
+  },
+  {
+    "v696": {
+      "line": "1609",
+      "statement": "double coeff = FastMath.sqrt(f)"
+    }
+  },
+  {
+    "v697": {
+      "line": "1610",
+      "statement": "function[1] = coeff * p[0"
+    }
+  },
+  {
+    "v698": {
+      "line": "1611",
+      "statement": "for (  int n = 2 ; n <= order ;   ++n)"
+    }
+  },
+  {
+    "v701": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v702": {
+      "line": "1614",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v703": {
+      "line": "1615",
+      "statement": "p[n - 1] = (1 - n) * p[n - 2"
+    }
+  },
+  {
+    "v704": {
+      "line": "1616",
+      "statement": "for (  int k = n - 1 ; k >= 0 ;   k -= 2)"
+    }
+  },
+  {
+    "v707": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v708": {
+      "line": "1617",
+      "statement": "v = v * x2 + p[k"
+    }
+  },
+  {
+    "v709": {
+      "line": "1618",
+      "statement": "if (k > 2)"
+    }
+  },
+  {
+    "v710": {
+      "line": "1619",
+      "statement": "p[k - 2] = (1 - k) * p[k - 1] + (k - 2 * n) * p[k - 3"
+    }
+  },
+  {
+    "v711": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v712": {
+      "line": "1620",
+      "statement": "if (k == 2)"
+    }
+  },
+  {
+    "v713": {
+      "line": "1621",
+      "statement": "p[0] = -p[1"
+    }
+  },
+  {
+    "v714": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v715": {
+      "line": "1624",
+      "statement": "if ((n & 0x1) == 0)"
+    }
+  },
+  {
+    "v716": {
+      "line": "1625",
+      "statement": "v *= x"
+    }
+  },
+  {
+    "v717": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v718": {
+      "line": "1628",
+      "statement": "coeff *= f"
+    }
+  },
+  {
+    "v719": {
+      "line": "1629",
+      "statement": "function[n] = coeff * v"
+    }
+  },
+  {
+    "v720": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v721": {
+      "line": "1635",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v722": {
+      "line": "1647",
+      "statement": "void asinh(final double[] operand, final int operandOffset,  final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v723": {
+      "line": "1651",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v724": {
+      "line": "1652",
+      "statement": "final double x = operand[operandOffset"
+    }
+  },
+  {
+    "v725": {
+      "line": "1653",
+      "statement": "function[0] = FastMath.asinh(x)"
+    }
+  },
+  {
+    "v726": {
+      "line": "1654",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v727": {
+      "line": "1662",
+      "statement": "final double[] p = new double[order"
+    }
+  },
+  {
+    "v728": {
+      "line": "1663",
+      "statement": "p[0] = 1"
+    }
+  },
+  {
+    "v729": {
+      "line": "1664",
+      "statement": "final double x2  = x * x"
+    }
+  },
+  {
+    "v730": {
+      "line": "1665",
+      "statement": "final double f = 1.0 / (1 + x2)"
+    }
+  },
+  {
+    "v731": {
+      "line": "1666",
+      "statement": "double coeff = FastMath.sqrt(f)"
+    }
+  },
+  {
+    "v732": {
+      "line": "1667",
+      "statement": "function[1] = coeff * p[0"
+    }
+  },
+  {
+    "v733": {
+      "line": "1668",
+      "statement": "for (  int n = 2 ; n <= order ;   ++n)"
+    }
+  },
+  {
+    "v736": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v737": {
+      "line": "1671",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v738": {
+      "line": "1672",
+      "statement": "p[n - 1] = (1 - n) * p[n - 2"
+    }
+  },
+  {
+    "v739": {
+      "line": "1673",
+      "statement": "for (  int k = n - 1 ; k >= 0 ;   k -= 2)"
+    }
+  },
+  {
+    "v742": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v743": {
+      "line": "1674",
+      "statement": "v = v * x2 + p[k"
+    }
+  },
+  {
+    "v744": {
+      "line": "1675",
+      "statement": "if (k > 2)"
+    }
+  },
+  {
+    "v745": {
+      "line": "1676",
+      "statement": "p[k - 2] = (k - 1) * p[k - 1] + (k - 2 * n) * p[k - 3"
+    }
+  },
+  {
+    "v746": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v747": {
+      "line": "1677",
+      "statement": "if (k == 2)"
+    }
+  },
+  {
+    "v748": {
+      "line": "1678",
+      "statement": "p[0] = p[1"
+    }
+  },
+  {
+    "v749": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v750": {
+      "line": "1681",
+      "statement": "if ((n & 0x1) == 0)"
+    }
+  },
+  {
+    "v751": {
+      "line": "1682",
+      "statement": "v *= x"
+    }
+  },
+  {
+    "v752": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v753": {
+      "line": "1685",
+      "statement": "coeff *= f"
+    }
+  },
+  {
+    "v754": {
+      "line": "1686",
+      "statement": "function[n] = coeff * v"
+    }
+  },
+  {
+    "v755": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v756": {
+      "line": "1692",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v757": {
+      "line": "1704",
+      "statement": "void atanh(final double[] operand, final int operandOffset, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v758": {
+      "line": "1708",
+      "statement": "double[] function = new double[1 + order"
+    }
+  },
+  {
+    "v759": {
+      "line": "1709",
+      "statement": "final double x = operand[operandOffset"
+    }
+  },
+  {
+    "v760": {
+      "line": "1710",
+      "statement": "function[0] = FastMath.atanh(x)"
+    }
+  },
+  {
+    "v761": {
+      "line": "1711",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v762": {
+      "line": "1719",
+      "statement": "final double[] q = new double[order"
+    }
+  },
+  {
+    "v763": {
+      "line": "1720",
+      "statement": "q[0] = 1"
+    }
+  },
+  {
+    "v764": {
+      "line": "1721",
+      "statement": "final double x2 = x * x"
+    }
+  },
+  {
+    "v765": {
+      "line": "1722",
+      "statement": "final double f  = 1.0 / (1 - x2)"
+    }
+  },
+  {
+    "v766": {
+      "line": "1723",
+      "statement": "double coeff = f"
+    }
+  },
+  {
+    "v767": {
+      "line": "1724",
+      "statement": "function[1] = coeff * q[0"
+    }
+  },
+  {
+    "v768": {
+      "line": "1725",
+      "statement": "for (  int n = 2 ; n <= order ;   ++n)"
+    }
+  },
+  {
+    "v771": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v772": {
+      "line": "1728",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v773": {
+      "line": "1729",
+      "statement": "q[n - 1] = n * q[n - 2"
+    }
+  },
+  {
+    "v774": {
+      "line": "1730",
+      "statement": "for (  int k = n - 1 ; k >= 0 ;   k -= 2)"
+    }
+  },
+  {
+    "v777": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v778": {
+      "line": "1731",
+      "statement": "v = v * x2 + q[k"
+    }
+  },
+  {
+    "v779": {
+      "line": "1732",
+      "statement": "if (k > 2)"
+    }
+  },
+  {
+    "v780": {
+      "line": "1733",
+      "statement": "q[k - 2] = (k - 1) * q[k - 1] + (2 * n - k + 1) * q[k - 3"
+    }
+  },
+  {
+    "v781": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v782": {
+      "line": "1734",
+      "statement": "if (k == 2)"
+    }
+  },
+  {
+    "v783": {
+      "line": "1735",
+      "statement": "q[0] = q[1"
+    }
+  },
+  {
+    "v784": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v785": {
+      "line": "1738",
+      "statement": "if ((n & 0x1) == 0)"
+    }
+  },
+  {
+    "v786": {
+      "line": "1739",
+      "statement": "v *= x"
+    }
+  },
+  {
+    "v787": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v788": {
+      "line": "1742",
+      "statement": "coeff *= f"
+    }
+  },
+  {
+    "v789": {
+      "line": "1743",
+      "statement": "function[n] = coeff * v"
+    }
+  },
+  {
+    "v790": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v791": {
+      "line": "1749",
+      "statement": "compose(operand, operandOffset, function, result, resultOffset)"
+    }
+  },
+  {
+    "v792": {
+      "line": "1763",
+      "statement": "void compose(final double[] operand, final int operandOffset, final double[] f, final double[] result, final int resultOffset)"
+    }
+  },
+  {
+    "v793": {
+      "line": "1765",
+      "statement": "for (  int i = 0 ; i < compIndirection.length ;   ++i)"
+    }
+  },
+  {
+    "v796": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v797": {
+      "line": "1766",
+      "statement": "final int[][] mappingI = compIndirection[i"
+    }
+  },
+  {
+    "v798": {
+      "line": "1767",
+      "statement": "double r = 0"
+    }
+  },
+  {
+    "v799": {
+      "line": "1768",
+      "statement": "for (  int j = 0 ; j < mappingI.length ;   ++j)"
+    }
+  },
+  {
+    "v802": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v803": {
+      "line": "1769",
+      "statement": "final int[] mappingIJ = mappingI[j"
+    }
+  },
+  {
+    "v804": {
+      "line": "1770",
+      "statement": "double product = mappingIJ[0] * f[mappingIJ[1"
+    }
+  },
+  {
+    "v805": {
+      "line": "1771",
+      "statement": "for (  int k = 2 ; k < mappingIJ.length ;   ++k)"
+    }
+  },
+  {
+    "v808": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v809": {
+      "line": "1772",
+      "statement": "product *= operand[operandOffset + mappingIJ[k"
+    }
+  },
+  {
+    "v810": {
+      "line": "1774",
+      "statement": "r += product"
+    }
+  },
+  {
+    "v811": {
+      "line": "1776",
+      "statement": "result[resultOffset + i] = r"
+    }
+  },
+  {
+    "v812": {
+      "line": "1787",
+      "statement": "double taylor(final double[] ds, final int dsOffset, final double ... delta)"
+    }
+  },
+  {
+    "v813": {
+      "line": "1789",
+      "statement": "double value = 0"
+    }
+  },
+  {
+    "v814": {
+      "line": "1790",
+      "statement": "for (  int i = getSize( ;   --i) - 1 ; i >= 0 ;   --i)"
+    }
+  },
+  {
+    "v817": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v818": {
+      "line": "1791",
+      "statement": "final int[] orders = getPartialDerivativeOrders(i)"
+    }
+  },
+  {
+    "v819": {
+      "line": "1792",
+      "statement": "double term = ds[dsOffset + i"
+    }
+  },
+  {
+    "v820": {
+      "line": "1793",
+      "statement": "for (  int k = 0 ; k < orders.length ;   ++k)"
+    }
+  },
+  {
+    "v823": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v824": {
+      "line": "1794",
+      "statement": "if (orders[k] > 0)"
+    }
+  },
+  {
+    "v825": {
+      "line": "1795",
+      "statement": "try"
+    }
+  },
+  {
+    "v826": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v827": {
+      "line": "1796",
+      "statement": "term *= FastMath.pow(delta[k], orders[k]) / CombinatoricsUtils.factorial(orders[k])"
+    }
+  },
+  {
+    "v828": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v829": {
+      "line": "1798",
+      "statement": "catch (NotPositiveException e)"
+    }
+  },
+  {
+    "v830": {
+      "line": "1800",
+      "statement": "throw new MathInternalError(e)"
+    }
+  },
+  {
+    "v831": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v832": {
+      "line": "1804",
+      "statement": "value += term"
+    }
+  },
+  {
+    "v833": {
+      "line": "1806",
+      "statement": "return value"
+    }
+  },
+  {
+    "v834": {
+      "line": "1813",
+      "statement": "void checkCompatibility(final DSCompiler compiler)"
+    }
+  },
+  {
+    "v835": {
+      "line": "1815",
+      "statement": "if (parameters != compiler.parameters)"
+    }
+  },
+  {
+    "v836": {
+      "line": "1816",
+      "statement": "throw new DimensionMismatchException(parameters, compiler.parameters)"
+    }
+  },
+  {
+    "v837": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v838": {
+      "line": "1818",
+      "statement": "if (order != compiler.order)"
+    }
+  },
+  {
+    "v839": {
+      "line": "1819",
+      "statement": "throw new DimensionMismatchException(order, compiler.order)"
+    }
+  },
+  {
+    "v840": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  }
+]

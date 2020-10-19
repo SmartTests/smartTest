@@ -1,0 +1,812 @@
+[
+  {
+    "v1": {
+      "line": "54",
+      "statement": "LaguerreSolver ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "55",
+      "statement": "this(DEFAULT_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "62",
+      "statement": "LaguerreSolver (double absoluteAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "63",
+      "statement": "super(absoluteAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "71",
+      "statement": "LaguerreSolver (double relativeAccuracy, double absoluteAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "73",
+      "statement": "super(relativeAccuracy, absoluteAccuracy)"
+    }
+  },
+  {
+    "v7": {
+      "line": "82",
+      "statement": "LaguerreSolver (double relativeAccuracy, double absoluteAccuracy, double functionValueAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "85",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy)"
+    }
+  },
+  {
+    "v9": {
+      "line": "92",
+      "statement": "double doSolve()"
+    }
+  },
+  {
+    "v10": {
+      "line": "96",
+      "statement": "final double min = getMin()"
+    }
+  },
+  {
+    "v11": {
+      "line": "97",
+      "statement": "final double max = getMax()"
+    }
+  },
+  {
+    "v12": {
+      "line": "98",
+      "statement": "final double initial = getStartValue()"
+    }
+  },
+  {
+    "v13": {
+      "line": "99",
+      "statement": "final double functionValueAccuracy = getFunctionValueAccuracy()"
+    }
+  },
+  {
+    "v14": {
+      "line": "101",
+      "statement": "verifySequence(min, initial, max)"
+    }
+  },
+  {
+    "v15": {
+      "line": "104",
+      "statement": "final double yInitial = computeObjectiveValue(initial)"
+    }
+  },
+  {
+    "v16": {
+      "line": "105",
+      "statement": "if (FastMath.abs(yInitial) <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v17": {
+      "line": "106",
+      "statement": "return initial"
+    }
+  },
+  {
+    "v18": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v19": {
+      "line": "110",
+      "statement": "final double yMin = computeObjectiveValue(min)"
+    }
+  },
+  {
+    "v20": {
+      "line": "111",
+      "statement": "if (FastMath.abs(yMin) <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v21": {
+      "line": "112",
+      "statement": "return min"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v23": {
+      "line": "116",
+      "statement": "if (yInitial * yMin < 0)"
+    }
+  },
+  {
+    "v24": {
+      "line": "117",
+      "statement": "return laguerre(min, initial, yMin, yInitial)"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "121",
+      "statement": "final double yMax = computeObjectiveValue(max)"
+    }
+  },
+  {
+    "v27": {
+      "line": "122",
+      "statement": "if (FastMath.abs(yMax) <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v28": {
+      "line": "123",
+      "statement": "return max"
+    }
+  },
+  {
+    "v29": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v30": {
+      "line": "127",
+      "statement": "if (yInitial * yMax < 0)"
+    }
+  },
+  {
+    "v31": {
+      "line": "128",
+      "statement": "return laguerre(initial, max, yInitial, yMax)"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v33": {
+      "line": "131",
+      "statement": "throw new NoBracketingException(min, max, yMin, yMax)"
+    }
+  },
+  {
+    "v34": {
+      "line": "155",
+      "statement": "double laguerre(double lo, double hi,  double fLo, double fHi)"
+    }
+  },
+  {
+    "v35": {
+      "line": "157",
+      "statement": "final Complex c[] = ComplexUtils.convertToComplex(getCoefficients())"
+    }
+  },
+  {
+    "v36": {
+      "line": "159",
+      "statement": "final Complex initial = new Complex(0.5 * (lo + hi), 0)"
+    }
+  },
+  {
+    "v37": {
+      "line": "160",
+      "statement": "final Complex z = complexSolver.solve(c, initial)"
+    }
+  },
+  {
+    "v38": {
+      "line": "161",
+      "statement": "if (complexSolver.isRoot(lo, hi, z))"
+    }
+  },
+  {
+    "v39": {
+      "line": "162",
+      "statement": "return z.getReal()"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v41": {
+      "line": "164",
+      "statement": "double r = Double.NaN"
+    }
+  },
+  {
+    "v42": {
+      "line": "166",
+      "statement": "Complex[] root = complexSolver.solveAll(c, initial)"
+    }
+  },
+  {
+    "v43": {
+      "line": "167",
+      "statement": "for (  int i = 0 ; i < root.length ;   i++)"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v47": {
+      "line": "168",
+      "statement": "if (complexSolver.isRoot(lo, hi, root[i]))"
+    }
+  },
+  {
+    "v48": {
+      "line": "169",
+      "statement": "r = root[i].getReal()"
+    }
+  },
+  {
+    "v49": {
+      "line": "170",
+      "statement": "break"
+    }
+  },
+  {
+    "v50": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v51": {
+      "line": "173",
+      "statement": "return r"
+    }
+  },
+  {
+    "v52": {
+      "line": "193",
+      "statement": "Complex[] solveAllComplex(double[] coefficients,  double initial)"
+    }
+  },
+  {
+    "v53": {
+      "line": "198",
+      "statement": "setup(Integer.MAX_VALUE, new PolynomialFunction(coefficients), Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY, initial)"
+    }
+  },
+  {
+    "v54": {
+      "line": "203",
+      "statement": "return complexSolver.solveAll(ComplexUtils.convertToComplex(coefficients), new Complex(initial, 0d))"
+    }
+  },
+  {
+    "v55": {
+      "line": "223",
+      "statement": "Complex solveComplex(double[] coefficients, double initial)"
+    }
+  },
+  {
+    "v56": {
+      "line": "228",
+      "statement": "setup(Integer.MAX_VALUE, new PolynomialFunction(coefficients), Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY, initial)"
+    }
+  },
+  {
+    "v57": {
+      "line": "233",
+      "statement": "return complexSolver.solve(ComplexUtils.convertToComplex(coefficients),  new Complex(initial, 0d))"
+    }
+  },
+  {
+    "v58": {
+      "line": "250",
+      "statement": "boolean isRoot(double min, double max, Complex z)"
+    }
+  },
+  {
+    "v59": {
+      "line": "251",
+      "statement": "if (isSequence(min, z.getReal(), max))"
+    }
+  },
+  {
+    "v60": {
+      "line": "252",
+      "statement": "double tolerance = FastMath.max(getRelativeAccuracy() * z.abs(), getAbsoluteAccuracy())"
+    }
+  },
+  {
+    "v61": {
+      "line": "253",
+      "statement": "return (FastMath.abs(z.getImaginary()) <= tolerance) ||  (z.abs() <= getFunctionValueAccuracy())"
+    }
+  },
+  {
+    "v62": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v63": {
+      "line": "256",
+      "statement": "return false"
+    }
+  },
+  {
+    "v64": {
+      "line": "272",
+      "statement": "Complex[] solveAll(Complex coefficients[], Complex initial)"
+    }
+  },
+  {
+    "v65": {
+      "line": "276",
+      "statement": "if (coefficients == null)"
+    }
+  },
+  {
+    "v66": {
+      "line": "277",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v67": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v68": {
+      "line": "279",
+      "statement": "final int n = coefficients.length - 1"
+    }
+  },
+  {
+    "v69": {
+      "line": "280",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v70": {
+      "line": "281",
+      "statement": "throw new NoDataException(LocalizedFormats.POLYNOMIAL)"
+    }
+  },
+  {
+    "v71": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v72": {
+      "line": "284",
+      "statement": "final Complex c[] = new Complex[n + 1"
+    }
+  },
+  {
+    "v73": {
+      "line": "285",
+      "statement": "for (  int i = 0 ; i <= n ;   i++)"
+    }
+  },
+  {
+    "v76": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v77": {
+      "line": "286",
+      "statement": "c[i] = coefficients[i"
+    }
+  },
+  {
+    "v78": {
+      "line": "290",
+      "statement": "final Complex root[] = new Complex[n"
+    }
+  },
+  {
+    "v79": {
+      "line": "291",
+      "statement": "for (  int i = 0 ; i < n ;   i++)"
+    }
+  },
+  {
+    "v82": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v83": {
+      "line": "292",
+      "statement": "final Complex subarray[] = new Complex[n - i + 1"
+    }
+  },
+  {
+    "v84": {
+      "line": "293",
+      "statement": "System.arraycopy(c, 0, subarray, 0, subarray.length)"
+    }
+  },
+  {
+    "v85": {
+      "line": "294",
+      "statement": "root[i] = solve(subarray, initial)"
+    }
+  },
+  {
+    "v86": {
+      "line": "296",
+      "statement": "Complex newc = c[n - i"
+    }
+  },
+  {
+    "v87": {
+      "line": "297",
+      "statement": "Complex oldc = null"
+    }
+  },
+  {
+    "v88": {
+      "line": "298",
+      "statement": "for (  int j = n - i - 1 ; j >= 0 ;   j--)"
+    }
+  },
+  {
+    "v91": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v92": {
+      "line": "299",
+      "statement": "oldc = c[j"
+    }
+  },
+  {
+    "v93": {
+      "line": "300",
+      "statement": "c[j] = newc"
+    }
+  },
+  {
+    "v94": {
+      "line": "301",
+      "statement": "newc = oldc.add(newc.multiply(root[i]))"
+    }
+  },
+  {
+    "v95": {
+      "line": "305",
+      "statement": "return root"
+    }
+  },
+  {
+    "v96": {
+      "line": "321",
+      "statement": "Complex solve(Complex coefficients[], Complex initial)"
+    }
+  },
+  {
+    "v97": {
+      "line": "325",
+      "statement": "if (coefficients == null)"
+    }
+  },
+  {
+    "v98": {
+      "line": "326",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v99": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v100": {
+      "line": "329",
+      "statement": "final int n = coefficients.length - 1"
+    }
+  },
+  {
+    "v101": {
+      "line": "330",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v102": {
+      "line": "331",
+      "statement": "throw new NoDataException(LocalizedFormats.POLYNOMIAL)"
+    }
+  },
+  {
+    "v103": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v104": {
+      "line": "334",
+      "statement": "final double absoluteAccuracy = getAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v105": {
+      "line": "335",
+      "statement": "final double relativeAccuracy = getRelativeAccuracy()"
+    }
+  },
+  {
+    "v106": {
+      "line": "336",
+      "statement": "final double functionValueAccuracy = getFunctionValueAccuracy()"
+    }
+  },
+  {
+    "v107": {
+      "line": "338",
+      "statement": "final Complex nC  = new Complex(n, 0)"
+    }
+  },
+  {
+    "v108": {
+      "line": "339",
+      "statement": "final Complex n1C = new Complex(n - 1, 0)"
+    }
+  },
+  {
+    "v109": {
+      "line": "341",
+      "statement": "Complex z = initial"
+    }
+  },
+  {
+    "v110": {
+      "line": "342",
+      "statement": "Complex oldz = new Complex(Double.POSITIVE_INFINITY,  Double.POSITIVE_INFINITY)"
+    }
+  },
+  {
+    "v111": {
+      "line": "344",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v112": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v113": {
+      "line": "347",
+      "statement": "Complex pv = coefficients[n"
+    }
+  },
+  {
+    "v114": {
+      "line": "348",
+      "statement": "Complex dv = Complex.ZERO"
+    }
+  },
+  {
+    "v115": {
+      "line": "349",
+      "statement": "Complex d2v = Complex.ZERO"
+    }
+  },
+  {
+    "v116": {
+      "line": "350",
+      "statement": "for (  int j = n-1 ; j >= 0 ;   j--)"
+    }
+  },
+  {
+    "v119": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v120": {
+      "line": "351",
+      "statement": "d2v = dv.add(z.multiply(d2v))"
+    }
+  },
+  {
+    "v121": {
+      "line": "352",
+      "statement": "dv = pv.add(z.multiply(dv))"
+    }
+  },
+  {
+    "v122": {
+      "line": "353",
+      "statement": "pv = coefficients[j].add(z.multiply(pv))"
+    }
+  },
+  {
+    "v123": {
+      "line": "355",
+      "statement": "d2v = d2v.multiply(new Complex(2.0, 0.0))"
+    }
+  },
+  {
+    "v124": {
+      "line": "358",
+      "statement": "final double tolerance = FastMath.max(relativeAccuracy * z.abs(), absoluteAccuracy)"
+    }
+  },
+  {
+    "v125": {
+      "line": "360",
+      "statement": "if ((z.subtract(oldz)).abs() <= tolerance)"
+    }
+  },
+  {
+    "v126": {
+      "line": "361",
+      "statement": "return z"
+    }
+  },
+  {
+    "v127": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v128": {
+      "line": "363",
+      "statement": "if (pv.abs() <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v129": {
+      "line": "364",
+      "statement": "return z"
+    }
+  },
+  {
+    "v130": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v131": {
+      "line": "368",
+      "statement": "final Complex G = dv.divide(pv)"
+    }
+  },
+  {
+    "v132": {
+      "line": "369",
+      "statement": "final Complex G2 = G.multiply(G)"
+    }
+  },
+  {
+    "v133": {
+      "line": "370",
+      "statement": "final Complex H = G2.subtract(d2v.divide(pv))"
+    }
+  },
+  {
+    "v134": {
+      "line": "371",
+      "statement": "final Complex delta = n1C.multiply((nC.multiply(H)).subtract(G2))"
+    }
+  },
+  {
+    "v135": {
+      "line": "373",
+      "statement": "final Complex deltaSqrt = delta.sqrt()"
+    }
+  },
+  {
+    "v136": {
+      "line": "374",
+      "statement": "final Complex dplus = G.add(deltaSqrt)"
+    }
+  },
+  {
+    "v137": {
+      "line": "375",
+      "statement": "final Complex dminus = G.subtract(deltaSqrt)"
+    }
+  },
+  {
+    "v138": {
+      "line": "376",
+      "statement": "final Complex denominator = dplus.abs() > dminus.abs() ? dplus"
+    }
+  },
+  {
+    "v139": {
+      "line": "379",
+      "statement": "if (denominator.equals(new Complex(0.0, 0.0)))"
+    }
+  },
+  {
+    "v140": {
+      "line": "380",
+      "statement": "z = z.add(new Complex(absoluteAccuracy, absoluteAccuracy))"
+    }
+  },
+  {
+    "v141": {
+      "line": "381",
+      "statement": "oldz = new Complex(Double.POSITIVE_INFINITY,  Double.POSITIVE_INFINITY)"
+    }
+  },
+  {
+    "v142": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v143": {
+      "line": "384",
+      "statement": "oldz = z"
+    }
+  },
+  {
+    "v144": {
+      "line": "385",
+      "statement": "z = z.subtract(nC.divide(denominator))"
+    }
+  },
+  {
+    "v145": {
+      "line": "387",
+      "statement": "incrementEvaluationCount()"
+    }
+  }
+]

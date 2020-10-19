@@ -1,0 +1,266 @@
+[
+  {
+    "v1": {
+      "line": "50",
+      "statement": "UniformIntegerDistribution (int lower, int upper)"
+    }
+  },
+  {
+    "v2": {
+      "line": "52",
+      "statement": "this(new Well19937c(), lower, upper)"
+    }
+  },
+  {
+    "v3": {
+      "line": "65",
+      "statement": "UniformIntegerDistribution (RandomGenerator rng, int lower, int upper)"
+    }
+  },
+  {
+    "v4": {
+      "line": "69",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v5": {
+      "line": "71",
+      "statement": "if (lower >= upper)"
+    }
+  },
+  {
+    "v6": {
+      "line": "72",
+      "statement": "throw new NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "76",
+      "statement": "this.lower = lower"
+    }
+  },
+  {
+    "v9": {
+      "line": "77",
+      "statement": "this.upper = upper"
+    }
+  },
+  {
+    "v10": {
+      "line": "81",
+      "statement": "double probability(int x)"
+    }
+  },
+  {
+    "v11": {
+      "line": "82",
+      "statement": "if (x < lower || x > upper)"
+    }
+  },
+  {
+    "v12": {
+      "line": "83",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v13": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v14": {
+      "line": "85",
+      "statement": "return 1.0 / (upper - lower + 1)"
+    }
+  },
+  {
+    "v15": {
+      "line": "89",
+      "statement": "double cumulativeProbability(int x)"
+    }
+  },
+  {
+    "v16": {
+      "line": "90",
+      "statement": "if (x < lower)"
+    }
+  },
+  {
+    "v17": {
+      "line": "91",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v18": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v19": {
+      "line": "93",
+      "statement": "if (x > upper)"
+    }
+  },
+  {
+    "v20": {
+      "line": "94",
+      "statement": "return 1"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "96",
+      "statement": "return (x - lower + 1.0) / (upper - lower + 1.0)"
+    }
+  },
+  {
+    "v23": {
+      "line": "105",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v24": {
+      "line": "106",
+      "statement": "return 0.5 * (lower + upper)"
+    }
+  },
+  {
+    "v25": {
+      "line": "115",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v26": {
+      "line": "116",
+      "statement": "double n = upper - lower + 1"
+    }
+  },
+  {
+    "v27": {
+      "line": "117",
+      "statement": "return (n * n - 1) / 12.0"
+    }
+  },
+  {
+    "v28": {
+      "line": "128",
+      "statement": "int getSupportLowerBound()"
+    }
+  },
+  {
+    "v29": {
+      "line": "129",
+      "statement": "return lower"
+    }
+  },
+  {
+    "v30": {
+      "line": "140",
+      "statement": "int getSupportUpperBound()"
+    }
+  },
+  {
+    "v31": {
+      "line": "141",
+      "statement": "return upper"
+    }
+  },
+  {
+    "v32": {
+      "line": "151",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v33": {
+      "line": "152",
+      "statement": "return true"
+    }
+  },
+  {
+    "v34": {
+      "line": "157",
+      "statement": "int sample()"
+    }
+  },
+  {
+    "v35": {
+      "line": "158",
+      "statement": "final int max = (upper - lower) + 1"
+    }
+  },
+  {
+    "v36": {
+      "line": "159",
+      "statement": "if (max <= 0)"
+    }
+  },
+  {
+    "v37": {
+      "line": "163",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v38": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v39": {
+      "line": "164",
+      "statement": "final int r = random.nextInt()"
+    }
+  },
+  {
+    "v40": {
+      "line": "165",
+      "statement": "if (r >= lower && r <= upper)"
+    }
+  },
+  {
+    "v41": {
+      "line": "167",
+      "statement": "return r"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v44": {
+      "line": "172",
+      "statement": "return lower + random.nextInt(max)"
+    }
+  }
+]

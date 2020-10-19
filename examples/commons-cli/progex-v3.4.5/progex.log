@@ -1,0 +1,20 @@
+======= LOG CREATED on Tue 2020/Oct/13 18:07:12:338 =======
+
+PROGEX (Program Graph Extractor)  [ v3.4.5 ]
+Visit project website @ https://github.com/ghaffarian/progex
+
+PROGEX execution config:
+  Language = Java
+  Output format = DOT
+  Output directory = ../output/13-10-2020_18_07_12/
+  Analysis types = [CFG]
+  Input paths = 
+        /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/PosixParser.java
+
+
+# Java source files = 1
+
+
+Control-Flow Analysis
+=====================
+CFG exported to: ../output/13-10-2020_18_07_12/PosixParser-CFG.dot

@@ -1,0 +1,8 @@
+digraph BasicParser_CFG {
+  // graph-vertices
+  v1  [label="43:  String[] flatten(@SuppressWarnings('unused') final Options options, final String[] arguments, @SuppressWarnings('unused') final boolean stopAtNonOption)"];
+  v2  [label="48:  return arguments;"];
+  // graph-edges
+  v1 -> v2;
+  // end-of-graph
+}

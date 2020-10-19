@@ -1,0 +1,43 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "70"
+    ],
+    "sourceClass": "PolynomialFunction"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR2",
+      "TR3"
+    ],
+    "affectedTest": [
+      "testAddition",
+      "testConstants",
+      "testLinear",
+      "testMath341",
+      "testMultiplication",
+      "testQuadratic",
+      "testQuintic",
+      "testSerial",
+      "testString",
+      "testSubtraction",
+      "testfirstDerivativeComparison"
+    ],
+    "testReran": [
+      "testMultiplication",
+      "testfirstDerivativeComparison",
+      "testSerial",
+      "testQuintic",
+      "testAddition",
+      "testConstants",
+      "testLinear",
+      "testString",
+      "testMath341",
+      "testSubtraction",
+      "testQuadratic"
+    ],
+    "deletedTest": [
+      "testMultiplication"
+    ]
+  }
+}

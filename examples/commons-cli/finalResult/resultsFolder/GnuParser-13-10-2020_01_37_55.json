@@ -1,0 +1,20 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "67"
+    ],
+    "sourceClass": "GnuParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR15",
+      "TR13"
+    ],
+    "affectedTest": [
+      "testSingleDash"
+    ],
+    "testReran": [
+      "testSingleDash"
+    ]
+  }
+}

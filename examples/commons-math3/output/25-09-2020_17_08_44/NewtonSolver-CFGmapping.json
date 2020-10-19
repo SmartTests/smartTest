@@ -1,0 +1,110 @@
+[
+  {
+    "v1": {
+      "line": "41",
+      "statement": "NewtonSolver ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "42",
+      "statement": "this(DEFAULT_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "49",
+      "statement": "NewtonSolver (double absoluteAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "50",
+      "statement": "super(absoluteAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "67",
+      "statement": "double solve(int maxEval, final DifferentiableUnivariateFunction f, final double min, final double max)"
+    }
+  },
+  {
+    "v6": {
+      "line": "70",
+      "statement": "return super.solve(maxEval, f, UnivariateSolverUtils.midpoint(min, max))"
+    }
+  },
+  {
+    "v7": {
+      "line": "77",
+      "statement": "double doSolve()"
+    }
+  },
+  {
+    "v8": {
+      "line": "79",
+      "statement": "final double startValue = getStartValue()"
+    }
+  },
+  {
+    "v9": {
+      "line": "80",
+      "statement": "final double absoluteAccuracy = getAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v10": {
+      "line": "82",
+      "statement": "double x0 = startValue"
+    }
+  },
+  {
+    "v11": {
+      "line": "83",
+      "statement": "double x1"
+    }
+  },
+  {
+    "v12": {
+      "line": "84",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v13": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v14": {
+      "line": "85",
+      "statement": "x1 = x0 - (computeObjectiveValue(x0) / computeDerivativeObjectiveValue(x0))"
+    }
+  },
+  {
+    "v15": {
+      "line": "86",
+      "statement": "if (FastMath.abs(x1 - x0) <= absoluteAccuracy)"
+    }
+  },
+  {
+    "v16": {
+      "line": "87",
+      "statement": "return x1"
+    }
+  },
+  {
+    "v17": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v18": {
+      "line": "90",
+      "statement": "x0 = x1"
+    }
+  }
+]

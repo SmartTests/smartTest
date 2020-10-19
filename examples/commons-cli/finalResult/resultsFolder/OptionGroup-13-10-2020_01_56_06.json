@@ -1,0 +1,44 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "98",
+      "96",
+      "102"
+    ],
+    "sourceClass": "OptionGroup"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR7"
+    ],
+    "deletedRequirementYesTest": [
+      "TR10",
+      "TR9"
+    ],
+    "affectedTest": [
+      "testTwoLongOptionsFromGroup",
+      "testTwoOptionsFromGroup",
+      "testSingleLongOption",
+      "testSingleOptionFromGroup",
+      "testTwoOptionsFromDifferentGroup",
+      "testTwoOptionsFromGroupWithProperties",
+      "testTwoValidLongOptions",
+      "testTwoValidOptions",
+      "testValidLongOnlyOptions"
+    ],
+    "testReran": [
+      "testTwoLongOptionsFromGroup",
+      "testTwoValidOptions",
+      "testValidLongOnlyOptions",
+      "testSingleOptionFromGroup",
+      "testTwoValidLongOptions",
+      "testSingleLongOption",
+      "testTwoOptionsFromGroup",
+      "testTwoOptionsFromGroupWithProperties",
+      "testTwoOptionsFromDifferentGroup"
+    ],
+    "newTestRequirement": [
+      "TR10"
+    ]
+  }
+}

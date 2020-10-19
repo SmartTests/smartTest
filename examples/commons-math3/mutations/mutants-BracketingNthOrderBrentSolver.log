@@ -1,0 +1,574 @@
+1:EVR:<DIVIDE(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver:59:1.0 / 16.0 |==> 0.0
+2:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):85:2 |==> 0
+3:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):85:2 |==> -2
+4:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):85:maximalOrder < 2 |==> maximalOrder != 2
+5:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):85:maximalOrder < 2 |==> maximalOrder <= 2
+6:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):85:maximalOrder < 2 |==> false
+7:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):86:2 |==> 0
+8:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):86:2 |==> -2
+9:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):86:true |==> false
+10:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):88:maximalOrder |==> 0
+11:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,int):89:this.allowed = AllowedSolution.ANY_SIDE |==> <NO-OP>
+12:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):105:2 |==> 0
+13:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):105:2 |==> -2
+14:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):105:maximalOrder < 2 |==> maximalOrder != 2
+15:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):105:maximalOrder < 2 |==> maximalOrder <= 2
+16:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):105:maximalOrder < 2 |==> false
+17:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):106:2 |==> 0
+18:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):106:2 |==> -2
+19:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):106:true |==> false
+20:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):108:maximalOrder |==> 0
+21:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,int):109:this.allowed = AllowedSolution.ANY_SIDE |==> <NO-OP>
+22:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):127:2 |==> 0
+23:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):127:2 |==> -2
+24:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):127:maximalOrder < 2 |==> maximalOrder != 2
+25:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):127:maximalOrder < 2 |==> maximalOrder <= 2
+26:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):127:maximalOrder < 2 |==> false
+27:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):128:2 |==> 0
+28:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):128:2 |==> -2
+29:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):128:true |==> false
+30:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):130:maximalOrder |==> 0
+31:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@<init>(double,double,double,int):131:this.allowed = AllowedSolution.ANY_SIDE |==> <NO-OP>
+32:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@getMaximalOrder():138:maximalOrder |==> 0
+33:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():150:1 |==> 0
+34:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():150:1 |==> -1
+35:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():150:maximalOrder + 1 |==> maximalOrder % 1
+36:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():150:maximalOrder + 1 |==> maximalOrder * 1
+37:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():150:maximalOrder + 1 |==> maximalOrder - 1
+38:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():150:maximalOrder + 1 |==> maximalOrder / 1
+39:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():151:1 |==> 0
+40:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():151:1 |==> -1
+41:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():151:maximalOrder + 1 |==> maximalOrder % 1
+42:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():151:maximalOrder + 1 |==> maximalOrder * 1
+43:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():151:maximalOrder + 1 |==> maximalOrder - 1
+44:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():151:maximalOrder + 1 |==> maximalOrder / 1
+45:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():152:0 |==> 1
+46:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():152:0 |==> -1
+47:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():152:x[0] = getMin() |==> <NO-OP>
+48:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():153:1 |==> 0
+49:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():153:1 |==> -1
+50:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():153:x[1] = getStartValue() |==> <NO-OP>
+51:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():154:2 |==> 0
+52:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():154:2 |==> -2
+53:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():154:x[2] = getMax() |==> <NO-OP>
+54:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():155:0 |==> 1
+55:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():155:0 |==> -1
+56:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():155:1 |==> 0
+57:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():155:1 |==> -1
+58:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():155:2 |==> 0
+59:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():155:2 |==> -2
+60:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():155:verifySequence(x[0], x[1], x[2]) |==> <NO-OP>
+61:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():158:1 |==> 0
+62:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():158:1 |==> -1
+63:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():158:1 |==> 0
+64:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():158:1 |==> -1
+65:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():158:y[1] = computeObjectiveValue(x[1]) |==> <NO-OP>
+66:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():159:1 |==> 0
+67:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():159:1 |==> -1
+68:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():159:0.0 |==> 1.0
+69:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():159:0.0 |==> -1.0
+70:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():159:1 |==> 0
+71:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():159:1 |==> -1
+72:COR:Precision.equals(y[1], 0.0, 1):TRUE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():159:Precision.equals(y[1], 0.0, 1) |==> false
+73:COR:Precision.equals(y[1], 0.0, 1):FALSE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():159:Precision.equals(y[1], 0.0, 1) |==> true
+74:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():161:1 |==> 0
+75:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():161:1 |==> -1
+76:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():161:return x[Config.__M_NO == 0 && Config.COVERED(74, 75) ? 1 : Config.__M_NO == 75 ? -1 : Config.__M_NO == 74 ? 0 : 1]; |==> <NO-OP>
+77:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():165:0 |==> 1
+78:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():165:0 |==> -1
+79:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():165:0 |==> 1
+80:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():165:0 |==> -1
+81:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():165:y[0] = computeObjectiveValue(x[0]) |==> <NO-OP>
+82:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():166:0 |==> 1
+83:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():166:0 |==> -1
+84:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():166:0.0 |==> 1.0
+85:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():166:0.0 |==> -1.0
+86:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():166:1 |==> 0
+87:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():166:1 |==> -1
+88:COR:Precision.equals(y[0], 0.0, 1):TRUE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():166:Precision.equals(y[0], 0.0, 1) |==> false
+89:COR:Precision.equals(y[0], 0.0, 1):FALSE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():166:Precision.equals(y[0], 0.0, 1) |==> true
+90:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():168:0 |==> 1
+91:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():168:0 |==> -1
+92:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():168:return x[Config.__M_NO == 0 && Config.COVERED(90, 91) ? 0 : Config.__M_NO == 91 ? -1 : Config.__M_NO == 90 ? 1 : 0]; |==> <NO-OP>
+93:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:0 |==> 1
+94:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:0 |==> -1
+95:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:1 |==> 0
+96:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:1 |==> -1
+97:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:y[0] * y[1] |==> y[0] % y[1]
+98:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:y[0] * y[1] |==> y[0] + y[1]
+99:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:y[0] * y[1] |==> y[0] - y[1]
+100:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:y[0] * y[1] |==> y[0] / y[1]
+101:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:0 |==> 1
+102:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:0 |==> -1
+103:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:y[0] * y[1] < 0 |==> y[0] * y[1] != 0
+104:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:y[0] * y[1] < 0 |==> y[0] * y[1] <= 0
+105:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():173:y[0] * y[1] < 0 |==> false
+106:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():176:2 |==> 0
+107:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():176:2 |==> -2
+108:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():177:1 |==> 0
+109:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():177:1 |==> -1
+110:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():182:2 |==> 0
+111:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():182:2 |==> -2
+112:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():182:2 |==> 0
+113:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():182:2 |==> -2
+114:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():182:y[2] = computeObjectiveValue(x[2]) |==> <NO-OP>
+115:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():183:2 |==> 0
+116:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():183:2 |==> -2
+117:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():183:0.0 |==> 1.0
+118:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():183:0.0 |==> -1.0
+119:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():183:1 |==> 0
+120:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():183:1 |==> -1
+121:COR:Precision.equals(y[2], 0.0, 1):TRUE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():183:Precision.equals(y[2], 0.0, 1) |==> false
+122:COR:Precision.equals(y[2], 0.0, 1):FALSE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():183:Precision.equals(y[2], 0.0, 1) |==> true
+123:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():185:2 |==> 0
+124:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():185:2 |==> -2
+125:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():185:return x[Config.__M_NO == 0 && Config.COVERED(123, 124) ? 2 : Config.__M_NO == 124 ? -2 : Config.__M_NO == 123 ? 0 : 2]; |==> <NO-OP>
+126:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:1 |==> 0
+127:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:1 |==> -1
+128:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:2 |==> 0
+129:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:2 |==> -2
+130:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:y[1] * y[2] |==> y[1] % y[2]
+131:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:y[1] * y[2] |==> y[1] + y[2]
+132:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:y[1] * y[2] |==> y[1] - y[2]
+133:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:y[1] * y[2] |==> y[1] / y[2]
+134:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:0 |==> 1
+135:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:0 |==> -1
+136:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:y[1] * y[2] < 0 |==> y[1] * y[2] != 0
+137:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:y[1] * y[2] < 0 |==> y[1] * y[2] <= 0
+138:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():188:y[1] * y[2] < 0 |==> false
+139:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():190:3 |==> 0
+140:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():190:3 |==> -3
+141:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():191:2 |==> 0
+142:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():191:2 |==> -2
+143:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():193:0 |==> 1
+144:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():193:0 |==> -1
+145:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():193:2 |==> 0
+146:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():193:2 |==> -2
+147:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():193:0 |==> 1
+148:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():193:0 |==> -1
+149:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():193:2 |==> 0
+150:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():193:2 |==> -2
+151:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():199:new double[x.length] |==> null
+152:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():202:1 |==> 0
+153:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():202:1 |==> -1
+154:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():202:signChangeIndex - 1 |==> signChangeIndex % 1
+155:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():202:signChangeIndex - 1 |==> signChangeIndex * 1
+156:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():202:signChangeIndex - 1 |==> signChangeIndex + 1
+157:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():202:signChangeIndex - 1 |==> signChangeIndex / 1
+158:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():203:1 |==> 0
+159:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():203:1 |==> -1
+160:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():203:signChangeIndex - 1 |==> signChangeIndex % 1
+161:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():203:signChangeIndex - 1 |==> signChangeIndex * 1
+162:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():203:signChangeIndex - 1 |==> signChangeIndex + 1
+163:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():203:signChangeIndex - 1 |==> signChangeIndex / 1
+164:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():204:FastMath.abs(yA) |==> 0.0
+165:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():205:0 |==> 1
+166:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():205:0 |==> -1
+167:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():206:x[signChangeIndex] |==> 0.0
+168:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():207:y[signChangeIndex] |==> 0.0
+169:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():208:FastMath.abs(yB) |==> 0.0
+170:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():209:0 |==> 1
+171:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():209:0 |==> -1
+172:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():216:getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)) |==> getRelativeAccuracy() % FastMath.max(FastMath.abs(xA), FastMath.abs(xB))
+173:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():216:getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)) |==> getRelativeAccuracy() + FastMath.max(FastMath.abs(xA), FastMath.abs(xB))
+174:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():216:getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)) |==> getRelativeAccuracy() - FastMath.max(FastMath.abs(xA), FastMath.abs(xB))
+175:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():216:getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)) |==> getRelativeAccuracy() / FastMath.max(FastMath.abs(xA), FastMath.abs(xB))
+176:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():215:getAbsoluteAccuracy() + getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)) |==> getAbsoluteAccuracy() % (getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)))
+177:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():215:getAbsoluteAccuracy() + getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)) |==> getAbsoluteAccuracy() * (getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)))
+178:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():215:getAbsoluteAccuracy() + getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)) |==> getAbsoluteAccuracy() - getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB))
+179:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():215:getAbsoluteAccuracy() + getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)) |==> getAbsoluteAccuracy() / (getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB)))
+180:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:xB - xA |==> xB % xA
+181:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:xB - xA |==> xB * xA
+182:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:xB - xA |==> xB + xA
+183:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:xB - xA |==> xB / xA
+184:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:(xB - xA) <= xTol |==> (xB - xA) < xTol
+185:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:(xB - xA) <= xTol |==> (xB - xA) == xTol
+186:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:(xB - xA) <= xTol |==> true
+187:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:FastMath.max(absYA, absYB) < getFunctionValueAccuracy() |==> FastMath.max(absYA, absYB) != getFunctionValueAccuracy()
+188:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:FastMath.max(absYA, absYB) < getFunctionValueAccuracy() |==> FastMath.max(absYA, absYB) <= getFunctionValueAccuracy()
+189:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:FastMath.max(absYA, absYB) < getFunctionValueAccuracy() |==> false
+190:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:((xB - xA) <= xTol) || (FastMath.max(absYA, absYB) < getFunctionValueAccuracy()) |==> ((xB - xA) <= xTol) != (FastMath.max(absYA, absYB) < getFunctionValueAccuracy())
+191:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:((xB - xA) <= xTol) || (FastMath.max(absYA, absYB) < getFunctionValueAccuracy()) |==> ((xB - xA) <= xTol)
+192:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:((xB - xA) <= xTol) || (FastMath.max(absYA, absYB) < getFunctionValueAccuracy()) |==> (FastMath.max(absYA, absYB) < getFunctionValueAccuracy())
+193:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():217:((xB - xA) <= xTol) || (FastMath.max(absYA, absYB) < getFunctionValueAccuracy()) |==> true
+194:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():220:absYA < absYB |==> absYA != absYB
+195:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():220:absYA < absYB |==> absYA <= absYB
+196:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():220:absYA < absYB |==> false
+197:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():220:return Config.__M_NO == 196 ? false : Config.__M_NO == 195 ? absYA <= absYB : Config.__M_NO == 194 ? absYA != absYB : Config.__M_NO == 0 && Config.COVERED(194, 196) ? absYA < absYB : absYA < absYB ? xA : xB; |==> <NO-OP>
+198:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():222:return xA; |==> <NO-OP>
+199:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():224:return xB; |==> <NO-OP>
+200:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():226:0 |==> 1
+201:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():226:0 |==> -1
+202:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():226:yA <= 0 |==> yA < 0
+203:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():226:yA <= 0 |==> yA == 0
+204:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():226:yA <= 0 |==> true
+205:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():226:return (Config.__M_NO == 204 ? true : Config.__M_NO == 203 ? yA == 0 : Config.__M_NO == 202 ? yA < 0 : Config.__M_NO == 0 && Config.COVERED(202, 204) ? yA <= 0 : yA <= (Config.__M_NO == 0 && Config.COVERED(200, 201) ? 0 : Config.__M_NO == 201 ? -1 : Config.__M_NO == 200 ? 1 : 0)) ? xA : xB; |==> <NO-OP>
+206:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():228:0 |==> 1
+207:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():228:0 |==> -1
+208:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():228:yA < 0 |==> yA != 0
+209:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():228:yA < 0 |==> yA <= 0
+210:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():228:yA < 0 |==> false
+211:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():228:return (Config.__M_NO == 210 ? false : Config.__M_NO == 209 ? yA <= 0 : Config.__M_NO == 208 ? yA != 0 : Config.__M_NO == 0 && Config.COVERED(208, 210) ? yA < 0 : yA < (Config.__M_NO == 0 && Config.COVERED(206, 207) ? 0 : Config.__M_NO == 207 ? -1 : Config.__M_NO == 206 ? 1 : 0)) ? xB : xA; |==> <NO-OP>
+212:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():237:agingA >= MAXIMAL_AGING |==> agingA == MAXIMAL_AGING
+213:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():237:agingA >= MAXIMAL_AGING |==> agingA > MAXIMAL_AGING
+214:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():237:agingA >= MAXIMAL_AGING |==> true
+215:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():239:agingA - MAXIMAL_AGING |==> agingA % MAXIMAL_AGING
+216:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():239:agingA - MAXIMAL_AGING |==> agingA * MAXIMAL_AGING
+217:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():239:agingA - MAXIMAL_AGING |==> agingA + MAXIMAL_AGING
+218:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():239:agingA - MAXIMAL_AGING |==> agingA / MAXIMAL_AGING
+219:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:1 |==> 0
+220:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:1 |==> -1
+221:SOR:<<(int,int):>>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:1 << p |==> 1 >> p
+222:SOR:<<(int,int):>>>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:1 << p |==> 1 >>> p
+223:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:1 |==> 0
+224:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:1 |==> -1
+225:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:(1 << p) - 1 |==> (1 << p) % 1
+226:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:(1 << p) - 1 |==> (1 << p) * 1
+227:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:(1 << p) - 1 |==> (1 << p) + 1
+228:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():240:(1 << p) - 1 |==> (1 << p) / 1
+229:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():241:1 |==> 0
+230:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():241:1 |==> -1
+231:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():241:p + 1 |==> p % 1
+232:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():241:p + 1 |==> p * 1
+233:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():241:p + 1 |==> p - 1
+234:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():241:p + 1 |==> p / 1
+235:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA * yA |==> weightA % yA
+236:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA * yA |==> weightA + yA
+237:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA * yA |==> weightA - yA
+238:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA * yA |==> weightA / yA
+239:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightB * REDUCTION_FACTOR |==> weightB % REDUCTION_FACTOR
+240:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightB * REDUCTION_FACTOR |==> weightB + REDUCTION_FACTOR
+241:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightB * REDUCTION_FACTOR |==> weightB - REDUCTION_FACTOR
+242:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightB * REDUCTION_FACTOR |==> weightB / REDUCTION_FACTOR
+243:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightB * REDUCTION_FACTOR * yB |==> weightB * REDUCTION_FACTOR % yB
+244:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightB * REDUCTION_FACTOR * yB |==> weightB * REDUCTION_FACTOR + yB
+245:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightB * REDUCTION_FACTOR * yB |==> weightB * REDUCTION_FACTOR - yB
+246:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightB * REDUCTION_FACTOR * yB |==> weightB * REDUCTION_FACTOR / yB
+247:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA * yA - weightB * REDUCTION_FACTOR * yB |==> weightA * yA % (weightB * REDUCTION_FACTOR * yB)
+248:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA * yA - weightB * REDUCTION_FACTOR * yB |==> weightA * yA * (weightB * REDUCTION_FACTOR * yB)
+249:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA * yA - weightB * REDUCTION_FACTOR * yB |==> weightA * yA + weightB * REDUCTION_FACTOR * yB
+250:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA * yA - weightB * REDUCTION_FACTOR * yB |==> weightA * yA / (weightB * REDUCTION_FACTOR * yB)
+251:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA + weightB |==> weightA % weightB
+252:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA + weightB |==> weightA * weightB
+253:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA + weightB |==> weightA - weightB
+254:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:weightA + weightB |==> weightA / weightB
+255:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) |==> (weightA * yA - weightB * REDUCTION_FACTOR * yB) % (weightA + weightB)
+256:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) |==> (weightA * yA - weightB * REDUCTION_FACTOR * yB) * (weightA + weightB)
+257:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) |==> (weightA * yA - weightB * REDUCTION_FACTOR * yB) + (weightA + weightB)
+258:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():242:(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) |==> (weightA * yA - weightB * REDUCTION_FACTOR * yB) - (weightA + weightB)
+259:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():243:agingB >= MAXIMAL_AGING |==> agingB == MAXIMAL_AGING
+260:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():243:agingB >= MAXIMAL_AGING |==> agingB > MAXIMAL_AGING
+261:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():243:agingB >= MAXIMAL_AGING |==> true
+262:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():245:agingB - MAXIMAL_AGING |==> agingB % MAXIMAL_AGING
+263:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():245:agingB - MAXIMAL_AGING |==> agingB * MAXIMAL_AGING
+264:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():245:agingB - MAXIMAL_AGING |==> agingB + MAXIMAL_AGING
+265:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():245:agingB - MAXIMAL_AGING |==> agingB / MAXIMAL_AGING
+266:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():246:1 |==> 0
+267:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():246:1 |==> -1
+268:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():246:p + 1 |==> p % 1
+269:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():246:p + 1 |==> p * 1
+270:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():246:p + 1 |==> p - 1
+271:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():246:p + 1 |==> p / 1
+272:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:1 |==> 0
+273:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:1 |==> -1
+274:SOR:<<(int,int):>>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:1 << p |==> 1 >> p
+275:SOR:<<(int,int):>>>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:1 << p |==> 1 >>> p
+276:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:1 |==> 0
+277:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:1 |==> -1
+278:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:(1 << p) - 1 |==> (1 << p) % 1
+279:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:(1 << p) - 1 |==> (1 << p) * 1
+280:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:(1 << p) - 1 |==> (1 << p) + 1
+281:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():247:(1 << p) - 1 |==> (1 << p) / 1
+282:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightB * yB |==> weightB % yB
+283:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightB * yB |==> weightB + yB
+284:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightB * yB |==> weightB - yB
+285:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightB * yB |==> weightB / yB
+286:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA * REDUCTION_FACTOR |==> weightA % REDUCTION_FACTOR
+287:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA * REDUCTION_FACTOR |==> weightA + REDUCTION_FACTOR
+288:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA * REDUCTION_FACTOR |==> weightA - REDUCTION_FACTOR
+289:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA * REDUCTION_FACTOR |==> weightA / REDUCTION_FACTOR
+290:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA * REDUCTION_FACTOR * yA |==> weightA * REDUCTION_FACTOR % yA
+291:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA * REDUCTION_FACTOR * yA |==> weightA * REDUCTION_FACTOR + yA
+292:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA * REDUCTION_FACTOR * yA |==> weightA * REDUCTION_FACTOR - yA
+293:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA * REDUCTION_FACTOR * yA |==> weightA * REDUCTION_FACTOR / yA
+294:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightB * yB - weightA * REDUCTION_FACTOR * yA |==> weightB * yB % (weightA * REDUCTION_FACTOR * yA)
+295:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightB * yB - weightA * REDUCTION_FACTOR * yA |==> weightB * yB * (weightA * REDUCTION_FACTOR * yA)
+296:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightB * yB - weightA * REDUCTION_FACTOR * yA |==> weightB * yB + weightA * REDUCTION_FACTOR * yA
+297:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightB * yB - weightA * REDUCTION_FACTOR * yA |==> weightB * yB / (weightA * REDUCTION_FACTOR * yA)
+298:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA + weightB |==> weightA % weightB
+299:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA + weightB |==> weightA * weightB
+300:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA + weightB |==> weightA - weightB
+301:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:weightA + weightB |==> weightA / weightB
+302:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:(weightB * yB - weightA * REDUCTION_FACTOR * yA) / (weightA + weightB) |==> (weightB * yB - weightA * REDUCTION_FACTOR * yA) % (weightA + weightB)
+303:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:(weightB * yB - weightA * REDUCTION_FACTOR * yA) / (weightA + weightB) |==> (weightB * yB - weightA * REDUCTION_FACTOR * yA) * (weightA + weightB)
+304:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:(weightB * yB - weightA * REDUCTION_FACTOR * yA) / (weightA + weightB) |==> (weightB * yB - weightA * REDUCTION_FACTOR * yA) + (weightA + weightB)
+305:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():248:(weightB * yB - weightA * REDUCTION_FACTOR * yA) / (weightA + weightB) |==> (weightB * yB - weightA * REDUCTION_FACTOR * yA) - (weightA + weightB)
+306:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():251:0 |==> 1
+307:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():251:0 |==> -1
+308:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():256:0 |==> 1
+309:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():256:0 |==> -1
+310:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():257:nbPoints |==> 0
+311:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():261:end - start |==> end % start
+312:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():261:end - start |==> end * start
+313:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():261:end - start |==> end + start
+314:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():261:end - start |==> end / start
+315:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():261:System.arraycopy(x, start, tmpX, start, end - start) |==> <NO-OP>
+316:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():262:guessX(targetY, tmpX, y, start, end) |==> 0.0
+317:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:nextX > xA |==> nextX != xA
+318:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:nextX > xA |==> nextX >= xA
+319:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:nextX > xA |==> false
+320:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:nextX < xB |==> nextX != xB
+321:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:nextX < xB |==> nextX <= xB
+322:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:nextX < xB |==> false
+323:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:(nextX > xA) && (nextX < xB) |==> (nextX > xA) == (nextX < xB)
+324:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:(nextX > xA) && (nextX < xB) |==> false
+325:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:(nextX > xA) && (nextX < xB) |==> (nextX > xA)
+326:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():264:(nextX > xA) && (nextX < xB) |==> (nextX < xB)
+327:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:signChangeIndex - start |==> signChangeIndex % start
+328:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:signChangeIndex - start |==> signChangeIndex * start
+329:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:signChangeIndex - start |==> signChangeIndex + start
+330:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:signChangeIndex - start |==> signChangeIndex / start
+331:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:end - signChangeIndex |==> end % signChangeIndex
+332:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:end - signChangeIndex |==> end * signChangeIndex
+333:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:end - signChangeIndex |==> end + signChangeIndex
+334:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:end - signChangeIndex |==> end / signChangeIndex
+335:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:signChangeIndex - start >= end - signChangeIndex |==> signChangeIndex - start == end - signChangeIndex
+336:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:signChangeIndex - start >= end - signChangeIndex |==> signChangeIndex - start > end - signChangeIndex
+337:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():270:signChangeIndex - start >= end - signChangeIndex |==> true
+338:STD:<INC>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():272:++start |==> <NO-OP>
+339:STD:<DEC>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():275:--end |==> <NO-OP>
+340:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():279:nextX = Double.NaN |==> <NO-OP>
+341:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:end - start |==> end % start
+342:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:end - start |==> end * start
+343:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:end - start |==> end + start
+344:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:end - start |==> end / start
+345:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:1 |==> 0
+346:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:1 |==> -1
+347:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:end - start > 1 |==> end - start != 1
+348:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:end - start > 1 |==> end - start >= 1
+349:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:end - start > 1 |==> false
+350:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:Double.isNaN(nextX) && (end - start > 1) |==> Double.isNaN(nextX) == (end - start > 1)
+351:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:Double.isNaN(nextX) && (end - start > 1) |==> false
+352:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:Double.isNaN(nextX) && (end - start > 1) |==> Double.isNaN(nextX)
+353:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():283:Double.isNaN(nextX) && (end - start > 1) |==> (end - start > 1)
+354:COR:Double.isNaN(nextX):TRUE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():285:Double.isNaN(nextX) |==> false
+355:COR:Double.isNaN(nextX):FALSE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():285:Double.isNaN(nextX) |==> true
+356:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:0.5 |==> 0.0
+357:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:0.5 |==> -0.5
+358:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:xB - xA |==> xB % xA
+359:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:xB - xA |==> xB * xA
+360:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:xB - xA |==> xB + xA
+361:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:xB - xA |==> xB / xA
+362:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:0.5 * (xB - xA) |==> 0.5 % (xB - xA)
+363:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:0.5 * (xB - xA) |==> 0.5 + (xB - xA)
+364:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:0.5 * (xB - xA) |==> 0.5 - (xB - xA)
+365:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:0.5 * (xB - xA) |==> 0.5 / (xB - xA)
+366:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:xA + 0.5 * (xB - xA) |==> xA % (0.5 * (xB - xA))
+367:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:xA + 0.5 * (xB - xA) |==> xA * (0.5 * (xB - xA))
+368:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:xA + 0.5 * (xB - xA) |==> xA - 0.5 * (xB - xA)
+369:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:xA + 0.5 * (xB - xA) |==> xA / (0.5 * (xB - xA))
+370:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():287:nextX = xA + 0.5 * (xB - xA) |==> <NO-OP>
+371:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():288:1 |==> 0
+372:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():288:1 |==> -1
+373:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():288:signChangeIndex - 1 |==> signChangeIndex % 1
+374:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():288:signChangeIndex - 1 |==> signChangeIndex * 1
+375:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():288:signChangeIndex - 1 |==> signChangeIndex + 1
+376:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():288:signChangeIndex - 1 |==> signChangeIndex / 1
+377:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():288:start = signChangeIndex - 1 |==> <NO-OP>
+378:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():289:end = signChangeIndex |==> <NO-OP>
+379:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():293:computeObjectiveValue(nextX) |==> 0.0
+380:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():294:0.0 |==> 1.0
+381:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():294:0.0 |==> -1.0
+382:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():294:1 |==> 0
+383:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():294:1 |==> -1
+384:COR:Precision.equals(nextY, 0.0, 1):TRUE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():294:Precision.equals(nextY, 0.0, 1) |==> false
+385:COR:Precision.equals(nextY, 0.0, 1):FALSE:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():294:Precision.equals(nextY, 0.0, 1) |==> true
+386:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():297:return nextX; |==> <NO-OP>
+387:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:2 |==> 0
+388:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:2 |==> -2
+389:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:nbPoints > 2 |==> nbPoints != 2
+390:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:nbPoints > 2 |==> nbPoints >= 2
+391:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:nbPoints > 2 |==> false
+392:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:end - start |==> end % start
+393:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:end - start |==> end * start
+394:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:end - start |==> end + start
+395:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:end - start |==> end / start
+396:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:end - start != nbPoints |==> end - start < nbPoints
+397:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:end - start != nbPoints |==> end - start > nbPoints
+398:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:end - start != nbPoints |==> true
+399:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:(nbPoints > 2) && (end - start != nbPoints) |==> (nbPoints > 2) == (end - start != nbPoints)
+400:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:(nbPoints > 2) && (end - start != nbPoints) |==> false
+401:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:(nbPoints > 2) && (end - start != nbPoints) |==> (nbPoints > 2)
+402:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():300:(nbPoints > 2) && (end - start != nbPoints) |==> (end - start != nbPoints)
+403:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():304:end - start |==> end % start
+404:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():304:end - start |==> end * start
+405:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():304:end - start |==> end + start
+406:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():304:end - start |==> end / start
+407:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():304:nbPoints = end - start |==> <NO-OP>
+408:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():305:0 |==> 1
+409:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():305:0 |==> -1
+410:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():305:System.arraycopy(x, start, x, 0, nbPoints) |==> <NO-OP>
+411:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():306:0 |==> 1
+412:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():306:0 |==> -1
+413:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():306:System.arraycopy(y, start, y, 0, nbPoints) |==> <NO-OP>
+414:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():307:signChangeIndex -= start |==> <NO-OP>
+415:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():309:nbPoints == x.length |==> nbPoints <= x.length
+416:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():309:nbPoints == x.length |==> nbPoints >= x.length
+417:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():309:nbPoints == x.length |==> false
+418:STD:<DEC>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():312:nbPoints-- |==> <NO-OP>
+419:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:1 |==> 0
+420:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:1 |==> -1
+421:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:x.length + 1 |==> x.length % 1
+422:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:x.length + 1 |==> x.length * 1
+423:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:x.length + 1 |==> x.length - 1
+424:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:x.length + 1 |==> x.length / 1
+425:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:2 |==> 0
+426:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:2 |==> -2
+427:AOR:/(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:(x.length + 1) / 2 |==> (x.length + 1) % 2
+428:AOR:/(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:(x.length + 1) / 2 |==> (x.length + 1) * 2
+429:AOR:/(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:(x.length + 1) / 2 |==> (x.length + 1) + 2
+430:AOR:/(int,int):-(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:(x.length + 1) / 2 |==> (x.length + 1) - 2
+431:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:signChangeIndex >= (x.length + 1) / 2 |==> signChangeIndex == (x.length + 1) / 2
+432:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:signChangeIndex >= (x.length + 1) / 2 |==> signChangeIndex > (x.length + 1) / 2
+433:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():315:signChangeIndex >= (x.length + 1) / 2 |==> true
+434:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():317:1 |==> 0
+435:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():317:1 |==> -1
+436:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():317:0 |==> 1
+437:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():317:0 |==> -1
+438:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():317:System.arraycopy(x, 1, x, 0, nbPoints) |==> <NO-OP>
+439:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():318:1 |==> 0
+440:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():318:1 |==> -1
+441:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():318:0 |==> 1
+442:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():318:0 |==> -1
+443:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():318:System.arraycopy(y, 1, y, 0, nbPoints) |==> <NO-OP>
+444:STD:<DEC>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():319:--signChangeIndex |==> <NO-OP>
+445:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:1 |==> 0
+446:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:1 |==> -1
+447:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:signChangeIndex + 1 |==> signChangeIndex % 1
+448:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:signChangeIndex + 1 |==> signChangeIndex * 1
+449:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:signChangeIndex + 1 |==> signChangeIndex - 1
+450:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:signChangeIndex + 1 |==> signChangeIndex / 1
+451:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:nbPoints - signChangeIndex |==> nbPoints % signChangeIndex
+452:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:nbPoints - signChangeIndex |==> nbPoints * signChangeIndex
+453:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:nbPoints - signChangeIndex |==> nbPoints + signChangeIndex
+454:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:nbPoints - signChangeIndex |==> nbPoints / signChangeIndex
+455:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():326:System.arraycopy(x, signChangeIndex, x, signChangeIndex + 1, nbPoints - signChangeIndex) |==> <NO-OP>
+456:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():327:x[signChangeIndex] = nextX |==> <NO-OP>
+457:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:1 |==> 0
+458:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:1 |==> -1
+459:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:signChangeIndex + 1 |==> signChangeIndex % 1
+460:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:signChangeIndex + 1 |==> signChangeIndex * 1
+461:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:signChangeIndex + 1 |==> signChangeIndex - 1
+462:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:signChangeIndex + 1 |==> signChangeIndex / 1
+463:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:nbPoints - signChangeIndex |==> nbPoints % signChangeIndex
+464:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:nbPoints - signChangeIndex |==> nbPoints * signChangeIndex
+465:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:nbPoints - signChangeIndex |==> nbPoints + signChangeIndex
+466:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:nbPoints - signChangeIndex |==> nbPoints / signChangeIndex
+467:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():328:System.arraycopy(y, signChangeIndex, y, signChangeIndex + 1, nbPoints - signChangeIndex) |==> <NO-OP>
+468:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():329:y[signChangeIndex] = nextY |==> <NO-OP>
+469:STD:<INC>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():330:++nbPoints |==> <NO-OP>
+470:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():333:nextY * yA |==> nextY % yA
+471:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():333:nextY * yA |==> nextY + yA
+472:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():333:nextY * yA |==> nextY - yA
+473:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():333:nextY * yA |==> nextY / yA
+474:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():333:0 |==> 1
+475:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():333:0 |==> -1
+476:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():333:nextY * yA <= 0 |==> nextY * yA < 0
+477:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():333:nextY * yA <= 0 |==> nextY * yA == 0
+478:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():333:nextY * yA <= 0 |==> true
+479:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():335:xB = nextX |==> <NO-OP>
+480:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():336:yB = nextY |==> <NO-OP>
+481:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():337:absYB = FastMath.abs(yB) |==> <NO-OP>
+482:STD:<INC>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():338:++agingA |==> <NO-OP>
+483:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():339:0 |==> 1
+484:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():339:0 |==> -1
+485:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():339:agingB = 0 |==> <NO-OP>
+486:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():342:xA = nextX |==> <NO-OP>
+487:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():343:yA = nextY |==> <NO-OP>
+488:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():344:absYA = FastMath.abs(yA) |==> <NO-OP>
+489:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():345:0 |==> 1
+490:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():345:0 |==> -1
+491:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():345:agingA = 0 |==> <NO-OP>
+492:STD:<INC>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():346:++agingB |==> <NO-OP>
+493:STD:<INC>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@doSolve():349:signChangeIndex++ |==> <NO-OP>
+494:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:start |==> 0
+495:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:1 |==> 0
+496:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:1 |==> -1
+497:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:end - 1 |==> end % 1
+498:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:end - 1 |==> end * 1
+499:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:end - 1 |==> end + 1
+500:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:end - 1 |==> end / 1
+501:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:i < end - 1 |==> i != end - 1
+502:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:i < end - 1 |==> i <= end - 1
+503:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):375:i < end - 1 |==> false
+504:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:1 |==> 0
+505:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:1 |==> -1
+506:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:i + 1 |==> i % 1
+507:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:i + 1 |==> i * 1
+508:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:i + 1 |==> i - 1
+509:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:i + 1 |==> i / 1
+510:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:i + 1 - start |==> (i + 1) % start
+511:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:i + 1 - start |==> (i + 1) * start
+512:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:i + 1 - start |==> i + 1 + start
+513:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):376:i + 1 - start |==> (i + 1) / start
+514:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):377:1 |==> 0
+515:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):377:1 |==> -1
+516:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):377:end - 1 |==> end % 1
+517:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):377:end - 1 |==> end * 1
+518:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):377:end - 1 |==> end + 1
+519:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):377:end - 1 |==> end / 1
+520:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):377:j > i |==> j != i
+521:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):377:j > i |==> j >= i
+522:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):377:j > i |==> false
+523:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:1 |==> 0
+524:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:1 |==> -1
+525:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:j - 1 |==> j % 1
+526:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:j - 1 |==> j * 1
+527:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:j - 1 |==> j + 1
+528:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:j - 1 |==> j / 1
+529:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:x[j] - x[j - 1] |==> x[j] % x[j - 1]
+530:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:x[j] - x[j - 1] |==> x[j] * x[j - 1]
+531:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:x[j] - x[j - 1] |==> x[j] + x[j - 1]
+532:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:x[j] - x[j - 1] |==> x[j] / x[j - 1]
+533:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:j - delta |==> j % delta
+534:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:j - delta |==> j * delta
+535:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:j - delta |==> j + delta
+536:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:j - delta |==> j / delta
+537:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:y[j] - y[j - delta] |==> y[j] % y[j - delta]
+538:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:y[j] - y[j - delta] |==> y[j] * y[j - delta]
+539:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:y[j] - y[j - delta] |==> y[j] + y[j - delta]
+540:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:y[j] - y[j - delta] |==> y[j] / y[j - delta]
+541:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:(x[j] - x[j - 1]) / (y[j] - y[j - delta]) |==> (x[j] - x[j - 1]) % (y[j] - y[j - delta])
+542:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:(x[j] - x[j - 1]) / (y[j] - y[j - delta]) |==> (x[j] - x[j - 1]) * (y[j] - y[j - delta])
+543:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:(x[j] - x[j - 1]) / (y[j] - y[j - delta]) |==> (x[j] - x[j - 1]) + (y[j] - y[j - delta])
+544:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:(x[j] - x[j - 1]) / (y[j] - y[j - delta]) |==> (x[j] - x[j - 1]) - (y[j] - y[j - delta])
+545:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):378:x[j] = (x[j] - x[j - 1]) / (y[j] - y[j - delta]) |==> <NO-OP>
+546:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):383:0 |==> 1
+547:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):383:0 |==> -1
+548:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):384:1 |==> 0
+549:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):384:1 |==> -1
+550:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):384:end - 1 |==> end % 1
+551:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):384:end - 1 |==> end * 1
+552:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):384:end - 1 |==> end + 1
+553:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):384:end - 1 |==> end / 1
+554:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):384:j >= start |==> j == start
+555:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):384:j >= start |==> j > start
+556:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):384:j >= start |==> true
+557:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:targetY - y[j] |==> targetY % y[j]
+558:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:targetY - y[j] |==> targetY * y[j]
+559:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:targetY - y[j] |==> targetY + y[j]
+560:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:targetY - y[j] |==> targetY / y[j]
+561:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:x0 * (targetY - y[j]) |==> x0 % (targetY - y[j])
+562:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:x0 * (targetY - y[j]) |==> x0 + (targetY - y[j])
+563:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:x0 * (targetY - y[j]) |==> x0 - (targetY - y[j])
+564:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:x0 * (targetY - y[j]) |==> x0 / (targetY - y[j])
+565:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:x[j] + x0 * (targetY - y[j]) |==> x[j] % (x0 * (targetY - y[j]))
+566:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:x[j] + x0 * (targetY - y[j]) |==> x[j] * (x0 * (targetY - y[j]))
+567:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:x[j] + x0 * (targetY - y[j]) |==> x[j] - x0 * (targetY - y[j])
+568:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:x[j] + x0 * (targetY - y[j]) |==> x[j] / (x0 * (targetY - y[j]))
+569:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):385:x0 = x[j] + x0 * (targetY - y[j]) |==> <NO-OP>
+570:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@guessX(double,double[],double[],int,int):388:x0 |==> 0.0
+571:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@solve(int,org.apache.commons.math3.analysis.UnivariateFunction,double,double,org.apache.commons.math3.analysis.solvers.AllowedSolution):398:this.allowed = allowedSolution |==> <NO-OP>
+572:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@solve(int,org.apache.commons.math3.analysis.UnivariateFunction,double,double,org.apache.commons.math3.analysis.solvers.AllowedSolution):399:super.solve(maxEval, f, min, max) |==> 0.0
+573:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@solve(int,org.apache.commons.math3.analysis.UnivariateFunction,double,double,double,org.apache.commons.math3.analysis.solvers.AllowedSolution):409:this.allowed = allowedSolution |==> <NO-OP>
+574:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver@solve(int,org.apache.commons.math3.analysis.UnivariateFunction,double,double,double,org.apache.commons.math3.analysis.solvers.AllowedSolution):410:super.solve(maxEval, f, min, max, startValue) |==> 0.0

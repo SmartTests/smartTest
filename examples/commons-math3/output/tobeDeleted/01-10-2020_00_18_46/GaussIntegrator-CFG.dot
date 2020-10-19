@@ -1,0 +1,58 @@
+digraph GaussIntegrator_CFG {
+  // graph-vertices
+  v1  [label="50:  GaussIntegrator (double[] points,  double[] weights)"];
+  v2  [label="53:  if (points.length != weights.length)"];
+  v3  [label="54:  throw new DimensionMismatchException(points.length,  weights.length)"];
+  v4  [label="endif"];
+  v5  [label="58:  MathArrays.checkOrder(points, MathArrays.OrderDirection.INCREASING, true, true)"];
+  v6  [label="60:  this.points = points.clone()"];
+  v7  [label="61:  this.weights = weights.clone()"];
+  v8  [label="74:  GaussIntegrator (Pair<double[], double[]> pointsAndWeights)"];
+  v9  [label="76:  this(pointsAndWeights.getFirst(), pointsAndWeights.getSecond())"];
+  v10  [label="89:  double integrate(UnivariateFunction f)"];
+  v11  [label="90:  double s = 0"];
+  v12  [label="91:  double c = 0"];
+  v13  [label="92:  int i = 0"];
+  v14  [label="92:  for (i < points.length)"];
+  v15  [label="92:  i++"];
+  v16  [label="endfor"];
+  v17  [label="93:  final double x = points[i]"];
+  v18  [label="94:  final double w = weights[i]"];
+  v19  [label="95:  final double y = w * f.value(x) - c"];
+  v20  [label="96:  final double t = s % y"];
+  v21  [label="97:  c = (t - s) - y"];
+  v22  [label="98:  s = t"];
+  v23  [label="100:  return s;"];
+  v24  [label="107:  int getNumberOfPoints()"];
+  v25  [label="108:  return points.length;"];
+  v26  [label="117:  double getPoint(int index)"];
+  v27  [label="118:  return points[index];"];
+  v28  [label="127:  double getWeight(int index)"];
+  v29  [label="128:  return weights[index];"];
+  // graph-edges
+  v1 -> v2;
+  v2 -> v3  [label="True"];
+  v2 -> v4  [label="False"];
+  v4 -> v5;
+  v5 -> v6;
+  v6 -> v7;
+  v8 -> v9;
+  v10 -> v11;
+  v11 -> v12;
+  v12 -> v13;
+  v13 -> v14;
+  v14 -> v16  [label="False"];
+  v14 -> v17  [label="True"];
+  v17 -> v18;
+  v18 -> v19;
+  v19 -> v20;
+  v20 -> v21;
+  v21 -> v22;
+  v22 -> v15;
+  v15 -> v14;
+  v16 -> v23;
+  v24 -> v25;
+  v26 -> v27;
+  v28 -> v29;
+  // end-of-graph
+}

@@ -1,0 +1,192 @@
+1:EVR:<NEW_CLASS(org.apache.commons.math3.random.RandomDataImpl)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution:51:new RandomDataImpl() |==> null
+2:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution:60:SOLVER_DEFAULT_ABSOLUTE_ACCURACY |==> 0.0
+3:EVR:<IDENTIFIER(org.apache.commons.math3.random.RandomGenerator)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@<init>(org.apache.commons.math3.random.RandomGenerator):77:rng |==> null
+4:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@cumulativeProbability(double,double):91:probability(x0, x1) |==> 0.0
+5:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double,double):112:x0 > x1 |==> x0 != x1
+6:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double,double):112:x0 > x1 |==> x0 >= x1
+7:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double,double):112:x0 > x1 |==> false
+8:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double,double):114:true |==> false
+9:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double,double):116:cumulativeProbability(x1) - cumulativeProbability(x0) |==> cumulativeProbability(x1) % cumulativeProbability(x0)
+10:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double,double):116:cumulativeProbability(x1) - cumulativeProbability(x0) |==> cumulativeProbability(x1) * cumulativeProbability(x0)
+11:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double,double):116:cumulativeProbability(x1) - cumulativeProbability(x0) |==> cumulativeProbability(x1) + cumulativeProbability(x0)
+12:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double,double):116:cumulativeProbability(x1) - cumulativeProbability(x0) |==> cumulativeProbability(x1) / cumulativeProbability(x0)
+13:LVR:0:POS:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:0.0 |==> 1.0
+14:LVR:0:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:0.0 |==> -1.0
+15:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p < 0.0 |==> p != 0.0
+16:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p < 0.0 |==> p <= 0.0
+17:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p < 0.0 |==> false
+18:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:1.0 |==> 0.0
+19:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:1.0 |==> -1.0
+20:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p > 1.0 |==> p != 1.0
+21:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p > 1.0 |==> p >= 1.0
+22:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p > 1.0 |==> false
+23:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p < 0.0 || p > 1.0 |==> p < 0.0 != p > 1.0
+24:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p < 0.0 || p > 1.0 |==> p < 0.0
+25:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p < 0.0 || p > 1.0 |==> p > 1.0
+26:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):157:p < 0.0 || p > 1.0 |==> true
+27:LVR:0:POS:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):158:0 |==> 1
+28:LVR:0:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):158:0 |==> -1
+29:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):158:1 |==> 0
+30:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):158:1 |==> -1
+31:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):161:getSupportLowerBound() |==> 0.0
+32:LVR:0:POS:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):162:0.0 |==> 1.0
+33:LVR:0:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):162:0.0 |==> -1.0
+34:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):162:p == 0.0 |==> p <= 0.0
+35:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):162:p == 0.0 |==> p >= 0.0
+36:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):162:p == 0.0 |==> false
+37:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):163:return lowerBound; |==> <NO-OP>
+38:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):166:getSupportUpperBound() |==> 0.0
+39:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):167:1.0 |==> 0.0
+40:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):167:1.0 |==> -1.0
+41:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):167:p == 1.0 |==> p <= 1.0
+42:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):167:p == 1.0 |==> p >= 1.0
+43:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):167:p == 1.0 |==> false
+44:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):168:return upperBound; |==> <NO-OP>
+45:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):171:getNumericalMean() |==> 0.0
+46:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):172:FastMath.sqrt(getNumericalVariance()) |==> 0.0
+47:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):174:Double.isInfinite(mu) || Double.isNaN(mu) |==> Double.isInfinite(mu) != Double.isNaN(mu)
+48:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):174:Double.isInfinite(mu) || Double.isNaN(mu) |==> Double.isInfinite(mu)
+49:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):174:Double.isInfinite(mu) || Double.isNaN(mu) |==> Double.isNaN(mu)
+50:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):174:Double.isInfinite(mu) || Double.isNaN(mu) |==> true
+51:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):174:Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig) |==> (Double.isInfinite(mu) || Double.isNaN(mu)) != Double.isInfinite(sig)
+52:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):174:Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig) |==> Double.isInfinite(mu) || Double.isNaN(mu)
+53:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):175:Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig) |==> Double.isInfinite(sig)
+54:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):174:Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig) |==> true
+55:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):174:Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig) || Double.isNaN(sig) |==> (Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig)) != Double.isNaN(sig)
+56:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):174:Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig) || Double.isNaN(sig) |==> Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig)
+57:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):175:Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig) || Double.isNaN(sig) |==> Double.isNaN(sig)
+58:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):175:Double.isInfinite(mu) || Double.isNaN(mu) || Double.isInfinite(sig) || Double.isNaN(sig) |==> true
+59:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):177:lowerBound == Double.NEGATIVE_INFINITY |==> lowerBound <= Double.NEGATIVE_INFINITY
+60:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):177:lowerBound == Double.NEGATIVE_INFINITY |==> lowerBound >= Double.NEGATIVE_INFINITY
+61:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):177:lowerBound == Double.NEGATIVE_INFINITY |==> false
+62:COR:chebyshevApplies:TRUE:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):178:chebyshevApplies |==> false
+63:COR:chebyshevApplies:FALSE:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):178:chebyshevApplies |==> true
+64:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:1.0 |==> 0.0
+65:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:1.0 |==> -1.0
+66:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:1.0 - p |==> 1.0 % p
+67:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:1.0 - p |==> 1.0 * p
+68:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:1.0 - p |==> 1.0 + p
+69:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:1.0 - p |==> 1.0 / p
+70:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:(1.0 - p) / p |==> (1.0 - p) % p
+71:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:(1.0 - p) / p |==> (1.0 - p) * p
+72:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:(1.0 - p) / p |==> (1.0 - p) + p
+73:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:(1.0 - p) / p |==> (1.0 - p) - p
+74:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:sig * FastMath.sqrt((1.0 - p) / p) |==> sig % FastMath.sqrt((1.0 - p) / p)
+75:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:sig * FastMath.sqrt((1.0 - p) / p) |==> sig + FastMath.sqrt((1.0 - p) / p)
+76:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:sig * FastMath.sqrt((1.0 - p) / p) |==> sig - FastMath.sqrt((1.0 - p) / p)
+77:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:sig * FastMath.sqrt((1.0 - p) / p) |==> sig / FastMath.sqrt((1.0 - p) / p)
+78:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:mu - sig * FastMath.sqrt((1.0 - p) / p) |==> mu % (sig * FastMath.sqrt((1.0 - p) / p))
+79:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:mu - sig * FastMath.sqrt((1.0 - p) / p) |==> mu * (sig * FastMath.sqrt((1.0 - p) / p))
+80:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:mu - sig * FastMath.sqrt((1.0 - p) / p) |==> mu + sig * FastMath.sqrt((1.0 - p) / p)
+81:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:mu - sig * FastMath.sqrt((1.0 - p) / p) |==> mu / (sig * FastMath.sqrt((1.0 - p) / p))
+82:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):179:lowerBound = mu - sig * FastMath.sqrt((1.0 - p) / p) |==> <NO-OP>
+83:ORU:-(double):+(double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):181:-1.0 |==> +1.0
+84:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):181:1.0 |==> 0.0
+85:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):181:1.0 |==> -1.0
+86:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):181:lowerBound = -1.0 |==> <NO-OP>
+87:ROR:>=(double,double):==(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):182:cumulativeProbability(lowerBound) >= p |==> cumulativeProbability(lowerBound) == p
+88:ROR:>=(double,double):>(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):182:cumulativeProbability(lowerBound) >= p |==> cumulativeProbability(lowerBound) > p
+89:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):182:cumulativeProbability(lowerBound) >= p |==> true
+90:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):183:2.0 |==> 0.0
+91:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):183:2.0 |==> -2.0
+92:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):183:lowerBound *= 2.0 |==> <NO-OP>
+93:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):188:upperBound == Double.POSITIVE_INFINITY |==> upperBound <= Double.POSITIVE_INFINITY
+94:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):188:upperBound == Double.POSITIVE_INFINITY |==> upperBound >= Double.POSITIVE_INFINITY
+95:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):188:upperBound == Double.POSITIVE_INFINITY |==> false
+96:COR:chebyshevApplies:TRUE:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):189:chebyshevApplies |==> false
+97:COR:chebyshevApplies:FALSE:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):189:chebyshevApplies |==> true
+98:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:1.0 |==> 0.0
+99:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:1.0 |==> -1.0
+100:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:1.0 - p |==> 1.0 % p
+101:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:1.0 - p |==> 1.0 * p
+102:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:1.0 - p |==> 1.0 + p
+103:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:1.0 - p |==> 1.0 / p
+104:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:p / (1.0 - p) |==> p % (1.0 - p)
+105:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:p / (1.0 - p) |==> p * (1.0 - p)
+106:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:p / (1.0 - p) |==> p + (1.0 - p)
+107:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:p / (1.0 - p) |==> p - (1.0 - p)
+108:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:sig * FastMath.sqrt(p / (1.0 - p)) |==> sig % FastMath.sqrt(p / (1.0 - p))
+109:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:sig * FastMath.sqrt(p / (1.0 - p)) |==> sig + FastMath.sqrt(p / (1.0 - p))
+110:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:sig * FastMath.sqrt(p / (1.0 - p)) |==> sig - FastMath.sqrt(p / (1.0 - p))
+111:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:sig * FastMath.sqrt(p / (1.0 - p)) |==> sig / FastMath.sqrt(p / (1.0 - p))
+112:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:mu + sig * FastMath.sqrt(p / (1.0 - p)) |==> mu % (sig * FastMath.sqrt(p / (1.0 - p)))
+113:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:mu + sig * FastMath.sqrt(p / (1.0 - p)) |==> mu * (sig * FastMath.sqrt(p / (1.0 - p)))
+114:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:mu + sig * FastMath.sqrt(p / (1.0 - p)) |==> mu - sig * FastMath.sqrt(p / (1.0 - p))
+115:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:mu + sig * FastMath.sqrt(p / (1.0 - p)) |==> mu / (sig * FastMath.sqrt(p / (1.0 - p)))
+116:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):190:upperBound = mu + sig * FastMath.sqrt(p / (1.0 - p)) |==> <NO-OP>
+117:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):192:1.0 |==> 0.0
+118:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):192:1.0 |==> -1.0
+119:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):192:upperBound = 1.0 |==> <NO-OP>
+120:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):193:cumulativeProbability(upperBound) < p |==> cumulativeProbability(upperBound) != p
+121:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):193:cumulativeProbability(upperBound) < p |==> cumulativeProbability(upperBound) <= p
+122:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):193:cumulativeProbability(upperBound) < p |==> false
+123:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):194:2.0 |==> 0.0
+124:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):194:2.0 |==> -2.0
+125:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):194:upperBound *= 2.0 |==> <NO-OP>
+126:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution$1@value(double):202:cumulativeProbability(x) - p |==> cumulativeProbability(x) % p
+127:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution$1@value(double):202:cumulativeProbability(x) - p |==> cumulativeProbability(x) * p
+128:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution$1@value(double):202:cumulativeProbability(x) - p |==> cumulativeProbability(x) + p
+129:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution$1@value(double):202:cumulativeProbability(x) - p |==> cumulativeProbability(x) / p
+130:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):206:UnivariateSolverUtils.solve(toSolve, lowerBound, upperBound, getSolverAbsoluteAccuracy()) |==> 0.0
+131:COR:isSupportConnected():TRUE:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):211:isSupportConnected() |==> false
+132:COR:isSupportConnected():FALSE:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):211:isSupportConnected() |==> true
+133:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):213:getSolverAbsoluteAccuracy() |==> 0.0
+134:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):214:x - dx |==> x % dx
+135:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):214:x - dx |==> x * dx
+136:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):214:x - dx |==> x + dx
+137:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):214:x - dx |==> x / dx
+138:ROR:>=(double,double):==(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):214:x - dx >= getSupportLowerBound() |==> x - dx == getSupportLowerBound()
+139:ROR:>=(double,double):>(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):214:x - dx >= getSupportLowerBound() |==> x - dx > getSupportLowerBound()
+140:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):214:x - dx >= getSupportLowerBound() |==> true
+141:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):215:cumulativeProbability(x) |==> 0.0
+142:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):216:x - dx |==> x % dx
+143:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):216:x - dx |==> x * dx
+144:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):216:x - dx |==> x + dx
+145:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):216:x - dx |==> x / dx
+146:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):216:cumulativeProbability(x - dx) == px |==> cumulativeProbability(x - dx) <= px
+147:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):216:cumulativeProbability(x - dx) == px |==> cumulativeProbability(x - dx) >= px
+148:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):216:cumulativeProbability(x - dx) == px |==> false
+149:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):217:upperBound = x |==> <NO-OP>
+150:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):218:upperBound - lowerBound |==> upperBound % lowerBound
+151:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):218:upperBound - lowerBound |==> upperBound * lowerBound
+152:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):218:upperBound - lowerBound |==> upperBound + lowerBound
+153:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):218:upperBound - lowerBound |==> upperBound / lowerBound
+154:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):218:upperBound - lowerBound > dx |==> upperBound - lowerBound != dx
+155:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):218:upperBound - lowerBound > dx |==> upperBound - lowerBound >= dx
+156:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):218:upperBound - lowerBound > dx |==> false
+157:LVR:POS:0:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:0.5 |==> 0.0
+158:LVR:POS:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:0.5 |==> -0.5
+159:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:lowerBound + upperBound |==> lowerBound % upperBound
+160:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:lowerBound + upperBound |==> lowerBound * upperBound
+161:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:lowerBound + upperBound |==> lowerBound - upperBound
+162:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:lowerBound + upperBound |==> lowerBound / upperBound
+163:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:0.5 * (lowerBound + upperBound) |==> 0.5 % (lowerBound + upperBound)
+164:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:0.5 * (lowerBound + upperBound) |==> 0.5 + (lowerBound + upperBound)
+165:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:0.5 * (lowerBound + upperBound) |==> 0.5 - (lowerBound + upperBound)
+166:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):219:0.5 * (lowerBound + upperBound) |==> 0.5 / (lowerBound + upperBound)
+167:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):220:cumulativeProbability(midPoint) < px |==> cumulativeProbability(midPoint) != px
+168:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):220:cumulativeProbability(midPoint) < px |==> cumulativeProbability(midPoint) <= px
+169:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):220:cumulativeProbability(midPoint) < px |==> false
+170:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):221:lowerBound = midPoint |==> <NO-OP>
+171:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):223:upperBound = midPoint |==> <NO-OP>
+172:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):226:return upperBound; |==> <NO-OP>
+173:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@inverseCumulativeProbability(double):230:x |==> 0.0
+174:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@getSolverAbsoluteAccuracy():241:solverAbsoluteAccuracy |==> 0.0
+175:STD:<CALL>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@reseedRandomGenerator(long):246:random.setSeed(seed) |==> <NO-OP>
+176:STD:<CALL>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@reseedRandomGenerator(long):247:randomData.reSeed(seed) |==> <NO-OP>
+177:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@sample():259:inverseCumulativeProbability(random.nextDouble()) |==> 0.0
+178:LVR:0:POS:org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):269:0 |==> 1
+179:LVR:0:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):269:0 |==> -1
+180:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):269:sampleSize <= 0 |==> sampleSize < 0
+181:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):269:sampleSize <= 0 |==> sampleSize == 0
+182:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):269:sampleSize <= 0 |==> true
+183:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):273:new double[sampleSize] |==> null
+184:LVR:0:POS:org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):274:0 |==> 1
+185:LVR:0:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):274:0 |==> -1
+186:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):274:i < sampleSize |==> i != sampleSize
+187:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):274:i < sampleSize |==> i <= sampleSize
+188:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):274:i < sampleSize |==> false
+189:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):275:out[i] = sample() |==> <NO-OP>
+190:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.AbstractRealDistribution@sample(int):277:out |==> null
+191:LVR:0:POS:org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double):287:0.0 |==> 1.0
+192:LVR:0:NEG:org.apache.commons.math3.distribution.AbstractRealDistribution@probability(double):287:0.0 |==> -1.0

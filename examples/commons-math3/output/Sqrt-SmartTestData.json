@@ -1,0 +1,23 @@
+[
+  {
+    "info": "25-09-2020_16_11_02"
+  },
+  {
+    "requirements": {
+      "TR1": "35,36",
+      "TR2": "43,44",
+      "TR3": "50,51"
+    }
+  },
+  {
+    "testCoverage": {
+      "testComparison": [],
+      "testDerivativeComparison": [
+        "TR3"
+      ],
+      "testDerivativesHighOrder": [
+        "TR3"
+      ]
+    }
+  }
+]

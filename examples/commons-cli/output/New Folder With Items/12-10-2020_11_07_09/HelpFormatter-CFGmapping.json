@@ -1,0 +1,1622 @@
+[
+  {
+    "v1": {
+      "line": "193",
+      "statement": "void setWidth(final int width)"
+    }
+  },
+  {
+    "v2": {
+      "line": "195",
+      "statement": "this.defaultWidth = width"
+    }
+  },
+  {
+    "v3": {
+      "line": "203",
+      "statement": "int getWidth()"
+    }
+  },
+  {
+    "v4": {
+      "line": "205",
+      "statement": "return defaultWidth"
+    }
+  },
+  {
+    "v5": {
+      "line": "213",
+      "statement": "void setLeftPadding(final int padding)"
+    }
+  },
+  {
+    "v6": {
+      "line": "215",
+      "statement": "this.defaultLeftPad = padding"
+    }
+  },
+  {
+    "v7": {
+      "line": "223",
+      "statement": "int getLeftPadding()"
+    }
+  },
+  {
+    "v8": {
+      "line": "225",
+      "statement": "return defaultLeftPad"
+    }
+  },
+  {
+    "v9": {
+      "line": "233",
+      "statement": "void setDescPadding(final int padding)"
+    }
+  },
+  {
+    "v10": {
+      "line": "235",
+      "statement": "this.defaultDescPad = padding"
+    }
+  },
+  {
+    "v11": {
+      "line": "243",
+      "statement": "int getDescPadding()"
+    }
+  },
+  {
+    "v12": {
+      "line": "245",
+      "statement": "return defaultDescPad"
+    }
+  },
+  {
+    "v13": {
+      "line": "253",
+      "statement": "void setSyntaxPrefix(final String prefix)"
+    }
+  },
+  {
+    "v14": {
+      "line": "255",
+      "statement": "this.defaultSyntaxPrefix = prefix"
+    }
+  },
+  {
+    "v15": {
+      "line": "263",
+      "statement": "String getSyntaxPrefix()"
+    }
+  },
+  {
+    "v16": {
+      "line": "265",
+      "statement": "return defaultSyntaxPrefix"
+    }
+  },
+  {
+    "v17": {
+      "line": "273",
+      "statement": "void setNewLine(final String newline)"
+    }
+  },
+  {
+    "v18": {
+      "line": "275",
+      "statement": "this.defaultNewLine = newline"
+    }
+  },
+  {
+    "v19": {
+      "line": "283",
+      "statement": "String getNewLine()"
+    }
+  },
+  {
+    "v20": {
+      "line": "285",
+      "statement": "return defaultNewLine"
+    }
+  },
+  {
+    "v21": {
+      "line": "293",
+      "statement": "void setOptPrefix(final String prefix)"
+    }
+  },
+  {
+    "v22": {
+      "line": "295",
+      "statement": "this.defaultOptPrefix = prefix"
+    }
+  },
+  {
+    "v23": {
+      "line": "303",
+      "statement": "String getOptPrefix()"
+    }
+  },
+  {
+    "v24": {
+      "line": "305",
+      "statement": "return defaultOptPrefix"
+    }
+  },
+  {
+    "v25": {
+      "line": "313",
+      "statement": "void setLongOptPrefix(final String prefix)"
+    }
+  },
+  {
+    "v26": {
+      "line": "315",
+      "statement": "this.defaultLongOptPrefix = prefix"
+    }
+  },
+  {
+    "v27": {
+      "line": "323",
+      "statement": "String getLongOptPrefix()"
+    }
+  },
+  {
+    "v28": {
+      "line": "325",
+      "statement": "return defaultLongOptPrefix"
+    }
+  },
+  {
+    "v29": {
+      "line": "336",
+      "statement": "void setLongOptSeparator(final String longOptSeparator)"
+    }
+  },
+  {
+    "v30": {
+      "line": "338",
+      "statement": "this.longOptSeparator = longOptSeparator"
+    }
+  },
+  {
+    "v31": {
+      "line": "347",
+      "statement": "String getLongOptSeparator()"
+    }
+  },
+  {
+    "v32": {
+      "line": "349",
+      "statement": "return longOptSeparator"
+    }
+  },
+  {
+    "v33": {
+      "line": "357",
+      "statement": "void setArgName(final String name)"
+    }
+  },
+  {
+    "v34": {
+      "line": "359",
+      "statement": "this.defaultArgName = name"
+    }
+  },
+  {
+    "v35": {
+      "line": "367",
+      "statement": "String getArgName()"
+    }
+  },
+  {
+    "v36": {
+      "line": "369",
+      "statement": "return defaultArgName"
+    }
+  },
+  {
+    "v37": {
+      "line": "379",
+      "statement": "Comparator<Option> getOptionComparator()"
+    }
+  },
+  {
+    "v38": {
+      "line": "381",
+      "statement": "return optionComparator"
+    }
+  },
+  {
+    "v39": {
+      "line": "391",
+      "statement": "void setOptionComparator(final Comparator<Option> comparator)"
+    }
+  },
+  {
+    "v40": {
+      "line": "393",
+      "statement": "this.optionComparator = comparator"
+    }
+  },
+  {
+    "v41": {
+      "line": "404",
+      "statement": "void printHelp(final String cmdLineSyntax, final Options options)"
+    }
+  },
+  {
+    "v42": {
+      "line": "406",
+      "statement": "printHelp(getWidth(), cmdLineSyntax, null, options, null, false)"
+    }
+  },
+  {
+    "v43": {
+      "line": "419",
+      "statement": "void printHelp(final String cmdLineSyntax, final Options options, final boolean autoUsage)"
+    }
+  },
+  {
+    "v44": {
+      "line": "421",
+      "statement": "printHelp(getWidth(), cmdLineSyntax, null, options, null, autoUsage)"
+    }
+  },
+  {
+    "v45": {
+      "line": "434",
+      "statement": "void printHelp(final String cmdLineSyntax, final String header, final Options options, final String footer)"
+    }
+  },
+  {
+    "v46": {
+      "line": "436",
+      "statement": "printHelp(cmdLineSyntax, header, options, footer, false)"
+    }
+  },
+  {
+    "v47": {
+      "line": "451",
+      "statement": "void printHelp(final String cmdLineSyntax, final String header, final Options options, final String footer, final boolean autoUsage)"
+    }
+  },
+  {
+    "v48": {
+      "line": "453",
+      "statement": "printHelp(getWidth(), cmdLineSyntax, header, options, footer, autoUsage)"
+    }
+  },
+  {
+    "v49": {
+      "line": "467",
+      "statement": "void printHelp(final int width, final String cmdLineSyntax, final String header, final Options options, final String footer)"
+    }
+  },
+  {
+    "v50": {
+      "line": "469",
+      "statement": "printHelp(width, cmdLineSyntax, header, options, footer, false)"
+    }
+  },
+  {
+    "v51": {
+      "line": "485",
+      "statement": "void printHelp(final int width, final String cmdLineSyntax, final String header, final Options options, final String footer, final boolean autoUsage)"
+    }
+  },
+  {
+    "v52": {
+      "line": "488",
+      "statement": "final PrintWriter pw = new PrintWriter(System.out)"
+    }
+  },
+  {
+    "v53": {
+      "line": "490",
+      "statement": "printHelp(pw, width, cmdLineSyntax, header, options, getLeftPadding(), getDescPadding(), footer, autoUsage)"
+    }
+  },
+  {
+    "v54": {
+      "line": "491",
+      "statement": "pw.flush()"
+    }
+  },
+  {
+    "v55": {
+      "line": "511",
+      "statement": "void printHelp(final PrintWriter pw, final int width, final String cmdLineSyntax,  final String header, final Options options, final int leftPad,  final int descPad, final String footer)"
+    }
+  },
+  {
+    "v56": {
+      "line": "515",
+      "statement": "printHelp(pw, width, cmdLineSyntax, header, options, leftPad, descPad, footer, false)"
+    }
+  },
+  {
+    "v57": {
+      "line": "538",
+      "statement": "void printHelp(final PrintWriter pw, final int width, final String cmdLineSyntax, final String header, final Options options, final int leftPad, final int descPad, final String footer, final boolean autoUsage)"
+    }
+  },
+  {
+    "v58": {
+      "line": "542",
+      "statement": "if (cmdLineSyntax == null || cmdLineSyntax.length() == 0)"
+    }
+  },
+  {
+    "v59": {
+      "line": "544",
+      "statement": "throw new IllegalArgumentException('cmdLineSyntax not provided')"
+    }
+  },
+  {
+    "v60": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v61": {
+      "line": "547",
+      "statement": "if (autoUsage)"
+    }
+  },
+  {
+    "v62": {
+      "line": "549",
+      "statement": "printUsage(pw, width, cmdLineSyntax, options)"
+    }
+  },
+  {
+    "v63": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v64": {
+      "line": "553",
+      "statement": "printUsage(pw, width, cmdLineSyntax)"
+    }
+  },
+  {
+    "v65": {
+      "line": "556",
+      "statement": "if (header != null && header.trim().length() > 0)"
+    }
+  },
+  {
+    "v66": {
+      "line": "558",
+      "statement": "printWrapped(pw, width, header)"
+    }
+  },
+  {
+    "v67": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v68": {
+      "line": "561",
+      "statement": "printOptions(pw, width, options, leftPad, descPad)"
+    }
+  },
+  {
+    "v69": {
+      "line": "563",
+      "statement": "if (footer != null && footer.trim().length() > 0)"
+    }
+  },
+  {
+    "v70": {
+      "line": "565",
+      "statement": "printWrapped(pw, width, footer)"
+    }
+  },
+  {
+    "v71": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v72": {
+      "line": "577",
+      "statement": "void printUsage(final PrintWriter pw, final int width, final String app, final Options options)"
+    }
+  },
+  {
+    "v73": {
+      "line": "580",
+      "statement": "final StringBuffer buff = new StringBuffer(getSyntaxPrefix()).append(app).append(' ')"
+    }
+  },
+  {
+    "v74": {
+      "line": "583",
+      "statement": "final Collection<OptionGroup> processedGroups = new ArrayList<OptionGroup>()"
+    }
+  },
+  {
+    "v75": {
+      "line": "585",
+      "statement": "final List<Option> optList = new ArrayList<Option>(options.getOptions())"
+    }
+  },
+  {
+    "v76": {
+      "line": "586",
+      "statement": "if (getOptionComparator() != null)"
+    }
+  },
+  {
+    "v77": {
+      "line": "588",
+      "statement": "Collections.sort(optList, getOptionComparator())"
+    }
+  },
+  {
+    "v78": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v79": {
+      "line": "591",
+      "statement": "final Iterator<Option> it = optList.iterator()"
+    }
+  },
+  {
+    "v80": {
+      "line": "591",
+      "statement": "for (it.hasNext())"
+    }
+  },
+  {
+    "v81": {
+      "line": "591",
+      "statement": ";"
+    }
+  },
+  {
+    "v82": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v83": {
+      "line": "594",
+      "statement": "final Option option = it.next()"
+    }
+  },
+  {
+    "v84": {
+      "line": "597",
+      "statement": "final OptionGroup group = options.getOptionGroup(option)"
+    }
+  },
+  {
+    "v85": {
+      "line": "600",
+      "statement": "if (group != null)"
+    }
+  },
+  {
+    "v86": {
+      "line": "603",
+      "statement": "if (!processedGroups.contains(group))"
+    }
+  },
+  {
+    "v87": {
+      "line": "606",
+      "statement": "processedGroups.add(group)"
+    }
+  },
+  {
+    "v88": {
+      "line": "610",
+      "statement": "appendOptionGroup(buff, group)"
+    }
+  },
+  {
+    "v89": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v90": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v91": {
+      "line": "620",
+      "statement": "appendOption(buff, option, option.isRequired())"
+    }
+  },
+  {
+    "v92": {
+      "line": "623",
+      "statement": "if (it.hasNext())"
+    }
+  },
+  {
+    "v93": {
+      "line": "625",
+      "statement": "buff.append(' ')"
+    }
+  },
+  {
+    "v94": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v95": {
+      "line": "631",
+      "statement": "printWrapped(pw, width, buff.toString().indexOf(' ') + 1, buff.toString())"
+    }
+  },
+  {
+    "v96": {
+      "line": "642",
+      "statement": "void appendOptionGroup(final StringBuffer buff, final OptionGroup group)"
+    }
+  },
+  {
+    "v97": {
+      "line": "644",
+      "statement": "if (!group.isRequired())"
+    }
+  },
+  {
+    "v98": {
+      "line": "646",
+      "statement": "buff.append('[')"
+    }
+  },
+  {
+    "v99": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v100": {
+      "line": "649",
+      "statement": "final List<Option> optList = new ArrayList<Option>(group.getOptions())"
+    }
+  },
+  {
+    "v101": {
+      "line": "650",
+      "statement": "if (getOptionComparator() != null)"
+    }
+  },
+  {
+    "v102": {
+      "line": "652",
+      "statement": "Collections.sort(optList, getOptionComparator())"
+    }
+  },
+  {
+    "v103": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v104": {
+      "line": "655",
+      "statement": "final Iterator<Option> it = optList.iterator()"
+    }
+  },
+  {
+    "v105": {
+      "line": "655",
+      "statement": "for (it.hasNext())"
+    }
+  },
+  {
+    "v106": {
+      "line": "655",
+      "statement": ";"
+    }
+  },
+  {
+    "v107": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v108": {
+      "line": "658",
+      "statement": "appendOption(buff, it.next(), true)"
+    }
+  },
+  {
+    "v109": {
+      "line": "660",
+      "statement": "if (it.hasNext())"
+    }
+  },
+  {
+    "v110": {
+      "line": "662",
+      "statement": "buff.append(' | ')"
+    }
+  },
+  {
+    "v111": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v112": {
+      "line": "666",
+      "statement": "if (!group.isRequired())"
+    }
+  },
+  {
+    "v113": {
+      "line": "668",
+      "statement": "buff.append(']')"
+    }
+  },
+  {
+    "v114": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v115": {
+      "line": "679",
+      "statement": "void appendOption(final StringBuffer buff, final Option option, final boolean required)"
+    }
+  },
+  {
+    "v116": {
+      "line": "681",
+      "statement": "if (!required)"
+    }
+  },
+  {
+    "v117": {
+      "line": "683",
+      "statement": "buff.append('[')"
+    }
+  },
+  {
+    "v118": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v119": {
+      "line": "686",
+      "statement": "if (option.getOpt() != null)"
+    }
+  },
+  {
+    "v120": {
+      "line": "688",
+      "statement": "buff.append('-').append(option.getOpt())"
+    }
+  },
+  {
+    "v121": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v122": {
+      "line": "692",
+      "statement": "buff.append('--').append(option.getLongOpt())"
+    }
+  },
+  {
+    "v123": {
+      "line": "696",
+      "statement": "if (option.hasArg() && (option.getArgName() == null || option.getArgName().length() != 0))"
+    }
+  },
+  {
+    "v124": {
+      "line": "698",
+      "statement": "buff.append(option.getOpt() == null ? longOptSeparator"
+    }
+  },
+  {
+    "v125": {
+      "line": "699",
+      "statement": "buff.append('<').append(option.getArgName() != null ? option.getArgName()"
+    }
+  },
+  {
+    "v126": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v127": {
+      "line": "703",
+      "statement": "if (!required)"
+    }
+  },
+  {
+    "v128": {
+      "line": "705",
+      "statement": "buff.append(']')"
+    }
+  },
+  {
+    "v129": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v130": {
+      "line": "717",
+      "statement": "void printUsage(final PrintWriter pw, final int width, final String cmdLineSyntax)"
+    }
+  },
+  {
+    "v131": {
+      "line": "719",
+      "statement": "final int argPos = cmdLineSyntax.indexOf(' ') + 1"
+    }
+  },
+  {
+    "v132": {
+      "line": "721",
+      "statement": "printWrapped(pw, width, getSyntaxPrefix().length() + argPos, getSyntaxPrefix() + cmdLineSyntax)"
+    }
+  },
+  {
+    "v133": {
+      "line": "736",
+      "statement": "void printOptions(final PrintWriter pw, final int width, final Options options, final int leftPad, final int descPad)"
+    }
+  },
+  {
+    "v134": {
+      "line": "739",
+      "statement": "final StringBuffer sb = new StringBuffer()"
+    }
+  },
+  {
+    "v135": {
+      "line": "741",
+      "statement": "renderOptions(sb, width, options, leftPad, descPad)"
+    }
+  },
+  {
+    "v136": {
+      "line": "742",
+      "statement": "pw.println(sb.toString())"
+    }
+  },
+  {
+    "v137": {
+      "line": "752",
+      "statement": "void printWrapped(final PrintWriter pw, final int width, final String text)"
+    }
+  },
+  {
+    "v138": {
+      "line": "754",
+      "statement": "printWrapped(pw, width, 0, text)"
+    }
+  },
+  {
+    "v139": {
+      "line": "765",
+      "statement": "void printWrapped(final PrintWriter pw, final int width, final int nextLineTabStop, final String text)"
+    }
+  },
+  {
+    "v140": {
+      "line": "767",
+      "statement": "final StringBuffer sb = new StringBuffer(text.length())"
+    }
+  },
+  {
+    "v141": {
+      "line": "769",
+      "statement": "renderWrappedTextBlock(sb, width, nextLineTabStop, text)"
+    }
+  },
+  {
+    "v142": {
+      "line": "770",
+      "statement": "pw.println(sb.toString())"
+    }
+  },
+  {
+    "v143": {
+      "line": "789",
+      "statement": "StringBuffer renderOptions(final StringBuffer sb, final int width, final Options options, final int leftPad, final int descPad)"
+    }
+  },
+  {
+    "v144": {
+      "line": "791",
+      "statement": "final String lpad = createPadding(leftPad)"
+    }
+  },
+  {
+    "v145": {
+      "line": "792",
+      "statement": "final String dpad = createPadding(descPad)"
+    }
+  },
+  {
+    "v146": {
+      "line": "798",
+      "statement": "int max = 0"
+    }
+  },
+  {
+    "v147": {
+      "line": "799",
+      "statement": "final List<StringBuffer> prefixList = new ArrayList<StringBuffer>()"
+    }
+  },
+  {
+    "v148": {
+      "line": "801",
+      "statement": "final List<Option> optList = options.helpOptions()"
+    }
+  },
+  {
+    "v149": {
+      "line": "803",
+      "statement": "if (getOptionComparator() != null)"
+    }
+  },
+  {
+    "v150": {
+      "line": "805",
+      "statement": "Collections.sort(optList, getOptionComparator())"
+    }
+  },
+  {
+    "v151": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v152": {
+      "line": "808",
+      "statement": "for (final Option option"
+    }
+  },
+  {
+    "v153": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v154": {
+      "line": "810",
+      "statement": "final StringBuffer optBuf = new StringBuffer()"
+    }
+  },
+  {
+    "v155": {
+      "line": "812",
+      "statement": "if (option.getOpt() == null)"
+    }
+  },
+  {
+    "v156": {
+      "line": "814",
+      "statement": "optBuf.append(lpad).append(' ').append(getLongOptPrefix()).append(option.getLongOpt())"
+    }
+  },
+  {
+    "v157": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v158": {
+      "line": "818",
+      "statement": "optBuf.append(lpad).append(getOptPrefix()).append(option.getOpt())"
+    }
+  },
+  {
+    "v159": {
+      "line": "820",
+      "statement": "if (option.hasLongOpt())"
+    }
+  },
+  {
+    "v160": {
+      "line": "822",
+      "statement": "optBuf.append(',').append(getLongOptPrefix()).append(option.getLongOpt())"
+    }
+  },
+  {
+    "v161": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v162": {
+      "line": "826",
+      "statement": "if (option.hasArg())"
+    }
+  },
+  {
+    "v163": {
+      "line": "828",
+      "statement": "final String argName = option.getArgName()"
+    }
+  },
+  {
+    "v164": {
+      "line": "829",
+      "statement": "if (argName != null && argName.length() == 0)"
+    }
+  },
+  {
+    "v165": {
+      "line": "832",
+      "statement": "optBuf.append(' ')"
+    }
+  },
+  {
+    "v166": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v167": {
+      "line": "836",
+      "statement": "optBuf.append(option.hasLongOpt() ? longOptSeparator"
+    }
+  },
+  {
+    "v168": {
+      "line": "837",
+      "statement": "optBuf.append('<').append(argName != null ? option.getArgName()"
+    }
+  },
+  {
+    "v169": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v170": {
+      "line": "841",
+      "statement": "prefixList.add(optBuf)"
+    }
+  },
+  {
+    "v171": {
+      "line": "842",
+      "statement": "max = optBuf.length() > max ? optBuf.length()"
+    }
+  },
+  {
+    "v172": {
+      "line": "845",
+      "statement": "int x = 0"
+    }
+  },
+  {
+    "v173": {
+      "line": "847",
+      "statement": "final Iterator<Option> it = optList.iterator()"
+    }
+  },
+  {
+    "v174": {
+      "line": "847",
+      "statement": "for (it.hasNext())"
+    }
+  },
+  {
+    "v175": {
+      "line": "847",
+      "statement": ";"
+    }
+  },
+  {
+    "v176": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v177": {
+      "line": "849",
+      "statement": "final Option option = it.next()"
+    }
+  },
+  {
+    "v178": {
+      "line": "850",
+      "statement": "final StringBuilder optBuf = new StringBuilder(prefixList.get(x++).toString())"
+    }
+  },
+  {
+    "v179": {
+      "line": "852",
+      "statement": "if (optBuf.length() < max)"
+    }
+  },
+  {
+    "v180": {
+      "line": "854",
+      "statement": "optBuf.append(createPadding(max - optBuf.length()))"
+    }
+  },
+  {
+    "v181": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v182": {
+      "line": "857",
+      "statement": "optBuf.append(dpad)"
+    }
+  },
+  {
+    "v183": {
+      "line": "859",
+      "statement": "final int nextLineTabStop = max + descPad"
+    }
+  },
+  {
+    "v184": {
+      "line": "861",
+      "statement": "if (option.getDescription() != null)"
+    }
+  },
+  {
+    "v185": {
+      "line": "863",
+      "statement": "optBuf.append(option.getDescription())"
+    }
+  },
+  {
+    "v186": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v187": {
+      "line": "866",
+      "statement": "renderWrappedText(sb, width, nextLineTabStop, optBuf.toString())"
+    }
+  },
+  {
+    "v188": {
+      "line": "868",
+      "statement": "if (it.hasNext())"
+    }
+  },
+  {
+    "v189": {
+      "line": "870",
+      "statement": "sb.append(getNewLine())"
+    }
+  },
+  {
+    "v190": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v191": {
+      "line": "874",
+      "statement": "return sb"
+    }
+  },
+  {
+    "v192": {
+      "line": "888",
+      "statement": "StringBuffer renderWrappedText(final StringBuffer sb, final int width, int nextLineTabStop, String text)"
+    }
+  },
+  {
+    "v193": {
+      "line": "891",
+      "statement": "int pos = findWrapPos(text, width, 0)"
+    }
+  },
+  {
+    "v194": {
+      "line": "893",
+      "statement": "if (pos == -1)"
+    }
+  },
+  {
+    "v195": {
+      "line": "895",
+      "statement": "sb.append(rtrim(text))"
+    }
+  },
+  {
+    "v196": {
+      "line": "897",
+      "statement": "return sb"
+    }
+  },
+  {
+    "v197": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v198": {
+      "line": "899",
+      "statement": "sb.append(rtrim(text.substring(0, pos))).append(getNewLine())"
+    }
+  },
+  {
+    "v199": {
+      "line": "901",
+      "statement": "if (nextLineTabStop >= width)"
+    }
+  },
+  {
+    "v200": {
+      "line": "904",
+      "statement": "nextLineTabStop = 1"
+    }
+  },
+  {
+    "v201": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v202": {
+      "line": "908",
+      "statement": "final String padding = createPadding(nextLineTabStop)"
+    }
+  },
+  {
+    "v203": {
+      "line": "910",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v204": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v205": {
+      "line": "912",
+      "statement": "text = padding + text.substring(pos).trim()"
+    }
+  },
+  {
+    "v206": {
+      "line": "913",
+      "statement": "pos = findWrapPos(text, width, 0)"
+    }
+  },
+  {
+    "v207": {
+      "line": "915",
+      "statement": "if (pos == -1)"
+    }
+  },
+  {
+    "v208": {
+      "line": "917",
+      "statement": "sb.append(text)"
+    }
+  },
+  {
+    "v209": {
+      "line": "919",
+      "statement": "return sb"
+    }
+  },
+  {
+    "v210": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v211": {
+      "line": "922",
+      "statement": "if (text.length() > width && pos == nextLineTabStop - 1)"
+    }
+  },
+  {
+    "v212": {
+      "line": "924",
+      "statement": "pos = width"
+    }
+  },
+  {
+    "v213": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v214": {
+      "line": "927",
+      "statement": "sb.append(rtrim(text.substring(0, pos))).append(getNewLine())"
+    }
+  },
+  {
+    "v215": {
+      "line": "940",
+      "statement": "Appendable renderWrappedTextBlock(final StringBuffer sb, final int width, final int nextLineTabStop, final String text)"
+    }
+  },
+  {
+    "v216": {
+      "line": "942",
+      "statement": "try"
+    }
+  },
+  {
+    "v217": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v218": {
+      "line": "944",
+      "statement": "final BufferedReader in = new BufferedReader(new StringReader(text))"
+    }
+  },
+  {
+    "v219": {
+      "line": "945",
+      "statement": "String line"
+    }
+  },
+  {
+    "v220": {
+      "line": "946",
+      "statement": "boolean firstLine = true"
+    }
+  },
+  {
+    "v221": {
+      "line": "947",
+      "statement": "while ((line = in.readLine()) != null)"
+    }
+  },
+  {
+    "v222": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v223": {
+      "line": "949",
+      "statement": "if (!firstLine)"
+    }
+  },
+  {
+    "v224": {
+      "line": "951",
+      "statement": "sb.append(getNewLine())"
+    }
+  },
+  {
+    "v225": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v226": {
+      "line": "955",
+      "statement": "firstLine = false"
+    }
+  },
+  {
+    "v227": {
+      "line": "957",
+      "statement": "renderWrappedText(sb, width, nextLineTabStop, line)"
+    }
+  },
+  {
+    "v228": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v229": {
+      "line": "960",
+      "statement": "catch (IOException e)"
+    }
+  },
+  {
+    "v230": {
+      "line": "965",
+      "statement": "return sb"
+    }
+  },
+  {
+    "v231": {
+      "line": "982",
+      "statement": "int findWrapPos(final String text, final int width, final int startPos)"
+    }
+  },
+  {
+    "v232": {
+      "line": "985",
+      "statement": "int pos = text.indexOf('\\\\n', startPos)"
+    }
+  },
+  {
+    "v233": {
+      "line": "986",
+      "statement": "if (pos != -1 && pos <= width)"
+    }
+  },
+  {
+    "v234": {
+      "line": "988",
+      "statement": "return pos + 1"
+    }
+  },
+  {
+    "v235": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v236": {
+      "line": "991",
+      "statement": "pos = text.indexOf('\\\\t', startPos)"
+    }
+  },
+  {
+    "v237": {
+      "line": "992",
+      "statement": "if (pos != -1 && pos <= width)"
+    }
+  },
+  {
+    "v238": {
+      "line": "994",
+      "statement": "return pos + 1"
+    }
+  },
+  {
+    "v239": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v240": {
+      "line": "997",
+      "statement": "if (startPos + width >= text.length())"
+    }
+  },
+  {
+    "v241": {
+      "line": "999",
+      "statement": "return -1"
+    }
+  },
+  {
+    "v242": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v243": {
+      "line": "1003",
+      "statement": "pos = startPos + width"
+    }
+  },
+  {
+    "v244": {
+      "line": "1003",
+      "statement": "for (pos >= startPos)"
+    }
+  },
+  {
+    "v245": {
+      "line": "1003",
+      "statement": "--pos"
+    }
+  },
+  {
+    "v246": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v247": {
+      "line": "1005",
+      "statement": "final char c = text.charAt(pos)"
+    }
+  },
+  {
+    "v248": {
+      "line": "1006",
+      "statement": "if (c == ' ' || c == '\\\\n' || c == '\\\\r')"
+    }
+  },
+  {
+    "v249": {
+      "line": "1008",
+      "statement": "break"
+    }
+  },
+  {
+    "v250": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v251": {
+      "line": "1013",
+      "statement": "if (pos > startPos)"
+    }
+  },
+  {
+    "v252": {
+      "line": "1015",
+      "statement": "return pos"
+    }
+  },
+  {
+    "v253": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v254": {
+      "line": "1019",
+      "statement": "pos = startPos + width"
+    }
+  },
+  {
+    "v255": {
+      "line": "1021",
+      "statement": "return pos == text.length() ? -1"
+    }
+  },
+  {
+    "v256": {
+      "line": "1031",
+      "statement": "String createPadding(final int len)"
+    }
+  },
+  {
+    "v257": {
+      "line": "1033",
+      "statement": "final char[] padding = new char[len"
+    }
+  },
+  {
+    "v258": {
+      "line": "1034",
+      "statement": "Arrays.fill(padding, ' ')"
+    }
+  },
+  {
+    "v259": {
+      "line": "1036",
+      "statement": "return new String(padding)"
+    }
+  },
+  {
+    "v260": {
+      "line": "1046",
+      "statement": "String rtrim(final String s)"
+    }
+  },
+  {
+    "v261": {
+      "line": "1048",
+      "statement": "if (s == null || s.length() == 0)"
+    }
+  },
+  {
+    "v262": {
+      "line": "1050",
+      "statement": "return s"
+    }
+  },
+  {
+    "v263": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v264": {
+      "line": "1053",
+      "statement": "int pos = s.length()"
+    }
+  },
+  {
+    "v265": {
+      "line": "1055",
+      "statement": "while (pos > 0 && Character.isWhitespace(s.charAt(pos - 1)))"
+    }
+  },
+  {
+    "v266": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v267": {
+      "line": "1057",
+      "statement": "--pos"
+    }
+  },
+  {
+    "v268": {
+      "line": "1060",
+      "statement": "return s.substring(0, pos)"
+    }
+  },
+  {
+    "v269": {
+      "line": "1086",
+      "statement": "int compare(final Option opt1, final Option opt2)"
+    }
+  },
+  {
+    "v270": {
+      "line": "1088",
+      "statement": "return opt1.getKey().compareToIgnoreCase(opt2.getKey())"
+    }
+  }
+]

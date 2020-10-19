@@ -1,0 +1,169 @@
+1:LVR:0:POS:org.apache.commons.math3.analysis.function.Logit@<init>():50:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logit@<init>():50:0 |==> -1
+3:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit@<init>():50:1 |==> 0
+4:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit@<init>():50:1 |==> -1
+5:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logit@<init>(double,double):61:lo |==> 0.0
+6:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logit@<init>(double,double):62:hi |==> 0.0
+7:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logit@value(double):68:value(x, lo, hi) |==> 0.0
+8:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.UnivariateFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logit@derivative():76:FunctionUtils.toDifferentiableUnivariateFunction(this).derivative() |==> null
+9:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.function.Logit$Parametric@value(double,double[]):101:validateParameters(param) |==> <NO-OP>
+10:LVR:0:POS:org.apache.commons.math3.analysis.function.Logit$Parametric@value(double,double[]):102:0 |==> 1
+11:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logit$Parametric@value(double,double[]):102:0 |==> -1
+12:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit$Parametric@value(double,double[]):102:1 |==> 0
+13:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit$Parametric@value(double,double[]):102:1 |==> -1
+14:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):121:validateParameters(param) |==> <NO-OP>
+15:LVR:0:POS:org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):123:0 |==> 1
+16:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):123:0 |==> -1
+17:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):124:1 |==> 0
+18:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):124:1 |==> -1
+19:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 |==> 0
+20:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 |==> -1
+21:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:lo - x |==> lo % x
+22:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:lo - x |==> lo * x
+23:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:lo - x |==> lo + x
+24:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:lo - x |==> lo / x
+25:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 / (lo - x) |==> 1 % (lo - x)
+26:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 / (lo - x) |==> 1 * (lo - x)
+27:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 / (lo - x) |==> 1 + (lo - x)
+28:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 / (lo - x) |==> 1 - (lo - x)
+29:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 |==> 0
+30:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 |==> -1
+31:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:hi - x |==> hi % x
+32:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:hi - x |==> hi * x
+33:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:hi - x |==> hi + x
+34:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:hi - x |==> hi / x
+35:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 / (hi - x) |==> 1 % (hi - x)
+36:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 / (hi - x) |==> 1 * (hi - x)
+37:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 / (hi - x) |==> 1 + (hi - x)
+38:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logit$Parametric@gradient(double,double[]):126:1 / (hi - x) |==> 1 - (hi - x)
+39:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.analysis.function.Logit$Parametric@validateParameters(double[]):142:param == null |==> false
+40:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit$Parametric@validateParameters(double[]):145:2 |==> 0
+41:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit$Parametric@validateParameters(double[]):145:2 |==> -2
+42:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.function.Logit$Parametric@validateParameters(double[]):145:param.length != 2 |==> param.length < 2
+43:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.function.Logit$Parametric@validateParameters(double[]):145:param.length != 2 |==> param.length > 2
+44:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.function.Logit$Parametric@validateParameters(double[]):145:param.length != 2 |==> true
+45:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit$Parametric@validateParameters(double[]):146:2 |==> 0
+46:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit$Parametric@validateParameters(double[]):146:2 |==> -2
+47:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x < lo |==> x != lo
+48:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x < lo |==> x <= lo
+49:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x < lo |==> false
+50:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x > hi |==> x != hi
+51:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x > hi |==> x >= hi
+52:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x > hi |==> false
+53:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x < lo || x > hi |==> x < lo != x > hi
+54:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x < lo || x > hi |==> x < lo
+55:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x < lo || x > hi |==> x > hi
+56:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):162:x < lo || x > hi |==> true
+57:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:x - lo |==> x % lo
+58:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:x - lo |==> x * lo
+59:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:x - lo |==> x + lo
+60:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:x - lo |==> x / lo
+61:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:hi - x |==> hi % x
+62:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:hi - x |==> hi * x
+63:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:hi - x |==> hi + x
+64:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:hi - x |==> hi / x
+65:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:(x - lo) / (hi - x) |==> (x - lo) % (hi - x)
+66:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:(x - lo) / (hi - x) |==> (x - lo) * (hi - x)
+67:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:(x - lo) / (hi - x) |==> (x - lo) + (hi - x)
+68:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logit@value(double,double,double):165:(x - lo) / (hi - x) |==> (x - lo) - (hi - x)
+69:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):174:t.getValue() |==> 0.0
+70:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x < lo |==> x != lo
+71:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x < lo |==> x <= lo
+72:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x < lo |==> false
+73:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x > hi |==> x != hi
+74:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x > hi |==> x >= hi
+75:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x > hi |==> false
+76:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x < lo || x > hi |==> x < lo != x > hi
+77:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x < lo || x > hi |==> x < lo
+78:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x < lo || x > hi |==> x > hi
+79:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:x < lo || x > hi |==> true
+80:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):178:1 |==> 0
+81:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):178:1 |==> -1
+82:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):178:t.getOrder() + 1 |==> t.getOrder() % 1
+83:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):178:t.getOrder() + 1 |==> t.getOrder() * 1
+84:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):178:t.getOrder() + 1 |==> t.getOrder() - 1
+85:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):178:t.getOrder() + 1 |==> t.getOrder() / 1
+86:LVR:0:POS:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:0 |==> 1
+87:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:0 |==> -1
+88:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:x - lo |==> x % lo
+89:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:x - lo |==> x * lo
+90:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:x - lo |==> x + lo
+91:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:x - lo |==> x / lo
+92:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:hi - x |==> hi % x
+93:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:hi - x |==> hi * x
+94:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:hi - x |==> hi + x
+95:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:hi - x |==> hi / x
+96:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:(x - lo) / (hi - x) |==> (x - lo) % (hi - x)
+97:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:(x - lo) / (hi - x) |==> (x - lo) * (hi - x)
+98:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:(x - lo) / (hi - x) |==> (x - lo) + (hi - x)
+99:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:(x - lo) / (hi - x) |==> (x - lo) - (hi - x)
+100:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:f[0] = FastMath.log((x - lo) / (hi - x)) |==> <NO-OP>
+101:LVR:0:POS:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):183:0 |==> 1
+102:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):183:0 |==> -1
+103:COR:Double.isInfinite(f[0]):TRUE:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):183:Double.isInfinite(f[0]) |==> false
+104:COR:Double.isInfinite(f[0]):FALSE:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):183:Double.isInfinite(f[0]) |==> true
+105:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:1 |==> 0
+106:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:1 |==> -1
+107:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:f.length > 1 |==> f.length != 1
+108:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:f.length > 1 |==> f.length >= 1
+109:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:f.length > 1 |==> false
+110:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:1 |==> 0
+111:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:1 |==> -1
+112:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:f[1] = Double.POSITIVE_INFINITY |==> <NO-OP>
+113:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):193:2 |==> 0
+114:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):193:2 |==> -2
+115:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):193:i < f.length |==> i != f.length
+116:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):193:i < f.length |==> i <= f.length
+117:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):193:i < f.length |==> false
+118:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:2 |==> 0
+119:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:2 |==> -2
+120:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:i - 2 |==> i % 2
+121:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:i - 2 |==> i * 2
+122:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:i - 2 |==> i + 2
+123:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:i - 2 |==> i / 2
+124:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:f[i] = f[i - 2] |==> <NO-OP>
+125:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:1.0 |==> 0.0
+126:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:1.0 |==> -1.0
+127:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:x - lo |==> x % lo
+128:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:x - lo |==> x * lo
+129:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:x - lo |==> x + lo
+130:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:x - lo |==> x / lo
+131:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:1.0 / (x - lo) |==> 1.0 % (x - lo)
+132:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:1.0 / (x - lo) |==> 1.0 * (x - lo)
+133:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:1.0 / (x - lo) |==> 1.0 + (x - lo)
+134:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):200:1.0 / (x - lo) |==> 1.0 - (x - lo)
+135:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):201:invL |==> 0.0
+136:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:1.0 |==> 0.0
+137:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:1.0 |==> -1.0
+138:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:hi - x |==> hi % x
+139:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:hi - x |==> hi * x
+140:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:hi - x |==> hi + x
+141:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:hi - x |==> hi / x
+142:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:1.0 / (hi - x) |==> 1.0 % (hi - x)
+143:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:1.0 / (hi - x) |==> 1.0 * (hi - x)
+144:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:1.0 / (hi - x) |==> 1.0 + (hi - x)
+145:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):202:1.0 / (hi - x) |==> 1.0 - (hi - x)
+146:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):203:invH |==> 0.0
+147:LVR:POS:0:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):204:1 |==> 0
+148:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):204:1 |==> -1
+149:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):204:i < f.length |==> i != f.length
+150:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):204:i < f.length |==> i <= f.length
+151:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):204:i < f.length |==> false
+152:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):205:xL + xH |==> xL % xH
+153:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):205:xL + xH |==> xL * xH
+154:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):205:xL + xH |==> xL - xH
+155:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):205:xL + xH |==> xL / xH
+156:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):205:f[i] = xL + xH |==> <NO-OP>
+157:ORU:-(int):+(int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:-i |==> +i
+158:ORU:-(int):~(int):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:-i |==> ~i
+159:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:-i * invL |==> -i % invL
+160:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:-i * invL |==> -i + invL
+161:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:-i * invL |==> -i - invL
+162:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:-i * invL |==> -i / invL
+163:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):206:xL *= -i * invL |==> <NO-OP>
+164:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):207:i * invH |==> i % invH
+165:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):207:i * invH |==> i + invH
+166:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):207:i * invH |==> i - invH
+167:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):207:i * invH |==> i / invH
+168:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):207:xH *= i * invH |==> <NO-OP>
+169:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logit@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):211:t.compose(f) |==> null

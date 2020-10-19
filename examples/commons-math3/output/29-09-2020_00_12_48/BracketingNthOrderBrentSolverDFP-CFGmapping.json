@@ -1,0 +1,1010 @@
+[
+  {
+    "v1": {
+      "line": "73",
+      "statement": "BracketingNthOrderBrentSolverDFP (final Dfp relativeAccuracy, final Dfp absoluteAccuracy, final Dfp functionValueAccuracy, final int maximalOrder)"
+    }
+  },
+  {
+    "v2": {
+      "line": "78",
+      "statement": "if (maximalOrder < 2)"
+    }
+  },
+  {
+    "v3": {
+      "line": "79",
+      "statement": "throw new NumberIsTooSmallException(maximalOrder, 2, true)"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "81",
+      "statement": "this.maximalOrder = maximalOrder"
+    }
+  },
+  {
+    "v6": {
+      "line": "82",
+      "statement": "this.absoluteAccuracy = absoluteAccuracy"
+    }
+  },
+  {
+    "v7": {
+      "line": "83",
+      "statement": "this.relativeAccuracy = relativeAccuracy"
+    }
+  },
+  {
+    "v8": {
+      "line": "84",
+      "statement": "this.functionValueAccuracy = functionValueAccuracy"
+    }
+  },
+  {
+    "v9": {
+      "line": "90",
+      "statement": "int getMaximalOrder()"
+    }
+  },
+  {
+    "v10": {
+      "line": "91",
+      "statement": "return maximalOrder"
+    }
+  },
+  {
+    "v11": {
+      "line": "99",
+      "statement": "int getMaxEvaluations()"
+    }
+  },
+  {
+    "v12": {
+      "line": "100",
+      "statement": "return evaluations.getMaximalCount()"
+    }
+  },
+  {
+    "v13": {
+      "line": "111",
+      "statement": "int getEvaluations()"
+    }
+  },
+  {
+    "v14": {
+      "line": "112",
+      "statement": "return evaluations.getCount()"
+    }
+  },
+  {
+    "v15": {
+      "line": "119",
+      "statement": "Dfp getAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v16": {
+      "line": "120",
+      "statement": "return absoluteAccuracy"
+    }
+  },
+  {
+    "v17": {
+      "line": "127",
+      "statement": "Dfp getRelativeAccuracy()"
+    }
+  },
+  {
+    "v18": {
+      "line": "128",
+      "statement": "return relativeAccuracy"
+    }
+  },
+  {
+    "v19": {
+      "line": "135",
+      "statement": "Dfp getFunctionValueAccuracy()"
+    }
+  },
+  {
+    "v20": {
+      "line": "136",
+      "statement": "return functionValueAccuracy"
+    }
+  },
+  {
+    "v21": {
+      "line": "155",
+      "statement": "Dfp solve(final int maxEval, final UnivariateDfpFunction f,  final Dfp min, final Dfp max, final AllowedSolution allowedSolution)"
+    }
+  },
+  {
+    "v22": {
+      "line": "158",
+      "statement": "return solve(maxEval, f, min, max, min.add(max).divide(2), allowedSolution)"
+    }
+  },
+  {
+    "v23": {
+      "line": "178",
+      "statement": "Dfp solve(final int maxEval, final UnivariateDfpFunction f,  final Dfp min, final Dfp max, final Dfp startValue,  final AllowedSolution allowedSolution)"
+    }
+  },
+  {
+    "v24": {
+      "line": "184",
+      "statement": "MathUtils.checkNotNull(f)"
+    }
+  },
+  {
+    "v25": {
+      "line": "187",
+      "statement": "evaluations.setMaximalCount(maxEval)"
+    }
+  },
+  {
+    "v26": {
+      "line": "188",
+      "statement": "evaluations.resetCount()"
+    }
+  },
+  {
+    "v27": {
+      "line": "189",
+      "statement": "Dfp zero = startValue.getZero()"
+    }
+  },
+  {
+    "v28": {
+      "line": "190",
+      "statement": "Dfp nan  = zero.newInstance((byte) 1, Dfp.QNAN)"
+    }
+  },
+  {
+    "v29": {
+      "line": "193",
+      "statement": "final Dfp[] x = new Dfp[maximalOrder + 1"
+    }
+  },
+  {
+    "v30": {
+      "line": "194",
+      "statement": "final Dfp[] y = new Dfp[maximalOrder + 1"
+    }
+  },
+  {
+    "v31": {
+      "line": "195",
+      "statement": "x[0] = min"
+    }
+  },
+  {
+    "v32": {
+      "line": "196",
+      "statement": "x[1] = startValue"
+    }
+  },
+  {
+    "v33": {
+      "line": "197",
+      "statement": "x[2] = max"
+    }
+  },
+  {
+    "v34": {
+      "line": "200",
+      "statement": "evaluations.incrementCount()"
+    }
+  },
+  {
+    "v35": {
+      "line": "201",
+      "statement": "y[1] = f.value(x[1])"
+    }
+  },
+  {
+    "v36": {
+      "line": "202",
+      "statement": "if (y[1].isZero())"
+    }
+  },
+  {
+    "v37": {
+      "line": "204",
+      "statement": "return x[1"
+    }
+  },
+  {
+    "v38": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v39": {
+      "line": "208",
+      "statement": "evaluations.incrementCount()"
+    }
+  },
+  {
+    "v40": {
+      "line": "209",
+      "statement": "y[0] = f.value(x[0])"
+    }
+  },
+  {
+    "v41": {
+      "line": "210",
+      "statement": "if (y[0].isZero())"
+    }
+  },
+  {
+    "v42": {
+      "line": "212",
+      "statement": "return x[0"
+    }
+  },
+  {
+    "v43": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v44": {
+      "line": "215",
+      "statement": "int nbPoints"
+    }
+  },
+  {
+    "v45": {
+      "line": "216",
+      "statement": "int signChangeIndex"
+    }
+  },
+  {
+    "v46": {
+      "line": "217",
+      "statement": "if (y[0].multiply(y[1]).negativeOrNull())"
+    }
+  },
+  {
+    "v47": {
+      "line": "220",
+      "statement": "nbPoints  = 2"
+    }
+  },
+  {
+    "v48": {
+      "line": "221",
+      "statement": "signChangeIndex = 1"
+    }
+  },
+  {
+    "v49": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v50": {
+      "line": "226",
+      "statement": "evaluations.incrementCount()"
+    }
+  },
+  {
+    "v51": {
+      "line": "227",
+      "statement": "y[2] = f.value(x[2])"
+    }
+  },
+  {
+    "v52": {
+      "line": "228",
+      "statement": "if (y[2].isZero())"
+    }
+  },
+  {
+    "v53": {
+      "line": "230",
+      "statement": "return x[2"
+    }
+  },
+  {
+    "v54": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v55": {
+      "line": "233",
+      "statement": "if (y[1].multiply(y[2]).negativeOrNull())"
+    }
+  },
+  {
+    "v56": {
+      "line": "235",
+      "statement": "nbPoints  = 3"
+    }
+  },
+  {
+    "v57": {
+      "line": "236",
+      "statement": "signChangeIndex = 2"
+    }
+  },
+  {
+    "v58": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v59": {
+      "line": "238",
+      "statement": "throw new NoBracketingException(x[0].toDouble(), x[2].toDouble(), y[0].toDouble(), y[2].toDouble())"
+    }
+  },
+  {
+    "v60": {
+      "line": "245",
+      "statement": "final Dfp[] tmpX = new Dfp[x.length"
+    }
+  },
+  {
+    "v61": {
+      "line": "248",
+      "statement": "Dfp xA  = x[signChangeIndex - 1"
+    }
+  },
+  {
+    "v62": {
+      "line": "249",
+      "statement": "Dfp yA  = y[signChangeIndex - 1"
+    }
+  },
+  {
+    "v63": {
+      "line": "250",
+      "statement": "Dfp absXA = xA.abs()"
+    }
+  },
+  {
+    "v64": {
+      "line": "251",
+      "statement": "Dfp absYA = yA.abs()"
+    }
+  },
+  {
+    "v65": {
+      "line": "252",
+      "statement": "int agingA = 0"
+    }
+  },
+  {
+    "v66": {
+      "line": "253",
+      "statement": "Dfp xB  = x[signChangeIndex"
+    }
+  },
+  {
+    "v67": {
+      "line": "254",
+      "statement": "Dfp yB  = y[signChangeIndex"
+    }
+  },
+  {
+    "v68": {
+      "line": "255",
+      "statement": "Dfp absXB = xB.abs()"
+    }
+  },
+  {
+    "v69": {
+      "line": "256",
+      "statement": "Dfp absYB = yB.abs()"
+    }
+  },
+  {
+    "v70": {
+      "line": "257",
+      "statement": "int agingB = 0"
+    }
+  },
+  {
+    "v71": {
+      "line": "260",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v72": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v73": {
+      "line": "263",
+      "statement": "Dfp maxX = absXA.lessThan(absXB) ? absXB"
+    }
+  },
+  {
+    "v74": {
+      "line": "264",
+      "statement": "Dfp maxY = absYA.lessThan(absYB) ? absYB"
+    }
+  },
+  {
+    "v75": {
+      "line": "265",
+      "statement": "final Dfp xTol = absoluteAccuracy.add(relativeAccuracy.multiply(maxX))"
+    }
+  },
+  {
+    "v76": {
+      "line": "266",
+      "statement": "if (xB.subtract(xA).subtract(xTol).negativeOrNull() || maxY.lessThan(functionValueAccuracy))"
+    }
+  },
+  {
+    "v77": {
+      "line": "268",
+      "statement": "switch (allowedSolution)"
+    }
+  },
+  {
+    "v78": {
+      "line": 0,
+      "statement": "\"end-switch"
+    }
+  },
+  {
+    "v79": {
+      "line": "269",
+      "statement": "case ANY_SIDE"
+    }
+  },
+  {
+    "v80": {
+      "line": "270",
+      "statement": "return absYA.lessThan(absYB) ? xA"
+    }
+  },
+  {
+    "v81": {
+      "line": "271",
+      "statement": "case LEFT_SIDE"
+    }
+  },
+  {
+    "v82": {
+      "line": "272",
+      "statement": "return xA"
+    }
+  },
+  {
+    "v83": {
+      "line": "273",
+      "statement": "case RIGHT_SIDE"
+    }
+  },
+  {
+    "v84": {
+      "line": "274",
+      "statement": "return xB"
+    }
+  },
+  {
+    "v85": {
+      "line": "275",
+      "statement": "case BELOW_SIDE"
+    }
+  },
+  {
+    "v86": {
+      "line": "276",
+      "statement": "return yA.lessThan(zero) ? xA"
+    }
+  },
+  {
+    "v87": {
+      "line": "277",
+      "statement": "case ABOVE_SIDE"
+    }
+  },
+  {
+    "v88": {
+      "line": "278",
+      "statement": "return yA.lessThan(zero) ? xB"
+    }
+  },
+  {
+    "v89": {
+      "line": "279",
+      "statement": "default"
+    }
+  },
+  {
+    "v90": {
+      "line": "281",
+      "statement": "throw new MathInternalError(null)"
+    }
+  },
+  {
+    "v91": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v92": {
+      "line": "286",
+      "statement": "Dfp targetY"
+    }
+  },
+  {
+    "v93": {
+      "line": "287",
+      "statement": "if (agingA >= MAXIMAL_AGING)"
+    }
+  },
+  {
+    "v94": {
+      "line": "289",
+      "statement": "targetY = yB.divide(16).negate()"
+    }
+  },
+  {
+    "v95": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v96": {
+      "line": "290",
+      "statement": "if (agingB >= MAXIMAL_AGING)"
+    }
+  },
+  {
+    "v97": {
+      "line": "292",
+      "statement": "targetY = yA.divide(16).negate()"
+    }
+  },
+  {
+    "v98": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v99": {
+      "line": "295",
+      "statement": "targetY = zero"
+    }
+  },
+  {
+    "v100": {
+      "line": "299",
+      "statement": "Dfp nextX"
+    }
+  },
+  {
+    "v101": {
+      "line": "300",
+      "statement": "int start = 0"
+    }
+  },
+  {
+    "v102": {
+      "line": "301",
+      "statement": "int end = nbPoints"
+    }
+  },
+  {
+    "v103": {
+      "line": "302",
+      "statement": "do"
+    }
+  },
+  {
+    "v104": {
+      "line": "327",
+      "statement": "while (nextX.isNaN() && (end - start > 1))"
+    }
+  },
+  {
+    "v105": {
+      "line": 0,
+      "statement": "\"end-do-while"
+    }
+  },
+  {
+    "v106": {
+      "line": "305",
+      "statement": "System.arraycopy(x, start, tmpX, start, end - start)"
+    }
+  },
+  {
+    "v107": {
+      "line": "306",
+      "statement": "nextX = guessX(targetY, tmpX, y, start, end)"
+    }
+  },
+  {
+    "v108": {
+      "line": "308",
+      "statement": "if (!(nextX.greaterThan(xA) && nextX.lessThan(xB)))"
+    }
+  },
+  {
+    "v109": {
+      "line": "314",
+      "statement": "if (signChangeIndex - start >= end - signChangeIndex)"
+    }
+  },
+  {
+    "v110": {
+      "line": "316",
+      "statement": "++start"
+    }
+  },
+  {
+    "v111": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v112": {
+      "line": "319",
+      "statement": "--end"
+    }
+  },
+  {
+    "v113": {
+      "line": "323",
+      "statement": "nextX = nan"
+    }
+  },
+  {
+    "v114": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v115": {
+      "line": "329",
+      "statement": "if (nextX.isNaN())"
+    }
+  },
+  {
+    "v116": {
+      "line": "331",
+      "statement": "nextX = xA.add(xB.subtract(xA).divide(2))"
+    }
+  },
+  {
+    "v117": {
+      "line": "332",
+      "statement": "start = signChangeIndex - 1"
+    }
+  },
+  {
+    "v118": {
+      "line": "333",
+      "statement": "end = signChangeIndex"
+    }
+  },
+  {
+    "v119": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v120": {
+      "line": "337",
+      "statement": "evaluations.incrementCount()"
+    }
+  },
+  {
+    "v121": {
+      "line": "338",
+      "statement": "final Dfp nextY = f.value(nextX)"
+    }
+  },
+  {
+    "v122": {
+      "line": "339",
+      "statement": "if (nextY.isZero())"
+    }
+  },
+  {
+    "v123": {
+      "line": "342",
+      "statement": "return nextX"
+    }
+  },
+  {
+    "v124": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v125": {
+      "line": "345",
+      "statement": "if ((nbPoints > 2) && (end - start != nbPoints))"
+    }
+  },
+  {
+    "v126": {
+      "line": "349",
+      "statement": "nbPoints = end - start"
+    }
+  },
+  {
+    "v127": {
+      "line": "350",
+      "statement": "System.arraycopy(x, start, x, 0, nbPoints)"
+    }
+  },
+  {
+    "v128": {
+      "line": "351",
+      "statement": "System.arraycopy(y, start, y, 0, nbPoints)"
+    }
+  },
+  {
+    "v129": {
+      "line": "352",
+      "statement": "signChangeIndex -= start"
+    }
+  },
+  {
+    "v130": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v131": {
+      "line": "354",
+      "statement": "if (nbPoints == x.length)"
+    }
+  },
+  {
+    "v132": {
+      "line": "357",
+      "statement": "nbPoints--"
+    }
+  },
+  {
+    "v133": {
+      "line": "360",
+      "statement": "if (signChangeIndex >= (x.length + 1) / 2)"
+    }
+  },
+  {
+    "v134": {
+      "line": "362",
+      "statement": "System.arraycopy(x, 1, x, 0, nbPoints)"
+    }
+  },
+  {
+    "v135": {
+      "line": "363",
+      "statement": "System.arraycopy(y, 1, y, 0, nbPoints)"
+    }
+  },
+  {
+    "v136": {
+      "line": "364",
+      "statement": "--signChangeIndex"
+    }
+  },
+  {
+    "v137": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v138": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v139": {
+      "line": "371",
+      "statement": "System.arraycopy(x, signChangeIndex, x, signChangeIndex + 1, nbPoints - signChangeIndex)"
+    }
+  },
+  {
+    "v140": {
+      "line": "372",
+      "statement": "x[signChangeIndex] = nextX"
+    }
+  },
+  {
+    "v141": {
+      "line": "373",
+      "statement": "System.arraycopy(y, signChangeIndex, y, signChangeIndex + 1, nbPoints - signChangeIndex)"
+    }
+  },
+  {
+    "v142": {
+      "line": "374",
+      "statement": "y[signChangeIndex] = nextY"
+    }
+  },
+  {
+    "v143": {
+      "line": "375",
+      "statement": "++nbPoints"
+    }
+  },
+  {
+    "v144": {
+      "line": "378",
+      "statement": "if (nextY.multiply(yA).negativeOrNull())"
+    }
+  },
+  {
+    "v145": {
+      "line": "380",
+      "statement": "xB = nextX"
+    }
+  },
+  {
+    "v146": {
+      "line": "381",
+      "statement": "yB = nextY"
+    }
+  },
+  {
+    "v147": {
+      "line": "382",
+      "statement": "absYB = yB.abs()"
+    }
+  },
+  {
+    "v148": {
+      "line": "383",
+      "statement": "++agingA"
+    }
+  },
+  {
+    "v149": {
+      "line": "384",
+      "statement": "agingB = 0"
+    }
+  },
+  {
+    "v150": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v151": {
+      "line": "387",
+      "statement": "xA = nextX"
+    }
+  },
+  {
+    "v152": {
+      "line": "388",
+      "statement": "yA = nextY"
+    }
+  },
+  {
+    "v153": {
+      "line": "389",
+      "statement": "absYA = yA.abs()"
+    }
+  },
+  {
+    "v154": {
+      "line": "390",
+      "statement": "agingA = 0"
+    }
+  },
+  {
+    "v155": {
+      "line": "391",
+      "statement": "++agingB"
+    }
+  },
+  {
+    "v156": {
+      "line": "394",
+      "statement": "signChangeIndex++"
+    }
+  },
+  {
+    "v157": {
+      "line": "416",
+      "statement": "Dfp guessX(final Dfp targetY, final Dfp[] x, final Dfp[] y,  final int start, final int end)"
+    }
+  },
+  {
+    "v158": {
+      "line": "420",
+      "statement": "for (  int i = start ; i < end - 1 ;   ++i)"
+    }
+  },
+  {
+    "v161": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v162": {
+      "line": "421",
+      "statement": "final int delta = i + 1 - start"
+    }
+  },
+  {
+    "v163": {
+      "line": "422",
+      "statement": "for (  int j = end - 1 ; j > i ;   --j)"
+    }
+  },
+  {
+    "v166": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v167": {
+      "line": "423",
+      "statement": "x[j] = x[j].subtract(x[j-1]).divide(y[j].subtract(y[j - delta]))"
+    }
+  },
+  {
+    "v168": {
+      "line": "428",
+      "statement": "Dfp x0 = targetY.getZero()"
+    }
+  },
+  {
+    "v169": {
+      "line": "429",
+      "statement": "for (  int j = end - 1 ; j >= start ;   --j)"
+    }
+  },
+  {
+    "v172": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v173": {
+      "line": "430",
+      "statement": "x0 = x[j].add(x0.multiply(targetY.subtract(y[j])))"
+    }
+  },
+  {
+    "v174": {
+      "line": "433",
+      "statement": "return x0"
+    }
+  }
+]

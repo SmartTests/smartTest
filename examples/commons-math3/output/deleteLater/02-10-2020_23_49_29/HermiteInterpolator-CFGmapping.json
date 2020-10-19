@@ -1,0 +1,476 @@
+[
+  {
+    "v1": {
+      "line": "62",
+      "statement": "HermiteInterpolator ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "63",
+      "statement": "this.abscissae  = new ArrayList<Double>()"
+    }
+  },
+  {
+    "v3": {
+      "line": "64",
+      "statement": "this.topDiagonal  = new ArrayList<double[]>()"
+    }
+  },
+  {
+    "v4": {
+      "line": "65",
+      "statement": "this.bottomDiagonal = new ArrayList<double[]>()"
+    }
+  },
+  {
+    "v5": {
+      "line": "87",
+      "statement": "void addSamplePoint(final double x, final double[] ... value)"
+    }
+  },
+  {
+    "v6": {
+      "line": "90",
+      "statement": "for (  int i = 0 ; i < value.length ;   ++i)"
+    }
+  },
+  {
+    "v9": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v10": {
+      "line": "92",
+      "statement": "final double[] y = null"
+    }
+  },
+  {
+    "v11": {
+      "line": "93",
+      "statement": "if (i > 1)"
+    }
+  },
+  {
+    "v12": {
+      "line": "94",
+      "statement": "double inv = 1.0 / CombinatoricsUtils.factorial(i)"
+    }
+  },
+  {
+    "v13": {
+      "line": "95",
+      "statement": "for (  int j = 0 ; j < y.length ;   ++j)"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v17": {
+      "line": "96",
+      "statement": "y[j] *= inv"
+    }
+  },
+  {
+    "v18": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v19": {
+      "line": "101",
+      "statement": "final int n = abscissae.size()"
+    }
+  },
+  {
+    "v20": {
+      "line": "102",
+      "statement": "bottomDiagonal.add(n - i, y)"
+    }
+  },
+  {
+    "v21": {
+      "line": "103",
+      "statement": "double[] bottom0 = y"
+    }
+  },
+  {
+    "v22": {
+      "line": "104",
+      "statement": "for (  int j = i ; j < n ;   ++j)"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v26": {
+      "line": "105",
+      "statement": "final double[] bottom1 = bottomDiagonal.get(n - (j + 1))"
+    }
+  },
+  {
+    "v27": {
+      "line": "106",
+      "statement": "final double inv = 1.0 / (x - abscissae.get(n - (j + 1)))"
+    }
+  },
+  {
+    "v28": {
+      "line": "107",
+      "statement": "if (Double.isInfinite(inv))"
+    }
+  },
+  {
+    "v29": {
+      "line": "108",
+      "statement": "throw new ZeroException(LocalizedFormats.DUPLICATED_ABSCISSA_DIVISION_BY_ZERO, x)"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v31": {
+      "line": "110",
+      "statement": "for (  int k = 0 ; k < y.length ;   ++k)"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v35": {
+      "line": "111",
+      "statement": "bottom1[k] = inv * (bottom0[k] - bottom1[k])"
+    }
+  },
+  {
+    "v36": {
+      "line": "113",
+      "statement": "bottom0 = bottom1"
+    }
+  },
+  {
+    "v37": {
+      "line": "117",
+      "statement": "topDiagonal.add(bottom0.clone())"
+    }
+  },
+  {
+    "v38": {
+      "line": "120",
+      "statement": "abscissae.add(x)"
+    }
+  },
+  {
+    "v39": {
+      "line": "130",
+      "statement": "PolynomialFunction[] getPolynomials()"
+    }
+  },
+  {
+    "v40": {
+      "line": "134",
+      "statement": "checkInterpolation()"
+    }
+  },
+  {
+    "v41": {
+      "line": "137",
+      "statement": "final PolynomialFunction zero = polynomial(0)"
+    }
+  },
+  {
+    "v42": {
+      "line": "138",
+      "statement": "PolynomialFunction[] polynomials = new PolynomialFunction[topDiagonal.get(0).length"
+    }
+  },
+  {
+    "v43": {
+      "line": "139",
+      "statement": "for (  int i = 0 ; i < polynomials.length ;   ++i)"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v47": {
+      "line": "140",
+      "statement": "polynomials[i] = zero"
+    }
+  },
+  {
+    "v48": {
+      "line": "142",
+      "statement": "PolynomialFunction coeff = polynomial(1)"
+    }
+  },
+  {
+    "v49": {
+      "line": "145",
+      "statement": "for (  int i = 0 ; i < topDiagonal.size(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v53": {
+      "line": "146",
+      "statement": "double[] tdi = topDiagonal.get(i)"
+    }
+  },
+  {
+    "v54": {
+      "line": "147",
+      "statement": "for (  int k = 0 ; k < polynomials.length ;   ++k)"
+    }
+  },
+  {
+    "v57": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v58": {
+      "line": "148",
+      "statement": "polynomials[k] = polynomials[k].add(coeff.multiply(polynomial(tdi[k])))"
+    }
+  },
+  {
+    "v59": {
+      "line": "150",
+      "statement": "coeff = coeff.multiply(polynomial(-abscissae.get(i), 1.0))"
+    }
+  },
+  {
+    "v60": {
+      "line": "153",
+      "statement": "return polynomials"
+    }
+  },
+  {
+    "v61": {
+      "line": "168",
+      "statement": "double[] value(double x)"
+    }
+  },
+  {
+    "v62": {
+      "line": "172",
+      "statement": "checkInterpolation()"
+    }
+  },
+  {
+    "v63": {
+      "line": "174",
+      "statement": "final double[] value = new double[topDiagonal.get(0).length"
+    }
+  },
+  {
+    "v64": {
+      "line": "175",
+      "statement": "double valueCoeff = 1"
+    }
+  },
+  {
+    "v65": {
+      "line": "176",
+      "statement": "for (  int i = 0 ; i < topDiagonal.size(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v68": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v69": {
+      "line": "177",
+      "statement": "double[] dividedDifference = topDiagonal.get(i)"
+    }
+  },
+  {
+    "v70": {
+      "line": "178",
+      "statement": "for (  int k = 0 ; k < value.length ;   ++k)"
+    }
+  },
+  {
+    "v73": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v74": {
+      "line": "179",
+      "statement": "value[k] += dividedDifference[k] * valueCoeff"
+    }
+  },
+  {
+    "v75": {
+      "line": "181",
+      "statement": "final double deltaX = x - abscissae.get(i)"
+    }
+  },
+  {
+    "v76": {
+      "line": "182",
+      "statement": "valueCoeff *= deltaX"
+    }
+  },
+  {
+    "v77": {
+      "line": "185",
+      "statement": "return value"
+    }
+  },
+  {
+    "v78": {
+      "line": "200",
+      "statement": "DerivativeStructure[] value(final DerivativeStructure x)"
+    }
+  },
+  {
+    "v79": {
+      "line": "204",
+      "statement": "checkInterpolation()"
+    }
+  },
+  {
+    "v80": {
+      "line": "206",
+      "statement": "final DerivativeStructure[] value = new DerivativeStructure[topDiagonal.get(0).length"
+    }
+  },
+  {
+    "v81": {
+      "line": "207",
+      "statement": "Arrays.fill(value, x.getField().getZero())"
+    }
+  },
+  {
+    "v82": {
+      "line": "208",
+      "statement": "DerivativeStructure valueCoeff = x.getField().getOne()"
+    }
+  },
+  {
+    "v83": {
+      "line": "209",
+      "statement": "for (  int i = 0 ; i < topDiagonal.size(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v86": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v87": {
+      "line": "210",
+      "statement": "double[] dividedDifference = topDiagonal.get(i)"
+    }
+  },
+  {
+    "v88": {
+      "line": "211",
+      "statement": "for (  int k = 0 ; k < value.length ;   ++k)"
+    }
+  },
+  {
+    "v91": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v92": {
+      "line": "212",
+      "statement": "value[k] = value[k].add(valueCoeff.multiply(dividedDifference[k]))"
+    }
+  },
+  {
+    "v93": {
+      "line": "214",
+      "statement": "final DerivativeStructure deltaX = x.subtract(abscissae.get(i))"
+    }
+  },
+  {
+    "v94": {
+      "line": "215",
+      "statement": "valueCoeff = valueCoeff.multiply(deltaX)"
+    }
+  },
+  {
+    "v95": {
+      "line": "218",
+      "statement": "return value"
+    }
+  },
+  {
+    "v96": {
+      "line": "226",
+      "statement": "void checkInterpolation()"
+    }
+  },
+  {
+    "v97": {
+      "line": "227",
+      "statement": "if (abscissae.isEmpty())"
+    }
+  },
+  {
+    "v98": {
+      "line": "228",
+      "statement": "throw new NoDataException(LocalizedFormats.EMPTY_INTERPOLATION_SAMPLE)"
+    }
+  },
+  {
+    "v99": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v100": {
+      "line": "236",
+      "statement": "PolynomialFunction polynomial(double ... c)"
+    }
+  },
+  {
+    "v101": {
+      "line": "237",
+      "statement": "return new PolynomialFunction(c)"
+    }
+  }
+]

@@ -1,0 +1,316 @@
+1:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():88:getMin() |==> 0.0
+2:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():89:getMax() |==> 0.0
+3:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():90:getStartValue() |==> 0.0
+4:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():91:getFunctionValueAccuracy() |==> 0.0
+5:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():93:verifySequence(min, initial, max) |==> <NO-OP>
+6:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():96:computeObjectiveValue(initial) |==> 0.0
+7:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():97:FastMath.abs(yInitial) <= functionValueAccuracy |==> FastMath.abs(yInitial) < functionValueAccuracy
+8:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():97:FastMath.abs(yInitial) <= functionValueAccuracy |==> FastMath.abs(yInitial) == functionValueAccuracy
+9:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():97:FastMath.abs(yInitial) <= functionValueAccuracy |==> true
+10:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():98:return initial; |==> <NO-OP>
+11:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():102:computeObjectiveValue(min) |==> 0.0
+12:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():103:FastMath.abs(yMin) <= functionValueAccuracy |==> FastMath.abs(yMin) < functionValueAccuracy
+13:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():103:FastMath.abs(yMin) <= functionValueAccuracy |==> FastMath.abs(yMin) == functionValueAccuracy
+14:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():103:FastMath.abs(yMin) <= functionValueAccuracy |==> true
+15:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():104:return min; |==> <NO-OP>
+16:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():108:yInitial * yMin |==> yInitial % yMin
+17:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():108:yInitial * yMin |==> yInitial + yMin
+18:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():108:yInitial * yMin |==> yInitial - yMin
+19:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():108:yInitial * yMin |==> yInitial / yMin
+20:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():108:0 |==> 1
+21:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():108:0 |==> -1
+22:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():108:yInitial * yMin < 0 |==> yInitial * yMin != 0
+23:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():108:yInitial * yMin < 0 |==> yInitial * yMin <= 0
+24:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():108:yInitial * yMin < 0 |==> false
+25:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():109:return brent(min, initial, yMin, yInitial); |==> <NO-OP>
+26:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():113:computeObjectiveValue(max) |==> 0.0
+27:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():114:FastMath.abs(yMax) <= functionValueAccuracy |==> FastMath.abs(yMax) < functionValueAccuracy
+28:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():114:FastMath.abs(yMax) <= functionValueAccuracy |==> FastMath.abs(yMax) == functionValueAccuracy
+29:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():114:FastMath.abs(yMax) <= functionValueAccuracy |==> true
+30:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():115:return max; |==> <NO-OP>
+31:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():119:yInitial * yMax |==> yInitial % yMax
+32:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():119:yInitial * yMax |==> yInitial + yMax
+33:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():119:yInitial * yMax |==> yInitial - yMax
+34:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():119:yInitial * yMax |==> yInitial / yMax
+35:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():119:0 |==> 1
+36:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():119:0 |==> -1
+37:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():119:yInitial * yMax < 0 |==> yInitial * yMax != 0
+38:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():119:yInitial * yMax < 0 |==> yInitial * yMax <= 0
+39:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():119:yInitial * yMax < 0 |==> false
+40:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@doSolve():120:return brent(initial, max, yInitial, yMax); |==> <NO-OP>
+41:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):144:lo |==> 0.0
+42:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):145:fLo |==> 0.0
+43:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):146:hi |==> 0.0
+44:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):147:fHi |==> 0.0
+45:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):148:a |==> 0.0
+46:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):149:fa |==> 0.0
+47:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):150:b - a |==> b % a
+48:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):150:b - a |==> b * a
+49:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):150:b - a |==> b + a
+50:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):150:b - a |==> b / a
+51:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):151:d |==> 0.0
+52:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):153:getAbsoluteAccuracy() |==> 0.0
+53:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):154:getRelativeAccuracy() |==> 0.0
+54:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):157:FastMath.abs(fc) < FastMath.abs(fb) |==> FastMath.abs(fc) != FastMath.abs(fb)
+55:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):157:FastMath.abs(fc) < FastMath.abs(fb) |==> FastMath.abs(fc) <= FastMath.abs(fb)
+56:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):157:FastMath.abs(fc) < FastMath.abs(fb) |==> false
+57:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):158:a = b |==> <NO-OP>
+58:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):159:b = c |==> <NO-OP>
+59:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):160:c = a |==> <NO-OP>
+60:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):161:fa = fb |==> <NO-OP>
+61:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):162:fb = fc |==> <NO-OP>
+62:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):163:fc = fa |==> <NO-OP>
+63:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 |==> 0
+64:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 |==> -2
+65:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps |==> 2 % eps
+66:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps |==> 2 + eps
+67:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps |==> 2 - eps
+68:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps |==> 2 / eps
+69:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps * FastMath.abs(b) |==> 2 * eps % FastMath.abs(b)
+70:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps * FastMath.abs(b) |==> 2 * eps + FastMath.abs(b)
+71:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps * FastMath.abs(b) |==> 2 * eps - FastMath.abs(b)
+72:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps * FastMath.abs(b) |==> 2 * eps / FastMath.abs(b)
+73:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps * FastMath.abs(b) + t |==> 2 * eps * FastMath.abs(b) % t
+74:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps * FastMath.abs(b) + t |==> 2 * eps * FastMath.abs(b) * t
+75:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps * FastMath.abs(b) + t |==> 2 * eps * FastMath.abs(b) - t
+76:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):166:2 * eps * FastMath.abs(b) + t |==> 2 * eps * FastMath.abs(b) / t
+77:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:0.5 |==> 0.0
+78:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:0.5 |==> -0.5
+79:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:c - b |==> c % b
+80:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:c - b |==> c * b
+81:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:c - b |==> c + b
+82:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:c - b |==> c / b
+83:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:0.5 * (c - b) |==> 0.5 % (c - b)
+84:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:0.5 * (c - b) |==> 0.5 + (c - b)
+85:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:0.5 * (c - b) |==> 0.5 - (c - b)
+86:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):167:0.5 * (c - b) |==> 0.5 / (c - b)
+87:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):169:FastMath.abs(m) <= tol |==> FastMath.abs(m) < tol
+88:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):169:FastMath.abs(m) <= tol |==> FastMath.abs(m) == tol
+89:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):169:FastMath.abs(m) <= tol |==> true
+90:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):170:0 |==> 1
+91:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):170:0 |==> -1
+92:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):169:FastMath.abs(m) <= tol || Precision.equals(fb, 0) |==> FastMath.abs(m) <= tol != Precision.equals(fb, 0)
+93:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):169:FastMath.abs(m) <= tol || Precision.equals(fb, 0) |==> FastMath.abs(m) <= tol
+94:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):170:FastMath.abs(m) <= tol || Precision.equals(fb, 0) |==> Precision.equals(fb, 0)
+95:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):169:FastMath.abs(m) <= tol || Precision.equals(fb, 0) |==> true
+96:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):171:return b; |==> <NO-OP>
+97:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):173:FastMath.abs(e) < tol |==> FastMath.abs(e) != tol
+98:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):173:FastMath.abs(e) < tol |==> FastMath.abs(e) <= tol
+99:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):173:FastMath.abs(e) < tol |==> false
+100:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):174:FastMath.abs(fa) <= FastMath.abs(fb) |==> FastMath.abs(fa) < FastMath.abs(fb)
+101:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):174:FastMath.abs(fa) <= FastMath.abs(fb) |==> FastMath.abs(fa) == FastMath.abs(fb)
+102:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):174:FastMath.abs(fa) <= FastMath.abs(fb) |==> true
+103:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):173:FastMath.abs(e) < tol || FastMath.abs(fa) <= FastMath.abs(fb) |==> FastMath.abs(e) < tol != FastMath.abs(fa) <= FastMath.abs(fb)
+104:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):173:FastMath.abs(e) < tol || FastMath.abs(fa) <= FastMath.abs(fb) |==> FastMath.abs(e) < tol
+105:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):174:FastMath.abs(e) < tol || FastMath.abs(fa) <= FastMath.abs(fb) |==> FastMath.abs(fa) <= FastMath.abs(fb)
+106:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):173:FastMath.abs(e) < tol || FastMath.abs(fa) <= FastMath.abs(fb) |==> true
+107:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):176:d = m |==> <NO-OP>
+108:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):177:e = d |==> <NO-OP>
+109:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):179:fb / fa |==> fb % fa
+110:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):179:fb / fa |==> fb * fa
+111:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):179:fb / fa |==> fb + fa
+112:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):179:fb / fa |==> fb - fa
+113:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):185:a == c |==> a <= c
+114:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):185:a == c |==> a >= c
+115:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):185:a == c |==> false
+116:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 |==> 0
+117:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 |==> -2
+118:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 * m |==> 2 % m
+119:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 * m |==> 2 + m
+120:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 * m |==> 2 - m
+121:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 * m |==> 2 / m
+122:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 * m * s |==> 2 * m % s
+123:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 * m * s |==> 2 * m + s
+124:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 * m * s |==> 2 * m - s
+125:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):187:2 * m * s |==> 2 * m / s
+126:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):188:1 |==> 0
+127:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):188:1 |==> -1
+128:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):188:1 - s |==> 1 % s
+129:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):188:1 - s |==> 1 * s
+130:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):188:1 - s |==> 1 + s
+131:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):188:1 - s |==> 1 / s
+132:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):191:fa / fc |==> fa % fc
+133:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):191:fa / fc |==> fa * fc
+134:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):191:fa / fc |==> fa + fc
+135:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):191:fa / fc |==> fa - fc
+136:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):192:fb / fc |==> fb % fc
+137:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):192:fb / fc |==> fb * fc
+138:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):192:fb / fc |==> fb + fc
+139:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):192:fb / fc |==> fb - fc
+140:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 |==> 0
+141:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 |==> -2
+142:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m |==> 2 % m
+143:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m |==> 2 + m
+144:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m |==> 2 - m
+145:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m |==> 2 / m
+146:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q |==> 2 * m % q
+147:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q |==> 2 * m + q
+148:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q |==> 2 * m - q
+149:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q |==> 2 * m / q
+150:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:q - r |==> q % r
+151:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:q - r |==> q * r
+152:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:q - r |==> q + r
+153:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:q - r |==> q / r
+154:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q * (q - r) |==> 2 * m * q % (q - r)
+155:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q * (q - r) |==> 2 * m * q + (q - r)
+156:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q * (q - r) |==> 2 * m * q - (q - r)
+157:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q * (q - r) |==> 2 * m * q / (q - r)
+158:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:b - a |==> b % a
+159:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:b - a |==> b * a
+160:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:b - a |==> b + a
+161:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:b - a |==> b / a
+162:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:1 |==> 0
+163:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:1 |==> -1
+164:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:r - 1 |==> r % 1
+165:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:r - 1 |==> r * 1
+166:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:r - 1 |==> r + 1
+167:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:r - 1 |==> r / 1
+168:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:(b - a) * (r - 1) |==> (b - a) % (r - 1)
+169:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:(b - a) * (r - 1) |==> (b - a) + (r - 1)
+170:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:(b - a) * (r - 1) |==> (b - a) - (r - 1)
+171:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:(b - a) * (r - 1) |==> (b - a) / (r - 1)
+172:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q * (q - r) - (b - a) * (r - 1) |==> 2 * m * q * (q - r) % ((b - a) * (r - 1))
+173:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q * (q - r) - (b - a) * (r - 1) |==> 2 * m * q * (q - r) * ((b - a) * (r - 1))
+174:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q * (q - r) - (b - a) * (r - 1) |==> 2 * m * q * (q - r) + (b - a) * (r - 1)
+175:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:2 * m * q * (q - r) - (b - a) * (r - 1) |==> 2 * m * q * (q - r) / ((b - a) * (r - 1))
+176:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:s * (2 * m * q * (q - r) - (b - a) * (r - 1)) |==> s % (2 * m * q * (q - r) - (b - a) * (r - 1))
+177:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:s * (2 * m * q * (q - r) - (b - a) * (r - 1)) |==> s + (2 * m * q * (q - r) - (b - a) * (r - 1))
+178:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:s * (2 * m * q * (q - r) - (b - a) * (r - 1)) |==> s - (2 * m * q * (q - r) - (b - a) * (r - 1))
+179:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):193:s * (2 * m * q * (q - r) - (b - a) * (r - 1)) |==> s / (2 * m * q * (q - r) - (b - a) * (r - 1))
+180:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:1 |==> 0
+181:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:1 |==> -1
+182:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:q - 1 |==> q % 1
+183:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:q - 1 |==> q * 1
+184:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:q - 1 |==> q + 1
+185:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:q - 1 |==> q / 1
+186:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:1 |==> 0
+187:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:1 |==> -1
+188:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:r - 1 |==> r % 1
+189:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:r - 1 |==> r * 1
+190:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:r - 1 |==> r + 1
+191:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:r - 1 |==> r / 1
+192:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:(q - 1) * (r - 1) |==> (q - 1) % (r - 1)
+193:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:(q - 1) * (r - 1) |==> (q - 1) + (r - 1)
+194:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:(q - 1) * (r - 1) |==> (q - 1) - (r - 1)
+195:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:(q - 1) * (r - 1) |==> (q - 1) / (r - 1)
+196:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:1 |==> 0
+197:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:1 |==> -1
+198:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:s - 1 |==> s % 1
+199:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:s - 1 |==> s * 1
+200:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:s - 1 |==> s + 1
+201:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:s - 1 |==> s / 1
+202:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:(q - 1) * (r - 1) * (s - 1) |==> (q - 1) * (r - 1) % (s - 1)
+203:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:(q - 1) * (r - 1) * (s - 1) |==> (q - 1) * (r - 1) + (s - 1)
+204:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:(q - 1) * (r - 1) * (s - 1) |==> (q - 1) * (r - 1) - (s - 1)
+205:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:(q - 1) * (r - 1) * (s - 1) |==> (q - 1) * (r - 1) / (s - 1)
+206:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):194:q = (q - 1) * (r - 1) * (s - 1) |==> <NO-OP>
+207:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):196:0 |==> 1
+208:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):196:0 |==> -1
+209:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):196:p > 0 |==> p != 0
+210:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):196:p > 0 |==> p >= 0
+211:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):196:p > 0 |==> false
+212:ORU:-(double):+(double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):197:-q |==> +q
+213:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):197:q = -q |==> <NO-OP>
+214:ORU:-(double):+(double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):199:-p |==> +p
+215:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):199:p = -p |==> <NO-OP>
+216:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):201:s = e |==> <NO-OP>
+217:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):202:e = d |==> <NO-OP>
+218:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 |==> 0.0
+219:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 |==> -1.5
+220:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m |==> 1.5 % m
+221:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m |==> 1.5 + m
+222:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m |==> 1.5 - m
+223:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m |==> 1.5 / m
+224:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m * q |==> 1.5 * m % q
+225:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m * q |==> 1.5 * m + q
+226:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m * q |==> 1.5 * m - q
+227:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m * q |==> 1.5 * m / q
+228:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:tol * q |==> tol % q
+229:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:tol * q |==> tol + q
+230:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:tol * q |==> tol - q
+231:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:tol * q |==> tol / q
+232:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m * q - FastMath.abs(tol * q) |==> 1.5 * m * q % FastMath.abs(tol * q)
+233:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m * q - FastMath.abs(tol * q) |==> 1.5 * m * q * FastMath.abs(tol * q)
+234:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m * q - FastMath.abs(tol * q) |==> 1.5 * m * q + FastMath.abs(tol * q)
+235:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:1.5 * m * q - FastMath.abs(tol * q) |==> 1.5 * m * q / FastMath.abs(tol * q)
+236:ROR:>=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:p >= 1.5 * m * q - FastMath.abs(tol * q) |==> p == 1.5 * m * q - FastMath.abs(tol * q)
+237:ROR:>=(double,double):>(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:p >= 1.5 * m * q - FastMath.abs(tol * q) |==> p > 1.5 * m * q - FastMath.abs(tol * q)
+238:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:p >= 1.5 * m * q - FastMath.abs(tol * q) |==> true
+239:LVR:POS:0:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 |==> 0.0
+240:LVR:POS:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 |==> -0.5
+241:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 * s |==> 0.5 % s
+242:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 * s |==> 0.5 + s
+243:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 * s |==> 0.5 - s
+244:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 * s |==> 0.5 / s
+245:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 * s * q |==> 0.5 * s % q
+246:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 * s * q |==> 0.5 * s + q
+247:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 * s * q |==> 0.5 * s - q
+248:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:0.5 * s * q |==> 0.5 * s / q
+249:ROR:>=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:p >= FastMath.abs(0.5 * s * q) |==> p == FastMath.abs(0.5 * s * q)
+250:ROR:>=(double,double):>(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:p >= FastMath.abs(0.5 * s * q) |==> p > FastMath.abs(0.5 * s * q)
+251:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:p >= FastMath.abs(0.5 * s * q) |==> true
+252:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:p >= 1.5 * m * q - FastMath.abs(tol * q) || p >= FastMath.abs(0.5 * s * q) |==> p >= 1.5 * m * q - FastMath.abs(tol * q) != p >= FastMath.abs(0.5 * s * q)
+253:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:p >= 1.5 * m * q - FastMath.abs(tol * q) || p >= FastMath.abs(0.5 * s * q) |==> p >= 1.5 * m * q - FastMath.abs(tol * q)
+254:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):204:p >= 1.5 * m * q - FastMath.abs(tol * q) || p >= FastMath.abs(0.5 * s * q) |==> p >= FastMath.abs(0.5 * s * q)
+255:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):203:p >= 1.5 * m * q - FastMath.abs(tol * q) || p >= FastMath.abs(0.5 * s * q) |==> true
+256:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):208:d = m |==> <NO-OP>
+257:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):209:e = d |==> <NO-OP>
+258:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):211:p / q |==> p % q
+259:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):211:p / q |==> p * q
+260:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):211:p / q |==> p + q
+261:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):211:p / q |==> p - q
+262:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):211:d = p / q |==> <NO-OP>
+263:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):214:a = b |==> <NO-OP>
+264:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):215:fa = fb |==> <NO-OP>
+265:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):217:FastMath.abs(d) > tol |==> FastMath.abs(d) != tol
+266:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):217:FastMath.abs(d) > tol |==> FastMath.abs(d) >= tol
+267:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):217:FastMath.abs(d) > tol |==> false
+268:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):218:b += d |==> <NO-OP>
+269:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):219:0 |==> 1
+270:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):219:0 |==> -1
+271:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):219:m > 0 |==> m != 0
+272:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):219:m > 0 |==> m >= 0
+273:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):219:m > 0 |==> false
+274:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):220:b += tol |==> <NO-OP>
+275:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):222:b -= tol |==> <NO-OP>
+276:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):224:fb = computeObjectiveValue(b) |==> <NO-OP>
+277:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:0 |==> 1
+278:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:0 |==> -1
+279:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fb > 0 |==> fb != 0
+280:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fb > 0 |==> fb >= 0
+281:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fb > 0 |==> false
+282:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:0 |==> 1
+283:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:0 |==> -1
+284:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fc > 0 |==> fc != 0
+285:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fc > 0 |==> fc >= 0
+286:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fc > 0 |==> false
+287:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fb > 0 && fc > 0 |==> fb > 0 == fc > 0
+288:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fb > 0 && fc > 0 |==> false
+289:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fb > 0 && fc > 0 |==> fb > 0
+290:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:fb > 0 && fc > 0 |==> fc > 0
+291:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:0 |==> 1
+292:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:0 |==> -1
+293:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fb <= 0 |==> fb < 0
+294:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fb <= 0 |==> fb == 0
+295:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fb <= 0 |==> true
+296:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:0 |==> 1
+297:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:0 |==> -1
+298:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fc <= 0 |==> fc < 0
+299:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fc <= 0 |==> fc == 0
+300:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fc <= 0 |==> true
+301:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fb <= 0 && fc <= 0 |==> fb <= 0 == fc <= 0
+302:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fb <= 0 && fc <= 0 |==> false
+303:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fb <= 0 && fc <= 0 |==> fb <= 0
+304:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:fb <= 0 && fc <= 0 |==> fc <= 0
+305:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:(fb > 0 && fc > 0) || (fb <= 0 && fc <= 0) |==> (fb > 0 && fc > 0) != (fb <= 0 && fc <= 0)
+306:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:(fb > 0 && fc > 0) || (fb <= 0 && fc <= 0) |==> (fb > 0 && fc > 0)
+307:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):226:(fb > 0 && fc > 0) || (fb <= 0 && fc <= 0) |==> (fb <= 0 && fc <= 0)
+308:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):225:(fb > 0 && fc > 0) || (fb <= 0 && fc <= 0) |==> true
+309:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):227:c = a |==> <NO-OP>
+310:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):228:fc = fa |==> <NO-OP>
+311:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):229:b - a |==> b % a
+312:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):229:b - a |==> b * a
+313:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):229:b - a |==> b + a
+314:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):229:b - a |==> b / a
+315:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):229:d = b - a |==> <NO-OP>
+316:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BrentSolver@brent(double,double,double,double):230:e = d |==> <NO-OP>

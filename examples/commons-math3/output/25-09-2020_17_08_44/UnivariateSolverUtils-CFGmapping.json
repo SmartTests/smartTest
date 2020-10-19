@@ -1,0 +1,650 @@
+[
+  {
+    "v1": {
+      "line": "36",
+      "statement": "UnivariateSolverUtils ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "50",
+      "statement": "double solve(UnivariateFunction function, double x0, double x1)"
+    }
+  },
+  {
+    "v3": {
+      "line": "53",
+      "statement": "if (function == null)"
+    }
+  },
+  {
+    "v4": {
+      "line": "54",
+      "statement": "throw new NullArgumentException(LocalizedFormats.FUNCTION)"
+    }
+  },
+  {
+    "v5": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v6": {
+      "line": "56",
+      "statement": "final UnivariateSolver solver = new BrentSolver()"
+    }
+  },
+  {
+    "v7": {
+      "line": "57",
+      "statement": "return solver.solve(Integer.MAX_VALUE, function, x0, x1)"
+    }
+  },
+  {
+    "v8": {
+      "line": "73",
+      "statement": "double solve(UnivariateFunction function,  double x0, double x1,  double absoluteAccuracy)"
+    }
+  },
+  {
+    "v9": {
+      "line": "78",
+      "statement": "if (function == null)"
+    }
+  },
+  {
+    "v10": {
+      "line": "79",
+      "statement": "throw new NullArgumentException(LocalizedFormats.FUNCTION)"
+    }
+  },
+  {
+    "v11": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v12": {
+      "line": "81",
+      "statement": "final UnivariateSolver solver = new BrentSolver(absoluteAccuracy)"
+    }
+  },
+  {
+    "v13": {
+      "line": "82",
+      "statement": "return solver.solve(Integer.MAX_VALUE, function, x0, x1)"
+    }
+  },
+  {
+    "v14": {
+      "line": "101",
+      "statement": "double forceSide(final int maxEval, final UnivariateFunction f,  final BracketedUnivariateSolver<UnivariateFunction> bracketing,  final double baseRoot, final double min, final double max,  final AllowedSolution allowedSolution)"
+    }
+  },
+  {
+    "v15": {
+      "line": "107",
+      "statement": "if (allowedSolution == AllowedSolution.ANY_SIDE)"
+    }
+  },
+  {
+    "v16": {
+      "line": "109",
+      "statement": "return baseRoot"
+    }
+  },
+  {
+    "v17": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v18": {
+      "line": "113",
+      "statement": "final double step = FastMath.max(bracketing.getAbsoluteAccuracy(),  FastMath.abs(baseRoot * bracketing.getRelativeAccuracy()))"
+    }
+  },
+  {
+    "v19": {
+      "line": "115",
+      "statement": "double xLo  = FastMath.max(min, baseRoot - step)"
+    }
+  },
+  {
+    "v20": {
+      "line": "116",
+      "statement": "double fLo  = f.value(xLo)"
+    }
+  },
+  {
+    "v21": {
+      "line": "117",
+      "statement": "double xHi  = FastMath.min(max, baseRoot + step)"
+    }
+  },
+  {
+    "v22": {
+      "line": "118",
+      "statement": "double fHi  = f.value(xHi)"
+    }
+  },
+  {
+    "v23": {
+      "line": "119",
+      "statement": "int remainingEval = maxEval - 2"
+    }
+  },
+  {
+    "v24": {
+      "line": "120",
+      "statement": "while (remainingEval > 0)"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v26": {
+      "line": "122",
+      "statement": "if ((fLo >= 0 && fHi <= 0) || (fLo <= 0 && fHi >= 0))"
+    }
+  },
+  {
+    "v27": {
+      "line": "124",
+      "statement": "return bracketing.solve(remainingEval, f, xLo, xHi, baseRoot, allowedSolution)"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "128",
+      "statement": "boolean changeLo = false"
+    }
+  },
+  {
+    "v30": {
+      "line": "129",
+      "statement": "boolean changeHi = false"
+    }
+  },
+  {
+    "v31": {
+      "line": "130",
+      "statement": "if (fLo < fHi)"
+    }
+  },
+  {
+    "v32": {
+      "line": "132",
+      "statement": "if (fLo >= 0)"
+    }
+  },
+  {
+    "v33": {
+      "line": "133",
+      "statement": "changeLo = true"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v35": {
+      "line": "135",
+      "statement": "changeHi = true"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v37": {
+      "line": "137",
+      "statement": "if (fLo > fHi)"
+    }
+  },
+  {
+    "v38": {
+      "line": "139",
+      "statement": "if (fLo <= 0)"
+    }
+  },
+  {
+    "v39": {
+      "line": "140",
+      "statement": "changeLo = true"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v41": {
+      "line": "142",
+      "statement": "changeHi = true"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": "146",
+      "statement": "changeLo = true"
+    }
+  },
+  {
+    "v44": {
+      "line": "147",
+      "statement": "changeHi = true"
+    }
+  },
+  {
+    "v45": {
+      "line": "151",
+      "statement": "if (changeLo)"
+    }
+  },
+  {
+    "v46": {
+      "line": "152",
+      "statement": "xLo = FastMath.max(min, xLo - step)"
+    }
+  },
+  {
+    "v47": {
+      "line": "153",
+      "statement": "fLo  = f.value(xLo)"
+    }
+  },
+  {
+    "v48": {
+      "line": "154",
+      "statement": "remainingEval--"
+    }
+  },
+  {
+    "v49": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v50": {
+      "line": "158",
+      "statement": "if (changeHi)"
+    }
+  },
+  {
+    "v51": {
+      "line": "159",
+      "statement": "xHi = FastMath.min(max, xHi + step)"
+    }
+  },
+  {
+    "v52": {
+      "line": "160",
+      "statement": "fHi  = f.value(xHi)"
+    }
+  },
+  {
+    "v53": {
+      "line": "161",
+      "statement": "remainingEval--"
+    }
+  },
+  {
+    "v54": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v55": {
+      "line": "166",
+      "statement": "throw new NoBracketingException(LocalizedFormats.FAILED_BRACKETING, xLo, xHi, fLo, fHi, maxEval - remainingEval, maxEval, baseRoot, min, max)"
+    }
+  },
+  {
+    "v56": {
+      "line": "212",
+      "statement": "double[] bracket(UnivariateFunction function,  double initial,  double lowerBound, double upperBound)"
+    }
+  },
+  {
+    "v57": {
+      "line": "218",
+      "statement": "return bracket(function, initial, lowerBound, upperBound, Integer.MAX_VALUE)"
+    }
+  },
+  {
+    "v58": {
+      "line": "253",
+      "statement": "double[] bracket(UnivariateFunction function,  double initial,  double lowerBound, double upperBound,  int maximumIterations)"
+    }
+  },
+  {
+    "v59": {
+      "line": "260",
+      "statement": "if (function == null)"
+    }
+  },
+  {
+    "v60": {
+      "line": "261",
+      "statement": "throw new NullArgumentException(LocalizedFormats.FUNCTION)"
+    }
+  },
+  {
+    "v61": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v62": {
+      "line": "263",
+      "statement": "if (maximumIterations <= 0)"
+    }
+  },
+  {
+    "v63": {
+      "line": "264",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.INVALID_MAX_ITERATIONS, maximumIterations)"
+    }
+  },
+  {
+    "v64": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v65": {
+      "line": "266",
+      "statement": "verifySequence(lowerBound, initial, upperBound)"
+    }
+  },
+  {
+    "v66": {
+      "line": "268",
+      "statement": "double a = initial"
+    }
+  },
+  {
+    "v67": {
+      "line": "269",
+      "statement": "double b = initial"
+    }
+  },
+  {
+    "v68": {
+      "line": "270",
+      "statement": "double fa"
+    }
+  },
+  {
+    "v69": {
+      "line": "271",
+      "statement": "double fb"
+    }
+  },
+  {
+    "v70": {
+      "line": "272",
+      "statement": "int numIterations = 0"
+    }
+  },
+  {
+    "v71": {
+      "line": "274",
+      "statement": "do"
+    }
+  },
+  {
+    "v72": {
+      "line": "281",
+      "statement": "while ((fa * fb > 0.0) && (numIterations < maximumIterations) && ((a > lowerBound) || (b < upperBound)))"
+    }
+  },
+  {
+    "v73": {
+      "line": 0,
+      "statement": "\"end-do-while"
+    }
+  },
+  {
+    "v74": {
+      "line": "275",
+      "statement": "a = FastMath.max(a - 1.0, lowerBound)"
+    }
+  },
+  {
+    "v75": {
+      "line": "276",
+      "statement": "b = FastMath.min(b + 1.0, upperBound)"
+    }
+  },
+  {
+    "v76": {
+      "line": "277",
+      "statement": "fa = function.value(a)"
+    }
+  },
+  {
+    "v77": {
+      "line": "279",
+      "statement": "fb = function.value(b)"
+    }
+  },
+  {
+    "v78": {
+      "line": "280",
+      "statement": "++numIterations"
+    }
+  },
+  {
+    "v79": {
+      "line": "284",
+      "statement": "if (fa * fb > 0.0)"
+    }
+  },
+  {
+    "v80": {
+      "line": "285",
+      "statement": "throw new NoBracketingException(LocalizedFormats.FAILED_BRACKETING, a, b, fa, fb, numIterations, maximumIterations, initial, lowerBound, upperBound)"
+    }
+  },
+  {
+    "v81": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v82": {
+      "line": "291",
+      "statement": "return new double[] {a, b}"
+    }
+  },
+  {
+    "v83": {
+      "line": "301",
+      "statement": "double midpoint(double a, double b)"
+    }
+  },
+  {
+    "v84": {
+      "line": "302",
+      "statement": "return (a + b) * 0.5"
+    }
+  },
+  {
+    "v85": {
+      "line": "317",
+      "statement": "boolean isBracketing(UnivariateFunction function,  final double lower,  final double upper)"
+    }
+  },
+  {
+    "v86": {
+      "line": "321",
+      "statement": "if (function == null)"
+    }
+  },
+  {
+    "v87": {
+      "line": "322",
+      "statement": "throw new NullArgumentException(LocalizedFormats.FUNCTION)"
+    }
+  },
+  {
+    "v88": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v89": {
+      "line": "324",
+      "statement": "final double fLo = function.value(lower)"
+    }
+  },
+  {
+    "v90": {
+      "line": "325",
+      "statement": "final double fHi = function.value(upper)"
+    }
+  },
+  {
+    "v91": {
+      "line": "326",
+      "statement": "return (fLo >= 0 && fHi <= 0) || (fLo <= 0 && fHi >= 0)"
+    }
+  },
+  {
+    "v92": {
+      "line": "337",
+      "statement": "boolean isSequence(final double start,  final double mid,  final double end)"
+    }
+  },
+  {
+    "v93": {
+      "line": "340",
+      "statement": "return (start < mid) && (mid < end)"
+    }
+  },
+  {
+    "v94": {
+      "line": "350",
+      "statement": "void verifyInterval(final double lower, final double upper)"
+    }
+  },
+  {
+    "v95": {
+      "line": "353",
+      "statement": "if (lower >= upper)"
+    }
+  },
+  {
+    "v96": {
+      "line": "354",
+      "statement": "throw new NumberIsTooLargeException(LocalizedFormats.ENDPOINTS_NOT_AN_INTERVAL, lower, upper, false)"
+    }
+  },
+  {
+    "v97": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v98": {
+      "line": "368",
+      "statement": "void verifySequence(final double lower, final double initial, final double upper)"
+    }
+  },
+  {
+    "v99": {
+      "line": "372",
+      "statement": "verifyInterval(lower, initial)"
+    }
+  },
+  {
+    "v100": {
+      "line": "373",
+      "statement": "verifyInterval(initial, upper)"
+    }
+  },
+  {
+    "v101": {
+      "line": "387",
+      "statement": "void verifyBracketing(UnivariateFunction function, final double lower, final double upper)"
+    }
+  },
+  {
+    "v102": {
+      "line": "392",
+      "statement": "if (function == null)"
+    }
+  },
+  {
+    "v103": {
+      "line": "393",
+      "statement": "throw new NullArgumentException(LocalizedFormats.FUNCTION)"
+    }
+  },
+  {
+    "v104": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v105": {
+      "line": "395",
+      "statement": "verifyInterval(lower, upper)"
+    }
+  },
+  {
+    "v106": {
+      "line": "396",
+      "statement": "if (!isBracketing(function, lower, upper))"
+    }
+  },
+  {
+    "v107": {
+      "line": "397",
+      "statement": "throw new NoBracketingException(lower, upper, function.value(lower), function.value(upper))"
+    }
+  },
+  {
+    "v108": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  }
+]

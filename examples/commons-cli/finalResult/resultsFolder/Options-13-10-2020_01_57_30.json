@@ -1,0 +1,47 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      0,
+      "73",
+      "79",
+      "81",
+      "78",
+      "84",
+      "68",
+      "70"
+    ],
+    "sourceClass": "Options"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR1"
+    ],
+    "deletedRequirementYesTest": [
+      "TR6",
+      "TR8",
+      "TR5",
+      "TR3",
+      "TR9",
+      "TR2",
+      "TR7",
+      "TR4"
+    ],
+    "affectedTest": [
+      "testGetOptionsGroups"
+    ],
+    "testReran": [
+      "testGetOptionsGroups"
+    ],
+    "unsatisfiedRequirement": [
+      "TR5",
+      "TR2",
+      "TR1",
+      "TR4",
+      "TR9"
+    ],
+    "newTestRequirement": [
+      "TR5",
+      "TR3"
+    ]
+  }
+}

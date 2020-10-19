@@ -1,0 +1,500 @@
+[
+  {
+    "v1": {
+      "line": "51",
+      "statement": "void init()"
+    }
+  },
+  {
+    "v2": {
+      "line": "54",
+      "statement": "tokens.clear()"
+    }
+  },
+  {
+    "v3": {
+      "line": "95",
+      "statement": "String[] flatten(final Options options, final String[] arguments, final boolean stopAtNonOption)"
+    }
+  },
+  {
+    "v4": {
+      "line": "97",
+      "statement": "init()"
+    }
+  },
+  {
+    "v5": {
+      "line": "98",
+      "statement": "this.options = options"
+    }
+  },
+  {
+    "v6": {
+      "line": "101",
+      "statement": "final Iterator<String> iter = Arrays.asList(arguments).iterator()"
+    }
+  },
+  {
+    "v7": {
+      "line": "104",
+      "statement": "while (iter.hasNext())"
+    }
+  },
+  {
+    "v8": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v9": {
+      "line": "107",
+      "statement": "final String token = iter.next()"
+    }
+  },
+  {
+    "v10": {
+      "line": "110",
+      "statement": "if ('-'.equals(token) || '--'.equals(token))"
+    }
+  },
+  {
+    "v11": {
+      "line": "112",
+      "statement": "tokens.add(token)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v13": {
+      "line": "116",
+      "statement": "if (token.startsWith('--'))"
+    }
+  },
+  {
+    "v14": {
+      "line": "118",
+      "statement": "final int pos = token.indexOf('=')"
+    }
+  },
+  {
+    "v15": {
+      "line": "119",
+      "statement": "final String opt = pos == -1 ? token"
+    }
+  },
+  {
+    "v16": {
+      "line": "121",
+      "statement": "final List<String> matchingOpts = options.getMatchingOptions(opt)"
+    }
+  },
+  {
+    "v17": {
+      "line": "123",
+      "statement": "if (matchingOpts.isEmpty())"
+    }
+  },
+  {
+    "v18": {
+      "line": "125",
+      "statement": "processNonOptionToken(token, stopAtNonOption)"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "127",
+      "statement": "if (matchingOpts.size() > 1)"
+    }
+  },
+  {
+    "v21": {
+      "line": "129",
+      "statement": "throw new AmbiguousOptionException(opt, matchingOpts)"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v23": {
+      "line": "133",
+      "statement": "currentOption = options.getOption(matchingOpts.get(0))"
+    }
+  },
+  {
+    "v24": {
+      "line": "135",
+      "statement": "tokens.add('--' + currentOption.getLongOpt())"
+    }
+  },
+  {
+    "v25": {
+      "line": "136",
+      "statement": "if (pos != -1)"
+    }
+  },
+  {
+    "v26": {
+      "line": "138",
+      "statement": "tokens.add(token.substring(pos + 1))"
+    }
+  },
+  {
+    "v27": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "143",
+      "statement": "if (token.startsWith('-'))"
+    }
+  },
+  {
+    "v30": {
+      "line": "145",
+      "statement": "if (token.length() == 2 || options.hasOption(token))"
+    }
+  },
+  {
+    "v31": {
+      "line": "147",
+      "statement": "processOptionToken(token, stopAtNonOption)"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v33": {
+      "line": "149",
+      "statement": "if (!options.getMatchingOptions(token).isEmpty())"
+    }
+  },
+  {
+    "v34": {
+      "line": "151",
+      "statement": "final List<String> matchingOpts = options.getMatchingOptions(token)"
+    }
+  },
+  {
+    "v35": {
+      "line": "152",
+      "statement": "if (matchingOpts.size() > 1)"
+    }
+  },
+  {
+    "v36": {
+      "line": "154",
+      "statement": "throw new AmbiguousOptionException(token, matchingOpts)"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v38": {
+      "line": "156",
+      "statement": "final Option opt = options.getOption(matchingOpts.get(0))"
+    }
+  },
+  {
+    "v39": {
+      "line": "157",
+      "statement": "processOptionToken('-' + opt.getLongOpt(), stopAtNonOption)"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v41": {
+      "line": "162",
+      "statement": "burstToken(token, stopAtNonOption)"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": "167",
+      "statement": "processNonOptionToken(token, stopAtNonOption)"
+    }
+  },
+  {
+    "v44": {
+      "line": "170",
+      "statement": "gobble(iter)"
+    }
+  },
+  {
+    "v45": {
+      "line": "173",
+      "statement": "return tokens.toArray(new String[tokens.size()])"
+    }
+  },
+  {
+    "v46": {
+      "line": "181",
+      "statement": "void gobble(final Iterator<String> iter)"
+    }
+  },
+  {
+    "v47": {
+      "line": "183",
+      "statement": "if (eatTheRest)"
+    }
+  },
+  {
+    "v48": {
+      "line": "185",
+      "statement": "while (iter.hasNext())"
+    }
+  },
+  {
+    "v49": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v50": {
+      "line": "187",
+      "statement": "tokens.add(iter.next())"
+    }
+  },
+  {
+    "v51": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v52": {
+      "line": "199",
+      "statement": "void processNonOptionToken(final String value, final boolean stopAtNonOption)"
+    }
+  },
+  {
+    "v53": {
+      "line": "201",
+      "statement": "if (stopAtNonOption && (currentOption == null || !currentOption.hasArg()))"
+    }
+  },
+  {
+    "v54": {
+      "line": "203",
+      "statement": "eatTheRest = true"
+    }
+  },
+  {
+    "v55": {
+      "line": "204",
+      "statement": "tokens.add('--')"
+    }
+  },
+  {
+    "v56": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v57": {
+      "line": "207",
+      "statement": "tokens.add(value)"
+    }
+  },
+  {
+    "v58": {
+      "line": "222",
+      "statement": "void processOptionToken(final String token, final boolean stopAtNonOption)"
+    }
+  },
+  {
+    "v59": {
+      "line": "224",
+      "statement": "if (stopAtNonOption && !options.hasOption(token))"
+    }
+  },
+  {
+    "v60": {
+      "line": "226",
+      "statement": "eatTheRest = true"
+    }
+  },
+  {
+    "v61": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v62": {
+      "line": "229",
+      "statement": "if (options.hasOption(token))"
+    }
+  },
+  {
+    "v63": {
+      "line": "231",
+      "statement": "currentOption = options.getOption(token)"
+    }
+  },
+  {
+    "v64": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v65": {
+      "line": "234",
+      "statement": "tokens.add(token)"
+    }
+  },
+  {
+    "v66": {
+      "line": "263",
+      "statement": "void burstToken(final String token, final boolean stopAtNonOption)"
+    }
+  },
+  {
+    "v67": {
+      "line": "265",
+      "statement": "for (  int i = 1 ; i < token.length(  int i = 1 ;  ;   i++) ;   i++)"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v71": {
+      "line": "267",
+      "statement": "final String ch = String.valueOf(token.charAt(i))"
+    }
+  },
+  {
+    "v72": {
+      "line": "269",
+      "statement": "if (options.hasOption(ch))"
+    }
+  },
+  {
+    "v73": {
+      "line": "271",
+      "statement": "tokens.add('-' + ch)"
+    }
+  },
+  {
+    "v74": {
+      "line": "272",
+      "statement": "currentOption = options.getOption(ch)"
+    }
+  },
+  {
+    "v75": {
+      "line": "274",
+      "statement": "if (currentOption.hasArg() && token.length() != i + 1)"
+    }
+  },
+  {
+    "v76": {
+      "line": "276",
+      "statement": "tokens.add(token.substring(i + 1))"
+    }
+  },
+  {
+    "v77": {
+      "line": "278",
+      "statement": "break"
+    }
+  },
+  {
+    "v78": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v79": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v80": {
+      "line": "281",
+      "statement": "if (stopAtNonOption)"
+    }
+  },
+  {
+    "v81": {
+      "line": "283",
+      "statement": "processNonOptionToken(token.substring(i), true)"
+    }
+  },
+  {
+    "v82": {
+      "line": "284",
+      "statement": "break"
+    }
+  },
+  {
+    "v83": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v84": {
+      "line": "288",
+      "statement": "tokens.add(token)"
+    }
+  },
+  {
+    "v85": {
+      "line": "289",
+      "statement": "break"
+    }
+  }
+]

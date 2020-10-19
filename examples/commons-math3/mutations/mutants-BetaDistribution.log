@@ -1,0 +1,158 @@
+1:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):106:alpha |==> 0.0
+2:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):107:beta |==> 0.0
+3:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.BetaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):108:z = Double.NaN |==> <NO-OP>
+4:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):109:inverseCumAccuracy |==> 0.0
+5:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@getAlpha():118:alpha |==> 0.0
+6:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@getBeta():127:beta |==> 0.0
+7:COR:Double.isNaN(z):TRUE:org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():132:Double.isNaN(z) |==> false
+8:COR:Double.isNaN(z):FALSE:org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():132:Double.isNaN(z) |==> true
+9:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:Gamma.logGamma(alpha) + Gamma.logGamma(beta) |==> Gamma.logGamma(alpha) % Gamma.logGamma(beta)
+10:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:Gamma.logGamma(alpha) + Gamma.logGamma(beta) |==> Gamma.logGamma(alpha) * Gamma.logGamma(beta)
+11:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:Gamma.logGamma(alpha) + Gamma.logGamma(beta) |==> Gamma.logGamma(alpha) - Gamma.logGamma(beta)
+12:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:Gamma.logGamma(alpha) + Gamma.logGamma(beta) |==> Gamma.logGamma(alpha) / Gamma.logGamma(beta)
+13:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:alpha + beta |==> alpha % beta
+14:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:alpha + beta |==> alpha * beta
+15:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:alpha + beta |==> alpha - beta
+16:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:alpha + beta |==> alpha / beta
+17:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:Gamma.logGamma(alpha) + Gamma.logGamma(beta) - Gamma.logGamma(alpha + beta) |==> (Gamma.logGamma(alpha) + Gamma.logGamma(beta)) % Gamma.logGamma(alpha + beta)
+18:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:Gamma.logGamma(alpha) + Gamma.logGamma(beta) - Gamma.logGamma(alpha + beta) |==> (Gamma.logGamma(alpha) + Gamma.logGamma(beta)) * Gamma.logGamma(alpha + beta)
+19:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:Gamma.logGamma(alpha) + Gamma.logGamma(beta) - Gamma.logGamma(alpha + beta) |==> Gamma.logGamma(alpha) + Gamma.logGamma(beta) + Gamma.logGamma(alpha + beta)
+20:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:Gamma.logGamma(alpha) + Gamma.logGamma(beta) - Gamma.logGamma(alpha + beta) |==> (Gamma.logGamma(alpha) + Gamma.logGamma(beta)) / Gamma.logGamma(alpha + beta)
+21:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.BetaDistribution@recomputeZ():133:z = Gamma.logGamma(alpha) + Gamma.logGamma(beta) - Gamma.logGamma(alpha + beta) |==> <NO-OP>
+22:STD:<CALL>:<NO-OP>:org.apache.commons.math3.distribution.BetaDistribution@density(double):139:recomputeZ() |==> <NO-OP>
+23:LVR:0:POS:org.apache.commons.math3.distribution.BetaDistribution@density(double):140:0 |==> 1
+24:LVR:0:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):140:0 |==> -1
+25:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x < 0 |==> x != 0
+26:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x < 0 |==> x <= 0
+27:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x < 0 |==> false
+28:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@density(double):140:1 |==> 0
+29:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):140:1 |==> -1
+30:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x > 1 |==> x != 1
+31:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x > 1 |==> x >= 1
+32:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x > 1 |==> false
+33:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x < 0 || x > 1 |==> x < 0 != x > 1
+34:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x < 0 || x > 1 |==> x < 0
+35:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x < 0 || x > 1 |==> x > 1
+36:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.BetaDistribution@density(double):140:x < 0 || x > 1 |==> true
+37:LVR:0:POS:org.apache.commons.math3.distribution.BetaDistribution@density(double):141:0 |==> 1
+38:LVR:0:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):141:0 |==> -1
+39:LVR:0:POS:org.apache.commons.math3.distribution.BetaDistribution@density(double):142:0 |==> 1
+40:LVR:0:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):142:0 |==> -1
+41:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):142:x == 0 |==> x <= 0
+42:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):142:x == 0 |==> x >= 0
+43:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):142:x == 0 |==> false
+44:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@density(double):143:1 |==> 0
+45:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):143:1 |==> -1
+46:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):143:alpha < 1 |==> alpha != 1
+47:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):143:alpha < 1 |==> alpha <= 1
+48:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):143:alpha < 1 |==> false
+49:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@density(double):144:1 |==> 0
+50:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):144:1 |==> -1
+51:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.BetaDistribution@density(double):144:false |==> true
+52:LVR:0:POS:org.apache.commons.math3.distribution.BetaDistribution@density(double):146:0 |==> 1
+53:LVR:0:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):146:0 |==> -1
+54:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@density(double):147:1 |==> 0
+55:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):147:1 |==> -1
+56:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):147:x == 1 |==> x <= 1
+57:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):147:x == 1 |==> x >= 1
+58:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):147:x == 1 |==> false
+59:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@density(double):148:1 |==> 0
+60:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):148:1 |==> -1
+61:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):148:beta < 1 |==> beta != 1
+62:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):148:beta < 1 |==> beta <= 1
+63:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):148:beta < 1 |==> false
+64:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@density(double):149:1 |==> 0
+65:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):149:1 |==> -1
+66:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.BetaDistribution@density(double):149:false |==> true
+67:LVR:0:POS:org.apache.commons.math3.distribution.BetaDistribution@density(double):151:0 |==> 1
+68:LVR:0:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):151:0 |==> -1
+69:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@density(double):153:FastMath.log(x) |==> 0.0
+70:ORU:-(double):+(double):org.apache.commons.math3.distribution.BetaDistribution@density(double):154:-x |==> +x
+71:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@density(double):155:1 |==> 0
+72:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):155:1 |==> -1
+73:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:alpha - 1 |==> alpha % 1
+74:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:alpha - 1 |==> alpha * 1
+75:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:alpha - 1 |==> alpha + 1
+76:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:alpha - 1 |==> alpha / 1
+77:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX |==> (alpha - 1) % logX
+78:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX |==> (alpha - 1) + logX
+79:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX |==> (alpha - 1) - logX
+80:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX |==> (alpha - 1) / logX
+81:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@density(double):155:1 |==> 0
+82:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@density(double):155:1 |==> -1
+83:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:beta - 1 |==> beta % 1
+84:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:beta - 1 |==> beta * 1
+85:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:beta - 1 |==> beta + 1
+86:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:beta - 1 |==> beta / 1
+87:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(beta - 1) * log1mX |==> (beta - 1) % log1mX
+88:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(beta - 1) * log1mX |==> (beta - 1) + log1mX
+89:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(beta - 1) * log1mX |==> (beta - 1) - log1mX
+90:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(beta - 1) * log1mX |==> (beta - 1) / log1mX
+91:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX + (beta - 1) * log1mX |==> (alpha - 1) * logX % ((beta - 1) * log1mX)
+92:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX + (beta - 1) * log1mX |==> (alpha - 1) * logX * ((beta - 1) * log1mX)
+93:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX + (beta - 1) * log1mX |==> (alpha - 1) * logX - (beta - 1) * log1mX
+94:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX + (beta - 1) * log1mX |==> (alpha - 1) * logX / ((beta - 1) * log1mX)
+95:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX + (beta - 1) * log1mX - z |==> ((alpha - 1) * logX + (beta - 1) * log1mX) % z
+96:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX + (beta - 1) * log1mX - z |==> ((alpha - 1) * logX + (beta - 1) * log1mX) * z
+97:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX + (beta - 1) * log1mX - z |==> (alpha - 1) * logX + (beta - 1) * log1mX + z
+98:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@density(double):155:(alpha - 1) * logX + (beta - 1) * log1mX - z |==> ((alpha - 1) * logX + (beta - 1) * log1mX) / z
+99:LVR:0:POS:org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):161:0 |==> 1
+100:LVR:0:NEG:org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):161:0 |==> -1
+101:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):161:x <= 0 |==> x < 0
+102:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):161:x <= 0 |==> x == 0
+103:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):161:x <= 0 |==> true
+104:LVR:0:POS:org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):162:0 |==> 1
+105:LVR:0:NEG:org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):162:0 |==> -1
+106:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):163:1 |==> 0
+107:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):163:1 |==> -1
+108:ROR:>=(double,double):==(double,double):org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):163:x >= 1 |==> x == 1
+109:ROR:>=(double,double):>(double,double):org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):163:x >= 1 |==> x > 1
+110:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):163:x >= 1 |==> true
+111:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):164:1 |==> 0
+112:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):164:1 |==> -1
+113:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@cumulativeProbability(double):166:Beta.regularizedBeta(x, alpha, beta) |==> 0.0
+114:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@getSolverAbsoluteAccuracy():179:solverAbsoluteAccuracy |==> 0.0
+115:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@getNumericalMean():189:getAlpha() |==> 0.0
+116:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalMean():190:a + getBeta() |==> a % getBeta()
+117:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalMean():190:a + getBeta() |==> a * getBeta()
+118:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalMean():190:a + getBeta() |==> a - getBeta()
+119:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalMean():190:a + getBeta() |==> a / getBeta()
+120:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalMean():190:a / (a + getBeta()) |==> a % (a + getBeta())
+121:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalMean():190:a / (a + getBeta()) |==> a * (a + getBeta())
+122:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalMean():190:a / (a + getBeta()) |==> a + (a + getBeta())
+123:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalMean():190:a / (a + getBeta()) |==> a - (a + getBeta())
+124:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():201:getAlpha() |==> 0.0
+125:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():202:getBeta() |==> 0.0
+126:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():203:a + b |==> a % b
+127:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():203:a + b |==> a * b
+128:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():203:a + b |==> a - b
+129:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():203:a + b |==> a / b
+130:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:a * b |==> a % b
+131:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:a * b |==> a + b
+132:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:a * b |==> a - b
+133:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:a * b |==> a / b
+134:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:alphabetasum * alphabetasum |==> alphabetasum % alphabetasum
+135:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:alphabetasum * alphabetasum |==> alphabetasum + alphabetasum
+136:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:alphabetasum * alphabetasum |==> alphabetasum - alphabetasum
+137:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:alphabetasum * alphabetasum |==> alphabetasum / alphabetasum
+138:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:1 |==> 0
+139:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:1 |==> -1
+140:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:alphabetasum + 1 |==> alphabetasum % 1
+141:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:alphabetasum + 1 |==> alphabetasum * 1
+142:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:alphabetasum + 1 |==> alphabetasum - 1
+143:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:alphabetasum + 1 |==> alphabetasum / 1
+144:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:(alphabetasum * alphabetasum) * (alphabetasum + 1) |==> (alphabetasum * alphabetasum) % (alphabetasum + 1)
+145:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:(alphabetasum * alphabetasum) * (alphabetasum + 1) |==> (alphabetasum * alphabetasum) + (alphabetasum + 1)
+146:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:(alphabetasum * alphabetasum) * (alphabetasum + 1) |==> (alphabetasum * alphabetasum) - (alphabetasum + 1)
+147:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:(alphabetasum * alphabetasum) * (alphabetasum + 1) |==> (alphabetasum * alphabetasum) / (alphabetasum + 1)
+148:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:(a * b) / ((alphabetasum * alphabetasum) * (alphabetasum + 1)) |==> (a * b) % ((alphabetasum * alphabetasum) * (alphabetasum + 1))
+149:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:(a * b) / ((alphabetasum * alphabetasum) * (alphabetasum + 1)) |==> (a * b) * ((alphabetasum * alphabetasum) * (alphabetasum + 1))
+150:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:(a * b) / ((alphabetasum * alphabetasum) * (alphabetasum + 1)) |==> (a * b) + ((alphabetasum * alphabetasum) * (alphabetasum + 1))
+151:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.BetaDistribution@getNumericalVariance():204:(a * b) / ((alphabetasum * alphabetasum) * (alphabetasum + 1)) |==> (a * b) - ((alphabetasum * alphabetasum) * (alphabetasum + 1))
+152:LVR:0:POS:org.apache.commons.math3.distribution.BetaDistribution@getSupportLowerBound():215:0 |==> 1
+153:LVR:0:NEG:org.apache.commons.math3.distribution.BetaDistribution@getSupportLowerBound():215:0 |==> -1
+154:LVR:POS:0:org.apache.commons.math3.distribution.BetaDistribution@getSupportUpperBound():226:1 |==> 0
+155:LVR:POS:NEG:org.apache.commons.math3.distribution.BetaDistribution@getSupportUpperBound():226:1 |==> -1
+156:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.BetaDistribution@isSupportLowerBoundInclusive():231:false |==> true
+157:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.BetaDistribution@isSupportUpperBoundInclusive():236:false |==> true
+158:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.BetaDistribution@isSupportConnected():247:true |==> false

@@ -1,0 +1,15 @@
+
+testExpm1Function : <init>()V=[37,38
+];;interpolate([D[D)Lorg/apache/commons/math3/analysis/UnivariateFunction;=[37,38
+];;interpolate([D[D)Lorg/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm;=[58,59
+]
+
+testParameters : <init>()V=[37,38
+];;interpolate([D[D)Lorg/apache/commons/math3/analysis/UnivariateFunction;=[37,38
+];;interpolate([D[D)Lorg/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm;=[58,59
+]
+
+testSinFunction : <init>()V=[37,38
+];;interpolate([D[D)Lorg/apache/commons/math3/analysis/UnivariateFunction;=[37,38
+];;interpolate([D[D)Lorg/apache/commons/math3/analysis/polynomials/PolynomialFunctionLagrangeForm;=[58,59
+]

@@ -1,0 +1,190 @@
+1:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution:54:Double.NaN |==> 0.0
+2:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.WeibullDistribution:56:false |==> true
+3:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution:58:Double.NaN |==> 0.0
+4:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.WeibullDistribution:60:false |==> true
+5:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):127:0 |==> 1
+6:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):127:0 |==> -1
+7:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):127:alpha <= 0 |==> alpha < 0
+8:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):127:alpha <= 0 |==> alpha == 0
+9:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):127:alpha <= 0 |==> true
+10:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):131:0 |==> 1
+11:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):131:0 |==> -1
+12:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):131:beta <= 0 |==> beta < 0
+13:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):131:beta <= 0 |==> beta == 0
+14:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):131:beta <= 0 |==> true
+15:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):135:beta |==> 0.0
+16:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):136:alpha |==> 0.0
+17:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):137:inverseCumAccuracy |==> 0.0
+18:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@getShape():146:shape |==> 0.0
+19:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@getScale():155:scale |==> 0.0
+20:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@density(double):160:0 |==> 1
+21:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@density(double):160:0 |==> -1
+22:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):160:x < 0 |==> x != 0
+23:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):160:x < 0 |==> x <= 0
+24:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):160:x < 0 |==> false
+25:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@density(double):161:0 |==> 1
+26:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@density(double):161:0 |==> -1
+27:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.WeibullDistribution@density(double):161:return Config.__M_NO == 0 && Config.COVERED(25, 26) ? 0 : Config.__M_NO == 26 ? -1 : Config.__M_NO == 25 ? 1 : 0; |==> <NO-OP>
+28:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):164:x / scale |==> x % scale
+29:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):164:x / scale |==> x * scale
+30:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):164:x / scale |==> x + scale
+31:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):164:x / scale |==> x - scale
+32:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@density(double):165:1 |==> 0
+33:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@density(double):165:1 |==> -1
+34:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):165:shape - 1 |==> shape % 1
+35:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):165:shape - 1 |==> shape * 1
+36:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):165:shape - 1 |==> shape + 1
+37:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):165:shape - 1 |==> shape / 1
+38:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):172:xscalepow * xscale |==> xscalepow % xscale
+39:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):172:xscalepow * xscale |==> xscalepow + xscale
+40:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):172:xscalepow * xscale |==> xscalepow - xscale
+41:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):172:xscalepow * xscale |==> xscalepow / xscale
+42:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:shape / scale |==> shape % scale
+43:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:shape / scale |==> shape * scale
+44:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:shape / scale |==> shape + scale
+45:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:shape / scale |==> shape - scale
+46:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:(shape / scale) * xscalepow |==> (shape / scale) % xscalepow
+47:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:(shape / scale) * xscalepow |==> (shape / scale) + xscalepow
+48:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:(shape / scale) * xscalepow |==> (shape / scale) - xscalepow
+49:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:(shape / scale) * xscalepow |==> (shape / scale) / xscalepow
+50:ORU:-(double):+(double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:-xscalepowshape |==> +xscalepowshape
+51:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:(shape / scale) * xscalepow * FastMath.exp(-xscalepowshape) |==> (shape / scale) * xscalepow % FastMath.exp(-xscalepowshape)
+52:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:(shape / scale) * xscalepow * FastMath.exp(-xscalepowshape) |==> (shape / scale) * xscalepow + FastMath.exp(-xscalepowshape)
+53:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:(shape / scale) * xscalepow * FastMath.exp(-xscalepowshape) |==> (shape / scale) * xscalepow - FastMath.exp(-xscalepowshape)
+54:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@density(double):174:(shape / scale) * xscalepow * FastMath.exp(-xscalepowshape) |==> (shape / scale) * xscalepow / FastMath.exp(-xscalepowshape)
+55:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):180:0.0 |==> 1.0
+56:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):180:0.0 |==> -1.0
+57:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):180:x <= 0.0 |==> x < 0.0
+58:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):180:x <= 0.0 |==> x == 0.0
+59:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):180:x <= 0.0 |==> true
+60:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):181:0.0 |==> 1.0
+61:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):181:0.0 |==> -1.0
+62:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:1.0 |==> 0.0
+63:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:1.0 |==> -1.0
+64:ORU:-(double):+(double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:-FastMath.pow(x / scale, shape) |==> +FastMath.pow(x / scale, shape)
+65:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:x / scale |==> x % scale
+66:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:x / scale |==> x * scale
+67:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:x / scale |==> x + scale
+68:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:x / scale |==> x - scale
+69:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:1.0 - FastMath.exp(-FastMath.pow(x / scale, shape)) |==> 1.0 % FastMath.exp(-FastMath.pow(x / scale, shape))
+70:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:1.0 - FastMath.exp(-FastMath.pow(x / scale, shape)) |==> 1.0 * FastMath.exp(-FastMath.pow(x / scale, shape))
+71:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:1.0 - FastMath.exp(-FastMath.pow(x / scale, shape)) |==> 1.0 + FastMath.exp(-FastMath.pow(x / scale, shape))
+72:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):183:1.0 - FastMath.exp(-FastMath.pow(x / scale, shape)) |==> 1.0 / FastMath.exp(-FastMath.pow(x / scale, shape))
+73:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@cumulativeProbability(double):185:ret |==> 0.0
+74:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:0.0 |==> 1.0
+75:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:0.0 |==> -1.0
+76:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p < 0.0 |==> p != 0.0
+77:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p < 0.0 |==> p <= 0.0
+78:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p < 0.0 |==> false
+79:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:1.0 |==> 0.0
+80:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:1.0 |==> -1.0
+81:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p > 1.0 |==> p != 1.0
+82:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p > 1.0 |==> p >= 1.0
+83:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p > 1.0 |==> false
+84:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p < 0.0 || p > 1.0 |==> p < 0.0 != p > 1.0
+85:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p < 0.0 || p > 1.0 |==> p < 0.0
+86:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p < 0.0 || p > 1.0 |==> p > 1.0
+87:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):197:p < 0.0 || p > 1.0 |==> true
+88:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):198:0.0 |==> 1.0
+89:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):198:0.0 |==> -1.0
+90:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):198:1.0 |==> 0.0
+91:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):198:1.0 |==> -1.0
+92:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):199:0 |==> 1
+93:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):199:0 |==> -1
+94:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):199:p == 0 |==> p <= 0
+95:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):199:p == 0 |==> p >= 0
+96:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):199:p == 0 |==> false
+97:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):200:0.0 |==> 1.0
+98:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):200:0.0 |==> -1.0
+99:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):201:1 |==> 0
+100:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):201:1 |==> -1
+101:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):201:p == 1 |==> p <= 1
+102:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):201:p == 1 |==> p >= 1
+103:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):201:p == 1 |==> false
+104:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):202:Double.POSITIVE_INFINITY |==> 0.0
+105:ORU:-(double):+(double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:-FastMath.log(1.0 - p) |==> +FastMath.log(1.0 - p)
+106:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 |==> 0.0
+107:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 |==> -1.0
+108:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 - p |==> 1.0 % p
+109:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 - p |==> 1.0 * p
+110:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 - p |==> 1.0 + p
+111:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 - p |==> 1.0 / p
+112:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 |==> 0.0
+113:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 |==> -1.0
+114:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 / shape |==> 1.0 % shape
+115:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 / shape |==> 1.0 * shape
+116:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 / shape |==> 1.0 + shape
+117:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:1.0 / shape |==> 1.0 - shape
+118:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:scale * FastMath.pow(-FastMath.log(1.0 - p), 1.0 / shape) |==> scale % FastMath.pow(-FastMath.log(1.0 - p), 1.0 / shape)
+119:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:scale * FastMath.pow(-FastMath.log(1.0 - p), 1.0 / shape) |==> scale + FastMath.pow(-FastMath.log(1.0 - p), 1.0 / shape)
+120:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:scale * FastMath.pow(-FastMath.log(1.0 - p), 1.0 / shape) |==> scale - FastMath.pow(-FastMath.log(1.0 - p), 1.0 / shape)
+121:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):204:scale * FastMath.pow(-FastMath.log(1.0 - p), 1.0 / shape) |==> scale / FastMath.pow(-FastMath.log(1.0 - p), 1.0 / shape)
+122:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@inverseCumulativeProbability(double):206:ret |==> 0.0
+123:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@getSolverAbsoluteAccuracy():218:solverAbsoluteAccuracy |==> 0.0
+124:COR:numericalMeanIsCalculated:TRUE:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalMean():228:numericalMeanIsCalculated |==> false
+125:COR:numericalMeanIsCalculated:FALSE:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalMean():228:numericalMeanIsCalculated |==> true
+126:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalMean():229:numericalMean = calculateNumericalMean() |==> <NO-OP>
+127:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalMean():230:true |==> false
+128:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalMean():230:numericalMeanIsCalculated = true |==> <NO-OP>
+129:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalMean():232:numericalMean |==> 0.0
+130:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():241:getShape() |==> 0.0
+131:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():242:getScale() |==> 0.0
+132:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 |==> 0
+133:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 |==> -1
+134:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 |==> 0
+135:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 |==> -1
+136:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 / sh |==> 1 % sh
+137:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 / sh |==> 1 * sh
+138:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 / sh |==> 1 + sh
+139:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 / sh |==> 1 - sh
+140:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 + (1 / sh) |==> 1 % (1 / sh)
+141:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 + (1 / sh) |==> 1 * (1 / sh)
+142:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 + (1 / sh) |==> 1 - (1 / sh)
+143:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:1 + (1 / sh) |==> 1 / (1 / sh)
+144:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:sc * FastMath.exp(Gamma.logGamma(1 + (1 / sh))) |==> sc % FastMath.exp(Gamma.logGamma(1 + (1 / sh)))
+145:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:sc * FastMath.exp(Gamma.logGamma(1 + (1 / sh))) |==> sc + FastMath.exp(Gamma.logGamma(1 + (1 / sh)))
+146:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:sc * FastMath.exp(Gamma.logGamma(1 + (1 / sh))) |==> sc - FastMath.exp(Gamma.logGamma(1 + (1 / sh)))
+147:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalMean():244:sc * FastMath.exp(Gamma.logGamma(1 + (1 / sh))) |==> sc / FastMath.exp(Gamma.logGamma(1 + (1 / sh)))
+148:COR:numericalVarianceIsCalculated:TRUE:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalVariance():254:numericalVarianceIsCalculated |==> false
+149:COR:numericalVarianceIsCalculated:FALSE:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalVariance():254:numericalVarianceIsCalculated |==> true
+150:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalVariance():255:numericalVariance = calculateNumericalVariance() |==> <NO-OP>
+151:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalVariance():256:true |==> false
+152:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalVariance():256:numericalVarianceIsCalculated = true |==> <NO-OP>
+153:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@getNumericalVariance():258:numericalVariance |==> 0.0
+154:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():267:getShape() |==> 0.0
+155:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():268:getScale() |==> 0.0
+156:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():269:getNumericalMean() |==> 0.0
+157:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:sc * sc |==> sc % sc
+158:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:sc * sc |==> sc + sc
+159:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:sc * sc |==> sc - sc
+160:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:sc * sc |==> sc / sc
+161:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:1 |==> 0
+162:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:1 |==> -1
+163:LVR:POS:0:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:2 |==> 0
+164:LVR:POS:NEG:org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:2 |==> -2
+165:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:2 / sh |==> 2 % sh
+166:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:2 / sh |==> 2 * sh
+167:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:2 / sh |==> 2 + sh
+168:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:2 / sh |==> 2 - sh
+169:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:1 + (2 / sh) |==> 1 % (2 / sh)
+170:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:1 + (2 / sh) |==> 1 * (2 / sh)
+171:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:1 + (2 / sh) |==> 1 - (2 / sh)
+172:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:1 + (2 / sh) |==> 1 / (2 / sh)
+173:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:(sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) |==> (sc * sc) % FastMath.exp(Gamma.logGamma(1 + (2 / sh)))
+174:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:(sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) |==> (sc * sc) + FastMath.exp(Gamma.logGamma(1 + (2 / sh)))
+175:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:(sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) |==> (sc * sc) - FastMath.exp(Gamma.logGamma(1 + (2 / sh)))
+176:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:(sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) |==> (sc * sc) / FastMath.exp(Gamma.logGamma(1 + (2 / sh)))
+177:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():272:mn * mn |==> mn % mn
+178:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():272:mn * mn |==> mn + mn
+179:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():272:mn * mn |==> mn - mn
+180:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():272:mn * mn |==> mn / mn
+181:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:(sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) - (mn * mn) |==> (sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) % (mn * mn)
+182:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:(sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) - (mn * mn) |==> (sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) * (mn * mn)
+183:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:(sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) - (mn * mn) |==> (sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) + (mn * mn)
+184:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.WeibullDistribution@calculateNumericalVariance():271:(sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) - (mn * mn) |==> (sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) / (mn * mn)
+185:LVR:0:POS:org.apache.commons.math3.distribution.WeibullDistribution@getSupportLowerBound():283:0 |==> 1
+186:LVR:0:NEG:org.apache.commons.math3.distribution.WeibullDistribution@getSupportLowerBound():283:0 |==> -1
+187:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.WeibullDistribution@getSupportUpperBound():296:Double.POSITIVE_INFINITY |==> 0.0
+188:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.WeibullDistribution@isSupportLowerBoundInclusive():301:true |==> false
+189:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.WeibullDistribution@isSupportUpperBoundInclusive():306:false |==> true
+190:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.WeibullDistribution@isSupportConnected():317:true |==> false

@@ -1,0 +1,308 @@
+[
+  {
+    "v1": {
+      "line": "94",
+      "statement": "Object getValueClass(final char ch)"
+    }
+  },
+  {
+    "v2": {
+      "line": "96",
+      "statement": "switch (ch)"
+    }
+  },
+  {
+    "v3": {
+      "line": 0,
+      "statement": "\"end-switch"
+    }
+  },
+  {
+    "v4": {
+      "line": "98",
+      "statement": "case '@'"
+    }
+  },
+  {
+    "v5": {
+      "line": "99",
+      "statement": "return PatternOptionBuilder.OBJECT_VALUE"
+    }
+  },
+  {
+    "v6": {
+      "line": "100",
+      "statement": "case '"
+    }
+  },
+  {
+    "v7": {
+      "line": "101",
+      "statement": "return PatternOptionBuilder.STRING_VALUE"
+    }
+  },
+  {
+    "v8": {
+      "line": "102",
+      "statement": "case '%'"
+    }
+  },
+  {
+    "v9": {
+      "line": "103",
+      "statement": "return PatternOptionBuilder.NUMBER_VALUE"
+    }
+  },
+  {
+    "v10": {
+      "line": "104",
+      "statement": "case '+'"
+    }
+  },
+  {
+    "v11": {
+      "line": "105",
+      "statement": "return PatternOptionBuilder.CLASS_VALUE"
+    }
+  },
+  {
+    "v12": {
+      "line": "106",
+      "statement": "case '#'"
+    }
+  },
+  {
+    "v13": {
+      "line": "107",
+      "statement": "return PatternOptionBuilder.DATE_VALUE"
+    }
+  },
+  {
+    "v14": {
+      "line": "108",
+      "statement": "case '<'"
+    }
+  },
+  {
+    "v15": {
+      "line": "109",
+      "statement": "return PatternOptionBuilder.EXISTING_FILE_VALUE"
+    }
+  },
+  {
+    "v16": {
+      "line": "110",
+      "statement": "case '>'"
+    }
+  },
+  {
+    "v17": {
+      "line": "111",
+      "statement": "return PatternOptionBuilder.FILE_VALUE"
+    }
+  },
+  {
+    "v18": {
+      "line": "112",
+      "statement": "case '*'"
+    }
+  },
+  {
+    "v19": {
+      "line": "113",
+      "statement": "return PatternOptionBuilder.FILES_VALUE"
+    }
+  },
+  {
+    "v20": {
+      "line": "114",
+      "statement": "case '/'"
+    }
+  },
+  {
+    "v21": {
+      "line": "115",
+      "statement": "return PatternOptionBuilder.URL_VALUE"
+    }
+  },
+  {
+    "v22": {
+      "line": "118",
+      "statement": "return null"
+    }
+  },
+  {
+    "v23": {
+      "line": "128",
+      "statement": "boolean isValueCode(final char ch)"
+    }
+  },
+  {
+    "v24": {
+      "line": "130",
+      "statement": "return ch == '@' || ch == '"
+    }
+  },
+  {
+    "v25": {
+      "line": "148",
+      "statement": "Options parsePattern(final String pattern)"
+    }
+  },
+  {
+    "v26": {
+      "line": "150",
+      "statement": "char opt = ' '"
+    }
+  },
+  {
+    "v27": {
+      "line": "151",
+      "statement": "boolean required = false"
+    }
+  },
+  {
+    "v28": {
+      "line": "152",
+      "statement": "Class<?> type = null"
+    }
+  },
+  {
+    "v29": {
+      "line": "154",
+      "statement": "final Options options = new Options()"
+    }
+  },
+  {
+    "v30": {
+      "line": "156",
+      "statement": "for (  int i = 0 ; i < pattern.length(  int i = 0 ;  ;   i++) ;   i++)"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v34": {
+      "line": "158",
+      "statement": "final char ch = pattern.charAt(i)"
+    }
+  },
+  {
+    "v35": {
+      "line": "162",
+      "statement": "if (!isValueCode(ch))"
+    }
+  },
+  {
+    "v36": {
+      "line": "164",
+      "statement": "if (opt != ' ')"
+    }
+  },
+  {
+    "v37": {
+      "line": "166",
+      "statement": "final Option option = Option.builder(String.valueOf(opt)) .hasArg(type != null) .required(required) .type(type) .build()"
+    }
+  },
+  {
+    "v38": {
+      "line": "173",
+      "statement": "options.addOption(option)"
+    }
+  },
+  {
+    "v39": {
+      "line": "174",
+      "statement": "required = false"
+    }
+  },
+  {
+    "v40": {
+      "line": "175",
+      "statement": "type = null"
+    }
+  },
+  {
+    "v41": {
+      "line": "176",
+      "statement": "opt = ' '"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": "179",
+      "statement": "opt = ch"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v45": {
+      "line": "181",
+      "statement": "if (ch == '!')"
+    }
+  },
+  {
+    "v46": {
+      "line": "183",
+      "statement": "required = true"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v48": {
+      "line": "187",
+      "statement": "type = (Class<?>) getValueClass(ch)"
+    }
+  },
+  {
+    "v49": {
+      "line": "191",
+      "statement": "if (opt != ' ')"
+    }
+  },
+  {
+    "v50": {
+      "line": "193",
+      "statement": "final Option option = Option.builder(String.valueOf(opt)) .hasArg(type != null) .required(required) .type(type) .build()"
+    }
+  },
+  {
+    "v51": {
+      "line": "200",
+      "statement": "options.addOption(option)"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v53": {
+      "line": "203",
+      "statement": "return options"
+    }
+  }
+]

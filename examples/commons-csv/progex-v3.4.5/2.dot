@@ -1,0 +1,37 @@
+digraph SourceClass_CFG {
+  // graph-vertices
+  v1  [label="22:  SourceClass (int qtyOnHand)"];
+  v2  [label="23:  this.qtyOnHand = qtyOnHand"];
+  v3  [label="26:  void isValidQty(int qty)"];
+  v4  [label="27:  if (qty < 5)"];
+  v5  [label="28:  throw new IllegalArgumentException('Quality should be positive!')"];
+  v6  [label="endif"];
+  v7  [label="32:  int add(int qty)"];
+  v8  [label="34:  isValidQty(qty)"];
+  v9  [label="35:  qtyOnHand = qtyOnHand + qty"];
+  v10  [label="36:  return qtyOnHand;"];
+  v11  [label="40:  int deduct(int qty)"];
+  v12  [label="42:  isValidQty(qty)"];
+  v13  [label="44:  int newQty = qtyOnHand - qty"];
+  v14  [label="45:  if (newQty < 0)"];
+  v15  [label="46:  throw new IllegalArgumentException('Out of Stock!')"];
+  v16  [label="endif"];
+  v17  [label="48:  qtyOnHand = newQty"];
+  v18  [label="50:  return qtyOnHand;"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v4 -> v5  [label="True"];
+  v4 -> v6  [label="False"];
+  v7 -> v8;
+  v8 -> v9;
+  v9 -> v10;
+  v11 -> v12;
+  v12 -> v13;
+  v13 -> v14;
+  v14 -> v15  [label="True"];
+  v14 -> v17  [label="False"];
+  v17 -> v16;
+  v16 -> v18;
+  // end-of-graph
+}

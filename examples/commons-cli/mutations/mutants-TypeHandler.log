@@ -1,0 +1,32 @@
+1:EVR:<METHOD_INVOCATION(capture#565 of ?)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Object):49:createValue(str, (Class<?>)obj) |==> null
+2:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):66:PatternOptionBuilder.STRING_VALUE == clazz |==> false
+3:EVR:<TYPE_CAST(T)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):68:(T)str |==> null
+4:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):70:PatternOptionBuilder.OBJECT_VALUE == clazz |==> false
+5:EVR:<TYPE_CAST(T)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):72:(T)createObject(str) |==> null
+6:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):74:PatternOptionBuilder.NUMBER_VALUE == clazz |==> false
+7:EVR:<TYPE_CAST(T)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):76:(T)createNumber(str) |==> null
+8:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):78:PatternOptionBuilder.DATE_VALUE == clazz |==> false
+9:EVR:<TYPE_CAST(T)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):80:(T)createDate(str) |==> null
+10:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):82:PatternOptionBuilder.CLASS_VALUE == clazz |==> false
+11:EVR:<TYPE_CAST(T)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):84:(T)createClass(str) |==> null
+12:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):86:PatternOptionBuilder.FILE_VALUE == clazz |==> false
+13:EVR:<TYPE_CAST(T)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):88:(T)createFile(str) |==> null
+14:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):90:PatternOptionBuilder.EXISTING_FILE_VALUE == clazz |==> false
+15:EVR:<TYPE_CAST(T)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):92:(T)openFile(str) |==> null
+16:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):94:PatternOptionBuilder.FILES_VALUE == clazz |==> false
+17:EVR:<TYPE_CAST(T)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):96:(T)createFiles(str) |==> null
+18:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):98:PatternOptionBuilder.URL_VALUE == clazz |==> false
+19:EVR:<TYPE_CAST(T)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createValue(java.lang.String,java.lang.Class<T>):100:(T)createURL(str) |==> null
+20:EVR:<METHOD_INVOCATION(java.lang.Class<capture#533 of ?>)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createObject(java.lang.String):121:Class.forName(classname) |==> null
+21:EVR:<METHOD_INVOCATION(capture#739 of ?)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createObject(java.lang.String):130:cl.newInstance() |==> null
+22:LVR:NEG:0:org.apache.commons.cli.TypeHandler@createNumber(java.lang.String):150:-1 |==> 0
+23:LVR:NEG:POS:org.apache.commons.cli.TypeHandler@createNumber(java.lang.String):150:-1 |==> 1
+24:ROR:!=(int,int):<(int,int):org.apache.commons.cli.TypeHandler@createNumber(java.lang.String):150:str.indexOf('.') != -1 |==> str.indexOf('.') < -1
+25:ROR:!=(int,int):>(int,int):org.apache.commons.cli.TypeHandler@createNumber(java.lang.String):150:str.indexOf('.') != -1 |==> str.indexOf('.') > -1
+26:ROR:!=(int,int):TRUE(int,int):org.apache.commons.cli.TypeHandler@createNumber(java.lang.String):150:str.indexOf('.') != -1 |==> true
+27:STD:<RETURN>:<NO-OP>:org.apache.commons.cli.TypeHandler@createNumber(java.lang.String):152:return Double.valueOf(str); |==> <NO-OP>
+28:EVR:<METHOD_INVOCATION(java.lang.Long)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createNumber(java.lang.String):154:Long.valueOf(str) |==> null
+29:EVR:<METHOD_INVOCATION(java.lang.Class<capture#243 of ?>)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createClass(java.lang.String):173:Class.forName(classname) |==> null
+30:EVR:<NEW_CLASS(java.net.URL)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createURL(java.lang.String):208:new URL(str) |==> null
+31:EVR:<NEW_CLASS(java.io.File)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@createFile(java.lang.String):224:new File(str) |==> null
+32:EVR:<NEW_CLASS(java.io.FileInputStream)>:<DEFAULT>:org.apache.commons.cli.TypeHandler@openFile(java.lang.String):238:new FileInputStream(str) |==> null

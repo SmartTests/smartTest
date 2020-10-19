@@ -1,0 +1,51 @@
+1:LVR:0:POS:org.apache.commons.csv.CSVRecord:33:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.csv.CSVRecord:33:0 |==> -1
+3:EVR:<IDENTIFIER(long)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@<init>(java.lang.String[],java.util.Map<java.lang.String,java.lang.Integer>,java.lang.String,long,long):53:recordNumber |==> 0L
+4:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.csv.CSVRecord@<init>(java.lang.String[],java.util.Map<java.lang.String,java.lang.Integer>,java.lang.String,long,long):54:values != null |==> true
+5:EVR:<IDENTIFIER(java.util.Map<java.lang.String,java.lang.Integer>)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@<init>(java.lang.String[],java.util.Map<java.lang.String,java.lang.Integer>,java.lang.String,long,long):55:mapping |==> null
+6:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@<init>(java.lang.String[],java.util.Map<java.lang.String,java.lang.Integer>,java.lang.String,long,long):56:comment |==> null
+7:EVR:<IDENTIFIER(long)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@<init>(java.lang.String[],java.util.Map<java.lang.String,java.lang.Integer>,java.lang.String,long,long):57:characterPosition |==> 0L
+8:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@get(java.lang.Enum<?>):68:get(e.toString()) |==> null
+9:EVR:<ARRAY_ACCESS(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@get(int):79:values[i] |==> null
+10:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.csv.CSVRecord@get(java.lang.String):96:mapping == null |==> false
+11:EVR:<METHOD_INVOCATION(java.lang.Integer)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@get(java.lang.String):100:mapping.get(name) |==> null
+12:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.csv.CSVRecord@get(java.lang.String):101:index == null |==> false
+13:EVR:<ARRAY_ACCESS(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@get(java.lang.String):106:values[index.intValue()] |==> null
+14:EVR:<IDENTIFIER(long)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@getCharacterPosition():121:characterPosition |==> 0L
+15:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@getComment():133:comment |==> null
+16:EVR:<IDENTIFIER(long)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@getRecordNumber():148:recordNumber |==> 0L
+17:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.csv.CSVRecord@isConsistent():162:mapping == null |==> false
+18:ROR:==(int,int):<=(int,int):org.apache.commons.csv.CSVRecord@isConsistent():162:mapping.size() == values.length |==> mapping.size() <= values.length
+19:ROR:==(int,int):>=(int,int):org.apache.commons.csv.CSVRecord@isConsistent():162:mapping.size() == values.length |==> mapping.size() >= values.length
+20:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.CSVRecord@isConsistent():162:mapping.size() == values.length |==> false
+21:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.CSVRecord@isConsistent():162:mapping == null || mapping.size() == values.length |==> mapping == null != (mapping.size() == values.length)
+22:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.CSVRecord@isConsistent():162:mapping == null || mapping.size() == values.length |==> mapping == null
+23:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.CSVRecord@isConsistent():162:mapping == null || mapping.size() == values.length |==> mapping.size() == values.length
+24:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.CSVRecord@isConsistent():162:mapping == null || mapping.size() == values.length |==> true
+25:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.csv.CSVRecord@hasComment():175:comment != null |==> true
+26:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.csv.CSVRecord@isMapped(java.lang.String):186:mapping != null |==> true
+27:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.CSVRecord@isMapped(java.lang.String):186:mapping != null && mapping.containsKey(name) |==> mapping != null == mapping.containsKey(name)
+28:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.CSVRecord@isMapped(java.lang.String):186:mapping != null && mapping.containsKey(name) |==> false
+29:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.CSVRecord@isMapped(java.lang.String):186:mapping != null && mapping.containsKey(name) |==> mapping != null
+30:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.CSVRecord@isMapped(java.lang.String):186:mapping != null && mapping.containsKey(name) |==> mapping.containsKey(name)
+31:ROR:<(int,int):!=(int,int):org.apache.commons.csv.CSVRecord@isSet(java.lang.String):197:mapping.get(name).intValue() < values.length |==> mapping.get(name).intValue() != values.length
+32:ROR:<(int,int):<=(int,int):org.apache.commons.csv.CSVRecord@isSet(java.lang.String):197:mapping.get(name).intValue() < values.length |==> mapping.get(name).intValue() <= values.length
+33:ROR:<(int,int):FALSE(int,int):org.apache.commons.csv.CSVRecord@isSet(java.lang.String):197:mapping.get(name).intValue() < values.length |==> false
+34:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.CSVRecord@isSet(java.lang.String):197:isMapped(name) && mapping.get(name).intValue() < values.length |==> isMapped(name) == mapping.get(name).intValue() < values.length
+35:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.CSVRecord@isSet(java.lang.String):197:isMapped(name) && mapping.get(name).intValue() < values.length |==> false
+36:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.CSVRecord@isSet(java.lang.String):197:isMapped(name) && mapping.get(name).intValue() < values.length |==> isMapped(name)
+37:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.CSVRecord@isSet(java.lang.String):197:isMapped(name) && mapping.get(name).intValue() < values.length |==> mapping.get(name).intValue() < values.length
+38:EVR:<METHOD_INVOCATION(java.util.Iterator<java.lang.String>)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@iterator():207:toList().iterator() |==> null
+39:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.csv.CSVRecord@putIn(M):218:mapping == null |==> false
+40:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.CSVRecord@putIn(M):219:return map; |==> <NO-OP>
+41:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@putIn(M):222:entry.getValue().intValue() |==> 0
+42:ROR:<(int,int):!=(int,int):org.apache.commons.csv.CSVRecord@putIn(M):223:col < values.length |==> col != values.length
+43:ROR:<(int,int):<=(int,int):org.apache.commons.csv.CSVRecord@putIn(M):223:col < values.length |==> col <= values.length
+44:ROR:<(int,int):FALSE(int,int):org.apache.commons.csv.CSVRecord@putIn(M):223:col < values.length |==> false
+45:STD:<CALL>:<NO-OP>:org.apache.commons.csv.CSVRecord@putIn(M):224:map.put(entry.getKey(), values[col]) |==> <NO-OP>
+46:EVR:<IDENTIFIER(M)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@putIn(M):227:map |==> null
+47:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@size():236:values.length |==> 0
+48:EVR:<METHOD_INVOCATION(java.util.List<java.lang.String>)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@toList():247:Arrays.asList(values) |==> null
+49:EVR:<METHOD_INVOCATION(java.util.HashMap<java.lang.String,java.lang.String>)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@toMap():256:putIn(new HashMap<String, String>(values.length)) |==> null
+50:EVR:<PLUS(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.CSVRecord@toString():269:"CSVRecord [comment=" + comment + ", mapping=" + mapping + ", recordNumber=" + recordNumber + ", values=" + Arrays.toString(values) + "]" |==> null
+51:EVR:<IDENTIFIER(java.lang.String[])>:<DEFAULT>:org.apache.commons.csv.CSVRecord@values():273:values |==> null

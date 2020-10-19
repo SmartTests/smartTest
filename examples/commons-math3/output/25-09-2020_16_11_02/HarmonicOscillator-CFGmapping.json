@@ -1,0 +1,260 @@
+[
+  {
+    "v1": {
+      "line": "52",
+      "statement": "HarmonicOscillator (double amplitude, double omega, double phase)"
+    }
+  },
+  {
+    "v2": {
+      "line": "55",
+      "statement": "this.amplitude = amplitude"
+    }
+  },
+  {
+    "v3": {
+      "line": "56",
+      "statement": "this.omega = omega"
+    }
+  },
+  {
+    "v4": {
+      "line": "57",
+      "statement": "this.phase = phase"
+    }
+  },
+  {
+    "v5": {
+      "line": "61",
+      "statement": "double value(double x)"
+    }
+  },
+  {
+    "v6": {
+      "line": "62",
+      "statement": "return value(omega * x + phase, amplitude)"
+    }
+  },
+  {
+    "v7": {
+      "line": "69",
+      "statement": "UnivariateFunction derivative()"
+    }
+  },
+  {
+    "v8": {
+      "line": "70",
+      "statement": "return FunctionUtils.toDifferentiableUnivariateFunction(this).derivative()"
+    }
+  },
+  {
+    "v9": {
+      "line": "93",
+      "statement": "double value(double x, double ... param)"
+    }
+  },
+  {
+    "v10": {
+      "line": "96",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v11": {
+      "line": "97",
+      "statement": "return HarmonicOscillator.value(x * param[1] + param[2], param[0])"
+    }
+  },
+  {
+    "v12": {
+      "line": "113",
+      "statement": "double[] gradient(double x, double ... param)"
+    }
+  },
+  {
+    "v13": {
+      "line": "116",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v14": {
+      "line": "118",
+      "statement": "final double amplitude = param[0"
+    }
+  },
+  {
+    "v15": {
+      "line": "119",
+      "statement": "final double omega = param[1"
+    }
+  },
+  {
+    "v16": {
+      "line": "120",
+      "statement": "final double phase = param[2"
+    }
+  },
+  {
+    "v17": {
+      "line": "122",
+      "statement": "final double xTimesOmegaPlusPhase = omega * x + phase"
+    }
+  },
+  {
+    "v18": {
+      "line": "123",
+      "statement": "final double a = HarmonicOscillator.value(xTimesOmegaPlusPhase, 1)"
+    }
+  },
+  {
+    "v19": {
+      "line": "124",
+      "statement": "final double p = -amplitude * FastMath.sin(xTimesOmegaPlusPhase)"
+    }
+  },
+  {
+    "v20": {
+      "line": "125",
+      "statement": "final double w = p * x"
+    }
+  },
+  {
+    "v21": {
+      "line": "127",
+      "statement": "return new double[] { a, w, p }"
+    }
+  },
+  {
+    "v22": {
+      "line": "140",
+      "statement": "void validateParameters(double[] param)"
+    }
+  },
+  {
+    "v23": {
+      "line": "143",
+      "statement": "if (param == null)"
+    }
+  },
+  {
+    "v24": {
+      "line": "144",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "146",
+      "statement": "if (param.length != 3)"
+    }
+  },
+  {
+    "v27": {
+      "line": "147",
+      "statement": "throw new DimensionMismatchException(param.length, 3)"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "157",
+      "statement": "double value(double xTimesOmegaPlusPhase, double amplitude)"
+    }
+  },
+  {
+    "v30": {
+      "line": "159",
+      "statement": "return amplitude * FastMath.cos(xTimesOmegaPlusPhase)"
+    }
+  },
+  {
+    "v31": {
+      "line": "165",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v32": {
+      "line": "167",
+      "statement": "final double x = t.getValue()"
+    }
+  },
+  {
+    "v33": {
+      "line": "168",
+      "statement": "double[] f = new double[t.getOrder() + 1"
+    }
+  },
+  {
+    "v34": {
+      "line": "170",
+      "statement": "final double alpha = omega * x + phase"
+    }
+  },
+  {
+    "v35": {
+      "line": "171",
+      "statement": "f[0] = amplitude * FastMath.cos(alpha)"
+    }
+  },
+  {
+    "v36": {
+      "line": "172",
+      "statement": "if (f.length > 1)"
+    }
+  },
+  {
+    "v37": {
+      "line": "173",
+      "statement": "f[1] = -amplitude * omega * FastMath.sin(alpha)"
+    }
+  },
+  {
+    "v38": {
+      "line": "174",
+      "statement": "final double mo2 = - omega * omega"
+    }
+  },
+  {
+    "v39": {
+      "line": "175",
+      "statement": "for (  int i = 2 ; i < f.length ;   ++i)"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v43": {
+      "line": "176",
+      "statement": "f[i] = mo2 * f[i - 2"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v45": {
+      "line": "180",
+      "statement": "return t.compose(f)"
+    }
+  }
+]

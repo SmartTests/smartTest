@@ -1,0 +1,530 @@
+[
+  {
+    "v1": {
+      "line": "65",
+      "statement": "static"
+    }
+  },
+  {
+    "v2": {
+      "line": "70",
+      "statement": "final double LN2 = FastMath.log(2)"
+    }
+  },
+  {
+    "v3": {
+      "line": "71",
+      "statement": "double qi = 0"
+    }
+  },
+  {
+    "v4": {
+      "line": "72",
+      "statement": "int i = 1"
+    }
+  },
+  {
+    "v5": {
+      "line": "80",
+      "statement": "final ResizableDoubleArray ra = new ResizableDoubleArray(20)"
+    }
+  },
+  {
+    "v6": {
+      "line": "82",
+      "statement": "while (qi < 1)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v8": {
+      "line": "83",
+      "statement": "qi += FastMath.pow(LN2, i) / CombinatoricsUtils.factorial(i)"
+    }
+  },
+  {
+    "v9": {
+      "line": "84",
+      "statement": "ra.addElement(qi)"
+    }
+  },
+  {
+    "v10": {
+      "line": "85",
+      "statement": "++i"
+    }
+  },
+  {
+    "v11": {
+      "line": "88",
+      "statement": "EXPONENTIAL_SA_QI = ra.getElements()"
+    }
+  },
+  {
+    "v12": {
+      "line": "95",
+      "statement": "ExponentialDistribution (double mean)"
+    }
+  },
+  {
+    "v13": {
+      "line": "96",
+      "statement": "this(mean, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v14": {
+      "line": "109",
+      "statement": "ExponentialDistribution (double mean, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v15": {
+      "line": "110",
+      "statement": "this(new Well19937c(), mean, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v16": {
+      "line": "121",
+      "statement": "ExponentialDistribution (RandomGenerator rng, double mean)"
+    }
+  },
+  {
+    "v17": {
+      "line": "123",
+      "statement": "this(rng, mean, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v18": {
+      "line": "137",
+      "statement": "ExponentialDistribution (RandomGenerator rng,  double mean,  double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v19": {
+      "line": "141",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v20": {
+      "line": "143",
+      "statement": "if (mean <= 0)"
+    }
+  },
+  {
+    "v21": {
+      "line": "144",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.MEAN, mean)"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v23": {
+      "line": "146",
+      "statement": "this.mean = mean"
+    }
+  },
+  {
+    "v24": {
+      "line": "147",
+      "statement": "solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v25": {
+      "line": "155",
+      "statement": "double getMean()"
+    }
+  },
+  {
+    "v26": {
+      "line": "156",
+      "statement": "return mean"
+    }
+  },
+  {
+    "v27": {
+      "line": "160",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v28": {
+      "line": "161",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v29": {
+      "line": "162",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v31": {
+      "line": "164",
+      "statement": "return FastMath.exp(-x / mean) / mean"
+    }
+  },
+  {
+    "v32": {
+      "line": "177",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v33": {
+      "line": "178",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v34": {
+      "line": "179",
+      "statement": "if (x <= 0.0)"
+    }
+  },
+  {
+    "v35": {
+      "line": "180",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v37": {
+      "line": "182",
+      "statement": "ret = 1.0 - FastMath.exp(-x / mean)"
+    }
+  },
+  {
+    "v38": {
+      "line": "184",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v39": {
+      "line": "194",
+      "statement": "double inverseCumulativeProbability(double p)"
+    }
+  },
+  {
+    "v40": {
+      "line": "195",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v41": {
+      "line": "197",
+      "statement": "if (p < 0.0 || p > 1.0)"
+    }
+  },
+  {
+    "v42": {
+      "line": "198",
+      "statement": "throw new OutOfRangeException(p, 0.0, 1.0)"
+    }
+  },
+  {
+    "v43": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v44": {
+      "line": "199",
+      "statement": "if (p == 1.0)"
+    }
+  },
+  {
+    "v45": {
+      "line": "200",
+      "statement": "ret = Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v47": {
+      "line": "202",
+      "statement": "ret = -mean * FastMath.log(1.0 - p)"
+    }
+  },
+  {
+    "v48": {
+      "line": "205",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v49": {
+      "line": "220",
+      "statement": "double sample()"
+    }
+  },
+  {
+    "v50": {
+      "line": "222",
+      "statement": "double a = 0"
+    }
+  },
+  {
+    "v51": {
+      "line": "223",
+      "statement": "double u = random.nextDouble()"
+    }
+  },
+  {
+    "v52": {
+      "line": "226",
+      "statement": "while (u < 0.5)"
+    }
+  },
+  {
+    "v53": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v54": {
+      "line": "227",
+      "statement": "a += EXPONENTIAL_SA_QI[0"
+    }
+  },
+  {
+    "v55": {
+      "line": "228",
+      "statement": "u *= 2"
+    }
+  },
+  {
+    "v56": {
+      "line": "232",
+      "statement": "u += u - 1"
+    }
+  },
+  {
+    "v57": {
+      "line": "235",
+      "statement": "if (u <= EXPONENTIAL_SA_QI[0])"
+    }
+  },
+  {
+    "v58": {
+      "line": "236",
+      "statement": "return mean * (a + u)"
+    }
+  },
+  {
+    "v59": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v60": {
+      "line": "240",
+      "statement": "int i = 0"
+    }
+  },
+  {
+    "v61": {
+      "line": "241",
+      "statement": "double u2 = random.nextDouble()"
+    }
+  },
+  {
+    "v62": {
+      "line": "242",
+      "statement": "double umin = u2"
+    }
+  },
+  {
+    "v63": {
+      "line": "245",
+      "statement": "do"
+    }
+  },
+  {
+    "v64": {
+      "line": "254",
+      "statement": "while (u > EXPONENTIAL_SA_QI[i])"
+    }
+  },
+  {
+    "v65": {
+      "line": 0,
+      "statement": "\"end-do-while"
+    }
+  },
+  {
+    "v66": {
+      "line": "246",
+      "statement": "++i"
+    }
+  },
+  {
+    "v67": {
+      "line": "247",
+      "statement": "u2 = random.nextDouble()"
+    }
+  },
+  {
+    "v68": {
+      "line": "249",
+      "statement": "if (u2 < umin)"
+    }
+  },
+  {
+    "v69": {
+      "line": "250",
+      "statement": "umin = u2"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v71": {
+      "line": "256",
+      "statement": "return mean * (a + umin * EXPONENTIAL_SA_QI[0])"
+    }
+  },
+  {
+    "v72": {
+      "line": "261",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v73": {
+      "line": "262",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v74": {
+      "line": "270",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v75": {
+      "line": "271",
+      "statement": "return getMean()"
+    }
+  },
+  {
+    "v76": {
+      "line": "279",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v77": {
+      "line": "280",
+      "statement": "final double m = getMean()"
+    }
+  },
+  {
+    "v78": {
+      "line": "281",
+      "statement": "return m * m"
+    }
+  },
+  {
+    "v79": {
+      "line": "291",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v80": {
+      "line": "292",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v81": {
+      "line": "303",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v82": {
+      "line": "304",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v83": {
+      "line": "308",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v84": {
+      "line": "309",
+      "statement": "return true"
+    }
+  },
+  {
+    "v85": {
+      "line": "313",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v86": {
+      "line": "314",
+      "statement": "return false"
+    }
+  },
+  {
+    "v87": {
+      "line": "324",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v88": {
+      "line": "325",
+      "statement": "return true"
+    }
+  }
+]

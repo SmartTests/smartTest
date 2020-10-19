@@ -1,0 +1,25 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "214"
+    ],
+    "sourceClass": "DefaultParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR42",
+      "TR39",
+      "TR41"
+    ],
+    "affectedTest": [
+      "testPropertyOptionFlags",
+      "testPropertyOptionMultipleValues",
+      "testPropertyOptionSingularValue"
+    ],
+    "testReran": [
+      "testPropertyOptionMultipleValues",
+      "testPropertyOptionSingularValue",
+      "testPropertyOptionFlags"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "80"
+    ],
+    "sourceClass": "OptionBuilder"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR3",
+      "TR2"
+    ],
+    "affectedTest": [
+      "testBaseOptionCharOpt",
+      "testBaseOptionStringOpt",
+      "testBuilderIsResettedAlways",
+      "testCompleteOption",
+      "testCreateIncompleteOption",
+      "testIllegalOptions",
+      "testOptionArgNumbers",
+      "testSpecialOptChars",
+      "testTwoCompleteOptions"
+    ],
+    "testReran": [
+      "testBaseOptionCharOpt",
+      "testOptionArgNumbers",
+      "testSpecialOptChars",
+      "testBuilderIsResettedAlways",
+      "testTwoCompleteOptions",
+      "testBaseOptionStringOpt",
+      "testCreateIncompleteOption",
+      "testCompleteOption",
+      "testIllegalOptions"
+    ],
+    "unsatisfiedRequirement": [
+      "TR2"
+    ]
+  }
+}

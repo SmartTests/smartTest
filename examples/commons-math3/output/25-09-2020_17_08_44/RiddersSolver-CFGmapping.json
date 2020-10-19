@@ -1,0 +1,368 @@
+[
+  {
+    "v1": {
+      "line": "42",
+      "statement": "RiddersSolver ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "43",
+      "statement": "this(DEFAULT_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "50",
+      "statement": "RiddersSolver (double absoluteAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "51",
+      "statement": "super(absoluteAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "59",
+      "statement": "RiddersSolver (double relativeAccuracy,  double absoluteAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "61",
+      "statement": "super(relativeAccuracy, absoluteAccuracy)"
+    }
+  },
+  {
+    "v7": {
+      "line": "68",
+      "statement": "double doSolve()"
+    }
+  },
+  {
+    "v8": {
+      "line": "71",
+      "statement": "double min = getMin()"
+    }
+  },
+  {
+    "v9": {
+      "line": "72",
+      "statement": "double max = getMax()"
+    }
+  },
+  {
+    "v10": {
+      "line": "76",
+      "statement": "double x1 = min"
+    }
+  },
+  {
+    "v11": {
+      "line": "77",
+      "statement": "double y1 = computeObjectiveValue(x1)"
+    }
+  },
+  {
+    "v12": {
+      "line": "78",
+      "statement": "double x2 = max"
+    }
+  },
+  {
+    "v13": {
+      "line": "79",
+      "statement": "double y2 = computeObjectiveValue(x2)"
+    }
+  },
+  {
+    "v14": {
+      "line": "82",
+      "statement": "if (y1 == 0)"
+    }
+  },
+  {
+    "v15": {
+      "line": "83",
+      "statement": "return min"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v17": {
+      "line": "85",
+      "statement": "if (y2 == 0)"
+    }
+  },
+  {
+    "v18": {
+      "line": "86",
+      "statement": "return max"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "88",
+      "statement": "verifyBracketing(min, max)"
+    }
+  },
+  {
+    "v21": {
+      "line": "90",
+      "statement": "final double absoluteAccuracy = getAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v22": {
+      "line": "91",
+      "statement": "final double functionValueAccuracy = getFunctionValueAccuracy()"
+    }
+  },
+  {
+    "v23": {
+      "line": "92",
+      "statement": "final double relativeAccuracy = getRelativeAccuracy()"
+    }
+  },
+  {
+    "v24": {
+      "line": "94",
+      "statement": "double oldx = Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v25": {
+      "line": "95",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v26": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v27": {
+      "line": "97",
+      "statement": "final double x3 = 0.5 * (x1 + x2)"
+    }
+  },
+  {
+    "v28": {
+      "line": "98",
+      "statement": "final double y3 = computeObjectiveValue(x3)"
+    }
+  },
+  {
+    "v29": {
+      "line": "99",
+      "statement": "if (FastMath.abs(y3) <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v30": {
+      "line": "100",
+      "statement": "return x3"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "102",
+      "statement": "final double delta = 1 - (y1 * y2) / (y3 * y3)"
+    }
+  },
+  {
+    "v33": {
+      "line": "103",
+      "statement": "final double correction = (FastMath.signum(y2) * FastMath.signum(y3)) * (x3 - x1) / FastMath.sqrt(delta)"
+    }
+  },
+  {
+    "v34": {
+      "line": "105",
+      "statement": "final double x = x3 - correction"
+    }
+  },
+  {
+    "v35": {
+      "line": "106",
+      "statement": "final double y = computeObjectiveValue(x)"
+    }
+  },
+  {
+    "v36": {
+      "line": "109",
+      "statement": "final double tolerance = FastMath.max(relativeAccuracy * FastMath.abs(x), absoluteAccuracy)"
+    }
+  },
+  {
+    "v37": {
+      "line": "110",
+      "statement": "if (FastMath.abs(x - oldx) <= tolerance)"
+    }
+  },
+  {
+    "v38": {
+      "line": "111",
+      "statement": "return x"
+    }
+  },
+  {
+    "v39": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v40": {
+      "line": "113",
+      "statement": "if (FastMath.abs(y) <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v41": {
+      "line": "114",
+      "statement": "return x"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": "119",
+      "statement": "if (correction > 0.0)"
+    }
+  },
+  {
+    "v44": {
+      "line": "120",
+      "statement": "if (FastMath.signum(y1) + FastMath.signum(y) == 0.0)"
+    }
+  },
+  {
+    "v45": {
+      "line": "121",
+      "statement": "x2 = x"
+    }
+  },
+  {
+    "v46": {
+      "line": "122",
+      "statement": "y2 = y"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v48": {
+      "line": "124",
+      "statement": "x1 = x"
+    }
+  },
+  {
+    "v49": {
+      "line": "125",
+      "statement": "x2 = x3"
+    }
+  },
+  {
+    "v50": {
+      "line": "126",
+      "statement": "y1 = y"
+    }
+  },
+  {
+    "v51": {
+      "line": "127",
+      "statement": "y2 = y3"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v53": {
+      "line": "130",
+      "statement": "if (FastMath.signum(y2) + FastMath.signum(y) == 0.0)"
+    }
+  },
+  {
+    "v54": {
+      "line": "131",
+      "statement": "x1 = x"
+    }
+  },
+  {
+    "v55": {
+      "line": "132",
+      "statement": "y1 = y"
+    }
+  },
+  {
+    "v56": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v57": {
+      "line": "134",
+      "statement": "x1 = x3"
+    }
+  },
+  {
+    "v58": {
+      "line": "135",
+      "statement": "x2 = x"
+    }
+  },
+  {
+    "v59": {
+      "line": "136",
+      "statement": "y1 = y3"
+    }
+  },
+  {
+    "v60": {
+      "line": "137",
+      "statement": "y2 = y"
+    }
+  },
+  {
+    "v61": {
+      "line": "140",
+      "statement": "oldx = x"
+    }
+  }
+]

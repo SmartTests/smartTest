@@ -1,0 +1,674 @@
+[
+  {
+    "v1": {
+      "line": "72",
+      "statement": "PolynomialFunctionLagrangeForm (double x[], double y[])"
+    }
+  },
+  {
+    "v2": {
+      "line": "74",
+      "statement": "this.x = new double[x.length"
+    }
+  },
+  {
+    "v3": {
+      "line": "75",
+      "statement": "this.y = new double[y.length"
+    }
+  },
+  {
+    "v4": {
+      "line": "76",
+      "statement": "System.arraycopy(x, 0, this.x, 0, x.length)"
+    }
+  },
+  {
+    "v5": {
+      "line": "77",
+      "statement": "System.arraycopy(y, 0, this.y, 0, y.length)"
+    }
+  },
+  {
+    "v6": {
+      "line": "78",
+      "statement": "coefficientsComputed = false"
+    }
+  },
+  {
+    "v7": {
+      "line": "80",
+      "statement": "if (!verifyInterpolationArray(x, y, false))"
+    }
+  },
+  {
+    "v8": {
+      "line": "81",
+      "statement": "MathArrays.sortInPlace(this.x, this.y)"
+    }
+  },
+  {
+    "v9": {
+      "line": "83",
+      "statement": "verifyInterpolationArray(this.x, this.y, true)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "99",
+      "statement": "double value(double z)"
+    }
+  },
+  {
+    "v12": {
+      "line": "100",
+      "statement": "return evaluateInternal(x, y, z)"
+    }
+  },
+  {
+    "v13": {
+      "line": "108",
+      "statement": "int degree()"
+    }
+  },
+  {
+    "v14": {
+      "line": "109",
+      "statement": "return x.length - 1"
+    }
+  },
+  {
+    "v15": {
+      "line": "119",
+      "statement": "double[] getInterpolatingPoints()"
+    }
+  },
+  {
+    "v16": {
+      "line": "120",
+      "statement": "double[] out = new double[x.length"
+    }
+  },
+  {
+    "v17": {
+      "line": "121",
+      "statement": "System.arraycopy(x, 0, out, 0, x.length)"
+    }
+  },
+  {
+    "v18": {
+      "line": "122",
+      "statement": "return out"
+    }
+  },
+  {
+    "v19": {
+      "line": "132",
+      "statement": "double[] getInterpolatingValues()"
+    }
+  },
+  {
+    "v20": {
+      "line": "133",
+      "statement": "double[] out = new double[y.length"
+    }
+  },
+  {
+    "v21": {
+      "line": "134",
+      "statement": "System.arraycopy(y, 0, out, 0, y.length)"
+    }
+  },
+  {
+    "v22": {
+      "line": "135",
+      "statement": "return out"
+    }
+  },
+  {
+    "v23": {
+      "line": "148",
+      "statement": "double[] getCoefficients()"
+    }
+  },
+  {
+    "v24": {
+      "line": "149",
+      "statement": "if (!coefficientsComputed)"
+    }
+  },
+  {
+    "v25": {
+      "line": "150",
+      "statement": "computeCoefficients()"
+    }
+  },
+  {
+    "v26": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v27": {
+      "line": "152",
+      "statement": "double[] out = new double[coefficients.length"
+    }
+  },
+  {
+    "v28": {
+      "line": "153",
+      "statement": "System.arraycopy(coefficients, 0, out, 0, coefficients.length)"
+    }
+  },
+  {
+    "v29": {
+      "line": "154",
+      "statement": "return out"
+    }
+  },
+  {
+    "v30": {
+      "line": "173",
+      "statement": "double evaluate(double x[], double y[], double z)"
+    }
+  },
+  {
+    "v31": {
+      "line": "175",
+      "statement": "if (verifyInterpolationArray(x, y, false))"
+    }
+  },
+  {
+    "v32": {
+      "line": "176",
+      "statement": "return evaluateInternal(x, y, z)"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v34": {
+      "line": "180",
+      "statement": "final double[] xNew = new double[x.length"
+    }
+  },
+  {
+    "v35": {
+      "line": "181",
+      "statement": "final double[] yNew = new double[y.length"
+    }
+  },
+  {
+    "v36": {
+      "line": "182",
+      "statement": "System.arraycopy(x, 0, xNew, 0, x.length)"
+    }
+  },
+  {
+    "v37": {
+      "line": "183",
+      "statement": "System.arraycopy(y, 0, yNew, 0, y.length)"
+    }
+  },
+  {
+    "v38": {
+      "line": "185",
+      "statement": "MathArrays.sortInPlace(xNew, yNew)"
+    }
+  },
+  {
+    "v39": {
+      "line": "187",
+      "statement": "verifyInterpolationArray(xNew, yNew, true)"
+    }
+  },
+  {
+    "v40": {
+      "line": "188",
+      "statement": "return evaluateInternal(xNew, yNew, z)"
+    }
+  },
+  {
+    "v41": {
+      "line": "207",
+      "statement": "double evaluateInternal(double x[], double y[], double z)"
+    }
+  },
+  {
+    "v42": {
+      "line": "208",
+      "statement": "int nearest = 0"
+    }
+  },
+  {
+    "v43": {
+      "line": "209",
+      "statement": "final int n = x.length"
+    }
+  },
+  {
+    "v44": {
+      "line": "210",
+      "statement": "final double[] c = new double[n"
+    }
+  },
+  {
+    "v45": {
+      "line": "211",
+      "statement": "final double[] d = new double[n"
+    }
+  },
+  {
+    "v46": {
+      "line": "212",
+      "statement": "double min_dist = Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v47": {
+      "line": "213",
+      "statement": "for (  int i = 0 ; i < n ;   i++)"
+    }
+  },
+  {
+    "v50": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v51": {
+      "line": "215",
+      "statement": "c[i] = y[i"
+    }
+  },
+  {
+    "v52": {
+      "line": "216",
+      "statement": "d[i] = y[i"
+    }
+  },
+  {
+    "v53": {
+      "line": "218",
+      "statement": "final double dist = FastMath.abs(z - x[i])"
+    }
+  },
+  {
+    "v54": {
+      "line": "219",
+      "statement": "if (dist < min_dist)"
+    }
+  },
+  {
+    "v55": {
+      "line": "220",
+      "statement": "nearest = i"
+    }
+  },
+  {
+    "v56": {
+      "line": "221",
+      "statement": "min_dist = dist"
+    }
+  },
+  {
+    "v57": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v58": {
+      "line": "226",
+      "statement": "double value = y[nearest"
+    }
+  },
+  {
+    "v59": {
+      "line": "228",
+      "statement": "for (  int i = 1 ; i < n ;   i++)"
+    }
+  },
+  {
+    "v62": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v63": {
+      "line": "229",
+      "statement": "for (  int j = 0 ; j < n-i ;   j++)"
+    }
+  },
+  {
+    "v66": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v67": {
+      "line": "230",
+      "statement": "final double tc = x[j] - z"
+    }
+  },
+  {
+    "v68": {
+      "line": "231",
+      "statement": "final double td = x[i+j] - z"
+    }
+  },
+  {
+    "v69": {
+      "line": "232",
+      "statement": "final double divider = x[j] - x[i+j"
+    }
+  },
+  {
+    "v70": {
+      "line": "234",
+      "statement": "final double w = (c[j+1] - d[j]) / divider"
+    }
+  },
+  {
+    "v71": {
+      "line": "235",
+      "statement": "c[j] = tc * w"
+    }
+  },
+  {
+    "v72": {
+      "line": "236",
+      "statement": "d[j] = td * w"
+    }
+  },
+  {
+    "v73": {
+      "line": "239",
+      "statement": "if (nearest < 0.5*(n-i+1))"
+    }
+  },
+  {
+    "v74": {
+      "line": "240",
+      "statement": "value += c[nearest"
+    }
+  },
+  {
+    "v75": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v76": {
+      "line": "242",
+      "statement": "nearest--"
+    }
+  },
+  {
+    "v77": {
+      "line": "243",
+      "statement": "value += d[nearest"
+    }
+  },
+  {
+    "v78": {
+      "line": "247",
+      "statement": "return value"
+    }
+  },
+  {
+    "v79": {
+      "line": "256",
+      "statement": "void computeCoefficients()"
+    }
+  },
+  {
+    "v80": {
+      "line": "257",
+      "statement": "final int n = degree() + 1"
+    }
+  },
+  {
+    "v81": {
+      "line": "258",
+      "statement": "coefficients = new double[n"
+    }
+  },
+  {
+    "v82": {
+      "line": "259",
+      "statement": "for (  int i = 0 ; i < n ;   i++)"
+    }
+  },
+  {
+    "v85": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v86": {
+      "line": "260",
+      "statement": "coefficients[i] = 0.0"
+    }
+  },
+  {
+    "v87": {
+      "line": "264",
+      "statement": "final double[] c = new double[n+1"
+    }
+  },
+  {
+    "v88": {
+      "line": "265",
+      "statement": "c[0] = 1.0"
+    }
+  },
+  {
+    "v89": {
+      "line": "266",
+      "statement": "for (  int i = 0 ; i < n ;   i++)"
+    }
+  },
+  {
+    "v92": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v93": {
+      "line": "267",
+      "statement": "for (  int j = i ; j > 0 ;   j--)"
+    }
+  },
+  {
+    "v96": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v97": {
+      "line": "268",
+      "statement": "c[j] = c[j-1] - c[j] * x[i"
+    }
+  },
+  {
+    "v98": {
+      "line": "270",
+      "statement": "c[0] *= -x[i"
+    }
+  },
+  {
+    "v99": {
+      "line": "271",
+      "statement": "c[i+1] = 1"
+    }
+  },
+  {
+    "v100": {
+      "line": "274",
+      "statement": "final double[] tc = new double[n"
+    }
+  },
+  {
+    "v101": {
+      "line": "275",
+      "statement": "for (  int i = 0 ; i < n ;   i++)"
+    }
+  },
+  {
+    "v104": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v105": {
+      "line": "277",
+      "statement": "double d = 1"
+    }
+  },
+  {
+    "v106": {
+      "line": "278",
+      "statement": "for (  int j = 0 ; j < n ;   j++)"
+    }
+  },
+  {
+    "v109": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v110": {
+      "line": "279",
+      "statement": "if (i != j)"
+    }
+  },
+  {
+    "v111": {
+      "line": "280",
+      "statement": "d *= x[i] - x[j"
+    }
+  },
+  {
+    "v112": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v113": {
+      "line": "283",
+      "statement": "final double t = y[i] / d"
+    }
+  },
+  {
+    "v114": {
+      "line": "287",
+      "statement": "tc[n-1] = c[n"
+    }
+  },
+  {
+    "v115": {
+      "line": "288",
+      "statement": "coefficients[n-1] += t * tc[n-1"
+    }
+  },
+  {
+    "v116": {
+      "line": "289",
+      "statement": "for (  int j = n-2 ; j >= 0 ;   j--)"
+    }
+  },
+  {
+    "v119": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v120": {
+      "line": "290",
+      "statement": "tc[j] = c[j+1] + tc[j+1] * x[i"
+    }
+  },
+  {
+    "v121": {
+      "line": "291",
+      "statement": "coefficients[j] += t * tc[j"
+    }
+  },
+  {
+    "v122": {
+      "line": "295",
+      "statement": "coefficientsComputed = true"
+    }
+  },
+  {
+    "v123": {
+      "line": "316",
+      "statement": "boolean verifyInterpolationArray(double x[], double y[], boolean abort)"
+    }
+  },
+  {
+    "v124": {
+      "line": "318",
+      "statement": "if (x.length != y.length)"
+    }
+  },
+  {
+    "v125": {
+      "line": "319",
+      "statement": "throw new DimensionMismatchException(x.length, y.length)"
+    }
+  },
+  {
+    "v126": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v127": {
+      "line": "321",
+      "statement": "if (x.length < 2)"
+    }
+  },
+  {
+    "v128": {
+      "line": "322",
+      "statement": "throw new NumberIsTooSmallException(LocalizedFormats.WRONG_NUMBER_OF_POINTS, 2, x.length, true)"
+    }
+  },
+  {
+    "v129": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v130": {
+      "line": "325",
+      "statement": "return MathArrays.checkOrder(x, MathArrays.OrderDirection.INCREASING, true, abort)"
+    }
+  }
+]

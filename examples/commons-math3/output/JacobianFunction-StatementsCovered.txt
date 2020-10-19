@@ -1,0 +1,8 @@
+
+jacobian : value([D)[[D=[46,47
+47,48
+48,49
+]
+
+testSphere : <init>(Lorg/apache/commons/math3/analysis/differentiation/MultivariateDifferentiableVectorFunction;)V=[40,41
+]

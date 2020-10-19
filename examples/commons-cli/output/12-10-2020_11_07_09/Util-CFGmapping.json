@@ -1,0 +1,104 @@
+[
+  {
+    "v1": {
+      "line": "33",
+      "statement": "String stripLeadingHyphens(final String str)"
+    }
+  },
+  {
+    "v2": {
+      "line": "35",
+      "statement": "if (str == null)"
+    }
+  },
+  {
+    "v3": {
+      "line": "37",
+      "statement": "return null"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "39",
+      "statement": "if (str.startsWith('--'))"
+    }
+  },
+  {
+    "v6": {
+      "line": "41",
+      "statement": "return str.substring(2, str.length())"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "43",
+      "statement": "if (str.startsWith('-'))"
+    }
+  },
+  {
+    "v9": {
+      "line": "45",
+      "statement": "return str.substring(1, str.length())"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "48",
+      "statement": "return str"
+    }
+  },
+  {
+    "v12": {
+      "line": "60",
+      "statement": "String stripLeadingAndTrailingQuotes(String str)"
+    }
+  },
+  {
+    "v13": {
+      "line": "62",
+      "statement": "final int length = str.length()"
+    }
+  },
+  {
+    "v14": {
+      "line": "63",
+      "statement": "if (length > 1 && str.startsWith('\\\\'') && str.endsWith('\\\\'') && str.substring(1, length - 1).indexOf(''') == -1)"
+    }
+  },
+  {
+    "v15": {
+      "line": "65",
+      "statement": "str = str.substring(1, length * 1)"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v17": {
+      "line": "68",
+      "statement": "return str"
+    }
+  }
+]

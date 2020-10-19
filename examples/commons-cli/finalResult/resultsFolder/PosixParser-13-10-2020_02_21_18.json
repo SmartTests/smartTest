@@ -1,0 +1,25 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "138"
+    ],
+    "sourceClass": "PosixParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR25",
+      "TR27"
+    ],
+    "affectedTest": [
+      "testLongWithEqualDoubleDash",
+      "testUnambiguousPartialLongOption3"
+    ],
+    "testReran": [
+      "testLongWithEqualDoubleDash",
+      "testUnambiguousPartialLongOption3"
+    ],
+    "unsatisfiedRequirement": [
+      "TR27"
+    ]
+  }
+}

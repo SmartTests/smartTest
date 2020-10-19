@@ -1,0 +1,242 @@
+[
+  {
+    "v1": {
+      "line": "50",
+      "statement": "String[] flatten(final Options options, final String[] arguments, final boolean stopAtNonOption)"
+    }
+  },
+  {
+    "v2": {
+      "line": "52",
+      "statement": "final List<String> tokens = new ArrayList<String>()"
+    }
+  },
+  {
+    "v3": {
+      "line": "54",
+      "statement": "boolean eatTheRest = false"
+    }
+  },
+  {
+    "v4": {
+      "line": "56",
+      "statement": "int i = 0"
+    }
+  },
+  {
+    "v5": {
+      "line": "56",
+      "statement": "for (i < arguments.length)"
+    }
+  },
+  {
+    "v6": {
+      "line": "56",
+      "statement": "i++"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v8": {
+      "line": "58",
+      "statement": "final String arg = arguments[i"
+    }
+  },
+  {
+    "v9": {
+      "line": "60",
+      "statement": "if ('--'.equals(arg))"
+    }
+  },
+  {
+    "v10": {
+      "line": "62",
+      "statement": "eatTheRest = true"
+    }
+  },
+  {
+    "v11": {
+      "line": "63",
+      "statement": "tokens.add('--')"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v13": {
+      "line": "65",
+      "statement": "if ('-'.equals(arg))"
+    }
+  },
+  {
+    "v14": {
+      "line": "67",
+      "statement": "tokens.add('-')"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "69",
+      "statement": "if (arg.startsWith('-'))"
+    }
+  },
+  {
+    "v17": {
+      "line": "71",
+      "statement": "final String opt = Util.stripLeadingHyphens(arg)"
+    }
+  },
+  {
+    "v18": {
+      "line": "73",
+      "statement": "if (options.hasOption(opt))"
+    }
+  },
+  {
+    "v19": {
+      "line": "75",
+      "statement": "tokens.add(arg)"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v21": {
+      "line": "79",
+      "statement": "if (opt.indexOf('=') != -1 && options.hasOption(opt.substring(0, opt.indexOf('='))))"
+    }
+  },
+  {
+    "v22": {
+      "line": "82",
+      "statement": "tokens.add(arg.substring(0, arg.indexOf('=')))"
+    }
+  },
+  {
+    "v23": {
+      "line": "83",
+      "statement": "tokens.add(arg.substring(arg.indexOf('=') + 1))"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "85",
+      "statement": "if (options.hasOption(arg.substring(0, 0)))"
+    }
+  },
+  {
+    "v26": {
+      "line": "88",
+      "statement": "tokens.add(arg.substring(0, 2))"
+    }
+  },
+  {
+    "v27": {
+      "line": "89",
+      "statement": "tokens.add(arg.substring(2))"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "93",
+      "statement": "eatTheRest = stopAtNonOption"
+    }
+  },
+  {
+    "v30": {
+      "line": "94",
+      "statement": "tokens.add(arg)"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "100",
+      "statement": "tokens.add(arg)"
+    }
+  },
+  {
+    "v33": {
+      "line": "103",
+      "statement": "if (eatTheRest)"
+    }
+  },
+  {
+    "v34": {
+      "line": "105",
+      "statement": "i++"
+    }
+  },
+  {
+    "v35": {
+      "line": "105",
+      "statement": "for (i < arguments.length)"
+    }
+  },
+  {
+    "v36": {
+      "line": "105",
+      "statement": "i++"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v38": {
+      "line": "107",
+      "statement": "tokens.add(arguments[i])"
+    }
+  },
+  {
+    "v39": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v40": {
+      "line": "112",
+      "statement": "return tokens.toArray(new String[tokens.size()])"
+    }
+  }
+]

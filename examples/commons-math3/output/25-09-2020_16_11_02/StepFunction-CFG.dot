@@ -1,0 +1,53 @@
+digraph StepFunction_CFG {
+  // graph-vertices
+  v1  [label="61:  StepFunction (double[] x, double[] y)"];
+  v2  [label="65:  if (x == null || y == null)"];
+  v3  [label="67:  throw new NullArgumentException()"];
+  v4  [label="endif"];
+  v5  [label="69:  if (x.length == 0 || y.length == 0)"];
+  v6  [label="71:  throw new NoDataException()"];
+  v7  [label="endif"];
+  v8  [label="73:  if (y.length != x.length)"];
+  v9  [label="74:  throw new DimensionMismatchException(y.length, x.length)"];
+  v10  [label="endif"];
+  v11  [label="76:  MathArrays.checkOrder(x)"];
+  v12  [label="78:  abscissa = MathArrays.copyOf(x)"];
+  v13  [label="79:  ordinate = MathArrays.copyOf(y)"];
+  v14  [label="83:  double value(double x)"];
+  v15  [label="84:  int index = Arrays.binarySearch(abscissa, x)"];
+  v16  [label="85:  double fx = 0"];
+  v17  [label="87:  if (index < -1)"];
+  v18  [label="89:  fx = ordinate[-index-2]"];
+  v19  [label="endif"];
+  v20  [label="90:  if (index >= 0)"];
+  v21  [label="92:  fx = ordinate[index]"];
+  v22  [label="endif"];
+  v23  [label="96:  fx = ordinate[0]"];
+  v24  [label="99:  return fx;"];
+  // graph-edges
+  v1 -> v2;
+  v2 -> v3  [label="True"];
+  v2 -> v4  [label="False"];
+  v4 -> v5;
+  v5 -> v6  [label="True"];
+  v5 -> v7  [label="False"];
+  v7 -> v8;
+  v8 -> v9  [label="True"];
+  v8 -> v10  [label="False"];
+  v10 -> v11;
+  v11 -> v12;
+  v12 -> v13;
+  v14 -> v15;
+  v15 -> v16;
+  v16 -> v17;
+  v17 -> v18  [label="True"];
+  v18 -> v19;
+  v17 -> v20  [label="False"];
+  v20 -> v21  [label="True"];
+  v21 -> v22;
+  v20 -> v23  [label="False"];
+  v23 -> v22;
+  v22 -> v19;
+  v19 -> v24;
+  // end-of-graph
+}

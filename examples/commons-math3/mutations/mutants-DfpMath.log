@@ -1,0 +1,1037 @@
+1:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):46:2 |==> 0
+2:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):46:2 |==> -2
+3:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):48:true |==> false
+4:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):49:0 |==> 1
+5:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):49:0 |==> -1
+6:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):50:0 |==> 1
+7:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):50:0 |==> -1
+8:EVR:<NEW_ARRAY(char[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):52:new char[a.length()] |==> null
+9:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):54:0 |==> 1
+10:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):54:0 |==> -1
+11:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):54:i < buf.length |==> i != buf.length
+12:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):54:i < buf.length |==> i <= buf.length
+13:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):54:i < buf.length |==> false
+14:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):55:buf[i] = a.charAt(i) |==> <NO-OP>
+15:ROR:>=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] >= '1' |==> buf[i] == '1'
+16:ROR:>=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] >= '1' |==> buf[i] > '1'
+17:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] >= '1' |==> true
+18:ROR:<=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] <= '9' |==> buf[i] < '9'
+19:ROR:<=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] <= '9' |==> buf[i] == '9'
+20:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] <= '9' |==> true
+21:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] >= '1' && buf[i] <= '9' |==> buf[i] >= '1' == buf[i] <= '9'
+22:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] >= '1' && buf[i] <= '9' |==> false
+23:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] >= '1' && buf[i] <= '9' |==> buf[i] >= '1'
+24:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):57:buf[i] >= '1' && buf[i] <= '9' |==> buf[i] <= '9'
+25:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):58:false |==> true
+26:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):58:leading = false |==> <NO-OP>
+27:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):61:buf[i] == '.' |==> buf[i] <= '.'
+28:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):61:buf[i] == '.' |==> buf[i] >= '.'
+29:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):61:buf[i] == '.' |==> false
+30:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:400 |==> 0
+31:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:400 |==> -400
+32:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:400 - sig |==> 400 % sig
+33:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:400 - sig |==> 400 * sig
+34:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:400 - sig |==> 400 + sig
+35:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:400 - sig |==> 400 / sig
+36:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:4 |==> 0
+37:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:4 |==> -4
+38:AOR:%(int,int):*(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:(400 - sig) % 4 |==> (400 - sig) * 4
+39:AOR:%(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:(400 - sig) % 4 |==> (400 - sig) + 4
+40:AOR:%(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:(400 - sig) % 4 |==> (400 - sig) - 4
+41:AOR:%(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:(400 - sig) % 4 |==> (400 - sig) / 4
+42:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):62:sig += (400 - sig) % 4 |==> <NO-OP>
+43:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):63:false |==> true
+44:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):63:leading = false |==> <NO-OP>
+45:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:2 |==> 0
+46:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:2 |==> -2
+47:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:field.getRadixDigits() / 2 |==> field.getRadixDigits() % 2
+48:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:field.getRadixDigits() / 2 |==> field.getRadixDigits() * 2
+49:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:field.getRadixDigits() / 2 |==> field.getRadixDigits() + 2
+50:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:field.getRadixDigits() / 2 |==> field.getRadixDigits() - 2
+51:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:4 |==> 0
+52:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:4 |==> -4
+53:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:(field.getRadixDigits() / 2) * 4 |==> (field.getRadixDigits() / 2) % 4
+54:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:(field.getRadixDigits() / 2) * 4 |==> (field.getRadixDigits() / 2) + 4
+55:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:(field.getRadixDigits() / 2) * 4 |==> (field.getRadixDigits() / 2) - 4
+56:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:(field.getRadixDigits() / 2) * 4 |==> (field.getRadixDigits() / 2) / 4
+57:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:sig == (field.getRadixDigits() / 2) * 4 |==> sig <= (field.getRadixDigits() / 2) * 4
+58:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:sig == (field.getRadixDigits() / 2) * 4 |==> sig >= (field.getRadixDigits() / 2) * 4
+59:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):66:sig == (field.getRadixDigits() / 2) * 4 |==> false
+60:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):67:sp = i |==> <NO-OP>
+61:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):68:break; |==> <NO-OP>
+62:ROR:>=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' |==> buf[i] == '0'
+63:ROR:>=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' |==> buf[i] > '0'
+64:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' |==> true
+65:ROR:<=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] <= '9' |==> buf[i] < '9'
+66:ROR:<=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] <= '9' |==> buf[i] == '9'
+67:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] <= '9' |==> true
+68:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' && buf[i] <= '9' |==> buf[i] >= '0' == buf[i] <= '9'
+69:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' && buf[i] <= '9' |==> false
+70:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' && buf[i] <= '9' |==> buf[i] >= '0'
+71:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' && buf[i] <= '9' |==> buf[i] <= '9'
+72:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' && buf[i] <= '9' && !leading |==> (buf[i] >= '0' && buf[i] <= '9') == !leading
+73:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' && buf[i] <= '9' && !leading |==> false
+74:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' && buf[i] <= '9' && !leading |==> buf[i] >= '0' && buf[i] <= '9'
+75:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):71:buf[i] >= '0' && buf[i] <= '9' && !leading |==> !leading
+76:STD:<INC>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):72:sig++ |==> <NO-OP>
+77:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):76:0 |==> 1
+78:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):76:0 |==> -1
+79:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):76:0 |==> 1
+80:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):76:0 |==> -1
+81:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):76:result[0] = field.newDfp(new String(buf, 0, sp)) |==> <NO-OP>
+82:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):78:0 |==> 1
+83:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):78:0 |==> -1
+84:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):78:i < buf.length |==> i != buf.length
+85:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):78:i < buf.length |==> i <= buf.length
+86:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):78:i < buf.length |==> false
+87:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):79:buf[i] = a.charAt(i) |==> <NO-OP>
+88:ROR:>=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' |==> buf[i] == '0'
+89:ROR:>=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' |==> buf[i] > '0'
+90:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' |==> true
+91:ROR:<=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] <= '9' |==> buf[i] < '9'
+92:ROR:<=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] <= '9' |==> buf[i] == '9'
+93:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] <= '9' |==> true
+94:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' && buf[i] <= '9' |==> buf[i] >= '0' == buf[i] <= '9'
+95:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' && buf[i] <= '9' |==> false
+96:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' && buf[i] <= '9' |==> buf[i] >= '0'
+97:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' && buf[i] <= '9' |==> buf[i] <= '9'
+98:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:i < sp |==> i != sp
+99:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:i < sp |==> i <= sp
+100:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:i < sp |==> false
+101:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' && buf[i] <= '9' && i < sp |==> (buf[i] >= '0' && buf[i] <= '9') == i < sp
+102:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' && buf[i] <= '9' && i < sp |==> false
+103:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' && buf[i] <= '9' && i < sp |==> buf[i] >= '0' && buf[i] <= '9'
+104:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):80:buf[i] >= '0' && buf[i] <= '9' && i < sp |==> i < sp
+105:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):81:buf[i] = '0' |==> <NO-OP>
+106:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):85:1 |==> 0
+107:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):85:1 |==> -1
+108:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):85:result[1] = field.newDfp(new String(buf)) |==> <NO-OP>
+109:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.DfpField,java.lang.String):87:result |==> null
+110:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):95:2 |==> 0
+111:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):95:2 |==> -2
+112:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):96:2 |==> 0
+113:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):96:2 |==> -2
+114:AOR:/(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):96:a.getRadixDigits() / 2 |==> a.getRadixDigits() % 2
+115:AOR:/(int,int):*(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):96:a.getRadixDigits() / 2 |==> a.getRadixDigits() * 2
+116:AOR:/(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):96:a.getRadixDigits() / 2 |==> a.getRadixDigits() + 2
+117:AOR:/(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):96:a.getRadixDigits() / 2 |==> a.getRadixDigits() - 2
+118:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):97:0 |==> 1
+119:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):97:0 |==> -1
+120:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):97:result[0] = a.add(shift).subtract(shift) |==> <NO-OP>
+121:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):98:1 |==> 0
+122:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):98:1 |==> -1
+123:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):98:0 |==> 1
+124:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):98:0 |==> -1
+125:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):98:result[1] = a.subtract(result[0]) |==> <NO-OP>
+126:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@split(org.apache.commons.math3.dfp.Dfp):99:result |==> null
+127:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):111:2 |==> 0
+128:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):111:2 |==> -2
+129:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):113:1 |==> 0
+130:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):113:1 |==> -1
+131:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):113:0 |==> 1
+132:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):113:0 |==> -1
+133:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):113:result[1] = a[0].getZero() |==> <NO-OP>
+134:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):114:0 |==> 1
+135:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):114:0 |==> -1
+136:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):114:0 |==> 1
+137:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):114:0 |==> -1
+138:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):114:0 |==> 1
+139:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):114:0 |==> -1
+140:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):114:result[0] = a[0].multiply(b[0]) |==> <NO-OP>
+141:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:0 |==> 1
+142:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:0 |==> -1
+143:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:result[0].classify() == Dfp.INFINITE |==> result[0].classify() <= Dfp.INFINITE
+144:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:result[0].classify() == Dfp.INFINITE |==> result[0].classify() >= Dfp.INFINITE
+145:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:result[0].classify() == Dfp.INFINITE |==> false
+146:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:0 |==> 1
+147:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:0 |==> -1
+148:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:1 |==> 0
+149:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:1 |==> -1
+150:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:result[0].classify() == Dfp.INFINITE || result[0].equals(result[1]) |==> result[0].classify() == Dfp.INFINITE != result[0].equals(result[1])
+151:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:result[0].classify() == Dfp.INFINITE || result[0].equals(result[1]) |==> result[0].classify() == Dfp.INFINITE
+152:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:result[0].classify() == Dfp.INFINITE || result[0].equals(result[1]) |==> result[0].equals(result[1])
+153:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):120:result[0].classify() == Dfp.INFINITE || result[0].equals(result[1]) |==> true
+154:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):121:return result; |==> <NO-OP>
+155:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> 0
+156:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> -1
+157:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:0 |==> 1
+158:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:0 |==> -1
+159:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> 0
+160:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> -1
+161:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> 0
+162:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> -1
+163:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:0 |==> 1
+164:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:0 |==> -1
+165:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> 0
+166:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> -1
+167:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> 0
+168:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:1 |==> -1
+169:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):124:result[1] = a[0].multiply(b[1]).add(a[1].multiply(b[0])).add(a[1].multiply(b[1])) |==> <NO-OP>
+170:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@splitMult(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):126:result |==> null
+171:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):139:2 |==> 0
+172:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):139:2 |==> -2
+173:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):141:0 |==> 1
+174:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):141:0 |==> -1
+175:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):141:0 |==> 1
+176:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):141:0 |==> -1
+177:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):141:0 |==> 1
+178:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):141:0 |==> -1
+179:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):141:result[0] = a[0].divide(b[0]) |==> <NO-OP>
+180:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:1 |==> 0
+181:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:1 |==> -1
+182:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:1 |==> 0
+183:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:1 |==> -1
+184:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:0 |==> 1
+185:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:0 |==> -1
+186:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:0 |==> 1
+187:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:0 |==> -1
+188:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:1 |==> 0
+189:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:1 |==> -1
+190:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):142:result[1] = a[1].multiply(b[0]).subtract(a[0].multiply(b[1])) |==> <NO-OP>
+191:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:1 |==> 0
+192:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:1 |==> -1
+193:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:1 |==> 0
+194:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:1 |==> -1
+195:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:0 |==> 1
+196:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:0 |==> -1
+197:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:0 |==> 1
+198:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:0 |==> -1
+199:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:0 |==> 1
+200:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:0 |==> -1
+201:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:1 |==> 0
+202:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:1 |==> -1
+203:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):143:result[1] = result[1].divide(b[0].multiply(b[0]).add(b[0].multiply(b[1]))) |==> <NO-OP>
+204:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@splitDiv(org.apache.commons.math3.dfp.Dfp[],org.apache.commons.math3.dfp.Dfp[]):145:result |==> null
+205:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):154:false |==> true
+206:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):156:2 |==> 0
+207:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):156:2 |==> -2
+208:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):158:2 |==> 0
+209:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):158:2 |==> -2
+210:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):159:0 |==> 1
+211:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):159:0 |==> -1
+212:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):159:0 |==> 1
+213:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):159:0 |==> -1
+214:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):159:result[0] = base[0].getOne() |==> <NO-OP>
+215:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):160:1 |==> 0
+216:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):160:1 |==> -1
+217:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):160:0 |==> 1
+218:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):160:0 |==> -1
+219:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):160:result[1] = base[0].getZero() |==> <NO-OP>
+220:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):162:0 |==> 1
+221:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):162:0 |==> -1
+222:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):162:a == 0 |==> a <= 0
+223:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):162:a == 0 |==> a >= 0
+224:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):162:a == 0 |==> false
+225:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):164:0 |==> 1
+226:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):164:0 |==> -1
+227:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):164:1 |==> 0
+228:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):164:1 |==> -1
+229:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):164:return result[Config.__M_NO == 0 && Config.COVERED(225, 226) ? 0 : Config.__M_NO == 226 ? -1 : Config.__M_NO == 225 ? 1 : 0].add(result[Config.__M_NO == 0 && Config.COVERED(227, 228) ? 1 : Config.__M_NO == 228 ? -1 : Config.__M_NO == 227 ? 0 : 1]); |==> <NO-OP>
+230:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):167:0 |==> 1
+231:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):167:0 |==> -1
+232:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):167:a < 0 |==> a != 0
+233:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):167:a < 0 |==> a <= 0
+234:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):167:a < 0 |==> false
+235:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):169:true |==> false
+236:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):169:invert = true |==> <NO-OP>
+237:ORU:-(int):+(int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):170:-a |==> +a
+238:ORU:-(int):~(int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):170:-a |==> ~a
+239:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):170:a = -a |==> <NO-OP>
+240:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):175:0 |==> 1
+241:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):175:0 |==> -1
+242:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):175:0 |==> 1
+243:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):175:0 |==> -1
+244:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):175:r[0] = new Dfp(base[0]) |==> <NO-OP>
+245:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):176:1 |==> 0
+246:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):176:1 |==> -1
+247:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):176:1 |==> 0
+248:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):176:1 |==> -1
+249:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):176:r[1] = new Dfp(base[1]) |==> <NO-OP>
+250:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):177:1 |==> 0
+251:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):177:1 |==> -1
+252:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):181:trial |==> 0
+253:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):182:2 |==> 0
+254:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):182:2 |==> -2
+255:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):182:trial * 2 |==> trial % 2
+256:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):182:trial * 2 |==> trial + 2
+257:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):182:trial * 2 |==> trial - 2
+258:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):182:trial * 2 |==> trial / 2
+259:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):182:trial = trial * 2 |==> <NO-OP>
+260:ROR:>(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):183:trial > a |==> trial != a
+261:ROR:>(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):183:trial > a |==> trial >= a
+262:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):183:trial > a |==> false
+263:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):184:break; |==> <NO-OP>
+264:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):186:r = splitMult(r, r) |==> <NO-OP>
+265:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):189:trial = prevtrial |==> <NO-OP>
+266:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):191:a -= trial |==> <NO-OP>
+267:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):192:result = splitMult(result, r) |==> <NO-OP>
+268:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):194:1 |==> 0
+269:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):194:1 |==> -1
+270:ROR:>=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):194:a >= 1 |==> a == 1
+271:ROR:>=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):194:a >= 1 |==> a > 1
+272:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):194:a >= 1 |==> true
+273:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):196:0 |==> 1
+274:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):196:0 |==> -1
+275:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):196:0 |==> 1
+276:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):196:0 |==> -1
+277:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):196:1 |==> 0
+278:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):196:1 |==> -1
+279:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):196:result[0] = result[0].add(result[1]) |==> <NO-OP>
+280:COR:invert:TRUE:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):198:invert |==> false
+281:COR:invert:FALSE:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):198:invert |==> true
+282:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):199:0 |==> 1
+283:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):199:0 |==> -1
+284:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):199:0 |==> 1
+285:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):199:0 |==> -1
+286:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):199:0 |==> 1
+287:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):199:0 |==> -1
+288:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):199:result[0] = base[0].getOne().divide(result[0]) |==> <NO-OP>
+289:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):202:0 |==> 1
+290:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@splitPow(org.apache.commons.math3.dfp.Dfp[],int):202:0 |==> -1
+291:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):213:false |==> true
+292:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):215:base.getOne() |==> null
+293:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):217:0 |==> 1
+294:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):217:0 |==> -1
+295:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):217:a == 0 |==> a <= 0
+296:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):217:a == 0 |==> a >= 0
+297:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):217:a == 0 |==> false
+298:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):219:return result; |==> <NO-OP>
+299:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):222:0 |==> 1
+300:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):222:0 |==> -1
+301:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):222:a < 0 |==> a != 0
+302:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):222:a < 0 |==> a <= 0
+303:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):222:a < 0 |==> false
+304:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):223:true |==> false
+305:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):223:invert = true |==> <NO-OP>
+306:ORU:-(int):+(int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):224:-a |==> +a
+307:ORU:-(int):~(int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):224:-a |==> ~a
+308:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):224:a = -a |==> <NO-OP>
+309:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):229:new Dfp(base) |==> null
+310:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):231:1 |==> 0
+311:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):231:1 |==> -1
+312:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):235:new Dfp(r) |==> null
+313:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):236:trial |==> 0
+314:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):237:r = r.multiply(r) |==> <NO-OP>
+315:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):238:2 |==> 0
+316:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):238:2 |==> -2
+317:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):238:trial * 2 |==> trial % 2
+318:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):238:trial * 2 |==> trial + 2
+319:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):238:trial * 2 |==> trial - 2
+320:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):238:trial * 2 |==> trial / 2
+321:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):238:trial = trial * 2 |==> <NO-OP>
+322:ROR:>(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):239:a > trial |==> a != trial
+323:ROR:>(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):239:a > trial |==> a >= trial
+324:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):239:a > trial |==> false
+325:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):241:r = prevr |==> <NO-OP>
+326:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):242:trial = prevtrial |==> <NO-OP>
+327:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):244:a - trial |==> a % trial
+328:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):244:a - trial |==> a * trial
+329:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):244:a - trial |==> a + trial
+330:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):244:a - trial |==> a / trial
+331:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):244:a = a - trial |==> <NO-OP>
+332:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):245:result = result.multiply(r) |==> <NO-OP>
+333:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):247:1 |==> 0
+334:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):247:1 |==> -1
+335:ROR:>=(int,int):==(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):247:a >= 1 |==> a == 1
+336:ROR:>=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):247:a >= 1 |==> a > 1
+337:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):247:a >= 1 |==> true
+338:COR:invert:TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):249:invert |==> false
+339:COR:invert:FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):249:invert |==> true
+340:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):250:result = base.getOne().divide(result) |==> <NO-OP>
+341:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,int):253:base.newInstance(result) |==> null
+342:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):266:a.rint() |==> null
+343:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):267:a.subtract(inta) |==> null
+344:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):269:inta.intValue() |==> 0
+345:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):270:2147483646 |==> 0
+346:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):270:2147483646 |==> -2147483646
+347:ROR:>(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):270:ia > 2147483646 |==> ia != 2147483646
+348:ROR:>(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):270:ia > 2147483646 |==> ia >= 2147483646
+349:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):270:ia > 2147483646 |==> false
+350:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):272:1 |==> 0
+351:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):272:1 |==> -1
+352:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):272:return a.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(350, 351) ? 1 : Config.__M_NO == 351 ? -1 : Config.__M_NO == 350 ? 0 : 1), Dfp.INFINITE); |==> <NO-OP>
+353:LVR:NEG:0:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):275:-2147483646 |==> 0
+354:LVR:NEG:POS:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):275:-2147483646 |==> 2147483646
+355:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):275:ia < -2147483646 |==> ia != -2147483646
+356:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):275:ia < -2147483646 |==> ia <= -2147483646
+357:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):275:ia < -2147483646 |==> false
+358:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):277:return a.newInstance(); |==> <NO-OP>
+359:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):280:splitPow(a.getField().getESplit(), ia) |==> null
+360:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):281:expInternal(fraca) |==> null
+361:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@exp(org.apache.commons.math3.dfp.Dfp):283:einta.multiply(efraca) |==> null
+362:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):292:a.getOne() |==> null
+363:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):293:a.getOne() |==> null
+364:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):294:a.getOne() |==> null
+365:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):295:new Dfp(y) |==> null
+366:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):297:1 |==> 0
+367:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):297:1 |==> -1
+368:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):297:90 |==> 0
+369:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):297:90 |==> -90
+370:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):297:i < 90 |==> i != 90
+371:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):297:i < 90 |==> i <= 90
+372:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):297:i < 90 |==> false
+373:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):298:x = x.multiply(a) |==> <NO-OP>
+374:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):299:fact = fact.divide(i) |==> <NO-OP>
+375:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):300:y = y.add(x.multiply(fact)) |==> <NO-OP>
+376:COR:y.equals(py):TRUE:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):301:y.equals(py) |==> false
+377:COR:y.equals(py):FALSE:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):301:y.equals(py) |==> true
+378:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):302:break; |==> <NO-OP>
+379:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):304:py = new Dfp(y) |==> <NO-OP>
+380:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@expInternal(org.apache.commons.math3.dfp.Dfp):307:y |==> null
+381:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):321:0 |==> 1
+382:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):321:0 |==> -1
+383:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):324:a.equals(a.getZero()) || a.lessThan(a.getZero()) |==> a.equals(a.getZero()) != a.lessThan(a.getZero())
+384:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):324:a.equals(a.getZero()) || a.lessThan(a.getZero()) |==> a.equals(a.getZero())
+385:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):324:a.equals(a.getZero()) || a.lessThan(a.getZero()) |==> a.lessThan(a.getZero())
+386:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):324:a.equals(a.getZero()) || a.lessThan(a.getZero()) |==> true
+387:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):324:a.equals(a.getZero()) || a.lessThan(a.getZero()) || a.isNaN() |==> (a.equals(a.getZero()) || a.lessThan(a.getZero())) != a.isNaN()
+388:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):324:a.equals(a.getZero()) || a.lessThan(a.getZero()) || a.isNaN() |==> a.equals(a.getZero()) || a.lessThan(a.getZero())
+389:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):324:a.equals(a.getZero()) || a.lessThan(a.getZero()) || a.isNaN() |==> a.isNaN()
+390:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):324:a.equals(a.getZero()) || a.lessThan(a.getZero()) || a.isNaN() |==> true
+391:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):326:a.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID) |==> <NO-OP>
+392:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):327:1 |==> 0
+393:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):327:1 |==> -1
+394:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):327:return a.dotrap(DfpField.FLAG_INVALID, "ln", a, a.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(392, 393) ? 1 : Config.__M_NO == 393 ? -1 : Config.__M_NO == 392 ? 0 : 1), Dfp.QNAN)); |==> <NO-OP>
+395:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):330:a.classify() == Dfp.INFINITE |==> a.classify() <= Dfp.INFINITE
+396:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):330:a.classify() == Dfp.INFINITE |==> a.classify() >= Dfp.INFINITE
+397:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):330:a.classify() == Dfp.INFINITE |==> false
+398:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):331:return a; |==> <NO-OP>
+399:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):334:new Dfp(a) |==> null
+400:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):335:x.log10K() |==> 0
+401:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):337:10000 |==> 0
+402:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):337:10000 |==> -10000
+403:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):337:x = x.divide(pow(a.newInstance(10000), lr)) |==> <NO-OP>
+404:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):338:x.floor().intValue() |==> 0
+405:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):340:2 |==> 0
+406:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):340:2 |==> -2
+407:ROR:>(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):340:ix > 2 |==> ix != 2
+408:ROR:>(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):340:ix > 2 |==> ix >= 2
+409:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):340:ix > 2 |==> false
+410:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):341:1 |==> 0
+411:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):341:1 |==> -1
+412:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):341:ix >>= 1 |==> <NO-OP>
+413:STD:<INC>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):342:p2++ |==> <NO-OP>
+414:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):346:split(x) |==> null
+415:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):347:2 |==> 0
+416:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):347:2 |==> -2
+417:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):348:0 |==> 1
+418:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):348:0 |==> -1
+419:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):348:spy[0] = pow(a.getTwo(), p2) |==> <NO-OP>
+420:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):349:0 |==> 1
+421:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):349:0 |==> -1
+422:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):349:0 |==> 1
+423:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):349:0 |==> -1
+424:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):349:0 |==> 1
+425:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):349:0 |==> -1
+426:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):349:spx[0] = spx[0].divide(spy[0]) |==> <NO-OP>
+427:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):350:1 |==> 0
+428:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):350:1 |==> -1
+429:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):350:1 |==> 0
+430:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):350:1 |==> -1
+431:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):350:0 |==> 1
+432:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):350:0 |==> -1
+433:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):350:spx[1] = spx[1].divide(spy[0]) |==> <NO-OP>
+434:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):352:0 |==> 1
+435:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):352:0 |==> -1
+436:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):352:spy[0] = a.newInstance("1.33333") |==> <NO-OP>
+437:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):353:0 |==> 1
+438:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):353:0 |==> -1
+439:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):353:1 |==> 0
+440:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):353:1 |==> -1
+441:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):353:0 |==> 1
+442:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):353:0 |==> -1
+443:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):354:0 |==> 1
+444:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):354:0 |==> -1
+445:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):354:0 |==> 1
+446:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):354:0 |==> -1
+447:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):354:2 |==> 0
+448:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):354:2 |==> -2
+449:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):354:spx[0] = spx[0].divide(2) |==> <NO-OP>
+450:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):355:1 |==> 0
+451:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):355:1 |==> -1
+452:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):355:1 |==> 0
+453:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):355:1 |==> -1
+454:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):355:2 |==> 0
+455:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):355:2 |==> -2
+456:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):355:spx[1] = spx[1].divide(2) |==> <NO-OP>
+457:STD:<INC>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):356:p2++ |==> <NO-OP>
+458:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):360:logInternal(spx) |==> null
+459:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:0 |==> 1
+460:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:0 |==> -1
+461:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:4 |==> 0
+462:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:4 |==> -4
+463:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:4 * lr |==> 4 % lr
+464:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:4 * lr |==> 4 + lr
+465:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:4 * lr |==> 4 - lr
+466:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:4 * lr |==> 4 / lr
+467:AOR:+(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:p2 + 4 * lr |==> p2 % (4 * lr)
+468:AOR:+(int,int):*(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:p2 + 4 * lr |==> p2 * (4 * lr)
+469:AOR:+(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:p2 + 4 * lr |==> p2 - 4 * lr
+470:AOR:+(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:p2 + 4 * lr |==> p2 / (4 * lr)
+471:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):362:spx[0] = a.newInstance(new StringBuilder().append(p2 + 4 * lr).toString()) |==> <NO-OP>
+472:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):363:1 |==> 0
+473:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):363:1 |==> -1
+474:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):363:spx[1] = a.getZero() |==> <NO-OP>
+475:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):364:spy = splitMult(a.getField().getLn2Split(), spx) |==> <NO-OP>
+476:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):366:0 |==> 1
+477:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):366:0 |==> -1
+478:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):366:0 |==> 1
+479:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):366:0 |==> -1
+480:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):366:0 |==> 1
+481:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):366:0 |==> -1
+482:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):366:spz[0] = spz[0].add(spy[0]) |==> <NO-OP>
+483:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):367:1 |==> 0
+484:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):367:1 |==> -1
+485:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):367:1 |==> 0
+486:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):367:1 |==> -1
+487:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):367:1 |==> 0
+488:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):367:1 |==> -1
+489:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):367:spz[1] = spz[1].add(spy[1]) |==> <NO-OP>
+490:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):369:0 |==> 1
+491:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):369:0 |==> -1
+492:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):369:4 |==> 0
+493:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):369:4 |==> -4
+494:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):369:4 * lr |==> 4 % lr
+495:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):369:4 * lr |==> 4 + lr
+496:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):369:4 * lr |==> 4 - lr
+497:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):369:4 * lr |==> 4 / lr
+498:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):369:spx[0] = a.newInstance(new StringBuilder().append(4 * lr).toString()) |==> <NO-OP>
+499:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):370:1 |==> 0
+500:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):370:1 |==> -1
+501:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):370:spx[1] = a.getZero() |==> <NO-OP>
+502:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):371:spy = splitMult(a.getField().getLn5Split(), spx) |==> <NO-OP>
+503:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):373:0 |==> 1
+504:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):373:0 |==> -1
+505:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):373:0 |==> 1
+506:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):373:0 |==> -1
+507:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):373:0 |==> 1
+508:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):373:0 |==> -1
+509:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):373:spz[0] = spz[0].add(spy[0]) |==> <NO-OP>
+510:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):374:1 |==> 0
+511:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):374:1 |==> -1
+512:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):374:1 |==> 0
+513:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):374:1 |==> -1
+514:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):374:1 |==> 0
+515:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):374:1 |==> -1
+516:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):374:spz[1] = spz[1].add(spy[1]) |==> <NO-OP>
+517:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):376:0 |==> 1
+518:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):376:0 |==> -1
+519:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):376:1 |==> 0
+520:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@log(org.apache.commons.math3.dfp.Dfp):376:1 |==> -1
+521:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):440:0 |==> 1
+522:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):440:0 |==> -1
+523:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):440:4 |==> 0
+524:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):440:4 |==> -4
+525:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):440:1 |==> 0
+526:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):440:1 |==> -1
+527:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):440:4 |==> 0
+528:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):440:4 |==> -4
+529:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):441:0 |==> 1
+530:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):441:0 |==> -1
+531:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):441:0 |==> 1
+532:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):441:0 |==> -1
+533:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):443:new Dfp(x) |==> null
+534:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):444:new Dfp(x) |==> null
+535:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):445:new Dfp(y) |==> null
+536:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):446:1 |==> 0
+537:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):446:1 |==> -1
+538:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):447:0 |==> 1
+539:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):447:0 |==> -1
+540:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):447:10000 |==> 0
+541:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):447:10000 |==> -10000
+542:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):447:i < 10000 |==> i != 10000
+543:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):447:i < 10000 |==> i <= 10000
+544:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):447:i < 10000 |==> false
+545:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):448:num = num.multiply(x) |==> <NO-OP>
+546:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):449:num = num.multiply(x) |==> <NO-OP>
+547:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):450:2 |==> 0
+548:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):450:2 |==> -2
+549:AOR:+(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):450:den + 2 |==> den % 2
+550:AOR:+(int,int):*(int,int):org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):450:den + 2 |==> den * 2
+551:AOR:+(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):450:den + 2 |==> den - 2
+552:AOR:+(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):450:den + 2 |==> den / 2
+553:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):450:den = den + 2 |==> <NO-OP>
+554:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):451:t = num.divide(den) |==> <NO-OP>
+555:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):452:y = y.add(t) |==> <NO-OP>
+556:COR:y.equals(py):TRUE:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):453:y.equals(py) |==> false
+557:COR:y.equals(py):FALSE:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):453:y.equals(py) |==> true
+558:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):454:break; |==> <NO-OP>
+559:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):456:py = new Dfp(y) |==> <NO-OP>
+560:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):459:0 |==> 1
+561:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):459:0 |==> -1
+562:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):459:y = y.multiply(a[0].getTwo()) |==> <NO-OP>
+563:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@logInternal(org.apache.commons.math3.dfp.Dfp[]):461:split(y) |==> null
+564:ROR:!=(int,int):<(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):508:x.getField().getRadixDigits() != y.getField().getRadixDigits() |==> x.getField().getRadixDigits() < y.getField().getRadixDigits()
+565:ROR:!=(int,int):>(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):508:x.getField().getRadixDigits() != y.getField().getRadixDigits() |==> x.getField().getRadixDigits() > y.getField().getRadixDigits()
+566:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):508:x.getField().getRadixDigits() != y.getField().getRadixDigits() |==> true
+567:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):509:x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID) |==> <NO-OP>
+568:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):510:x.newInstance(x.getZero()) |==> null
+569:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):511:result.nans = Dfp.QNAN |==> <NO-OP>
+570:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):512:return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, result); |==> <NO-OP>
+571:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):515:x.getZero() |==> null
+572:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):516:x.getOne() |==> null
+573:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):517:x.getTwo() |==> null
+574:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):518:false |==> true
+575:COR:y.equals(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):522:y.equals(zero) |==> false
+576:COR:y.equals(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):522:y.equals(zero) |==> true
+577:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):523:return x.newInstance(one); |==> <NO-OP>
+578:COR:y.equals(one):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):526:y.equals(one) |==> false
+579:COR:y.equals(one):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):526:y.equals(one) |==> true
+580:COR:x.isNaN():TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):527:x.isNaN() |==> false
+581:COR:x.isNaN():FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):527:x.isNaN() |==> true
+582:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):529:x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID) |==> <NO-OP>
+583:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):530:return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, x); |==> <NO-OP>
+584:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):532:return x; |==> <NO-OP>
+585:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):535:x.isNaN() || y.isNaN() |==> x.isNaN() != y.isNaN()
+586:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):535:x.isNaN() || y.isNaN() |==> x.isNaN()
+587:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):535:x.isNaN() || y.isNaN() |==> y.isNaN()
+588:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):535:x.isNaN() || y.isNaN() |==> true
+589:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):537:x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID) |==> <NO-OP>
+590:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):538:1 |==> 0
+591:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):538:1 |==> -1
+592:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):538:return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, x.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(590, 591) ? 1 : Config.__M_NO == 591 ? -1 : Config.__M_NO == 590 ? 0 : 1), Dfp.QNAN)); |==> <NO-OP>
+593:COR:x.equals(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):542:x.equals(zero) |==> false
+594:COR:x.equals(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):542:x.equals(zero) |==> true
+595:COR:Dfp.copysign(one, x).greaterThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):543:Dfp.copysign(one, x).greaterThan(zero) |==> false
+596:COR:Dfp.copysign(one, x).greaterThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):543:Dfp.copysign(one, x).greaterThan(zero) |==> true
+597:COR:y.greaterThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):545:y.greaterThan(zero) |==> false
+598:COR:y.greaterThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):545:y.greaterThan(zero) |==> true
+599:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):546:return x.newInstance(zero); |==> <NO-OP>
+600:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):548:1 |==> 0
+601:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):548:1 |==> -1
+602:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):548:return x.newInstance(x.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(600, 601) ? 1 : Config.__M_NO == 601 ? -1 : Config.__M_NO == 600 ? 0 : 1), Dfp.INFINITE)); |==> <NO-OP>
+603:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE |==> y.classify() <= Dfp.FINITE
+604:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE |==> y.classify() >= Dfp.FINITE
+605:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE |==> false
+606:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE && y.rint().equals(y) |==> y.classify() == Dfp.FINITE == y.rint().equals(y)
+607:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE && y.rint().equals(y) |==> false
+608:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE && y.rint().equals(y) |==> y.classify() == Dfp.FINITE
+609:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE && y.rint().equals(y) |==> y.rint().equals(y)
+610:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> (y.classify() == Dfp.FINITE && y.rint().equals(y)) == !y.remainder(two).equals(zero)
+611:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> false
+612:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> y.classify() == Dfp.FINITE && y.rint().equals(y)
+613:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):552:y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> !y.remainder(two).equals(zero)
+614:COR:y.greaterThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):554:y.greaterThan(zero) |==> false
+615:COR:y.greaterThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):554:y.greaterThan(zero) |==> true
+616:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):555:return x.newInstance(zero.negate()); |==> <NO-OP>
+617:LVR:NEG:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):557:-1 |==> 0
+618:LVR:NEG:POS:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):557:-1 |==> 1
+619:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):557:return x.newInstance(x.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(617, 618) ? -1 : Config.__M_NO == 618 ? 1 : Config.__M_NO == 617 ? 0 : -1), Dfp.INFINITE)); |==> <NO-OP>
+620:COR:y.greaterThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):561:y.greaterThan(zero) |==> false
+621:COR:y.greaterThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):561:y.greaterThan(zero) |==> true
+622:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):562:return x.newInstance(zero); |==> <NO-OP>
+623:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):564:1 |==> 0
+624:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):564:1 |==> -1
+625:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):564:return x.newInstance(x.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(623, 624) ? 1 : Config.__M_NO == 624 ? -1 : Config.__M_NO == 623 ? 0 : 1), Dfp.INFINITE)); |==> <NO-OP>
+626:COR:x.lessThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):570:x.lessThan(zero) |==> false
+627:COR:x.lessThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):570:x.lessThan(zero) |==> true
+628:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):572:x = x.negate() |==> <NO-OP>
+629:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):573:true |==> false
+630:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):573:invert = true |==> <NO-OP>
+631:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):576:y.classify() == Dfp.INFINITE |==> y.classify() <= Dfp.INFINITE
+632:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):576:y.classify() == Dfp.INFINITE |==> y.classify() >= Dfp.INFINITE
+633:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):576:y.classify() == Dfp.INFINITE |==> false
+634:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):576:x.greaterThan(one) && y.classify() == Dfp.INFINITE |==> x.greaterThan(one) == (y.classify() == Dfp.INFINITE)
+635:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):576:x.greaterThan(one) && y.classify() == Dfp.INFINITE |==> false
+636:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):576:x.greaterThan(one) && y.classify() == Dfp.INFINITE |==> x.greaterThan(one)
+637:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):576:x.greaterThan(one) && y.classify() == Dfp.INFINITE |==> y.classify() == Dfp.INFINITE
+638:COR:y.greaterThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):577:y.greaterThan(zero) |==> false
+639:COR:y.greaterThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):577:y.greaterThan(zero) |==> true
+640:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):578:return y; |==> <NO-OP>
+641:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):580:return x.newInstance(zero); |==> <NO-OP>
+642:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):584:y.classify() == Dfp.INFINITE |==> y.classify() <= Dfp.INFINITE
+643:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):584:y.classify() == Dfp.INFINITE |==> y.classify() >= Dfp.INFINITE
+644:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):584:y.classify() == Dfp.INFINITE |==> false
+645:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):584:x.lessThan(one) && y.classify() == Dfp.INFINITE |==> x.lessThan(one) == (y.classify() == Dfp.INFINITE)
+646:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):584:x.lessThan(one) && y.classify() == Dfp.INFINITE |==> false
+647:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):584:x.lessThan(one) && y.classify() == Dfp.INFINITE |==> x.lessThan(one)
+648:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):584:x.lessThan(one) && y.classify() == Dfp.INFINITE |==> y.classify() == Dfp.INFINITE
+649:COR:y.greaterThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):585:y.greaterThan(zero) |==> false
+650:COR:y.greaterThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):585:y.greaterThan(zero) |==> true
+651:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):586:return x.newInstance(zero); |==> <NO-OP>
+652:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):588:return x.newInstance(Dfp.copysign(y, one)); |==> <NO-OP>
+653:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):592:y.classify() == Dfp.INFINITE |==> y.classify() <= Dfp.INFINITE
+654:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):592:y.classify() == Dfp.INFINITE |==> y.classify() >= Dfp.INFINITE
+655:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):592:y.classify() == Dfp.INFINITE |==> false
+656:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):592:x.equals(one) && y.classify() == Dfp.INFINITE |==> x.equals(one) == (y.classify() == Dfp.INFINITE)
+657:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):592:x.equals(one) && y.classify() == Dfp.INFINITE |==> false
+658:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):592:x.equals(one) && y.classify() == Dfp.INFINITE |==> x.equals(one)
+659:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):592:x.equals(one) && y.classify() == Dfp.INFINITE |==> y.classify() == Dfp.INFINITE
+660:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):593:x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID) |==> <NO-OP>
+661:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):594:1 |==> 0
+662:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):594:1 |==> -1
+663:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):594:return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, x.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(661, 662) ? 1 : Config.__M_NO == 662 ? -1 : Config.__M_NO == 661 ? 0 : 1), Dfp.QNAN)); |==> <NO-OP>
+664:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):597:x.classify() == Dfp.INFINITE |==> x.classify() <= Dfp.INFINITE
+665:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):597:x.classify() == Dfp.INFINITE |==> x.classify() >= Dfp.INFINITE
+666:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):597:x.classify() == Dfp.INFINITE |==> false
+667:COR:invert:TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):599:invert |==> false
+668:COR:invert:FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):599:invert |==> true
+669:ROR:==(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE |==> y.classify() <= Dfp.FINITE
+670:ROR:==(int,int):>=(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE |==> y.classify() >= Dfp.FINITE
+671:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE |==> false
+672:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE && y.rint().equals(y) |==> y.classify() == Dfp.FINITE == y.rint().equals(y)
+673:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE && y.rint().equals(y) |==> false
+674:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE && y.rint().equals(y) |==> y.classify() == Dfp.FINITE
+675:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE && y.rint().equals(y) |==> y.rint().equals(y)
+676:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> (y.classify() == Dfp.FINITE && y.rint().equals(y)) == !y.remainder(two).equals(zero)
+677:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> false
+678:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> y.classify() == Dfp.FINITE && y.rint().equals(y)
+679:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):601:y.classify() == Dfp.FINITE && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> !y.remainder(two).equals(zero)
+680:COR:y.greaterThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):603:y.greaterThan(zero) |==> false
+681:COR:y.greaterThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):603:y.greaterThan(zero) |==> true
+682:LVR:NEG:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):604:-1 |==> 0
+683:LVR:NEG:POS:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):604:-1 |==> 1
+684:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):604:return x.newInstance(x.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(682, 683) ? -1 : Config.__M_NO == 683 ? 1 : Config.__M_NO == 682 ? 0 : -1), Dfp.INFINITE)); |==> <NO-OP>
+685:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):606:return x.newInstance(zero.negate()); |==> <NO-OP>
+686:COR:y.greaterThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):610:y.greaterThan(zero) |==> false
+687:COR:y.greaterThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):610:y.greaterThan(zero) |==> true
+688:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):611:1 |==> 0
+689:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):611:1 |==> -1
+690:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):611:return x.newInstance(x.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(688, 689) ? 1 : Config.__M_NO == 689 ? -1 : Config.__M_NO == 688 ? 0 : 1), Dfp.INFINITE)); |==> <NO-OP>
+691:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):613:return x.newInstance(zero); |==> <NO-OP>
+692:COR:y.greaterThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):618:y.greaterThan(zero) |==> false
+693:COR:y.greaterThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):618:y.greaterThan(zero) |==> true
+694:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):619:return x; |==> <NO-OP>
+695:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):621:return x.newInstance(zero); |==> <NO-OP>
+696:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):626:invert && !y.rint().equals(y) |==> invert == !y.rint().equals(y)
+697:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):626:invert && !y.rint().equals(y) |==> false
+698:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):626:invert && !y.rint().equals(y) |==> invert
+699:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):626:invert && !y.rint().equals(y) |==> !y.rint().equals(y)
+700:STD:<CALL>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):627:x.getField().setIEEEFlagsBits(DfpField.FLAG_INVALID) |==> <NO-OP>
+701:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):628:1 |==> 0
+702:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):628:1 |==> -1
+703:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):628:return x.dotrap(DfpField.FLAG_INVALID, POW_TRAP, x, x.newInstance((byte)(Config.__M_NO == 0 && Config.COVERED(701, 702) ? 1 : Config.__M_NO == 702 ? -1 : Config.__M_NO == 701 ? 0 : 1), Dfp.QNAN)); |==> <NO-OP>
+704:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):634:100000000 |==> 0
+705:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):634:100000000 |==> -100000000
+706:LVR:NEG:0:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):634:-100000000 |==> 0
+707:LVR:NEG:POS:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):634:-100000000 |==> 100000000
+708:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):634:y.lessThan(x.newInstance(100000000)) && y.greaterThan(x.newInstance(-100000000)) |==> y.lessThan(x.newInstance(100000000)) == y.greaterThan(x.newInstance(-100000000))
+709:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):634:y.lessThan(x.newInstance(100000000)) && y.greaterThan(x.newInstance(-100000000)) |==> false
+710:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):634:y.lessThan(x.newInstance(100000000)) && y.greaterThan(x.newInstance(-100000000)) |==> y.lessThan(x.newInstance(100000000))
+711:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):634:y.lessThan(x.newInstance(100000000)) && y.greaterThan(x.newInstance(-100000000)) |==> y.greaterThan(x.newInstance(-100000000))
+712:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):635:y.rint() |==> null
+713:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):636:u.intValue() |==> 0
+714:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):638:y.subtract(u) |==> null
+715:COR:v.unequal(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):640:v.unequal(zero) |==> false
+716:COR:v.unequal(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):640:v.unequal(zero) |==> true
+717:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):641:v.multiply(log(x)) |==> null
+718:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):642:a.divide(x.getField().getLn2()).rint() |==> null
+719:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):644:a.subtract(b.multiply(x.getField().getLn2())) |==> null
+720:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):645:splitPow(split(x), ui) |==> null
+721:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):646:r = r.multiply(pow(two, b.intValue())) |==> <NO-OP>
+722:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):647:r = r.multiply(exp(c)) |==> <NO-OP>
+723:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):649:splitPow(split(x), ui) |==> null
+724:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):653:exp(log(x).multiply(y)) |==> null
+725:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):656:invert && y.rint().equals(y) |==> invert == y.rint().equals(y)
+726:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):656:invert && y.rint().equals(y) |==> false
+727:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):656:invert && y.rint().equals(y) |==> invert
+728:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):656:invert && y.rint().equals(y) |==> y.rint().equals(y)
+729:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):656:invert && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> (invert && y.rint().equals(y)) == !y.remainder(two).equals(zero)
+730:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):656:invert && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> false
+731:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):656:invert && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> invert && y.rint().equals(y)
+732:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):656:invert && y.rint().equals(y) && !y.remainder(two).equals(zero) |==> !y.remainder(two).equals(zero)
+733:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):658:r = r.negate() |==> <NO-OP>
+734:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@pow(org.apache.commons.math3.dfp.Dfp,org.apache.commons.math3.dfp.Dfp):661:x.newInstance(r) |==> null
+735:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):672:0 |==> 1
+736:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):672:0 |==> -1
+737:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):672:1 |==> 0
+738:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):672:1 |==> -1
+739:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):673:c |==> null
+740:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):674:c = c.multiply(c) |==> <NO-OP>
+741:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):675:y |==> null
+742:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):676:0 |==> 1
+743:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):676:0 |==> -1
+744:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):677:new Dfp(y) |==> null
+745:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):679:3 |==> 0
+746:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):679:3 |==> -3
+747:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):679:90 |==> 0
+748:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):679:90 |==> -90
+749:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):679:i < 90 |==> i != 90
+750:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):679:i < 90 |==> i <= 90
+751:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):679:i < 90 |==> false
+752:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):679:2 |==> 0
+753:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):679:2 |==> -2
+754:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):680:x = x.multiply(c) |==> <NO-OP>
+755:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):681:x = x.negate() |==> <NO-OP>
+756:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:1 |==> 0
+757:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:1 |==> -1
+758:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:i - 1 |==> i % 1
+759:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:i - 1 |==> i * 1
+760:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:i - 1 |==> i + 1
+761:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:i - 1 |==> i / 1
+762:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:(i - 1) * i |==> (i - 1) % i
+763:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:(i - 1) * i |==> (i - 1) + i
+764:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:(i - 1) * i |==> (i - 1) - i
+765:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:(i - 1) * i |==> (i - 1) / i
+766:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):683:fact = fact.divide((i - 1) * i) |==> <NO-OP>
+767:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):684:y = y.add(x.multiply(fact)) |==> <NO-OP>
+768:COR:y.equals(py):TRUE:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):685:y.equals(py) |==> false
+769:COR:y.equals(py):FALSE:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):685:y.equals(py) |==> true
+770:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):686:break; |==> <NO-OP>
+771:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):688:py = new Dfp(y) |==> <NO-OP>
+772:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sinInternal(org.apache.commons.math3.dfp.Dfp[]):691:y |==> null
+773:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):701:0 |==> 1
+774:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):701:0 |==> -1
+775:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):704:one |==> null
+776:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):705:one |==> null
+777:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):706:0 |==> 1
+778:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):706:0 |==> -1
+779:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):706:1 |==> 0
+780:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):706:1 |==> -1
+781:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):707:c = c.multiply(c) |==> <NO-OP>
+782:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):709:one |==> null
+783:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):710:new Dfp(y) |==> null
+784:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):712:2 |==> 0
+785:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):712:2 |==> -2
+786:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):712:90 |==> 0
+787:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):712:90 |==> -90
+788:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):712:i < 90 |==> i != 90
+789:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):712:i < 90 |==> i <= 90
+790:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):712:i < 90 |==> false
+791:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):712:2 |==> 0
+792:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):712:2 |==> -2
+793:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):713:x = x.multiply(c) |==> <NO-OP>
+794:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):714:x = x.negate() |==> <NO-OP>
+795:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:1 |==> 0
+796:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:1 |==> -1
+797:AOR:-(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:i - 1 |==> i % 1
+798:AOR:-(int,int):*(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:i - 1 |==> i * 1
+799:AOR:-(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:i - 1 |==> i + 1
+800:AOR:-(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:i - 1 |==> i / 1
+801:AOR:*(int,int):%(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:(i - 1) * i |==> (i - 1) % i
+802:AOR:*(int,int):+(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:(i - 1) * i |==> (i - 1) + i
+803:AOR:*(int,int):-(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:(i - 1) * i |==> (i - 1) - i
+804:AOR:*(int,int):/(int,int):org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:(i - 1) * i |==> (i - 1) / i
+805:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):716:fact = fact.divide((i - 1) * i) |==> <NO-OP>
+806:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):718:y = y.add(x.multiply(fact)) |==> <NO-OP>
+807:COR:y.equals(py):TRUE:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):719:y.equals(py) |==> false
+808:COR:y.equals(py):FALSE:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):719:y.equals(py) |==> true
+809:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):720:break; |==> <NO-OP>
+810:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):722:py = new Dfp(y) |==> <NO-OP>
+811:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cosInternal(org.apache.commons.math3.dfp.Dfp[]):725:y |==> null
+812:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):734:a.getField().getPi() |==> null
+813:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):735:a.getField().getZero() |==> null
+814:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):736:false |==> true
+815:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):739:2 |==> 0
+816:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):739:2 |==> -2
+817:COR:x.lessThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):743:x.lessThan(zero) |==> false
+818:COR:x.lessThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):743:x.lessThan(zero) |==> true
+819:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):744:x = x.negate() |==> <NO-OP>
+820:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):745:true |==> false
+821:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):745:neg = true |==> <NO-OP>
+822:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):752:2 |==> 0
+823:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):752:2 |==> -2
+824:COR:x.greaterThan(pi.divide(2)):TRUE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):752:x.greaterThan(pi.divide(2)) |==> false
+825:COR:x.greaterThan(pi.divide(2)):FALSE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):752:x.greaterThan(pi.divide(2)) |==> true
+826:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):753:x = pi.subtract(x) |==> <NO-OP>
+827:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):757:4 |==> 0
+828:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):757:4 |==> -4
+829:COR:x.lessThan(pi.divide(4)):TRUE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):757:x.lessThan(pi.divide(4)) |==> false
+830:COR:x.lessThan(pi.divide(4)):FALSE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):757:x.lessThan(pi.divide(4)) |==> true
+831:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):758:2 |==> 0
+832:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):758:2 |==> -2
+833:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):759:0 |==> 1
+834:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):759:0 |==> -1
+835:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):759:c[0] = x |==> <NO-OP>
+836:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):760:1 |==> 0
+837:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):760:1 |==> -1
+838:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):760:c[1] = zero |==> <NO-OP>
+839:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):763:sinInternal(split(x)) |==> null
+840:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):765:2 |==> 0
+841:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):765:2 |==> -2
+842:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):766:a.getField().getPiSplit() |==> null
+843:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):767:0 |==> 1
+844:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):767:0 |==> -1
+845:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):767:0 |==> 1
+846:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):767:0 |==> -1
+847:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):767:2 |==> 0
+848:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):767:2 |==> -2
+849:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):767:c[0] = piSplit[0].divide(2).subtract(x) |==> <NO-OP>
+850:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):768:1 |==> 0
+851:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):768:1 |==> -1
+852:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):768:1 |==> 0
+853:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):768:1 |==> -1
+854:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):768:2 |==> 0
+855:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):768:2 |==> -2
+856:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):768:c[1] = piSplit[1].divide(2) |==> <NO-OP>
+857:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):769:cosInternal(c) |==> null
+858:COR:neg:TRUE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):772:neg |==> false
+859:COR:neg:FALSE:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):772:neg |==> true
+860:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):773:y = y.negate() |==> <NO-OP>
+861:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@sin(org.apache.commons.math3.dfp.Dfp):776:a.newInstance(y) |==> null
+862:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):785:a.getField().getPi() |==> null
+863:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):786:a.getField().getZero() |==> null
+864:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):787:false |==> true
+865:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):790:2 |==> 0
+866:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):790:2 |==> -2
+867:COR:x.lessThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):794:x.lessThan(zero) |==> false
+868:COR:x.lessThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):794:x.lessThan(zero) |==> true
+869:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):795:x = x.negate() |==> <NO-OP>
+870:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):802:2 |==> 0
+871:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):802:2 |==> -2
+872:COR:x.greaterThan(pi.divide(2)):TRUE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):802:x.greaterThan(pi.divide(2)) |==> false
+873:COR:x.greaterThan(pi.divide(2)):FALSE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):802:x.greaterThan(pi.divide(2)) |==> true
+874:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):803:x = pi.subtract(x) |==> <NO-OP>
+875:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):804:true |==> false
+876:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):804:neg = true |==> <NO-OP>
+877:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):808:4 |==> 0
+878:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):808:4 |==> -4
+879:COR:x.lessThan(pi.divide(4)):TRUE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):808:x.lessThan(pi.divide(4)) |==> false
+880:COR:x.lessThan(pi.divide(4)):FALSE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):808:x.lessThan(pi.divide(4)) |==> true
+881:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):809:2 |==> 0
+882:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):809:2 |==> -2
+883:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):810:0 |==> 1
+884:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):810:0 |==> -1
+885:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):810:c[0] = x |==> <NO-OP>
+886:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):811:1 |==> 0
+887:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):811:1 |==> -1
+888:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):811:c[1] = zero |==> <NO-OP>
+889:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):813:cosInternal(c) |==> null
+890:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):815:2 |==> 0
+891:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):815:2 |==> -2
+892:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):816:a.getField().getPiSplit() |==> null
+893:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):817:0 |==> 1
+894:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):817:0 |==> -1
+895:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):817:0 |==> 1
+896:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):817:0 |==> -1
+897:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):817:2 |==> 0
+898:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):817:2 |==> -2
+899:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):817:c[0] = piSplit[0].divide(2).subtract(x) |==> <NO-OP>
+900:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):818:1 |==> 0
+901:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):818:1 |==> -1
+902:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):818:1 |==> 0
+903:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):818:1 |==> -1
+904:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):818:2 |==> 0
+905:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):818:2 |==> -2
+906:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):818:c[1] = piSplit[1].divide(2) |==> <NO-OP>
+907:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):819:sinInternal(c) |==> null
+908:COR:neg:TRUE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):822:neg |==> false
+909:COR:neg:FALSE:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):822:neg |==> true
+910:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):823:y = y.negate() |==> <NO-OP>
+911:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@cos(org.apache.commons.math3.dfp.Dfp):826:a.newInstance(y) |==> null
+912:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@tan(org.apache.commons.math3.dfp.Dfp):835:sin(a).divide(cos(a)) |==> null
+913:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):844:new Dfp(a) |==> null
+914:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):845:new Dfp(y) |==> null
+915:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):846:new Dfp(y) |==> null
+916:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):848:3 |==> 0
+917:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):848:3 |==> -3
+918:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):848:90 |==> 0
+919:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):848:90 |==> -90
+920:ROR:<(int,int):!=(int,int):org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):848:i < 90 |==> i != 90
+921:ROR:<(int,int):<=(int,int):org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):848:i < 90 |==> i <= 90
+922:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):848:i < 90 |==> false
+923:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):848:2 |==> 0
+924:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):848:2 |==> -2
+925:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):849:x = x.multiply(a) |==> <NO-OP>
+926:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):850:x = x.multiply(a) |==> <NO-OP>
+927:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):851:x = x.negate() |==> <NO-OP>
+928:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):852:y = y.add(x.divide(i)) |==> <NO-OP>
+929:COR:y.equals(py):TRUE:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):853:y.equals(py) |==> false
+930:COR:y.equals(py):FALSE:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):853:y.equals(py) |==> true
+931:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):854:break; |==> <NO-OP>
+932:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):856:py = new Dfp(y) |==> <NO-OP>
+933:EVR:<IDENTIFIER(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atanInternal(org.apache.commons.math3.dfp.Dfp):859:y |==> null
+934:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):877:a.getField().getZero() |==> null
+935:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):878:a.getField().getOne() |==> null
+936:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):879:a.getField().getSqr2Split() |==> null
+937:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):880:a.getField().getPiSplit() |==> null
+938:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):881:false |==> true
+939:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):882:false |==> true
+940:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):883:false |==> true
+941:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):885:0 |==> 1
+942:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):885:0 |==> -1
+943:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):885:1 |==> 0
+944:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):885:1 |==> -1
+945:EVR:<NEW_CLASS(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):887:new Dfp(a) |==> null
+946:COR:x.lessThan(zero):TRUE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):888:x.lessThan(zero) |==> false
+947:COR:x.lessThan(zero):FALSE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):888:x.lessThan(zero) |==> true
+948:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):889:true |==> false
+949:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):889:neg = true |==> <NO-OP>
+950:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):890:x = x.negate() |==> <NO-OP>
+951:COR:x.greaterThan(one):TRUE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):893:x.greaterThan(one) |==> false
+952:COR:x.greaterThan(one):FALSE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):893:x.greaterThan(one) |==> true
+953:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):894:true |==> false
+954:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):894:recp = true |==> <NO-OP>
+955:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):895:x = one.divide(x) |==> <NO-OP>
+956:COR:x.greaterThan(ty):TRUE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):898:x.greaterThan(ty) |==> false
+957:COR:x.greaterThan(ty):FALSE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):898:x.greaterThan(ty) |==> true
+958:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):899:2 |==> 0
+959:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):899:2 |==> -2
+960:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):900:true |==> false
+961:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):900:sub = true |==> <NO-OP>
+962:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):902:0 |==> 1
+963:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):902:0 |==> -1
+964:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):902:0 |==> 1
+965:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):902:0 |==> -1
+966:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):902:sty[0] = sqr2Split[0].subtract(one) |==> <NO-OP>
+967:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):903:1 |==> 0
+968:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):903:1 |==> -1
+969:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):903:1 |==> 0
+970:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):903:1 |==> -1
+971:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):903:sty[1] = sqr2Split[1] |==> <NO-OP>
+972:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):905:split(x) |==> null
+973:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp[])>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):907:splitMult(xs, sty) |==> null
+974:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):908:0 |==> 1
+975:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):908:0 |==> -1
+976:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):908:0 |==> 1
+977:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):908:0 |==> -1
+978:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):908:ds[0] = ds[0].add(one) |==> <NO-OP>
+979:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):910:0 |==> 1
+980:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):910:0 |==> -1
+981:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):910:0 |==> 1
+982:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):910:0 |==> -1
+983:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):910:0 |==> 1
+984:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):910:0 |==> -1
+985:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):910:xs[0] = xs[0].subtract(sty[0]) |==> <NO-OP>
+986:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):911:1 |==> 0
+987:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):911:1 |==> -1
+988:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):911:1 |==> 0
+989:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):911:1 |==> -1
+990:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):911:1 |==> 0
+991:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):911:1 |==> -1
+992:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):911:xs[1] = xs[1].subtract(sty[1]) |==> <NO-OP>
+993:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):913:xs = splitDiv(xs, ds) |==> <NO-OP>
+994:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):914:0 |==> 1
+995:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):914:0 |==> -1
+996:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):914:1 |==> 0
+997:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):914:1 |==> -1
+998:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):914:x = xs[0].add(xs[1]) |==> <NO-OP>
+999:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):919:atanInternal(x) |==> null
+1000:COR:sub:TRUE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):921:sub |==> false
+1001:COR:sub:FALSE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):921:sub |==> true
+1002:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):922:0 |==> 1
+1003:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):922:0 |==> -1
+1004:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):922:8 |==> 0
+1005:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):922:8 |==> -8
+1006:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):922:1 |==> 0
+1007:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):922:1 |==> -1
+1008:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):922:8 |==> 0
+1009:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):922:8 |==> -8
+1010:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):922:y = y.add(piSplit[0].divide(8)).add(piSplit[1].divide(8)) |==> <NO-OP>
+1011:COR:recp:TRUE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):925:recp |==> false
+1012:COR:recp:FALSE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):925:recp |==> true
+1013:LVR:0:POS:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):926:0 |==> 1
+1014:LVR:0:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):926:0 |==> -1
+1015:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):926:2 |==> 0
+1016:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):926:2 |==> -2
+1017:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):926:1 |==> 0
+1018:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):926:1 |==> -1
+1019:LVR:POS:0:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):926:2 |==> 0
+1020:LVR:POS:NEG:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):926:2 |==> -2
+1021:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):926:y = piSplit[0].divide(2).subtract(y).add(piSplit[1].divide(2)) |==> <NO-OP>
+1022:COR:neg:TRUE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):929:neg |==> false
+1023:COR:neg:FALSE:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):929:neg |==> true
+1024:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):930:y = y.negate() |==> <NO-OP>
+1025:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@atan(org.apache.commons.math3.dfp.Dfp):933:a.newInstance(y) |==> null
+1026:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@asin(org.apache.commons.math3.dfp.Dfp):942:atan(a.divide(a.getOne().subtract(a.multiply(a)).sqrt())) |==> null
+1027:LVR:FALSE:TRUE:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):951:false |==> true
+1028:COR:a.lessThan(a.getZero()):TRUE:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):953:a.lessThan(a.getZero()) |==> false
+1029:COR:a.lessThan(a.getZero()):FALSE:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):953:a.lessThan(a.getZero()) |==> true
+1030:LVR:TRUE:FALSE:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):954:true |==> false
+1031:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):954:negative = true |==> <NO-OP>
+1032:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):957:a = Dfp.copysign(a, a.getOne()) |==> <NO-OP>
+1033:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):959:atan(a.getOne().subtract(a.multiply(a)).sqrt().divide(a)) |==> null
+1034:COR:negative:TRUE:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):961:negative |==> false
+1035:COR:negative:FALSE:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):961:negative |==> true
+1036:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):962:result = a.getField().getPi().subtract(result) |==> <NO-OP>
+1037:EVR:<METHOD_INVOCATION(org.apache.commons.math3.dfp.Dfp)>:<DEFAULT>:org.apache.commons.math3.dfp.DfpMath@acos(org.apache.commons.math3.dfp.Dfp):965:a.newInstance(result) |==> null

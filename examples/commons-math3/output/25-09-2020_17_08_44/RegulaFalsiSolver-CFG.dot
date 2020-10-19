@@ -1,0 +1,17 @@
+digraph RegulaFalsiSolver_CFG {
+  // graph-vertices
+  v1  [label="59:  RegulaFalsiSolver ()"];
+  v2  [label="60:  super(DEFAULT_ABSOLUTE_ACCURACY, Method.REGULA_FALSI)"];
+  v3  [label="68:  RegulaFalsiSolver (final double absoluteAccuracy)"];
+  v4  [label="69:  super(absoluteAccuracy, Method.REGULA_FALSI)"];
+  v5  [label="78:  RegulaFalsiSolver (final double relativeAccuracy,  final double absoluteAccuracy)"];
+  v6  [label="80:  super(relativeAccuracy, absoluteAccuracy, Method.REGULA_FALSI)"];
+  v7  [label="90:  RegulaFalsiSolver (final double relativeAccuracy,  final double absoluteAccuracy,  final double functionValueAccuracy)"];
+  v8  [label="93:  super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy, Method.REGULA_FALSI)"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v5 -> v6;
+  v7 -> v8;
+  // end-of-graph
+}

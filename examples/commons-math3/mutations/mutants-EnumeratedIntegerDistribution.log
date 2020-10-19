@@ -1,0 +1,85 @@
+1:ROR:!=(int,int):<(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):90:singletons.length != probabilities.length |==> singletons.length < probabilities.length
+2:ROR:!=(int,int):>(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):90:singletons.length != probabilities.length |==> singletons.length > probabilities.length
+3:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):90:singletons.length != probabilities.length |==> true
+4:EVR:<NEW_CLASS(java.util.ArrayList<org.apache.commons.math3.util.Pair<java.lang.Integer,java.lang.Double>>)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):94:new ArrayList<Pair<Integer, Double>>(singletons.length) |==> null
+5:LVR:0:POS:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):96:0 |==> 1
+6:LVR:0:NEG:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):96:0 |==> -1
+7:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):96:i < singletons.length |==> i != singletons.length
+8:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):96:i < singletons.length |==> i <= singletons.length
+9:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):96:i < singletons.length |==> false
+10:STD:<CALL>:<NO-OP>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):97:samples.add(new Pair<Integer, Double>(singletons[i], probabilities[i])) |==> <NO-OP>
+11:EVR:<NEW_CLASS(org.apache.commons.math3.distribution.EnumeratedDistribution<java.lang.Integer>)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int[],double[]):100:new EnumeratedDistribution<Integer>(rng, samples) |==> null
+12:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@probability(int):107:innerDistribution.probability(x) |==> 0.0
+13:LVR:0:POS:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@cumulativeProbability(int):114:0 |==> 1
+14:LVR:0:NEG:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@cumulativeProbability(int):114:0 |==> -1
+15:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@cumulativeProbability(int):117:sample.getKey() <= x |==> sample.getKey() < x
+16:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@cumulativeProbability(int):117:sample.getKey() <= x |==> sample.getKey() == x
+17:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@cumulativeProbability(int):117:sample.getKey() <= x |==> true
+18:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@cumulativeProbability(int):118:probability += sample.getValue() |==> <NO-OP>
+19:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@cumulativeProbability(int):122:probability |==> 0.0
+20:LVR:0:POS:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalMean():131:0 |==> 1
+21:LVR:0:NEG:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalMean():131:0 |==> -1
+22:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalMean():134:sample.getValue() * sample.getKey() |==> sample.getValue() % sample.getKey()
+23:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalMean():134:sample.getValue() * sample.getKey() |==> sample.getValue() + sample.getKey()
+24:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalMean():134:sample.getValue() * sample.getKey() |==> sample.getValue() - sample.getKey()
+25:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalMean():134:sample.getValue() * sample.getKey() |==> sample.getValue() / sample.getKey()
+26:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalMean():134:mean += sample.getValue() * sample.getKey() |==> <NO-OP>
+27:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalMean():137:mean |==> 0.0
+28:LVR:0:POS:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():146:0 |==> 1
+29:LVR:0:NEG:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():146:0 |==> -1
+30:LVR:0:POS:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():147:0 |==> 1
+31:LVR:0:NEG:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():147:0 |==> -1
+32:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():150:sample.getValue() * sample.getKey() |==> sample.getValue() % sample.getKey()
+33:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():150:sample.getValue() * sample.getKey() |==> sample.getValue() + sample.getKey()
+34:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():150:sample.getValue() * sample.getKey() |==> sample.getValue() - sample.getKey()
+35:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():150:sample.getValue() * sample.getKey() |==> sample.getValue() / sample.getKey()
+36:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():150:mean += sample.getValue() * sample.getKey() |==> <NO-OP>
+37:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():151:sample.getValue() * sample.getKey() |==> sample.getValue() % sample.getKey()
+38:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():151:sample.getValue() * sample.getKey() |==> sample.getValue() + sample.getKey()
+39:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():151:sample.getValue() * sample.getKey() |==> sample.getValue() - sample.getKey()
+40:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():151:sample.getValue() * sample.getKey() |==> sample.getValue() / sample.getKey()
+41:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():151:sample.getValue() * sample.getKey() * sample.getKey() |==> sample.getValue() * sample.getKey() % sample.getKey()
+42:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():151:sample.getValue() * sample.getKey() * sample.getKey() |==> sample.getValue() * sample.getKey() + sample.getKey()
+43:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():151:sample.getValue() * sample.getKey() * sample.getKey() |==> sample.getValue() * sample.getKey() - sample.getKey()
+44:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():151:sample.getValue() * sample.getKey() * sample.getKey() |==> sample.getValue() * sample.getKey() / sample.getKey()
+45:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():151:meanOfSquares += sample.getValue() * sample.getKey() * sample.getKey() |==> <NO-OP>
+46:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():154:mean * mean |==> mean % mean
+47:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():154:mean * mean |==> mean + mean
+48:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():154:mean * mean |==> mean - mean
+49:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():154:mean * mean |==> mean / mean
+50:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():154:meanOfSquares - mean * mean |==> meanOfSquares % (mean * mean)
+51:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():154:meanOfSquares - mean * mean |==> meanOfSquares * (mean * mean)
+52:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():154:meanOfSquares - mean * mean |==> meanOfSquares + mean * mean
+53:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getNumericalVariance():154:meanOfSquares - mean * mean |==> meanOfSquares / (mean * mean)
+54:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():165:Integer.MAX_VALUE |==> 0
+55:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getKey() < min |==> sample.getKey() != min
+56:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getKey() < min |==> sample.getKey() <= min
+57:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getKey() < min |==> false
+58:LVR:0:POS:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:0 |==> 1
+59:LVR:0:NEG:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:0 |==> -1
+60:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getValue() > 0 |==> sample.getValue() != 0
+61:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getValue() > 0 |==> sample.getValue() >= 0
+62:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getValue() > 0 |==> false
+63:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getKey() < min && sample.getValue() > 0 |==> sample.getKey() < min == sample.getValue() > 0
+64:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getKey() < min && sample.getValue() > 0 |==> false
+65:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getKey() < min && sample.getValue() > 0 |==> sample.getKey() < min
+66:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():167:sample.getKey() < min && sample.getValue() > 0 |==> sample.getValue() > 0
+67:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():168:min = sample.getKey() |==> <NO-OP>
+68:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportLowerBound():172:min |==> 0
+69:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():183:Integer.MIN_VALUE |==> 0
+70:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getKey() > max |==> sample.getKey() != max
+71:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getKey() > max |==> sample.getKey() >= max
+72:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getKey() > max |==> false
+73:LVR:0:POS:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:0 |==> 1
+74:LVR:0:NEG:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:0 |==> -1
+75:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getValue() > 0 |==> sample.getValue() != 0
+76:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getValue() > 0 |==> sample.getValue() >= 0
+77:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getValue() > 0 |==> false
+78:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getKey() > max && sample.getValue() > 0 |==> sample.getKey() > max == sample.getValue() > 0
+79:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getKey() > max && sample.getValue() > 0 |==> false
+80:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getKey() > max && sample.getValue() > 0 |==> sample.getKey() > max
+81:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():185:sample.getKey() > max && sample.getValue() > 0 |==> sample.getValue() > 0
+82:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():186:max = sample.getKey() |==> <NO-OP>
+83:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@getSupportUpperBound():190:max |==> 0
+84:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@isSupportConnected():201:true |==> false
+85:EVR:<METHOD_INVOCATION(java.lang.Integer)>:<DEFAULT>:org.apache.commons.math3.distribution.EnumeratedIntegerDistribution@sample():209:innerDistribution.sample() |==> null

@@ -1,0 +1,141 @@
+1:ROR:>=(int,int):==(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int):71:lower >= upper |==> lower == upper
+2:ROR:>=(int,int):>(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int):71:lower >= upper |==> lower > upper
+3:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int):71:lower >= upper |==> true
+4:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.UniformIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int):74:false |==> true
+5:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int):76:lower |==> 0
+6:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformIntegerDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int):77:upper |==> 0
+7:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x < lower |==> x != lower
+8:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x < lower |==> x <= lower
+9:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x < lower |==> false
+10:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x > upper |==> x != upper
+11:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x > upper |==> x >= upper
+12:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x > upper |==> false
+13:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x < lower || x > upper |==> x < lower != x > upper
+14:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x < lower || x > upper |==> x < lower
+15:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x < lower || x > upper |==> x > upper
+16:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):82:x < lower || x > upper |==> true
+17:LVR:0:POS:org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):83:0 |==> 1
+18:LVR:0:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):83:0 |==> -1
+19:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):83:return Config.__M_NO == 0 && Config.COVERED(17, 18) ? 0 : Config.__M_NO == 18 ? -1 : Config.__M_NO == 17 ? 1 : 0; |==> <NO-OP>
+20:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:1.0 |==> 0.0
+21:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:1.0 |==> -1.0
+22:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:upper - lower |==> upper % lower
+23:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:upper - lower |==> upper * lower
+24:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:upper - lower |==> upper + lower
+25:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:upper - lower |==> upper / lower
+26:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:1 |==> 0
+27:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:1 |==> -1
+28:AOR:+(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:upper - lower + 1 |==> (upper - lower) % 1
+29:AOR:+(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:upper - lower + 1 |==> (upper - lower) * 1
+30:AOR:+(int,int):-(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:upper - lower + 1 |==> upper - lower - 1
+31:AOR:+(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:upper - lower + 1 |==> (upper - lower) / 1
+32:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:1.0 / (upper - lower + 1) |==> 1.0 % (upper - lower + 1)
+33:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:1.0 / (upper - lower + 1) |==> 1.0 * (upper - lower + 1)
+34:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:1.0 / (upper - lower + 1) |==> 1.0 + (upper - lower + 1)
+35:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@probability(int):85:1.0 / (upper - lower + 1) |==> 1.0 - (upper - lower + 1)
+36:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):90:x < lower |==> x != lower
+37:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):90:x < lower |==> x <= lower
+38:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):90:x < lower |==> false
+39:LVR:0:POS:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):91:0 |==> 1
+40:LVR:0:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):91:0 |==> -1
+41:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):91:return Config.__M_NO == 0 && Config.COVERED(39, 40) ? 0 : Config.__M_NO == 40 ? -1 : Config.__M_NO == 39 ? 1 : 0; |==> <NO-OP>
+42:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):93:x > upper |==> x != upper
+43:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):93:x > upper |==> x >= upper
+44:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):93:x > upper |==> false
+45:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):94:1 |==> 0
+46:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):94:1 |==> -1
+47:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):94:return Config.__M_NO == 0 && Config.COVERED(45, 46) ? 1 : Config.__M_NO == 46 ? -1 : Config.__M_NO == 45 ? 0 : 1; |==> <NO-OP>
+48:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:x - lower |==> x % lower
+49:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:x - lower |==> x * lower
+50:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:x - lower |==> x + lower
+51:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:x - lower |==> x / lower
+52:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:1.0 |==> 0.0
+53:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:1.0 |==> -1.0
+54:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:x - lower + 1.0 |==> (x - lower) % 1.0
+55:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:x - lower + 1.0 |==> (x - lower) * 1.0
+56:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:x - lower + 1.0 |==> x - lower - 1.0
+57:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:x - lower + 1.0 |==> (x - lower) / 1.0
+58:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:upper - lower |==> upper % lower
+59:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:upper - lower |==> upper * lower
+60:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:upper - lower |==> upper + lower
+61:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:upper - lower |==> upper / lower
+62:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:1.0 |==> 0.0
+63:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:1.0 |==> -1.0
+64:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:upper - lower + 1.0 |==> (upper - lower) % 1.0
+65:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:upper - lower + 1.0 |==> (upper - lower) * 1.0
+66:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:upper - lower + 1.0 |==> upper - lower - 1.0
+67:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:upper - lower + 1.0 |==> (upper - lower) / 1.0
+68:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:(x - lower + 1.0) / (upper - lower + 1.0) |==> (x - lower + 1.0) % (upper - lower + 1.0)
+69:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:(x - lower + 1.0) / (upper - lower + 1.0) |==> (x - lower + 1.0) * (upper - lower + 1.0)
+70:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:(x - lower + 1.0) / (upper - lower + 1.0) |==> (x - lower + 1.0) + (upper - lower + 1.0)
+71:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@cumulativeProbability(int):96:(x - lower + 1.0) / (upper - lower + 1.0) |==> (x - lower + 1.0) - (upper - lower + 1.0)
+72:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:0.5 |==> 0.0
+73:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:0.5 |==> -0.5
+74:AOR:+(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:lower + upper |==> lower % upper
+75:AOR:+(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:lower + upper |==> lower * upper
+76:AOR:+(int,int):-(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:lower + upper |==> lower - upper
+77:AOR:+(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:lower + upper |==> lower / upper
+78:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:0.5 * (lower + upper) |==> 0.5 % (lower + upper)
+79:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:0.5 * (lower + upper) |==> 0.5 + (lower + upper)
+80:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:0.5 * (lower + upper) |==> 0.5 - (lower + upper)
+81:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalMean():106:0.5 * (lower + upper) |==> 0.5 / (lower + upper)
+82:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:upper - lower |==> upper % lower
+83:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:upper - lower |==> upper * lower
+84:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:upper - lower |==> upper + lower
+85:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:upper - lower |==> upper / lower
+86:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:1 |==> 0
+87:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:1 |==> -1
+88:AOR:+(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:upper - lower + 1 |==> (upper - lower) % 1
+89:AOR:+(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:upper - lower + 1 |==> (upper - lower) * 1
+90:AOR:+(int,int):-(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:upper - lower + 1 |==> upper - lower - 1
+91:AOR:+(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():116:upper - lower + 1 |==> (upper - lower) / 1
+92:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:n * n |==> n % n
+93:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:n * n |==> n + n
+94:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:n * n |==> n - n
+95:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:n * n |==> n / n
+96:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:1 |==> 0
+97:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:1 |==> -1
+98:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:n * n - 1 |==> n * n % 1
+99:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:n * n - 1 |==> n * n * 1
+100:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:n * n - 1 |==> n * n + 1
+101:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:n * n - 1 |==> n * n / 1
+102:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:12.0 |==> 0.0
+103:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:12.0 |==> -12.0
+104:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:(n * n - 1) / 12.0 |==> (n * n - 1) % 12.0
+105:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:(n * n - 1) / 12.0 |==> (n * n - 1) * 12.0
+106:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:(n * n - 1) / 12.0 |==> (n * n - 1) + 12.0
+107:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.UniformIntegerDistribution@getNumericalVariance():117:(n * n - 1) / 12.0 |==> (n * n - 1) - 12.0
+108:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformIntegerDistribution@getSupportLowerBound():129:lower |==> 0
+109:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformIntegerDistribution@getSupportUpperBound():141:upper |==> 0
+110:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.UniformIntegerDistribution@isSupportConnected():152:true |==> false
+111:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:upper - lower |==> upper % lower
+112:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:upper - lower |==> upper * lower
+113:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:upper - lower |==> upper + lower
+114:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:upper - lower |==> upper / lower
+115:LVR:POS:0:org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:1 |==> 0
+116:LVR:POS:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:1 |==> -1
+117:AOR:+(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:(upper - lower) + 1 |==> (upper - lower) % 1
+118:AOR:+(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:(upper - lower) + 1 |==> (upper - lower) * 1
+119:AOR:+(int,int):-(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:(upper - lower) + 1 |==> (upper - lower) - 1
+120:AOR:+(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():158:(upper - lower) + 1 |==> (upper - lower) / 1
+121:LVR:0:POS:org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():159:0 |==> 1
+122:LVR:0:NEG:org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():159:0 |==> -1
+123:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():159:max <= 0 |==> max < 0
+124:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():159:max <= 0 |==> max == 0
+125:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():159:max <= 0 |==> true
+126:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():164:random.nextInt() |==> 0
+127:ROR:>=(int,int):==(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():165:r >= lower |==> r == lower
+128:ROR:>=(int,int):>(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():165:r >= lower |==> r > lower
+129:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():165:r >= lower |==> true
+130:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():166:r <= upper |==> r < upper
+131:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():166:r <= upper |==> r == upper
+132:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():166:r <= upper |==> true
+133:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():165:r >= lower && r <= upper |==> r >= lower == r <= upper
+134:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():165:r >= lower && r <= upper |==> false
+135:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():165:r >= lower && r <= upper |==> r >= lower
+136:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():166:r >= lower && r <= upper |==> r <= upper
+137:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():167:return r; |==> <NO-OP>
+138:AOR:+(int,int):%(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():172:lower + random.nextInt(max) |==> lower % random.nextInt(max)
+139:AOR:+(int,int):*(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():172:lower + random.nextInt(max) |==> lower * random.nextInt(max)
+140:AOR:+(int,int):-(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():172:lower + random.nextInt(max) |==> lower - random.nextInt(max)
+141:AOR:+(int,int):/(int,int):org.apache.commons.math3.distribution.UniformIntegerDistribution@sample():172:lower + random.nextInt(max) |==> lower / random.nextInt(max)

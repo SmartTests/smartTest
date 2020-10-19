@@ -1,0 +1,47 @@
+[
+  {
+    "info": "12-10-2020_11_07_09"
+  },
+  {
+    "requirements": {
+      "TR1": "43,48"
+    }
+  },
+  {
+    "testCoverage": {
+      "testArgumentStartingWithHyphen": [],
+      "testDoubleDash1": [],
+      "testLongWithUnexpectedArgument1": [],
+      "testLongWithUnexpectedArgument2": [],
+      "testLongWithoutEqualDoubleDash": [],
+      "testMissingArg": [],
+      "testMissingRequiredGroup": [],
+      "testMissingRequiredOption": [],
+      "testMissingRequiredOptions": [],
+      "testMultiple": [],
+      "testMultipleWithLong": [],
+      "testNegativeArgument": [],
+      "testOptionAndRequiredOption": [],
+      "testOptionGroup": [],
+      "testOptionGroupLong": [],
+      "testPropertyOptionFlags": [],
+      "testPropertyOptionGroup": [],
+      "testPropertyOptionMultipleValues": [],
+      "testPropertyOptionRequired": [],
+      "testPropertyOptionSingularValue": [],
+      "testPropertyOptionUnexpected": [],
+      "testReuseOptionsTwice": [],
+      "testShortWithUnexpectedArgument": [],
+      "testSimpleLong": [],
+      "testSimpleShort": [],
+      "testSingleDash": [],
+      "testStopAtExpectedArg": [],
+      "testStopAtNonOptionLong": [],
+      "testStopAtNonOptionShort": [],
+      "testStopAtUnexpectedArg": [],
+      "testUnlimitedArgs": [],
+      "testUnrecognizedOption": [],
+      "testWithRequiredOption": []
+    }
+  }
+]

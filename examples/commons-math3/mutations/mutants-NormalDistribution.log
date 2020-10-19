@@ -1,0 +1,185 @@
+1:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution:45:2 |==> 0
+2:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution:45:2 |==> -2
+3:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution:45:2 * FastMath.PI |==> 2 % FastMath.PI
+4:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution:45:2 * FastMath.PI |==> 2 + FastMath.PI
+5:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution:45:2 * FastMath.PI |==> 2 - FastMath.PI
+6:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution:45:2 * FastMath.PI |==> 2 / FastMath.PI
+7:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution:47:2.0 |==> 0.0
+8:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution:47:2.0 |==> -2.0
+9:LVR:0:POS:org.apache.commons.math3.distribution.NormalDistribution@<init>():60:0 |==> 1
+10:LVR:0:NEG:org.apache.commons.math3.distribution.NormalDistribution@<init>():60:0 |==> -1
+11:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@<init>():60:1 |==> 0
+12:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@<init>():60:1 |==> -1
+13:LVR:0:POS:org.apache.commons.math3.distribution.NormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):121:0 |==> 1
+14:LVR:0:NEG:org.apache.commons.math3.distribution.NormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):121:0 |==> -1
+15:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.NormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):121:sd <= 0 |==> sd < 0
+16:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.NormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):121:sd <= 0 |==> sd == 0
+17:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.NormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):121:sd <= 0 |==> true
+18:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):125:mean |==> 0.0
+19:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):126:sd |==> 0.0
+20:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):127:inverseCumAccuracy |==> 0.0
+21:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@getMean():136:mean |==> 0.0
+22:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@getStandardDeviation():145:standardDeviation |==> 0.0
+23:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):150:x - mean |==> x % mean
+24:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):150:x - mean |==> x * mean
+25:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):150:x - mean |==> x + mean
+26:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):150:x - mean |==> x / mean
+27:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):151:x0 / standardDeviation |==> x0 % standardDeviation
+28:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):151:x0 / standardDeviation |==> x0 * standardDeviation
+29:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):151:x0 / standardDeviation |==> x0 + standardDeviation
+30:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):151:x0 / standardDeviation |==> x0 - standardDeviation
+31:ORU:-(double):+(double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:-0.5 |==> +0.5
+32:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@density(double):152:0.5 |==> 0.0
+33:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@density(double):152:0.5 |==> -0.5
+34:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:-0.5 * x1 |==> -0.5 % x1
+35:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:-0.5 * x1 |==> -0.5 + x1
+36:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:-0.5 * x1 |==> -0.5 - x1
+37:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:-0.5 * x1 |==> -0.5 / x1
+38:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:-0.5 * x1 * x1 |==> -0.5 * x1 % x1
+39:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:-0.5 * x1 * x1 |==> -0.5 * x1 + x1
+40:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:-0.5 * x1 * x1 |==> -0.5 * x1 - x1
+41:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:-0.5 * x1 * x1 |==> -0.5 * x1 / x1
+42:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:standardDeviation * SQRT2PI |==> standardDeviation % SQRT2PI
+43:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:standardDeviation * SQRT2PI |==> standardDeviation + SQRT2PI
+44:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:standardDeviation * SQRT2PI |==> standardDeviation - SQRT2PI
+45:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:standardDeviation * SQRT2PI |==> standardDeviation / SQRT2PI
+46:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:FastMath.exp(-0.5 * x1 * x1) / (standardDeviation * SQRT2PI) |==> FastMath.exp(-0.5 * x1 * x1) % (standardDeviation * SQRT2PI)
+47:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:FastMath.exp(-0.5 * x1 * x1) / (standardDeviation * SQRT2PI) |==> FastMath.exp(-0.5 * x1 * x1) * (standardDeviation * SQRT2PI)
+48:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:FastMath.exp(-0.5 * x1 * x1) / (standardDeviation * SQRT2PI) |==> FastMath.exp(-0.5 * x1 * x1) + (standardDeviation * SQRT2PI)
+49:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@density(double):152:FastMath.exp(-0.5 * x1 * x1) / (standardDeviation * SQRT2PI) |==> FastMath.exp(-0.5 * x1 * x1) - (standardDeviation * SQRT2PI)
+50:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):163:x - mean |==> x % mean
+51:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):163:x - mean |==> x * mean
+52:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):163:x - mean |==> x + mean
+53:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):163:x - mean |==> x / mean
+54:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):164:40 |==> 0
+55:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):164:40 |==> -40
+56:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):164:40 * standardDeviation |==> 40 % standardDeviation
+57:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):164:40 * standardDeviation |==> 40 + standardDeviation
+58:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):164:40 * standardDeviation |==> 40 - standardDeviation
+59:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):164:40 * standardDeviation |==> 40 / standardDeviation
+60:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):164:FastMath.abs(dev) > 40 * standardDeviation |==> FastMath.abs(dev) != 40 * standardDeviation
+61:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):164:FastMath.abs(dev) > 40 * standardDeviation |==> FastMath.abs(dev) >= 40 * standardDeviation
+62:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):164:FastMath.abs(dev) > 40 * standardDeviation |==> false
+63:LVR:0:POS:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:0 |==> 1
+64:LVR:0:NEG:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:0 |==> -1
+65:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:dev < 0 |==> dev != 0
+66:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:dev < 0 |==> dev <= 0
+67:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:dev < 0 |==> false
+68:LVR:0:POS:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:0.0 |==> 1.0
+69:LVR:0:NEG:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:0.0 |==> -1.0
+70:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:1.0 |==> 0.0
+71:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:1.0 |==> -1.0
+72:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):165:return Config.__M_NO == 67 ? false : Config.__M_NO == 66 ? dev <= 0 : Config.__M_NO == 65 ? dev != 0 : Config.__M_NO == 0 && Config.COVERED(65, 67) ? dev < 0 : dev < (Config.__M_NO == 0 && Config.COVERED(63, 64) ? 0 : Config.__M_NO == 64 ? -1 : Config.__M_NO == 63 ? 1 : 0) ? Config.__M_NO == 0 && Config.COVERED(68, 69) ? 0.0 : Config.__M_NO == 69 ? -1.0 : Config.__M_NO == 68 ? 1.0 : 0.0 : Config.__M_NO == 0 && Config.COVERED(70, 71) ? 1.0 : Config.__M_NO == 71 ? -1.0 : Config.__M_NO == 70 ? 0.0 : 1.0; |==> <NO-OP>
+73:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:0.5 |==> 0.0
+74:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:0.5 |==> -0.5
+75:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:1 |==> 0
+76:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:1 |==> -1
+77:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:standardDeviation * SQRT2 |==> standardDeviation % SQRT2
+78:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:standardDeviation * SQRT2 |==> standardDeviation + SQRT2
+79:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:standardDeviation * SQRT2 |==> standardDeviation - SQRT2
+80:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:standardDeviation * SQRT2 |==> standardDeviation / SQRT2
+81:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:dev / (standardDeviation * SQRT2) |==> dev % (standardDeviation * SQRT2)
+82:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:dev / (standardDeviation * SQRT2) |==> dev * (standardDeviation * SQRT2)
+83:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:dev / (standardDeviation * SQRT2) |==> dev + (standardDeviation * SQRT2)
+84:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:dev / (standardDeviation * SQRT2) |==> dev - (standardDeviation * SQRT2)
+85:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:1 + Erf.erf(dev / (standardDeviation * SQRT2)) |==> 1 % Erf.erf(dev / (standardDeviation * SQRT2))
+86:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:1 + Erf.erf(dev / (standardDeviation * SQRT2)) |==> 1 * Erf.erf(dev / (standardDeviation * SQRT2))
+87:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:1 + Erf.erf(dev / (standardDeviation * SQRT2)) |==> 1 - Erf.erf(dev / (standardDeviation * SQRT2))
+88:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:1 + Erf.erf(dev / (standardDeviation * SQRT2)) |==> 1 / Erf.erf(dev / (standardDeviation * SQRT2))
+89:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:0.5 * (1 + Erf.erf(dev / (standardDeviation * SQRT2))) |==> 0.5 % (1 + Erf.erf(dev / (standardDeviation * SQRT2)))
+90:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:0.5 * (1 + Erf.erf(dev / (standardDeviation * SQRT2))) |==> 0.5 + (1 + Erf.erf(dev / (standardDeviation * SQRT2)))
+91:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:0.5 * (1 + Erf.erf(dev / (standardDeviation * SQRT2))) |==> 0.5 - (1 + Erf.erf(dev / (standardDeviation * SQRT2)))
+92:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double):167:0.5 * (1 + Erf.erf(dev / (standardDeviation * SQRT2))) |==> 0.5 / (1 + Erf.erf(dev / (standardDeviation * SQRT2)))
+93:LVR:0:POS:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:0.0 |==> 1.0
+94:LVR:0:NEG:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:0.0 |==> -1.0
+95:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p < 0.0 |==> p != 0.0
+96:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p < 0.0 |==> p <= 0.0
+97:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p < 0.0 |==> false
+98:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:1.0 |==> 0.0
+99:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:1.0 |==> -1.0
+100:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p > 1.0 |==> p != 1.0
+101:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p > 1.0 |==> p >= 1.0
+102:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p > 1.0 |==> false
+103:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p < 0.0 || p > 1.0 |==> p < 0.0 != p > 1.0
+104:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p < 0.0 || p > 1.0 |==> p < 0.0
+105:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p < 0.0 || p > 1.0 |==> p > 1.0
+106:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):175:p < 0.0 || p > 1.0 |==> true
+107:LVR:0:POS:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):176:0 |==> 1
+108:LVR:0:NEG:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):176:0 |==> -1
+109:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):176:1 |==> 0
+110:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):176:1 |==> -1
+111:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:standardDeviation * SQRT2 |==> standardDeviation % SQRT2
+112:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:standardDeviation * SQRT2 |==> standardDeviation + SQRT2
+113:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:standardDeviation * SQRT2 |==> standardDeviation - SQRT2
+114:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:standardDeviation * SQRT2 |==> standardDeviation / SQRT2
+115:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 |==> 0
+116:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 |==> -2
+117:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 * p |==> 2 % p
+118:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 * p |==> 2 + p
+119:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 * p |==> 2 - p
+120:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 * p |==> 2 / p
+121:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:1 |==> 0
+122:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:1 |==> -1
+123:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 * p - 1 |==> 2 * p % 1
+124:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 * p - 1 |==> 2 * p * 1
+125:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 * p - 1 |==> 2 * p + 1
+126:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:2 * p - 1 |==> 2 * p / 1
+127:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1) |==> standardDeviation * SQRT2 % Erf.erfInv(2 * p - 1)
+128:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1) |==> standardDeviation * SQRT2 + Erf.erfInv(2 * p - 1)
+129:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1) |==> standardDeviation * SQRT2 - Erf.erfInv(2 * p - 1)
+130:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1) |==> standardDeviation * SQRT2 / Erf.erfInv(2 * p - 1)
+131:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:mean + standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1) |==> mean % (standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1))
+132:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:mean + standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1) |==> mean * (standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1))
+133:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:mean + standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1) |==> mean - standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1)
+134:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@inverseCumulativeProbability(double):178:mean + standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1) |==> mean / (standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1))
+135:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@cumulativeProbability(double,double):189:probability(x0, x1) |==> 0.0
+136:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):197:x0 > x1 |==> x0 != x1
+137:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):197:x0 > x1 |==> x0 >= x1
+138:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):197:x0 > x1 |==> false
+139:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):199:true |==> false
+140:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):201:standardDeviation * SQRT2 |==> standardDeviation % SQRT2
+141:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):201:standardDeviation * SQRT2 |==> standardDeviation + SQRT2
+142:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):201:standardDeviation * SQRT2 |==> standardDeviation - SQRT2
+143:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):201:standardDeviation * SQRT2 |==> standardDeviation / SQRT2
+144:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):202:x0 - mean |==> x0 % mean
+145:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):202:x0 - mean |==> x0 * mean
+146:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):202:x0 - mean |==> x0 + mean
+147:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):202:x0 - mean |==> x0 / mean
+148:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):202:(x0 - mean) / denom |==> (x0 - mean) % denom
+149:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):202:(x0 - mean) / denom |==> (x0 - mean) * denom
+150:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):202:(x0 - mean) / denom |==> (x0 - mean) + denom
+151:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):202:(x0 - mean) / denom |==> (x0 - mean) - denom
+152:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):203:x1 - mean |==> x1 % mean
+153:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):203:x1 - mean |==> x1 * mean
+154:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):203:x1 - mean |==> x1 + mean
+155:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):203:x1 - mean |==> x1 / mean
+156:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):203:(x1 - mean) / denom |==> (x1 - mean) % denom
+157:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):203:(x1 - mean) / denom |==> (x1 - mean) * denom
+158:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):203:(x1 - mean) / denom |==> (x1 - mean) + denom
+159:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):203:(x1 - mean) / denom |==> (x1 - mean) - denom
+160:LVR:POS:0:org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):204:0.5 |==> 0.0
+161:LVR:POS:NEG:org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):204:0.5 |==> -0.5
+162:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):204:0.5 * Erf.erf(v0, v1) |==> 0.5 % Erf.erf(v0, v1)
+163:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):204:0.5 * Erf.erf(v0, v1) |==> 0.5 + Erf.erf(v0, v1)
+164:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):204:0.5 * Erf.erf(v0, v1) |==> 0.5 - Erf.erf(v0, v1)
+165:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@probability(double,double):204:0.5 * Erf.erf(v0, v1) |==> 0.5 / Erf.erf(v0, v1)
+166:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@getSolverAbsoluteAccuracy():210:solverAbsoluteAccuracy |==> 0.0
+167:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@getNumericalMean():219:getMean() |==> 0.0
+168:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@getNumericalVariance():228:getStandardDeviation() |==> 0.0
+169:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@getNumericalVariance():229:s * s |==> s % s
+170:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@getNumericalVariance():229:s * s |==> s + s
+171:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@getNumericalVariance():229:s * s |==> s - s
+172:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@getNumericalVariance():229:s * s |==> s / s
+173:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@getSupportLowerBound():242:Double.NEGATIVE_INFINITY |==> 0.0
+174:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.NormalDistribution@getSupportUpperBound():255:Double.POSITIVE_INFINITY |==> 0.0
+175:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.NormalDistribution@isSupportLowerBoundInclusive():260:false |==> true
+176:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.NormalDistribution@isSupportUpperBoundInclusive():265:false |==> true
+177:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.NormalDistribution@isSupportConnected():276:true |==> false
+178:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@sample():282:standardDeviation * random.nextGaussian() |==> standardDeviation % random.nextGaussian()
+179:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.NormalDistribution@sample():282:standardDeviation * random.nextGaussian() |==> standardDeviation + random.nextGaussian()
+180:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@sample():282:standardDeviation * random.nextGaussian() |==> standardDeviation - random.nextGaussian()
+181:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@sample():282:standardDeviation * random.nextGaussian() |==> standardDeviation / random.nextGaussian()
+182:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.NormalDistribution@sample():282:standardDeviation * random.nextGaussian() + mean |==> standardDeviation * random.nextGaussian() % mean
+183:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.NormalDistribution@sample():282:standardDeviation * random.nextGaussian() + mean |==> standardDeviation * random.nextGaussian() * mean
+184:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.NormalDistribution@sample():282:standardDeviation * random.nextGaussian() + mean |==> standardDeviation * random.nextGaussian() - mean
+185:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.NormalDistribution@sample():282:standardDeviation * random.nextGaussian() + mean |==> standardDeviation * random.nextGaussian() / mean

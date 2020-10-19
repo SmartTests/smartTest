@@ -1,0 +1,20 @@
+======= LOG CREATED on Sun 2020/Oct/04 11:58:24:673 =======
+
+PROGEX (Program Graph Extractor)  [ v3.4.5 ]
+Visit project website @ https://github.com/ghaffarian/progex
+
+PROGEX execution config:
+  Language = Java
+  Output format = DOT
+  Output directory = ../output/04-10-2020_11_58_24/
+  Analysis types = [CFG]
+  Input paths = 
+        /Users/kesina/eclipse-workspace/commons-math3/src/main/java/org/apache/commons/math3/dfp/DfpMath.java
+
+
+# Java source files = 1
+
+
+Control-Flow Analysis
+=====================
+CFG exported to: ../output/04-10-2020_11_58_24/DfpMath-CFG.dot

@@ -1,0 +1,159 @@
+1:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:0 |==> -1
+3:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 |==> xval.length <= 0
+4:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 |==> xval.length >= 0
+5:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 |==> false
+6:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:0 |==> 1
+7:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:0 |==> -1
+8:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:yval.length == 0 |==> yval.length <= 0
+9:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:yval.length == 0 |==> yval.length >= 0
+10:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:yval.length == 0 |==> false
+11:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 || yval.length == 0 |==> xval.length == 0 != (yval.length == 0)
+12:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 || yval.length == 0 |==> xval.length == 0
+13:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 || yval.length == 0 |==> yval.length == 0
+14:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 || yval.length == 0 |==> true
+15:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:0 |==> 1
+16:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:0 |==> -1
+17:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:fval.length == 0 |==> fval.length <= 0
+18:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:fval.length == 0 |==> fval.length >= 0
+19:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:fval.length == 0 |==> false
+20:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 || yval.length == 0 || fval.length == 0 |==> (xval.length == 0 || yval.length == 0) != (fval.length == 0)
+21:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 || yval.length == 0 || fval.length == 0 |==> xval.length == 0 || yval.length == 0
+22:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 || yval.length == 0 || fval.length == 0 |==> fval.length == 0
+23:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):43:xval.length == 0 || yval.length == 0 || fval.length == 0 |==> true
+24:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):46:xval.length != fval.length |==> xval.length < fval.length
+25:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):46:xval.length != fval.length |==> xval.length > fval.length
+26:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):46:xval.length != fval.length |==> true
+27:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):50:MathArrays.checkOrder(xval) |==> <NO-OP>
+28:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):51:MathArrays.checkOrder(yval) |==> <NO-OP>
+29:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):53:xval.length |==> 0
+30:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):54:yval.length |==> 0
+31:EVR:<NEW_ARRAY(double[][])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):60:new double[yLen][xLen] |==> null
+32:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):61:0 |==> 1
+33:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):61:0 |==> -1
+34:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):61:i < xLen |==> i != xLen
+35:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):61:i < xLen |==> i <= xLen
+36:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):61:i < xLen |==> false
+37:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):62:fval[i].length != yLen |==> fval[i].length < yLen
+38:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):62:fval[i].length != yLen |==> fval[i].length > yLen
+39:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):62:fval[i].length != yLen |==> true
+40:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):66:0 |==> 1
+41:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):66:0 |==> -1
+42:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):66:j < yLen |==> j != yLen
+43:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):66:j < yLen |==> j <= yLen
+44:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):66:j < yLen |==> false
+45:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):67:fX[j][i] = fval[i][j] |==> <NO-OP>
+46:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.interpolation.SplineInterpolator)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):71:new SplineInterpolator() |==> null
+47:EVR:<NEW_ARRAY(org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):75:new PolynomialSplineFunction[yLen] |==> null
+48:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):76:0 |==> 1
+49:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):76:0 |==> -1
+50:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):76:j < yLen |==> j != yLen
+51:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):76:j < yLen |==> j <= yLen
+52:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):76:j < yLen |==> false
+53:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):77:ySplineX[j] = spInterpolator.interpolate(xval, fX[j]) |==> <NO-OP>
+54:EVR:<NEW_ARRAY(org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):82:new PolynomialSplineFunction[xLen] |==> null
+55:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):83:0 |==> 1
+56:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):83:0 |==> -1
+57:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):83:i < xLen |==> i != xLen
+58:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):83:i < xLen |==> i <= xLen
+59:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):83:i < xLen |==> false
+60:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):84:xSplineY[i] = spInterpolator.interpolate(yval, fval[i]) |==> <NO-OP>
+61:EVR:<NEW_ARRAY(double[][])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):88:new double[xLen][yLen] |==> null
+62:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):89:0 |==> 1
+63:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):89:0 |==> -1
+64:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):89:j < yLen |==> j != yLen
+65:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):89:j < yLen |==> j <= yLen
+66:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):89:j < yLen |==> false
+67:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.UnivariateFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):90:ySplineX[j].derivative() |==> null
+68:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):91:0 |==> 1
+69:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):91:0 |==> -1
+70:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):91:i < xLen |==> i != xLen
+71:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):91:i < xLen |==> i <= xLen
+72:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):91:i < xLen |==> false
+73:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):92:dFdX[i][j] = f.value(xval[i]) |==> <NO-OP>
+74:EVR:<NEW_ARRAY(double[][])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):97:new double[xLen][yLen] |==> null
+75:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):98:0 |==> 1
+76:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):98:0 |==> -1
+77:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):98:i < xLen |==> i != xLen
+78:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):98:i < xLen |==> i <= xLen
+79:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):98:i < xLen |==> false
+80:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.UnivariateFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):99:xSplineY[i].derivative() |==> null
+81:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):100:0 |==> 1
+82:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):100:0 |==> -1
+83:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):100:j < yLen |==> j != yLen
+84:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):100:j < yLen |==> j <= yLen
+85:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):100:j < yLen |==> false
+86:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):101:dFdY[i][j] = f.value(yval[j]) |==> <NO-OP>
+87:EVR:<NEW_ARRAY(double[][])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):106:new double[xLen][yLen] |==> null
+88:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):107:0 |==> 1
+89:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):107:0 |==> -1
+90:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):107:i < xLen |==> i != xLen
+91:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):107:i < xLen |==> i <= xLen
+92:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):107:i < xLen |==> false
+93:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):108:nextIndex(i, xLen) |==> 0
+94:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):109:previousIndex(i) |==> 0
+95:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):110:0 |==> 1
+96:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):110:0 |==> -1
+97:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):110:j < yLen |==> j != yLen
+98:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):110:j < yLen |==> j <= yLen
+99:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):110:j < yLen |==> false
+100:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):111:nextIndex(j, yLen) |==> 0
+101:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):112:previousIndex(j) |==> 0
+102:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] |==> fval[nI][nJ] % fval[nI][pJ]
+103:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] |==> fval[nI][nJ] * fval[nI][pJ]
+104:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] |==> fval[nI][nJ] + fval[nI][pJ]
+105:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] |==> fval[nI][nJ] / fval[nI][pJ]
+106:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] |==> (fval[nI][nJ] - fval[nI][pJ]) % fval[pI][nJ]
+107:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] |==> (fval[nI][nJ] - fval[nI][pJ]) * fval[pI][nJ]
+108:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] |==> fval[nI][nJ] - fval[nI][pJ] + fval[pI][nJ]
+109:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] |==> (fval[nI][nJ] - fval[nI][pJ]) / fval[pI][nJ]
+110:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ] |==> (fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ]) % fval[pI][pJ]
+111:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ] |==> (fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ]) * fval[pI][pJ]
+112:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ] |==> fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] - fval[pI][pJ]
+113:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ] |==> (fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ]) / fval[pI][pJ]
+114:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:xval[nI] - xval[pI] |==> xval[nI] % xval[pI]
+115:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:xval[nI] - xval[pI] |==> xval[nI] * xval[pI]
+116:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:xval[nI] - xval[pI] |==> xval[nI] + xval[pI]
+117:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:xval[nI] - xval[pI] |==> xval[nI] / xval[pI]
+118:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:yval[nJ] - yval[pJ] |==> yval[nJ] % yval[pJ]
+119:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:yval[nJ] - yval[pJ] |==> yval[nJ] * yval[pJ]
+120:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:yval[nJ] - yval[pJ] |==> yval[nJ] + yval[pJ]
+121:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:yval[nJ] - yval[pJ] |==> yval[nJ] / yval[pJ]
+122:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:(xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]) |==> (xval[nI] - xval[pI]) % (yval[nJ] - yval[pJ])
+123:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:(xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]) |==> (xval[nI] - xval[pI]) + (yval[nJ] - yval[pJ])
+124:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:(xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]) |==> (xval[nI] - xval[pI]) - (yval[nJ] - yval[pJ])
+125:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):115:(xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]) |==> (xval[nI] - xval[pI]) / (yval[nJ] - yval[pJ])
+126:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:(fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ]) / ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ])) |==> (fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ]) % ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]))
+127:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:(fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ]) / ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ])) |==> (fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ]) * ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]))
+128:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:(fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ]) / ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ])) |==> (fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ]) + ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]))
+129:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:(fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ]) / ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ])) |==> (fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ]) - ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]))
+130:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):113:d2FdXdY[i][j] = (fval[nI][nJ] - fval[nI][pJ] - fval[pI][nJ] + fval[pI][pJ]) / ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ])) |==> <NO-OP>
+131:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolatingFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@interpolate(double[],double[],double[][]):120:new BicubicSplineInterpolatingFunction(xval, yval, fval, dFdX, dFdY, d2FdXdY) |==> null
+132:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):133:1 |==> 0
+133:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):133:1 |==> -1
+134:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):133:i + 1 |==> i % 1
+135:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):133:i + 1 |==> i * 1
+136:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):133:i + 1 |==> i - 1
+137:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):133:i + 1 |==> i / 1
+138:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):134:index < max |==> index != max
+139:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):134:index < max |==> index <= max
+140:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):134:index < max |==> false
+141:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):134:1 |==> 0
+142:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):134:1 |==> -1
+143:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):134:index - 1 |==> index % 1
+144:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):134:index - 1 |==> index * 1
+145:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):134:index - 1 |==> index + 1
+146:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@nextIndex(int,int):134:index - 1 |==> index / 1
+147:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):145:1 |==> 0
+148:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):145:1 |==> -1
+149:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):145:i - 1 |==> i % 1
+150:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):145:i - 1 |==> i * 1
+151:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):145:i - 1 |==> i + 1
+152:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):145:i - 1 |==> i / 1
+153:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):146:0 |==> 1
+154:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):146:0 |==> -1
+155:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):146:index >= 0 |==> index == 0
+156:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):146:index >= 0 |==> index > 0
+157:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):146:index >= 0 |==> true
+158:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):146:0 |==> 1
+159:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolator@previousIndex(int):146:0 |==> -1

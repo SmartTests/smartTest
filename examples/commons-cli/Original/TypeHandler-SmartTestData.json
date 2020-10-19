@@ -1,0 +1,187 @@
+[
+  {
+    "info": "13-10-2020_12_58_06"
+  },
+  {
+    "requirements": {
+      "TR1": "47,49",
+      "TR2": "64,66",
+      "TR3": "66,68",
+      "TR4": "66,70",
+      "TR5": "70,72",
+      "TR6": "70,74",
+      "TR7": "74,76",
+      "TR8": "74,78",
+      "TR9": "78,80",
+      "TR10": "78,82",
+      "TR11": "82,84",
+      "TR12": "82,86",
+      "TR13": "86,88",
+      "TR14": "86,90",
+      "TR15": "90,92",
+      "TR16": "90,94",
+      "TR17": "94,96",
+      "TR18": "94,98",
+      "TR19": "98,100",
+      "TR20": "98,104",
+      "TR21": "115,117",
+      "TR22": "117,119",
+      "TR23": "119,121",
+      "TR24": "121,123",
+      "TR25": "123,125",
+      "TR26": "125,123",
+      "TR27": "128,130",
+      "TR28": "132,134",
+      "TR29": "134,132",
+      "TR30": "146,148",
+      "TR31": "148,150",
+      "TR32": "150,152",
+      "TR33": "150,154",
+      "TR34": "156,158",
+      "TR35": "158,156",
+      "TR36": "169,171",
+      "TR37": "171,173",
+      "TR38": "175,177",
+      "TR39": "177,175",
+      "TR40": "192,194",
+      "TR41": "204,206",
+      "TR42": "206,208",
+      "TR43": "210,212",
+      "TR44": "212,210",
+      "TR45": "222,224",
+      "TR46": "234,236",
+      "TR47": "236,238",
+      "TR48": "240,242",
+      "TR49": "242,240",
+      "TR50": "256,260"
+    }
+  },
+  {
+    "testCoverage": {
+      "testCreateValueClass": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR11",
+        "TR38"
+      ],
+      "testCreateValueClass_notFound": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR11",
+        "TR38"
+      ],
+      "testCreateValueDate": [
+        "TR6",
+        "TR8",
+        "TR9"
+      ],
+      "testCreateValueExistingFile": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR12",
+        "TR14",
+        "TR15"
+      ],
+      "testCreateValueExistingFile_nonExistingFile": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR12",
+        "TR14",
+        "TR15",
+        "TR48"
+      ],
+      "testCreateValueFile": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR12",
+        "TR13"
+      ],
+      "testCreateValueFiles": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR12",
+        "TR14",
+        "TR16",
+        "TR17"
+      ],
+      "testCreateValueInteger_failure": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR12",
+        "TR14",
+        "TR16",
+        "TR18",
+        "TR20"
+      ],
+      "testCreateValueNumber_Double": [
+        "TR6",
+        "TR7",
+        "TR32"
+      ],
+      "testCreateValueNumber_Long": [
+        "TR6",
+        "TR7",
+        "TR33"
+      ],
+      "testCreateValueNumber_noNumber": [
+        "TR6",
+        "TR7",
+        "TR33",
+        "TR34"
+      ],
+      "testCreateValueObject_InstantiableClass": [
+        "TR5",
+        "TR24",
+        "TR25"
+      ],
+      "testCreateValueObject_notInstantiableClass": [
+        "TR5",
+        "TR24",
+        "TR25"
+      ],
+      "testCreateValueObject_unknownClass": [
+        "TR5",
+        "TR24",
+        "TR25"
+      ],
+      "testCreateValueString": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR12",
+        "TR14",
+        "TR16",
+        "TR18",
+        "TR20"
+      ],
+      "testCreateValueURL": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR12",
+        "TR14",
+        "TR16",
+        "TR18",
+        "TR19"
+      ],
+      "testCreateValueURL_malformed": [
+        "TR6",
+        "TR8",
+        "TR10",
+        "TR12",
+        "TR14",
+        "TR16",
+        "TR18",
+        "TR19",
+        "TR43"
+      ]
+    }
+  }
+]

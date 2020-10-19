@@ -1,0 +1,302 @@
+[
+  {
+    "v1": {
+      "line": "52",
+      "statement": "Sigmoid ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "53",
+      "statement": "this(0, 1)"
+    }
+  },
+  {
+    "v3": {
+      "line": "62",
+      "statement": "Sigmoid (double lo,  double hi)"
+    }
+  },
+  {
+    "v4": {
+      "line": "64",
+      "statement": "this.lo = lo"
+    }
+  },
+  {
+    "v5": {
+      "line": "65",
+      "statement": "this.hi = hi"
+    }
+  },
+  {
+    "v6": {
+      "line": "72",
+      "statement": "UnivariateFunction derivative()"
+    }
+  },
+  {
+    "v7": {
+      "line": "73",
+      "statement": "return FunctionUtils.toDifferentiableUnivariateFunction(this).derivative()"
+    }
+  },
+  {
+    "v8": {
+      "line": "77",
+      "statement": "double value(double x)"
+    }
+  },
+  {
+    "v9": {
+      "line": "78",
+      "statement": "return value(x, lo, hi)"
+    }
+  },
+  {
+    "v10": {
+      "line": "101",
+      "statement": "double value(double x, double ... param)"
+    }
+  },
+  {
+    "v11": {
+      "line": "104",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v12": {
+      "line": "105",
+      "statement": "return Sigmoid.value(x, param[0], param[1])"
+    }
+  },
+  {
+    "v13": {
+      "line": "121",
+      "statement": "double[] gradient(double x, double ... param)"
+    }
+  },
+  {
+    "v14": {
+      "line": "124",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v15": {
+      "line": "126",
+      "statement": "final double invExp1 = 1 / (1 + FastMath.exp(-x))"
+    }
+  },
+  {
+    "v16": {
+      "line": "128",
+      "statement": "return new double[] { 1 - invExp1, invExp1 }"
+    }
+  },
+  {
+    "v17": {
+      "line": "141",
+      "statement": "void validateParameters(double[] param)"
+    }
+  },
+  {
+    "v18": {
+      "line": "144",
+      "statement": "if (param == null)"
+    }
+  },
+  {
+    "v19": {
+      "line": "145",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v21": {
+      "line": "147",
+      "statement": "if (param.length != 2)"
+    }
+  },
+  {
+    "v22": {
+      "line": "148",
+      "statement": "throw new DimensionMismatchException(param.length, 2)"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v24": {
+      "line": "159",
+      "statement": "double value(double x, double lo, double hi)"
+    }
+  },
+  {
+    "v25": {
+      "line": "162",
+      "statement": "return lo + (hi - lo) / (1 + FastMath.exp(-x))"
+    }
+  },
+  {
+    "v26": {
+      "line": "168",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v27": {
+      "line": "171",
+      "statement": "double[] f = new double[t.getOrder() + 1"
+    }
+  },
+  {
+    "v28": {
+      "line": "172",
+      "statement": "final double exp = FastMath.exp(-t.getValue())"
+    }
+  },
+  {
+    "v29": {
+      "line": "173",
+      "statement": "if (Double.isInfinite(exp))"
+    }
+  },
+  {
+    "v30": {
+      "line": "176",
+      "statement": "f[0] = lo"
+    }
+  },
+  {
+    "v31": {
+      "line": "177",
+      "statement": "Arrays.fill(f, 1, f.length, 0.0)"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v33": {
+      "line": "187",
+      "statement": "final double[] p = new double[f.length"
+    }
+  },
+  {
+    "v34": {
+      "line": "189",
+      "statement": "final double inv = 1 / (1 + exp)"
+    }
+  },
+  {
+    "v35": {
+      "line": "190",
+      "statement": "double coeff = hi - lo"
+    }
+  },
+  {
+    "v36": {
+      "line": "191",
+      "statement": "for (  int n = 0 ; n < f.length ;   ++n)"
+    }
+  },
+  {
+    "v39": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v40": {
+      "line": "194",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v41": {
+      "line": "195",
+      "statement": "p[n] = 1"
+    }
+  },
+  {
+    "v42": {
+      "line": "196",
+      "statement": "for (  int k = n ; k >= 0 ;   --k)"
+    }
+  },
+  {
+    "v45": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v46": {
+      "line": "197",
+      "statement": "v = v * exp + p[k"
+    }
+  },
+  {
+    "v47": {
+      "line": "198",
+      "statement": "if (k > 1)"
+    }
+  },
+  {
+    "v48": {
+      "line": "199",
+      "statement": "p[k - 1] = (n - k + 2) * p[k - 2] - (k - 1) * p[k - 1"
+    }
+  },
+  {
+    "v49": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v50": {
+      "line": "201",
+      "statement": "p[0] = 0"
+    }
+  },
+  {
+    "v51": {
+      "line": "205",
+      "statement": "coeff *= inv"
+    }
+  },
+  {
+    "v52": {
+      "line": "206",
+      "statement": "f[n] = coeff * v"
+    }
+  },
+  {
+    "v53": {
+      "line": "211",
+      "statement": "f[0] += lo"
+    }
+  },
+  {
+    "v54": {
+      "line": "215",
+      "statement": "return t.compose(f)"
+    }
+  }
+]

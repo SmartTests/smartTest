@@ -1,0 +1,179 @@
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/DSCompilerTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of DSCompiler
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/DerivativeStructureTestIT.java
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M4:test (default-test) on project commons-math4: No tests were executed!  (Set -DfailIfNoTests=false to ignore this error.) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+RUNNING TEST testLog1pExpm1
+RUNNING TEST testRemainder
+RUNNING TEST testTangentDefinition
+RUNNING TEST testSubtract
+RUNNING TEST testCompose
+RUNNING TEST testTanAtan
+RUNNING TEST testHypotDefinition
+RUNNING TEST testAtan2
+RUNNING TEST testLog1pDefinition
+RUNNING TEST testTanhDefinition
+RUNNING TEST testCeilFloorRintLong
+RUNNING TEST testLog10Power
+RUNNING TEST testLogExp
+RUNNING TEST testTanhAtanh
+RUNNING TEST testOneOrderConstructor
+RUNNING TEST testCoshDefinition
+RUNNING TEST testCosAcos
+RUNNING TEST testLog10Definition
+RUNNING TEST testSqrtPow2
+RUNNING TEST testCbrtPow3
+RUNNING TEST testSinAsin
+RUNNING TEST testSinhAsinh
+RUNNING TEST testCbrtDefinition
+RUNNING TEST testPowReciprocalPow
+RUNNING TEST build
+RUNNING TEST testPrimitiveRemainder
+RUNNING TEST testExpm1Definition
+RUNNING TEST testDegRad
+RUNNING TEST testSqrtDefinition
+RUNNING TEST testSinhDefinition
+RUNNING TEST testCoshAcosh
+==============================
+SOURCE CODE STATUS
+==============================
+LINE {'326'} DELETED IN NEW VERSION OF DerivativeStructure
+==============================
+TEST CODE STATUS
+==============================
+==============================
+Affected Requirements
+==============================
+TR44
+TR45
+==============================
+Affected Tests
+==============================
+Rerun test:------> build to check requirement  {'TR45'}
+Rerun test:------> testAtan2 to check requirement  {'TR45'}
+Rerun test:------> testCbrtDefinition to check requirement  {'TR45'}
+Rerun test:------> testCbrtPow3 to check requirement  {'TR45'}
+Rerun test:------> testCeilFloorRintLong to check requirement  {'TR45'}
+Rerun test:------> testCompose to check requirement  {'TR45'}
+Rerun test:------> testCosAcos to check requirement  {'TR45'}
+Rerun test:------> testCoshAcosh to check requirement  {'TR45'}
+Rerun test:------> testCoshDefinition to check requirement  {'TR45'}
+Rerun test:------> testDegRad to check requirement  {'TR45'}
+Rerun test:------> testExpm1Definition to check requirement  {'TR45'}
+Rerun test:------> testHypotDefinition to check requirement  {'TR45'}
+Rerun test:------> testLog10Definition to check requirement  {'TR45'}
+Rerun test:------> testLog10Power to check requirement  {'TR45'}
+Rerun test:------> testLog1pDefinition to check requirement  {'TR45'}
+Rerun test:------> testLog1pExpm1 to check requirement  {'TR45'}
+Rerun test:------> testLogExp to check requirement  {'TR45'}
+Rerun test:------> testOneOrderConstructor to check requirement  {'TR45'}
+Rerun test:------> testPowReciprocalPow to check requirement  {'TR45'}
+Rerun test:------> testPrimitiveRemainder to check requirement  {'TR45'}
+Rerun test:------> testRemainder to check requirement  {'TR45'}
+Rerun test:------> testSinAsin to check requirement  {'TR45'}
+Rerun test:------> testSinhAsinh to check requirement  {'TR45'}
+Rerun test:------> testSinhDefinition to check requirement  {'TR45'}
+Rerun test:------> testSqrtDefinition to check requirement  {'TR45'}
+Rerun test:------> testSqrtPow2 to check requirement  {'TR45'}
+Rerun test:------> testSubtract to check requirement  {'TR45'}
+Rerun test:------> testTanAtan to check requirement  {'TR45'}
+Rerun test:------> testTangentDefinition to check requirement  {'TR45'}
+Rerun test:------> testTanhAtanh to check requirement  {'TR45'}
+Rerun test:------> testTanhDefinition to check requirement  {'TR45'}
+==============================
+Minimal Tests Re-ran
+==============================
+Reran test:------> testLog1pExpm1
+Reran test:------> testRemainder
+Reran test:------> testTangentDefinition
+Reran test:------> testSubtract
+Reran test:------> testCompose
+Reran test:------> testTanAtan
+Reran test:------> testHypotDefinition
+Reran test:------> testAtan2
+Reran test:------> testLog1pDefinition
+Reran test:------> testTanhDefinition
+Reran test:------> testCeilFloorRintLong
+Reran test:------> testLog10Power
+Reran test:------> testLogExp
+Reran test:------> testTanhAtanh
+Reran test:------> testOneOrderConstructor
+Reran test:------> testCoshDefinition
+Reran test:------> testCosAcos
+Reran test:------> testLog10Definition
+Reran test:------> testSqrtPow2
+Reran test:------> testCbrtPow3
+Reran test:------> testSinAsin
+Reran test:------> testSinhAsinh
+Reran test:------> testCbrtDefinition
+Reran test:------> testPowReciprocalPow
+Reran test:------> build
+Reran test:------> testPrimitiveRemainder
+Reran test:------> testExpm1Definition
+Reran test:------> testDegRad
+Reran test:------> testSqrtDefinition
+Reran test:------> testSinhDefinition
+Reran test:------> testCoshAcosh
+==============================
+Unsatisfied Test Requirements
+==============================
+Write new test for  TR44 . No tests satisfy it!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/FiniteDifferencesDifferentiatorTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of FiniteDifferencesDifferentiator
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/GradientFunctionTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of GradientFunction
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/JacobianFunctionTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of JacobianFunction
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/SparseGradientTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of SparseGradient
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete

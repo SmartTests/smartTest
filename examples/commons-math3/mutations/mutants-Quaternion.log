@@ -1,0 +1,444 @@
+1:LVR:POS:0:org.apache.commons.math3.complex.Quaternion:39:1 |==> 0
+2:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion:39:1 |==> -1
+3:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:39:0 |==> 1
+4:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:39:0 |==> -1
+5:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:39:0 |==> 1
+6:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:39:0 |==> -1
+7:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:39:0 |==> 1
+8:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:39:0 |==> -1
+9:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:41:0 |==> 1
+10:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:41:0 |==> -1
+11:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:41:0 |==> 1
+12:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:41:0 |==> -1
+13:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:41:0 |==> 1
+14:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:41:0 |==> -1
+15:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:41:0 |==> 1
+16:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:41:0 |==> -1
+17:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:43:0 |==> 1
+18:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:43:0 |==> -1
+19:LVR:POS:0:org.apache.commons.math3.complex.Quaternion:43:1 |==> 0
+20:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion:43:1 |==> -1
+21:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:43:0 |==> 1
+22:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:43:0 |==> -1
+23:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:43:0 |==> 1
+24:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:43:0 |==> -1
+25:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:45:0 |==> 1
+26:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:45:0 |==> -1
+27:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:45:0 |==> 1
+28:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:45:0 |==> -1
+29:LVR:POS:0:org.apache.commons.math3.complex.Quaternion:45:1 |==> 0
+30:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion:45:1 |==> -1
+31:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:45:0 |==> 1
+32:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:45:0 |==> -1
+33:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:47:0 |==> 1
+34:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:47:0 |==> -1
+35:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:47:0 |==> 1
+36:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:47:0 |==> -1
+37:LVR:0:POS:org.apache.commons.math3.complex.Quaternion:47:0 |==> 1
+38:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion:47:0 |==> -1
+39:LVR:POS:0:org.apache.commons.math3.complex.Quaternion:47:1 |==> 0
+40:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion:47:1 |==> -1
+41:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@<init>(double,double,double,double):73:a |==> 0.0
+42:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@<init>(double,double,double,double):74:b |==> 0.0
+43:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@<init>(double,double,double,double):75:c |==> 0.0
+44:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@<init>(double,double,double,double):76:d |==> 0.0
+45:LVR:POS:0:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):90:3 |==> 0
+46:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):90:3 |==> -3
+47:ROR:!=(int,int):<(int,int):org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):90:v.length != 3 |==> v.length < 3
+48:ROR:!=(int,int):>(int,int):org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):90:v.length != 3 |==> v.length > 3
+49:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):90:v.length != 3 |==> true
+50:LVR:POS:0:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):91:3 |==> 0
+51:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):91:3 |==> -3
+52:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):93:scalar |==> 0.0
+53:LVR:0:POS:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):94:0 |==> 1
+54:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):94:0 |==> -1
+55:LVR:POS:0:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):95:1 |==> 0
+56:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):95:1 |==> -1
+57:LVR:POS:0:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):96:2 |==> 0
+58:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion@<init>(double,double[]):96:2 |==> -2
+59:LVR:0:POS:org.apache.commons.math3.complex.Quaternion@<init>(double[]):106:0 |==> 1
+60:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion@<init>(double[]):106:0 |==> -1
+61:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getConjugate():115:-q1 |==> +q1
+62:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getConjugate():115:-q2 |==> +q2
+63:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getConjugate():115:-q3 |==> +q3
+64:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):127:q1.getQ0() |==> 0.0
+65:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):128:q1.getQ1() |==> 0.0
+66:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):129:q1.getQ2() |==> 0.0
+67:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):130:q1.getQ3() |==> 0.0
+68:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):133:q2.getQ0() |==> 0.0
+69:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):134:q2.getQ1() |==> 0.0
+70:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):135:q2.getQ2() |==> 0.0
+71:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):136:q2.getQ3() |==> 0.0
+72:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a |==> q1a % q2a
+73:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a |==> q1a + q2a
+74:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a |==> q1a - q2a
+75:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a |==> q1a / q2a
+76:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1b * q2b |==> q1b % q2b
+77:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1b * q2b |==> q1b + q2b
+78:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1b * q2b |==> q1b - q2b
+79:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1b * q2b |==> q1b / q2b
+80:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b |==> q1a * q2a % (q1b * q2b)
+81:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b |==> q1a * q2a * (q1b * q2b)
+82:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b |==> q1a * q2a + q1b * q2b
+83:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b |==> q1a * q2a / (q1b * q2b)
+84:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1c * q2c |==> q1c % q2c
+85:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1c * q2c |==> q1c + q2c
+86:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1c * q2c |==> q1c - q2c
+87:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1c * q2c |==> q1c / q2c
+88:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b - q1c * q2c |==> (q1a * q2a - q1b * q2b) % (q1c * q2c)
+89:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b - q1c * q2c |==> (q1a * q2a - q1b * q2b) * (q1c * q2c)
+90:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b - q1c * q2c |==> q1a * q2a - q1b * q2b + q1c * q2c
+91:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b - q1c * q2c |==> (q1a * q2a - q1b * q2b) / (q1c * q2c)
+92:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1d * q2d |==> q1d % q2d
+93:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1d * q2d |==> q1d + q2d
+94:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1d * q2d |==> q1d - q2d
+95:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1d * q2d |==> q1d / q2d
+96:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b - q1c * q2c - q1d * q2d |==> (q1a * q2a - q1b * q2b - q1c * q2c) % (q1d * q2d)
+97:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b - q1c * q2c - q1d * q2d |==> (q1a * q2a - q1b * q2b - q1c * q2c) * (q1d * q2d)
+98:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b - q1c * q2c - q1d * q2d |==> q1a * q2a - q1b * q2b - q1c * q2c + q1d * q2d
+99:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):139:q1a * q2a - q1b * q2b - q1c * q2c - q1d * q2d |==> (q1a * q2a - q1b * q2b - q1c * q2c) / (q1d * q2d)
+100:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b |==> q1a % q2b
+101:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b |==> q1a + q2b
+102:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b |==> q1a - q2b
+103:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b |==> q1a / q2b
+104:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1b * q2a |==> q1b % q2a
+105:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1b * q2a |==> q1b + q2a
+106:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1b * q2a |==> q1b - q2a
+107:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1b * q2a |==> q1b / q2a
+108:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a |==> q1a * q2b % (q1b * q2a)
+109:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a |==> q1a * q2b * (q1b * q2a)
+110:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a |==> q1a * q2b - q1b * q2a
+111:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a |==> q1a * q2b / (q1b * q2a)
+112:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1c * q2d |==> q1c % q2d
+113:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1c * q2d |==> q1c + q2d
+114:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1c * q2d |==> q1c - q2d
+115:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1c * q2d |==> q1c / q2d
+116:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a + q1c * q2d |==> (q1a * q2b + q1b * q2a) % (q1c * q2d)
+117:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a + q1c * q2d |==> (q1a * q2b + q1b * q2a) * (q1c * q2d)
+118:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a + q1c * q2d |==> q1a * q2b + q1b * q2a - q1c * q2d
+119:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a + q1c * q2d |==> (q1a * q2b + q1b * q2a) / (q1c * q2d)
+120:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1d * q2c |==> q1d % q2c
+121:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1d * q2c |==> q1d + q2c
+122:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1d * q2c |==> q1d - q2c
+123:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1d * q2c |==> q1d / q2c
+124:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a + q1c * q2d - q1d * q2c |==> (q1a * q2b + q1b * q2a + q1c * q2d) % (q1d * q2c)
+125:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a + q1c * q2d - q1d * q2c |==> (q1a * q2b + q1b * q2a + q1c * q2d) * (q1d * q2c)
+126:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a + q1c * q2d - q1d * q2c |==> q1a * q2b + q1b * q2a + q1c * q2d + q1d * q2c
+127:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):140:q1a * q2b + q1b * q2a + q1c * q2d - q1d * q2c |==> (q1a * q2b + q1b * q2a + q1c * q2d) / (q1d * q2c)
+128:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c |==> q1a % q2c
+129:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c |==> q1a + q2c
+130:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c |==> q1a - q2c
+131:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c |==> q1a / q2c
+132:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1b * q2d |==> q1b % q2d
+133:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1b * q2d |==> q1b + q2d
+134:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1b * q2d |==> q1b - q2d
+135:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1b * q2d |==> q1b / q2d
+136:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d |==> q1a * q2c % (q1b * q2d)
+137:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d |==> q1a * q2c * (q1b * q2d)
+138:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d |==> q1a * q2c + q1b * q2d
+139:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d |==> q1a * q2c / (q1b * q2d)
+140:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1c * q2a |==> q1c % q2a
+141:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1c * q2a |==> q1c + q2a
+142:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1c * q2a |==> q1c - q2a
+143:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1c * q2a |==> q1c / q2a
+144:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d + q1c * q2a |==> (q1a * q2c - q1b * q2d) % (q1c * q2a)
+145:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d + q1c * q2a |==> (q1a * q2c - q1b * q2d) * (q1c * q2a)
+146:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d + q1c * q2a |==> q1a * q2c - q1b * q2d - q1c * q2a
+147:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d + q1c * q2a |==> (q1a * q2c - q1b * q2d) / (q1c * q2a)
+148:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1d * q2b |==> q1d % q2b
+149:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1d * q2b |==> q1d + q2b
+150:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1d * q2b |==> q1d - q2b
+151:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1d * q2b |==> q1d / q2b
+152:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d + q1c * q2a + q1d * q2b |==> (q1a * q2c - q1b * q2d + q1c * q2a) % (q1d * q2b)
+153:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d + q1c * q2a + q1d * q2b |==> (q1a * q2c - q1b * q2d + q1c * q2a) * (q1d * q2b)
+154:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d + q1c * q2a + q1d * q2b |==> q1a * q2c - q1b * q2d + q1c * q2a - q1d * q2b
+155:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):141:q1a * q2c - q1b * q2d + q1c * q2a + q1d * q2b |==> (q1a * q2c - q1b * q2d + q1c * q2a) / (q1d * q2b)
+156:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d |==> q1a % q2d
+157:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d |==> q1a + q2d
+158:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d |==> q1a - q2d
+159:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d |==> q1a / q2d
+160:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1b * q2c |==> q1b % q2c
+161:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1b * q2c |==> q1b + q2c
+162:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1b * q2c |==> q1b - q2c
+163:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1b * q2c |==> q1b / q2c
+164:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c |==> q1a * q2d % (q1b * q2c)
+165:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c |==> q1a * q2d * (q1b * q2c)
+166:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c |==> q1a * q2d - q1b * q2c
+167:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c |==> q1a * q2d / (q1b * q2c)
+168:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1c * q2b |==> q1c % q2b
+169:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1c * q2b |==> q1c + q2b
+170:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1c * q2b |==> q1c - q2b
+171:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1c * q2b |==> q1c / q2b
+172:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c - q1c * q2b |==> (q1a * q2d + q1b * q2c) % (q1c * q2b)
+173:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c - q1c * q2b |==> (q1a * q2d + q1b * q2c) * (q1c * q2b)
+174:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c - q1c * q2b |==> q1a * q2d + q1b * q2c + q1c * q2b
+175:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c - q1c * q2b |==> (q1a * q2d + q1b * q2c) / (q1c * q2b)
+176:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1d * q2a |==> q1d % q2a
+177:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1d * q2a |==> q1d + q2a
+178:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1d * q2a |==> q1d - q2a
+179:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1d * q2a |==> q1d / q2a
+180:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c - q1c * q2b + q1d * q2a |==> (q1a * q2d + q1b * q2c - q1c * q2b) % (q1d * q2a)
+181:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c - q1c * q2b + q1d * q2a |==> (q1a * q2d + q1b * q2c - q1c * q2b) * (q1d * q2a)
+182:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c - q1c * q2b + q1d * q2a |==> q1a * q2d + q1b * q2c - q1c * q2b - q1d * q2a
+183:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):142:q1a * q2d + q1b * q2c - q1c * q2b + q1d * q2a |==> (q1a * q2d + q1b * q2c - q1c * q2b) / (q1d * q2a)
+184:EVR:<NEW_CLASS(org.apache.commons.math3.complex.Quaternion)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):144:new Quaternion(w, x, y, z) |==> null
+185:EVR:<METHOD_INVOCATION(org.apache.commons.math3.complex.Quaternion)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@multiply(org.apache.commons.math3.complex.Quaternion):154:multiply(this, q) |==> null
+186:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):166:q1.getQ0() + q2.getQ0() |==> q1.getQ0() % q2.getQ0()
+187:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):166:q1.getQ0() + q2.getQ0() |==> q1.getQ0() * q2.getQ0()
+188:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):166:q1.getQ0() + q2.getQ0() |==> q1.getQ0() - q2.getQ0()
+189:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):166:q1.getQ0() + q2.getQ0() |==> q1.getQ0() / q2.getQ0()
+190:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):167:q1.getQ1() + q2.getQ1() |==> q1.getQ1() % q2.getQ1()
+191:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):167:q1.getQ1() + q2.getQ1() |==> q1.getQ1() * q2.getQ1()
+192:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):167:q1.getQ1() + q2.getQ1() |==> q1.getQ1() - q2.getQ1()
+193:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):167:q1.getQ1() + q2.getQ1() |==> q1.getQ1() / q2.getQ1()
+194:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):168:q1.getQ2() + q2.getQ2() |==> q1.getQ2() % q2.getQ2()
+195:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):168:q1.getQ2() + q2.getQ2() |==> q1.getQ2() * q2.getQ2()
+196:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):168:q1.getQ2() + q2.getQ2() |==> q1.getQ2() - q2.getQ2()
+197:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):168:q1.getQ2() + q2.getQ2() |==> q1.getQ2() / q2.getQ2()
+198:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):169:q1.getQ3() + q2.getQ3() |==> q1.getQ3() % q2.getQ3()
+199:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):169:q1.getQ3() + q2.getQ3() |==> q1.getQ3() * q2.getQ3()
+200:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):169:q1.getQ3() + q2.getQ3() |==> q1.getQ3() - q2.getQ3()
+201:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):169:q1.getQ3() + q2.getQ3() |==> q1.getQ3() / q2.getQ3()
+202:EVR:<METHOD_INVOCATION(org.apache.commons.math3.complex.Quaternion)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@add(org.apache.commons.math3.complex.Quaternion):179:add(this, q) |==> null
+203:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):191:q1.getQ0() - q2.getQ0() |==> q1.getQ0() % q2.getQ0()
+204:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):191:q1.getQ0() - q2.getQ0() |==> q1.getQ0() * q2.getQ0()
+205:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):191:q1.getQ0() - q2.getQ0() |==> q1.getQ0() + q2.getQ0()
+206:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):191:q1.getQ0() - q2.getQ0() |==> q1.getQ0() / q2.getQ0()
+207:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):192:q1.getQ1() - q2.getQ1() |==> q1.getQ1() % q2.getQ1()
+208:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):192:q1.getQ1() - q2.getQ1() |==> q1.getQ1() * q2.getQ1()
+209:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):192:q1.getQ1() - q2.getQ1() |==> q1.getQ1() + q2.getQ1()
+210:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):192:q1.getQ1() - q2.getQ1() |==> q1.getQ1() / q2.getQ1()
+211:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):193:q1.getQ2() - q2.getQ2() |==> q1.getQ2() % q2.getQ2()
+212:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):193:q1.getQ2() - q2.getQ2() |==> q1.getQ2() * q2.getQ2()
+213:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):193:q1.getQ2() - q2.getQ2() |==> q1.getQ2() + q2.getQ2()
+214:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):193:q1.getQ2() - q2.getQ2() |==> q1.getQ2() / q2.getQ2()
+215:AOR:-(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):194:q1.getQ3() - q2.getQ3() |==> q1.getQ3() % q2.getQ3()
+216:AOR:-(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):194:q1.getQ3() - q2.getQ3() |==> q1.getQ3() * q2.getQ3()
+217:AOR:-(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):194:q1.getQ3() - q2.getQ3() |==> q1.getQ3() + q2.getQ3()
+218:AOR:-(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):194:q1.getQ3() - q2.getQ3() |==> q1.getQ3() / q2.getQ3()
+219:EVR:<METHOD_INVOCATION(org.apache.commons.math3.complex.Quaternion)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@subtract(org.apache.commons.math3.complex.Quaternion):204:subtract(this, q) |==> null
+220:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() |==> q1.getQ0() % q2.getQ0()
+221:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() |==> q1.getQ0() + q2.getQ0()
+222:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() |==> q1.getQ0() - q2.getQ0()
+223:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() |==> q1.getQ0() / q2.getQ0()
+224:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):217:q1.getQ1() * q2.getQ1() |==> q1.getQ1() % q2.getQ1()
+225:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):217:q1.getQ1() * q2.getQ1() |==> q1.getQ1() + q2.getQ1()
+226:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):217:q1.getQ1() * q2.getQ1() |==> q1.getQ1() - q2.getQ1()
+227:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):217:q1.getQ1() * q2.getQ1() |==> q1.getQ1() / q2.getQ1()
+228:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() |==> q1.getQ0() * q2.getQ0() % (q1.getQ1() * q2.getQ1())
+229:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() |==> q1.getQ0() * q2.getQ0() * (q1.getQ1() * q2.getQ1())
+230:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() |==> q1.getQ0() * q2.getQ0() - q1.getQ1() * q2.getQ1()
+231:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() |==> q1.getQ0() * q2.getQ0() / (q1.getQ1() * q2.getQ1())
+232:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):218:q1.getQ2() * q2.getQ2() |==> q1.getQ2() % q2.getQ2()
+233:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):218:q1.getQ2() * q2.getQ2() |==> q1.getQ2() + q2.getQ2()
+234:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):218:q1.getQ2() * q2.getQ2() |==> q1.getQ2() - q2.getQ2()
+235:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):218:q1.getQ2() * q2.getQ2() |==> q1.getQ2() / q2.getQ2()
+236:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() |==> (q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1()) % (q1.getQ2() * q2.getQ2())
+237:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() |==> (q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1()) * (q1.getQ2() * q2.getQ2())
+238:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() |==> q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() - q1.getQ2() * q2.getQ2()
+239:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() |==> (q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1()) / (q1.getQ2() * q2.getQ2())
+240:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):219:q1.getQ3() * q2.getQ3() |==> q1.getQ3() % q2.getQ3()
+241:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):219:q1.getQ3() * q2.getQ3() |==> q1.getQ3() + q2.getQ3()
+242:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):219:q1.getQ3() * q2.getQ3() |==> q1.getQ3() - q2.getQ3()
+243:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):219:q1.getQ3() * q2.getQ3() |==> q1.getQ3() / q2.getQ3()
+244:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() + q1.getQ3() * q2.getQ3() |==> (q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2()) % (q1.getQ3() * q2.getQ3())
+245:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() + q1.getQ3() * q2.getQ3() |==> (q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2()) * (q1.getQ3() * q2.getQ3())
+246:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() + q1.getQ3() * q2.getQ3() |==> q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() - q1.getQ3() * q2.getQ3()
+247:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion,org.apache.commons.math3.complex.Quaternion):216:q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() + q1.getQ3() * q2.getQ3() |==> (q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2()) / (q1.getQ3() * q2.getQ3())
+248:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@dotProduct(org.apache.commons.math3.complex.Quaternion):229:dotProduct(this, q) |==> 0.0
+249:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 |==> q0 % q0
+250:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 |==> q0 + q0
+251:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 |==> q0 - q0
+252:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 |==> q0 / q0
+253:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():239:q1 * q1 |==> q1 % q1
+254:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():239:q1 * q1 |==> q1 + q1
+255:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():239:q1 * q1 |==> q1 - q1
+256:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():239:q1 * q1 |==> q1 / q1
+257:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 |==> q0 * q0 % (q1 * q1)
+258:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 |==> q0 * q0 * (q1 * q1)
+259:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 |==> q0 * q0 - q1 * q1
+260:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 |==> q0 * q0 / (q1 * q1)
+261:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():240:q2 * q2 |==> q2 % q2
+262:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():240:q2 * q2 |==> q2 + q2
+263:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():240:q2 * q2 |==> q2 - q2
+264:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():240:q2 * q2 |==> q2 / q2
+265:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 + q2 * q2 |==> (q0 * q0 + q1 * q1) % (q2 * q2)
+266:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 + q2 * q2 |==> (q0 * q0 + q1 * q1) * (q2 * q2)
+267:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 + q2 * q2 |==> q0 * q0 + q1 * q1 - q2 * q2
+268:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 + q2 * q2 |==> (q0 * q0 + q1 * q1) / (q2 * q2)
+269:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():241:q3 * q3 |==> q3 % q3
+270:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():241:q3 * q3 |==> q3 + q3
+271:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():241:q3 * q3 |==> q3 - q3
+272:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():241:q3 * q3 |==> q3 / q3
+273:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 |==> (q0 * q0 + q1 * q1 + q2 * q2) % (q3 * q3)
+274:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 |==> (q0 * q0 + q1 * q1 + q2 * q2) * (q3 * q3)
+275:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 |==> q0 * q0 + q1 * q1 + q2 * q2 - q3 * q3
+276:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getNorm():238:q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 |==> (q0 * q0 + q1 * q1 + q2 * q2) / (q3 * q3)
+277:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@normalize():252:getNorm() |==> 0.0
+278:ROR:<(double,double):!=(double,double):org.apache.commons.math3.complex.Quaternion@normalize():254:norm < Precision.SAFE_MIN |==> norm != Precision.SAFE_MIN
+279:ROR:<(double,double):<=(double,double):org.apache.commons.math3.complex.Quaternion@normalize():254:norm < Precision.SAFE_MIN |==> norm <= Precision.SAFE_MIN
+280:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.complex.Quaternion@normalize():254:norm < Precision.SAFE_MIN |==> false
+281:AOR:/(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@normalize():258:q0 / norm |==> q0 % norm
+282:AOR:/(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@normalize():258:q0 / norm |==> q0 * norm
+283:AOR:/(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@normalize():258:q0 / norm |==> q0 + norm
+284:AOR:/(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@normalize():258:q0 / norm |==> q0 - norm
+285:AOR:/(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@normalize():259:q1 / norm |==> q1 % norm
+286:AOR:/(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@normalize():259:q1 / norm |==> q1 * norm
+287:AOR:/(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@normalize():259:q1 / norm |==> q1 + norm
+288:AOR:/(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@normalize():259:q1 / norm |==> q1 - norm
+289:AOR:/(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@normalize():260:q2 / norm |==> q2 % norm
+290:AOR:/(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@normalize():260:q2 / norm |==> q2 * norm
+291:AOR:/(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@normalize():260:q2 / norm |==> q2 + norm
+292:AOR:/(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@normalize():260:q2 / norm |==> q2 - norm
+293:AOR:/(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@normalize():261:q3 / norm |==> q3 % norm
+294:AOR:/(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@normalize():261:q3 / norm |==> q3 * norm
+295:AOR:/(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@normalize():261:q3 / norm |==> q3 + norm
+296:AOR:/(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@normalize():261:q3 / norm |==> q3 - norm
+297:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):269:this == other |==> false
+298:LVR:TRUE:FALSE:org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):270:true |==> false
+299:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):270:return Config.__M_NO == 0 && Config.COVERED(298, 298) ? true : Config.__M_NO == 298 ? false : true; |==> <NO-OP>
+300:EVR:<TYPE_CAST(org.apache.commons.math3.complex.Quaternion)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):273:(Quaternion)other |==> null
+301:ROR:==(double,double):<=(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() |==> q0 <= q.getQ0()
+302:ROR:==(double,double):>=(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() |==> q0 >= q.getQ0()
+303:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() |==> false
+304:ROR:==(double,double):<=(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):275:q1 == q.getQ1() |==> q1 <= q.getQ1()
+305:ROR:==(double,double):>=(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):275:q1 == q.getQ1() |==> q1 >= q.getQ1()
+306:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):275:q1 == q.getQ1() |==> false
+307:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() && q1 == q.getQ1() |==> q0 == q.getQ0() == (q1 == q.getQ1())
+308:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() && q1 == q.getQ1() |==> false
+309:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() && q1 == q.getQ1() |==> q0 == q.getQ0()
+310:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):275:q0 == q.getQ0() && q1 == q.getQ1() |==> q1 == q.getQ1()
+311:ROR:==(double,double):<=(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):276:q2 == q.getQ2() |==> q2 <= q.getQ2()
+312:ROR:==(double,double):>=(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):276:q2 == q.getQ2() |==> q2 >= q.getQ2()
+313:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):276:q2 == q.getQ2() |==> false
+314:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() |==> (q0 == q.getQ0() && q1 == q.getQ1()) == (q2 == q.getQ2())
+315:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):275:q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() |==> false
+316:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() |==> q0 == q.getQ0() && q1 == q.getQ1()
+317:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):276:q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() |==> q2 == q.getQ2()
+318:ROR:==(double,double):<=(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):277:q3 == q.getQ3() |==> q3 <= q.getQ3()
+319:ROR:==(double,double):>=(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):277:q3 == q.getQ3() |==> q3 >= q.getQ3()
+320:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):277:q3 == q.getQ3() |==> false
+321:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() && q3 == q.getQ3() |==> (q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2()) == (q3 == q.getQ3())
+322:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):276:q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() && q3 == q.getQ3() |==> false
+323:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() && q3 == q.getQ3() |==> q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2()
+324:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):277:q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() && q3 == q.getQ3() |==> q3 == q.getQ3()
+325:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):274:return Config.__M_NO == 324 ? q3 == q.getQ3() : Config.__M_NO == 323 ? q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() : Config.__M_NO == 322 ? false : Config.__M_NO == 321 ? (q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2()) == (q3 == q.getQ3()) : Config.__M_NO == 0 && Config.COVERED(321, 324) ? q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() && q3 == q.getQ3() : (Config.__M_NO == 317 ? q2 == q.getQ2() : Config.__M_NO == 316 ? q0 == q.getQ0() && q1 == q.getQ1() : Config.__M_NO == 315 ? false : Config.__M_NO == 314 ? (q0 == q.getQ0() && q1 == q.getQ1()) == (q2 == q.getQ2()) : Config.__M_NO == 0 && Config.COVERED(314, 317) ? q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() : (Config.__M_NO == 310 ? q1 == q.getQ1() : Config.__M_NO == 309 ? q0 == q.getQ0() : Config.__M_NO == 308 ? false : Config.__M_NO == 307 ? q0 == q.getQ0() == (q1 == q.getQ1()) : Config.__M_NO == 0 && Config.COVERED(307, 310) ? q0 == q.getQ0() && q1 == q.getQ1() : (Config.__M_NO == 303 ? false : Config.__M_NO == 302 ? q0 >= q.getQ0() : Config.__M_NO == 301 ? q0 <= q.getQ0() : Config.__M_NO == 0 && Config.COVERED(301, 303) ? q0 == q.getQ0() : q0 == q.getQ0()) && (Config.__M_NO == 306 ? false : Config.__M_NO == 305 ? q1 >= q.getQ1() : Config.__M_NO == 304 ? q1 <= q.getQ1() : Config.__M_NO == 0 && Config.COVERED(304, 306) ? q1 == q.getQ1() : q1 == q.getQ1())) && (Config.__M_NO == 313 ? false : Config.__M_NO == 312 ? q2 >= q.getQ2() : Config.__M_NO == 311 ? q2 <= q.getQ2() : Config.__M_NO == 0 && Config.COVERED(311, 313) ? q2 == q.getQ2() : q2 == q.getQ2())) && (Config.__M_NO == 320 ? false : Config.__M_NO == 319 ? q3 >= q.getQ3() : Config.__M_NO == 318 ? q3 <= q.getQ3() : Config.__M_NO == 0 && Config.COVERED(318, 320) ? q3 == q.getQ3() : q3 == q.getQ3()); |==> <NO-OP>
+326:LVR:FALSE:TRUE:org.apache.commons.math3.complex.Quaternion@equals(java.lang.Object):280:false |==> true
+327:LVR:POS:0:org.apache.commons.math3.complex.Quaternion@hashCode():289:17 |==> 0
+328:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion@hashCode():289:17 |==> -17
+329:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@hashCode():291:MathUtils.hash(comp) |==> 0
+330:LVR:POS:0:org.apache.commons.math3.complex.Quaternion@hashCode():292:31 |==> 0
+331:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion@hashCode():292:31 |==> -31
+332:AOR:*(int,int):%(int,int):org.apache.commons.math3.complex.Quaternion@hashCode():292:31 * result |==> 31 % result
+333:AOR:*(int,int):+(int,int):org.apache.commons.math3.complex.Quaternion@hashCode():292:31 * result |==> 31 + result
+334:AOR:*(int,int):-(int,int):org.apache.commons.math3.complex.Quaternion@hashCode():292:31 * result |==> 31 - result
+335:AOR:*(int,int):/(int,int):org.apache.commons.math3.complex.Quaternion@hashCode():292:31 * result |==> 31 / result
+336:AOR:+(int,int):%(int,int):org.apache.commons.math3.complex.Quaternion@hashCode():292:31 * result + c |==> 31 * result % c
+337:AOR:+(int,int):*(int,int):org.apache.commons.math3.complex.Quaternion@hashCode():292:31 * result + c |==> 31 * result * c
+338:AOR:+(int,int):-(int,int):org.apache.commons.math3.complex.Quaternion@hashCode():292:31 * result + c |==> 31 * result - c
+339:AOR:+(int,int):/(int,int):org.apache.commons.math3.complex.Quaternion@hashCode():292:31 * result + c |==> 31 * result / c
+340:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.complex.Quaternion@hashCode():292:result = 31 * result + c |==> <NO-OP>
+341:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@hashCode():294:result |==> 0
+342:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):308:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) |==> Precision.equals(q0, q.getQ0(), eps) == Precision.equals(q1, q.getQ1(), eps)
+343:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):308:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) |==> false
+344:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):308:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) |==> Precision.equals(q0, q.getQ0(), eps)
+345:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):309:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) |==> Precision.equals(q1, q.getQ1(), eps)
+346:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):308:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps) |==> (Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps)) == Precision.equals(q2, q.getQ2(), eps)
+347:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):309:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps) |==> false
+348:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):308:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps) |==> Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps)
+349:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):310:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps) |==> Precision.equals(q2, q.getQ2(), eps)
+350:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):308:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps) && Precision.equals(q3, q.getQ3(), eps) |==> (Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps)) == Precision.equals(q3, q.getQ3(), eps)
+351:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):310:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps) && Precision.equals(q3, q.getQ3(), eps) |==> false
+352:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):308:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps) && Precision.equals(q3, q.getQ3(), eps) |==> Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps)
+353:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.complex.Quaternion@equals(org.apache.commons.math3.complex.Quaternion,double):311:Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps) && Precision.equals(q3, q.getQ3(), eps) |==> Precision.equals(q3, q.getQ3(), eps)
+354:LVR:POS:0:org.apache.commons.math3.complex.Quaternion@isUnitQuaternion(double):323:1.0 |==> 0.0
+355:LVR:POS:NEG:org.apache.commons.math3.complex.Quaternion@isUnitQuaternion(double):323:1.0 |==> -1.0
+356:ROR:<=(double,double):<(double,double):org.apache.commons.math3.complex.Quaternion@isPureQuaternion(double):334:FastMath.abs(getQ0()) <= eps |==> FastMath.abs(getQ0()) < eps
+357:ROR:<=(double,double):==(double,double):org.apache.commons.math3.complex.Quaternion@isPureQuaternion(double):334:FastMath.abs(getQ0()) <= eps |==> FastMath.abs(getQ0()) == eps
+358:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.complex.Quaternion@isPureQuaternion(double):334:FastMath.abs(getQ0()) <= eps |==> true
+359:LVR:0:POS:org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():343:0 |==> 1
+360:LVR:0:NEG:org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():343:0 |==> -1
+361:ROR:<(double,double):!=(double,double):org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():343:getQ0() < 0 |==> getQ0() != 0
+362:ROR:<(double,double):<=(double,double):org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():343:getQ0() < 0 |==> getQ0() <= 0
+363:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():343:getQ0() < 0 |==> false
+364:EVR:<METHOD_INVOCATION(org.apache.commons.math3.complex.Quaternion)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():344:normalize() |==> null
+365:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():347:-unitQ.getQ0() |==> +unitQ.getQ0()
+366:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():348:-unitQ.getQ1() |==> +unitQ.getQ1()
+367:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():349:-unitQ.getQ2() |==> +unitQ.getQ2()
+368:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():350:-unitQ.getQ3() |==> +unitQ.getQ3()
+369:EVR:<METHOD_INVOCATION(org.apache.commons.math3.complex.Quaternion)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@getPositivePolarForm():352:this.normalize() |==> null
+370:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 |==> q0 % q0
+371:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 |==> q0 + q0
+372:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 |==> q0 - q0
+373:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 |==> q0 / q0
+374:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q1 * q1 |==> q1 % q1
+375:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q1 * q1 |==> q1 + q1
+376:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q1 * q1 |==> q1 - q1
+377:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q1 * q1 |==> q1 / q1
+378:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 |==> q0 * q0 % (q1 * q1)
+379:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 |==> q0 * q0 * (q1 * q1)
+380:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 |==> q0 * q0 - q1 * q1
+381:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 |==> q0 * q0 / (q1 * q1)
+382:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q2 * q2 |==> q2 % q2
+383:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q2 * q2 |==> q2 + q2
+384:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q2 * q2 |==> q2 - q2
+385:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q2 * q2 |==> q2 / q2
+386:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 + q2 * q2 |==> (q0 * q0 + q1 * q1) % (q2 * q2)
+387:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 + q2 * q2 |==> (q0 * q0 + q1 * q1) * (q2 * q2)
+388:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 + q2 * q2 |==> q0 * q0 + q1 * q1 - q2 * q2
+389:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 + q2 * q2 |==> (q0 * q0 + q1 * q1) / (q2 * q2)
+390:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q3 * q3 |==> q3 % q3
+391:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q3 * q3 |==> q3 + q3
+392:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q3 * q3 |==> q3 - q3
+393:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q3 * q3 |==> q3 / q3
+394:AOR:+(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 |==> (q0 * q0 + q1 * q1 + q2 * q2) % (q3 * q3)
+395:AOR:+(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 |==> (q0 * q0 + q1 * q1 + q2 * q2) * (q3 * q3)
+396:AOR:+(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 |==> q0 * q0 + q1 * q1 + q2 * q2 - q3 * q3
+397:AOR:+(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():364:q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 |==> (q0 * q0 + q1 * q1 + q2 * q2) / (q3 * q3)
+398:ROR:<(double,double):!=(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():365:squareNorm < Precision.SAFE_MIN |==> squareNorm != Precision.SAFE_MIN
+399:ROR:<(double,double):<=(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():365:squareNorm < Precision.SAFE_MIN |==> squareNorm <= Precision.SAFE_MIN
+400:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():365:squareNorm < Precision.SAFE_MIN |==> false
+401:AOR:/(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():369:q0 / squareNorm |==> q0 % squareNorm
+402:AOR:/(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():369:q0 / squareNorm |==> q0 * squareNorm
+403:AOR:/(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():369:q0 / squareNorm |==> q0 + squareNorm
+404:AOR:/(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():369:q0 / squareNorm |==> q0 - squareNorm
+405:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getInverse():370:-q1 |==> +q1
+406:AOR:/(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():370:-q1 / squareNorm |==> -q1 % squareNorm
+407:AOR:/(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():370:-q1 / squareNorm |==> -q1 * squareNorm
+408:AOR:/(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():370:-q1 / squareNorm |==> -q1 + squareNorm
+409:AOR:/(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():370:-q1 / squareNorm |==> -q1 - squareNorm
+410:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getInverse():371:-q2 |==> +q2
+411:AOR:/(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():371:-q2 / squareNorm |==> -q2 % squareNorm
+412:AOR:/(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():371:-q2 / squareNorm |==> -q2 * squareNorm
+413:AOR:/(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():371:-q2 / squareNorm |==> -q2 + squareNorm
+414:AOR:/(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():371:-q2 / squareNorm |==> -q2 - squareNorm
+415:ORU:-(double):+(double):org.apache.commons.math3.complex.Quaternion@getInverse():372:-q3 |==> +q3
+416:AOR:/(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():372:-q3 / squareNorm |==> -q3 % squareNorm
+417:AOR:/(double,double):*(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():372:-q3 / squareNorm |==> -q3 * squareNorm
+418:AOR:/(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():372:-q3 / squareNorm |==> -q3 + squareNorm
+419:AOR:/(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@getInverse():372:-q3 / squareNorm |==> -q3 - squareNorm
+420:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@getQ0():381:q0 |==> 0.0
+421:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@getQ1():391:q1 |==> 0.0
+422:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@getQ2():401:q2 |==> 0.0
+423:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@getQ3():411:q3 |==> 0.0
+424:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@getScalarPart():421:getQ0() |==> 0.0
+425:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@getVectorPart():433:new double[]{getQ1(), getQ2(), getQ3()} |==> null
+426:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):443:alpha * q0 |==> alpha % q0
+427:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):443:alpha * q0 |==> alpha + q0
+428:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):443:alpha * q0 |==> alpha - q0
+429:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):443:alpha * q0 |==> alpha / q0
+430:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):444:alpha * q1 |==> alpha % q1
+431:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):444:alpha * q1 |==> alpha + q1
+432:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):444:alpha * q1 |==> alpha - q1
+433:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):444:alpha * q1 |==> alpha / q1
+434:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):445:alpha * q2 |==> alpha % q2
+435:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):445:alpha * q2 |==> alpha + q2
+436:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):445:alpha * q2 |==> alpha - q2
+437:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):445:alpha * q2 |==> alpha / q2
+438:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):446:alpha * q3 |==> alpha % q3
+439:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):446:alpha * q3 |==> alpha + q3
+440:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):446:alpha * q3 |==> alpha - q3
+441:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.Quaternion@multiply(double):446:alpha * q3 |==> alpha / q3
+442:EVR:<NEW_CLASS(java.lang.StringBuilder)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@toString():455:new StringBuilder() |==> null
+443:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.Quaternion@toString():456:s.append("[").append(q0).append(sp).append(q1).append(sp).append(q2).append(sp).append(q3).append("]") |==> <NO-OP>
+444:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.math3.complex.Quaternion@toString():463:s.toString() |==> null

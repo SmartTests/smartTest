@@ -1,0 +1,320 @@
+[
+  {
+    "v1": {
+      "line": "137",
+      "statement": "LegendreGaussIntegrator (final int n,  final double relativeAccuracy,  final double absoluteAccuracy,  final int minimalIterationCount,  final int maximalIterationCount)"
+    }
+  },
+  {
+    "v2": {
+      "line": "143",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v3": {
+      "line": "144",
+      "statement": "switch (n)"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"end-switch"
+    }
+  },
+  {
+    "v5": {
+      "line": "145",
+      "statement": "case 2"
+    }
+  },
+  {
+    "v6": {
+      "line": "146",
+      "statement": "abscissas = ABSCISSAS_2"
+    }
+  },
+  {
+    "v7": {
+      "line": "147",
+      "statement": "weights = WEIGHTS_2"
+    }
+  },
+  {
+    "v8": {
+      "line": "148",
+      "statement": "break"
+    }
+  },
+  {
+    "v9": {
+      "line": "149",
+      "statement": "case 3"
+    }
+  },
+  {
+    "v10": {
+      "line": "150",
+      "statement": "abscissas = ABSCISSAS_3"
+    }
+  },
+  {
+    "v11": {
+      "line": "151",
+      "statement": "weights = WEIGHTS_3"
+    }
+  },
+  {
+    "v12": {
+      "line": "152",
+      "statement": "break"
+    }
+  },
+  {
+    "v13": {
+      "line": "153",
+      "statement": "case 4"
+    }
+  },
+  {
+    "v14": {
+      "line": "154",
+      "statement": "abscissas = ABSCISSAS_4"
+    }
+  },
+  {
+    "v15": {
+      "line": "155",
+      "statement": "weights = WEIGHTS_4"
+    }
+  },
+  {
+    "v16": {
+      "line": "156",
+      "statement": "break"
+    }
+  },
+  {
+    "v17": {
+      "line": "157",
+      "statement": "case 5"
+    }
+  },
+  {
+    "v18": {
+      "line": "158",
+      "statement": "abscissas = ABSCISSAS_5"
+    }
+  },
+  {
+    "v19": {
+      "line": "159",
+      "statement": "weights = WEIGHTS_5"
+    }
+  },
+  {
+    "v20": {
+      "line": "160",
+      "statement": "break"
+    }
+  },
+  {
+    "v21": {
+      "line": "161",
+      "statement": "default"
+    }
+  },
+  {
+    "v22": {
+      "line": "162",
+      "statement": "throw new MathIllegalArgumentException( LocalizedFormats.N_POINTS_GAUSS_LEGENDRE_INTEGRATOR_NOT_SUPPORTED, n, 2, 5)"
+    }
+  },
+  {
+    "v23": {
+      "line": "176",
+      "statement": "LegendreGaussIntegrator (final int n,  final double relativeAccuracy,  final double absoluteAccuracy)"
+    }
+  },
+  {
+    "v24": {
+      "line": "180",
+      "statement": "this(n, relativeAccuracy, absoluteAccuracy,  DEFAULT_MIN_ITERATIONS_COUNT, DEFAULT_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v25": {
+      "line": "195",
+      "statement": "LegendreGaussIntegrator (final int n,  final int minimalIterationCount,  final int maximalIterationCount)"
+    }
+  },
+  {
+    "v26": {
+      "line": "199",
+      "statement": "this(n, DEFAULT_RELATIVE_ACCURACY, DEFAULT_ABSOLUTE_ACCURACY,  minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v27": {
+      "line": "205",
+      "statement": "double doIntegrate()"
+    }
+  },
+  {
+    "v28": {
+      "line": "209",
+      "statement": "double oldt = stage(1)"
+    }
+  },
+  {
+    "v29": {
+      "line": "211",
+      "statement": "int n = 2"
+    }
+  },
+  {
+    "v30": {
+      "line": "212",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v32": {
+      "line": "215",
+      "statement": "final double t = stage(n)"
+    }
+  },
+  {
+    "v33": {
+      "line": "218",
+      "statement": "final double delta = FastMath.abs(t - oldt)"
+    }
+  },
+  {
+    "v34": {
+      "line": "219",
+      "statement": "final double limit = FastMath.max(getAbsoluteAccuracy(),  getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) * 0.5)"
+    }
+  },
+  {
+    "v35": {
+      "line": "224",
+      "statement": "if ((iterations.getCount() + 1 >= getMinimalIterationCount()) && (delta <= limit))"
+    }
+  },
+  {
+    "v36": {
+      "line": "225",
+      "statement": "return t"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v38": {
+      "line": "229",
+      "statement": "double ratio = FastMath.min(4, FastMath.pow(delta / limit, 0.5 / abscissas.length))"
+    }
+  },
+  {
+    "v39": {
+      "line": "230",
+      "statement": "n = FastMath.max((int) (ratio * n), n + 1)"
+    }
+  },
+  {
+    "v40": {
+      "line": "231",
+      "statement": "oldt = t"
+    }
+  },
+  {
+    "v41": {
+      "line": "232",
+      "statement": "iterations.incrementCount()"
+    }
+  },
+  {
+    "v42": {
+      "line": "245",
+      "statement": "double stage(final int n)"
+    }
+  },
+  {
+    "v43": {
+      "line": "249",
+      "statement": "final double step = (getMax() - getMin()) / n"
+    }
+  },
+  {
+    "v44": {
+      "line": "250",
+      "statement": "final double halfStep = step / 2.0"
+    }
+  },
+  {
+    "v45": {
+      "line": "253",
+      "statement": "double midPoint = getMin() + halfStep"
+    }
+  },
+  {
+    "v46": {
+      "line": "254",
+      "statement": "double sum = 0.0"
+    }
+  },
+  {
+    "v47": {
+      "line": "255",
+      "statement": "for (  int i = 0 ; i < n ;   ++i)"
+    }
+  },
+  {
+    "v50": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v51": {
+      "line": "256",
+      "statement": "for (  int j = 0 ; j < abscissas.length ;   ++j)"
+    }
+  },
+  {
+    "v54": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v55": {
+      "line": "257",
+      "statement": "sum += weights[j] * computeObjectiveValue(midPoint + halfStep * abscissas[j])"
+    }
+  },
+  {
+    "v56": {
+      "line": "259",
+      "statement": "midPoint += step"
+    }
+  },
+  {
+    "v57": {
+      "line": "262",
+      "statement": "return halfStep * sum"
+    }
+  }
+]

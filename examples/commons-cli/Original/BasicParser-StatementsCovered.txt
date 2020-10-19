@@ -1,0 +1,131 @@
+
+testArgumentStartingWithHyphen : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testDoubleDash1 : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testLongWithUnexpectedArgument1 : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testLongWithUnexpectedArgument2 : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testLongWithoutEqualDoubleDash : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testMissingArg : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testMissingRequiredGroup : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testMissingRequiredOption : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testMissingRequiredOptions : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testMultiple : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testMultipleWithLong : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testNegativeArgument : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testOptionAndRequiredOption : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testOptionGroup : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testOptionGroupLong : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testPropertyOptionFlags : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testPropertyOptionGroup : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testPropertyOptionMultipleValues : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testPropertyOptionRequired : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testPropertyOptionSingularValue : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testPropertyOptionUnexpected : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testReuseOptionsTwice : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testShortWithUnexpectedArgument : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testSimpleLong : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testSimpleShort : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testSingleDash : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testStopAtExpectedArg : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+]
+
+testStopAtNonOptionLong : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testStopAtNonOptionShort : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testStopAtUnexpectedArg : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testUnlimitedArgs : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testUnrecognizedOption : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]
+
+testWithRequiredOption : flatten(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Z)[Ljava/lang/String;=[47,48
+];;<init>()V=[26,27
+]

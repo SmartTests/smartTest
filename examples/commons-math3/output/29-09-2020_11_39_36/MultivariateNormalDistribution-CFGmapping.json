@@ -1,0 +1,464 @@
+[
+  {
+    "v1": {
+      "line": "71",
+      "statement": "MultivariateNormalDistribution (final double[] means, final double[][] covariances)"
+    }
+  },
+  {
+    "v2": {
+      "line": "76",
+      "statement": "this(new Well19937c(), means, covariances)"
+    }
+  },
+  {
+    "v3": {
+      "line": "97",
+      "statement": "MultivariateNormalDistribution (RandomGenerator rng, final double[] means, final double[][] covariances)"
+    }
+  },
+  {
+    "v4": {
+      "line": "103",
+      "statement": "super(rng, means.length)"
+    }
+  },
+  {
+    "v5": {
+      "line": "105",
+      "statement": "final int dim = means.length"
+    }
+  },
+  {
+    "v6": {
+      "line": "107",
+      "statement": "if (covariances.length != dim)"
+    }
+  },
+  {
+    "v7": {
+      "line": "108",
+      "statement": "throw new DimensionMismatchException(covariances.length, dim)"
+    }
+  },
+  {
+    "v8": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v9": {
+      "line": "111",
+      "statement": "for (  int i = 0 ; i < dim ;   i++)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v13": {
+      "line": "112",
+      "statement": "if (dim != covariances[i].length)"
+    }
+  },
+  {
+    "v14": {
+      "line": "113",
+      "statement": "throw new DimensionMismatchException(covariances[i].length, dim)"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "117",
+      "statement": "this.means = MathArrays.copyOf(means)"
+    }
+  },
+  {
+    "v17": {
+      "line": "119",
+      "statement": "covarianceMatrix = new Array2DRowRealMatrix(covariances)"
+    }
+  },
+  {
+    "v18": {
+      "line": "122",
+      "statement": "final EigenDecomposition covMatDec = new EigenDecomposition(covarianceMatrix)"
+    }
+  },
+  {
+    "v19": {
+      "line": "125",
+      "statement": "covarianceMatrixInverse = covMatDec.getSolver().getInverse()"
+    }
+  },
+  {
+    "v20": {
+      "line": "127",
+      "statement": "covarianceMatrixDeterminant = covMatDec.getDeterminant()"
+    }
+  },
+  {
+    "v21": {
+      "line": "130",
+      "statement": "final double[] covMatEigenvalues = covMatDec.getRealEigenvalues()"
+    }
+  },
+  {
+    "v22": {
+      "line": "132",
+      "statement": "for (  int i = 0 ; i < covMatEigenvalues.length ;   i++)"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v26": {
+      "line": "133",
+      "statement": "if (covMatEigenvalues[i] < 0)"
+    }
+  },
+  {
+    "v27": {
+      "line": "134",
+      "statement": "throw new NonPositiveDefiniteMatrixException(covMatEigenvalues[i], i, 0)"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "139",
+      "statement": "final Array2DRowRealMatrix covMatEigenvectors = new Array2DRowRealMatrix(dim, dim)"
+    }
+  },
+  {
+    "v30": {
+      "line": "140",
+      "statement": "for (  int v = 0 ; v < dim ;   v++)"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v34": {
+      "line": "141",
+      "statement": "final double[] evec = covMatDec.getEigenvector(v).toArray()"
+    }
+  },
+  {
+    "v35": {
+      "line": "142",
+      "statement": "covMatEigenvectors.setColumn(v, evec)"
+    }
+  },
+  {
+    "v36": {
+      "line": "145",
+      "statement": "final RealMatrix tmpMatrix = covMatEigenvectors.transpose()"
+    }
+  },
+  {
+    "v37": {
+      "line": "148",
+      "statement": "for (  int row = 0 ; row < dim ;   row++)"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v41": {
+      "line": "149",
+      "statement": "final double factor = FastMath.sqrt(covMatEigenvalues[row])"
+    }
+  },
+  {
+    "v42": {
+      "line": "150",
+      "statement": "for (  int col = 0 ; col < dim ;   col++)"
+    }
+  },
+  {
+    "v45": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v46": {
+      "line": "151",
+      "statement": "tmpMatrix.multiplyEntry(row, col, factor)"
+    }
+  },
+  {
+    "v47": {
+      "line": "155",
+      "statement": "samplingMatrix = covMatEigenvectors.multiply(tmpMatrix)"
+    }
+  },
+  {
+    "v48": {
+      "line": "163",
+      "statement": "double[] getMeans()"
+    }
+  },
+  {
+    "v49": {
+      "line": "164",
+      "statement": "return MathArrays.copyOf(means)"
+    }
+  },
+  {
+    "v50": {
+      "line": "172",
+      "statement": "RealMatrix getCovariances()"
+    }
+  },
+  {
+    "v51": {
+      "line": "173",
+      "statement": "return covarianceMatrix.copy()"
+    }
+  },
+  {
+    "v52": {
+      "line": "177",
+      "statement": "double density(final double[] vals)"
+    }
+  },
+  {
+    "v53": {
+      "line": "178",
+      "statement": "final int dim = getDimension()"
+    }
+  },
+  {
+    "v54": {
+      "line": "179",
+      "statement": "if (vals.length != dim)"
+    }
+  },
+  {
+    "v55": {
+      "line": "180",
+      "statement": "throw new DimensionMismatchException(vals.length, dim)"
+    }
+  },
+  {
+    "v56": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v57": {
+      "line": "183",
+      "statement": "return FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) * getExponentTerm(vals)"
+    }
+  },
+  {
+    "v58": {
+      "line": "194",
+      "statement": "double[] getStandardDeviations()"
+    }
+  },
+  {
+    "v59": {
+      "line": "195",
+      "statement": "final int dim = getDimension()"
+    }
+  },
+  {
+    "v60": {
+      "line": "196",
+      "statement": "final double[] std = new double[dim"
+    }
+  },
+  {
+    "v61": {
+      "line": "197",
+      "statement": "final double[][] s = covarianceMatrix.getData()"
+    }
+  },
+  {
+    "v62": {
+      "line": "198",
+      "statement": "for (  int i = 0 ; i < dim ;   i++)"
+    }
+  },
+  {
+    "v65": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v66": {
+      "line": "199",
+      "statement": "std[i] = FastMath.sqrt(s[i][i])"
+    }
+  },
+  {
+    "v67": {
+      "line": "201",
+      "statement": "return std"
+    }
+  },
+  {
+    "v68": {
+      "line": "206",
+      "statement": "double[] sample()"
+    }
+  },
+  {
+    "v69": {
+      "line": "207",
+      "statement": "final int dim = getDimension()"
+    }
+  },
+  {
+    "v70": {
+      "line": "208",
+      "statement": "final double[] normalVals = new double[dim"
+    }
+  },
+  {
+    "v71": {
+      "line": "210",
+      "statement": "for (  int i = 0 ; i < dim ;   i++)"
+    }
+  },
+  {
+    "v74": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v75": {
+      "line": "211",
+      "statement": "normalVals[i] = random.nextGaussian()"
+    }
+  },
+  {
+    "v76": {
+      "line": "214",
+      "statement": "final double[] vals = samplingMatrix.operate(normalVals)"
+    }
+  },
+  {
+    "v77": {
+      "line": "216",
+      "statement": "for (  int i = 0 ; i < dim ;   i++)"
+    }
+  },
+  {
+    "v80": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v81": {
+      "line": "217",
+      "statement": "vals[i] += means[i"
+    }
+  },
+  {
+    "v82": {
+      "line": "220",
+      "statement": "return vals"
+    }
+  },
+  {
+    "v83": {
+      "line": "229",
+      "statement": "double getExponentTerm(final double[] values)"
+    }
+  },
+  {
+    "v84": {
+      "line": "230",
+      "statement": "final double[] centered = new double[values.length"
+    }
+  },
+  {
+    "v85": {
+      "line": "231",
+      "statement": "for (  int i = 0 ; i < centered.length ;   i++)"
+    }
+  },
+  {
+    "v88": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v89": {
+      "line": "232",
+      "statement": "centered[i] = values[i] - getMeans()[i"
+    }
+  },
+  {
+    "v90": {
+      "line": "234",
+      "statement": "final double[] preMultiplied = covarianceMatrixInverse.preMultiply(centered)"
+    }
+  },
+  {
+    "v91": {
+      "line": "235",
+      "statement": "double sum = 0"
+    }
+  },
+  {
+    "v92": {
+      "line": "236",
+      "statement": "for (  int i = 0 ; i < preMultiplied.length ;   i++)"
+    }
+  },
+  {
+    "v95": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v96": {
+      "line": "237",
+      "statement": "sum += preMultiplied[i] * centered[i"
+    }
+  },
+  {
+    "v97": {
+      "line": "239",
+      "statement": "return FastMath.exp(-0.5 * sum)"
+    }
+  }
+]

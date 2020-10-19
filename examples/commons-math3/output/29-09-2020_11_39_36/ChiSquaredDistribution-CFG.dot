@@ -1,0 +1,54 @@
+digraph ChiSquaredDistribution_CFG {
+  // graph-vertices
+  v1  [label="47:  ChiSquaredDistribution (double degreesOfFreedom)"];
+  v2  [label="48:  this(degreesOfFreedom, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"];
+  v3  [label="61:  ChiSquaredDistribution (double degreesOfFreedom, double inverseCumAccuracy)"];
+  v4  [label="63:  this(new Well19937c(), degreesOfFreedom, inverseCumAccuracy)"];
+  v5  [label="73:  ChiSquaredDistribution (RandomGenerator rng, double degreesOfFreedom)"];
+  v6  [label="74:  this(rng, degreesOfFreedom, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"];
+  v7  [label="88:  ChiSquaredDistribution (RandomGenerator rng, double degreesOfFreedom, double inverseCumAccuracy)"];
+  v8  [label="91:  super(rng)"];
+  v9  [label="93:  gamma = new GammaDistribution(degreesOfFreedom / 2, 2)"];
+  v10  [label="94:  solverAbsoluteAccuracy = inverseCumAccuracy"];
+  v11  [label="102:  double getDegreesOfFreedom()"];
+  v12  [label="103:  return gamma.getShape() * 2.0;"];
+  v13  [label="107:  double density(double x)"];
+  v14  [label="108:  return gamma.density(x);"];
+  v15  [label="112:  double cumulativeProbability(double x)"];
+  v16  [label="113:  return gamma.cumulativeProbability(x);"];
+  v17  [label="118:  double getSolverAbsoluteAccuracy()"];
+  v18  [label="119:  return solverAbsoluteAccuracy;"];
+  v19  [label="127:  double getNumericalMean()"];
+  v20  [label="128:  return getDegreesOfFreedom();"];
+  v21  [label="136:  double getNumericalVariance()"];
+  v22  [label="137:  return 2 * getDegreesOfFreedom();"];
+  v23  [label="148:  double getSupportLowerBound()"];
+  v24  [label="149:  return 0;"];
+  v25  [label="160:  double getSupportUpperBound()"];
+  v26  [label="161:  return Double.POSITIVE_INFINITY;"];
+  v27  [label="165:  boolean isSupportLowerBoundInclusive()"];
+  v28  [label="166:  return true;"];
+  v29  [label="170:  boolean isSupportUpperBoundInclusive()"];
+  v30  [label="171:  return false;"];
+  v31  [label="181:  boolean isSupportConnected()"];
+  v32  [label="182:  return true;"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v5 -> v6;
+  v7 -> v8;
+  v8 -> v9;
+  v9 -> v10;
+  v11 -> v12;
+  v13 -> v14;
+  v15 -> v16;
+  v17 -> v18;
+  v19 -> v20;
+  v21 -> v22;
+  v23 -> v24;
+  v25 -> v26;
+  v27 -> v28;
+  v29 -> v30;
+  v31 -> v32;
+  // end-of-graph
+}

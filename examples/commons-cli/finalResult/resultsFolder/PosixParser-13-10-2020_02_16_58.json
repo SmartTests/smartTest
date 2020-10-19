@@ -1,0 +1,25 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "125"
+    ],
+    "sourceClass": "PosixParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR20",
+      "TR18"
+    ],
+    "affectedTest": [
+      "testLongWithoutEqualDoubleDash",
+      "testStopAtNonOptionLong"
+    ],
+    "testReran": [
+      "testStopAtNonOptionLong",
+      "testLongWithoutEqualDoubleDash"
+    ],
+    "unsatisfiedRequirement": [
+      "TR20"
+    ]
+  }
+}

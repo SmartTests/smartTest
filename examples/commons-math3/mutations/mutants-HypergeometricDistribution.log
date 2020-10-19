@@ -1,0 +1,205 @@
+1:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution:45:Double.NaN |==> 0.0
+2:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.HypergeometricDistribution:47:false |==> true
+3:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):86:0 |==> 1
+4:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):86:0 |==> -1
+5:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):86:populationSize <= 0 |==> populationSize < 0
+6:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):86:populationSize <= 0 |==> populationSize == 0
+7:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):86:populationSize <= 0 |==> true
+8:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):90:0 |==> 1
+9:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):90:0 |==> -1
+10:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):90:numberOfSuccesses < 0 |==> numberOfSuccesses != 0
+11:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):90:numberOfSuccesses < 0 |==> numberOfSuccesses <= 0
+12:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):90:numberOfSuccesses < 0 |==> false
+13:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):94:0 |==> 1
+14:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):94:0 |==> -1
+15:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):94:sampleSize < 0 |==> sampleSize != 0
+16:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):94:sampleSize < 0 |==> sampleSize <= 0
+17:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):94:sampleSize < 0 |==> false
+18:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):99:numberOfSuccesses > populationSize |==> numberOfSuccesses != populationSize
+19:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):99:numberOfSuccesses > populationSize |==> numberOfSuccesses >= populationSize
+20:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):99:numberOfSuccesses > populationSize |==> false
+21:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):101:true |==> false
+22:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):103:sampleSize > populationSize |==> sampleSize != populationSize
+23:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):103:sampleSize > populationSize |==> sampleSize >= populationSize
+24:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):103:sampleSize > populationSize |==> false
+25:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):105:true |==> false
+26:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):108:numberOfSuccesses |==> 0
+27:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):109:populationSize |==> 0
+28:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,int,int):110:sampleSize |==> 0
+29:EVR:<METHOD_INVOCATION(int[])>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):117:getDomain(populationSize, numberOfSuccesses, sampleSize) |==> null
+30:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):118:0 |==> 1
+31:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):118:0 |==> -1
+32:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):118:x < domain[0] |==> x != domain[0]
+33:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):118:x < domain[0] |==> x <= domain[0]
+34:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):118:x < domain[0] |==> false
+35:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):119:0.0 |==> 1.0
+36:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):119:0.0 |==> -1.0
+37:LVR:POS:0:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):120:1 |==> 0
+38:LVR:POS:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):120:1 |==> -1
+39:ROR:>=(int,int):==(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):120:x >= domain[1] |==> x == domain[1]
+40:ROR:>=(int,int):>(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):120:x >= domain[1] |==> x > domain[1]
+41:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):120:x >= domain[1] |==> true
+42:LVR:POS:0:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):121:1.0 |==> 0.0
+43:LVR:POS:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):121:1.0 |==> -1.0
+44:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):123:0 |==> 1
+45:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):123:0 |==> -1
+46:LVR:POS:0:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):123:1 |==> 0
+47:LVR:POS:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):123:1 |==> -1
+48:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@cumulativeProbability(int):126:ret |==> 0.0
+49:EVR:<NEW_ARRAY(int[])>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@getDomain(int,int,int):139:new int[]{getLowerDomain(n, m, k), getUpperDomain(m, k)} |==> null
+50:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:0 |==> 1
+51:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:0 |==> -1
+52:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:n - k |==> n % k
+53:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:n - k |==> n * k
+54:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:n - k |==> n + k
+55:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:n - k |==> n / k
+56:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:m - (n - k) |==> m % (n - k)
+57:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:m - (n - k) |==> m * (n - k)
+58:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:m - (n - k) |==> m + (n - k)
+59:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getLowerDomain(int,int,int):152:m - (n - k) |==> m / (n - k)
+60:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@getNumberOfSuccesses():161:numberOfSuccesses |==> 0
+61:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@getPopulationSize():170:populationSize |==> 0
+62:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@getSampleSize():179:sampleSize |==> 0
+63:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@getUpperDomain(int,int):191:FastMath.min(k, m) |==> 0
+64:EVR:<METHOD_INVOCATION(int[])>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):198:getDomain(populationSize, numberOfSuccesses, sampleSize) |==> null
+65:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:0 |==> 1
+66:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:0 |==> -1
+67:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x < domain[0] |==> x != domain[0]
+68:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x < domain[0] |==> x <= domain[0]
+69:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x < domain[0] |==> false
+70:LVR:POS:0:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:1 |==> 0
+71:LVR:POS:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:1 |==> -1
+72:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x > domain[1] |==> x != domain[1]
+73:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x > domain[1] |==> x >= domain[1]
+74:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x > domain[1] |==> false
+75:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x < domain[0] || x > domain[1] |==> x < domain[0] != x > domain[1]
+76:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x < domain[0] || x > domain[1] |==> x < domain[0]
+77:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x < domain[0] || x > domain[1] |==> x > domain[1]
+78:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):199:x < domain[0] || x > domain[1] |==> true
+79:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):200:0.0 |==> 1.0
+80:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):200:0.0 |==> -1.0
+81:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):202:(double)sampleSize / (double)populationSize |==> (double)sampleSize % (double)populationSize
+82:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):202:(double)sampleSize / (double)populationSize |==> (double)sampleSize * (double)populationSize
+83:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):202:(double)sampleSize / (double)populationSize |==> (double)sampleSize + (double)populationSize
+84:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):202:(double)sampleSize / (double)populationSize |==> (double)sampleSize - (double)populationSize
+85:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):203:populationSize - sampleSize |==> populationSize % sampleSize
+86:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):203:populationSize - sampleSize |==> populationSize * sampleSize
+87:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):203:populationSize - sampleSize |==> populationSize + sampleSize
+88:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):203:populationSize - sampleSize |==> populationSize / sampleSize
+89:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):203:(double)(populationSize - sampleSize) / (double)populationSize |==> (double)(populationSize - sampleSize) % (double)populationSize
+90:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):203:(double)(populationSize - sampleSize) / (double)populationSize |==> (double)(populationSize - sampleSize) * (double)populationSize
+91:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):203:(double)(populationSize - sampleSize) / (double)populationSize |==> (double)(populationSize - sampleSize) + (double)populationSize
+92:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):203:(double)(populationSize - sampleSize) / (double)populationSize |==> (double)(populationSize - sampleSize) - (double)populationSize
+93:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):204:SaddlePointExpansion.logBinomialProbability(x, numberOfSuccesses, p, q) |==> 0.0
+94:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):207:sampleSize - x |==> sampleSize % x
+95:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):207:sampleSize - x |==> sampleSize * x
+96:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):207:sampleSize - x |==> sampleSize + x
+97:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):207:sampleSize - x |==> sampleSize / x
+98:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):208:populationSize - numberOfSuccesses |==> populationSize % numberOfSuccesses
+99:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):208:populationSize - numberOfSuccesses |==> populationSize * numberOfSuccesses
+100:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):208:populationSize - numberOfSuccesses |==> populationSize + numberOfSuccesses
+101:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):208:populationSize - numberOfSuccesses |==> populationSize / numberOfSuccesses
+102:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):210:SaddlePointExpansion.logBinomialProbability(sampleSize, populationSize, p, q) |==> 0.0
+103:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):211:p1 + p2 |==> p1 % p2
+104:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):211:p1 + p2 |==> p1 * p2
+105:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):211:p1 + p2 |==> p1 - p2
+106:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):211:p1 + p2 |==> p1 / p2
+107:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):211:p1 + p2 - p3 |==> (p1 + p2) % p3
+108:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):211:p1 + p2 - p3 |==> (p1 + p2) * p3
+109:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):211:p1 + p2 - p3 |==> p1 + p2 + p3
+110:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):211:p1 + p2 - p3 |==> (p1 + p2) / p3
+111:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@probability(int):214:ret |==> 0.0
+112:EVR:<METHOD_INVOCATION(int[])>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):227:getDomain(populationSize, numberOfSuccesses, sampleSize) |==> null
+113:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):228:0 |==> 1
+114:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):228:0 |==> -1
+115:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):228:x <= domain[0] |==> x < domain[0]
+116:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):228:x <= domain[0] |==> x == domain[0]
+117:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):228:x <= domain[0] |==> true
+118:LVR:POS:0:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):229:1.0 |==> 0.0
+119:LVR:POS:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):229:1.0 |==> -1.0
+120:LVR:POS:0:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):230:1 |==> 0
+121:LVR:POS:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):230:1 |==> -1
+122:ROR:>(int,int):!=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):230:x > domain[1] |==> x != domain[1]
+123:ROR:>(int,int):>=(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):230:x > domain[1] |==> x >= domain[1]
+124:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):230:x > domain[1] |==> false
+125:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):231:0.0 |==> 1.0
+126:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):231:0.0 |==> -1.0
+127:LVR:POS:0:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):233:1 |==> 0
+128:LVR:POS:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):233:1 |==> -1
+129:LVR:NEG:0:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):233:-1 |==> 0
+130:LVR:NEG:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):233:-1 |==> 1
+131:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@upperCumulativeProbability(int):236:ret |==> 0.0
+132:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@innerCumulativeProbability(int,int,int):253:probability(x0) |==> 0.0
+133:ROR:!=(int,int):<(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@innerCumulativeProbability(int,int,int):254:x0 != x1 |==> x0 < x1
+134:ROR:!=(int,int):>(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@innerCumulativeProbability(int,int,int):254:x0 != x1 |==> x0 > x1
+135:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@innerCumulativeProbability(int,int,int):254:x0 != x1 |==> true
+136:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.HypergeometricDistribution@innerCumulativeProbability(int,int,int):255:x0 += dx |==> <NO-OP>
+137:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.HypergeometricDistribution@innerCumulativeProbability(int,int,int):256:ret += probability(x0) |==> <NO-OP>
+138:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@innerCumulativeProbability(int,int,int):258:ret |==> 0.0
+139:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalMean():268:getNumberOfSuccesses() / (double)getPopulationSize() |==> getNumberOfSuccesses() % (double)getPopulationSize()
+140:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalMean():268:getNumberOfSuccesses() / (double)getPopulationSize() |==> getNumberOfSuccesses() * (double)getPopulationSize()
+141:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalMean():268:getNumberOfSuccesses() / (double)getPopulationSize() |==> getNumberOfSuccesses() + (double)getPopulationSize()
+142:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalMean():268:getNumberOfSuccesses() / (double)getPopulationSize() |==> getNumberOfSuccesses() - (double)getPopulationSize()
+143:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalMean():268:getSampleSize() * (getNumberOfSuccesses() / (double)getPopulationSize()) |==> getSampleSize() % (getNumberOfSuccesses() / (double)getPopulationSize())
+144:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalMean():268:getSampleSize() * (getNumberOfSuccesses() / (double)getPopulationSize()) |==> getSampleSize() + (getNumberOfSuccesses() / (double)getPopulationSize())
+145:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalMean():268:getSampleSize() * (getNumberOfSuccesses() / (double)getPopulationSize()) |==> getSampleSize() - (getNumberOfSuccesses() / (double)getPopulationSize())
+146:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalMean():268:getSampleSize() * (getNumberOfSuccesses() / (double)getPopulationSize()) |==> getSampleSize() / (getNumberOfSuccesses() / (double)getPopulationSize())
+147:COR:numericalVarianceIsCalculated:TRUE:org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalVariance():279:numericalVarianceIsCalculated |==> false
+148:COR:numericalVarianceIsCalculated:FALSE:org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalVariance():279:numericalVarianceIsCalculated |==> true
+149:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalVariance():280:numericalVariance = calculateNumericalVariance() |==> <NO-OP>
+150:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalVariance():281:true |==> false
+151:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalVariance():281:numericalVarianceIsCalculated = true |==> <NO-OP>
+152:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@getNumericalVariance():283:numericalVariance |==> 0.0
+153:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():292:getPopulationSize() |==> 0
+154:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():293:getNumberOfSuccesses() |==> 0
+155:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():294:getSampleSize() |==> 0
+156:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m |==> n % m
+157:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m |==> n + m
+158:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m |==> n - m
+159:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m |==> n / m
+160:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - n |==> N % n
+161:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - n |==> N * n
+162:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - n |==> N + n
+163:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - n |==> N / n
+164:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m * (N - n) |==> n * m % (N - n)
+165:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m * (N - n) |==> n * m + (N - n)
+166:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m * (N - n) |==> n * m - (N - n)
+167:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m * (N - n) |==> n * m / (N - n)
+168:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - m |==> N % m
+169:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - m |==> N * m
+170:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - m |==> N + m
+171:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - m |==> N / m
+172:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m * (N - n) * (N - m) |==> n * m * (N - n) % (N - m)
+173:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m * (N - n) * (N - m) |==> n * m * (N - n) + (N - m)
+174:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m * (N - n) * (N - m) |==> n * m * (N - n) - (N - m)
+175:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:n * m * (N - n) * (N - m) |==> n * m * (N - n) / (N - m)
+176:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N * N |==> N % N
+177:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N * N |==> N + N
+178:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N * N |==> N - N
+179:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N * N |==> N / N
+180:LVR:POS:0:org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:1 |==> 0
+181:LVR:POS:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:1 |==> -1
+182:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - 1 |==> N % 1
+183:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - 1 |==> N * 1
+184:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - 1 |==> N + 1
+185:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N - 1 |==> N / 1
+186:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N * N * (N - 1) |==> N * N % (N - 1)
+187:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N * N * (N - 1) |==> N * N + (N - 1)
+188:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N * N * (N - 1) |==> N * N - (N - 1)
+189:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:N * N * (N - 1) |==> N * N / (N - 1)
+190:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:(n * m * (N - n) * (N - m)) / (N * N * (N - 1)) |==> (n * m * (N - n) * (N - m)) % (N * N * (N - 1))
+191:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:(n * m * (N - n) * (N - m)) / (N * N * (N - 1)) |==> (n * m * (N - n) * (N - m)) * (N * N * (N - 1))
+192:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:(n * m * (N - n) * (N - m)) / (N * N * (N - 1)) |==> (n * m * (N - n) * (N - m)) + (N * N * (N - 1))
+193:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.HypergeometricDistribution@calculateNumericalVariance():295:(n * m * (N - n) * (N - m)) / (N * N * (N - 1)) |==> (n * m * (N - n) * (N - m)) - (N * N * (N - 1))
+194:LVR:0:POS:org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():308:0 |==> 1
+195:LVR:0:NEG:org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():308:0 |==> -1
+196:AOR:+(int,int):%(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():309:getSampleSize() + getNumberOfSuccesses() |==> getSampleSize() % getNumberOfSuccesses()
+197:AOR:+(int,int):*(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():309:getSampleSize() + getNumberOfSuccesses() |==> getSampleSize() * getNumberOfSuccesses()
+198:AOR:+(int,int):-(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():309:getSampleSize() + getNumberOfSuccesses() |==> getSampleSize() - getNumberOfSuccesses()
+199:AOR:+(int,int):/(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():309:getSampleSize() + getNumberOfSuccesses() |==> getSampleSize() / getNumberOfSuccesses()
+200:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():309:getSampleSize() + getNumberOfSuccesses() - getPopulationSize() |==> (getSampleSize() + getNumberOfSuccesses()) % getPopulationSize()
+201:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():309:getSampleSize() + getNumberOfSuccesses() - getPopulationSize() |==> (getSampleSize() + getNumberOfSuccesses()) * getPopulationSize()
+202:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():309:getSampleSize() + getNumberOfSuccesses() - getPopulationSize() |==> getSampleSize() + getNumberOfSuccesses() + getPopulationSize()
+203:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportLowerBound():309:getSampleSize() + getNumberOfSuccesses() - getPopulationSize() |==> (getSampleSize() + getNumberOfSuccesses()) / getPopulationSize()
+204:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.HypergeometricDistribution@getSupportUpperBound():321:FastMath.min(getNumberOfSuccesses(), getSampleSize()) |==> 0
+205:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.HypergeometricDistribution@isSupportConnected():332:true |==> false

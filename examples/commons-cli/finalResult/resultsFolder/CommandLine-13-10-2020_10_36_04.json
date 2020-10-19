@@ -1,0 +1,19 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "187"
+    ],
+    "sourceClass": "CommandLine"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR18"
+    ],
+    "affectedTest": [
+      "testNullhOption"
+    ],
+    "testReran": [
+      "testNullhOption"
+    ]
+  }
+}

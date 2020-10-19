@@ -1,0 +1,110 @@
+[
+  {
+    "v1": {
+      "line": "22",
+      "statement": "SourceClass (int qtyOnHand)"
+    }
+  },
+  {
+    "v2": {
+      "line": "23",
+      "statement": "this.qtyOnHand = qtyOnHand"
+    }
+  },
+  {
+    "v3": {
+      "line": "26",
+      "statement": "void isValidQty(int qty)"
+    }
+  },
+  {
+    "v4": {
+      "line": "27",
+      "statement": "if (qty < 0)"
+    }
+  },
+  {
+    "v5": {
+      "line": "28",
+      "statement": "throw new IllegalArgumentException('Quality should be positive!')"
+    }
+  },
+  {
+    "v6": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v7": {
+      "line": "32",
+      "statement": "int add(int qty)"
+    }
+  },
+  {
+    "v8": {
+      "line": "34",
+      "statement": "isValidQty(qty)"
+    }
+  },
+  {
+    "v9": {
+      "line": "35",
+      "statement": "qtyOnHand = qtyOnHand + qty"
+    }
+  },
+  {
+    "v10": {
+      "line": "36",
+      "statement": "return qtyOnHand"
+    }
+  },
+  {
+    "v11": {
+      "line": "40",
+      "statement": "int deduct(int qty)"
+    }
+  },
+  {
+    "v12": {
+      "line": "42",
+      "statement": "isValidQty(qty)"
+    }
+  },
+  {
+    "v13": {
+      "line": "44",
+      "statement": "int newQty = qtyOnHand - qty"
+    }
+  },
+  {
+    "v14": {
+      "line": "45",
+      "statement": "if (newQty < 2)"
+    }
+  },
+  {
+    "v15": {
+      "line": "46",
+      "statement": "throw new IllegalArgumentException('Out of Stock!')"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v17": {
+      "line": "48",
+      "statement": "qtyOnHand = newQty"
+    }
+  },
+  {
+    "v18": {
+      "line": "50",
+      "statement": "return qtyOnHand"
+    }
+  }
+]

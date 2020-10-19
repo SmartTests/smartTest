@@ -1,0 +1,21 @@
+digraph ComplexField_CFG {
+  // graph-vertices
+  v1  [label="41:  ComplexField ()"];
+  v2  [label="47:  ComplexField getInstance()"];
+  v3  [label="48:  return LazyHolder.INSTANCE;"];
+  v4  [label="52:  Complex getOne()"];
+  v5  [label="53:  return Complex.ONE;"];
+  v6  [label="57:  Complex getZero()"];
+  v7  [label="58:  return Complex.ZERO;"];
+  v8  [label="62:  Class<?extendsFieldElement<Complex>> getRuntimeClass()"];
+  v9  [label="63:  return Complex.class;"];
+  v10  [label="79:  Object readResolve()"];
+  v11  [label="81:  return LazyHolder.INSTANCE;"];
+  // graph-edges
+  v2 -> v3;
+  v4 -> v5;
+  v6 -> v7;
+  v8 -> v9;
+  v10 -> v11;
+  // end-of-graph
+}

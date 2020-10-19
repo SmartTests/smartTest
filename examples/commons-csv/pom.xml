@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ <!--  <parent>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-parent</artifactId>
+    <version>48</version>
+  </parent> -->
+  <groupId>org.apache.commons</groupId>
+  <artifactId>commons-csv</artifactId>
+  <version>1.7-SNAPSHOT</version>
+  <name>Apache Commons CSV</name>
+  <url>http://commons.apache.org/proper/commons-csv/</url>
+  <description>
+The Apache Commons CSV library provides a simple interface for reading and writing
+CSV files of various types.
+  </description>
+
+  <dependencies>
+  <dependency>
+		<groupId>org.ow2.asm</groupId>
+		<artifactId>asm-all</artifactId>
+		<version>5.0.3</version>
+		
+		</dependency> 
+		<dependency>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-failsafe-plugin</artifactId>
+		<version>2.18.1</version>
+		<exclusions>
+	        <exclusion>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>slf4j-api</artifactId>
+	        </exclusion>
+	        <exclusion>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>slf4j-jdk14</artifactId>
+	        </exclusion>
+	        <exclusion>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>slf4j-nop</artifactId>
+	        </exclusion>
+	       <exclusion>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>jcl-over-slf4j</artifactId>
+	        </exclusion>
+	        <exclusion>
+	         <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId></exclusion>
+	        </exclusions>
+		
+<!-- 	 <scope>test</scope>
+ --> </dependency>
+	<dependency>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+		<version>3.0.0-M4</version>
+		<type>maven-plugin</type>
+<!-- 		<scope>test</scope> 
+ -->		
+	</dependency> 
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.10.19</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.6</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.9</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.199</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <developers>
+    <developer>
+      <id>bayard</id>
+      <name>Henri Yandell</name>
+      <email>bayard@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+    <developer>
+      <name>Martin van den Bemt</name>
+      <id>mvdb</id>
+      <email>mvdb@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+    <developer>
+      <name>Yonik Seeley</name>
+      <id>yonik</id>
+      <email>yonik@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+    <developer>
+      <name>Emmanuel Bourg</name>
+      <id>ebourg</id>
+      <email>ebourg@apache.org</email>
+      <organization>Apache</organization>
+    </developer>
+    <developer>
+      <name>Gary Gregory</name>
+      <id>ggregory</id>
+      <email>ggregory@apache.org</email>
+      <url>http://www.garygregory.com</url>
+    </developer>
+    <developer>
+      <name>Benedikt Ritter</name>
+      <id>britter</id>
+      <email>britter@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+    <developer>
+      <name>Rob Tompkins</name>
+      <id>chtompki</id>
+      <email>chtompki@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Bob Smith</name>
+    </contributor>
+  </contributors>
+
+  <scm>
+    <connection>scm:git:http://git-wip-us.apache.org/repos/asf/commons-csv.git</connection>
+    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/commons-csv.git</developerConnection>
+    <url>https://git-wip-us.apache.org/repos/asf?p=commons-csv.git</url>
+  </scm>
+
+  <issueManagement>
+    <system>jira</system>
+    <url>http://issues.apache.org/jira/browse/CSV</url>
+  </issueManagement>
+
+  <distributionManagement>
+    <site>
+      <id>apache.website</id>
+      <name>Apache Commons Site</name>
+      <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-csv/</url>
+    </site>
+  </distributionManagement>
+
+  <properties>
+    <commons.release.version>1.7</commons.release.version>
+    <commons.release.desc>(Java 8)</commons.release.desc>
+    <!-- The RC version used in the staging repository URL. -->
+    <commons.rc.version>RC1</commons.rc.version>
+    <commons.bc.version>1.6</commons.bc.version>
+    <commons.componentid>csv</commons.componentid>
+    <commons.module.name>org.apache.commons.csv</commons.module.name>
+    <commons.jira.id>CSV</commons.jira.id>
+    <commons.jira.pid>12313222</commons.jira.pid>
+    <project.inceptionYear>2005</project.inceptionYear>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <!-- Ensure copies work OK (can be removed later when this is in parent POM) -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <commons.encoding>UTF-8</commons.encoding>
+
+    <checkstyle.version>3.0.0</checkstyle.version>
+    <checkstyle.header.file>${basedir}/LICENSE-header.txt</checkstyle.header.file>
+    <checkstyle.resourceExcludes>LICENSE.txt, NOTICE.txt</checkstyle.resourceExcludes>
+
+    <japicmp.skip>false</japicmp.skip>
+  </properties>
+  
+  <build>
+    <plugins>
+       <plugin><!-- Maven jar plugin added by Kesina for smart test. Create manifest.mf manually -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<archive>
+						<manifestFile>resources/META-INF/MANIFEST.MF</manifestFile>
+					</archive>
+				</configuration>
+		  </plugin>
+		  	
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5</version><!--  Used to be 3.1 changed for major -->
+            <configuration>
+              <source>${maven.compiler.target}</source>
+              <target>${maven.compiler.target}</target>
+            </configuration>
+          </plugin>
+          <plugin><!-- Failsafe plugin added by Kesina for smart test. -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.18.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration><!-- Unsure if -cp argument is needed  -->
+				 <argLine>-Xbootclasspath/a:${project.build.directory}/${project.build.finalName}.jar
+						-javaagent:${project.build.directory}/${project.build.finalName}.jar</argLine>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<minimizeJar>false</minimizeJar>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+        <plugin><!-- Surefire plugin added by Kesina for smart test. Not sure if it's needed -->
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M4</version>
+          
+<!--           ADDED BY ME
+ -->          
+            <configuration>
+            	<forkCount>3</forkCount>
+				<reuseForks>true</reuseForks>
+				<argLine>-Xmx1024m</argLine>
+           <!--  Fix for OpenJDK 8 now validating class-path attributes in Jar manifests.
+            See https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=912333#63 -->
+            	<useSystemClassLoader>true</useSystemClassLoader>
+             <!--  <includes>
+              
+                COMMENTED BY ME <include>**/*Test.java</include>
+                <include>**/*TestBinary.java</include>
+                <include>**/*TestPermutations.java</include> 
+              </includes>
+              <excludes>
+                <exclude>**/*AbstractTest.java</exclude>
+              </excludes> -->
+          </configuration>
+        </plugin>
+       
+    </plugins> 
+  </build> 
+  
+  
+  
+  
+</project>

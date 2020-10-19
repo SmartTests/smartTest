@@ -1,0 +1,98 @@
+[
+  {
+    "v1": {
+      "line": "37",
+      "statement": "GradientFunction (final MultivariateDifferentiableFunction f)"
+    }
+  },
+  {
+    "v2": {
+      "line": "38",
+      "statement": "this.f = f"
+    }
+  },
+  {
+    "v3": {
+      "line": "42",
+      "statement": "double[] value(double[] point)"
+    }
+  },
+  {
+    "v4": {
+      "line": "45",
+      "statement": "final DerivativeStructure[] dsX = new DerivativeStructure[point.length"
+    }
+  },
+  {
+    "v5": {
+      "line": "46",
+      "statement": "for (  int i = 0 ; i < point.length ;   ++i)"
+    }
+  },
+  {
+    "v8": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v9": {
+      "line": "47",
+      "statement": "dsX[i] = new DerivativeStructure(point.length, 1, i, point[i])"
+    }
+  },
+  {
+    "v10": {
+      "line": "51",
+      "statement": "final DerivativeStructure dsY = f.value(dsX)"
+    }
+  },
+  {
+    "v11": {
+      "line": "54",
+      "statement": "final double[] y = new double[point.length"
+    }
+  },
+  {
+    "v12": {
+      "line": "55",
+      "statement": "final int[] orders = new int[point.length"
+    }
+  },
+  {
+    "v13": {
+      "line": "56",
+      "statement": "for (  int i = 0 ; i < point.length ;   ++i)"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v17": {
+      "line": "57",
+      "statement": "orders[i] = 1"
+    }
+  },
+  {
+    "v18": {
+      "line": "58",
+      "statement": "y[i] = dsY.getPartialDerivative(orders)"
+    }
+  },
+  {
+    "v19": {
+      "line": "59",
+      "statement": "orders[i] = 0"
+    }
+  },
+  {
+    "v20": {
+      "line": "62",
+      "statement": "return y"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "v1": {
+      "line": "35",
+      "statement": "double value(double x)"
+    }
+  },
+  {
+    "v2": {
+      "line": "36",
+      "statement": "return FastMath.sqrt(x)"
+    }
+  },
+  {
+    "v3": {
+      "line": "43",
+      "statement": "UnivariateFunction derivative()"
+    }
+  },
+  {
+    "v4": {
+      "line": "44",
+      "statement": "return FunctionUtils.toDifferentiableUnivariateFunction(this).derivative()"
+    }
+  },
+  {
+    "v5": {
+      "line": "50",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v6": {
+      "line": "51",
+      "statement": "return t.sqrt()"
+    }
+  }
+]

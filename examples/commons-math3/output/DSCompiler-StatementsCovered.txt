@@ -1,0 +1,23 @@
+
+testCompositionRules : getCompiler(II)Lorg/apache/commons/math3/analysis/differentiation/DSCompiler;=[194,195
+]
+
+testIncompatibleOrder : getCompiler(II)Lorg/apache/commons/math3/analysis/differentiation/DSCompiler;=[194,195
+]
+
+testIncompatibleParams : getCompiler(II)Lorg/apache/commons/math3/analysis/differentiation/DSCompiler;=[194,195
+]
+
+testIndices : getCompiler(II)Lorg/apache/commons/math3/analysis/differentiation/DSCompiler;=[194,195
+]
+
+testMultiplicationRules : getCompiler(II)Lorg/apache/commons/math3/analysis/differentiation/DSCompiler;=[194,195
+]
+
+testSize : getCompiler(II)Lorg/apache/commons/math3/analysis/differentiation/DSCompiler;=[194,195
+]
+
+testSymmetry : <clinit>()V=[131,132
+132,131
+];;getCompiler(II)Lorg/apache/commons/math3/analysis/differentiation/DSCompiler;=[194,195
+]

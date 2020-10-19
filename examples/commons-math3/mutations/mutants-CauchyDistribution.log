@@ -1,0 +1,119 @@
+1:LVR:0:POS:org.apache.commons.math3.distribution.CauchyDistribution@<init>():54:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.distribution.CauchyDistribution@<init>():54:0 |==> -1
+3:LVR:POS:0:org.apache.commons.math3.distribution.CauchyDistribution@<init>():54:1 |==> 0
+4:LVR:POS:NEG:org.apache.commons.math3.distribution.CauchyDistribution@<init>():54:1 |==> -1
+5:LVR:0:POS:org.apache.commons.math3.distribution.CauchyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):113:0 |==> 1
+6:LVR:0:NEG:org.apache.commons.math3.distribution.CauchyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):113:0 |==> -1
+7:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.CauchyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):113:scale <= 0 |==> scale < 0
+8:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.CauchyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):113:scale <= 0 |==> scale == 0
+9:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.CauchyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):113:scale <= 0 |==> true
+10:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):116:scale |==> 0.0
+11:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):117:median |==> 0.0
+12:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):118:inverseCumAccuracy |==> 0.0
+13:LVR:POS:0:org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:0.5 |==> 0.0
+14:LVR:POS:NEG:org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:0.5 |==> -0.5
+15:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:x - median |==> x % median
+16:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:x - median |==> x * median
+17:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:x - median |==> x + median
+18:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:x - median |==> x / median
+19:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:(x - median) / scale |==> (x - median) % scale
+20:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:(x - median) / scale |==> (x - median) * scale
+21:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:(x - median) / scale |==> (x - median) + scale
+22:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:(x - median) / scale |==> (x - median) - scale
+23:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:FastMath.atan((x - median) / scale) / FastMath.PI |==> FastMath.atan((x - median) / scale) % FastMath.PI
+24:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:FastMath.atan((x - median) / scale) / FastMath.PI |==> FastMath.atan((x - median) / scale) * FastMath.PI
+25:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:FastMath.atan((x - median) / scale) / FastMath.PI |==> FastMath.atan((x - median) / scale) + FastMath.PI
+26:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:FastMath.atan((x - median) / scale) / FastMath.PI |==> FastMath.atan((x - median) / scale) - FastMath.PI
+27:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:0.5 + (FastMath.atan((x - median) / scale) / FastMath.PI) |==> 0.5 % (FastMath.atan((x - median) / scale) / FastMath.PI)
+28:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:0.5 + (FastMath.atan((x - median) / scale) / FastMath.PI) |==> 0.5 * (FastMath.atan((x - median) / scale) / FastMath.PI)
+29:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:0.5 + (FastMath.atan((x - median) / scale) / FastMath.PI) |==> 0.5 - (FastMath.atan((x - median) / scale) / FastMath.PI)
+30:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@cumulativeProbability(double):123:0.5 + (FastMath.atan((x - median) / scale) / FastMath.PI) |==> 0.5 / (FastMath.atan((x - median) / scale) / FastMath.PI)
+31:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@getMedian():132:median |==> 0.0
+32:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@getScale():141:scale |==> 0.0
+33:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):146:x - median |==> x % median
+34:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):146:x - median |==> x * median
+35:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):146:x - median |==> x + median
+36:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):146:x - median |==> x / median
+37:LVR:POS:0:org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:1 |==> 0
+38:LVR:POS:NEG:org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:1 |==> -1
+39:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:1 / FastMath.PI |==> 1 % FastMath.PI
+40:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:1 / FastMath.PI |==> 1 * FastMath.PI
+41:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:1 / FastMath.PI |==> 1 + FastMath.PI
+42:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:1 / FastMath.PI |==> 1 - FastMath.PI
+43:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:dev * dev |==> dev % dev
+44:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:dev * dev |==> dev + dev
+45:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:dev * dev |==> dev - dev
+46:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:dev * dev |==> dev / dev
+47:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:scale * scale |==> scale % scale
+48:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:scale * scale |==> scale + scale
+49:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:scale * scale |==> scale - scale
+50:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:scale * scale |==> scale / scale
+51:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:dev * dev + scale * scale |==> dev * dev % (scale * scale)
+52:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:dev * dev + scale * scale |==> dev * dev * (scale * scale)
+53:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:dev * dev + scale * scale |==> dev * dev - scale * scale
+54:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:dev * dev + scale * scale |==> dev * dev / (scale * scale)
+55:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:scale / (dev * dev + scale * scale) |==> scale % (dev * dev + scale * scale)
+56:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:scale / (dev * dev + scale * scale) |==> scale * (dev * dev + scale * scale)
+57:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:scale / (dev * dev + scale * scale) |==> scale + (dev * dev + scale * scale)
+58:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:scale / (dev * dev + scale * scale) |==> scale - (dev * dev + scale * scale)
+59:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:(1 / FastMath.PI) * (scale / (dev * dev + scale * scale)) |==> (1 / FastMath.PI) % (scale / (dev * dev + scale * scale))
+60:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:(1 / FastMath.PI) * (scale / (dev * dev + scale * scale)) |==> (1 / FastMath.PI) + (scale / (dev * dev + scale * scale))
+61:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:(1 / FastMath.PI) * (scale / (dev * dev + scale * scale)) |==> (1 / FastMath.PI) - (scale / (dev * dev + scale * scale))
+62:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@density(double):147:(1 / FastMath.PI) * (scale / (dev * dev + scale * scale)) |==> (1 / FastMath.PI) / (scale / (dev * dev + scale * scale))
+63:LVR:0:POS:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:0 |==> 1
+64:LVR:0:NEG:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:0 |==> -1
+65:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p < 0 |==> p != 0
+66:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p < 0 |==> p <= 0
+67:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p < 0 |==> false
+68:LVR:POS:0:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:1 |==> 0
+69:LVR:POS:NEG:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:1 |==> -1
+70:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p > 1 |==> p != 1
+71:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p > 1 |==> p >= 1
+72:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p > 1 |==> false
+73:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p < 0 || p > 1 |==> p < 0 != p > 1
+74:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p < 0 || p > 1 |==> p < 0
+75:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p < 0 || p > 1 |==> p > 1
+76:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):159:p < 0 || p > 1 |==> true
+77:LVR:0:POS:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):160:0 |==> 1
+78:LVR:0:NEG:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):160:0 |==> -1
+79:LVR:POS:0:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):160:1 |==> 0
+80:LVR:POS:NEG:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):160:1 |==> -1
+81:LVR:0:POS:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):161:0 |==> 1
+82:LVR:0:NEG:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):161:0 |==> -1
+83:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):161:p == 0 |==> p <= 0
+84:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):161:p == 0 |==> p >= 0
+85:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):161:p == 0 |==> false
+86:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):162:Double.NEGATIVE_INFINITY |==> 0.0
+87:LVR:POS:0:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):163:1 |==> 0
+88:LVR:POS:NEG:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):163:1 |==> -1
+89:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):163:p == 1 |==> p <= 1
+90:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):163:p == 1 |==> p >= 1
+91:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):163:p == 1 |==> false
+92:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):164:Double.POSITIVE_INFINITY |==> 0.0
+93:LVR:POS:0:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:0.5 |==> 0.0
+94:LVR:POS:NEG:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:0.5 |==> -0.5
+95:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:p - 0.5 |==> p % 0.5
+96:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:p - 0.5 |==> p * 0.5
+97:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:p - 0.5 |==> p + 0.5
+98:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:p - 0.5 |==> p / 0.5
+99:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:FastMath.PI * (p - 0.5) |==> FastMath.PI % (p - 0.5)
+100:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:FastMath.PI * (p - 0.5) |==> FastMath.PI + (p - 0.5)
+101:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:FastMath.PI * (p - 0.5) |==> FastMath.PI - (p - 0.5)
+102:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:FastMath.PI * (p - 0.5) |==> FastMath.PI / (p - 0.5)
+103:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:scale * FastMath.tan(FastMath.PI * (p - 0.5)) |==> scale % FastMath.tan(FastMath.PI * (p - 0.5))
+104:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:scale * FastMath.tan(FastMath.PI * (p - 0.5)) |==> scale + FastMath.tan(FastMath.PI * (p - 0.5))
+105:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:scale * FastMath.tan(FastMath.PI * (p - 0.5)) |==> scale - FastMath.tan(FastMath.PI * (p - 0.5))
+106:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:scale * FastMath.tan(FastMath.PI * (p - 0.5)) |==> scale / FastMath.tan(FastMath.PI * (p - 0.5))
+107:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:median + scale * FastMath.tan(FastMath.PI * (p - 0.5)) |==> median % (scale * FastMath.tan(FastMath.PI * (p - 0.5)))
+108:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:median + scale * FastMath.tan(FastMath.PI * (p - 0.5)) |==> median * (scale * FastMath.tan(FastMath.PI * (p - 0.5)))
+109:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:median + scale * FastMath.tan(FastMath.PI * (p - 0.5)) |==> median - scale * FastMath.tan(FastMath.PI * (p - 0.5))
+110:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):166:median + scale * FastMath.tan(FastMath.PI * (p - 0.5)) |==> median / (scale * FastMath.tan(FastMath.PI * (p - 0.5)))
+111:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@inverseCumulativeProbability(double):168:ret |==> 0.0
+112:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@getSolverAbsoluteAccuracy():174:solverAbsoluteAccuracy |==> 0.0
+113:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@getNumericalMean():185:Double.NaN |==> 0.0
+114:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@getNumericalVariance():196:Double.NaN |==> 0.0
+115:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@getSupportLowerBound():208:Double.NEGATIVE_INFINITY |==> 0.0
+116:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.CauchyDistribution@getSupportUpperBound():220:Double.POSITIVE_INFINITY |==> 0.0
+117:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.CauchyDistribution@isSupportLowerBoundInclusive():225:false |==> true
+118:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.CauchyDistribution@isSupportUpperBoundInclusive():230:false |==> true
+119:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.CauchyDistribution@isSupportConnected():241:true |==> false

@@ -1,0 +1,93 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "52"
+    ],
+    "sourceClass": "GnuParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR1",
+      "TR2"
+    ],
+    "affectedTest": [
+      "testArgumentStartingWithHyphen",
+      "testDoubleDash1",
+      "testLongWithEqualDoubleDash",
+      "testLongWithEqualSingleDash",
+      "testLongWithoutEqualDoubleDash",
+      "testMissingArg",
+      "testMissingRequiredGroup",
+      "testMissingRequiredOption",
+      "testMissingRequiredOptions",
+      "testMultiple",
+      "testMultipleWithLong",
+      "testNegativeArgument",
+      "testOptionAndRequiredOption",
+      "testOptionGroup",
+      "testOptionGroupLong",
+      "testPropertiesOption1",
+      "testPropertiesOption2",
+      "testPropertyOptionFlags",
+      "testPropertyOptionGroup",
+      "testPropertyOptionMultipleValues",
+      "testPropertyOptionRequired",
+      "testPropertyOptionSingularValue",
+      "testPropertyOptionUnexpected",
+      "testReuseOptionsTwice",
+      "testShortWithEqual",
+      "testShortWithoutEqual",
+      "testSimpleLong",
+      "testSimpleShort",
+      "testSingleDash",
+      "testStopAtExpectedArg",
+      "testStopAtNonOptionLong",
+      "testStopAtNonOptionShort",
+      "testStopAtUnexpectedArg",
+      "testUnlimitedArgs",
+      "testUnrecognizedOption",
+      "testWithRequiredOption"
+    ],
+    "testReran": [
+      "testUnlimitedArgs",
+      "testStopAtNonOptionLong",
+      "testWithRequiredOption",
+      "testMultiple",
+      "testPropertiesOption2",
+      "testMultipleWithLong",
+      "testPropertyOptionGroup",
+      "testShortWithEqual",
+      "testOptionAndRequiredOption",
+      "testSimpleLong",
+      "testStopAtExpectedArg",
+      "testNegativeArgument",
+      "testMissingRequiredOptions",
+      "testShortWithoutEqual",
+      "testMissingArg",
+      "testLongWithoutEqualDoubleDash",
+      "testPropertyOptionUnexpected",
+      "testPropertyOptionFlags",
+      "testSingleDash",
+      "testSimpleShort",
+      "testStopAtNonOptionShort",
+      "testArgumentStartingWithHyphen",
+      "testStopAtUnexpectedArg",
+      "testPropertyOptionMultipleValues",
+      "testDoubleDash1",
+      "testMissingRequiredGroup",
+      "testMissingRequiredOption",
+      "testPropertyOptionSingularValue",
+      "testUnrecognizedOption",
+      "testOptionGroup",
+      "testOptionGroupLong",
+      "testPropertyOptionRequired",
+      "testLongWithEqualSingleDash",
+      "testLongWithEqualDoubleDash",
+      "testPropertiesOption1",
+      "testReuseOptionsTwice"
+    ],
+    "unsatisfiedRequirement": [
+      "TR1"
+    ]
+  }
+}

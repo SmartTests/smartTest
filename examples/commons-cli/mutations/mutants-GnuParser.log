@@ -1,0 +1,68 @@
+1:EVR:<NEW_CLASS(java.util.ArrayList<java.lang.String>)>:<DEFAULT>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):52:new ArrayList<String>() |==> null
+2:LVR:FALSE:TRUE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):54:false |==> true
+3:LVR:0:POS:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):56:0 |==> 1
+4:LVR:0:NEG:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):56:0 |==> -1
+5:ROR:<(int,int):!=(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):56:i < arguments.length |==> i != arguments.length
+6:ROR:<(int,int):<=(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):56:i < arguments.length |==> i <= arguments.length
+7:ROR:<(int,int):FALSE(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):56:i < arguments.length |==> false
+8:EVR:<ARRAY_ACCESS(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):58:arguments[i] |==> null
+9:COR:"--".equals(arg):TRUE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):60:"--".equals(arg) |==> false
+10:COR:"--".equals(arg):FALSE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):60:"--".equals(arg) |==> true
+11:LVR:TRUE:FALSE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):62:true |==> false
+12:STD:<ASSIGN>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):62:eatTheRest = true |==> <NO-OP>
+13:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):63:tokens.add("--") |==> <NO-OP>
+14:COR:"-".equals(arg):TRUE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):65:"-".equals(arg) |==> false
+15:COR:"-".equals(arg):FALSE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):65:"-".equals(arg) |==> true
+16:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):67:tokens.add("-") |==> <NO-OP>
+17:COR:arg.startsWith("-"):TRUE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):69:arg.startsWith("-") |==> false
+18:COR:arg.startsWith("-"):FALSE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):69:arg.startsWith("-") |==> true
+19:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):71:Util.stripLeadingHyphens(arg) |==> null
+20:COR:options.hasOption(opt):TRUE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):73:options.hasOption(opt) |==> false
+21:COR:options.hasOption(opt):FALSE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):73:options.hasOption(opt) |==> true
+22:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):75:tokens.add(arg) |==> <NO-OP>
+23:LVR:NEG:0:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:-1 |==> 0
+24:LVR:NEG:POS:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:-1 |==> 1
+25:ROR:!=(int,int):<(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:opt.indexOf('=') != -1 |==> opt.indexOf('=') < -1
+26:ROR:!=(int,int):>(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:opt.indexOf('=') != -1 |==> opt.indexOf('=') > -1
+27:ROR:!=(int,int):TRUE(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:opt.indexOf('=') != -1 |==> true
+28:LVR:0:POS:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:0 |==> 1
+29:LVR:0:NEG:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:0 |==> -1
+30:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:opt.indexOf('=') != -1 && options.hasOption(opt.substring(0, opt.indexOf('='))) |==> opt.indexOf('=') != -1 == options.hasOption(opt.substring(0, opt.indexOf('=')))
+31:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:opt.indexOf('=') != -1 && options.hasOption(opt.substring(0, opt.indexOf('='))) |==> false
+32:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:opt.indexOf('=') != -1 && options.hasOption(opt.substring(0, opt.indexOf('='))) |==> opt.indexOf('=') != -1
+33:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):79:opt.indexOf('=') != -1 && options.hasOption(opt.substring(0, opt.indexOf('='))) |==> options.hasOption(opt.substring(0, opt.indexOf('=')))
+34:LVR:0:POS:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):82:0 |==> 1
+35:LVR:0:NEG:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):82:0 |==> -1
+36:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):82:tokens.add(arg.substring(0, arg.indexOf('='))) |==> <NO-OP>
+37:LVR:POS:0:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):83:1 |==> 0
+38:LVR:POS:NEG:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):83:1 |==> -1
+39:AOR:+(int,int):%(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):83:arg.indexOf('=') + 1 |==> arg.indexOf('=') % 1
+40:AOR:+(int,int):*(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):83:arg.indexOf('=') + 1 |==> arg.indexOf('=') * 1
+41:AOR:+(int,int):-(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):83:arg.indexOf('=') + 1 |==> arg.indexOf('=') - 1
+42:AOR:+(int,int):/(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):83:arg.indexOf('=') + 1 |==> arg.indexOf('=') / 1
+43:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):83:tokens.add(arg.substring(arg.indexOf('=') + 1)) |==> <NO-OP>
+44:LVR:0:POS:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):85:0 |==> 1
+45:LVR:0:NEG:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):85:0 |==> -1
+46:LVR:POS:0:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):85:2 |==> 0
+47:LVR:POS:NEG:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):85:2 |==> -2
+48:COR:options.hasOption(arg.substring(0, 2)):TRUE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):85:options.hasOption(arg.substring(0, 2)) |==> false
+49:COR:options.hasOption(arg.substring(0, 2)):FALSE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):85:options.hasOption(arg.substring(0, 2)) |==> true
+50:LVR:0:POS:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):88:0 |==> 1
+51:LVR:0:NEG:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):88:0 |==> -1
+52:LVR:POS:0:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):88:2 |==> 0
+53:LVR:POS:NEG:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):88:2 |==> -2
+54:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):88:tokens.add(arg.substring(0, 2)) |==> <NO-OP>
+55:LVR:POS:0:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):89:2 |==> 0
+56:LVR:POS:NEG:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):89:2 |==> -2
+57:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):89:tokens.add(arg.substring(2)) |==> <NO-OP>
+58:STD:<ASSIGN>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):93:eatTheRest = stopAtNonOption |==> <NO-OP>
+59:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):94:tokens.add(arg) |==> <NO-OP>
+60:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):100:tokens.add(arg) |==> <NO-OP>
+61:COR:eatTheRest:TRUE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):103:eatTheRest |==> false
+62:COR:eatTheRest:FALSE:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):103:eatTheRest |==> true
+63:STD:<INC>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):105:i++ |==> <NO-OP>
+64:ROR:<(int,int):!=(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):105:i < arguments.length |==> i != arguments.length
+65:ROR:<(int,int):<=(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):105:i < arguments.length |==> i <= arguments.length
+66:ROR:<(int,int):FALSE(int,int):org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):105:i < arguments.length |==> false
+67:STD:<CALL>:<NO-OP>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):107:tokens.add(arguments[i]) |==> <NO-OP>
+68:EVR:<METHOD_INVOCATION(java.lang.String[])>:<DEFAULT>:org.apache.commons.cli.GnuParser@flatten(org.apache.commons.cli.Options,java.lang.String[],boolean):112:tokens.toArray(new String[tokens.size()]) |==> null

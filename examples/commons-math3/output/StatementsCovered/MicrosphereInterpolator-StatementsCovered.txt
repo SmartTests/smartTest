@@ -1,0 +1,22 @@
+
+testLinearFunction2D : <init>()V=[62,63
+63,64
+];;<init>(II)V=[75,76
+76,77
+77,80
+80,84
+84,85
+85,86
+]
+
+testParaboloid2D : <init>()V=[62,63
+63,64
+];;<init>(II)V=[75,76
+76,77
+77,80
+80,84
+84,85
+85,86
+];;interpolate([[D[D)Lorg/apache/commons/math3/analysis/MultivariateFunction;=[95,96
+96,98
+]

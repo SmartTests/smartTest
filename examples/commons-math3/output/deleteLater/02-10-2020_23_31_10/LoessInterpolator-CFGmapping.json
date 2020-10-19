@@ -1,0 +1,854 @@
+[
+  {
+    "v1": {
+      "line": "95",
+      "statement": "LoessInterpolator ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "96",
+      "statement": "this.bandwidth = DEFAULT_BANDWIDTH"
+    }
+  },
+  {
+    "v3": {
+      "line": "97",
+      "statement": "this.robustnessIters = DEFAULT_ROBUSTNESS_ITERS"
+    }
+  },
+  {
+    "v4": {
+      "line": "98",
+      "statement": "this.accuracy = DEFAULT_ACCURACY"
+    }
+  },
+  {
+    "v5": {
+      "line": "123",
+      "statement": "LoessInterpolator (double bandwidth, int robustnessIters)"
+    }
+  },
+  {
+    "v6": {
+      "line": "124",
+      "statement": "this(bandwidth, robustnessIters, DEFAULT_ACCURACY)"
+    }
+  },
+  {
+    "v7": {
+      "line": "148",
+      "statement": "LoessInterpolator (double bandwidth, int robustnessIters, double accuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "151",
+      "statement": "if (bandwidth < 0 || bandwidth > 1)"
+    }
+  },
+  {
+    "v9": {
+      "line": "153",
+      "statement": "throw new OutOfRangeException(LocalizedFormats.BANDWIDTH, bandwidth, 0, 1)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "155",
+      "statement": "this.bandwidth = bandwidth"
+    }
+  },
+  {
+    "v12": {
+      "line": "156",
+      "statement": "if (robustnessIters < 0)"
+    }
+  },
+  {
+    "v13": {
+      "line": "157",
+      "statement": "throw new NotPositiveException(LocalizedFormats.ROBUSTNESS_ITERATIONS, robustnessIters)"
+    }
+  },
+  {
+    "v14": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v15": {
+      "line": "159",
+      "statement": "this.robustnessIters = robustnessIters"
+    }
+  },
+  {
+    "v16": {
+      "line": "160",
+      "statement": "this.accuracy = accuracy"
+    }
+  },
+  {
+    "v17": {
+      "line": "184",
+      "statement": "PolynomialSplineFunction interpolate(final double[] xval, final double[] yval)"
+    }
+  },
+  {
+    "v18": {
+      "line": "191",
+      "statement": "return new SplineInterpolator().interpolate(xval, smooth(xval, yval))"
+    }
+  },
+  {
+    "v19": {
+      "line": "214",
+      "statement": "double[] smooth(final double[] xval, final double[] yval,  final double[] weights)"
+    }
+  },
+  {
+    "v20": {
+      "line": "221",
+      "statement": "if (xval.length != yval.length)"
+    }
+  },
+  {
+    "v21": {
+      "line": "222",
+      "statement": "throw new DimensionMismatchException(xval.length, yval.length)"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v23": {
+      "line": "225",
+      "statement": "final int n = xval.length"
+    }
+  },
+  {
+    "v24": {
+      "line": "227",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v25": {
+      "line": "228",
+      "statement": "throw new NoDataException()"
+    }
+  },
+  {
+    "v26": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v27": {
+      "line": "231",
+      "statement": "checkAllFiniteReal(xval)"
+    }
+  },
+  {
+    "v28": {
+      "line": "232",
+      "statement": "checkAllFiniteReal(yval)"
+    }
+  },
+  {
+    "v29": {
+      "line": "233",
+      "statement": "checkAllFiniteReal(weights)"
+    }
+  },
+  {
+    "v30": {
+      "line": "235",
+      "statement": "MathArrays.checkOrder(xval)"
+    }
+  },
+  {
+    "v31": {
+      "line": "237",
+      "statement": "if (n == 1)"
+    }
+  },
+  {
+    "v32": {
+      "line": "238",
+      "statement": "return new double[]{yval[0]}"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v34": {
+      "line": "241",
+      "statement": "if (n == 2)"
+    }
+  },
+  {
+    "v35": {
+      "line": "242",
+      "statement": "return new double[]{yval[0], yval[1]}"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v37": {
+      "line": "245",
+      "statement": "int bandwidthInPoints = (int) (bandwidth * n)"
+    }
+  },
+  {
+    "v38": {
+      "line": "247",
+      "statement": "if (bandwidthInPoints < 2)"
+    }
+  },
+  {
+    "v39": {
+      "line": "248",
+      "statement": "throw new NumberIsTooSmallException(LocalizedFormats.BANDWIDTH, bandwidthInPoints, 2, true)"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v41": {
+      "line": "252",
+      "statement": "final double[] res = new double[n"
+    }
+  },
+  {
+    "v42": {
+      "line": "254",
+      "statement": "final double[] residuals = new double[n"
+    }
+  },
+  {
+    "v43": {
+      "line": "255",
+      "statement": "final double[] sortedResiduals = new double[n"
+    }
+  },
+  {
+    "v44": {
+      "line": "257",
+      "statement": "final double[] robustnessWeights = new double[n"
+    }
+  },
+  {
+    "v45": {
+      "line": "262",
+      "statement": "Arrays.fill(robustnessWeights, 1)"
+    }
+  },
+  {
+    "v46": {
+      "line": "264",
+      "statement": "for (  int iter = 0 ; iter <= robustnessIters ;   ++iter)"
+    }
+  },
+  {
+    "v49": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v50": {
+      "line": "265",
+      "statement": "final int[] bandwidthInterval = {0, bandwidthInPoints - 1}"
+    }
+  },
+  {
+    "v51": {
+      "line": "267",
+      "statement": "for (  int i = 0 ; i < n ;   ++i)"
+    }
+  },
+  {
+    "v54": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v55": {
+      "line": "268",
+      "statement": "final double x = xval[i"
+    }
+  },
+  {
+    "v56": {
+      "line": "272",
+      "statement": "if (i > 0)"
+    }
+  },
+  {
+    "v57": {
+      "line": "273",
+      "statement": "updateBandwidthInterval(xval, weights, i, bandwidthInterval)"
+    }
+  },
+  {
+    "v58": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v59": {
+      "line": "276",
+      "statement": "final int ileft = bandwidthInterval[0"
+    }
+  },
+  {
+    "v60": {
+      "line": "277",
+      "statement": "final int iright = bandwidthInterval[1"
+    }
+  },
+  {
+    "v61": {
+      "line": "281",
+      "statement": "final int edge"
+    }
+  },
+  {
+    "v62": {
+      "line": "282",
+      "statement": "if (xval[i] - xval[ileft] > xval[iright] - xval[i])"
+    }
+  },
+  {
+    "v63": {
+      "line": "283",
+      "statement": "edge = ileft"
+    }
+  },
+  {
+    "v64": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v65": {
+      "line": "285",
+      "statement": "edge = iright"
+    }
+  },
+  {
+    "v66": {
+      "line": "295",
+      "statement": "double sumWeights = 0"
+    }
+  },
+  {
+    "v67": {
+      "line": "296",
+      "statement": "double sumX = 0"
+    }
+  },
+  {
+    "v68": {
+      "line": "297",
+      "statement": "double sumXSquared = 0"
+    }
+  },
+  {
+    "v69": {
+      "line": "298",
+      "statement": "double sumY = 0"
+    }
+  },
+  {
+    "v70": {
+      "line": "299",
+      "statement": "double sumXY = 0"
+    }
+  },
+  {
+    "v71": {
+      "line": "300",
+      "statement": "double denom = FastMath.abs(1.0 / (xval[edge] - x))"
+    }
+  },
+  {
+    "v72": {
+      "line": "301",
+      "statement": "for (  int k = ileft ; k <= iright ;   ++k)"
+    }
+  },
+  {
+    "v75": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v76": {
+      "line": "302",
+      "statement": "final double xk = xval[k"
+    }
+  },
+  {
+    "v77": {
+      "line": "303",
+      "statement": "final double yk = yval[k"
+    }
+  },
+  {
+    "v78": {
+      "line": "304",
+      "statement": "final double dist = (k < i) ? x - xk"
+    }
+  },
+  {
+    "v79": {
+      "line": "305",
+      "statement": "final double w  = tricube(dist * denom) * robustnessWeights[k] * weights[k"
+    }
+  },
+  {
+    "v80": {
+      "line": "306",
+      "statement": "final double xkw  = xk * w"
+    }
+  },
+  {
+    "v81": {
+      "line": "307",
+      "statement": "sumWeights += w"
+    }
+  },
+  {
+    "v82": {
+      "line": "308",
+      "statement": "sumX += xkw"
+    }
+  },
+  {
+    "v83": {
+      "line": "309",
+      "statement": "sumXSquared += xk * xkw"
+    }
+  },
+  {
+    "v84": {
+      "line": "310",
+      "statement": "sumY += yk * w"
+    }
+  },
+  {
+    "v85": {
+      "line": "311",
+      "statement": "sumXY += yk * xkw"
+    }
+  },
+  {
+    "v86": {
+      "line": "314",
+      "statement": "final double meanX = sumX / sumWeights"
+    }
+  },
+  {
+    "v87": {
+      "line": "315",
+      "statement": "final double meanY = sumY / sumWeights"
+    }
+  },
+  {
+    "v88": {
+      "line": "316",
+      "statement": "final double meanXY = sumXY / sumWeights"
+    }
+  },
+  {
+    "v89": {
+      "line": "317",
+      "statement": "final double meanXSquared = sumXSquared / sumWeights"
+    }
+  },
+  {
+    "v90": {
+      "line": "319",
+      "statement": "final double beta"
+    }
+  },
+  {
+    "v91": {
+      "line": "320",
+      "statement": "if (FastMath.sqrt(FastMath.abs(meanXSquared - meanX * meanX)) < accuracy)"
+    }
+  },
+  {
+    "v92": {
+      "line": "321",
+      "statement": "beta = 0"
+    }
+  },
+  {
+    "v93": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v94": {
+      "line": "323",
+      "statement": "beta = (meanXY - meanX * meanY) / (meanXSquared - meanX * meanX)"
+    }
+  },
+  {
+    "v95": {
+      "line": "326",
+      "statement": "final double alpha = meanY - beta * meanX"
+    }
+  },
+  {
+    "v96": {
+      "line": "328",
+      "statement": "res[i] = beta * x + alpha"
+    }
+  },
+  {
+    "v97": {
+      "line": "329",
+      "statement": "residuals[i] = FastMath.abs(yval[i] - res[i])"
+    }
+  },
+  {
+    "v98": {
+      "line": "334",
+      "statement": "if (iter == robustnessIters)"
+    }
+  },
+  {
+    "v99": {
+      "line": "335",
+      "statement": "break"
+    }
+  },
+  {
+    "v100": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v101": {
+      "line": "343",
+      "statement": "System.arraycopy(residuals, 0, sortedResiduals, 0, n)"
+    }
+  },
+  {
+    "v102": {
+      "line": "344",
+      "statement": "Arrays.sort(sortedResiduals)"
+    }
+  },
+  {
+    "v103": {
+      "line": "345",
+      "statement": "final double medianResidual = sortedResiduals[n / 2"
+    }
+  },
+  {
+    "v104": {
+      "line": "347",
+      "statement": "if (FastMath.abs(medianResidual) < accuracy)"
+    }
+  },
+  {
+    "v105": {
+      "line": "348",
+      "statement": "break"
+    }
+  },
+  {
+    "v106": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v107": {
+      "line": "351",
+      "statement": "for (  int i = 0 ; i < n ;   ++i)"
+    }
+  },
+  {
+    "v110": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v111": {
+      "line": "352",
+      "statement": "final double arg = residuals[i] / (6 * medianResidual)"
+    }
+  },
+  {
+    "v112": {
+      "line": "353",
+      "statement": "if (arg >= 1)"
+    }
+  },
+  {
+    "v113": {
+      "line": "354",
+      "statement": "robustnessWeights[i] = 0"
+    }
+  },
+  {
+    "v114": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v115": {
+      "line": "356",
+      "statement": "final double w = 1 - arg * arg"
+    }
+  },
+  {
+    "v116": {
+      "line": "357",
+      "statement": "robustnessWeights[i] = w * w"
+    }
+  },
+  {
+    "v117": {
+      "line": "362",
+      "statement": "return res"
+    }
+  },
+  {
+    "v118": {
+      "line": "382",
+      "statement": "double[] smooth(final double[] xval, final double[] yval)"
+    }
+  },
+  {
+    "v119": {
+      "line": "388",
+      "statement": "if (xval.length != yval.length)"
+    }
+  },
+  {
+    "v120": {
+      "line": "389",
+      "statement": "throw new DimensionMismatchException(xval.length, yval.length)"
+    }
+  },
+  {
+    "v121": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v122": {
+      "line": "392",
+      "statement": "final double[] unitWeights = new double[xval.length"
+    }
+  },
+  {
+    "v123": {
+      "line": "393",
+      "statement": "Arrays.fill(unitWeights, 1.0)"
+    }
+  },
+  {
+    "v124": {
+      "line": "395",
+      "statement": "return smooth(xval, yval, unitWeights)"
+    }
+  },
+  {
+    "v125": {
+      "line": "413",
+      "statement": "void updateBandwidthInterval(final double[] xval, final double[] weights, final int i, final int[] bandwidthInterval)"
+    }
+  },
+  {
+    "v126": {
+      "line": "416",
+      "statement": "final int left = bandwidthInterval[0"
+    }
+  },
+  {
+    "v127": {
+      "line": "417",
+      "statement": "final int right = bandwidthInterval[1"
+    }
+  },
+  {
+    "v128": {
+      "line": "421",
+      "statement": "int nextRight = nextNonzero(weights, right)"
+    }
+  },
+  {
+    "v129": {
+      "line": "422",
+      "statement": "if (nextRight < xval.length && xval[nextRight] - xval[i] < xval[i] - xval[left])"
+    }
+  },
+  {
+    "v130": {
+      "line": "423",
+      "statement": "int nextLeft = nextNonzero(weights, bandwidthInterval[0])"
+    }
+  },
+  {
+    "v131": {
+      "line": "424",
+      "statement": "bandwidthInterval[0] = nextLeft"
+    }
+  },
+  {
+    "v132": {
+      "line": "425",
+      "statement": "bandwidthInterval[1] = nextRight"
+    }
+  },
+  {
+    "v133": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v134": {
+      "line": "437",
+      "statement": "int nextNonzero(final double[] weights, final int i)"
+    }
+  },
+  {
+    "v135": {
+      "line": "438",
+      "statement": "int j = i + 1"
+    }
+  },
+  {
+    "v136": {
+      "line": "439",
+      "statement": "while (j < weights.length && weights[j] == 0)"
+    }
+  },
+  {
+    "v137": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v138": {
+      "line": "440",
+      "statement": "++j"
+    }
+  },
+  {
+    "v139": {
+      "line": "442",
+      "statement": "return j"
+    }
+  },
+  {
+    "v140": {
+      "line": "453",
+      "statement": "double tricube(final double x)"
+    }
+  },
+  {
+    "v141": {
+      "line": "454",
+      "statement": "final double absX = FastMath.abs(x)"
+    }
+  },
+  {
+    "v142": {
+      "line": "455",
+      "statement": "if (absX >= 1.0)"
+    }
+  },
+  {
+    "v143": {
+      "line": "456",
+      "statement": "return 0.0"
+    }
+  },
+  {
+    "v144": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v145": {
+      "line": "458",
+      "statement": "final double tmp = 1 - absX * absX * absX"
+    }
+  },
+  {
+    "v146": {
+      "line": "459",
+      "statement": "return tmp * tmp * tmp"
+    }
+  },
+  {
+    "v147": {
+      "line": "469",
+      "statement": "void checkAllFiniteReal(final double[] values)"
+    }
+  },
+  {
+    "v148": {
+      "line": "470",
+      "statement": "for (  int i = 0 ; i < values.length ;   i++)"
+    }
+  },
+  {
+    "v151": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v152": {
+      "line": "471",
+      "statement": "MathUtils.checkFinite(values[i])"
+    }
+  }
+]

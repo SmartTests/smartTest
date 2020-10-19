@@ -1,0 +1,68 @@
+[
+  {
+    "v1": {
+      "line": "41",
+      "statement": "ComplexField ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "47",
+      "statement": "ComplexField getInstance()"
+    }
+  },
+  {
+    "v3": {
+      "line": "48",
+      "statement": "return LazyHolder.INSTANCE"
+    }
+  },
+  {
+    "v4": {
+      "line": "52",
+      "statement": "Complex getOne()"
+    }
+  },
+  {
+    "v5": {
+      "line": "53",
+      "statement": "return Complex.ONE"
+    }
+  },
+  {
+    "v6": {
+      "line": "57",
+      "statement": "Complex getZero()"
+    }
+  },
+  {
+    "v7": {
+      "line": "58",
+      "statement": "return Complex.ZERO"
+    }
+  },
+  {
+    "v8": {
+      "line": "62",
+      "statement": "Class<?extendsFieldElement<Complex>> getRuntimeClass()"
+    }
+  },
+  {
+    "v9": {
+      "line": "63",
+      "statement": "return Complex.class"
+    }
+  },
+  {
+    "v10": {
+      "line": "79",
+      "statement": "Object readResolve()"
+    }
+  },
+  {
+    "v11": {
+      "line": "81",
+      "statement": "return LazyHolder.INSTANCE"
+    }
+  }
+]

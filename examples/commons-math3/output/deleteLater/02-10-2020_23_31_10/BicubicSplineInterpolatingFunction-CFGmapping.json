@@ -1,0 +1,1130 @@
+[
+  {
+    "v1": {
+      "line": "95",
+      "statement": "BicubicSplineInterpolatingFunction (double[] x, double[] y, double[][] f, double[][] dFdX, double[][] dFdY, double[][] d2FdXdY)"
+    }
+  },
+  {
+    "v2": {
+      "line": "104",
+      "statement": "final int xLen = x.length"
+    }
+  },
+  {
+    "v3": {
+      "line": "105",
+      "statement": "final int yLen = y.length"
+    }
+  },
+  {
+    "v4": {
+      "line": "107",
+      "statement": "if (xLen == 0 || yLen == 0 || f.length == 0 || f[0].length == 0)"
+    }
+  },
+  {
+    "v5": {
+      "line": "108",
+      "statement": "throw new NoDataException()"
+    }
+  },
+  {
+    "v6": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v7": {
+      "line": "110",
+      "statement": "if (xLen != f.length)"
+    }
+  },
+  {
+    "v8": {
+      "line": "111",
+      "statement": "throw new DimensionMismatchException(xLen, f.length)"
+    }
+  },
+  {
+    "v9": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v10": {
+      "line": "113",
+      "statement": "if (xLen != dFdX.length)"
+    }
+  },
+  {
+    "v11": {
+      "line": "114",
+      "statement": "throw new DimensionMismatchException(xLen, dFdX.length)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v13": {
+      "line": "116",
+      "statement": "if (xLen != dFdY.length)"
+    }
+  },
+  {
+    "v14": {
+      "line": "117",
+      "statement": "throw new DimensionMismatchException(xLen, dFdY.length)"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "119",
+      "statement": "if (xLen != d2FdXdY.length)"
+    }
+  },
+  {
+    "v17": {
+      "line": "120",
+      "statement": "throw new DimensionMismatchException(xLen, d2FdXdY.length)"
+    }
+  },
+  {
+    "v18": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v19": {
+      "line": "123",
+      "statement": "MathArrays.checkOrder(x)"
+    }
+  },
+  {
+    "v20": {
+      "line": "124",
+      "statement": "MathArrays.checkOrder(y)"
+    }
+  },
+  {
+    "v21": {
+      "line": "126",
+      "statement": "xval = x.clone()"
+    }
+  },
+  {
+    "v22": {
+      "line": "127",
+      "statement": "yval = y.clone()"
+    }
+  },
+  {
+    "v23": {
+      "line": "129",
+      "statement": "final int lastI = xLen - 1"
+    }
+  },
+  {
+    "v24": {
+      "line": "130",
+      "statement": "final int lastJ = yLen - 1"
+    }
+  },
+  {
+    "v25": {
+      "line": "131",
+      "statement": "splines = new BicubicSplineFunction[lastI][lastJ"
+    }
+  },
+  {
+    "v26": {
+      "line": "133",
+      "statement": "for (  int i = 0 ; i < lastI ;   i++)"
+    }
+  },
+  {
+    "v29": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v30": {
+      "line": "134",
+      "statement": "if (f[i].length != yLen)"
+    }
+  },
+  {
+    "v31": {
+      "line": "135",
+      "statement": "throw new DimensionMismatchException(f[i].length, yLen)"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v33": {
+      "line": "137",
+      "statement": "if (dFdX[i].length != yLen)"
+    }
+  },
+  {
+    "v34": {
+      "line": "138",
+      "statement": "throw new DimensionMismatchException(dFdX[i].length, yLen)"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v36": {
+      "line": "140",
+      "statement": "if (dFdY[i].length != yLen)"
+    }
+  },
+  {
+    "v37": {
+      "line": "141",
+      "statement": "throw new DimensionMismatchException(dFdY[i].length, yLen)"
+    }
+  },
+  {
+    "v38": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v39": {
+      "line": "143",
+      "statement": "if (d2FdXdY[i].length != yLen)"
+    }
+  },
+  {
+    "v40": {
+      "line": "144",
+      "statement": "throw new DimensionMismatchException(d2FdXdY[i].length, yLen)"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v42": {
+      "line": "146",
+      "statement": "final int ip1 = i + 1"
+    }
+  },
+  {
+    "v43": {
+      "line": "147",
+      "statement": "for (  int j = 0 ; j < lastJ ;   j++)"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v47": {
+      "line": "148",
+      "statement": "final int jp1 = j + 1"
+    }
+  },
+  {
+    "v48": {
+      "line": "149",
+      "statement": "final double[] beta = new double[] { f[i][j], f[ip1][j], f[i][jp1], f[ip1][jp1], dFdX[i][j], dFdX[ip1][j], dFdX[i][jp1], dFdX[ip1][jp1], dFdY[i][j], dFdY[ip1][j], dFdY[i][jp1], dFdY[ip1][jp1], d2FdXdY[i][j], d2FdXdY[ip1][j], d2FdXdY[i][jp1], d2FdXdY[ip1][jp1] }"
+    }
+  },
+  {
+    "v49": {
+      "line": "156",
+      "statement": "splines[i][j] = new BicubicSplineFunction(computeSplineCoefficients(beta))"
+    }
+  },
+  {
+    "v50": {
+      "line": "164",
+      "statement": "double value(double x, double y)"
+    }
+  },
+  {
+    "v51": {
+      "line": "166",
+      "statement": "final int i = searchIndex(x, xval)"
+    }
+  },
+  {
+    "v52": {
+      "line": "167",
+      "statement": "final int j = searchIndex(y, yval)"
+    }
+  },
+  {
+    "v53": {
+      "line": "169",
+      "statement": "final double xN = (x - xval[i]) / (xval[i + 1] - xval[i])"
+    }
+  },
+  {
+    "v54": {
+      "line": "170",
+      "statement": "final double yN = (y - yval[j]) / (yval[j + 1] - yval[j])"
+    }
+  },
+  {
+    "v55": {
+      "line": "172",
+      "statement": "return splines[i][j].value(xN, yN)"
+    }
+  },
+  {
+    "v56": {
+      "line": "183",
+      "statement": "boolean isValidPoint(double x, double y)"
+    }
+  },
+  {
+    "v57": {
+      "line": "184",
+      "statement": "if (x < xval[0] || x > xval[xval.length - 1] || y < yval[0] || y > yval[yval.length - 1])"
+    }
+  },
+  {
+    "v58": {
+      "line": "188",
+      "statement": "return false"
+    }
+  },
+  {
+    "v59": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v60": {
+      "line": "190",
+      "statement": "return true"
+    }
+  },
+  {
+    "v61": {
+      "line": "203",
+      "statement": "double partialDerivativeX(double x, double y)"
+    }
+  },
+  {
+    "v62": {
+      "line": "205",
+      "statement": "return partialDerivative(0, x, y)"
+    }
+  },
+  {
+    "v63": {
+      "line": "216",
+      "statement": "double partialDerivativeY(double x, double y)"
+    }
+  },
+  {
+    "v64": {
+      "line": "218",
+      "statement": "return partialDerivative(1, x, y)"
+    }
+  },
+  {
+    "v65": {
+      "line": "229",
+      "statement": "double partialDerivativeXX(double x, double y)"
+    }
+  },
+  {
+    "v66": {
+      "line": "231",
+      "statement": "return partialDerivative(2, x, y)"
+    }
+  },
+  {
+    "v67": {
+      "line": "242",
+      "statement": "double partialDerivativeYY(double x, double y)"
+    }
+  },
+  {
+    "v68": {
+      "line": "244",
+      "statement": "return partialDerivative(3, x, y)"
+    }
+  },
+  {
+    "v69": {
+      "line": "254",
+      "statement": "double partialDerivativeXY(double x, double y)"
+    }
+  },
+  {
+    "v70": {
+      "line": "256",
+      "statement": "return partialDerivative(4, x, y)"
+    }
+  },
+  {
+    "v71": {
+      "line": "268",
+      "statement": "double partialDerivative(int which, double x, double y)"
+    }
+  },
+  {
+    "v72": {
+      "line": "270",
+      "statement": "if (partialDerivatives == null)"
+    }
+  },
+  {
+    "v73": {
+      "line": "271",
+      "statement": "computePartialDerivatives()"
+    }
+  },
+  {
+    "v74": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v75": {
+      "line": "274",
+      "statement": "final int i = searchIndex(x, xval)"
+    }
+  },
+  {
+    "v76": {
+      "line": "275",
+      "statement": "final int j = searchIndex(y, yval)"
+    }
+  },
+  {
+    "v77": {
+      "line": "277",
+      "statement": "final double xN = (x - xval[i]) / (xval[i + 1] - xval[i])"
+    }
+  },
+  {
+    "v78": {
+      "line": "278",
+      "statement": "final double yN = (y - yval[j]) / (yval[j + 1] - yval[j])"
+    }
+  },
+  {
+    "v79": {
+      "line": "280",
+      "statement": "return partialDerivatives[which][i][j].value(xN, yN)"
+    }
+  },
+  {
+    "v80": {
+      "line": "286",
+      "statement": "void computePartialDerivatives()"
+    }
+  },
+  {
+    "v81": {
+      "line": "287",
+      "statement": "final int lastI = xval.length - 1"
+    }
+  },
+  {
+    "v82": {
+      "line": "288",
+      "statement": "final int lastJ = yval.length - 1"
+    }
+  },
+  {
+    "v83": {
+      "line": "289",
+      "statement": "partialDerivatives = new BivariateFunction[5][lastI][lastJ"
+    }
+  },
+  {
+    "v84": {
+      "line": "291",
+      "statement": "for (  int i = 0 ; i < lastI ;   i++)"
+    }
+  },
+  {
+    "v87": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v88": {
+      "line": "292",
+      "statement": "for (  int j = 0 ; j < lastJ ;   j++)"
+    }
+  },
+  {
+    "v91": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v92": {
+      "line": "293",
+      "statement": "final BicubicSplineFunction f = splines[i][j"
+    }
+  },
+  {
+    "v93": {
+      "line": "294",
+      "statement": "partialDerivatives[0][i][j] = f.partialDerivativeX()"
+    }
+  },
+  {
+    "v94": {
+      "line": "295",
+      "statement": "partialDerivatives[1][i][j] = f.partialDerivativeY()"
+    }
+  },
+  {
+    "v95": {
+      "line": "296",
+      "statement": "partialDerivatives[2][i][j] = f.partialDerivativeXX()"
+    }
+  },
+  {
+    "v96": {
+      "line": "297",
+      "statement": "partialDerivatives[3][i][j] = f.partialDerivativeYY()"
+    }
+  },
+  {
+    "v97": {
+      "line": "298",
+      "statement": "partialDerivatives[4][i][j] = f.partialDerivativeXY()"
+    }
+  },
+  {
+    "v98": {
+      "line": "311",
+      "statement": "int searchIndex(double c, double[] val)"
+    }
+  },
+  {
+    "v99": {
+      "line": "312",
+      "statement": "final int r = Arrays.binarySearch(val, c)"
+    }
+  },
+  {
+    "v100": {
+      "line": "314",
+      "statement": "if (r == -1 || r == -val.length - 1)"
+    }
+  },
+  {
+    "v101": {
+      "line": "316",
+      "statement": "throw new OutOfRangeException(c, val[0], val[val.length - 1])"
+    }
+  },
+  {
+    "v102": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v103": {
+      "line": "319",
+      "statement": "if (r < 0)"
+    }
+  },
+  {
+    "v104": {
+      "line": "322",
+      "statement": "return -r - 2"
+    }
+  },
+  {
+    "v105": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v106": {
+      "line": "324",
+      "statement": "final int last = val.length - 1"
+    }
+  },
+  {
+    "v107": {
+      "line": "325",
+      "statement": "if (r == last)"
+    }
+  },
+  {
+    "v108": {
+      "line": "328",
+      "statement": "return last - 1"
+    }
+  },
+  {
+    "v109": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v110": {
+      "line": "332",
+      "statement": "return r"
+    }
+  },
+  {
+    "v111": {
+      "line": "364",
+      "statement": "double[] computeSplineCoefficients(double[] beta)"
+    }
+  },
+  {
+    "v112": {
+      "line": "365",
+      "statement": "final double[] a = new double[NUM_COEFF"
+    }
+  },
+  {
+    "v113": {
+      "line": "367",
+      "statement": "for (  int i = 0 ; i < NUM_COEFF ;   i++)"
+    }
+  },
+  {
+    "v116": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v117": {
+      "line": "368",
+      "statement": "double result = 0"
+    }
+  },
+  {
+    "v118": {
+      "line": "369",
+      "statement": "final double[] row = AINV[i"
+    }
+  },
+  {
+    "v119": {
+      "line": "370",
+      "statement": "for (  int j = 0 ; j < NUM_COEFF ;   j++)"
+    }
+  },
+  {
+    "v122": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v123": {
+      "line": "371",
+      "statement": "result += row[j] * beta[j"
+    }
+  },
+  {
+    "v124": {
+      "line": "373",
+      "statement": "a[i] = result"
+    }
+  },
+  {
+    "v125": {
+      "line": "376",
+      "statement": "return a"
+    }
+  },
+  {
+    "v126": {
+      "line": "413",
+      "statement": "BicubicSplineFunction (double[] a)"
+    }
+  },
+  {
+    "v127": {
+      "line": "414",
+      "statement": "this.a = new double[N][N"
+    }
+  },
+  {
+    "v128": {
+      "line": "415",
+      "statement": "for (  int i = 0 ; i < N ;   i++)"
+    }
+  },
+  {
+    "v131": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v132": {
+      "line": "416",
+      "statement": "for (  int j = 0 ; j < N ;   j++)"
+    }
+  },
+  {
+    "v135": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v136": {
+      "line": "417",
+      "statement": "this.a[i][j] = a[i * N + j"
+    }
+  },
+  {
+    "v137": {
+      "line": "425",
+      "statement": "double value(double x, double y)"
+    }
+  },
+  {
+    "v138": {
+      "line": "426",
+      "statement": "if (x < 0 || x > 1)"
+    }
+  },
+  {
+    "v139": {
+      "line": "427",
+      "statement": "throw new OutOfRangeException(x, 0, 1)"
+    }
+  },
+  {
+    "v140": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v141": {
+      "line": "429",
+      "statement": "if (y < 0 || y > 1)"
+    }
+  },
+  {
+    "v142": {
+      "line": "430",
+      "statement": "throw new OutOfRangeException(y, 0, 1)"
+    }
+  },
+  {
+    "v143": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v144": {
+      "line": "433",
+      "statement": "final double x2 = x * x"
+    }
+  },
+  {
+    "v145": {
+      "line": "434",
+      "statement": "final double x3 = x2 * x"
+    }
+  },
+  {
+    "v146": {
+      "line": "435",
+      "statement": "final double[] pX = {1, x, x2, x3}"
+    }
+  },
+  {
+    "v147": {
+      "line": "437",
+      "statement": "final double y2 = y * y"
+    }
+  },
+  {
+    "v148": {
+      "line": "438",
+      "statement": "final double y3 = y2 * y"
+    }
+  },
+  {
+    "v149": {
+      "line": "439",
+      "statement": "final double[] pY = {1, y, y2, y3}"
+    }
+  },
+  {
+    "v150": {
+      "line": "441",
+      "statement": "return apply(pX, pY, a)"
+    }
+  },
+  {
+    "v151": {
+      "line": "452",
+      "statement": "double apply(double[] pX, double[] pY, double[][] coeff)"
+    }
+  },
+  {
+    "v152": {
+      "line": "453",
+      "statement": "double result = 0"
+    }
+  },
+  {
+    "v153": {
+      "line": "454",
+      "statement": "for (  int i = 0 ; i < N ;   i++)"
+    }
+  },
+  {
+    "v156": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v157": {
+      "line": "455",
+      "statement": "for (  int j = 0 ; j < N ;   j++)"
+    }
+  },
+  {
+    "v160": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v161": {
+      "line": "456",
+      "statement": "result += coeff[i][j] * pX[i] * pY[j"
+    }
+  },
+  {
+    "v162": {
+      "line": "460",
+      "statement": "return result"
+    }
+  },
+  {
+    "v163": {
+      "line": "466",
+      "statement": "BivariateFunction partialDerivativeX()"
+    }
+  },
+  {
+    "v164": {
+      "line": "467",
+      "statement": "if (partialDerivativeX == null)"
+    }
+  },
+  {
+    "v165": {
+      "line": "468",
+      "statement": "computePartialDerivatives()"
+    }
+  },
+  {
+    "v166": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v167": {
+      "line": "471",
+      "statement": "return partialDerivativeX"
+    }
+  },
+  {
+    "v168": {
+      "line": "476",
+      "statement": "BivariateFunction partialDerivativeY()"
+    }
+  },
+  {
+    "v169": {
+      "line": "477",
+      "statement": "if (partialDerivativeY == null)"
+    }
+  },
+  {
+    "v170": {
+      "line": "478",
+      "statement": "computePartialDerivatives()"
+    }
+  },
+  {
+    "v171": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v172": {
+      "line": "481",
+      "statement": "return partialDerivativeY"
+    }
+  },
+  {
+    "v173": {
+      "line": "486",
+      "statement": "BivariateFunction partialDerivativeXX()"
+    }
+  },
+  {
+    "v174": {
+      "line": "487",
+      "statement": "if (partialDerivativeXX == null)"
+    }
+  },
+  {
+    "v175": {
+      "line": "488",
+      "statement": "computePartialDerivatives()"
+    }
+  },
+  {
+    "v176": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v177": {
+      "line": "491",
+      "statement": "return partialDerivativeXX"
+    }
+  },
+  {
+    "v178": {
+      "line": "496",
+      "statement": "BivariateFunction partialDerivativeYY()"
+    }
+  },
+  {
+    "v179": {
+      "line": "497",
+      "statement": "if (partialDerivativeYY == null)"
+    }
+  },
+  {
+    "v180": {
+      "line": "498",
+      "statement": "computePartialDerivatives()"
+    }
+  },
+  {
+    "v181": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v182": {
+      "line": "501",
+      "statement": "return partialDerivativeYY"
+    }
+  },
+  {
+    "v183": {
+      "line": "506",
+      "statement": "BivariateFunction partialDerivativeXY()"
+    }
+  },
+  {
+    "v184": {
+      "line": "507",
+      "statement": "if (partialDerivativeXY == null)"
+    }
+  },
+  {
+    "v185": {
+      "line": "508",
+      "statement": "computePartialDerivatives()"
+    }
+  },
+  {
+    "v186": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v187": {
+      "line": "511",
+      "statement": "return partialDerivativeXY"
+    }
+  },
+  {
+    "v188": {
+      "line": "517",
+      "statement": "void computePartialDerivatives()"
+    }
+  },
+  {
+    "v189": {
+      "line": "518",
+      "statement": "final double[][] aX = new double[N][N"
+    }
+  },
+  {
+    "v190": {
+      "line": "519",
+      "statement": "final double[][] aY = new double[N][N"
+    }
+  },
+  {
+    "v191": {
+      "line": "520",
+      "statement": "final double[][] aXX = new double[N][N"
+    }
+  },
+  {
+    "v192": {
+      "line": "521",
+      "statement": "final double[][] aYY = new double[N][N"
+    }
+  },
+  {
+    "v193": {
+      "line": "522",
+      "statement": "final double[][] aXY = new double[N][N"
+    }
+  },
+  {
+    "v194": {
+      "line": "524",
+      "statement": "for (  int i = 0 ; i < N ;   i++)"
+    }
+  },
+  {
+    "v197": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v198": {
+      "line": "525",
+      "statement": "for (  int j = 0 ; j < N ;   j++)"
+    }
+  },
+  {
+    "v201": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v202": {
+      "line": "526",
+      "statement": "final double c = a[i][j"
+    }
+  },
+  {
+    "v203": {
+      "line": "527",
+      "statement": "aX[i][j] = i * c"
+    }
+  },
+  {
+    "v204": {
+      "line": "528",
+      "statement": "aY[i][j] = j * c"
+    }
+  },
+  {
+    "v205": {
+      "line": "529",
+      "statement": "aXX[i][j] = (i - 1) * aX[i][j"
+    }
+  },
+  {
+    "v206": {
+      "line": "530",
+      "statement": "aYY[i][j] = (j - 1) * aY[i][j"
+    }
+  },
+  {
+    "v207": {
+      "line": "531",
+      "statement": "aXY[i][j] = j * aX[i][j"
+    }
+  },
+  {
+    "v208": {
+      "line": "535",
+      "statement": "partialDerivativeX = new BivariateFunction() { public double value(double x, double y)  { final double x2 = x * x; final double[] pX = {0, 1, x, x2};  final double y2 = y * y; final double y3 = y2 * y; final double[] pY = {1, y, y2, y3};  return apply(pX, pY, aX); } }"
+    }
+  },
+  {
+    "v209": {
+      "line": "547",
+      "statement": "partialDerivativeY = new BivariateFunction() { public double value(double x, double y)  { final double x2 = x * x; final double x3 = x2 * x; final double[] pX = {1, x, x2, x3};  final double y2 = y * y; final double[] pY = {0, 1, y, y2};  return apply(pX, pY, aY); } }"
+    }
+  },
+  {
+    "v210": {
+      "line": "559",
+      "statement": "partialDerivativeXX = new BivariateFunction() { public double value(double x, double y)  { final double[] pX = {0, 0, 1, x};  final double y2 = y * y; final double y3 = y2 * y; final double[] pY = {1, y, y2, y3};  return apply(pX, pY, aXX); } }"
+    }
+  },
+  {
+    "v211": {
+      "line": "570",
+      "statement": "partialDerivativeYY = new BivariateFunction() { public double value(double x, double y)  { final double x2 = x * x; final double x3 = x2 * x; final double[] pX = {1, x, x2, x3};  final double[] pY = {0, 0, 1, y};  return apply(pX, pY, aYY); } }"
+    }
+  },
+  {
+    "v212": {
+      "line": "581",
+      "statement": "partialDerivativeXY = new BivariateFunction() { public double value(double x, double y)  { final double x2 = x * x; final double[] pX = {0, 1, x, x2};  final double y2 = y * y; final double[] pY = {0, 1, y, y2};  return apply(pX, pY, aXY); } }"
+    }
+  }
+]

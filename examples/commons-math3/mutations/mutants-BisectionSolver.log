@@ -1,0 +1,27 @@
+1:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():65:getMin() |==> 0.0
+2:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():66:getMax() |==> 0.0
+3:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():67:verifyInterval(min, max) |==> <NO-OP>
+4:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():68:getAbsoluteAccuracy() |==> 0.0
+5:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():74:UnivariateSolverUtils.midpoint(min, max) |==> 0.0
+6:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():75:computeObjectiveValue(min) |==> 0.0
+7:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():76:computeObjectiveValue(m) |==> 0.0
+8:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():78:fm * fmin |==> fm % fmin
+9:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():78:fm * fmin |==> fm + fmin
+10:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():78:fm * fmin |==> fm - fmin
+11:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():78:fm * fmin |==> fm / fmin
+12:LVR:0:POS:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():78:0 |==> 1
+13:LVR:0:NEG:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():78:0 |==> -1
+14:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():78:fm * fmin > 0 |==> fm * fmin != 0
+15:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():78:fm * fmin > 0 |==> fm * fmin >= 0
+16:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():78:fm * fmin > 0 |==> false
+17:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():80:min = m |==> <NO-OP>
+18:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():83:max = m |==> <NO-OP>
+19:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():86:max - min |==> max % min
+20:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():86:max - min |==> max * min
+21:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():86:max - min |==> max + min
+22:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():86:max - min |==> max / min
+23:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():86:FastMath.abs(max - min) <= absoluteAccuracy |==> FastMath.abs(max - min) < absoluteAccuracy
+24:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():86:FastMath.abs(max - min) <= absoluteAccuracy |==> FastMath.abs(max - min) == absoluteAccuracy
+25:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():86:FastMath.abs(max - min) <= absoluteAccuracy |==> true
+26:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():87:m = UnivariateSolverUtils.midpoint(min, max) |==> <NO-OP>
+27:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.solvers.BisectionSolver@doSolve():88:return m; |==> <NO-OP>

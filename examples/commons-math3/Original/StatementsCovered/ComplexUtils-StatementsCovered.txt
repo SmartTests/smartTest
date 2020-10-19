@@ -1,0 +1,28 @@
+
+altPolar : polar2Complex(DD)Lorg/apache/commons/math3/complex/Complex;=[62,63
+63,67
+]
+
+testConvertToComplex : convertToComplex([D)[Lorg/apache/commons/math3/complex/Complex;=[79,80
+80,81
+81,82
+82,81
+81,85
+]
+
+testPolar2Complex : polar2Complex(DD)Lorg/apache/commons/math3/complex/Complex;=[62,63
+63,67
+]
+
+testPolar2ComplexIllegalModulus : polar2Complex(DD)Lorg/apache/commons/math3/complex/Complex;=[62,63
+63,64
+64,65
+]
+
+testPolar2ComplexInf : polar2Complex(DD)Lorg/apache/commons/math3/complex/Complex;=[62,63
+63,67
+]
+
+testPolar2ComplexNaN : polar2Complex(DD)Lorg/apache/commons/math3/complex/Complex;=[62,63
+63,67
+]

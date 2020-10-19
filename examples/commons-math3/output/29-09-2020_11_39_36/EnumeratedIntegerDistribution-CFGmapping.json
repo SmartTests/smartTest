@@ -1,0 +1,338 @@
+[
+  {
+    "v1": {
+      "line": "65",
+      "statement": "EnumeratedIntegerDistribution (final int[] singletons, final double[] probabilities)"
+    }
+  },
+  {
+    "v2": {
+      "line": "68",
+      "statement": "this(new Well19937c(), singletons, probabilities)"
+    }
+  },
+  {
+    "v3": {
+      "line": "85",
+      "statement": "EnumeratedIntegerDistribution (final RandomGenerator rng,  final int[] singletons, final double[] probabilities)"
+    }
+  },
+  {
+    "v4": {
+      "line": "89",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v5": {
+      "line": "90",
+      "statement": "if (singletons.length != probabilities.length)"
+    }
+  },
+  {
+    "v6": {
+      "line": "91",
+      "statement": "throw new DimensionMismatchException(probabilities.length, singletons.length)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "94",
+      "statement": "final List<Pair<Integer, Double>> samples = new ArrayList<Pair<Integer, Double>>(singletons.length)"
+    }
+  },
+  {
+    "v9": {
+      "line": "96",
+      "statement": "for (  int i = 0 ; i < singletons.length ;   i++)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v13": {
+      "line": "97",
+      "statement": "samples.add(new Pair<Integer, Double>(singletons[i], probabilities[i]))"
+    }
+  },
+  {
+    "v14": {
+      "line": "100",
+      "statement": "innerDistribution = new EnumeratedDistribution<Integer>(rng, samples)"
+    }
+  },
+  {
+    "v15": {
+      "line": "106",
+      "statement": "double probability(final int x)"
+    }
+  },
+  {
+    "v16": {
+      "line": "107",
+      "statement": "return innerDistribution.probability(x)"
+    }
+  },
+  {
+    "v17": {
+      "line": "113",
+      "statement": "double cumulativeProbability(final int x)"
+    }
+  },
+  {
+    "v18": {
+      "line": "114",
+      "statement": "double probability = 0"
+    }
+  },
+  {
+    "v19": {
+      "line": "116",
+      "statement": "for (final Pair<Integer, Double> sample"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v21": {
+      "line": "117",
+      "statement": "if (sample.getKey() <= x)"
+    }
+  },
+  {
+    "v22": {
+      "line": "118",
+      "statement": "probability += sample.getValue()"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v24": {
+      "line": "122",
+      "statement": "return probability"
+    }
+  },
+  {
+    "v25": {
+      "line": "130",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v26": {
+      "line": "131",
+      "statement": "double mean = 0"
+    }
+  },
+  {
+    "v27": {
+      "line": "133",
+      "statement": "for (final Pair<Integer, Double> sample"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v29": {
+      "line": "134",
+      "statement": "mean += sample.getValue() * sample.getKey()"
+    }
+  },
+  {
+    "v30": {
+      "line": "137",
+      "statement": "return mean"
+    }
+  },
+  {
+    "v31": {
+      "line": "145",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v32": {
+      "line": "146",
+      "statement": "double mean = 0"
+    }
+  },
+  {
+    "v33": {
+      "line": "147",
+      "statement": "double meanOfSquares = 0"
+    }
+  },
+  {
+    "v34": {
+      "line": "149",
+      "statement": "for (final Pair<Integer, Double> sample"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v36": {
+      "line": "150",
+      "statement": "mean += sample.getValue() * sample.getKey()"
+    }
+  },
+  {
+    "v37": {
+      "line": "151",
+      "statement": "meanOfSquares += sample.getValue() * sample.getKey() * sample.getKey()"
+    }
+  },
+  {
+    "v38": {
+      "line": "154",
+      "statement": "return meanOfSquares - mean * mean"
+    }
+  },
+  {
+    "v39": {
+      "line": "164",
+      "statement": "int getSupportLowerBound()"
+    }
+  },
+  {
+    "v40": {
+      "line": "165",
+      "statement": "int min = Integer.MAX_VALUE"
+    }
+  },
+  {
+    "v41": {
+      "line": "166",
+      "statement": "for (final Pair<Integer, Double> sample"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v43": {
+      "line": "167",
+      "statement": "if (sample.getKey() < min && sample.getValue() > 0)"
+    }
+  },
+  {
+    "v44": {
+      "line": "168",
+      "statement": "min = sample.getKey()"
+    }
+  },
+  {
+    "v45": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v46": {
+      "line": "172",
+      "statement": "return min"
+    }
+  },
+  {
+    "v47": {
+      "line": "182",
+      "statement": "int getSupportUpperBound()"
+    }
+  },
+  {
+    "v48": {
+      "line": "183",
+      "statement": "int max = Integer.MIN_VALUE"
+    }
+  },
+  {
+    "v49": {
+      "line": "184",
+      "statement": "for (final Pair<Integer, Double> sample"
+    }
+  },
+  {
+    "v50": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v51": {
+      "line": "185",
+      "statement": "if (sample.getKey() > max && sample.getValue() > 0)"
+    }
+  },
+  {
+    "v52": {
+      "line": "186",
+      "statement": "max = sample.getKey()"
+    }
+  },
+  {
+    "v53": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v54": {
+      "line": "190",
+      "statement": "return max"
+    }
+  },
+  {
+    "v55": {
+      "line": "200",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v56": {
+      "line": "201",
+      "statement": "return true"
+    }
+  },
+  {
+    "v57": {
+      "line": "208",
+      "statement": "int sample()"
+    }
+  },
+  {
+    "v58": {
+      "line": "209",
+      "statement": "return innerDistribution.sample()"
+    }
+  }
+]

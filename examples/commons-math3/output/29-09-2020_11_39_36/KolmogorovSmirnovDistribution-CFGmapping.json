@@ -1,0 +1,632 @@
+[
+  {
+    "v1": {
+      "line": "84",
+      "statement": "KolmogorovSmirnovDistribution (int n)"
+    }
+  },
+  {
+    "v2": {
+      "line": "86",
+      "statement": "if (n <= 0)"
+    }
+  },
+  {
+    "v3": {
+      "line": "87",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.NOT_POSITIVE_NUMBER_OF_SAMPLES, n)"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "90",
+      "statement": "this.n = n"
+    }
+  },
+  {
+    "v6": {
+      "line": "108",
+      "statement": "double cdf(double d)"
+    }
+  },
+  {
+    "v7": {
+      "line": "109",
+      "statement": "return this.cdf(d, false)"
+    }
+  },
+  {
+    "v8": {
+      "line": "128",
+      "statement": "double cdfExact(double d)"
+    }
+  },
+  {
+    "v9": {
+      "line": "129",
+      "statement": "return this.cdf(d, true)"
+    }
+  },
+  {
+    "v10": {
+      "line": "149",
+      "statement": "double cdf(double d, boolean exact)"
+    }
+  },
+  {
+    "v11": {
+      "line": "151",
+      "statement": "final double ninv = 1 / ((double) n)"
+    }
+  },
+  {
+    "v12": {
+      "line": "152",
+      "statement": "final double ninvhalf = 0.5 * ninv"
+    }
+  },
+  {
+    "v13": {
+      "line": "154",
+      "statement": "if (d <= ninvhalf)"
+    }
+  },
+  {
+    "v14": {
+      "line": "156",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "158",
+      "statement": "if (ninvhalf < d && d <= ninv)"
+    }
+  },
+  {
+    "v17": {
+      "line": "160",
+      "statement": "double res = 1"
+    }
+  },
+  {
+    "v18": {
+      "line": "161",
+      "statement": "double f = 2 * d - ninv"
+    }
+  },
+  {
+    "v19": {
+      "line": "164",
+      "statement": "for (  int i = 1 ; i <= n ;   ++i)"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v23": {
+      "line": "165",
+      "statement": "res *= i * f"
+    }
+  },
+  {
+    "v24": {
+      "line": "168",
+      "statement": "return res"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "170",
+      "statement": "if (1 - ninv <= d && d < 1)"
+    }
+  },
+  {
+    "v27": {
+      "line": "172",
+      "statement": "return 1 - 2 * Math.pow(1 - d, n)"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "174",
+      "statement": "if (1 <= d)"
+    }
+  },
+  {
+    "v30": {
+      "line": "176",
+      "statement": "return 1"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "179",
+      "statement": "return exact ? exactK(d)"
+    }
+  },
+  {
+    "v33": {
+      "line": "194",
+      "statement": "double exactK(double d)"
+    }
+  },
+  {
+    "v34": {
+      "line": "196",
+      "statement": "final int k = (int) Math.ceil(n * d)"
+    }
+  },
+  {
+    "v35": {
+      "line": "198",
+      "statement": "final FieldMatrix<BigFraction> H = this.createH(d)"
+    }
+  },
+  {
+    "v36": {
+      "line": "199",
+      "statement": "final FieldMatrix<BigFraction> Hpower = H.power(n)"
+    }
+  },
+  {
+    "v37": {
+      "line": "201",
+      "statement": "BigFraction pFrac = Hpower.getEntry(k - 1, k - 1)"
+    }
+  },
+  {
+    "v38": {
+      "line": "203",
+      "statement": "for (  int i = 1 ; i <= n ;   ++i)"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v42": {
+      "line": "204",
+      "statement": "pFrac = pFrac.multiply(i).divide(n)"
+    }
+  },
+  {
+    "v43": {
+      "line": "212",
+      "statement": "return pFrac.bigDecimalValue(20, BigDecimal.ROUND_HALF_UP).doubleValue()"
+    }
+  },
+  {
+    "v44": {
+      "line": "226",
+      "statement": "double roundedK(double d)"
+    }
+  },
+  {
+    "v45": {
+      "line": "228",
+      "statement": "final int k = (int) Math.ceil(n * d)"
+    }
+  },
+  {
+    "v46": {
+      "line": "229",
+      "statement": "final FieldMatrix<BigFraction> HBigFraction = this.createH(d)"
+    }
+  },
+  {
+    "v47": {
+      "line": "230",
+      "statement": "final int m = HBigFraction.getRowDimension()"
+    }
+  },
+  {
+    "v48": {
+      "line": "236",
+      "statement": "final RealMatrix H = new Array2DRowRealMatrix(m, m)"
+    }
+  },
+  {
+    "v49": {
+      "line": "238",
+      "statement": "for (  int i = 0 ; i < m ;   ++i)"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v53": {
+      "line": "239",
+      "statement": "for (  int j = 0 ; j < m ;   ++j)"
+    }
+  },
+  {
+    "v56": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v57": {
+      "line": "240",
+      "statement": "H.setEntry(i, j, HBigFraction.getEntry(i, j).doubleValue())"
+    }
+  },
+  {
+    "v58": {
+      "line": "244",
+      "statement": "final RealMatrix Hpower = H.power(n)"
+    }
+  },
+  {
+    "v59": {
+      "line": "246",
+      "statement": "double pFrac = Hpower.getEntry(k - 1, k - 1)"
+    }
+  },
+  {
+    "v60": {
+      "line": "248",
+      "statement": "for (  int i = 1 ; i <= n ;   ++i)"
+    }
+  },
+  {
+    "v63": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v64": {
+      "line": "249",
+      "statement": "pFrac *= (double) i / (double) n"
+    }
+  },
+  {
+    "v65": {
+      "line": "252",
+      "statement": "return pFrac"
+    }
+  },
+  {
+    "v66": {
+      "line": "266",
+      "statement": "FieldMatrix<BigFraction> createH(double d)"
+    }
+  },
+  {
+    "v67": {
+      "line": "269",
+      "statement": "int k = (int) Math.ceil(n * d)"
+    }
+  },
+  {
+    "v68": {
+      "line": "271",
+      "statement": "int m = 2 * k - 1"
+    }
+  },
+  {
+    "v69": {
+      "line": "272",
+      "statement": "double hDouble = k - n * d"
+    }
+  },
+  {
+    "v70": {
+      "line": "274",
+      "statement": "if (hDouble >= 1)"
+    }
+  },
+  {
+    "v71": {
+      "line": "275",
+      "statement": "throw new NumberIsTooLargeException(hDouble, 1.0, false)"
+    }
+  },
+  {
+    "v72": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v73": {
+      "line": "278",
+      "statement": "BigFraction h = null"
+    }
+  },
+  {
+    "v74": {
+      "line": "280",
+      "statement": "try"
+    }
+  },
+  {
+    "v75": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v76": {
+      "line": "281",
+      "statement": "h = new BigFraction(hDouble, 1.0e-20, 10000)"
+    }
+  },
+  {
+    "v77": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v78": {
+      "line": "282",
+      "statement": "catch (FractionConversionException e1)"
+    }
+  },
+  {
+    "v79": {
+      "line": "283",
+      "statement": "try"
+    }
+  },
+  {
+    "v80": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v81": {
+      "line": "284",
+      "statement": "h = new BigFraction(hDouble, 1.0e-10, 10000)"
+    }
+  },
+  {
+    "v82": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v83": {
+      "line": "285",
+      "statement": "catch (FractionConversionException e2)"
+    }
+  },
+  {
+    "v84": {
+      "line": "286",
+      "statement": "h = new BigFraction(hDouble, 1.0e-5, 10000)"
+    }
+  },
+  {
+    "v85": {
+      "line": "290",
+      "statement": "final BigFraction[][] Hdata = new BigFraction[m][m"
+    }
+  },
+  {
+    "v86": {
+      "line": "295",
+      "statement": "for (  int i = 0 ; i < m ;   ++i)"
+    }
+  },
+  {
+    "v89": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v90": {
+      "line": "296",
+      "statement": "for (  int j = 0 ; j < m ;   ++j)"
+    }
+  },
+  {
+    "v93": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v94": {
+      "line": "297",
+      "statement": "if (i - j + 1 < 0)"
+    }
+  },
+  {
+    "v95": {
+      "line": "298",
+      "statement": "Hdata[i][j] = BigFraction.ZERO"
+    }
+  },
+  {
+    "v96": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v97": {
+      "line": "300",
+      "statement": "Hdata[i][j] = BigFraction.ONE"
+    }
+  },
+  {
+    "v98": {
+      "line": "309",
+      "statement": "final BigFraction[] hPowers = new BigFraction[m"
+    }
+  },
+  {
+    "v99": {
+      "line": "310",
+      "statement": "hPowers[0] = h"
+    }
+  },
+  {
+    "v100": {
+      "line": "311",
+      "statement": "for (  int i = 1 ; i < m ;   ++i)"
+    }
+  },
+  {
+    "v103": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v104": {
+      "line": "312",
+      "statement": "hPowers[i] = h.multiply(hPowers[i - 1])"
+    }
+  },
+  {
+    "v105": {
+      "line": "318",
+      "statement": "for (  int i = 0 ; i < m ;   ++i)"
+    }
+  },
+  {
+    "v108": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v109": {
+      "line": "319",
+      "statement": "Hdata[i][0] = Hdata[i][0].subtract(hPowers[i])"
+    }
+  },
+  {
+    "v110": {
+      "line": "320",
+      "statement": "Hdata[m - 1][i] = Hdata[m - 1][i].subtract(hPowers[m - i - 1])"
+    }
+  },
+  {
+    "v111": {
+      "line": "328",
+      "statement": "if (h.compareTo(BigFraction.ONE_HALF) == 1)"
+    }
+  },
+  {
+    "v112": {
+      "line": "329",
+      "statement": "Hdata[m - 1][0] = Hdata[m - 1][0].add(h.multiply(2).subtract(1).pow(m))"
+    }
+  },
+  {
+    "v113": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v114": {
+      "line": "343",
+      "statement": "for (  int i = 0 ; i < m ;   ++i)"
+    }
+  },
+  {
+    "v117": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v118": {
+      "line": "344",
+      "statement": "for (  int j = 0 ; j < i + 1 ;   ++j)"
+    }
+  },
+  {
+    "v121": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v122": {
+      "line": "345",
+      "statement": "if (i - j + 1 > 0)"
+    }
+  },
+  {
+    "v123": {
+      "line": "346",
+      "statement": "for (  int g = 2 ; g <= i - j + 1 ;   ++g)"
+    }
+  },
+  {
+    "v126": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v127": {
+      "line": "347",
+      "statement": "Hdata[i][j] = Hdata[i][j].divide(g)"
+    }
+  },
+  {
+    "v128": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v129": {
+      "line": "353",
+      "statement": "return new Array2DRowFieldMatrix<BigFraction>(BigFractionField.getInstance(), Hdata)"
+    }
+  }
+]

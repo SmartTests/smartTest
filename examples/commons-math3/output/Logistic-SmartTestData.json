@@ -1,0 +1,166 @@
+[
+  {
+    "info": "25-09-2020_16_11_02"
+  },
+  {
+    "requirements": {
+      "TR1": "65,72",
+      "TR2": "72,73",
+      "TR3": "72,76",
+      "TR4": "76,77",
+      "TR5": "77,78",
+      "TR6": "78,79",
+      "TR7": "79,80",
+      "TR8": "80,81",
+      "TR9": "85,86",
+      "TR10": "93,94",
+      "TR11": "123,127",
+      "TR12": "127,128",
+      "TR13": "148,152",
+      "TR14": "152,154",
+      "TR15": "154,155",
+      "TR16": "155,157",
+      "TR17": "157,158",
+      "TR18": "158,159",
+      "TR19": "159,160",
+      "TR20": "160,161",
+      "TR21": "161,162",
+      "TR22": "162,163",
+      "TR23": "163,166",
+      "TR24": "166,167",
+      "TR25": "167,168",
+      "TR26": "168,169",
+      "TR27": "169,170",
+      "TR28": "170,171",
+      "TR29": "171,173",
+      "TR30": "188,192",
+      "TR31": "192,193",
+      "TR32": "192,195",
+      "TR33": "195,196",
+      "TR34": "195,198",
+      "TR35": "198,199",
+      "TR36": "213,219",
+      "TR37": "225,226"
+    }
+  },
+  {
+    "testCoverage": {
+      "testCompareDerivativeSigmoid": [
+        "TR3",
+        "TR4",
+        "TR5",
+        "TR6",
+        "TR7",
+        "TR8"
+      ],
+      "testCompareSigmoid": [
+        "TR3",
+        "TR4",
+        "TR5",
+        "TR6",
+        "TR7",
+        "TR8",
+        "TR9"
+      ],
+      "testGradientComponent0Component4": [
+        "TR14",
+        "TR15",
+        "TR16",
+        "TR17",
+        "TR18",
+        "TR19",
+        "TR20",
+        "TR21",
+        "TR22",
+        "TR23",
+        "TR24",
+        "TR25",
+        "TR26",
+        "TR27",
+        "TR28",
+        "TR29",
+        "TR32",
+        "TR34"
+      ],
+      "testGradientComponent1Component2Component3": [
+        "TR14",
+        "TR15",
+        "TR16",
+        "TR17",
+        "TR18",
+        "TR19",
+        "TR20",
+        "TR21",
+        "TR22",
+        "TR23",
+        "TR24",
+        "TR25",
+        "TR26",
+        "TR27",
+        "TR28",
+        "TR29",
+        "TR32",
+        "TR34"
+      ],
+      "testGradientComponent5": [
+        "TR14",
+        "TR15",
+        "TR16",
+        "TR17",
+        "TR18",
+        "TR19",
+        "TR20",
+        "TR21",
+        "TR22",
+        "TR23",
+        "TR24",
+        "TR25",
+        "TR26",
+        "TR27",
+        "TR28",
+        "TR29",
+        "TR32",
+        "TR34"
+      ],
+      "testParametricUsage1": [
+        "TR31"
+      ],
+      "testParametricUsage2": [
+        "TR32",
+        "TR33"
+      ],
+      "testParametricUsage3": [
+        "TR31"
+      ],
+      "testParametricUsage4": [
+        "TR32",
+        "TR33"
+      ],
+      "testParametricUsage5": [
+        "TR32",
+        "TR34",
+        "TR35"
+      ],
+      "testParametricUsage6": [
+        "TR32",
+        "TR34",
+        "TR35"
+      ],
+      "testPreconditions1": [
+        "TR2"
+      ],
+      "testPreconditions2": [
+        "TR2"
+      ],
+      "testSomeValues": [
+        "TR3",
+        "TR4",
+        "TR5",
+        "TR6",
+        "TR7",
+        "TR8",
+        "TR9"
+      ]
+    }
+  }
+]

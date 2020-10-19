@@ -1,0 +1,632 @@
+[
+  {
+    "v1": {
+      "line": "92",
+      "statement": "GammaDistribution (double shape, double scale)"
+    }
+  },
+  {
+    "v2": {
+      "line": "93",
+      "statement": "this(shape, scale, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "109",
+      "statement": "GammaDistribution (double shape, double scale, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "111",
+      "statement": "this(new Well19937c(), shape, scale, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "124",
+      "statement": "GammaDistribution (RandomGenerator rng, double shape, double scale)"
+    }
+  },
+  {
+    "v6": {
+      "line": "126",
+      "statement": "this(rng, shape, scale, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v7": {
+      "line": "142",
+      "statement": "GammaDistribution (RandomGenerator rng,  double shape,  double scale,  double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "147",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v9": {
+      "line": "149",
+      "statement": "if (shape <= 0)"
+    }
+  },
+  {
+    "v10": {
+      "line": "150",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.SHAPE, shape)"
+    }
+  },
+  {
+    "v11": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v12": {
+      "line": "152",
+      "statement": "if (scale <= 0)"
+    }
+  },
+  {
+    "v13": {
+      "line": "153",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.SCALE, scale)"
+    }
+  },
+  {
+    "v14": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v15": {
+      "line": "156",
+      "statement": "this.shape = shape"
+    }
+  },
+  {
+    "v16": {
+      "line": "157",
+      "statement": "this.scale = scale"
+    }
+  },
+  {
+    "v17": {
+      "line": "158",
+      "statement": "this.solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v18": {
+      "line": "159",
+      "statement": "this.shiftedShape = shape + Gamma.LANCZOS_G + 0.5"
+    }
+  },
+  {
+    "v19": {
+      "line": "160",
+      "statement": "final double aux = FastMath.E / (2.0 * FastMath.PI * shiftedShape)"
+    }
+  },
+  {
+    "v20": {
+      "line": "161",
+      "statement": "this.densityPrefactor2 = shape * FastMath.sqrt(aux) / Gamma.lanczos(shape)"
+    }
+  },
+  {
+    "v21": {
+      "line": "162",
+      "statement": "this.densityPrefactor1 = this.densityPrefactor2 / scale * FastMath.pow(shiftedShape, -shape) * FastMath.exp(shape + Gamma.LANCZOS_G)"
+    }
+  },
+  {
+    "v22": {
+      "line": "165",
+      "statement": "this.minY = shape + Gamma.LANCZOS_G - FastMath.log(Double.MAX_VALUE)"
+    }
+  },
+  {
+    "v23": {
+      "line": "166",
+      "statement": "this.maxLogY = FastMath.log(Double.MAX_VALUE) / (shape - 1.0)"
+    }
+  },
+  {
+    "v24": {
+      "line": "177",
+      "statement": "double getAlpha()"
+    }
+  },
+  {
+    "v25": {
+      "line": "178",
+      "statement": "return shape"
+    }
+  },
+  {
+    "v26": {
+      "line": "187",
+      "statement": "double getShape()"
+    }
+  },
+  {
+    "v27": {
+      "line": "188",
+      "statement": "return shape"
+    }
+  },
+  {
+    "v28": {
+      "line": "199",
+      "statement": "double getBeta()"
+    }
+  },
+  {
+    "v29": {
+      "line": "200",
+      "statement": "return scale"
+    }
+  },
+  {
+    "v30": {
+      "line": "209",
+      "statement": "double getScale()"
+    }
+  },
+  {
+    "v31": {
+      "line": "210",
+      "statement": "return scale"
+    }
+  },
+  {
+    "v32": {
+      "line": "214",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v33": {
+      "line": "253",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v34": {
+      "line": "254",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v36": {
+      "line": "256",
+      "statement": "final double y = x / scale"
+    }
+  },
+  {
+    "v37": {
+      "line": "257",
+      "statement": "if ((y <= minY) || (FastMath.log(y) >= maxLogY))"
+    }
+  },
+  {
+    "v38": {
+      "line": "261",
+      "statement": "final double aux1 = (y - shiftedShape) / shiftedShape"
+    }
+  },
+  {
+    "v39": {
+      "line": "262",
+      "statement": "final double aux2 = shape * (FastMath.log1p(aux1) - aux1)"
+    }
+  },
+  {
+    "v40": {
+      "line": "263",
+      "statement": "final double aux3 = -y * (Gamma.LANCZOS_G + 0.5) / shiftedShape + Gamma.LANCZOS_G + aux2"
+    }
+  },
+  {
+    "v41": {
+      "line": "265",
+      "statement": "return densityPrefactor2 / x * FastMath.exp(aux3)"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": "270",
+      "statement": "return densityPrefactor1  * FastMath.exp(-y) * FastMath.pow(y, shape - 1)"
+    }
+  },
+  {
+    "v44": {
+      "line": "288",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v45": {
+      "line": "289",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v46": {
+      "line": "291",
+      "statement": "if (x <= 0)"
+    }
+  },
+  {
+    "v47": {
+      "line": "292",
+      "statement": "ret = 0"
+    }
+  },
+  {
+    "v48": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v49": {
+      "line": "294",
+      "statement": "ret = Gamma.regularizedGammaP(shape, x / scale)"
+    }
+  },
+  {
+    "v50": {
+      "line": "297",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v51": {
+      "line": "302",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v52": {
+      "line": "303",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v53": {
+      "line": "312",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v54": {
+      "line": "313",
+      "statement": "return shape * scale"
+    }
+  },
+  {
+    "v55": {
+      "line": "324",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v56": {
+      "line": "325",
+      "statement": "return shape * scale * scale"
+    }
+  },
+  {
+    "v57": {
+      "line": "335",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v58": {
+      "line": "336",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v59": {
+      "line": "347",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v60": {
+      "line": "348",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v61": {
+      "line": "352",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v62": {
+      "line": "353",
+      "statement": "return true"
+    }
+  },
+  {
+    "v63": {
+      "line": "357",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v64": {
+      "line": "358",
+      "statement": "return false"
+    }
+  },
+  {
+    "v65": {
+      "line": "368",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v66": {
+      "line": "369",
+      "statement": "return true"
+    }
+  },
+  {
+    "v67": {
+      "line": "388",
+      "statement": "double sample()"
+    }
+  },
+  {
+    "v68": {
+      "line": "389",
+      "statement": "if (shape < 1)"
+    }
+  },
+  {
+    "v69": {
+      "line": "392",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v71": {
+      "line": "394",
+      "statement": "final double u = random.nextDouble()"
+    }
+  },
+  {
+    "v72": {
+      "line": "395",
+      "statement": "final double bGS = 1 + shape / FastMath.E"
+    }
+  },
+  {
+    "v73": {
+      "line": "396",
+      "statement": "final double p = bGS * u"
+    }
+  },
+  {
+    "v74": {
+      "line": "398",
+      "statement": "if (p <= 1)"
+    }
+  },
+  {
+    "v75": {
+      "line": "401",
+      "statement": "final double x = FastMath.pow(p, 1 / shape)"
+    }
+  },
+  {
+    "v76": {
+      "line": "402",
+      "statement": "final double u2 = random.nextDouble()"
+    }
+  },
+  {
+    "v77": {
+      "line": "404",
+      "statement": "if (u2 > FastMath.exp(-x))"
+    }
+  },
+  {
+    "v78": {
+      "line": "406",
+      "statement": "continue"
+    }
+  },
+  {
+    "v79": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v80": {
+      "line": "408",
+      "statement": "return scale * x"
+    }
+  },
+  {
+    "v81": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v82": {
+      "line": "413",
+      "statement": "final double x = -1 * FastMath.log((bGS - p) / shape)"
+    }
+  },
+  {
+    "v83": {
+      "line": "414",
+      "statement": "final double u2 = random.nextDouble()"
+    }
+  },
+  {
+    "v84": {
+      "line": "416",
+      "statement": "if (u2 > FastMath.pow(x, shape - 1))"
+    }
+  },
+  {
+    "v85": {
+      "line": "418",
+      "statement": "continue"
+    }
+  },
+  {
+    "v86": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v87": {
+      "line": "420",
+      "statement": "return scale * x"
+    }
+  },
+  {
+    "v88": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v89": {
+      "line": "428",
+      "statement": "final double d = shape - 0.333333333333333333"
+    }
+  },
+  {
+    "v90": {
+      "line": "429",
+      "statement": "final double c = 1 / (3 * FastMath.sqrt(d))"
+    }
+  },
+  {
+    "v91": {
+      "line": "431",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v92": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v93": {
+      "line": "432",
+      "statement": "final double x = random.nextGaussian()"
+    }
+  },
+  {
+    "v94": {
+      "line": "433",
+      "statement": "final double v = (1 + c * x) * (1 + c * x) * (1 + c * x)"
+    }
+  },
+  {
+    "v95": {
+      "line": "435",
+      "statement": "if (v <= 0)"
+    }
+  },
+  {
+    "v96": {
+      "line": "436",
+      "statement": "continue"
+    }
+  },
+  {
+    "v97": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v98": {
+      "line": "439",
+      "statement": "final double x2 = x * x"
+    }
+  },
+  {
+    "v99": {
+      "line": "440",
+      "statement": "final double u = random.nextDouble()"
+    }
+  },
+  {
+    "v100": {
+      "line": "443",
+      "statement": "if (u < 1 - 0.0331 * x2 * x2)"
+    }
+  },
+  {
+    "v101": {
+      "line": "444",
+      "statement": "return scale * d * v"
+    }
+  },
+  {
+    "v102": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v103": {
+      "line": "447",
+      "statement": "if (FastMath.log(u) < 0.5 * x2 + d * (1 - v + FastMath.log(v)))"
+    }
+  },
+  {
+    "v104": {
+      "line": "448",
+      "statement": "return scale * d * v"
+    }
+  },
+  {
+    "v105": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  }
+]

@@ -1,0 +1,127 @@
+1:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.HarmonicOscillator@<init>(double,double,double):55:amplitude |==> 0.0
+2:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.HarmonicOscillator@<init>(double,double,double):56:omega |==> 0.0
+3:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.HarmonicOscillator@<init>(double,double,double):57:phase |==> 0.0
+4:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double):62:omega * x |==> omega % x
+5:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double):62:omega * x |==> omega + x
+6:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double):62:omega * x |==> omega - x
+7:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double):62:omega * x |==> omega / x
+8:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double):62:omega * x + phase |==> omega * x % phase
+9:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double):62:omega * x + phase |==> omega * x * phase
+10:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double):62:omega * x + phase |==> omega * x - phase
+11:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double):62:omega * x + phase |==> omega * x / phase
+12:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.UnivariateFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.function.HarmonicOscillator@derivative():70:FunctionUtils.toDifferentiableUnivariateFunction(this).derivative() |==> null
+13:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):96:validateParameters(param) |==> <NO-OP>
+14:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:1 |==> 0
+15:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:1 |==> -1
+16:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:x * param[1] |==> x % param[1]
+17:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:x * param[1] |==> x + param[1]
+18:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:x * param[1] |==> x - param[1]
+19:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:x * param[1] |==> x / param[1]
+20:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:2 |==> 0
+21:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:2 |==> -2
+22:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:x * param[1] + param[2] |==> x * param[1] % param[2]
+23:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:x * param[1] + param[2] |==> x * param[1] * param[2]
+24:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:x * param[1] + param[2] |==> x * param[1] - param[2]
+25:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:x * param[1] + param[2] |==> x * param[1] / param[2]
+26:LVR:0:POS:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:0 |==> 1
+27:LVR:0:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@value(double,double[]):97:0 |==> -1
+28:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):116:validateParameters(param) |==> <NO-OP>
+29:LVR:0:POS:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):118:0 |==> 1
+30:LVR:0:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):118:0 |==> -1
+31:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):119:1 |==> 0
+32:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):119:1 |==> -1
+33:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):120:2 |==> 0
+34:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):120:2 |==> -2
+35:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):122:omega * x |==> omega % x
+36:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):122:omega * x |==> omega + x
+37:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):122:omega * x |==> omega - x
+38:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):122:omega * x |==> omega / x
+39:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):122:omega * x + phase |==> omega * x % phase
+40:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):122:omega * x + phase |==> omega * x * phase
+41:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):122:omega * x + phase |==> omega * x - phase
+42:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):122:omega * x + phase |==> omega * x / phase
+43:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):123:1 |==> 0
+44:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):123:1 |==> -1
+45:ORU:-(double):+(double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):124:-amplitude |==> +amplitude
+46:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):124:-amplitude * FastMath.sin(xTimesOmegaPlusPhase) |==> -amplitude % FastMath.sin(xTimesOmegaPlusPhase)
+47:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):124:-amplitude * FastMath.sin(xTimesOmegaPlusPhase) |==> -amplitude + FastMath.sin(xTimesOmegaPlusPhase)
+48:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):124:-amplitude * FastMath.sin(xTimesOmegaPlusPhase) |==> -amplitude - FastMath.sin(xTimesOmegaPlusPhase)
+49:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):124:-amplitude * FastMath.sin(xTimesOmegaPlusPhase) |==> -amplitude / FastMath.sin(xTimesOmegaPlusPhase)
+50:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):125:p * x |==> p % x
+51:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):125:p * x |==> p + x
+52:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):125:p * x |==> p - x
+53:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):125:p * x |==> p / x
+54:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@gradient(double,double[]):127:new double[]{a, w, p} |==> null
+55:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@validateParameters(double[]):143:param == null |==> false
+56:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@validateParameters(double[]):146:3 |==> 0
+57:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@validateParameters(double[]):146:3 |==> -3
+58:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@validateParameters(double[]):146:param.length != 3 |==> param.length < 3
+59:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@validateParameters(double[]):146:param.length != 3 |==> param.length > 3
+60:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@validateParameters(double[]):146:param.length != 3 |==> true
+61:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@validateParameters(double[]):147:3 |==> 0
+62:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator$Parametric@validateParameters(double[]):147:3 |==> -3
+63:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double,double):159:amplitude * FastMath.cos(xTimesOmegaPlusPhase) |==> amplitude % FastMath.cos(xTimesOmegaPlusPhase)
+64:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double,double):159:amplitude * FastMath.cos(xTimesOmegaPlusPhase) |==> amplitude + FastMath.cos(xTimesOmegaPlusPhase)
+65:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double,double):159:amplitude * FastMath.cos(xTimesOmegaPlusPhase) |==> amplitude - FastMath.cos(xTimesOmegaPlusPhase)
+66:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(double,double):159:amplitude * FastMath.cos(xTimesOmegaPlusPhase) |==> amplitude / FastMath.cos(xTimesOmegaPlusPhase)
+67:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):167:t.getValue() |==> 0.0
+68:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):168:1 |==> 0
+69:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):168:1 |==> -1
+70:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):168:t.getOrder() + 1 |==> t.getOrder() % 1
+71:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):168:t.getOrder() + 1 |==> t.getOrder() * 1
+72:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):168:t.getOrder() + 1 |==> t.getOrder() - 1
+73:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):168:t.getOrder() + 1 |==> t.getOrder() / 1
+74:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):170:omega * x |==> omega % x
+75:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):170:omega * x |==> omega + x
+76:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):170:omega * x |==> omega - x
+77:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):170:omega * x |==> omega / x
+78:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):170:omega * x + phase |==> omega * x % phase
+79:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):170:omega * x + phase |==> omega * x * phase
+80:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):170:omega * x + phase |==> omega * x - phase
+81:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):170:omega * x + phase |==> omega * x / phase
+82:LVR:0:POS:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:0 |==> 1
+83:LVR:0:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:0 |==> -1
+84:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:amplitude * FastMath.cos(alpha) |==> amplitude % FastMath.cos(alpha)
+85:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:amplitude * FastMath.cos(alpha) |==> amplitude + FastMath.cos(alpha)
+86:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:amplitude * FastMath.cos(alpha) |==> amplitude - FastMath.cos(alpha)
+87:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:amplitude * FastMath.cos(alpha) |==> amplitude / FastMath.cos(alpha)
+88:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):171:f[0] = amplitude * FastMath.cos(alpha) |==> <NO-OP>
+89:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):172:1 |==> 0
+90:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):172:1 |==> -1
+91:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):172:f.length > 1 |==> f.length != 1
+92:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):172:f.length > 1 |==> f.length >= 1
+93:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):172:f.length > 1 |==> false
+94:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:1 |==> 0
+95:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:1 |==> -1
+96:ORU:-(double):+(double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:-amplitude |==> +amplitude
+97:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:-amplitude * omega |==> -amplitude % omega
+98:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:-amplitude * omega |==> -amplitude + omega
+99:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:-amplitude * omega |==> -amplitude - omega
+100:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:-amplitude * omega |==> -amplitude / omega
+101:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:-amplitude * omega * FastMath.sin(alpha) |==> -amplitude * omega % FastMath.sin(alpha)
+102:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:-amplitude * omega * FastMath.sin(alpha) |==> -amplitude * omega + FastMath.sin(alpha)
+103:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:-amplitude * omega * FastMath.sin(alpha) |==> -amplitude * omega - FastMath.sin(alpha)
+104:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:-amplitude * omega * FastMath.sin(alpha) |==> -amplitude * omega / FastMath.sin(alpha)
+105:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):173:f[1] = -amplitude * omega * FastMath.sin(alpha) |==> <NO-OP>
+106:ORU:-(double):+(double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):174:-omega |==> +omega
+107:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):174:-omega * omega |==> -omega % omega
+108:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):174:-omega * omega |==> -omega + omega
+109:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):174:-omega * omega |==> -omega - omega
+110:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):174:-omega * omega |==> -omega / omega
+111:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:2 |==> 0
+112:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:2 |==> -2
+113:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:i < f.length |==> i != f.length
+114:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:i < f.length |==> i <= f.length
+115:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):175:i < f.length |==> false
+116:LVR:POS:0:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:2 |==> 0
+117:LVR:POS:NEG:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:2 |==> -2
+118:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:i - 2 |==> i % 2
+119:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:i - 2 |==> i * 2
+120:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:i - 2 |==> i + 2
+121:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:i - 2 |==> i / 2
+122:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:mo2 * f[i - 2] |==> mo2 % f[i - 2]
+123:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:mo2 * f[i - 2] |==> mo2 + f[i - 2]
+124:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:mo2 * f[i - 2] |==> mo2 - f[i - 2]
+125:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:mo2 * f[i - 2] |==> mo2 / f[i - 2]
+126:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):176:f[i] = mo2 * f[i - 2] |==> <NO-OP>
+127:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.function.HarmonicOscillator@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:t.compose(f) |==> null

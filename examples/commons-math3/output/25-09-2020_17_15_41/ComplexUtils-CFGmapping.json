@@ -1,0 +1,74 @@
+[
+  {
+    "v1": {
+      "line": "35",
+      "statement": "ComplexUtils ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "62",
+      "statement": "Complex polar2Complex(double r, double theta)"
+    }
+  },
+  {
+    "v3": {
+      "line": "63",
+      "statement": "if (r < 0)"
+    }
+  },
+  {
+    "v4": {
+      "line": "64",
+      "statement": "throw new MathIllegalArgumentException( LocalizedFormats.NEGATIVE_COMPLEX_MODULE, r)"
+    }
+  },
+  {
+    "v5": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v6": {
+      "line": "67",
+      "statement": "return new Complex(r * FastMath.cos(theta), r * FastMath.sin(theta))"
+    }
+  },
+  {
+    "v7": {
+      "line": "79",
+      "statement": "Complex[] convertToComplex(double[] real)"
+    }
+  },
+  {
+    "v8": {
+      "line": "80",
+      "statement": "final Complex c[] = new Complex[real.length"
+    }
+  },
+  {
+    "v9": {
+      "line": "81",
+      "statement": "for (  int i = 0 ; i < real.length ;   i++)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v13": {
+      "line": "82",
+      "statement": "c[i] = new Complex(real[i], 0)"
+    }
+  },
+  {
+    "v14": {
+      "line": "85",
+      "statement": "return c"
+    }
+  }
+]

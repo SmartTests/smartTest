@@ -1,0 +1,37 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "96"
+    ],
+    "sourceClass": "OptionGroup"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR9",
+      "TR7",
+      "TR10"
+    ],
+    "affectedTest": [
+      "testSingleLongOption",
+      "testSingleOptionFromGroup",
+      "testTwoLongOptionsFromGroup",
+      "testTwoOptionsFromDifferentGroup",
+      "testTwoOptionsFromGroup",
+      "testTwoOptionsFromGroupWithProperties",
+      "testTwoValidLongOptions",
+      "testTwoValidOptions",
+      "testValidLongOnlyOptions"
+    ],
+    "testReran": [
+      "testTwoLongOptionsFromGroup",
+      "testTwoValidOptions",
+      "testTwoOptionsFromGroup",
+      "testValidLongOnlyOptions",
+      "testSingleLongOption",
+      "testTwoOptionsFromDifferentGroup",
+      "testSingleOptionFromGroup",
+      "testTwoOptionsFromGroupWithProperties",
+      "testTwoValidLongOptions"
+    ]
+  }
+}

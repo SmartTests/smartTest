@@ -1,0 +1,65 @@
+1:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):50:x.length != y.length |==> x.length < y.length
+2:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):50:x.length != y.length |==> x.length > y.length
+3:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):50:x.length != y.length |==> true
+4:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):54:2 |==> 0
+5:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):54:2 |==> -2
+6:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):54:x.length < 2 |==> x.length != 2
+7:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):54:x.length < 2 |==> x.length <= 2
+8:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):54:x.length < 2 |==> false
+9:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):56:2 |==> 0
+10:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):56:2 |==> -2
+11:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):56:true |==> false
+12:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):60:1 |==> 0
+13:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):60:1 |==> -1
+14:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):60:x.length - 1 |==> x.length % 1
+15:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):60:x.length - 1 |==> x.length * 1
+16:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):60:x.length - 1 |==> x.length + 1
+17:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):60:x.length - 1 |==> x.length / 1
+18:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):62:MathArrays.checkOrder(x) |==> <NO-OP>
+19:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):65:new double[n] |==> null
+20:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):66:0 |==> 1
+21:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):66:0 |==> -1
+22:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):66:i < n |==> i != n
+23:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):66:i < n |==> i <= n
+24:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):66:i < n |==> false
+25:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:1 |==> 0
+26:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:1 |==> -1
+27:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:i + 1 |==> i % 1
+28:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:i + 1 |==> i * 1
+29:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:i + 1 |==> i - 1
+30:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:i + 1 |==> i / 1
+31:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:y[i + 1] - y[i] |==> y[i + 1] % y[i]
+32:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:y[i + 1] - y[i] |==> y[i + 1] * y[i]
+33:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:y[i + 1] - y[i] |==> y[i + 1] + y[i]
+34:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:y[i + 1] - y[i] |==> y[i + 1] / y[i]
+35:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:1 |==> 0
+36:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:1 |==> -1
+37:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:i + 1 |==> i % 1
+38:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:i + 1 |==> i * 1
+39:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:i + 1 |==> i - 1
+40:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:i + 1 |==> i / 1
+41:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:x[i + 1] - x[i] |==> x[i + 1] % x[i]
+42:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:x[i + 1] - x[i] |==> x[i + 1] * x[i]
+43:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:x[i + 1] - x[i] |==> x[i + 1] + x[i]
+44:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:x[i + 1] - x[i] |==> x[i + 1] / x[i]
+45:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:(y[i + 1] - y[i]) / (x[i + 1] - x[i]) |==> (y[i + 1] - y[i]) % (x[i + 1] - x[i])
+46:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:(y[i + 1] - y[i]) / (x[i + 1] - x[i]) |==> (y[i + 1] - y[i]) * (x[i + 1] - x[i])
+47:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:(y[i + 1] - y[i]) / (x[i + 1] - x[i]) |==> (y[i + 1] - y[i]) + (x[i + 1] - x[i])
+48:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:(y[i + 1] - y[i]) / (x[i + 1] - x[i]) |==> (y[i + 1] - y[i]) - (x[i + 1] - x[i])
+49:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):67:m[i] = (y[i + 1] - y[i]) / (x[i + 1] - x[i]) |==> <NO-OP>
+50:EVR:<NEW_ARRAY(org.apache.commons.math3.analysis.polynomials.PolynomialFunction[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):70:new PolynomialFunction[n] |==> null
+51:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):71:2 |==> 0
+52:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):71:2 |==> -2
+53:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):72:0 |==> 1
+54:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):72:0 |==> -1
+55:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):72:i < n |==> i != n
+56:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):72:i < n |==> i <= n
+57:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):72:i < n |==> false
+58:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):73:0 |==> 1
+59:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):73:0 |==> -1
+60:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):73:coefficients[0] = y[i] |==> <NO-OP>
+61:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):74:1 |==> 0
+62:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):74:1 |==> -1
+63:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):74:coefficients[1] = m[i] |==> <NO-OP>
+64:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):75:polynomials[i] = new PolynomialFunction(coefficients) |==> <NO-OP>
+65:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LinearInterpolator@interpolate(double[],double[]):78:new PolynomialSplineFunction(x, polynomials) |==> null

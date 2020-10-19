@@ -1,0 +1,174 @@
+1:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):105:knots == null |==> false
+2:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):106:polynomials == null |==> false
+3:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):105:knots == null || polynomials == null |==> knots == null != (polynomials == null)
+4:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):105:knots == null || polynomials == null |==> knots == null
+5:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):106:knots == null || polynomials == null |==> polynomials == null
+6:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):105:knots == null || polynomials == null |==> true
+7:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):109:2 |==> 0
+8:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):109:2 |==> -2
+9:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):109:knots.length < 2 |==> knots.length != 2
+10:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):109:knots.length < 2 |==> knots.length <= 2
+11:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):109:knots.length < 2 |==> false
+12:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):111:2 |==> 0
+13:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):111:2 |==> -2
+14:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):111:false |==> true
+15:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):113:1 |==> 0
+16:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):113:1 |==> -1
+17:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):113:knots.length - 1 |==> knots.length % 1
+18:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):113:knots.length - 1 |==> knots.length * 1
+19:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):113:knots.length - 1 |==> knots.length + 1
+20:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):113:knots.length - 1 |==> knots.length / 1
+21:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):113:knots.length - 1 != polynomials.length |==> knots.length - 1 < polynomials.length
+22:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):113:knots.length - 1 != polynomials.length |==> knots.length - 1 > polynomials.length
+23:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):113:knots.length - 1 != polynomials.length |==> true
+24:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):116:MathArrays.checkOrder(knots) |==> <NO-OP>
+25:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):118:1 |==> 0
+26:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):118:1 |==> -1
+27:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):118:knots.length - 1 |==> knots.length % 1
+28:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):118:knots.length - 1 |==> knots.length * 1
+29:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):118:knots.length - 1 |==> knots.length + 1
+30:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):118:knots.length - 1 |==> knots.length / 1
+31:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):119:1 |==> 0
+32:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):119:1 |==> -1
+33:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):119:n + 1 |==> n % 1
+34:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):119:n + 1 |==> n * 1
+35:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):119:n + 1 |==> n - 1
+36:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):119:n + 1 |==> n / 1
+37:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:0 |==> 1
+38:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:0 |==> -1
+39:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:0 |==> 1
+40:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:0 |==> -1
+41:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:1 |==> 0
+42:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:1 |==> -1
+43:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:n + 1 |==> n % 1
+44:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:n + 1 |==> n * 1
+45:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:n + 1 |==> n - 1
+46:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:n + 1 |==> n / 1
+47:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):120:System.arraycopy(knots, 0, this.knots, 0, n + 1) |==> <NO-OP>
+48:EVR:<NEW_ARRAY(org.apache.commons.math3.analysis.polynomials.PolynomialFunction[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):121:new PolynomialFunction[n] |==> null
+49:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):122:0 |==> 1
+50:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):122:0 |==> -1
+51:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):122:0 |==> 1
+52:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):122:0 |==> -1
+53:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@<init>(double[],org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]):122:System.arraycopy(polynomials, 0, this.polynomials, 0, n) |==> <NO-OP>
+54:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:0 |==> 1
+55:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:0 |==> -1
+56:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v < knots[0] |==> v != knots[0]
+57:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v < knots[0] |==> v <= knots[0]
+58:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v < knots[0] |==> false
+59:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v > knots[n] |==> v != knots[n]
+60:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v > knots[n] |==> v >= knots[n]
+61:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v > knots[n] |==> false
+62:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v < knots[0] || v > knots[n] |==> v < knots[0] != v > knots[n]
+63:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v < knots[0] || v > knots[n] |==> v < knots[0]
+64:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v < knots[0] || v > knots[n] |==> v > knots[n]
+65:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):137:v < knots[0] || v > knots[n] |==> true
+66:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):138:0 |==> 1
+67:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):138:0 |==> -1
+68:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):140:Arrays.binarySearch(knots, v) |==> 0
+69:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):141:0 |==> 1
+70:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):141:0 |==> -1
+71:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):141:i < 0 |==> i != 0
+72:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):141:i < 0 |==> i <= 0
+73:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):141:i < 0 |==> false
+74:ORU:-(int):+(int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):142:-i |==> +i
+75:ORU:-(int):~(int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):142:-i |==> ~i
+76:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):142:2 |==> 0
+77:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):142:2 |==> -2
+78:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):142:-i - 2 |==> -i % 2
+79:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):142:-i - 2 |==> -i * 2
+80:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):142:-i - 2 |==> -i + 2
+81:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):142:-i - 2 |==> -i / 2
+82:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):142:i = -i - 2 |==> <NO-OP>
+83:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):147:i >= polynomials.length |==> i == polynomials.length
+84:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):147:i >= polynomials.length |==> i > polynomials.length
+85:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):147:i >= polynomials.length |==> true
+86:STD:<DEC>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):148:i-- |==> <NO-OP>
+87:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):150:v - knots[i] |==> v % knots[i]
+88:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):150:v - knots[i] |==> v * knots[i]
+89:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):150:v - knots[i] |==> v + knots[i]
+90:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(double):150:v - knots[i] |==> v / knots[i]
+91:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@derivative():159:polynomialSplineDerivative() |==> null
+92:EVR:<NEW_ARRAY(org.apache.commons.math3.analysis.polynomials.PolynomialFunction[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@polynomialSplineDerivative():168:new PolynomialFunction[n] |==> null
+93:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@polynomialSplineDerivative():169:0 |==> 1
+94:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@polynomialSplineDerivative():169:0 |==> -1
+95:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@polynomialSplineDerivative():169:i < n |==> i != n
+96:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@polynomialSplineDerivative():169:i < n |==> i <= n
+97:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@polynomialSplineDerivative():169:i < n |==> false
+98:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@polynomialSplineDerivative():170:derivativePolynomials[i] = polynomials[i].polynomialDerivative() |==> <NO-OP>
+99:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@polynomialSplineDerivative():172:new PolynomialSplineFunction(knots, derivativePolynomials) |==> null
+100:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):180:t.getValue() |==> 0.0
+101:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:0 |==> 1
+102:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:0 |==> -1
+103:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 < knots[0] |==> t0 != knots[0]
+104:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 < knots[0] |==> t0 <= knots[0]
+105:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 < knots[0] |==> false
+106:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 > knots[n] |==> t0 != knots[n]
+107:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 > knots[n] |==> t0 >= knots[n]
+108:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 > knots[n] |==> false
+109:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 < knots[0] || t0 > knots[n] |==> t0 < knots[0] != t0 > knots[n]
+110:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 < knots[0] || t0 > knots[n] |==> t0 < knots[0]
+111:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 < knots[0] || t0 > knots[n] |==> t0 > knots[n]
+112:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):181:t0 < knots[0] || t0 > knots[n] |==> true
+113:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):182:0 |==> 1
+114:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):182:0 |==> -1
+115:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):184:Arrays.binarySearch(knots, t0) |==> 0
+116:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:0 |==> 1
+117:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:0 |==> -1
+118:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:i < 0 |==> i != 0
+119:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:i < 0 |==> i <= 0
+120:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):185:i < 0 |==> false
+121:ORU:-(int):+(int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:-i |==> +i
+122:ORU:-(int):~(int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:-i |==> ~i
+123:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:2 |==> 0
+124:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:2 |==> -2
+125:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:-i - 2 |==> -i % 2
+126:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:-i - 2 |==> -i * 2
+127:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:-i - 2 |==> -i + 2
+128:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:-i - 2 |==> -i / 2
+129:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):186:i = -i - 2 |==> <NO-OP>
+130:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):191:i >= polynomials.length |==> i == polynomials.length
+131:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):191:i >= polynomials.length |==> i > polynomials.length
+132:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):191:i >= polynomials.length |==> true
+133:STD:<DEC>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):192:i-- |==> <NO-OP>
+134:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):194:polynomials[i].value(t.subtract(knots[i])) |==> null
+135:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getN():204:n |==> 0
+136:EVR:<NEW_ARRAY(org.apache.commons.math3.analysis.polynomials.PolynomialFunction[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getPolynomials():215:new PolynomialFunction[n] |==> null
+137:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getPolynomials():216:0 |==> 1
+138:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getPolynomials():216:0 |==> -1
+139:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getPolynomials():216:0 |==> 1
+140:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getPolynomials():216:0 |==> -1
+141:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getPolynomials():216:System.arraycopy(polynomials, 0, p, 0, n) |==> <NO-OP>
+142:EVR:<IDENTIFIER(org.apache.commons.math3.analysis.polynomials.PolynomialFunction[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getPolynomials():217:p |==> null
+143:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():228:1 |==> 0
+144:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():228:1 |==> -1
+145:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():228:n + 1 |==> n % 1
+146:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():228:n + 1 |==> n * 1
+147:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():228:n + 1 |==> n - 1
+148:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():228:n + 1 |==> n / 1
+149:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:0 |==> 1
+150:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:0 |==> -1
+151:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:0 |==> 1
+152:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:0 |==> -1
+153:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:1 |==> 0
+154:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:1 |==> -1
+155:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:n + 1 |==> n % 1
+156:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:n + 1 |==> n * 1
+157:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:n + 1 |==> n - 1
+158:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:n + 1 |==> n / 1
+159:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():229:System.arraycopy(knots, 0, out, 0, n + 1) |==> <NO-OP>
+160:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@getKnots():230:out |==> null
+161:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):240:0 |==> 1
+162:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):240:0 |==> -1
+163:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):240:x < knots[0] |==> x != knots[0]
+164:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):240:x < knots[0] |==> x <= knots[0]
+165:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):240:x < knots[0] |==> false
+166:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):241:x > knots[n] |==> x != knots[n]
+167:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):241:x > knots[n] |==> x >= knots[n]
+168:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):241:x > knots[n] |==> false
+169:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):240:x < knots[0] || x > knots[n] |==> x < knots[0] != x > knots[n]
+170:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):240:x < knots[0] || x > knots[n] |==> x < knots[0]
+171:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):241:x < knots[0] || x > knots[n] |==> x > knots[n]
+172:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):240:x < knots[0] || x > knots[n] |==> true
+173:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):242:false |==> true
+174:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction@isValidPoint(double):244:true |==> false

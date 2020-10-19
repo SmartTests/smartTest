@@ -1,0 +1,392 @@
+[
+  {
+    "v1": {
+      "line": "79",
+      "statement": "PolynomialFunctionNewtonForm (double a[], double c[])"
+    }
+  },
+  {
+    "v2": {
+      "line": "82",
+      "statement": "verifyInputArray(a, c)"
+    }
+  },
+  {
+    "v3": {
+      "line": "83",
+      "statement": "this.a = new double[a.length"
+    }
+  },
+  {
+    "v4": {
+      "line": "84",
+      "statement": "this.c = new double[c.length"
+    }
+  },
+  {
+    "v5": {
+      "line": "85",
+      "statement": "System.arraycopy(a, 0, this.a, 0, a.length)"
+    }
+  },
+  {
+    "v6": {
+      "line": "86",
+      "statement": "System.arraycopy(c, 0, this.c, 0, c.length)"
+    }
+  },
+  {
+    "v7": {
+      "line": "87",
+      "statement": "coefficientsComputed = false"
+    }
+  },
+  {
+    "v8": {
+      "line": "96",
+      "statement": "double value(double z)"
+    }
+  },
+  {
+    "v9": {
+      "line": "97",
+      "statement": "return evaluate(a, c, z)"
+    }
+  },
+  {
+    "v10": {
+      "line": "104",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v11": {
+      "line": "105",
+      "statement": "verifyInputArray(a, c)"
+    }
+  },
+  {
+    "v12": {
+      "line": "107",
+      "statement": "final int n = c.length"
+    }
+  },
+  {
+    "v13": {
+      "line": "108",
+      "statement": "DerivativeStructure value = new DerivativeStructure(t.getFreeParameters(), t.getOrder(), a[n])"
+    }
+  },
+  {
+    "v14": {
+      "line": "109",
+      "statement": "for (  int i = n - 1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v17": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v18": {
+      "line": "110",
+      "statement": "value = t.subtract(c[i]).multiply(value).add(a[i])"
+    }
+  },
+  {
+    "v19": {
+      "line": "113",
+      "statement": "return value"
+    }
+  },
+  {
+    "v20": {
+      "line": "122",
+      "statement": "int degree()"
+    }
+  },
+  {
+    "v21": {
+      "line": "123",
+      "statement": "return c.length"
+    }
+  },
+  {
+    "v22": {
+      "line": "133",
+      "statement": "double[] getNewtonCoefficients()"
+    }
+  },
+  {
+    "v23": {
+      "line": "134",
+      "statement": "double[] out = new double[a.length"
+    }
+  },
+  {
+    "v24": {
+      "line": "135",
+      "statement": "System.arraycopy(a, 0, out, 0, a.length)"
+    }
+  },
+  {
+    "v25": {
+      "line": "136",
+      "statement": "return out"
+    }
+  },
+  {
+    "v26": {
+      "line": "146",
+      "statement": "double[] getCenters()"
+    }
+  },
+  {
+    "v27": {
+      "line": "147",
+      "statement": "double[] out = new double[c.length"
+    }
+  },
+  {
+    "v28": {
+      "line": "148",
+      "statement": "System.arraycopy(c, 0, out, 0, c.length)"
+    }
+  },
+  {
+    "v29": {
+      "line": "149",
+      "statement": "return out"
+    }
+  },
+  {
+    "v30": {
+      "line": "159",
+      "statement": "double[] getCoefficients()"
+    }
+  },
+  {
+    "v31": {
+      "line": "160",
+      "statement": "if (!coefficientsComputed)"
+    }
+  },
+  {
+    "v32": {
+      "line": "161",
+      "statement": "computeCoefficients()"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v34": {
+      "line": "163",
+      "statement": "double[] out = new double[coefficients.length"
+    }
+  },
+  {
+    "v35": {
+      "line": "164",
+      "statement": "System.arraycopy(coefficients, 0, out, 0, coefficients.length)"
+    }
+  },
+  {
+    "v36": {
+      "line": "165",
+      "statement": "return out"
+    }
+  },
+  {
+    "v37": {
+      "line": "182",
+      "statement": "double evaluate(double a[], double c[], double z)"
+    }
+  },
+  {
+    "v38": {
+      "line": "184",
+      "statement": "verifyInputArray(a, c)"
+    }
+  },
+  {
+    "v39": {
+      "line": "186",
+      "statement": "final int n = c.length"
+    }
+  },
+  {
+    "v40": {
+      "line": "187",
+      "statement": "double value = a[n"
+    }
+  },
+  {
+    "v41": {
+      "line": "188",
+      "statement": "for (  int i = n - 1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v45": {
+      "line": "189",
+      "statement": "value = a[i] + (z - c[i]) * value"
+    }
+  },
+  {
+    "v46": {
+      "line": "192",
+      "statement": "return value"
+    }
+  },
+  {
+    "v47": {
+      "line": "199",
+      "statement": "void computeCoefficients()"
+    }
+  },
+  {
+    "v48": {
+      "line": "200",
+      "statement": "final int n = degree()"
+    }
+  },
+  {
+    "v49": {
+      "line": "202",
+      "statement": "coefficients = new double[n+1"
+    }
+  },
+  {
+    "v50": {
+      "line": "203",
+      "statement": "for (  int i = 0 ; i <= n ;   i++)"
+    }
+  },
+  {
+    "v53": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v54": {
+      "line": "204",
+      "statement": "coefficients[i] = 0.0"
+    }
+  },
+  {
+    "v55": {
+      "line": "207",
+      "statement": "coefficients[0] = a[n"
+    }
+  },
+  {
+    "v56": {
+      "line": "208",
+      "statement": "for (  int i = n-1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v59": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v60": {
+      "line": "209",
+      "statement": "for (  int j = n-i ; j > 0 ;   j--)"
+    }
+  },
+  {
+    "v63": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v64": {
+      "line": "210",
+      "statement": "coefficients[j] = coefficients[j-1] - c[i] * coefficients[j"
+    }
+  },
+  {
+    "v65": {
+      "line": "212",
+      "statement": "coefficients[0] = a[i] - c[i] * coefficients[0"
+    }
+  },
+  {
+    "v66": {
+      "line": "215",
+      "statement": "coefficientsComputed = true"
+    }
+  },
+  {
+    "v67": {
+      "line": "233",
+      "statement": "void verifyInputArray(double a[], double c[])"
+    }
+  },
+  {
+    "v68": {
+      "line": "235",
+      "statement": "MathUtils.checkNotNull(a)"
+    }
+  },
+  {
+    "v69": {
+      "line": "236",
+      "statement": "MathUtils.checkNotNull(c)"
+    }
+  },
+  {
+    "v70": {
+      "line": "237",
+      "statement": "if (a.length == 0 || c.length == 0)"
+    }
+  },
+  {
+    "v71": {
+      "line": "238",
+      "statement": "throw new NoDataException(LocalizedFormats.EMPTY_POLYNOMIALS_COEFFICIENTS_ARRAY)"
+    }
+  },
+  {
+    "v72": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v73": {
+      "line": "240",
+      "statement": "if (a.length != c.length + 1)"
+    }
+  },
+  {
+    "v74": {
+      "line": "241",
+      "statement": "throw new DimensionMismatchException(LocalizedFormats.ARRAY_SIZES_SHOULD_HAVE_DIFFERENCE_1,  a.length, c.length)"
+    }
+  },
+  {
+    "v75": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  }
+]

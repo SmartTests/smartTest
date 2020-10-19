@@ -1,0 +1,45 @@
+digraph DividedDifferenceInterpolator_CFG {
+  // graph-vertices
+  v1  [label="55:  PolynomialFunctionNewtonForm interpolate(double x[], double y[])"];
+  v2  [label="64:  PolynomialFunctionLagrangeForm.verifyInterpolationArray(x, y, false)"];
+  v3  [label="74:  final double[] c = new double[x.length-1]"];
+  v4  [label="75:  System.arraycopy(x, 0, c, 0, c.length)"];
+  v5  [label="77:  final double[] a = computeDividedDifference(x, y)"];
+  v6  [label="78:  return new PolynomialFunctionNewtonForm(a, c);"];
+  v7  [label="99:  double[] computeDividedDifference(final double x[], final double y[])"];
+  v8  [label="103:  PolynomialFunctionLagrangeForm.verifyInterpolationArray(x, y, true)"];
+  v9  [label="105:  final double[] divdiff = y.clone()"];
+  v10  [label="107:  final int n = x.length"];
+  v11  [label="108:  final double[] a = new double [n]"];
+  v12  [label="109:  a[0] = divdiff[0]"];
+  v13  [label="110:  for (  int i = 1 ; i < n ;   i++)"];
+  v16  [label="endfor"];
+  v17  [label="111:  for (  int j = 0 ; j < n-i ;   j++)"];
+  v20  [label="endfor"];
+  v21  [label="112:  final double denominator = x[j+i] - x[j]"];
+  v22  [label="113:  divdiff[j] = (divdiff[j+1] - divdiff[j]) / denominator"];
+  v23  [label="115:  a[i] = divdiff[0]"];
+  v24  [label="118:  return a;"];
+  // graph-edges
+  v1 -> v2;
+  v2 -> v3;
+  v3 -> v4;
+  v4 -> v5;
+  v5 -> v6;
+  v7 -> v8;
+  v8 -> v9;
+  v9 -> v10;
+  v10 -> v11;
+  v11 -> v12;
+  v12 -> v13;
+  v13 -> v16  [label="False"];
+  v13 -> v17  [label="True"];
+  v17 -> v20  [label="False"];
+  v17 -> v21  [label="True"];
+  v21 -> v22;
+  v22 -> v17;
+  v20 -> v23;
+  v23 -> v13;
+  v16 -> v24;
+  // end-of-graph
+}

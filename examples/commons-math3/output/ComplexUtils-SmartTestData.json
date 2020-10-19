@@ -1,0 +1,48 @@
+[
+  {
+    "info": "25-09-2020_17_15_41"
+  },
+  {
+    "requirements": {
+      "TR1": "62,63",
+      "TR2": "63,64",
+      "TR3": "63,67",
+      "TR4": "79,80",
+      "TR5": "80,81",
+      "TR6": "81,85",
+      "TR7": "81,82",
+      "TR8": "82,81"
+    }
+  },
+  {
+    "testCoverage": {
+      "altPolar": [
+        "TR1",
+        "TR3"
+      ],
+      "testConvertToComplex": [
+        "TR4",
+        "TR5",
+        "TR7",
+        "TR8",
+        "TR6"
+      ],
+      "testPolar2Complex": [
+        "TR1",
+        "TR3"
+      ],
+      "testPolar2ComplexIllegalModulus": [
+        "TR1",
+        "TR2"
+      ],
+      "testPolar2ComplexInf": [
+        "TR1",
+        "TR3"
+      ],
+      "testPolar2ComplexNaN": [
+        "TR1",
+        "TR3"
+      ]
+    }
+  }
+]

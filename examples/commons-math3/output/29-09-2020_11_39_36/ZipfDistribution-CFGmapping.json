@@ -1,0 +1,398 @@
+[
+  {
+    "v1": {
+      "line": "57",
+      "statement": "ZipfDistribution (final int numberOfElements, final double exponent)"
+    }
+  },
+  {
+    "v2": {
+      "line": "58",
+      "statement": "this(new Well19937c(), numberOfElements, exponent)"
+    }
+  },
+  {
+    "v3": {
+      "line": "71",
+      "statement": "ZipfDistribution (RandomGenerator rng, int numberOfElements, double exponent)"
+    }
+  },
+  {
+    "v4": {
+      "line": "75",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v5": {
+      "line": "77",
+      "statement": "if (numberOfElements <= 0)"
+    }
+  },
+  {
+    "v6": {
+      "line": "78",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.DIMENSION,  numberOfElements)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "81",
+      "statement": "if (exponent <= 0)"
+    }
+  },
+  {
+    "v9": {
+      "line": "82",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.EXPONENT,  exponent)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "86",
+      "statement": "this.numberOfElements = numberOfElements"
+    }
+  },
+  {
+    "v12": {
+      "line": "87",
+      "statement": "this.exponent = exponent"
+    }
+  },
+  {
+    "v13": {
+      "line": "95",
+      "statement": "int getNumberOfElements()"
+    }
+  },
+  {
+    "v14": {
+      "line": "96",
+      "statement": "return numberOfElements"
+    }
+  },
+  {
+    "v15": {
+      "line": "104",
+      "statement": "double getExponent()"
+    }
+  },
+  {
+    "v16": {
+      "line": "105",
+      "statement": "return exponent"
+    }
+  },
+  {
+    "v17": {
+      "line": "109",
+      "statement": "double probability(final int x)"
+    }
+  },
+  {
+    "v18": {
+      "line": "110",
+      "statement": "if (x <= 0 || x > numberOfElements)"
+    }
+  },
+  {
+    "v19": {
+      "line": "111",
+      "statement": "return 0.0"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v21": {
+      "line": "114",
+      "statement": "return (1.0 / FastMath.pow(x, exponent)) / generalizedHarmonic(numberOfElements, exponent)"
+    }
+  },
+  {
+    "v22": {
+      "line": "118",
+      "statement": "double cumulativeProbability(final int x)"
+    }
+  },
+  {
+    "v23": {
+      "line": "119",
+      "statement": "if (x <= 0)"
+    }
+  },
+  {
+    "v24": {
+      "line": "120",
+      "statement": "return 0.0"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "121",
+      "statement": "if (x >= numberOfElements)"
+    }
+  },
+  {
+    "v27": {
+      "line": "122",
+      "statement": "return 1.0"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "125",
+      "statement": "return generalizedHarmonic(x, exponent) / generalizedHarmonic(numberOfElements, exponent)"
+    }
+  },
+  {
+    "v30": {
+      "line": "138",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v31": {
+      "line": "139",
+      "statement": "if (!numericalMeanIsCalculated)"
+    }
+  },
+  {
+    "v32": {
+      "line": "140",
+      "statement": "numericalMean = calculateNumericalMean()"
+    }
+  },
+  {
+    "v33": {
+      "line": "141",
+      "statement": "numericalMeanIsCalculated = true"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v35": {
+      "line": "143",
+      "statement": "return numericalMean"
+    }
+  },
+  {
+    "v36": {
+      "line": "151",
+      "statement": "double calculateNumericalMean()"
+    }
+  },
+  {
+    "v37": {
+      "line": "152",
+      "statement": "final int N = getNumberOfElements()"
+    }
+  },
+  {
+    "v38": {
+      "line": "153",
+      "statement": "final double s = getExponent()"
+    }
+  },
+  {
+    "v39": {
+      "line": "155",
+      "statement": "final double Hs1 = generalizedHarmonic(N, s - 1)"
+    }
+  },
+  {
+    "v40": {
+      "line": "156",
+      "statement": "final double Hs = generalizedHarmonic(N, s)"
+    }
+  },
+  {
+    "v41": {
+      "line": "158",
+      "statement": "return Hs1 / Hs"
+    }
+  },
+  {
+    "v42": {
+      "line": "172",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v43": {
+      "line": "173",
+      "statement": "if (!numericalVarianceIsCalculated)"
+    }
+  },
+  {
+    "v44": {
+      "line": "174",
+      "statement": "numericalVariance = calculateNumericalVariance()"
+    }
+  },
+  {
+    "v45": {
+      "line": "175",
+      "statement": "numericalVarianceIsCalculated = true"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v47": {
+      "line": "177",
+      "statement": "return numericalVariance"
+    }
+  },
+  {
+    "v48": {
+      "line": "185",
+      "statement": "double calculateNumericalVariance()"
+    }
+  },
+  {
+    "v49": {
+      "line": "186",
+      "statement": "final int N = getNumberOfElements()"
+    }
+  },
+  {
+    "v50": {
+      "line": "187",
+      "statement": "final double s = getExponent()"
+    }
+  },
+  {
+    "v51": {
+      "line": "189",
+      "statement": "final double Hs2 = generalizedHarmonic(N, s - 2)"
+    }
+  },
+  {
+    "v52": {
+      "line": "190",
+      "statement": "final double Hs1 = generalizedHarmonic(N, s - 1)"
+    }
+  },
+  {
+    "v53": {
+      "line": "191",
+      "statement": "final double Hs = generalizedHarmonic(N, s)"
+    }
+  },
+  {
+    "v54": {
+      "line": "193",
+      "statement": "return (Hs2 / Hs) - ((Hs1 * Hs1) / (Hs * Hs))"
+    }
+  },
+  {
+    "v55": {
+      "line": "205",
+      "statement": "double generalizedHarmonic(final int n, final double m)"
+    }
+  },
+  {
+    "v56": {
+      "line": "206",
+      "statement": "double value = 0"
+    }
+  },
+  {
+    "v57": {
+      "line": "207",
+      "statement": "for (  int k = n ; k > 0 ;   --k)"
+    }
+  },
+  {
+    "v60": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v61": {
+      "line": "208",
+      "statement": "value += 1.0 / FastMath.pow(k, m)"
+    }
+  },
+  {
+    "v62": {
+      "line": "210",
+      "statement": "return value"
+    }
+  },
+  {
+    "v63": {
+      "line": "220",
+      "statement": "int getSupportLowerBound()"
+    }
+  },
+  {
+    "v64": {
+      "line": "221",
+      "statement": "return 1"
+    }
+  },
+  {
+    "v65": {
+      "line": "231",
+      "statement": "int getSupportUpperBound()"
+    }
+  },
+  {
+    "v66": {
+      "line": "232",
+      "statement": "return getNumberOfElements()"
+    }
+  },
+  {
+    "v67": {
+      "line": "242",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v68": {
+      "line": "243",
+      "statement": "return true"
+    }
+  }
+]

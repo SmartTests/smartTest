@@ -1,0 +1,45 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "175",
+      "161",
+      "164",
+      "173",
+      "167",
+      "169",
+      "163"
+    ],
+    "sourceClass": "OptionGroup"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR32",
+      "TR18",
+      "TR24",
+      "TR26",
+      "TR33"
+    ],
+    "deletedRequirementYesTest": [
+      "TR27",
+      "TR29",
+      "TR31",
+      "TR34",
+      "TR28",
+      "TR30"
+    ],
+    "affectedTest": [
+      "testToString"
+    ],
+    "testReran": [
+      "testToString"
+    ],
+    "unsatisfiedRequirement": [
+      "TR28",
+      "TR32",
+      "TR33"
+    ],
+    "newTestRequirement": [
+      "TR34"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "285"
+    ],
+    "sourceClass": "HelpFormatter"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR10"
+    ],
+    "unsatisfiedRequirement": [
+      "TR10"
+    ],
+    "newTestRequirement": [
+      "TR10"
+    ]
+  }
+}

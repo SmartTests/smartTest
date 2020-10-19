@@ -1,0 +1,371 @@
+1:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):70:MathUtils.checkNotNull(c) |==> <NO-OP>
+2:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):71:c.length |==> 0
+3:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):72:0 |==> 1
+4:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):72:0 |==> -1
+5:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):72:n == 0 |==> n <= 0
+6:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):72:n == 0 |==> n >= 0
+7:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):72:n == 0 |==> false
+8:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:1 |==> 0
+9:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:1 |==> -1
+10:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:n > 1 |==> n != 1
+11:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:n > 1 |==> n >= 1
+12:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:n > 1 |==> false
+13:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:1 |==> 0
+14:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:1 |==> -1
+15:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:n - 1 |==> n % 1
+16:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:n - 1 |==> n * 1
+17:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:n - 1 |==> n + 1
+18:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:n - 1 |==> n / 1
+19:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:0 |==> 1
+20:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:0 |==> -1
+21:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:c[n - 1] == 0 |==> c[n - 1] <= 0
+22:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:c[n - 1] == 0 |==> c[n - 1] >= 0
+23:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:c[n - 1] == 0 |==> false
+24:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:(n > 1) && (c[n - 1] == 0) |==> (n > 1) == (c[n - 1] == 0)
+25:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:(n > 1) && (c[n - 1] == 0) |==> false
+26:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:(n > 1) && (c[n - 1] == 0) |==> (n > 1)
+27:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):75:(n > 1) && (c[n - 1] == 0) |==> (c[n - 1] == 0)
+28:STD:<DEC>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):76:--n |==> <NO-OP>
+29:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):78:new double[n] |==> null
+30:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):79:0 |==> 1
+31:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):79:0 |==> -1
+32:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):79:0 |==> 1
+33:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):79:0 |==> -1
+34:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@<init>(double[]):79:System.arraycopy(c, 0, this.coefficients, 0, n) |==> <NO-OP>
+35:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(double):94:evaluate(coefficients, x) |==> 0.0
+36:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@degree():103:1 |==> 0
+37:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@degree():103:1 |==> -1
+38:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@degree():103:coefficients.length - 1 |==> coefficients.length % 1
+39:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@degree():103:coefficients.length - 1 |==> coefficients.length * 1
+40:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@degree():103:coefficients.length - 1 |==> coefficients.length + 1
+41:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@degree():103:coefficients.length - 1 |==> coefficients.length / 1
+42:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@getCoefficients():115:coefficients.clone() |==> null
+43:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):130:MathUtils.checkNotNull(coefficients) |==> <NO-OP>
+44:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):131:coefficients.length |==> 0
+45:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):132:0 |==> 1
+46:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):132:0 |==> -1
+47:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):132:n == 0 |==> n <= 0
+48:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):132:n == 0 |==> n >= 0
+49:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):132:n == 0 |==> false
+50:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):135:1 |==> 0
+51:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):135:1 |==> -1
+52:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):135:n - 1 |==> n % 1
+53:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):135:n - 1 |==> n * 1
+54:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):135:n - 1 |==> n + 1
+55:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):135:n - 1 |==> n / 1
+56:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:2 |==> 0
+57:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:2 |==> -2
+58:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:n - 2 |==> n % 2
+59:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:n - 2 |==> n * 2
+60:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:n - 2 |==> n + 2
+61:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:n - 2 |==> n / 2
+62:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:0 |==> 1
+63:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:0 |==> -1
+64:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:j >= 0 |==> j == 0
+65:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:j >= 0 |==> j > 0
+66:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):136:j >= 0 |==> true
+67:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):137:argument * result |==> argument % result
+68:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):137:argument * result |==> argument + result
+69:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):137:argument * result |==> argument - result
+70:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):137:argument * result |==> argument / result
+71:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):137:argument * result + coefficients[j] |==> argument * result % coefficients[j]
+72:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):137:argument * result + coefficients[j] |==> argument * result * coefficients[j]
+73:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):137:argument * result + coefficients[j] |==> argument * result - coefficients[j]
+74:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):137:argument * result + coefficients[j] |==> argument * result / coefficients[j]
+75:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):137:result = argument * result + coefficients[j] |==> <NO-OP>
+76:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@evaluate(double[],double):139:result |==> 0.0
+77:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):150:MathUtils.checkNotNull(coefficients) |==> <NO-OP>
+78:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):151:coefficients.length |==> 0
+79:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):152:0 |==> 1
+80:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):152:0 |==> -1
+81:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):152:n == 0 |==> n <= 0
+82:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):152:n == 0 |==> n >= 0
+83:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):152:n == 0 |==> false
+84:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):156:1 |==> 0
+85:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):156:1 |==> -1
+86:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):156:n - 1 |==> n % 1
+87:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):156:n - 1 |==> n * 1
+88:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):156:n - 1 |==> n + 1
+89:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):156:n - 1 |==> n / 1
+90:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:2 |==> 0
+91:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:2 |==> -2
+92:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:n - 2 |==> n % 2
+93:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:n - 2 |==> n * 2
+94:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:n - 2 |==> n + 2
+95:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:n - 2 |==> n / 2
+96:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:0 |==> 1
+97:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:0 |==> -1
+98:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:j >= 0 |==> j == 0
+99:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:j >= 0 |==> j > 0
+100:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):157:j >= 0 |==> true
+101:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):158:result = result.multiply(t).add(coefficients[j]) |==> <NO-OP>
+102:EVR:<IDENTIFIER(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):160:result |==> null
+103:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):171:FastMath.min(coefficients.length, p.coefficients.length) |==> 0
+104:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):172:FastMath.max(coefficients.length, p.coefficients.length) |==> 0
+105:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):175:new double[highLength] |==> null
+106:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):176:0 |==> 1
+107:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):176:0 |==> -1
+108:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):176:i < lowLength |==> i != lowLength
+109:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):176:i < lowLength |==> i <= lowLength
+110:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):176:i < lowLength |==> false
+111:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):177:coefficients[i] + p.coefficients[i] |==> coefficients[i] % p.coefficients[i]
+112:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):177:coefficients[i] + p.coefficients[i] |==> coefficients[i] * p.coefficients[i]
+113:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):177:coefficients[i] + p.coefficients[i] |==> coefficients[i] - p.coefficients[i]
+114:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):177:coefficients[i] + p.coefficients[i] |==> coefficients[i] / p.coefficients[i]
+115:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):177:newCoefficients[i] = coefficients[i] + p.coefficients[i] |==> <NO-OP>
+116:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):179:coefficients.length < p.coefficients.length |==> coefficients.length != p.coefficients.length
+117:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):179:coefficients.length < p.coefficients.length |==> coefficients.length <= p.coefficients.length
+118:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):179:coefficients.length < p.coefficients.length |==> false
+119:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):183:highLength - lowLength |==> highLength % lowLength
+120:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):183:highLength - lowLength |==> highLength * lowLength
+121:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):183:highLength - lowLength |==> highLength + lowLength
+122:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):183:highLength - lowLength |==> highLength / lowLength
+123:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):179:System.arraycopy((coefficients.length < p.coefficients.length) ? p.coefficients : coefficients, lowLength, newCoefficients, lowLength, highLength - lowLength) |==> <NO-OP>
+124:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.polynomials.PolynomialFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):185:new PolynomialFunction(newCoefficients) |==> null
+125:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):196:FastMath.min(coefficients.length, p.coefficients.length) |==> 0
+126:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):197:FastMath.max(coefficients.length, p.coefficients.length) |==> 0
+127:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):200:new double[highLength] |==> null
+128:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):201:0 |==> 1
+129:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):201:0 |==> -1
+130:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):201:i < lowLength |==> i != lowLength
+131:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):201:i < lowLength |==> i <= lowLength
+132:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):201:i < lowLength |==> false
+133:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):202:coefficients[i] - p.coefficients[i] |==> coefficients[i] % p.coefficients[i]
+134:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):202:coefficients[i] - p.coefficients[i] |==> coefficients[i] * p.coefficients[i]
+135:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):202:coefficients[i] - p.coefficients[i] |==> coefficients[i] + p.coefficients[i]
+136:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):202:coefficients[i] - p.coefficients[i] |==> coefficients[i] / p.coefficients[i]
+137:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):202:newCoefficients[i] = coefficients[i] - p.coefficients[i] |==> <NO-OP>
+138:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):204:coefficients.length < p.coefficients.length |==> coefficients.length != p.coefficients.length
+139:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):204:coefficients.length < p.coefficients.length |==> coefficients.length <= p.coefficients.length
+140:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):204:coefficients.length < p.coefficients.length |==> false
+141:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):205:lowLength |==> 0
+142:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):205:i < highLength |==> i != highLength
+143:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):205:i < highLength |==> i <= highLength
+144:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):205:i < highLength |==> false
+145:ORU:-(double):+(double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):206:-p.coefficients[i] |==> +p.coefficients[i]
+146:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):206:newCoefficients[i] = -p.coefficients[i] |==> <NO-OP>
+147:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):210:highLength - lowLength |==> highLength % lowLength
+148:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):210:highLength - lowLength |==> highLength * lowLength
+149:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):210:highLength - lowLength |==> highLength + lowLength
+150:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):210:highLength - lowLength |==> highLength / lowLength
+151:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):209:System.arraycopy(coefficients, lowLength, newCoefficients, lowLength, highLength - lowLength) |==> <NO-OP>
+152:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.polynomials.PolynomialFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):213:new PolynomialFunction(newCoefficients) |==> null
+153:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@negate():222:new double[coefficients.length] |==> null
+154:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@negate():223:0 |==> 1
+155:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@negate():223:0 |==> -1
+156:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@negate():223:i < coefficients.length |==> i != coefficients.length
+157:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@negate():223:i < coefficients.length |==> i <= coefficients.length
+158:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@negate():223:i < coefficients.length |==> false
+159:ORU:-(double):+(double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@negate():224:-coefficients[i] |==> +coefficients[i]
+160:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@negate():224:newCoefficients[i] = -coefficients[i] |==> <NO-OP>
+161:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.polynomials.PolynomialFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@negate():226:new PolynomialFunction(newCoefficients) |==> null
+162:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:coefficients.length + p.coefficients.length |==> coefficients.length % p.coefficients.length
+163:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:coefficients.length + p.coefficients.length |==> coefficients.length * p.coefficients.length
+164:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:coefficients.length + p.coefficients.length |==> coefficients.length - p.coefficients.length
+165:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:coefficients.length + p.coefficients.length |==> coefficients.length / p.coefficients.length
+166:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:1 |==> 0
+167:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:1 |==> -1
+168:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:coefficients.length + p.coefficients.length - 1 |==> (coefficients.length + p.coefficients.length) % 1
+169:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:coefficients.length + p.coefficients.length - 1 |==> (coefficients.length + p.coefficients.length) * 1
+170:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:coefficients.length + p.coefficients.length - 1 |==> coefficients.length + p.coefficients.length + 1
+171:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):236:coefficients.length + p.coefficients.length - 1 |==> (coefficients.length + p.coefficients.length) / 1
+172:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):238:0 |==> 1
+173:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):238:0 |==> -1
+174:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):238:i < newCoefficients.length |==> i != newCoefficients.length
+175:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):238:i < newCoefficients.length |==> i <= newCoefficients.length
+176:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):238:i < newCoefficients.length |==> false
+177:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):239:0.0 |==> 1.0
+178:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):239:0.0 |==> -1.0
+179:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):239:newCoefficients[i] = 0.0 |==> <NO-OP>
+180:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:0 |==> 1
+181:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:0 |==> -1
+182:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:1 |==> 0
+183:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:1 |==> -1
+184:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:i + 1 |==> i % 1
+185:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:i + 1 |==> i * 1
+186:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:i + 1 |==> i - 1
+187:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:i + 1 |==> i / 1
+188:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:i + 1 - p.coefficients.length |==> (i + 1) % p.coefficients.length
+189:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:i + 1 - p.coefficients.length |==> (i + 1) * p.coefficients.length
+190:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:i + 1 - p.coefficients.length |==> i + 1 + p.coefficients.length
+191:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):240:i + 1 - p.coefficients.length |==> (i + 1) / p.coefficients.length
+192:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):241:1 |==> 0
+193:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):241:1 |==> -1
+194:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):241:i + 1 |==> i % 1
+195:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):241:i + 1 |==> i * 1
+196:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):241:i + 1 |==> i - 1
+197:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):241:i + 1 |==> i / 1
+198:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):241:j < FastMath.min(coefficients.length, i + 1) |==> j != FastMath.min(coefficients.length, i + 1)
+199:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):241:j < FastMath.min(coefficients.length, i + 1) |==> j <= FastMath.min(coefficients.length, i + 1)
+200:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):241:j < FastMath.min(coefficients.length, i + 1) |==> false
+201:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):243:i - j |==> i % j
+202:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):243:i - j |==> i * j
+203:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):243:i - j |==> i + j
+204:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):243:i - j |==> i / j
+205:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):243:coefficients[j] * p.coefficients[i - j] |==> coefficients[j] % p.coefficients[i - j]
+206:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):243:coefficients[j] * p.coefficients[i - j] |==> coefficients[j] + p.coefficients[i - j]
+207:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):243:coefficients[j] * p.coefficients[i - j] |==> coefficients[j] - p.coefficients[i - j]
+208:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):243:coefficients[j] * p.coefficients[i - j] |==> coefficients[j] / p.coefficients[i - j]
+209:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):243:newCoefficients[i] += coefficients[j] * p.coefficients[i - j] |==> <NO-OP>
+210:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.polynomials.PolynomialFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction):247:new PolynomialFunction(newCoefficients) |==> null
+211:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):260:MathUtils.checkNotNull(coefficients) |==> <NO-OP>
+212:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):261:coefficients.length |==> 0
+213:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):262:0 |==> 1
+214:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):262:0 |==> -1
+215:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):262:n == 0 |==> n <= 0
+216:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):262:n == 0 |==> n >= 0
+217:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):262:n == 0 |==> false
+218:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):265:1 |==> 0
+219:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):265:1 |==> -1
+220:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):265:n == 1 |==> n <= 1
+221:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):265:n == 1 |==> n >= 1
+222:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):265:n == 1 |==> false
+223:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):266:0 |==> 1
+224:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):266:0 |==> -1
+225:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):266:return new double[]{Config.__M_NO == 0 && Config.COVERED(223, 224) ? 0 : Config.__M_NO == 224 ? -1 : Config.__M_NO == 223 ? 1 : 0}; |==> <NO-OP>
+226:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):268:1 |==> 0
+227:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):268:1 |==> -1
+228:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):268:n - 1 |==> n % 1
+229:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):268:n - 1 |==> n * 1
+230:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):268:n - 1 |==> n + 1
+231:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):268:n - 1 |==> n / 1
+232:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:1 |==> 0
+233:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:1 |==> -1
+234:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:n - 1 |==> n % 1
+235:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:n - 1 |==> n * 1
+236:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:n - 1 |==> n + 1
+237:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:n - 1 |==> n / 1
+238:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:0 |==> 1
+239:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:0 |==> -1
+240:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:i > 0 |==> i != 0
+241:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:i > 0 |==> i >= 0
+242:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):269:i > 0 |==> false
+243:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:1 |==> 0
+244:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:1 |==> -1
+245:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:i - 1 |==> i % 1
+246:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:i - 1 |==> i * 1
+247:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:i - 1 |==> i + 1
+248:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:i - 1 |==> i / 1
+249:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:i * coefficients[i] |==> i % coefficients[i]
+250:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:i * coefficients[i] |==> i + coefficients[i]
+251:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:i * coefficients[i] |==> i - coefficients[i]
+252:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:i * coefficients[i] |==> i / coefficients[i]
+253:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):270:result[i - 1] = i * coefficients[i] |==> <NO-OP>
+254:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@differentiate(double[]):272:result |==> null
+255:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.polynomials.PolynomialFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@polynomialDerivative():281:new PolynomialFunction(differentiate(coefficients)) |==> null
+256:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.polynomials.PolynomialFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@derivative():290:polynomialDerivative() |==> null
+257:EVR:<NEW_CLASS(java.lang.StringBuilder)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():310:new StringBuilder() |==> null
+258:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():311:0 |==> 1
+259:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():311:0 |==> -1
+260:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():311:0.0 |==> 1.0
+261:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():311:0.0 |==> -1.0
+262:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():311:coefficients[0] == 0.0 |==> coefficients[0] <= 0.0
+263:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():311:coefficients[0] == 0.0 |==> coefficients[0] >= 0.0
+264:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():311:coefficients[0] == 0.0 |==> false
+265:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():312:1 |==> 0
+266:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():312:1 |==> -1
+267:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():312:coefficients.length == 1 |==> coefficients.length <= 1
+268:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():312:coefficients.length == 1 |==> coefficients.length >= 1
+269:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():312:coefficients.length == 1 |==> false
+270:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():313:return "0"; |==> <NO-OP>
+271:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():316:0 |==> 1
+272:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():316:0 |==> -1
+273:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():316:s.append(toString(coefficients[0])) |==> <NO-OP>
+274:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():319:1 |==> 0
+275:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():319:1 |==> -1
+276:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():319:i < coefficients.length |==> i != coefficients.length
+277:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():319:i < coefficients.length |==> i <= coefficients.length
+278:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():319:i < coefficients.length |==> false
+279:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():320:0 |==> 1
+280:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():320:0 |==> -1
+281:ROR:!=(double,double):<(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():320:coefficients[i] != 0 |==> coefficients[i] < 0
+282:ROR:!=(double,double):>(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():320:coefficients[i] != 0 |==> coefficients[i] > 0
+283:ROR:!=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():320:coefficients[i] != 0 |==> true
+284:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():321:0 |==> 1
+285:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():321:0 |==> -1
+286:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():321:s.length() > 0 |==> s.length() != 0
+287:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():321:s.length() > 0 |==> s.length() >= 0
+288:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():321:s.length() > 0 |==> false
+289:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():322:0 |==> 1
+290:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():322:0 |==> -1
+291:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():322:coefficients[i] < 0 |==> coefficients[i] != 0
+292:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():322:coefficients[i] < 0 |==> coefficients[i] <= 0
+293:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():322:coefficients[i] < 0 |==> false
+294:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():323:s.append(" - ") |==> <NO-OP>
+295:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():325:s.append(" + ") |==> <NO-OP>
+296:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():328:0 |==> 1
+297:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():328:0 |==> -1
+298:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():328:coefficients[i] < 0 |==> coefficients[i] != 0
+299:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():328:coefficients[i] < 0 |==> coefficients[i] <= 0
+300:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():328:coefficients[i] < 0 |==> false
+301:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():329:s.append("-") |==> <NO-OP>
+302:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():333:FastMath.abs(coefficients[i]) |==> 0.0
+303:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:1 |==> 0
+304:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:1 |==> -1
+305:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:absAi - 1 |==> absAi % 1
+306:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:absAi - 1 |==> absAi * 1
+307:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:absAi - 1 |==> absAi + 1
+308:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:absAi - 1 |==> absAi / 1
+309:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:0 |==> 1
+310:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:0 |==> -1
+311:ROR:!=(double,double):<(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:(absAi - 1) != 0 |==> (absAi - 1) < 0
+312:ROR:!=(double,double):>(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:(absAi - 1) != 0 |==> (absAi - 1) > 0
+313:ROR:!=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():334:(absAi - 1) != 0 |==> true
+314:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():335:s.append(toString(absAi)) |==> <NO-OP>
+315:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():336:s.append(' ') |==> <NO-OP>
+316:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():339:s.append("x") |==> <NO-OP>
+317:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():340:1 |==> 0
+318:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():340:1 |==> -1
+319:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():340:i > 1 |==> i != 1
+320:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():340:i > 1 |==> i >= 1
+321:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():340:i > 1 |==> false
+322:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():341:s.append('^') |==> <NO-OP>
+323:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():342:s.append(Integer.toString(i)) |==> <NO-OP>
+324:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString():347:s.toString() |==> null
+325:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):357:Double.toString(coeff) |==> null
+326:COR:c.endsWith(".0"):TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):358:c.endsWith(".0") |==> false
+327:COR:c.endsWith(".0"):FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):358:c.endsWith(".0") |==> true
+328:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):359:0 |==> 1
+329:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):359:0 |==> -1
+330:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):359:2 |==> 0
+331:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):359:2 |==> -2
+332:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):359:c.length() - 2 |==> c.length() % 2
+333:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):359:c.length() - 2 |==> c.length() * 2
+334:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):359:c.length() - 2 |==> c.length() + 2
+335:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):359:c.length() - 2 |==> c.length() / 2
+336:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@toString(double):361:c |==> null
+337:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():369:1 |==> 0
+338:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():369:1 |==> -1
+339:AOR:*(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():370:prime * result |==> prime % result
+340:AOR:*(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():370:prime * result |==> prime + result
+341:AOR:*(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():370:prime * result |==> prime - result
+342:AOR:*(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():370:prime * result |==> prime / result
+343:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():370:prime * result + Arrays.hashCode(coefficients) |==> prime * result % Arrays.hashCode(coefficients)
+344:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():370:prime * result + Arrays.hashCode(coefficients) |==> prime * result * Arrays.hashCode(coefficients)
+345:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():370:prime * result + Arrays.hashCode(coefficients) |==> prime * result - Arrays.hashCode(coefficients)
+346:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():370:prime * result + Arrays.hashCode(coefficients) |==> prime * result / Arrays.hashCode(coefficients)
+347:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():370:result = prime * result + Arrays.hashCode(coefficients) |==> <NO-OP>
+348:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@hashCode():371:result |==> 0
+349:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):377:this == obj |==> false
+350:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):378:true |==> false
+351:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):378:return Config.__M_NO == 0 && Config.COVERED(350, 350) ? true : Config.__M_NO == 350 ? false : true; |==> <NO-OP>
+352:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):381:false |==> true
+353:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):381:return Config.__M_NO == 0 && Config.COVERED(352, 352) ? false : Config.__M_NO == 352 ? true : false; |==> <NO-OP>
+354:EVR:<TYPE_CAST(org.apache.commons.math3.analysis.polynomials.PolynomialFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):383:(PolynomialFunction)obj |==> null
+355:COR:Arrays.equals(coefficients, other.coefficients):TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):384:Arrays.equals(coefficients, other.coefficients) |==> false
+356:COR:Arrays.equals(coefficients, other.coefficients):FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):384:Arrays.equals(coefficients, other.coefficients) |==> true
+357:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):385:false |==> true
+358:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):385:return Config.__M_NO == 0 && Config.COVERED(357, 357) ? false : Config.__M_NO == 357 ? true : false; |==> <NO-OP>
+359:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunction@equals(java.lang.Object):387:true |==> false
+360:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):398:new double[parameters.length] |==> null
+361:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):399:1.0 |==> 0.0
+362:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):399:1.0 |==> -1.0
+363:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):400:0 |==> 1
+364:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):400:0 |==> -1
+365:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):400:i < parameters.length |==> i != parameters.length
+366:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):400:i < parameters.length |==> i <= parameters.length
+367:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):400:i < parameters.length |==> false
+368:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):401:gradient[i] = xn |==> <NO-OP>
+369:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):402:xn *= x |==> <NO-OP>
+370:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@gradient(double,double[]):404:gradient |==> null
+371:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunction$Parametric@value(double,double[]):410:PolynomialFunction.evaluate(parameters, x) |==> 0.0

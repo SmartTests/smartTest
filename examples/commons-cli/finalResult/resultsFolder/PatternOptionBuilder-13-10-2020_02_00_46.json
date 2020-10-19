@@ -1,0 +1,16 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "103"
+    ],
+    "sourceClass": "PatternOptionBuilder"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR7"
+    ],
+    "unsatisfiedRequirement": [
+      "TR7"
+    ]
+  }
+}

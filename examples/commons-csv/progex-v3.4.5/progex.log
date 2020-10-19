@@ -1,0 +1,20 @@
+======= LOG CREATED on Fri 2020/Oct/09 12:05:34:179 =======
+
+PROGEX (Program Graph Extractor)  [ v3.4.5 ]
+Visit project website @ https://github.com/ghaffarian/progex
+
+PROGEX execution config:
+  Language = Java
+  Output format = DOT
+  Output directory = ../output/09-10-2020_12_05_33/
+  Analysis types = [CFG]
+  Input paths = 
+        /Users/kesina/eclipse-workspace/commons-csv/src/main/java/org/apache/commons/csv/Lexer.java
+
+
+# Java source files = 1
+
+
+Control-Flow Analysis
+=====================
+CFG exported to: ../output/09-10-2020_12_05_33/Lexer-CFG.dot

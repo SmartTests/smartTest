@@ -1,0 +1,383 @@
+1:ROR:>=(double,double):==(double,double):org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):82:a >= b |==> a == b
+2:ROR:>=(double,double):>(double,double):org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):82:a >= b |==> a > b
+3:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):82:a >= b |==> true
+4:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):85:false |==> true
+5:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):87:c < a |==> c != a
+6:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):87:c < a |==> c <= a
+7:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):87:c < a |==> false
+8:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):89:true |==> false
+9:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):91:c > b |==> c != b
+10:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):91:c > b |==> c >= b
+11:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):91:c > b |==> false
+12:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):93:true |==> false
+13:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):96:a |==> 0.0
+14:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):97:c |==> 0.0
+15:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):98:b |==> 0.0
+16:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.TriangularDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):99:FastMath.max(FastMath.ulp(a), FastMath.ulp(b)) |==> 0.0
+17:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.TriangularDistribution@getMode():108:c |==> 0.0
+18:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.TriangularDistribution@getSolverAbsoluteAccuracy():126:solverAbsoluteAccuracy |==> 0.0
+19:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):142:x < a |==> x != a
+20:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):142:x < a |==> x <= a
+21:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):142:x < a |==> false
+22:LVR:0:POS:org.apache.commons.math3.distribution.TriangularDistribution@density(double):143:0 |==> 1
+23:LVR:0:NEG:org.apache.commons.math3.distribution.TriangularDistribution@density(double):143:0 |==> -1
+24:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@density(double):143:return Config.__M_NO == 0 && Config.COVERED(22, 23) ? 0 : Config.__M_NO == 23 ? -1 : Config.__M_NO == 22 ? 1 : 0; |==> <NO-OP>
+25:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:a <= x |==> a < x
+26:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:a <= x |==> a == x
+27:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:a <= x |==> true
+28:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:x < c |==> x != c
+29:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:x < c |==> x <= c
+30:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:x < c |==> false
+31:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:a <= x && x < c |==> a <= x == x < c
+32:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:a <= x && x < c |==> false
+33:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:a <= x && x < c |==> a <= x
+34:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@density(double):145:a <= x && x < c |==> x < c
+35:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:2 |==> 0
+36:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:2 |==> -2
+37:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:x - a |==> x % a
+38:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:x - a |==> x * a
+39:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:x - a |==> x + a
+40:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:x - a |==> x / a
+41:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:2 * (x - a) |==> 2 % (x - a)
+42:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:2 * (x - a) |==> 2 + (x - a)
+43:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:2 * (x - a) |==> 2 - (x - a)
+44:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):146:2 * (x - a) |==> 2 / (x - a)
+45:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:b - a |==> b % a
+46:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:b - a |==> b * a
+47:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:b - a |==> b + a
+48:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:b - a |==> b / a
+49:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:c - a |==> c % a
+50:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:c - a |==> c * a
+51:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:c - a |==> c + a
+52:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:c - a |==> c / a
+53:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:(b - a) * (c - a) |==> (b - a) % (c - a)
+54:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:(b - a) * (c - a) |==> (b - a) + (c - a)
+55:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:(b - a) * (c - a) |==> (b - a) - (c - a)
+56:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):147:(b - a) * (c - a) |==> (b - a) / (c - a)
+57:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):148:divident / divisor |==> divident % divisor
+58:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):148:divident / divisor |==> divident * divisor
+59:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):148:divident / divisor |==> divident + divisor
+60:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):148:divident / divisor |==> divident - divisor
+61:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@density(double):148:return Config.__M_NO == 60 ? divident - divisor : Config.__M_NO == 59 ? divident + divisor : Config.__M_NO == 58 ? divident * divisor : Config.__M_NO == 57 ? divident % divisor : Config.__M_NO == 0 && Config.COVERED(57, 60) ? divident / divisor : divident / divisor; |==> <NO-OP>
+62:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):150:x == c |==> x <= c
+63:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):150:x == c |==> x >= c
+64:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):150:x == c |==> false
+65:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:2 |==> 0
+66:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:2 |==> -2
+67:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:b - a |==> b % a
+68:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:b - a |==> b * a
+69:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:b - a |==> b + a
+70:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:b - a |==> b / a
+71:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:2 / (b - a) |==> 2 % (b - a)
+72:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:2 / (b - a) |==> 2 * (b - a)
+73:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:2 / (b - a) |==> 2 + (b - a)
+74:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:2 / (b - a) |==> 2 - (b - a)
+75:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@density(double):151:return Config.__M_NO == 74 ? 2 - (b - a) : Config.__M_NO == 73 ? 2 + (b - a) : Config.__M_NO == 72 ? 2 * (b - a) : Config.__M_NO == 71 ? 2 % (b - a) : Config.__M_NO == 0 && Config.COVERED(71, 74) ? 2 / (b - a) : (Config.__M_NO == 0 && Config.COVERED(65, 66) ? 2 : Config.__M_NO == 66 ? -2 : Config.__M_NO == 65 ? 0 : 2) / (Config.__M_NO == 70 ? b / a : Config.__M_NO == 69 ? b + a : Config.__M_NO == 68 ? b * a : Config.__M_NO == 67 ? b % a : Config.__M_NO == 0 && Config.COVERED(67, 70) ? b - a : b - a); |==> <NO-OP>
+76:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:c < x |==> c != x
+77:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:c < x |==> c <= x
+78:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:c < x |==> false
+79:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:x <= b |==> x < b
+80:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:x <= b |==> x == b
+81:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:x <= b |==> true
+82:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:c < x && x <= b |==> c < x == x <= b
+83:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:c < x && x <= b |==> false
+84:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:c < x && x <= b |==> c < x
+85:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@density(double):153:c < x && x <= b |==> x <= b
+86:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:2 |==> 0
+87:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:2 |==> -2
+88:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:b - x |==> b % x
+89:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:b - x |==> b * x
+90:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:b - x |==> b + x
+91:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:b - x |==> b / x
+92:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:2 * (b - x) |==> 2 % (b - x)
+93:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:2 * (b - x) |==> 2 + (b - x)
+94:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:2 * (b - x) |==> 2 - (b - x)
+95:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):154:2 * (b - x) |==> 2 / (b - x)
+96:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:b - a |==> b % a
+97:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:b - a |==> b * a
+98:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:b - a |==> b + a
+99:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:b - a |==> b / a
+100:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:b - c |==> b % c
+101:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:b - c |==> b * c
+102:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:b - c |==> b + c
+103:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:b - c |==> b / c
+104:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:(b - a) * (b - c) |==> (b - a) % (b - c)
+105:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:(b - a) * (b - c) |==> (b - a) + (b - c)
+106:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:(b - a) * (b - c) |==> (b - a) - (b - c)
+107:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):155:(b - a) * (b - c) |==> (b - a) / (b - c)
+108:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):156:divident / divisor |==> divident % divisor
+109:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):156:divident / divisor |==> divident * divisor
+110:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):156:divident / divisor |==> divident + divisor
+111:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@density(double):156:divident / divisor |==> divident - divisor
+112:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@density(double):156:return Config.__M_NO == 111 ? divident - divisor : Config.__M_NO == 110 ? divident + divisor : Config.__M_NO == 109 ? divident * divisor : Config.__M_NO == 108 ? divident % divisor : Config.__M_NO == 0 && Config.COVERED(108, 111) ? divident / divisor : divident / divisor; |==> <NO-OP>
+113:LVR:0:POS:org.apache.commons.math3.distribution.TriangularDistribution@density(double):158:0 |==> 1
+114:LVR:0:NEG:org.apache.commons.math3.distribution.TriangularDistribution@density(double):158:0 |==> -1
+115:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):175:x < a |==> x != a
+116:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):175:x < a |==> x <= a
+117:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):175:x < a |==> false
+118:LVR:0:POS:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):176:0 |==> 1
+119:LVR:0:NEG:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):176:0 |==> -1
+120:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):176:return Config.__M_NO == 0 && Config.COVERED(118, 119) ? 0 : Config.__M_NO == 119 ? -1 : Config.__M_NO == 118 ? 1 : 0; |==> <NO-OP>
+121:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:a <= x |==> a < x
+122:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:a <= x |==> a == x
+123:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:a <= x |==> true
+124:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:x < c |==> x != c
+125:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:x < c |==> x <= c
+126:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:x < c |==> false
+127:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:a <= x && x < c |==> a <= x == x < c
+128:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:a <= x && x < c |==> false
+129:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:a <= x && x < c |==> a <= x
+130:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):178:a <= x && x < c |==> x < c
+131:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:x - a |==> x % a
+132:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:x - a |==> x * a
+133:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:x - a |==> x + a
+134:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:x - a |==> x / a
+135:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:x - a |==> x % a
+136:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:x - a |==> x * a
+137:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:x - a |==> x + a
+138:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:x - a |==> x / a
+139:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:(x - a) * (x - a) |==> (x - a) % (x - a)
+140:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:(x - a) * (x - a) |==> (x - a) + (x - a)
+141:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:(x - a) * (x - a) |==> (x - a) - (x - a)
+142:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):179:(x - a) * (x - a) |==> (x - a) / (x - a)
+143:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:b - a |==> b % a
+144:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:b - a |==> b * a
+145:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:b - a |==> b + a
+146:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:b - a |==> b / a
+147:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:c - a |==> c % a
+148:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:c - a |==> c * a
+149:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:c - a |==> c + a
+150:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:c - a |==> c / a
+151:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:(b - a) * (c - a) |==> (b - a) % (c - a)
+152:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:(b - a) * (c - a) |==> (b - a) + (c - a)
+153:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:(b - a) * (c - a) |==> (b - a) - (c - a)
+154:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):180:(b - a) * (c - a) |==> (b - a) / (c - a)
+155:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):181:divident / divisor |==> divident % divisor
+156:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):181:divident / divisor |==> divident * divisor
+157:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):181:divident / divisor |==> divident + divisor
+158:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):181:divident / divisor |==> divident - divisor
+159:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):181:return Config.__M_NO == 158 ? divident - divisor : Config.__M_NO == 157 ? divident + divisor : Config.__M_NO == 156 ? divident * divisor : Config.__M_NO == 155 ? divident % divisor : Config.__M_NO == 0 && Config.COVERED(155, 158) ? divident / divisor : divident / divisor; |==> <NO-OP>
+160:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):183:x == c |==> x <= c
+161:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):183:x == c |==> x >= c
+162:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):183:x == c |==> false
+163:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:c - a |==> c % a
+164:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:c - a |==> c * a
+165:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:c - a |==> c + a
+166:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:c - a |==> c / a
+167:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:b - a |==> b % a
+168:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:b - a |==> b * a
+169:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:b - a |==> b + a
+170:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:b - a |==> b / a
+171:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:(c - a) / (b - a) |==> (c - a) % (b - a)
+172:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:(c - a) / (b - a) |==> (c - a) * (b - a)
+173:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:(c - a) / (b - a) |==> (c - a) + (b - a)
+174:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:(c - a) / (b - a) |==> (c - a) - (b - a)
+175:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):184:return Config.__M_NO == 174 ? (c - a) - (b - a) : Config.__M_NO == 173 ? (c - a) + (b - a) : Config.__M_NO == 172 ? (c - a) * (b - a) : Config.__M_NO == 171 ? (c - a) % (b - a) : Config.__M_NO == 0 && Config.COVERED(171, 174) ? (c - a) / (b - a) : (Config.__M_NO == 166 ? c / a : Config.__M_NO == 165 ? c + a : Config.__M_NO == 164 ? c * a : Config.__M_NO == 163 ? c % a : Config.__M_NO == 0 && Config.COVERED(163, 166) ? c - a : c - a) / (Config.__M_NO == 170 ? b / a : Config.__M_NO == 169 ? b + a : Config.__M_NO == 168 ? b * a : Config.__M_NO == 167 ? b % a : Config.__M_NO == 0 && Config.COVERED(167, 170) ? b - a : b - a); |==> <NO-OP>
+176:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:c < x |==> c != x
+177:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:c < x |==> c <= x
+178:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:c < x |==> false
+179:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:x <= b |==> x < b
+180:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:x <= b |==> x == b
+181:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:x <= b |==> true
+182:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:c < x && x <= b |==> c < x == x <= b
+183:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:c < x && x <= b |==> false
+184:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:c < x && x <= b |==> c < x
+185:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):186:c < x && x <= b |==> x <= b
+186:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:b - x |==> b % x
+187:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:b - x |==> b * x
+188:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:b - x |==> b + x
+189:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:b - x |==> b / x
+190:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:b - x |==> b % x
+191:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:b - x |==> b * x
+192:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:b - x |==> b + x
+193:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:b - x |==> b / x
+194:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:(b - x) * (b - x) |==> (b - x) % (b - x)
+195:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:(b - x) * (b - x) |==> (b - x) + (b - x)
+196:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:(b - x) * (b - x) |==> (b - x) - (b - x)
+197:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):187:(b - x) * (b - x) |==> (b - x) / (b - x)
+198:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:b - a |==> b % a
+199:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:b - a |==> b * a
+200:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:b - a |==> b + a
+201:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:b - a |==> b / a
+202:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:b - c |==> b % c
+203:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:b - c |==> b * c
+204:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:b - c |==> b + c
+205:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:b - c |==> b / c
+206:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:(b - a) * (b - c) |==> (b - a) % (b - c)
+207:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:(b - a) * (b - c) |==> (b - a) + (b - c)
+208:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:(b - a) * (b - c) |==> (b - a) - (b - c)
+209:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):188:(b - a) * (b - c) |==> (b - a) / (b - c)
+210:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:1 |==> 0
+211:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:1 |==> -1
+212:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:divident / divisor |==> divident % divisor
+213:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:divident / divisor |==> divident * divisor
+214:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:divident / divisor |==> divident + divisor
+215:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:divident / divisor |==> divident - divisor
+216:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:1 - (divident / divisor) |==> 1 % (divident / divisor)
+217:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:1 - (divident / divisor) |==> 1 * (divident / divisor)
+218:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:1 - (divident / divisor) |==> 1 + (divident / divisor)
+219:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:1 - (divident / divisor) |==> 1 / (divident / divisor)
+220:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):189:return Config.__M_NO == 219 ? 1 / (divident / divisor) : Config.__M_NO == 218 ? 1 + (divident / divisor) : Config.__M_NO == 217 ? 1 * (divident / divisor) : Config.__M_NO == 216 ? 1 % (divident / divisor) : Config.__M_NO == 0 && Config.COVERED(216, 219) ? 1 - (divident / divisor) : (Config.__M_NO == 0 && Config.COVERED(210, 211) ? 1 : Config.__M_NO == 211 ? -1 : Config.__M_NO == 210 ? 0 : 1) - (Config.__M_NO == 215 ? divident - divisor : Config.__M_NO == 214 ? divident + divisor : Config.__M_NO == 213 ? divident * divisor : Config.__M_NO == 212 ? divident % divisor : Config.__M_NO == 0 && Config.COVERED(212, 215) ? divident / divisor : divident / divisor); |==> <NO-OP>
+221:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):191:1 |==> 0
+222:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@cumulativeProbability(double):191:1 |==> -1
+223:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:a + b |==> a % b
+224:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:a + b |==> a * b
+225:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:a + b |==> a - b
+226:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:a + b |==> a / b
+227:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:a + b + c |==> (a + b) % c
+228:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:a + b + c |==> (a + b) * c
+229:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:a + b + c |==> a + b - c
+230:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:a + b + c |==> (a + b) / c
+231:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:3 |==> 0
+232:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:3 |==> -3
+233:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:(a + b + c) / 3 |==> (a + b + c) % 3
+234:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:(a + b + c) / 3 |==> (a + b + c) * 3
+235:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:(a + b + c) / 3 |==> (a + b + c) + 3
+236:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalMean():201:(a + b + c) / 3 |==> (a + b + c) - 3
+237:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a |==> a % a
+238:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a |==> a + a
+239:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a |==> a - a
+240:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a |==> a / a
+241:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:b * b |==> b % b
+242:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:b * b |==> b + b
+243:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:b * b |==> b - b
+244:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:b * b |==> b / b
+245:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b |==> a * a % (b * b)
+246:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b |==> a * a * (b * b)
+247:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b |==> a * a - b * b
+248:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b |==> a * a / (b * b)
+249:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:c * c |==> c % c
+250:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:c * c |==> c + c
+251:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:c * c |==> c - c
+252:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:c * c |==> c / c
+253:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c |==> (a * a + b * b) % (c * c)
+254:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c |==> (a * a + b * b) * (c * c)
+255:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c |==> a * a + b * b - c * c
+256:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c |==> (a * a + b * b) / (c * c)
+257:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * b |==> a % b
+258:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * b |==> a + b
+259:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * b |==> a - b
+260:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * b |==> a / b
+261:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b |==> (a * a + b * b + c * c) % (a * b)
+262:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b |==> (a * a + b * b + c * c) * (a * b)
+263:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b |==> a * a + b * b + c * c + a * b
+264:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b |==> (a * a + b * b + c * c) / (a * b)
+265:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * c |==> a % c
+266:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * c |==> a + c
+267:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * c |==> a - c
+268:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * c |==> a / c
+269:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b - a * c |==> (a * a + b * b + c * c - a * b) % (a * c)
+270:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b - a * c |==> (a * a + b * b + c * c - a * b) * (a * c)
+271:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b - a * c |==> a * a + b * b + c * c - a * b + a * c
+272:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b - a * c |==> (a * a + b * b + c * c - a * b) / (a * c)
+273:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:b * c |==> b % c
+274:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:b * c |==> b + c
+275:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:b * c |==> b - c
+276:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:b * c |==> b / c
+277:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b - a * c - b * c |==> (a * a + b * b + c * c - a * b - a * c) % (b * c)
+278:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b - a * c - b * c |==> (a * a + b * b + c * c - a * b - a * c) * (b * c)
+279:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b - a * c - b * c |==> a * a + b * b + c * c - a * b - a * c + b * c
+280:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:a * a + b * b + c * c - a * b - a * c - b * c |==> (a * a + b * b + c * c - a * b - a * c) / (b * c)
+281:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:18 |==> 0
+282:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:18 |==> -18
+283:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:(a * a + b * b + c * c - a * b - a * c - b * c) / 18 |==> (a * a + b * b + c * c - a * b - a * c - b * c) % 18
+284:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:(a * a + b * b + c * c - a * b - a * c - b * c) / 18 |==> (a * a + b * b + c * c - a * b - a * c - b * c) * 18
+285:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:(a * a + b * b + c * c - a * b - a * c - b * c) / 18 |==> (a * a + b * b + c * c - a * b - a * c - b * c) + 18
+286:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@getNumericalVariance():211:(a * a + b * b + c * c - a * b - a * c - b * c) / 18 |==> (a * a + b * b + c * c - a * b - a * c - b * c) - 18
+287:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.TriangularDistribution@getSupportLowerBound():223:a |==> 0.0
+288:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.TriangularDistribution@getSupportUpperBound():235:b |==> 0.0
+289:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.TriangularDistribution@isSupportLowerBoundInclusive():240:true |==> false
+290:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.TriangularDistribution@isSupportUpperBoundInclusive():245:true |==> false
+291:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.TriangularDistribution@isSupportConnected():256:true |==> false
+292:LVR:0:POS:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:0 |==> 1
+293:LVR:0:NEG:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:0 |==> -1
+294:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p < 0 |==> p != 0
+295:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p < 0 |==> p <= 0
+296:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p < 0 |==> false
+297:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:1 |==> 0
+298:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:1 |==> -1
+299:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p > 1 |==> p != 1
+300:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p > 1 |==> p >= 1
+301:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p > 1 |==> false
+302:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p < 0 || p > 1 |==> p < 0 != p > 1
+303:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p < 0 || p > 1 |==> p < 0
+304:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p < 0 || p > 1 |==> p > 1
+305:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):262:p < 0 || p > 1 |==> true
+306:LVR:0:POS:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):263:0 |==> 1
+307:LVR:0:NEG:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):263:0 |==> -1
+308:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):263:1 |==> 0
+309:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):263:1 |==> -1
+310:LVR:0:POS:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):265:0 |==> 1
+311:LVR:0:NEG:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):265:0 |==> -1
+312:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):265:p == 0 |==> p <= 0
+313:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):265:p == 0 |==> p >= 0
+314:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):265:p == 0 |==> false
+315:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):266:return a; |==> <NO-OP>
+316:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):268:1 |==> 0
+317:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):268:1 |==> -1
+318:ROR:==(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):268:p == 1 |==> p <= 1
+319:ROR:==(double,double):>=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):268:p == 1 |==> p >= 1
+320:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):268:p == 1 |==> false
+321:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):269:return b; |==> <NO-OP>
+322:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:c - a |==> c % a
+323:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:c - a |==> c * a
+324:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:c - a |==> c + a
+325:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:c - a |==> c / a
+326:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:b - a |==> b % a
+327:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:b - a |==> b * a
+328:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:b - a |==> b + a
+329:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:b - a |==> b / a
+330:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:(c - a) / (b - a) |==> (c - a) % (b - a)
+331:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:(c - a) / (b - a) |==> (c - a) * (b - a)
+332:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:(c - a) / (b - a) |==> (c - a) + (b - a)
+333:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:(c - a) / (b - a) |==> (c - a) - (b - a)
+334:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:p < (c - a) / (b - a) |==> p != (c - a) / (b - a)
+335:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:p < (c - a) / (b - a) |==> p <= (c - a) / (b - a)
+336:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):271:p < (c - a) / (b - a) |==> false
+337:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:b - a |==> b % a
+338:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:b - a |==> b * a
+339:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:b - a |==> b + a
+340:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:b - a |==> b / a
+341:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:p * (b - a) |==> p % (b - a)
+342:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:p * (b - a) |==> p + (b - a)
+343:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:p * (b - a) |==> p - (b - a)
+344:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:p * (b - a) |==> p / (b - a)
+345:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:c - a |==> c % a
+346:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:c - a |==> c * a
+347:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:c - a |==> c + a
+348:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:c - a |==> c / a
+349:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:p * (b - a) * (c - a) |==> p * (b - a) % (c - a)
+350:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:p * (b - a) * (c - a) |==> p * (b - a) + (c - a)
+351:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:p * (b - a) * (c - a) |==> p * (b - a) - (c - a)
+352:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:p * (b - a) * (c - a) |==> p * (b - a) / (c - a)
+353:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:a + FastMath.sqrt(p * (b - a) * (c - a)) |==> a % FastMath.sqrt(p * (b - a) * (c - a))
+354:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:a + FastMath.sqrt(p * (b - a) * (c - a)) |==> a * FastMath.sqrt(p * (b - a) * (c - a))
+355:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:a + FastMath.sqrt(p * (b - a) * (c - a)) |==> a - FastMath.sqrt(p * (b - a) * (c - a))
+356:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:a + FastMath.sqrt(p * (b - a) * (c - a)) |==> a / FastMath.sqrt(p * (b - a) * (c - a))
+357:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):272:return Config.__M_NO == 356 ? a / FastMath.sqrt(p * (b - a) * (c - a)) : Config.__M_NO == 355 ? a - FastMath.sqrt(p * (b - a) * (c - a)) : Config.__M_NO == 354 ? a * FastMath.sqrt(p * (b - a) * (c - a)) : Config.__M_NO == 353 ? a % FastMath.sqrt(p * (b - a) * (c - a)) : Config.__M_NO == 0 && Config.COVERED(353, 356) ? a + FastMath.sqrt(p * (b - a) * (c - a)) : a + FastMath.sqrt(Config.__M_NO == 352 ? p * (b - a) / (c - a) : Config.__M_NO == 351 ? p * (b - a) - (c - a) : Config.__M_NO == 350 ? p * (b - a) + (c - a) : Config.__M_NO == 349 ? p * (b - a) % (c - a) : Config.__M_NO == 0 && Config.COVERED(349, 352) ? p * (b - a) * (c - a) : (Config.__M_NO == 344 ? p / (b - a) : Config.__M_NO == 343 ? p - (b - a) : Config.__M_NO == 342 ? p + (b - a) : Config.__M_NO == 341 ? p % (b - a) : Config.__M_NO == 0 && Config.COVERED(341, 344) ? p * (b - a) : p * (Config.__M_NO == 340 ? b / a : Config.__M_NO == 339 ? b + a : Config.__M_NO == 338 ? b * a : Config.__M_NO == 337 ? b % a : Config.__M_NO == 0 && Config.COVERED(337, 340) ? b - a : b - a)) * (Config.__M_NO == 348 ? c / a : Config.__M_NO == 347 ? c + a : Config.__M_NO == 346 ? c * a : Config.__M_NO == 345 ? c % a : Config.__M_NO == 0 && Config.COVERED(345, 348) ? c - a : c - a)); |==> <NO-OP>
+358:LVR:POS:0:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:1 |==> 0
+359:LVR:POS:NEG:org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:1 |==> -1
+360:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:1 - p |==> 1 % p
+361:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:1 - p |==> 1 * p
+362:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:1 - p |==> 1 + p
+363:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:1 - p |==> 1 / p
+364:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - a |==> b % a
+365:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - a |==> b * a
+366:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - a |==> b + a
+367:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - a |==> b / a
+368:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:(1 - p) * (b - a) |==> (1 - p) % (b - a)
+369:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:(1 - p) * (b - a) |==> (1 - p) + (b - a)
+370:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:(1 - p) * (b - a) |==> (1 - p) - (b - a)
+371:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:(1 - p) * (b - a) |==> (1 - p) / (b - a)
+372:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - c |==> b % c
+373:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - c |==> b * c
+374:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - c |==> b + c
+375:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - c |==> b / c
+376:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:(1 - p) * (b - a) * (b - c) |==> (1 - p) * (b - a) % (b - c)
+377:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:(1 - p) * (b - a) * (b - c) |==> (1 - p) * (b - a) + (b - c)
+378:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:(1 - p) * (b - a) * (b - c) |==> (1 - p) * (b - a) - (b - c)
+379:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:(1 - p) * (b - a) * (b - c) |==> (1 - p) * (b - a) / (b - c)
+380:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - FastMath.sqrt((1 - p) * (b - a) * (b - c)) |==> b % FastMath.sqrt((1 - p) * (b - a) * (b - c))
+381:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - FastMath.sqrt((1 - p) * (b - a) * (b - c)) |==> b * FastMath.sqrt((1 - p) * (b - a) * (b - c))
+382:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - FastMath.sqrt((1 - p) * (b - a) * (b - c)) |==> b + FastMath.sqrt((1 - p) * (b - a) * (b - c))
+383:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.TriangularDistribution@inverseCumulativeProbability(double):274:b - FastMath.sqrt((1 - p) * (b - a) * (b - c)) |==> b / FastMath.sqrt((1 - p) * (b - a) * (b - c))

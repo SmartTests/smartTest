@@ -1,0 +1,212 @@
+[
+  {
+    "v1": {
+      "line": "55",
+      "statement": "Pair<double[],double[]> getRule(int numberOfPoints)"
+    }
+  },
+  {
+    "v2": {
+      "line": "58",
+      "statement": "if (numberOfPoints <= 0)"
+    }
+  },
+  {
+    "v3": {
+      "line": "59",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_POINTS,  numberOfPoints)"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "64",
+      "statement": "Pair<double[], double[]> cached = pointsAndWeightsDouble.get(numberOfPoints)"
+    }
+  },
+  {
+    "v6": {
+      "line": "66",
+      "statement": "if (cached == null)"
+    }
+  },
+  {
+    "v7": {
+      "line": "70",
+      "statement": "final Pair<T[], T[]> rule = getRuleInternal(numberOfPoints)"
+    }
+  },
+  {
+    "v8": {
+      "line": "71",
+      "statement": "cached = convertToDouble(rule)"
+    }
+  },
+  {
+    "v9": {
+      "line": "74",
+      "statement": "pointsAndWeightsDouble.put(numberOfPoints, cached)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "78",
+      "statement": "return new Pair<double[], double[]>(cached.getFirst().clone(), cached.getSecond().clone())"
+    }
+  },
+  {
+    "v12": {
+      "line": "93",
+      "statement": "Pair<T[],T[]> getRuleInternal(int numberOfPoints)"
+    }
+  },
+  {
+    "v13": {
+      "line": "95",
+      "statement": "final Pair<T[], T[]> rule = pointsAndWeights.get(numberOfPoints)"
+    }
+  },
+  {
+    "v14": {
+      "line": "96",
+      "statement": "if (rule == null)"
+    }
+  },
+  {
+    "v15": {
+      "line": "97",
+      "statement": "addRule(computeRule(numberOfPoints))"
+    }
+  },
+  {
+    "v16": {
+      "line": "99",
+      "statement": "return getRuleInternal(numberOfPoints)"
+    }
+  },
+  {
+    "v17": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v18": {
+      "line": "101",
+      "statement": "return rule"
+    }
+  },
+  {
+    "v19": {
+      "line": "111",
+      "statement": "void addRule(Pair<T[], T[]> rule)"
+    }
+  },
+  {
+    "v20": {
+      "line": "112",
+      "statement": "if (rule.getFirst().length != rule.getSecond().length)"
+    }
+  },
+  {
+    "v21": {
+      "line": "113",
+      "statement": "throw new DimensionMismatchException(rule.getFirst().length,  rule.getSecond().length)"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v23": {
+      "line": "117",
+      "statement": "pointsAndWeights.put(rule.getFirst().length, rule)"
+    }
+  },
+  {
+    "v24": {
+      "line": "128",
+      "statement": "Pair<T[],T[]> computeRule(int numberOfPoints)"
+    }
+  },
+  {
+    "v25": {
+      "line": "139",
+      "statement": "Pair<double[],double[]> convertToDouble(Pair<T[], T[]> rule)"
+    }
+  },
+  {
+    "v26": {
+      "line": "140",
+      "statement": "final T[] pT = rule.getFirst()"
+    }
+  },
+  {
+    "v27": {
+      "line": "141",
+      "statement": "final T[] wT = rule.getSecond()"
+    }
+  },
+  {
+    "v28": {
+      "line": "143",
+      "statement": "final int len = pT.length"
+    }
+  },
+  {
+    "v29": {
+      "line": "144",
+      "statement": "final double[] pD = new double[len"
+    }
+  },
+  {
+    "v30": {
+      "line": "145",
+      "statement": "final double[] wD = new double[len"
+    }
+  },
+  {
+    "v31": {
+      "line": "147",
+      "statement": "for (  int i = 0 ; i < len ;   i++)"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v35": {
+      "line": "148",
+      "statement": "pD[i] = pT[i].doubleValue()"
+    }
+  },
+  {
+    "v36": {
+      "line": "149",
+      "statement": "wD[i] = wT[i].doubleValue()"
+    }
+  },
+  {
+    "v37": {
+      "line": "152",
+      "statement": "return new Pair<double[], double[]>(pD, wD)"
+    }
+  }
+]

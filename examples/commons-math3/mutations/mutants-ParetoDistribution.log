@@ -1,0 +1,131 @@
+1:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@<init>():71:1 |==> 0
+2:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@<init>():71:1 |==> -1
+3:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@<init>():71:1 |==> 0
+4:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@<init>():71:1 |==> -1
+5:LVR:0:POS:org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):129:0 |==> 1
+6:LVR:0:NEG:org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):129:0 |==> -1
+7:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):129:scale <= 0 |==> scale < 0
+8:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):129:scale <= 0 |==> scale == 0
+9:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):129:scale <= 0 |==> true
+10:LVR:0:POS:org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):133:0 |==> 1
+11:LVR:0:NEG:org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):133:0 |==> -1
+12:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):133:shape <= 0 |==> shape < 0
+13:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):133:shape <= 0 |==> shape == 0
+14:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):133:shape <= 0 |==> true
+15:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):137:scale |==> 0.0
+16:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):138:shape |==> 0.0
+17:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):139:inverseCumAccuracy |==> 0.0
+18:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@getScale():148:scale |==> 0.0
+19:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@getShape():157:shape |==> 0.0
+20:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):171:x < scale |==> x != scale
+21:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):171:x < scale |==> x <= scale
+22:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):171:x < scale |==> false
+23:LVR:0:POS:org.apache.commons.math3.distribution.ParetoDistribution@density(double):172:0 |==> 1
+24:LVR:0:NEG:org.apache.commons.math3.distribution.ParetoDistribution@density(double):172:0 |==> -1
+25:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.ParetoDistribution@density(double):172:return Config.__M_NO == 0 && Config.COVERED(23, 24) ? 0 : Config.__M_NO == 24 ? -1 : Config.__M_NO == 23 ? 1 : 0; |==> <NO-OP>
+26:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:1 |==> 0
+27:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:1 |==> -1
+28:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:shape + 1 |==> shape % 1
+29:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:shape + 1 |==> shape * 1
+30:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:shape + 1 |==> shape - 1
+31:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:shape + 1 |==> shape / 1
+32:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) |==> FastMath.pow(scale, shape) % FastMath.pow(x, shape + 1)
+33:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) |==> FastMath.pow(scale, shape) * FastMath.pow(x, shape + 1)
+34:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) |==> FastMath.pow(scale, shape) + FastMath.pow(x, shape + 1)
+35:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) |==> FastMath.pow(scale, shape) - FastMath.pow(x, shape + 1)
+36:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) * shape |==> FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) % shape
+37:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) * shape |==> FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) + shape
+38:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) * shape |==> FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) - shape
+39:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@density(double):174:FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) * shape |==> FastMath.pow(scale, shape) / FastMath.pow(x, shape + 1) / shape
+40:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):187:x <= scale |==> x < scale
+41:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):187:x <= scale |==> x == scale
+42:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):187:x <= scale |==> true
+43:LVR:0:POS:org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):188:0 |==> 1
+44:LVR:0:NEG:org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):188:0 |==> -1
+45:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):188:return Config.__M_NO == 0 && Config.COVERED(43, 44) ? 0 : Config.__M_NO == 44 ? -1 : Config.__M_NO == 43 ? 1 : 0; |==> <NO-OP>
+46:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:1 |==> 0
+47:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:1 |==> -1
+48:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:scale / x |==> scale % x
+49:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:scale / x |==> scale * x
+50:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:scale / x |==> scale + x
+51:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:scale / x |==> scale - x
+52:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:1 - FastMath.pow(scale / x, shape) |==> 1 % FastMath.pow(scale / x, shape)
+53:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:1 - FastMath.pow(scale / x, shape) |==> 1 * FastMath.pow(scale / x, shape)
+54:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:1 - FastMath.pow(scale / x, shape) |==> 1 + FastMath.pow(scale / x, shape)
+55:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double):190:1 - FastMath.pow(scale / x, shape) |==> 1 / FastMath.pow(scale / x, shape)
+56:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@cumulativeProbability(double,double):202:probability(x0, x1) |==> 0.0
+57:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@getSolverAbsoluteAccuracy():208:solverAbsoluteAccuracy |==> 0.0
+58:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():221:1 |==> 0
+59:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():221:1 |==> -1
+60:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():221:shape <= 1 |==> shape < 1
+61:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():221:shape <= 1 |==> shape == 1
+62:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():221:shape <= 1 |==> true
+63:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():222:return Double.POSITIVE_INFINITY; |==> <NO-OP>
+64:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape * scale |==> shape % scale
+65:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape * scale |==> shape + scale
+66:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape * scale |==> shape - scale
+67:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape * scale |==> shape / scale
+68:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:1 |==> 0
+69:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:1 |==> -1
+70:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape - 1 |==> shape % 1
+71:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape - 1 |==> shape * 1
+72:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape - 1 |==> shape + 1
+73:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape - 1 |==> shape / 1
+74:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape * scale / (shape - 1) |==> shape * scale % (shape - 1)
+75:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape * scale / (shape - 1) |==> shape * scale * (shape - 1)
+76:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape * scale / (shape - 1) |==> shape * scale + (shape - 1)
+77:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalMean():224:shape * scale / (shape - 1) |==> shape * scale - (shape - 1)
+78:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():237:2 |==> 0
+79:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():237:2 |==> -2
+80:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():237:shape <= 2 |==> shape < 2
+81:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():237:shape <= 2 |==> shape == 2
+82:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():237:shape <= 2 |==> true
+83:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():238:return Double.POSITIVE_INFINITY; |==> <NO-OP>
+84:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():240:1 |==> 0
+85:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():240:1 |==> -1
+86:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():240:shape - 1 |==> shape % 1
+87:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():240:shape - 1 |==> shape * 1
+88:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():240:shape - 1 |==> shape + 1
+89:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():240:shape - 1 |==> shape / 1
+90:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale |==> scale % scale
+91:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale |==> scale + scale
+92:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale |==> scale - scale
+93:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale |==> scale / scale
+94:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape |==> scale * scale % shape
+95:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape |==> scale * scale + shape
+96:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape |==> scale * scale - shape
+97:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape |==> scale * scale / shape
+98:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:s * s |==> s % s
+99:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:s * s |==> s + s
+100:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:s * s |==> s - s
+101:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:s * s |==> s / s
+102:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape / (s * s) |==> scale * scale * shape % (s * s)
+103:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape / (s * s) |==> scale * scale * shape * (s * s)
+104:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape / (s * s) |==> scale * scale * shape + (s * s)
+105:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape / (s * s) |==> scale * scale * shape - (s * s)
+106:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:2 |==> 0
+107:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:2 |==> -2
+108:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:shape - 2 |==> shape % 2
+109:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:shape - 2 |==> shape * 2
+110:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:shape - 2 |==> shape + 2
+111:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:shape - 2 |==> shape / 2
+112:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape / (s * s) / (shape - 2) |==> scale * scale * shape / (s * s) % (shape - 2)
+113:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape / (s * s) / (shape - 2) |==> scale * scale * shape / (s * s) * (shape - 2)
+114:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape / (s * s) / (shape - 2) |==> scale * scale * shape / (s * s) + (shape - 2)
+115:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@getNumericalVariance():241:scale * scale * shape / (s * s) / (shape - 2) |==> scale * scale * shape / (s * s) - (shape - 2)
+116:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@getSupportLowerBound():252:scale |==> 0.0
+117:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@getSupportUpperBound():263:Double.POSITIVE_INFINITY |==> 0.0
+118:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.ParetoDistribution@isSupportLowerBoundInclusive():268:true |==> false
+119:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.ParetoDistribution@isSupportUpperBoundInclusive():273:false |==> true
+120:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.ParetoDistribution@isSupportConnected():284:true |==> false
+121:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ParetoDistribution@sample():290:random.nextDouble() |==> 0.0
+122:LVR:POS:0:org.apache.commons.math3.distribution.ParetoDistribution@sample():291:1 |==> 0
+123:LVR:POS:NEG:org.apache.commons.math3.distribution.ParetoDistribution@sample():291:1 |==> -1
+124:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@sample():291:1 / shape |==> 1 % shape
+125:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@sample():291:1 / shape |==> 1 * shape
+126:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@sample():291:1 / shape |==> 1 + shape
+127:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@sample():291:1 / shape |==> 1 - shape
+128:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ParetoDistribution@sample():291:scale / FastMath.pow(n, 1 / shape) |==> scale % FastMath.pow(n, 1 / shape)
+129:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ParetoDistribution@sample():291:scale / FastMath.pow(n, 1 / shape) |==> scale * FastMath.pow(n, 1 / shape)
+130:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ParetoDistribution@sample():291:scale / FastMath.pow(n, 1 / shape) |==> scale + FastMath.pow(n, 1 / shape)
+131:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ParetoDistribution@sample():291:scale / FastMath.pow(n, 1 / shape) |==> scale - FastMath.pow(n, 1 / shape)

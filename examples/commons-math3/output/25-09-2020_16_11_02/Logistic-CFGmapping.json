@@ -1,0 +1,296 @@
+[
+  {
+    "v1": {
+      "line": "65",
+      "statement": "Logistic (double k, double m, double b, double q, double a, double n)"
+    }
+  },
+  {
+    "v2": {
+      "line": "72",
+      "statement": "if (n <= 0)"
+    }
+  },
+  {
+    "v3": {
+      "line": "73",
+      "statement": "throw new NotStrictlyPositiveException(n)"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "76",
+      "statement": "this.k = k"
+    }
+  },
+  {
+    "v6": {
+      "line": "77",
+      "statement": "this.m = m"
+    }
+  },
+  {
+    "v7": {
+      "line": "78",
+      "statement": "this.b = b"
+    }
+  },
+  {
+    "v8": {
+      "line": "79",
+      "statement": "this.q = q"
+    }
+  },
+  {
+    "v9": {
+      "line": "80",
+      "statement": "this.a = a"
+    }
+  },
+  {
+    "v10": {
+      "line": "81",
+      "statement": "oneOverN = 1 / n"
+    }
+  },
+  {
+    "v11": {
+      "line": "85",
+      "statement": "double value(double x)"
+    }
+  },
+  {
+    "v12": {
+      "line": "86",
+      "statement": "return value(m - x, k, b, q, a, oneOverN)"
+    }
+  },
+  {
+    "v13": {
+      "line": "93",
+      "statement": "UnivariateFunction derivative()"
+    }
+  },
+  {
+    "v14": {
+      "line": "94",
+      "statement": "return FunctionUtils.toDifferentiableUnivariateFunction(this).derivative()"
+    }
+  },
+  {
+    "v15": {
+      "line": "123",
+      "statement": "double value(double x, double ... param)"
+    }
+  },
+  {
+    "v16": {
+      "line": "127",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v17": {
+      "line": "128",
+      "statement": "return Logistic.value(param[1] - x, param[0], param[2], param[3], param[4], 1 / param[5])"
+    }
+  },
+  {
+    "v18": {
+      "line": "148",
+      "statement": "double[] gradient(double x, double ... param)"
+    }
+  },
+  {
+    "v19": {
+      "line": "152",
+      "statement": "validateParameters(param)"
+    }
+  },
+  {
+    "v20": {
+      "line": "154",
+      "statement": "final double b = param[2"
+    }
+  },
+  {
+    "v21": {
+      "line": "155",
+      "statement": "final double q = param[3"
+    }
+  },
+  {
+    "v22": {
+      "line": "157",
+      "statement": "final double mMinusX = param[1] - x"
+    }
+  },
+  {
+    "v23": {
+      "line": "158",
+      "statement": "final double oneOverN = 1 / param[5"
+    }
+  },
+  {
+    "v24": {
+      "line": "159",
+      "statement": "final double exp = FastMath.exp(b * mMinusX)"
+    }
+  },
+  {
+    "v25": {
+      "line": "160",
+      "statement": "final double qExp = q * exp"
+    }
+  },
+  {
+    "v26": {
+      "line": "161",
+      "statement": "final double qExp1 = qExp + 1"
+    }
+  },
+  {
+    "v27": {
+      "line": "162",
+      "statement": "final double factor1 = (param[0] - param[4]) * oneOverN / FastMath.pow(qExp1, oneOverN)"
+    }
+  },
+  {
+    "v28": {
+      "line": "163",
+      "statement": "final double factor2 = -factor1 / qExp1"
+    }
+  },
+  {
+    "v29": {
+      "line": "166",
+      "statement": "final double gk = Logistic.value(mMinusX, 1, b, q, 0, oneOverN)"
+    }
+  },
+  {
+    "v30": {
+      "line": "167",
+      "statement": "final double gm = factor2 * b * qExp"
+    }
+  },
+  {
+    "v31": {
+      "line": "168",
+      "statement": "final double gb = factor2 * mMinusX * qExp"
+    }
+  },
+  {
+    "v32": {
+      "line": "169",
+      "statement": "final double gq = factor2 * exp"
+    }
+  },
+  {
+    "v33": {
+      "line": "170",
+      "statement": "final double ga = Logistic.value(mMinusX, 0, b, q, 1, oneOverN)"
+    }
+  },
+  {
+    "v34": {
+      "line": "171",
+      "statement": "final double gn = factor1 * Math.log(qExp1) * oneOverN"
+    }
+  },
+  {
+    "v35": {
+      "line": "173",
+      "statement": "return new double[] { gk, gm, gb, gq, ga, gn }"
+    }
+  },
+  {
+    "v36": {
+      "line": "188",
+      "statement": "void validateParameters(double[] param)"
+    }
+  },
+  {
+    "v37": {
+      "line": "192",
+      "statement": "if (param == null)"
+    }
+  },
+  {
+    "v38": {
+      "line": "193",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v39": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v40": {
+      "line": "195",
+      "statement": "if (param.length != 6)"
+    }
+  },
+  {
+    "v41": {
+      "line": "196",
+      "statement": "throw new DimensionMismatchException(param.length, 6)"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v43": {
+      "line": "198",
+      "statement": "if (param[5] <= 0)"
+    }
+  },
+  {
+    "v44": {
+      "line": "199",
+      "statement": "throw new NotStrictlyPositiveException(param[5])"
+    }
+  },
+  {
+    "v45": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v46": {
+      "line": "213",
+      "statement": "double value(double mMinusX, double k, double b, double q, double a, double oneOverN)"
+    }
+  },
+  {
+    "v47": {
+      "line": "219",
+      "statement": "return a + (k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN)"
+    }
+  },
+  {
+    "v48": {
+      "line": "225",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v49": {
+      "line": "226",
+      "statement": "return t.negate().add(m).multiply(b).exp().multiply(q).add(1).pow(oneOverN).reciprocal().multiply(k - a).add(a)"
+    }
+  }
+]

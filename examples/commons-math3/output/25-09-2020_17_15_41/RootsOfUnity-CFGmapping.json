@@ -1,0 +1,320 @@
+[
+  {
+    "v1": {
+      "line": "69",
+      "statement": "RootsOfUnity ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "71",
+      "statement": "omegaCount = 0"
+    }
+  },
+  {
+    "v3": {
+      "line": "72",
+      "statement": "omegaReal = null"
+    }
+  },
+  {
+    "v4": {
+      "line": "73",
+      "statement": "omegaImaginaryCounterClockwise = null"
+    }
+  },
+  {
+    "v5": {
+      "line": "74",
+      "statement": "omegaImaginaryClockwise = null"
+    }
+  },
+  {
+    "v6": {
+      "line": "75",
+      "statement": "isCounterClockWise = true"
+    }
+  },
+  {
+    "v7": {
+      "line": "88",
+      "statement": "boolean isCounterClockWise()"
+    }
+  },
+  {
+    "v8": {
+      "line": "91",
+      "statement": "if (omegaCount == 0)"
+    }
+  },
+  {
+    "v9": {
+      "line": "92",
+      "statement": "throw new MathIllegalStateException( LocalizedFormats.ROOTS_OF_UNITY_NOT_COMPUTED_YET)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "95",
+      "statement": "return isCounterClockWise"
+    }
+  },
+  {
+    "v12": {
+      "line": "117",
+      "statement": "void computeRoots(int n)"
+    }
+  },
+  {
+    "v13": {
+      "line": "119",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v14": {
+      "line": "120",
+      "statement": "throw new ZeroException( LocalizedFormats.CANNOT_COMPUTE_0TH_ROOT_OF_UNITY)"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "124",
+      "statement": "isCounterClockWise = n > 0"
+    }
+  },
+  {
+    "v17": {
+      "line": "127",
+      "statement": "final int absN = FastMath.abs(n)"
+    }
+  },
+  {
+    "v18": {
+      "line": "129",
+      "statement": "if (absN == omegaCount)"
+    }
+  },
+  {
+    "v19": {
+      "line": "130",
+      "statement": "return"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v21": {
+      "line": "134",
+      "statement": "final double t = 2.0 * FastMath.PI / absN"
+    }
+  },
+  {
+    "v22": {
+      "line": "135",
+      "statement": "final double cosT = FastMath.cos(t)"
+    }
+  },
+  {
+    "v23": {
+      "line": "136",
+      "statement": "final double sinT = FastMath.sin(t)"
+    }
+  },
+  {
+    "v24": {
+      "line": "137",
+      "statement": "omegaReal = new double[absN"
+    }
+  },
+  {
+    "v25": {
+      "line": "138",
+      "statement": "omegaImaginaryCounterClockwise = new double[absN"
+    }
+  },
+  {
+    "v26": {
+      "line": "139",
+      "statement": "omegaImaginaryClockwise = new double[absN"
+    }
+  },
+  {
+    "v27": {
+      "line": "140",
+      "statement": "omegaReal[0] = 1.0"
+    }
+  },
+  {
+    "v28": {
+      "line": "141",
+      "statement": "omegaImaginaryCounterClockwise[0] = 0.0"
+    }
+  },
+  {
+    "v29": {
+      "line": "142",
+      "statement": "omegaImaginaryClockwise[0] = 0.0"
+    }
+  },
+  {
+    "v30": {
+      "line": "143",
+      "statement": "for (  int i = 1 ; i < absN ;   i++)"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v34": {
+      "line": "144",
+      "statement": "omegaReal[i] = omegaReal[i - 1] * cosT - omegaImaginaryCounterClockwise[i - 1] * sinT"
+    }
+  },
+  {
+    "v35": {
+      "line": "146",
+      "statement": "omegaImaginaryCounterClockwise[i] = omegaReal[i - 1] * sinT + omegaImaginaryCounterClockwise[i - 1] * cosT"
+    }
+  },
+  {
+    "v36": {
+      "line": "148",
+      "statement": "omegaImaginaryClockwise[i] = -omegaImaginaryCounterClockwise[i"
+    }
+  },
+  {
+    "v37": {
+      "line": "150",
+      "statement": "omegaCount = absN"
+    }
+  },
+  {
+    "v38": {
+      "line": "162",
+      "statement": "double getReal(int k)"
+    }
+  },
+  {
+    "v39": {
+      "line": "165",
+      "statement": "if (omegaCount == 0)"
+    }
+  },
+  {
+    "v40": {
+      "line": "166",
+      "statement": "throw new MathIllegalStateException( LocalizedFormats.ROOTS_OF_UNITY_NOT_COMPUTED_YET)"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v42": {
+      "line": "169",
+      "statement": "if ((k < 0) || (k >= omegaCount))"
+    }
+  },
+  {
+    "v43": {
+      "line": "170",
+      "statement": "throw new OutOfRangeException( LocalizedFormats.OUT_OF_RANGE_ROOT_OF_UNITY_INDEX, Integer.valueOf(k), Integer.valueOf(0), Integer.valueOf(omegaCount - 1))"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v45": {
+      "line": "177",
+      "statement": "return omegaReal[k"
+    }
+  },
+  {
+    "v46": {
+      "line": "189",
+      "statement": "double getImaginary(int k)"
+    }
+  },
+  {
+    "v47": {
+      "line": "192",
+      "statement": "if (omegaCount == 0)"
+    }
+  },
+  {
+    "v48": {
+      "line": "193",
+      "statement": "throw new MathIllegalStateException( LocalizedFormats.ROOTS_OF_UNITY_NOT_COMPUTED_YET)"
+    }
+  },
+  {
+    "v49": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v50": {
+      "line": "196",
+      "statement": "if ((k < 0) || (k >= omegaCount))"
+    }
+  },
+  {
+    "v51": {
+      "line": "197",
+      "statement": "throw new OutOfRangeException( LocalizedFormats.OUT_OF_RANGE_ROOT_OF_UNITY_INDEX, Integer.valueOf(k), Integer.valueOf(0), Integer.valueOf(omegaCount - 1))"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v53": {
+      "line": "204",
+      "statement": "return isCounterClockWise ? omegaImaginaryCounterClockwise[k]"
+    }
+  },
+  {
+    "v54": {
+      "line": "216",
+      "statement": "int getNumberOfRoots()"
+    }
+  },
+  {
+    "v55": {
+      "line": "217",
+      "statement": "return omegaCount"
+    }
+  }
+]

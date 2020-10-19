@@ -1,0 +1,326 @@
+[
+  {
+    "v1": {
+      "line": "107",
+      "statement": "FiniteDifferencesDifferentiator (final int nbPoints, final double stepSize)"
+    }
+  },
+  {
+    "v2": {
+      "line": "109",
+      "statement": "this(nbPoints, stepSize, Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "141",
+      "statement": "FiniteDifferencesDifferentiator (final int nbPoints, final double stepSize,  final double tLower, final double tUpper)"
+    }
+  },
+  {
+    "v4": {
+      "line": "145",
+      "statement": "if (nbPoints <= 1)"
+    }
+  },
+  {
+    "v5": {
+      "line": "146",
+      "statement": "throw new NumberIsTooSmallException(stepSize, 1, false)"
+    }
+  },
+  {
+    "v6": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v7": {
+      "line": "148",
+      "statement": "this.nbPoints = nbPoints"
+    }
+  },
+  {
+    "v8": {
+      "line": "150",
+      "statement": "if (stepSize <= 0)"
+    }
+  },
+  {
+    "v9": {
+      "line": "151",
+      "statement": "throw new NotPositiveException(stepSize)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "153",
+      "statement": "this.stepSize = stepSize"
+    }
+  },
+  {
+    "v12": {
+      "line": "155",
+      "statement": "halfSampleSpan = 0.5 * stepSize * (nbPoints - 1)"
+    }
+  },
+  {
+    "v13": {
+      "line": "156",
+      "statement": "if (2 * halfSampleSpan >= tUpper - tLower)"
+    }
+  },
+  {
+    "v14": {
+      "line": "157",
+      "statement": "throw new NumberIsTooLargeException(2 * halfSampleSpan, tUpper - tLower, false)"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "159",
+      "statement": "final double safety = FastMath.ulp(halfSampleSpan)"
+    }
+  },
+  {
+    "v17": {
+      "line": "160",
+      "statement": "this.tMin = tLower + halfSampleSpan + safety"
+    }
+  },
+  {
+    "v18": {
+      "line": "161",
+      "statement": "this.tMax = tUpper - halfSampleSpan - safety"
+    }
+  },
+  {
+    "v19": {
+      "line": "169",
+      "statement": "int getNbPoints()"
+    }
+  },
+  {
+    "v20": {
+      "line": "170",
+      "statement": "return nbPoints"
+    }
+  },
+  {
+    "v21": {
+      "line": "177",
+      "statement": "double getStepSize()"
+    }
+  },
+  {
+    "v22": {
+      "line": "178",
+      "statement": "return stepSize"
+    }
+  },
+  {
+    "v23": {
+      "line": "193",
+      "statement": "DerivativeStructure evaluate(final DerivativeStructure t, final double t0,  final double[] y)"
+    }
+  },
+  {
+    "v24": {
+      "line": "198",
+      "statement": "final double[] top  = new double[nbPoints"
+    }
+  },
+  {
+    "v25": {
+      "line": "199",
+      "statement": "final double[] bottom = new double[nbPoints"
+    }
+  },
+  {
+    "v26": {
+      "line": "201",
+      "statement": "for (  int i = 0 ; i < nbPoints ;   ++i)"
+    }
+  },
+  {
+    "v29": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v30": {
+      "line": "204",
+      "statement": "bottom[i] = y[i"
+    }
+  },
+  {
+    "v31": {
+      "line": "205",
+      "statement": "for (  int j = 1 ; j <= i ;   ++j)"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v35": {
+      "line": "206",
+      "statement": "bottom[i - j] = (bottom[i - j + 1] - bottom[i - j]) / (j * stepSize)"
+    }
+  },
+  {
+    "v36": {
+      "line": "210",
+      "statement": "top[i] = bottom[0"
+    }
+  },
+  {
+    "v37": {
+      "line": "215",
+      "statement": "final int order  = t.getOrder()"
+    }
+  },
+  {
+    "v38": {
+      "line": "216",
+      "statement": "final int parameters = t.getFreeParameters()"
+    }
+  },
+  {
+    "v39": {
+      "line": "217",
+      "statement": "final double[] derivatives = t.getAllDerivatives()"
+    }
+  },
+  {
+    "v40": {
+      "line": "218",
+      "statement": "final double dt0 = t.getValue() - t0"
+    }
+  },
+  {
+    "v41": {
+      "line": "219",
+      "statement": "DerivativeStructure interpolation = new DerivativeStructure(parameters, order, 0.0)"
+    }
+  },
+  {
+    "v42": {
+      "line": "220",
+      "statement": "DerivativeStructure monomial = null"
+    }
+  },
+  {
+    "v43": {
+      "line": "221",
+      "statement": "for (  int i = 0 ; i < nbPoints ;   ++i)"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v47": {
+      "line": "222",
+      "statement": "if (i == 0)"
+    }
+  },
+  {
+    "v48": {
+      "line": "224",
+      "statement": "monomial = new DerivativeStructure(parameters, order, 1.0)"
+    }
+  },
+  {
+    "v49": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v50": {
+      "line": "227",
+      "statement": "derivatives[0] = dt0 - (i - 1) * stepSize"
+    }
+  },
+  {
+    "v51": {
+      "line": "228",
+      "statement": "final DerivativeStructure deltaX = new DerivativeStructure(parameters, order, derivatives)"
+    }
+  },
+  {
+    "v52": {
+      "line": "229",
+      "statement": "monomial = monomial.multiply(deltaX)"
+    }
+  },
+  {
+    "v53": {
+      "line": "231",
+      "statement": "interpolation = interpolation.add(monomial.multiply(top[i]))"
+    }
+  },
+  {
+    "v54": {
+      "line": "234",
+      "statement": "return interpolation"
+    }
+  },
+  {
+    "v55": {
+      "line": "244",
+      "statement": "UnivariateDifferentiableFunction differentiate(final UnivariateFunction function)"
+    }
+  },
+  {
+    "v56": {
+      "line": "245",
+      "statement": "return new UnivariateDifferentiableFunction() {  /** {@inheritDoc} */ public double value(final double x) throws MathIllegalArgumentException { return function.value(x); }  /** {@inheritDoc} */ public DerivativeStructure value(final DerivativeStructure t) throws MathIllegalArgumentException {  // check we can achieve the requested derivation order with the sample if (t.getOrder() >= nbPoints) { throw new NumberIsTooLargeException(t.getOrder(), nbPoints, false); }  // compute sample position, trying to be centered if possible final double t0 = FastMath.max(FastMath.min(t.getValue(), tMax), tMin) - halfSampleSpan;  // compute sample points final double[] y = new double[nbPoints]; for (int i = 0; i < nbPoints; ++i) { y[i] = function.value(t0 + i * stepSize); }  // evaluate derivatives return evaluate(t, t0, y);  }  }"
+    }
+  },
+  {
+    "v57": {
+      "line": "284",
+      "statement": "UnivariateDifferentiableVectorFunction differentiate(final UnivariateVectorFunction function)"
+    }
+  },
+  {
+    "v58": {
+      "line": "285",
+      "statement": "return new UnivariateDifferentiableVectorFunction() {  /** {@inheritDoc} */ public double[]value(final double x) throws MathIllegalArgumentException { return function.value(x); }  /** {@inheritDoc} */ public DerivativeStructure[] value(final DerivativeStructure t) throws MathIllegalArgumentException {  // check we can achieve the requested derivation order with the sample if (t.getOrder() >= nbPoints) { throw new NumberIsTooLargeException(t.getOrder(), nbPoints, false); }  // compute sample position, trying to be centered if possible final double t0 = FastMath.max(FastMath.min(t.getValue(), tMax), tMin) - halfSampleSpan;  // compute sample points double[][] y = null; for (int i = 0; i < nbPoints; ++i) { final double[] v = function.value(t0 + i * stepSize); if (i == 0) { y = new double[v.length][nbPoints]; } for (int j = 0; j < v.length; ++j) { y[j][i] = v[j]; } }  // evaluate derivatives final DerivativeStructure[] value = new DerivativeStructure[y.length]; for (int j = 0; j < value.length; ++j) { value[j] = evaluate(t, t0, y[j]); }  return value;  }  }"
+    }
+  },
+  {
+    "v59": {
+      "line": "335",
+      "statement": "UnivariateDifferentiableMatrixFunction differentiate(final UnivariateMatrixFunction function)"
+    }
+  },
+  {
+    "v60": {
+      "line": "336",
+      "statement": "return new UnivariateDifferentiableMatrixFunction() {  /** {@inheritDoc} */ public double[][]  value(final double x) throws MathIllegalArgumentException { return function.value(x); }  /** {@inheritDoc} */ public DerivativeStructure[][]  value(final DerivativeStructure t) throws MathIllegalArgumentException {  // check we can achieve the requested derivation order with the sample if (t.getOrder() >= nbPoints) { throw new NumberIsTooLargeException(t.getOrder(), nbPoints, false); }  // compute sample position, trying to be centered if possible final double t0 = FastMath.max(FastMath.min(t.getValue(), tMax), tMin) - halfSampleSpan;  // compute sample points double[][][] y = null; for (int i = 0; i < nbPoints; ++i) { final double[][] v = function.value(t0 + i * stepSize); if (i == 0) { y = new double[v.length][v[0].length][nbPoints]; } for (int j = 0; j < v.length; ++j) { for (int k = 0; k < v[j].length; ++k) { y[j][k][i] = v[j][k]; } } }  // evaluate derivatives final DerivativeStructure[][] value = new DerivativeStructure[y.length][y[0].length]; for (int j = 0; j < value.length; ++j) { for (int k = 0; k < y[j].length; ++k) { value[j][k] = evaluate(t, t0, y[j][k]); } }  return value;  }  }"
+    }
+  }
+]

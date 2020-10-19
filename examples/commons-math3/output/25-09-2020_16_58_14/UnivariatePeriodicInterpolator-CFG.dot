@@ -1,0 +1,66 @@
+digraph UnivariatePeriodicInterpolator_CFG {
+  // graph-vertices
+  v1  [label="58:  UnivariatePeriodicInterpolator (UnivariateInterpolator interpolator, double period, int extend)"];
+  v2  [label="61:  this.interpolator = interpolator"];
+  v3  [label="62:  this.period = period"];
+  v4  [label="63:  this.extend = extend"];
+  v5  [label="74:  UnivariatePeriodicInterpolator (UnivariateInterpolator interpolator, double period)"];
+  v6  [label="76:  this(interpolator, period, DEFAULT_EXTEND)"];
+  v7  [label="85:  UnivariateFunction interpolate(double[] xval, double[] yval)"];
+  v8  [label="88:  if (xval.length < extend)"];
+  v9  [label="89:  throw new NumberIsTooSmallException(xval.length, extend, true)"];
+  v10  [label="endif"];
+  v11  [label="92:  MathArrays.checkOrder(xval)"];
+  v12  [label="93:  final double offset = xval[0]"];
+  v13  [label="95:  final int len = xval.length + extend * 2"];
+  v14  [label="96:  final double[] x = new double[len]"];
+  v15  [label="97:  final double[] y = new double[len]"];
+  v16  [label="98:  for (  int i = 0 ; i < xval.length ;   i++)"];
+  v19  [label="endfor"];
+  v20  [label="99:  final int index = i + extend"];
+  v21  [label="100:  x[index] = MathUtils.reduce(xval[i], period, offset)"];
+  v22  [label="101:  y[index] = yval[i]"];
+  v23  [label="105:  for (  int i = 0 ; i < extend ;   i++)"];
+  v26  [label="endfor"];
+  v27  [label="106:  int index = xval.length - extend + i"];
+  v28  [label="107:  x[i] = MathUtils.reduce(xval[index], period, offset) - period"];
+  v29  [label="108:  y[i] = yval[index]"];
+  v30  [label="110:  index = len - extend + i"];
+  v31  [label="111:  x[index] = MathUtils.reduce(xval[i], period, offset) + period"];
+  v32  [label="112:  y[index] = yval[i]"];
+  v33  [label="115:  MathArrays.sortInPlace(x, y)"];
+  v34  [label="117:  final UnivariateFunction f = interpolator.interpolate(x, y)"];
+  v35  [label="118:  return new UnivariateFunction() { public double value(final double x) throws MathIllegalArgumentException { return f.value(MathUtils.reduce(x, period, offset)); } };"];
+  // graph-edges
+  v1 -> v2;
+  v2 -> v3;
+  v3 -> v4;
+  v5 -> v6;
+  v7 -> v8;
+  v8 -> v9  [label="True"];
+  v8 -> v10  [label="False"];
+  v10 -> v11;
+  v11 -> v12;
+  v12 -> v13;
+  v13 -> v14;
+  v14 -> v15;
+  v15 -> v16;
+  v16 -> v19  [label="False"];
+  v16 -> v20  [label="True"];
+  v20 -> v21;
+  v21 -> v22;
+  v22 -> v16;
+  v19 -> v23;
+  v23 -> v26  [label="False"];
+  v23 -> v27  [label="True"];
+  v27 -> v28;
+  v28 -> v29;
+  v29 -> v30;
+  v30 -> v31;
+  v31 -> v32;
+  v32 -> v23;
+  v26 -> v33;
+  v33 -> v34;
+  v34 -> v35;
+  // end-of-graph
+}

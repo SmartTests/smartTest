@@ -1,0 +1,80 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "58"
+    ],
+    "sourceClass": "GnuParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR8",
+      "TR6"
+    ],
+    "affectedTest": [
+      "testArgumentStartingWithHyphen",
+      "testDoubleDash1",
+      "testLongWithEqualDoubleDash",
+      "testLongWithEqualSingleDash",
+      "testLongWithoutEqualDoubleDash",
+      "testMissingArg",
+      "testMissingRequiredGroup",
+      "testMissingRequiredOption",
+      "testMissingRequiredOptions",
+      "testMultiple",
+      "testMultipleWithLong",
+      "testNegativeArgument",
+      "testOptionAndRequiredOption",
+      "testOptionGroup",
+      "testOptionGroupLong",
+      "testPropertiesOption1",
+      "testPropertiesOption2",
+      "testPropertyOptionGroup",
+      "testReuseOptionsTwice",
+      "testShortWithEqual",
+      "testShortWithoutEqual",
+      "testSimpleLong",
+      "testSimpleShort",
+      "testSingleDash",
+      "testStopAtExpectedArg",
+      "testStopAtNonOptionLong",
+      "testStopAtNonOptionShort",
+      "testStopAtUnexpectedArg",
+      "testUnlimitedArgs",
+      "testUnrecognizedOption",
+      "testWithRequiredOption"
+    ],
+    "testReran": [
+      "testStopAtExpectedArg",
+      "testMultiple",
+      "testLongWithoutEqualDoubleDash",
+      "testSimpleLong",
+      "testOptionGroup",
+      "testDoubleDash1",
+      "testLongWithEqualDoubleDash",
+      "testMultipleWithLong",
+      "testSimpleShort",
+      "testShortWithoutEqual",
+      "testArgumentStartingWithHyphen",
+      "testReuseOptionsTwice",
+      "testWithRequiredOption",
+      "testStopAtNonOptionLong",
+      "testUnrecognizedOption",
+      "testMissingRequiredGroup",
+      "testMissingRequiredOptions",
+      "testMissingArg",
+      "testMissingRequiredOption",
+      "testStopAtNonOptionShort",
+      "testPropertiesOption1",
+      "testPropertyOptionGroup",
+      "testUnlimitedArgs",
+      "testStopAtUnexpectedArg",
+      "testOptionGroupLong",
+      "testSingleDash",
+      "testOptionAndRequiredOption",
+      "testLongWithEqualSingleDash",
+      "testShortWithEqual",
+      "testNegativeArgument",
+      "testPropertiesOption2"
+    ]
+  }
+}

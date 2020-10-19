@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.commons</groupId>
+  <artifactId>commons-csv</artifactId>
+  <name>Apache Commons CSV</name>
+  <version>1.7-SNAPSHOT</version>
+  <description>The Apache Commons CSV library provides a simple interface for reading and writing
+CSV files of various types.</description>
+  <url>http://commons.apache.org/proper/commons-csv/</url>
+  <issueManagement>
+    <system>jira</system>
+    <url>http://issues.apache.org/jira/browse/CSV</url>
+  </issueManagement>
+  <developers>
+    <developer>
+      <id>bayard</id>
+      <name>Henri Yandell</name>
+      <email>bayard@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+    <developer>
+      <id>mvdb</id>
+      <name>Martin van den Bemt</name>
+      <email>mvdb@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+    <developer>
+      <id>yonik</id>
+      <name>Yonik Seeley</name>
+      <email>yonik@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+    <developer>
+      <id>ebourg</id>
+      <name>Emmanuel Bourg</name>
+      <email>ebourg@apache.org</email>
+      <organization>Apache</organization>
+    </developer>
+    <developer>
+      <id>ggregory</id>
+      <name>Gary Gregory</name>
+      <email>ggregory@apache.org</email>
+      <url>http://www.garygregory.com</url>
+    </developer>
+    <developer>
+      <id>britter</id>
+      <name>Benedikt Ritter</name>
+      <email>britter@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+    <developer>
+      <id>chtompki</id>
+      <name>Rob Tompkins</name>
+      <email>chtompki@apache.org</email>
+      <organization>The Apache Software Foundation</organization>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Bob Smith</name>
+    </contributor>
+  </contributors>
+  <scm>
+    <connection>scm:git:http://git-wip-us.apache.org/repos/asf/commons-csv.git</connection>
+    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/commons-csv.git</developerConnection>
+    <url>https://git-wip-us.apache.org/repos/asf?p=commons-csv.git</url>
+  </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.3.1</version>
+        <configuration>
+          <archive>
+            <manifestFile>resources/META-INF/MANIFEST.MF</manifestFile>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5</version>
+        <configuration>
+          <source>${maven.compiler.target}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.18.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <argLine>-Xbootclasspath/a:${project.build.directory}/${project.build.finalName}.jar
+						-javaagent:${project.build.directory}/${project.build.finalName}.jar</argLine>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.3</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <minimizeJar>false</minimizeJar>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M4</version>
+        <configuration>
+          <forkCount>3</forkCount>
+          <reuseForks>true</reuseForks>
+          <argLine>-Xmx1024m</argLine>
+          <useSystemClassLoader>true</useSystemClassLoader>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>hamcrest-core</artifactId>
+          <groupId>org.hamcrest</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.10.19</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.6</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.9</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.199</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <site>
+      <id>apache.website</id>
+      <name>Apache Commons Site</name>
+      <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-csv/</url>
+    </site>
+  </distributionManagement>
+  <properties>
+    <checkstyle.header.file>${basedir}/LICENSE-header.txt</checkstyle.header.file>
+    <commons.release.version>1.7</commons.release.version>
+    <commons.encoding>UTF-8</commons.encoding>
+    <commons.bc.version>1.6</commons.bc.version>
+    <commons.release.desc>(Java 8)</commons.release.desc>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <commons.jira.id>CSV</commons.jira.id>
+    <commons.jira.pid>12313222</commons.jira.pid>
+    <commons.rc.version>RC1</commons.rc.version>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <checkstyle.version>3.0.0</checkstyle.version>
+    <commons.componentid>csv</commons.componentid>
+    <japicmp.skip>false</japicmp.skip>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <commons.module.name>org.apache.commons.csv</commons.module.name>
+    <project.inceptionYear>2005</project.inceptionYear>
+    <checkstyle.resourceExcludes>LICENSE.txt, NOTICE.txt</checkstyle.resourceExcludes>
+  </properties>
+</project>
+

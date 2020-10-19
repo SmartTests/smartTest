@@ -1,0 +1,248 @@
+[
+  {
+    "v1": {
+      "line": "51",
+      "statement": "LevyDistribution (final RandomGenerator rng, final double mu, final double c)"
+    }
+  },
+  {
+    "v2": {
+      "line": "52",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v3": {
+      "line": "53",
+      "statement": "this.mu  = mu"
+    }
+  },
+  {
+    "v4": {
+      "line": "54",
+      "statement": "this.c = c"
+    }
+  },
+  {
+    "v5": {
+      "line": "55",
+      "statement": "this.halfC = 0.5 * c"
+    }
+  },
+  {
+    "v6": {
+      "line": "72",
+      "statement": "double density(final double x)"
+    }
+  },
+  {
+    "v7": {
+      "line": "73",
+      "statement": "if (x < mu)"
+    }
+  },
+  {
+    "v8": {
+      "line": "74",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v9": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v10": {
+      "line": "77",
+      "statement": "final double delta = x - mu"
+    }
+  },
+  {
+    "v11": {
+      "line": "78",
+      "statement": "final double f = halfC / delta"
+    }
+  },
+  {
+    "v12": {
+      "line": "79",
+      "statement": "return FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) /delta"
+    }
+  },
+  {
+    "v13": {
+      "line": "90",
+      "statement": "double cumulativeProbability(final double x)"
+    }
+  },
+  {
+    "v14": {
+      "line": "91",
+      "statement": "if (x < mu)"
+    }
+  },
+  {
+    "v15": {
+      "line": "92",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v17": {
+      "line": "94",
+      "statement": "return Erf.erfc(FastMath.sqrt(halfC / (x - mu)))"
+    }
+  },
+  {
+    "v18": {
+      "line": "99",
+      "statement": "double inverseCumulativeProbability(final double p)"
+    }
+  },
+  {
+    "v19": {
+      "line": "100",
+      "statement": "if (p < 0.0 || p > 1.0)"
+    }
+  },
+  {
+    "v20": {
+      "line": "101",
+      "statement": "throw new OutOfRangeException(p, 0, 1)"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "103",
+      "statement": "final double t = Erf.erfcInv(p)"
+    }
+  },
+  {
+    "v23": {
+      "line": "104",
+      "statement": "return mu + halfC / (t * t)"
+    }
+  },
+  {
+    "v24": {
+      "line": "110",
+      "statement": "double getScale()"
+    }
+  },
+  {
+    "v25": {
+      "line": "111",
+      "statement": "return c"
+    }
+  },
+  {
+    "v26": {
+      "line": "117",
+      "statement": "double getLocation()"
+    }
+  },
+  {
+    "v27": {
+      "line": "118",
+      "statement": "return mu"
+    }
+  },
+  {
+    "v28": {
+      "line": "122",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v29": {
+      "line": "123",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v30": {
+      "line": "127",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v31": {
+      "line": "128",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v32": {
+      "line": "132",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v33": {
+      "line": "133",
+      "statement": "return mu"
+    }
+  },
+  {
+    "v34": {
+      "line": "137",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v35": {
+      "line": "138",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v36": {
+      "line": "142",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v37": {
+      "line": "145",
+      "statement": "return false"
+    }
+  },
+  {
+    "v38": {
+      "line": "149",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v39": {
+      "line": "151",
+      "statement": "return false"
+    }
+  },
+  {
+    "v40": {
+      "line": "155",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v41": {
+      "line": "156",
+      "statement": "return true"
+    }
+  }
+]

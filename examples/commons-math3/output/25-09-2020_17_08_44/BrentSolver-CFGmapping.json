@@ -1,0 +1,608 @@
+[
+  {
+    "v1": {
+      "line": "46",
+      "statement": "BrentSolver ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "47",
+      "statement": "this(DEFAULT_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "54",
+      "statement": "BrentSolver (double absoluteAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "55",
+      "statement": "super(absoluteAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "63",
+      "statement": "BrentSolver (double relativeAccuracy,  double absoluteAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "65",
+      "statement": "super(relativeAccuracy, absoluteAccuracy)"
+    }
+  },
+  {
+    "v7": {
+      "line": "74",
+      "statement": "BrentSolver (double relativeAccuracy,  double absoluteAccuracy,  double functionValueAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "77",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy)"
+    }
+  },
+  {
+    "v9": {
+      "line": "84",
+      "statement": "double doSolve()"
+    }
+  },
+  {
+    "v10": {
+      "line": "88",
+      "statement": "double min = getMin()"
+    }
+  },
+  {
+    "v11": {
+      "line": "89",
+      "statement": "double max = getMax()"
+    }
+  },
+  {
+    "v12": {
+      "line": "90",
+      "statement": "final double initial = getStartValue()"
+    }
+  },
+  {
+    "v13": {
+      "line": "91",
+      "statement": "final double functionValueAccuracy = getFunctionValueAccuracy()"
+    }
+  },
+  {
+    "v14": {
+      "line": "93",
+      "statement": "verifySequence(min, initial, max)"
+    }
+  },
+  {
+    "v15": {
+      "line": "96",
+      "statement": "double yInitial = computeObjectiveValue(initial)"
+    }
+  },
+  {
+    "v16": {
+      "line": "97",
+      "statement": "if (FastMath.abs(yInitial) <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v17": {
+      "line": "98",
+      "statement": "return initial"
+    }
+  },
+  {
+    "v18": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v19": {
+      "line": "102",
+      "statement": "double yMin = computeObjectiveValue(min)"
+    }
+  },
+  {
+    "v20": {
+      "line": "103",
+      "statement": "if (FastMath.abs(yMin) <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v21": {
+      "line": "104",
+      "statement": "return min"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v23": {
+      "line": "108",
+      "statement": "if (yInitial * yMin < 0)"
+    }
+  },
+  {
+    "v24": {
+      "line": "109",
+      "statement": "return brent(min, initial, yMin, yInitial)"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "113",
+      "statement": "double yMax = computeObjectiveValue(max)"
+    }
+  },
+  {
+    "v27": {
+      "line": "114",
+      "statement": "if (FastMath.abs(yMax) <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v28": {
+      "line": "115",
+      "statement": "return max"
+    }
+  },
+  {
+    "v29": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v30": {
+      "line": "119",
+      "statement": "if (yInitial * yMax < 0)"
+    }
+  },
+  {
+    "v31": {
+      "line": "120",
+      "statement": "return brent(initial, max, yInitial, yMax)"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v33": {
+      "line": "123",
+      "statement": "throw new NoBracketingException(min, max, yMin, yMax)"
+    }
+  },
+  {
+    "v34": {
+      "line": "142",
+      "statement": "double brent(double lo, double hi,  double fLo, double fHi)"
+    }
+  },
+  {
+    "v35": {
+      "line": "144",
+      "statement": "double a = lo"
+    }
+  },
+  {
+    "v36": {
+      "line": "145",
+      "statement": "double fa = fLo"
+    }
+  },
+  {
+    "v37": {
+      "line": "146",
+      "statement": "double b = hi"
+    }
+  },
+  {
+    "v38": {
+      "line": "147",
+      "statement": "double fb = fHi"
+    }
+  },
+  {
+    "v39": {
+      "line": "148",
+      "statement": "double c = a"
+    }
+  },
+  {
+    "v40": {
+      "line": "149",
+      "statement": "double fc = fa"
+    }
+  },
+  {
+    "v41": {
+      "line": "150",
+      "statement": "double d = b - a"
+    }
+  },
+  {
+    "v42": {
+      "line": "151",
+      "statement": "double e = d"
+    }
+  },
+  {
+    "v43": {
+      "line": "153",
+      "statement": "final double t = getAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v44": {
+      "line": "154",
+      "statement": "final double eps = getRelativeAccuracy()"
+    }
+  },
+  {
+    "v45": {
+      "line": "156",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v47": {
+      "line": "157",
+      "statement": "if (FastMath.abs(fc) < FastMath.abs(fb))"
+    }
+  },
+  {
+    "v48": {
+      "line": "158",
+      "statement": "a = b"
+    }
+  },
+  {
+    "v49": {
+      "line": "159",
+      "statement": "b = c"
+    }
+  },
+  {
+    "v50": {
+      "line": "160",
+      "statement": "c = a"
+    }
+  },
+  {
+    "v51": {
+      "line": "161",
+      "statement": "fa = fb"
+    }
+  },
+  {
+    "v52": {
+      "line": "162",
+      "statement": "fb = fc"
+    }
+  },
+  {
+    "v53": {
+      "line": "163",
+      "statement": "fc = fa"
+    }
+  },
+  {
+    "v54": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v55": {
+      "line": "166",
+      "statement": "final double tol = 2 * eps * FastMath.abs(b) + t"
+    }
+  },
+  {
+    "v56": {
+      "line": "167",
+      "statement": "final double m = 0.5 * (c - b)"
+    }
+  },
+  {
+    "v57": {
+      "line": "169",
+      "statement": "if (FastMath.abs(m) <= tol || Precision.equals(fb, 0))"
+    }
+  },
+  {
+    "v58": {
+      "line": "171",
+      "statement": "return b"
+    }
+  },
+  {
+    "v59": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v60": {
+      "line": "173",
+      "statement": "if (FastMath.abs(e) < tol || FastMath.abs(fa) <= FastMath.abs(fb))"
+    }
+  },
+  {
+    "v61": {
+      "line": "176",
+      "statement": "d = m"
+    }
+  },
+  {
+    "v62": {
+      "line": "177",
+      "statement": "e = d"
+    }
+  },
+  {
+    "v63": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v64": {
+      "line": "179",
+      "statement": "double s = fb / fa"
+    }
+  },
+  {
+    "v65": {
+      "line": "180",
+      "statement": "double p"
+    }
+  },
+  {
+    "v66": {
+      "line": "181",
+      "statement": "double q"
+    }
+  },
+  {
+    "v67": {
+      "line": "185",
+      "statement": "if (a == c)"
+    }
+  },
+  {
+    "v68": {
+      "line": "187",
+      "statement": "p = 2 * m * s"
+    }
+  },
+  {
+    "v69": {
+      "line": "188",
+      "statement": "q = 1 - s"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v71": {
+      "line": "191",
+      "statement": "q = fa / fc"
+    }
+  },
+  {
+    "v72": {
+      "line": "192",
+      "statement": "final double r = fb / fc"
+    }
+  },
+  {
+    "v73": {
+      "line": "193",
+      "statement": "p = s * (2 * m * q * (q - r) - (b - a) * (r - 1))"
+    }
+  },
+  {
+    "v74": {
+      "line": "194",
+      "statement": "q = (q - 1) * (r - 1) * (s - 1)"
+    }
+  },
+  {
+    "v75": {
+      "line": "196",
+      "statement": "if (p > 0)"
+    }
+  },
+  {
+    "v76": {
+      "line": "197",
+      "statement": "q = -q"
+    }
+  },
+  {
+    "v77": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v78": {
+      "line": "199",
+      "statement": "p = -p"
+    }
+  },
+  {
+    "v79": {
+      "line": "201",
+      "statement": "s = e"
+    }
+  },
+  {
+    "v80": {
+      "line": "202",
+      "statement": "e = d"
+    }
+  },
+  {
+    "v81": {
+      "line": "203",
+      "statement": "if (p >= 1.5 * m * q - FastMath.abs(tol * q) || p >= FastMath.abs(0.5 * s * q))"
+    }
+  },
+  {
+    "v82": {
+      "line": "208",
+      "statement": "d = m"
+    }
+  },
+  {
+    "v83": {
+      "line": "209",
+      "statement": "e = d"
+    }
+  },
+  {
+    "v84": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v85": {
+      "line": "211",
+      "statement": "d = p / q"
+    }
+  },
+  {
+    "v86": {
+      "line": "214",
+      "statement": "a = b"
+    }
+  },
+  {
+    "v87": {
+      "line": "215",
+      "statement": "fa = fb"
+    }
+  },
+  {
+    "v88": {
+      "line": "217",
+      "statement": "if (FastMath.abs(d) > tol)"
+    }
+  },
+  {
+    "v89": {
+      "line": "218",
+      "statement": "b += d"
+    }
+  },
+  {
+    "v90": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v91": {
+      "line": "219",
+      "statement": "if (m > 0)"
+    }
+  },
+  {
+    "v92": {
+      "line": "220",
+      "statement": "b += tol"
+    }
+  },
+  {
+    "v93": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v94": {
+      "line": "222",
+      "statement": "b -= tol"
+    }
+  },
+  {
+    "v95": {
+      "line": "224",
+      "statement": "fb = computeObjectiveValue(b)"
+    }
+  },
+  {
+    "v96": {
+      "line": "225",
+      "statement": "if ((fb > 0 && fc > 0) || (fb <= 0 && fc <= 0))"
+    }
+  },
+  {
+    "v97": {
+      "line": "227",
+      "statement": "c = a"
+    }
+  },
+  {
+    "v98": {
+      "line": "228",
+      "statement": "fc = fa"
+    }
+  },
+  {
+    "v99": {
+      "line": "229",
+      "statement": "d = b - a"
+    }
+  },
+  {
+    "v100": {
+      "line": "230",
+      "statement": "e = d"
+    }
+  },
+  {
+    "v101": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  }
+]

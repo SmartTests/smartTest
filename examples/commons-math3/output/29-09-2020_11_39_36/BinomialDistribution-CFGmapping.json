@@ -1,0 +1,266 @@
+[
+  {
+    "v1": {
+      "line": "51",
+      "statement": "BinomialDistribution (int trials, double p)"
+    }
+  },
+  {
+    "v2": {
+      "line": "52",
+      "statement": "this(new Well19937c(), trials, p)"
+    }
+  },
+  {
+    "v3": {
+      "line": "65",
+      "statement": "BinomialDistribution (RandomGenerator rng, int trials, double p)"
+    }
+  },
+  {
+    "v4": {
+      "line": "68",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v5": {
+      "line": "70",
+      "statement": "if (trials < 0)"
+    }
+  },
+  {
+    "v6": {
+      "line": "71",
+      "statement": "throw new NotPositiveException(LocalizedFormats.NUMBER_OF_TRIALS,  trials)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "74",
+      "statement": "if (p < 0 || p > 1)"
+    }
+  },
+  {
+    "v9": {
+      "line": "75",
+      "statement": "throw new OutOfRangeException(p, 0, 1)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "78",
+      "statement": "probabilityOfSuccess = p"
+    }
+  },
+  {
+    "v12": {
+      "line": "79",
+      "statement": "numberOfTrials = trials"
+    }
+  },
+  {
+    "v13": {
+      "line": "87",
+      "statement": "int getNumberOfTrials()"
+    }
+  },
+  {
+    "v14": {
+      "line": "88",
+      "statement": "return numberOfTrials"
+    }
+  },
+  {
+    "v15": {
+      "line": "96",
+      "statement": "double getProbabilityOfSuccess()"
+    }
+  },
+  {
+    "v16": {
+      "line": "97",
+      "statement": "return probabilityOfSuccess"
+    }
+  },
+  {
+    "v17": {
+      "line": "101",
+      "statement": "double probability(int x)"
+    }
+  },
+  {
+    "v18": {
+      "line": "102",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v19": {
+      "line": "103",
+      "statement": "if (x < 0 || x > numberOfTrials)"
+    }
+  },
+  {
+    "v20": {
+      "line": "104",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "106",
+      "statement": "ret = FastMath.exp(SaddlePointExpansion.logBinomialProbability(x, numberOfTrials, probabilityOfSuccess, 1.0 - probabilityOfSuccess))"
+    }
+  },
+  {
+    "v23": {
+      "line": "110",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v24": {
+      "line": "114",
+      "statement": "double cumulativeProbability(int x)"
+    }
+  },
+  {
+    "v25": {
+      "line": "115",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v26": {
+      "line": "116",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v27": {
+      "line": "117",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "118",
+      "statement": "if (x >= numberOfTrials)"
+    }
+  },
+  {
+    "v30": {
+      "line": "119",
+      "statement": "ret = 1.0"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "121",
+      "statement": "ret = 1.0 - Beta.regularizedBeta(probabilityOfSuccess, x + 1.0, numberOfTrials - x)"
+    }
+  },
+  {
+    "v33": {
+      "line": "124",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v34": {
+      "line": "133",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v35": {
+      "line": "134",
+      "statement": "return numberOfTrials * probabilityOfSuccess"
+    }
+  },
+  {
+    "v36": {
+      "line": "143",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v37": {
+      "line": "144",
+      "statement": "final double p = probabilityOfSuccess"
+    }
+  },
+  {
+    "v38": {
+      "line": "145",
+      "statement": "return numberOfTrials * p * (1 - p)"
+    }
+  },
+  {
+    "v39": {
+      "line": "156",
+      "statement": "int getSupportLowerBound()"
+    }
+  },
+  {
+    "v40": {
+      "line": "157",
+      "statement": "return probabilityOfSuccess < 1.0 ? 0"
+    }
+  },
+  {
+    "v41": {
+      "line": "168",
+      "statement": "int getSupportUpperBound()"
+    }
+  },
+  {
+    "v42": {
+      "line": "169",
+      "statement": "return probabilityOfSuccess > 0.0 ? numberOfTrials"
+    }
+  },
+  {
+    "v43": {
+      "line": "179",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v44": {
+      "line": "180",
+      "statement": "return true"
+    }
+  }
+]

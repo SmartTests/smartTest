@@ -1,0 +1,15 @@
+OUTPUT FOLDER "13-10-2020_13_42_23" created
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/BasicParser
+=================CFG created for BasicParser.java
+DOT FILE SUCCESSFULLY CLEAN!!
+CFG GRAPH PARSING STARTED OF... BasicParser.java
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_13_42_23/BasicParser-CFGmapping.json  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_13_42_23/BasicParser-CFGedgeCoverageRequirements.txt  CREATED
+/Users/kesina/eclipse-workspace/commons-cli/output/13-10-2020_13_42_23/BasicParser-CFGnodeGrpByFunction.json  CREATED
+CFG GRAPH PARSED SUCCESSFULLY!
+Statement coverage wasn't tracked.
+SmartTest mapping not created.
+/Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/BasicParser
+ANALYSIS OF MUTATION================ 1
+bash temprunProgex.sh /Users/kesina/eclipse-workspace/commons-cli/src/main/java/org/apache/commons/cli/BasicParser PROGEX
+Comparison Done

@@ -1,0 +1,161 @@
+
+testCreateValueClass : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,84
+];;createClass(Ljava/lang/String;)Ljava/lang/Class;=[172,173
+173,175
+175,177
+]
+
+testCreateValueClass_notFound : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,84
+];;createClass(Ljava/lang/String;)Ljava/lang/Class;=[172,173
+173,175
+175,177
+]
+
+testCreateValueDate : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,80
+];;createDate(Ljava/lang/String;)Ljava/util/Date;=[193,194
+]
+
+testCreateValueExistingFile : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,86
+86,90
+90,92
+];;openFile(Ljava/lang/String;)Ljava/io/FileInputStream;=[237,238
+]
+
+testCreateValueExistingFile_nonExistingFile : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,86
+86,90
+90,92
+];;openFile(Ljava/lang/String;)Ljava/io/FileInputStream;=[237,238
+238,240
+240,242
+]
+
+testCreateValueFile : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,86
+86,88
+];;createFile(Ljava/lang/String;)Ljava/io/File;=[223,224
+]
+
+testCreateValueFiles : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,86
+86,90
+90,94
+94,96
+];;createFiles(Ljava/lang/String;)[Ljava/io/File;=[259,260
+]
+
+testCreateValueInteger_failure : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,86
+86,90
+90,94
+94,98
+98,104
+]
+
+testCreateValueNumber_Double : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,76
+];;createNumber(Ljava/lang/String;)Ljava/lang/Number;=[149,150
+150,152
+]
+
+testCreateValueNumber_Long : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,76
+];;createNumber(Ljava/lang/String;)Ljava/lang/Number;=[149,150
+150,154
+]
+
+testCreateValueNumber_noNumber : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,76
+];;createNumber(Ljava/lang/String;)Ljava/lang/Number;=[149,150
+150,154
+154,156
+156,158
+]
+
+testCreateValueObject_InstantiableClass : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,72
+];;createObject(Ljava/lang/String;)Ljava/lang/Object;=[120,121
+121,123
+123,125
+]
+
+testCreateValueObject_notInstantiableClass : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,72
+];;createObject(Ljava/lang/String;)Ljava/lang/Object;=[120,121
+121,123
+123,125
+]
+
+testCreateValueObject_unknownClass : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,72
+];;createObject(Ljava/lang/String;)Ljava/lang/Object;=[120,121
+121,123
+123,125
+]
+
+testCreateValueString : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,86
+86,90
+90,94
+94,98
+98,104
+]
+
+testCreateValueURL : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,86
+86,90
+90,94
+94,98
+98,100
+];;createURL(Ljava/lang/String;)Ljava/net/URL;=[207,208
+]
+
+testCreateValueURL_malformed : createValue(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;=[69,70
+70,74
+74,78
+78,82
+82,86
+86,90
+90,94
+94,98
+98,100
+];;createURL(Ljava/lang/String;)Ljava/net/URL;=[207,208
+208,210
+210,212
+]

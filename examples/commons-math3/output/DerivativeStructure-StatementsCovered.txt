@@ -1,0 +1,373 @@
+
+build : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testAbs : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testAdd : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testAtan2 : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testAtan2SpecialCases : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCbrtDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCbrtPow3 : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCeilFloorRintLong : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCompose : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testComposeMismatchedDimensions : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCompositionOneVariableX : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCompositionOneVariableY : <init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testConstant : <init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCopySign : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCosAcos : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCoshAcosh : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCoshDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testCreateConstant : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testDegRad : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testExp : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testExpm1Definition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testExpression : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testField : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testHypotDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testHypotNeglectible : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testHypotNoOverflow : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testHypotSpecial : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLinearCombination1DSDS : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLinearCombination1DoubleDS : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLinearCombination2DSDS : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLinearCombination2DoubleDS : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLog : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLog10Definition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLog10Power : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLog1pDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLog1pExpm1 : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testLogExp : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testMissingOrders : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testMultiply : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testNegate : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testOneOrderConstructor : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testOneParameterConstructor : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testPow : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testPowDoubleDS : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testPowReciprocalPow : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testPrimitiveAdd : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testPrimitiveMultiply : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testPrimitiveRemainder : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testPrimitiveSubtract : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testReciprocal : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testRemainder : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testRootNSingularity : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testSerialization : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testSignum : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testSinAsin : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testSinCos : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testSinhAsinh : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testSinhDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testSqrtDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testSqrtPow2 : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testSubtract : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testTanAtan : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testTangentDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testTanhAtanh : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testTanhDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testTaylorAtan2 : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testTaylorPolynomial : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testToDegreesDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testToRadiansDefinition : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testTooLargeOrder : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testTrigo : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testVariable : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testVariableWithoutDerivative0 : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testVariableWithoutDerivative1 : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]
+
+testWrongVariableIndex : <init>(IIID)V=[118,119
+];;<init>(IID)V=[99,100
+];;<init>(II)V=[87,88
+]

@@ -1,0 +1,418 @@
+1:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>():96:DEFAULT_BANDWIDTH |==> 0.0
+2:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>():97:DEFAULT_ROBUSTNESS_ITERS |==> 0
+3:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>():98:DEFAULT_ACCURACY |==> 0.0
+4:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):151:0 |==> 1
+5:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):151:0 |==> -1
+6:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):151:bandwidth < 0 |==> bandwidth != 0
+7:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):151:bandwidth < 0 |==> bandwidth <= 0
+8:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):151:bandwidth < 0 |==> false
+9:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):152:1 |==> 0
+10:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):152:1 |==> -1
+11:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):152:bandwidth > 1 |==> bandwidth != 1
+12:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):152:bandwidth > 1 |==> bandwidth >= 1
+13:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):152:bandwidth > 1 |==> false
+14:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):151:bandwidth < 0 || bandwidth > 1 |==> bandwidth < 0 != bandwidth > 1
+15:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):151:bandwidth < 0 || bandwidth > 1 |==> bandwidth < 0
+16:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):152:bandwidth < 0 || bandwidth > 1 |==> bandwidth > 1
+17:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):151:bandwidth < 0 || bandwidth > 1 |==> true
+18:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):153:0 |==> 1
+19:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):153:0 |==> -1
+20:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):153:1 |==> 0
+21:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):153:1 |==> -1
+22:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):155:bandwidth |==> 0.0
+23:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):156:0 |==> 1
+24:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):156:0 |==> -1
+25:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):156:robustnessIters < 0 |==> robustnessIters != 0
+26:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):156:robustnessIters < 0 |==> robustnessIters <= 0
+27:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):156:robustnessIters < 0 |==> false
+28:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):159:robustnessIters |==> 0
+29:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@<init>(double,int,double):160:accuracy |==> 0.0
+30:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@interpolate(double[],double[]):191:new SplineInterpolator().interpolate(xval, smooth(xval, yval)) |==> null
+31:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):221:xval.length != yval.length |==> xval.length < yval.length
+32:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):221:xval.length != yval.length |==> xval.length > yval.length
+33:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):221:xval.length != yval.length |==> true
+34:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):225:xval.length |==> 0
+35:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):227:0 |==> 1
+36:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):227:0 |==> -1
+37:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):227:n == 0 |==> n <= 0
+38:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):227:n == 0 |==> n >= 0
+39:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):227:n == 0 |==> false
+40:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):231:checkAllFiniteReal(xval) |==> <NO-OP>
+41:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):232:checkAllFiniteReal(yval) |==> <NO-OP>
+42:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):233:checkAllFiniteReal(weights) |==> <NO-OP>
+43:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):235:MathArrays.checkOrder(xval) |==> <NO-OP>
+44:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):237:1 |==> 0
+45:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):237:1 |==> -1
+46:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):237:n == 1 |==> n <= 1
+47:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):237:n == 1 |==> n >= 1
+48:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):237:n == 1 |==> false
+49:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):238:0 |==> 1
+50:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):238:0 |==> -1
+51:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):238:return new double[]{yval[Config.__M_NO == 0 && Config.COVERED(49, 50) ? 0 : Config.__M_NO == 50 ? -1 : Config.__M_NO == 49 ? 1 : 0]}; |==> <NO-OP>
+52:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):241:2 |==> 0
+53:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):241:2 |==> -2
+54:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):241:n == 2 |==> n <= 2
+55:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):241:n == 2 |==> n >= 2
+56:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):241:n == 2 |==> false
+57:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):242:0 |==> 1
+58:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):242:0 |==> -1
+59:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):242:1 |==> 0
+60:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):242:1 |==> -1
+61:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):242:return new double[]{yval[Config.__M_NO == 0 && Config.COVERED(57, 58) ? 0 : Config.__M_NO == 58 ? -1 : Config.__M_NO == 57 ? 1 : 0], yval[Config.__M_NO == 0 && Config.COVERED(59, 60) ? 1 : Config.__M_NO == 60 ? -1 : Config.__M_NO == 59 ? 0 : 1]}; |==> <NO-OP>
+62:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):245:bandwidth * n |==> bandwidth % n
+63:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):245:bandwidth * n |==> bandwidth + n
+64:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):245:bandwidth * n |==> bandwidth - n
+65:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):245:bandwidth * n |==> bandwidth / n
+66:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):247:2 |==> 0
+67:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):247:2 |==> -2
+68:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):247:bandwidthInPoints < 2 |==> bandwidthInPoints != 2
+69:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):247:bandwidthInPoints < 2 |==> bandwidthInPoints <= 2
+70:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):247:bandwidthInPoints < 2 |==> false
+71:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):249:2 |==> 0
+72:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):249:2 |==> -2
+73:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):249:true |==> false
+74:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):252:new double[n] |==> null
+75:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):254:new double[n] |==> null
+76:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):255:new double[n] |==> null
+77:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):257:new double[n] |==> null
+78:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):262:1 |==> 0
+79:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):262:1 |==> -1
+80:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):262:Arrays.fill(robustnessWeights, 1) |==> <NO-OP>
+81:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):264:0 |==> 1
+82:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):264:0 |==> -1
+83:ROR:<=(int,int):<(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):264:iter <= robustnessIters |==> iter < robustnessIters
+84:ROR:<=(int,int):==(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):264:iter <= robustnessIters |==> iter == robustnessIters
+85:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):264:iter <= robustnessIters |==> true
+86:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):265:0 |==> 1
+87:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):265:0 |==> -1
+88:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):265:1 |==> 0
+89:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):265:1 |==> -1
+90:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):265:bandwidthInPoints - 1 |==> bandwidthInPoints % 1
+91:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):265:bandwidthInPoints - 1 |==> bandwidthInPoints * 1
+92:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):265:bandwidthInPoints - 1 |==> bandwidthInPoints + 1
+93:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):265:bandwidthInPoints - 1 |==> bandwidthInPoints / 1
+94:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):267:0 |==> 1
+95:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):267:0 |==> -1
+96:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):267:i < n |==> i != n
+97:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):267:i < n |==> i <= n
+98:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):267:i < n |==> false
+99:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):268:xval[i] |==> 0.0
+100:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):272:0 |==> 1
+101:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):272:0 |==> -1
+102:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):272:i > 0 |==> i != 0
+103:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):272:i > 0 |==> i >= 0
+104:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):272:i > 0 |==> false
+105:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):273:updateBandwidthInterval(xval, weights, i, bandwidthInterval) |==> <NO-OP>
+106:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):276:0 |==> 1
+107:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):276:0 |==> -1
+108:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):277:1 |==> 0
+109:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):277:1 |==> -1
+110:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[i] - xval[ileft] |==> xval[i] % xval[ileft]
+111:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[i] - xval[ileft] |==> xval[i] * xval[ileft]
+112:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[i] - xval[ileft] |==> xval[i] + xval[ileft]
+113:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[i] - xval[ileft] |==> xval[i] / xval[ileft]
+114:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[iright] - xval[i] |==> xval[iright] % xval[i]
+115:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[iright] - xval[i] |==> xval[iright] * xval[i]
+116:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[iright] - xval[i] |==> xval[iright] + xval[i]
+117:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[iright] - xval[i] |==> xval[iright] / xval[i]
+118:ROR:>(double,double):!=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[i] - xval[ileft] > xval[iright] - xval[i] |==> xval[i] - xval[ileft] != xval[iright] - xval[i]
+119:ROR:>(double,double):>=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[i] - xval[ileft] > xval[iright] - xval[i] |==> xval[i] - xval[ileft] >= xval[iright] - xval[i]
+120:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):282:xval[i] - xval[ileft] > xval[iright] - xval[i] |==> false
+121:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):283:ileft |==> 0
+122:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):285:iright |==> 0
+123:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):295:0 |==> 1
+124:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):295:0 |==> -1
+125:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):296:0 |==> 1
+126:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):296:0 |==> -1
+127:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):297:0 |==> 1
+128:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):297:0 |==> -1
+129:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):298:0 |==> 1
+130:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):298:0 |==> -1
+131:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):299:0 |==> 1
+132:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):299:0 |==> -1
+133:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:1.0 |==> 0.0
+134:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:1.0 |==> -1.0
+135:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:xval[edge] - x |==> xval[edge] % x
+136:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:xval[edge] - x |==> xval[edge] * x
+137:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:xval[edge] - x |==> xval[edge] + x
+138:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:xval[edge] - x |==> xval[edge] / x
+139:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:1.0 / (xval[edge] - x) |==> 1.0 % (xval[edge] - x)
+140:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:1.0 / (xval[edge] - x) |==> 1.0 * (xval[edge] - x)
+141:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:1.0 / (xval[edge] - x) |==> 1.0 + (xval[edge] - x)
+142:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):300:1.0 / (xval[edge] - x) |==> 1.0 - (xval[edge] - x)
+143:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):301:ileft |==> 0
+144:ROR:<=(int,int):<(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):301:k <= iright |==> k < iright
+145:ROR:<=(int,int):==(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):301:k <= iright |==> k == iright
+146:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):301:k <= iright |==> true
+147:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):302:xval[k] |==> 0.0
+148:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):303:yval[k] |==> 0.0
+149:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:k < i |==> k != i
+150:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:k < i |==> k <= i
+151:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:k < i |==> false
+152:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:x - xk |==> x % xk
+153:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:x - xk |==> x * xk
+154:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:x - xk |==> x + xk
+155:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:x - xk |==> x / xk
+156:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:xk - x |==> xk % x
+157:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:xk - x |==> xk * x
+158:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:xk - x |==> xk + x
+159:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):304:xk - x |==> xk / x
+160:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:dist * denom |==> dist % denom
+161:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:dist * denom |==> dist + denom
+162:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:dist * denom |==> dist - denom
+163:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:dist * denom |==> dist / denom
+164:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:tricube(dist * denom) * robustnessWeights[k] |==> tricube(dist * denom) % robustnessWeights[k]
+165:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:tricube(dist * denom) * robustnessWeights[k] |==> tricube(dist * denom) + robustnessWeights[k]
+166:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:tricube(dist * denom) * robustnessWeights[k] |==> tricube(dist * denom) - robustnessWeights[k]
+167:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:tricube(dist * denom) * robustnessWeights[k] |==> tricube(dist * denom) / robustnessWeights[k]
+168:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:tricube(dist * denom) * robustnessWeights[k] * weights[k] |==> tricube(dist * denom) * robustnessWeights[k] % weights[k]
+169:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:tricube(dist * denom) * robustnessWeights[k] * weights[k] |==> tricube(dist * denom) * robustnessWeights[k] + weights[k]
+170:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:tricube(dist * denom) * robustnessWeights[k] * weights[k] |==> tricube(dist * denom) * robustnessWeights[k] - weights[k]
+171:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):305:tricube(dist * denom) * robustnessWeights[k] * weights[k] |==> tricube(dist * denom) * robustnessWeights[k] / weights[k]
+172:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):306:xk * w |==> xk % w
+173:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):306:xk * w |==> xk + w
+174:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):306:xk * w |==> xk - w
+175:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):306:xk * w |==> xk / w
+176:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):307:sumWeights += w |==> <NO-OP>
+177:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):308:sumX += xkw |==> <NO-OP>
+178:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):309:xk * xkw |==> xk % xkw
+179:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):309:xk * xkw |==> xk + xkw
+180:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):309:xk * xkw |==> xk - xkw
+181:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):309:xk * xkw |==> xk / xkw
+182:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):309:sumXSquared += xk * xkw |==> <NO-OP>
+183:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):310:yk * w |==> yk % w
+184:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):310:yk * w |==> yk + w
+185:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):310:yk * w |==> yk - w
+186:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):310:yk * w |==> yk / w
+187:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):310:sumY += yk * w |==> <NO-OP>
+188:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):311:yk * xkw |==> yk % xkw
+189:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):311:yk * xkw |==> yk + xkw
+190:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):311:yk * xkw |==> yk - xkw
+191:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):311:yk * xkw |==> yk / xkw
+192:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):311:sumXY += yk * xkw |==> <NO-OP>
+193:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):314:sumX / sumWeights |==> sumX % sumWeights
+194:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):314:sumX / sumWeights |==> sumX * sumWeights
+195:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):314:sumX / sumWeights |==> sumX + sumWeights
+196:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):314:sumX / sumWeights |==> sumX - sumWeights
+197:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):315:sumY / sumWeights |==> sumY % sumWeights
+198:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):315:sumY / sumWeights |==> sumY * sumWeights
+199:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):315:sumY / sumWeights |==> sumY + sumWeights
+200:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):315:sumY / sumWeights |==> sumY - sumWeights
+201:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):316:sumXY / sumWeights |==> sumXY % sumWeights
+202:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):316:sumXY / sumWeights |==> sumXY * sumWeights
+203:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):316:sumXY / sumWeights |==> sumXY + sumWeights
+204:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):316:sumXY / sumWeights |==> sumXY - sumWeights
+205:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):317:sumXSquared / sumWeights |==> sumXSquared % sumWeights
+206:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):317:sumXSquared / sumWeights |==> sumXSquared * sumWeights
+207:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):317:sumXSquared / sumWeights |==> sumXSquared + sumWeights
+208:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):317:sumXSquared / sumWeights |==> sumXSquared - sumWeights
+209:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:meanX * meanX |==> meanX % meanX
+210:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:meanX * meanX |==> meanX + meanX
+211:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:meanX * meanX |==> meanX - meanX
+212:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:meanX * meanX |==> meanX / meanX
+213:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:meanXSquared - meanX * meanX |==> meanXSquared % (meanX * meanX)
+214:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:meanXSquared - meanX * meanX |==> meanXSquared * (meanX * meanX)
+215:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:meanXSquared - meanX * meanX |==> meanXSquared + meanX * meanX
+216:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:meanXSquared - meanX * meanX |==> meanXSquared / (meanX * meanX)
+217:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:FastMath.sqrt(FastMath.abs(meanXSquared - meanX * meanX)) < accuracy |==> FastMath.sqrt(FastMath.abs(meanXSquared - meanX * meanX)) != accuracy
+218:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:FastMath.sqrt(FastMath.abs(meanXSquared - meanX * meanX)) < accuracy |==> FastMath.sqrt(FastMath.abs(meanXSquared - meanX * meanX)) <= accuracy
+219:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):320:FastMath.sqrt(FastMath.abs(meanXSquared - meanX * meanX)) < accuracy |==> false
+220:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):321:0 |==> 1
+221:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):321:0 |==> -1
+222:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanX * meanY |==> meanX % meanY
+223:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanX * meanY |==> meanX + meanY
+224:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanX * meanY |==> meanX - meanY
+225:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanX * meanY |==> meanX / meanY
+226:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanXY - meanX * meanY |==> meanXY % (meanX * meanY)
+227:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanXY - meanX * meanY |==> meanXY * (meanX * meanY)
+228:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanXY - meanX * meanY |==> meanXY + meanX * meanY
+229:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanXY - meanX * meanY |==> meanXY / (meanX * meanY)
+230:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanX * meanX |==> meanX % meanX
+231:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanX * meanX |==> meanX + meanX
+232:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanX * meanX |==> meanX - meanX
+233:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanX * meanX |==> meanX / meanX
+234:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanXSquared - meanX * meanX |==> meanXSquared % (meanX * meanX)
+235:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanXSquared - meanX * meanX |==> meanXSquared * (meanX * meanX)
+236:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanXSquared - meanX * meanX |==> meanXSquared + meanX * meanX
+237:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:meanXSquared - meanX * meanX |==> meanXSquared / (meanX * meanX)
+238:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:(meanXY - meanX * meanY) / (meanXSquared - meanX * meanX) |==> (meanXY - meanX * meanY) % (meanXSquared - meanX * meanX)
+239:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:(meanXY - meanX * meanY) / (meanXSquared - meanX * meanX) |==> (meanXY - meanX * meanY) * (meanXSquared - meanX * meanX)
+240:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:(meanXY - meanX * meanY) / (meanXSquared - meanX * meanX) |==> (meanXY - meanX * meanY) + (meanXSquared - meanX * meanX)
+241:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):323:(meanXY - meanX * meanY) / (meanXSquared - meanX * meanX) |==> (meanXY - meanX * meanY) - (meanXSquared - meanX * meanX)
+242:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):326:beta * meanX |==> beta % meanX
+243:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):326:beta * meanX |==> beta + meanX
+244:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):326:beta * meanX |==> beta - meanX
+245:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):326:beta * meanX |==> beta / meanX
+246:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):326:meanY - beta * meanX |==> meanY % (beta * meanX)
+247:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):326:meanY - beta * meanX |==> meanY * (beta * meanX)
+248:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):326:meanY - beta * meanX |==> meanY + beta * meanX
+249:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):326:meanY - beta * meanX |==> meanY / (beta * meanX)
+250:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):328:beta * x |==> beta % x
+251:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):328:beta * x |==> beta + x
+252:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):328:beta * x |==> beta - x
+253:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):328:beta * x |==> beta / x
+254:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):328:beta * x + alpha |==> beta * x % alpha
+255:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):328:beta * x + alpha |==> beta * x * alpha
+256:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):328:beta * x + alpha |==> beta * x - alpha
+257:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):328:beta * x + alpha |==> beta * x / alpha
+258:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):328:res[i] = beta * x + alpha |==> <NO-OP>
+259:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):329:yval[i] - res[i] |==> yval[i] % res[i]
+260:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):329:yval[i] - res[i] |==> yval[i] * res[i]
+261:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):329:yval[i] - res[i] |==> yval[i] + res[i]
+262:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):329:yval[i] - res[i] |==> yval[i] / res[i]
+263:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):329:residuals[i] = FastMath.abs(yval[i] - res[i]) |==> <NO-OP>
+264:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):334:iter == robustnessIters |==> iter <= robustnessIters
+265:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):334:iter == robustnessIters |==> iter >= robustnessIters
+266:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):334:iter == robustnessIters |==> false
+267:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):335:break; |==> <NO-OP>
+268:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):343:0 |==> 1
+269:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):343:0 |==> -1
+270:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):343:0 |==> 1
+271:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):343:0 |==> -1
+272:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):343:System.arraycopy(residuals, 0, sortedResiduals, 0, n) |==> <NO-OP>
+273:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):344:Arrays.sort(sortedResiduals) |==> <NO-OP>
+274:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):345:2 |==> 0
+275:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):345:2 |==> -2
+276:AOR:/(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):345:n / 2 |==> n % 2
+277:AOR:/(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):345:n / 2 |==> n * 2
+278:AOR:/(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):345:n / 2 |==> n + 2
+279:AOR:/(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):345:n / 2 |==> n - 2
+280:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):347:FastMath.abs(medianResidual) < accuracy |==> FastMath.abs(medianResidual) != accuracy
+281:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):347:FastMath.abs(medianResidual) < accuracy |==> FastMath.abs(medianResidual) <= accuracy
+282:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):347:FastMath.abs(medianResidual) < accuracy |==> false
+283:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):348:break; |==> <NO-OP>
+284:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):351:0 |==> 1
+285:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):351:0 |==> -1
+286:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):351:i < n |==> i != n
+287:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):351:i < n |==> i <= n
+288:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):351:i < n |==> false
+289:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:6 |==> 0
+290:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:6 |==> -6
+291:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:6 * medianResidual |==> 6 % medianResidual
+292:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:6 * medianResidual |==> 6 + medianResidual
+293:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:6 * medianResidual |==> 6 - medianResidual
+294:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:6 * medianResidual |==> 6 / medianResidual
+295:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:residuals[i] / (6 * medianResidual) |==> residuals[i] % (6 * medianResidual)
+296:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:residuals[i] / (6 * medianResidual) |==> residuals[i] * (6 * medianResidual)
+297:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:residuals[i] / (6 * medianResidual) |==> residuals[i] + (6 * medianResidual)
+298:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):352:residuals[i] / (6 * medianResidual) |==> residuals[i] - (6 * medianResidual)
+299:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):353:1 |==> 0
+300:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):353:1 |==> -1
+301:ROR:>=(double,double):==(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):353:arg >= 1 |==> arg == 1
+302:ROR:>=(double,double):>(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):353:arg >= 1 |==> arg > 1
+303:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):353:arg >= 1 |==> true
+304:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):354:0 |==> 1
+305:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):354:0 |==> -1
+306:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):354:robustnessWeights[i] = 0 |==> <NO-OP>
+307:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:1 |==> 0
+308:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:1 |==> -1
+309:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:arg * arg |==> arg % arg
+310:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:arg * arg |==> arg + arg
+311:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:arg * arg |==> arg - arg
+312:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:arg * arg |==> arg / arg
+313:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:1 - arg * arg |==> 1 % (arg * arg)
+314:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:1 - arg * arg |==> 1 * (arg * arg)
+315:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:1 - arg * arg |==> 1 + arg * arg
+316:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):356:1 - arg * arg |==> 1 / (arg * arg)
+317:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):357:w * w |==> w % w
+318:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):357:w * w |==> w + w
+319:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):357:w * w |==> w - w
+320:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):357:w * w |==> w / w
+321:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):357:robustnessWeights[i] = w * w |==> <NO-OP>
+322:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[],double[]):362:res |==> null
+323:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[]):388:xval.length != yval.length |==> xval.length < yval.length
+324:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[]):388:xval.length != yval.length |==> xval.length > yval.length
+325:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[]):388:xval.length != yval.length |==> true
+326:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[]):392:new double[xval.length] |==> null
+327:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[]):393:1.0 |==> 0.0
+328:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[]):393:1.0 |==> -1.0
+329:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[]):393:Arrays.fill(unitWeights, 1.0) |==> <NO-OP>
+330:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@smooth(double[],double[]):395:smooth(xval, yval, unitWeights) |==> null
+331:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):416:0 |==> 1
+332:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):416:0 |==> -1
+333:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):417:1 |==> 0
+334:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):417:1 |==> -1
+335:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):421:nextNonzero(weights, right) |==> 0
+336:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:nextRight < xval.length |==> nextRight != xval.length
+337:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:nextRight < xval.length |==> nextRight <= xval.length
+338:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:nextRight < xval.length |==> false
+339:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[nextRight] - xval[i] |==> xval[nextRight] % xval[i]
+340:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[nextRight] - xval[i] |==> xval[nextRight] * xval[i]
+341:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[nextRight] - xval[i] |==> xval[nextRight] + xval[i]
+342:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[nextRight] - xval[i] |==> xval[nextRight] / xval[i]
+343:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[i] - xval[left] |==> xval[i] % xval[left]
+344:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[i] - xval[left] |==> xval[i] * xval[left]
+345:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[i] - xval[left] |==> xval[i] + xval[left]
+346:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[i] - xval[left] |==> xval[i] / xval[left]
+347:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[nextRight] - xval[i] < xval[i] - xval[left] |==> xval[nextRight] - xval[i] != xval[i] - xval[left]
+348:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[nextRight] - xval[i] < xval[i] - xval[left] |==> xval[nextRight] - xval[i] <= xval[i] - xval[left]
+349:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:xval[nextRight] - xval[i] < xval[i] - xval[left] |==> false
+350:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:nextRight < xval.length && xval[nextRight] - xval[i] < xval[i] - xval[left] |==> nextRight < xval.length == xval[nextRight] - xval[i] < xval[i] - xval[left]
+351:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:nextRight < xval.length && xval[nextRight] - xval[i] < xval[i] - xval[left] |==> false
+352:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:nextRight < xval.length && xval[nextRight] - xval[i] < xval[i] - xval[left] |==> nextRight < xval.length
+353:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):422:nextRight < xval.length && xval[nextRight] - xval[i] < xval[i] - xval[left] |==> xval[nextRight] - xval[i] < xval[i] - xval[left]
+354:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):423:0 |==> 1
+355:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):423:0 |==> -1
+356:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):424:0 |==> 1
+357:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):424:0 |==> -1
+358:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):424:bandwidthInterval[0] = nextLeft |==> <NO-OP>
+359:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):425:1 |==> 0
+360:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):425:1 |==> -1
+361:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@updateBandwidthInterval(double[],double[],int,int[]):425:bandwidthInterval[1] = nextRight |==> <NO-OP>
+362:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):438:1 |==> 0
+363:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):438:1 |==> -1
+364:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):438:i + 1 |==> i % 1
+365:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):438:i + 1 |==> i * 1
+366:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):438:i + 1 |==> i - 1
+367:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):438:i + 1 |==> i / 1
+368:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:j < weights.length |==> j != weights.length
+369:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:j < weights.length |==> j <= weights.length
+370:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:j < weights.length |==> false
+371:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:0 |==> 1
+372:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:0 |==> -1
+373:ROR:==(double,double):<=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:weights[j] == 0 |==> weights[j] <= 0
+374:ROR:==(double,double):>=(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:weights[j] == 0 |==> weights[j] >= 0
+375:ROR:==(double,double):FALSE(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:weights[j] == 0 |==> false
+376:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:j < weights.length && weights[j] == 0 |==> j < weights.length == (weights[j] == 0)
+377:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:j < weights.length && weights[j] == 0 |==> false
+378:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:j < weights.length && weights[j] == 0 |==> j < weights.length
+379:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):439:j < weights.length && weights[j] == 0 |==> weights[j] == 0
+380:STD:<INC>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):440:++j |==> <NO-OP>
+381:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@nextNonzero(double[],int):442:j |==> 0
+382:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):454:FastMath.abs(x) |==> 0.0
+383:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):455:1.0 |==> 0.0
+384:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):455:1.0 |==> -1.0
+385:ROR:>=(double,double):==(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):455:absX >= 1.0 |==> absX == 1.0
+386:ROR:>=(double,double):>(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):455:absX >= 1.0 |==> absX > 1.0
+387:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):455:absX >= 1.0 |==> true
+388:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):456:0.0 |==> 1.0
+389:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):456:0.0 |==> -1.0
+390:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):456:return Config.__M_NO == 0 && Config.COVERED(388, 389) ? 0.0 : Config.__M_NO == 389 ? -1.0 : Config.__M_NO == 388 ? 1.0 : 0.0; |==> <NO-OP>
+391:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:1 |==> 0
+392:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:1 |==> -1
+393:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:absX * absX |==> absX % absX
+394:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:absX * absX |==> absX + absX
+395:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:absX * absX |==> absX - absX
+396:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:absX * absX |==> absX / absX
+397:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:absX * absX * absX |==> absX * absX % absX
+398:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:absX * absX * absX |==> absX * absX + absX
+399:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:absX * absX * absX |==> absX * absX - absX
+400:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:absX * absX * absX |==> absX * absX / absX
+401:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:1 - absX * absX * absX |==> 1 % (absX * absX * absX)
+402:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:1 - absX * absX * absX |==> 1 * (absX * absX * absX)
+403:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:1 - absX * absX * absX |==> 1 + absX * absX * absX
+404:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):458:1 - absX * absX * absX |==> 1 / (absX * absX * absX)
+405:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):459:tmp * tmp |==> tmp % tmp
+406:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):459:tmp * tmp |==> tmp + tmp
+407:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):459:tmp * tmp |==> tmp - tmp
+408:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):459:tmp * tmp |==> tmp / tmp
+409:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):459:tmp * tmp * tmp |==> tmp * tmp % tmp
+410:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):459:tmp * tmp * tmp |==> tmp * tmp + tmp
+411:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):459:tmp * tmp * tmp |==> tmp * tmp - tmp
+412:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@tricube(double):459:tmp * tmp * tmp |==> tmp * tmp / tmp
+413:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@checkAllFiniteReal(double[]):470:0 |==> 1
+414:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@checkAllFiniteReal(double[]):470:0 |==> -1
+415:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@checkAllFiniteReal(double[]):470:i < values.length |==> i != values.length
+416:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@checkAllFiniteReal(double[]):470:i < values.length |==> i <= values.length
+417:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.LoessInterpolator@checkAllFiniteReal(double[]):470:i < values.length |==> false
+418:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.LoessInterpolator@checkAllFiniteReal(double[]):471:MathUtils.checkFinite(values[i]) |==> <NO-OP>

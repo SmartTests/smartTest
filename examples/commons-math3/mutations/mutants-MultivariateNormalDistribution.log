@@ -1,0 +1,139 @@
+1:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):105:means.length |==> 0
+2:ROR:!=(int,int):<(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):107:covariances.length != dim |==> covariances.length < dim
+3:ROR:!=(int,int):>(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):107:covariances.length != dim |==> covariances.length > dim
+4:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):107:covariances.length != dim |==> true
+5:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):111:0 |==> 1
+6:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):111:0 |==> -1
+7:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):111:i < dim |==> i != dim
+8:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):111:i < dim |==> i <= dim
+9:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):111:i < dim |==> false
+10:ROR:!=(int,int):<(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):112:dim != covariances[i].length |==> dim < covariances[i].length
+11:ROR:!=(int,int):>(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):112:dim != covariances[i].length |==> dim > covariances[i].length
+12:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):112:dim != covariances[i].length |==> true
+13:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):117:MathArrays.copyOf(means) |==> null
+14:EVR:<NEW_CLASS(org.apache.commons.math3.linear.Array2DRowRealMatrix)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):119:new Array2DRowRealMatrix(covariances) |==> null
+15:EVR:<NEW_CLASS(org.apache.commons.math3.linear.EigenDecomposition)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):122:new EigenDecomposition(covarianceMatrix) |==> null
+16:EVR:<METHOD_INVOCATION(org.apache.commons.math3.linear.RealMatrix)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):125:covMatDec.getSolver().getInverse() |==> null
+17:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):127:covMatDec.getDeterminant() |==> 0.0
+18:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):130:covMatDec.getRealEigenvalues() |==> null
+19:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):132:0 |==> 1
+20:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):132:0 |==> -1
+21:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):132:i < covMatEigenvalues.length |==> i != covMatEigenvalues.length
+22:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):132:i < covMatEigenvalues.length |==> i <= covMatEigenvalues.length
+23:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):132:i < covMatEigenvalues.length |==> false
+24:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):133:0 |==> 1
+25:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):133:0 |==> -1
+26:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):133:covMatEigenvalues[i] < 0 |==> covMatEigenvalues[i] != 0
+27:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):133:covMatEigenvalues[i] < 0 |==> covMatEigenvalues[i] <= 0
+28:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):133:covMatEigenvalues[i] < 0 |==> false
+29:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):134:0 |==> 1
+30:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):134:0 |==> -1
+31:EVR:<NEW_CLASS(org.apache.commons.math3.linear.Array2DRowRealMatrix)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):139:new Array2DRowRealMatrix(dim, dim) |==> null
+32:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):140:0 |==> 1
+33:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):140:0 |==> -1
+34:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):140:v < dim |==> v != dim
+35:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):140:v < dim |==> v <= dim
+36:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):140:v < dim |==> false
+37:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):141:covMatDec.getEigenvector(v).toArray() |==> null
+38:STD:<CALL>:<NO-OP>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):142:covMatEigenvectors.setColumn(v, evec) |==> <NO-OP>
+39:EVR:<METHOD_INVOCATION(org.apache.commons.math3.linear.RealMatrix)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):145:covMatEigenvectors.transpose() |==> null
+40:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):148:0 |==> 1
+41:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):148:0 |==> -1
+42:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):148:row < dim |==> row != dim
+43:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):148:row < dim |==> row <= dim
+44:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):148:row < dim |==> false
+45:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):149:FastMath.sqrt(covMatEigenvalues[row]) |==> 0.0
+46:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):150:0 |==> 1
+47:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):150:0 |==> -1
+48:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):150:col < dim |==> col != dim
+49:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):150:col < dim |==> col <= dim
+50:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):150:col < dim |==> false
+51:STD:<CALL>:<NO-OP>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):151:tmpMatrix.multiplyEntry(row, col, factor) |==> <NO-OP>
+52:EVR:<METHOD_INVOCATION(org.apache.commons.math3.linear.RealMatrix)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double[],double[][]):155:covMatEigenvectors.multiply(tmpMatrix) |==> null
+53:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getMeans():164:MathArrays.copyOf(means) |==> null
+54:EVR:<METHOD_INVOCATION(org.apache.commons.math3.linear.RealMatrix)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getCovariances():173:covarianceMatrix.copy() |==> null
+55:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):178:getDimension() |==> 0
+56:ROR:!=(int,int):<(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):179:vals.length != dim |==> vals.length < dim
+57:ROR:!=(int,int):>(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):179:vals.length != dim |==> vals.length > dim
+58:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):179:vals.length != dim |==> true
+59:LVR:POS:0:org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:2 |==> 0
+60:LVR:POS:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:2 |==> -2
+61:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:2 * FastMath.PI |==> 2 % FastMath.PI
+62:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:2 * FastMath.PI |==> 2 + FastMath.PI
+63:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:2 * FastMath.PI |==> 2 - FastMath.PI
+64:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:2 * FastMath.PI |==> 2 / FastMath.PI
+65:ORU:-(double):+(double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:-0.5 |==> +0.5
+66:LVR:POS:0:org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:0.5 |==> 0.0
+67:LVR:POS:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:0.5 |==> -0.5
+68:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:-0.5 * dim |==> -0.5 % dim
+69:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:-0.5 * dim |==> -0.5 + dim
+70:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:-0.5 * dim |==> -0.5 - dim
+71:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:-0.5 * dim |==> -0.5 / dim
+72:ORU:-(double):+(double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):184:-0.5 |==> +0.5
+73:LVR:POS:0:org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):184:0.5 |==> 0.0
+74:LVR:POS:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):184:0.5 |==> -0.5
+75:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) |==> FastMath.pow(2 * FastMath.PI, -0.5 * dim) % FastMath.pow(covarianceMatrixDeterminant, -0.5)
+76:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) |==> FastMath.pow(2 * FastMath.PI, -0.5 * dim) + FastMath.pow(covarianceMatrixDeterminant, -0.5)
+77:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) |==> FastMath.pow(2 * FastMath.PI, -0.5 * dim) - FastMath.pow(covarianceMatrixDeterminant, -0.5)
+78:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) |==> FastMath.pow(2 * FastMath.PI, -0.5 * dim) / FastMath.pow(covarianceMatrixDeterminant, -0.5)
+79:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) * getExponentTerm(vals) |==> FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) % getExponentTerm(vals)
+80:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) * getExponentTerm(vals) |==> FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) + getExponentTerm(vals)
+81:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) * getExponentTerm(vals) |==> FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) - getExponentTerm(vals)
+82:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@density(double[]):183:FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) * getExponentTerm(vals) |==> FastMath.pow(2 * FastMath.PI, -0.5 * dim) * FastMath.pow(covarianceMatrixDeterminant, -0.5) / getExponentTerm(vals)
+83:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():195:getDimension() |==> 0
+84:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():196:new double[dim] |==> null
+85:EVR:<METHOD_INVOCATION(double[][])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():197:covarianceMatrix.getData() |==> null
+86:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():198:0 |==> 1
+87:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():198:0 |==> -1
+88:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():198:i < dim |==> i != dim
+89:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():198:i < dim |==> i <= dim
+90:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():198:i < dim |==> false
+91:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():199:std[i] = FastMath.sqrt(s[i][i]) |==> <NO-OP>
+92:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getStandardDeviations():201:std |==> null
+93:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():207:getDimension() |==> 0
+94:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():208:new double[dim] |==> null
+95:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():210:0 |==> 1
+96:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():210:0 |==> -1
+97:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():210:i < dim |==> i != dim
+98:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():210:i < dim |==> i <= dim
+99:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():210:i < dim |==> false
+100:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():211:normalVals[i] = random.nextGaussian() |==> <NO-OP>
+101:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():214:samplingMatrix.operate(normalVals) |==> null
+102:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():216:0 |==> 1
+103:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():216:0 |==> -1
+104:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():216:i < dim |==> i != dim
+105:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():216:i < dim |==> i <= dim
+106:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():216:i < dim |==> false
+107:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():217:vals[i] += means[i] |==> <NO-OP>
+108:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@sample():220:vals |==> null
+109:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):230:new double[values.length] |==> null
+110:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):231:0 |==> 1
+111:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):231:0 |==> -1
+112:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):231:i < centered.length |==> i != centered.length
+113:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):231:i < centered.length |==> i <= centered.length
+114:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):231:i < centered.length |==> false
+115:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):232:values[i] - getMeans()[i] |==> values[i] % getMeans()[i]
+116:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):232:values[i] - getMeans()[i] |==> values[i] * getMeans()[i]
+117:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):232:values[i] - getMeans()[i] |==> values[i] + getMeans()[i]
+118:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):232:values[i] - getMeans()[i] |==> values[i] / getMeans()[i]
+119:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):232:centered[i] = values[i] - getMeans()[i] |==> <NO-OP>
+120:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):234:covarianceMatrixInverse.preMultiply(centered) |==> null
+121:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):235:0 |==> 1
+122:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):235:0 |==> -1
+123:LVR:0:POS:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):236:0 |==> 1
+124:LVR:0:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):236:0 |==> -1
+125:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):236:i < preMultiplied.length |==> i != preMultiplied.length
+126:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):236:i < preMultiplied.length |==> i <= preMultiplied.length
+127:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):236:i < preMultiplied.length |==> false
+128:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):237:preMultiplied[i] * centered[i] |==> preMultiplied[i] % centered[i]
+129:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):237:preMultiplied[i] * centered[i] |==> preMultiplied[i] + centered[i]
+130:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):237:preMultiplied[i] * centered[i] |==> preMultiplied[i] - centered[i]
+131:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):237:preMultiplied[i] * centered[i] |==> preMultiplied[i] / centered[i]
+132:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):237:sum += preMultiplied[i] * centered[i] |==> <NO-OP>
+133:ORU:-(double):+(double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):239:-0.5 |==> +0.5
+134:LVR:POS:0:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):239:0.5 |==> 0.0
+135:LVR:POS:NEG:org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):239:0.5 |==> -0.5
+136:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):239:-0.5 * sum |==> -0.5 % sum
+137:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):239:-0.5 * sum |==> -0.5 + sum
+138:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):239:-0.5 * sum |==> -0.5 - sum
+139:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.MultivariateNormalDistribution@getExponentTerm(double[]):239:-0.5 * sum |==> -0.5 / sum

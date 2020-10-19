@@ -1,0 +1,164 @@
+[
+  {
+    "v1": {
+      "line": "37",
+      "statement": "BisectionSolver ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "38",
+      "statement": "this(DEFAULT_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "45",
+      "statement": "BisectionSolver (double absoluteAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "46",
+      "statement": "super(absoluteAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "54",
+      "statement": "BisectionSolver (double relativeAccuracy,  double absoluteAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "56",
+      "statement": "super(relativeAccuracy, absoluteAccuracy)"
+    }
+  },
+  {
+    "v7": {
+      "line": "63",
+      "statement": "double doSolve()"
+    }
+  },
+  {
+    "v8": {
+      "line": "65",
+      "statement": "double min = getMin()"
+    }
+  },
+  {
+    "v9": {
+      "line": "66",
+      "statement": "double max = getMax()"
+    }
+  },
+  {
+    "v10": {
+      "line": "67",
+      "statement": "verifyInterval(min, max)"
+    }
+  },
+  {
+    "v11": {
+      "line": "68",
+      "statement": "final double absoluteAccuracy = getAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v12": {
+      "line": "69",
+      "statement": "double m"
+    }
+  },
+  {
+    "v13": {
+      "line": "70",
+      "statement": "double fm"
+    }
+  },
+  {
+    "v14": {
+      "line": "71",
+      "statement": "double fmin"
+    }
+  },
+  {
+    "v15": {
+      "line": "73",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v17": {
+      "line": "74",
+      "statement": "m = UnivariateSolverUtils.midpoint(min, max)"
+    }
+  },
+  {
+    "v18": {
+      "line": "75",
+      "statement": "fmin = computeObjectiveValue(min)"
+    }
+  },
+  {
+    "v19": {
+      "line": "76",
+      "statement": "fm = computeObjectiveValue(m)"
+    }
+  },
+  {
+    "v20": {
+      "line": "78",
+      "statement": "if (fm * fmin > 0)"
+    }
+  },
+  {
+    "v21": {
+      "line": "80",
+      "statement": "min = m"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v23": {
+      "line": "83",
+      "statement": "max = m"
+    }
+  },
+  {
+    "v24": {
+      "line": "86",
+      "statement": "if (FastMath.abs(max - min) <= absoluteAccuracy)"
+    }
+  },
+  {
+    "v25": {
+      "line": "87",
+      "statement": "m = UnivariateSolverUtils.midpoint(min, max)"
+    }
+  },
+  {
+    "v26": {
+      "line": "88",
+      "statement": "return m"
+    }
+  },
+  {
+    "v27": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  }
+]

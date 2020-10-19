@@ -1,0 +1,77 @@
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/DSCompilerTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of DSCompiler
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/DerivativeStructureTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+LINE {'486'} OF OLD VERSION OF DerivativeStructure CHANGED
+==============================
+TEST CODE STATUS
+==============================
+==============================
+Affected Requirements
+==============================
+TR89
+TR90
+TR91
+NO TESTS NEED TO BE RE-RUN!
+==============================
+Unsatisfied Test Requirements
+==============================
+Write new test for  TR89 . No tests satisfy it!
+Write new test for  TR91 . No tests satisfy it!
+Write new test for  TR90 . No tests satisfy it!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/FiniteDifferencesDifferentiatorTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of FiniteDifferencesDifferentiator
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/GradientFunctionTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of GradientFunction
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/JacobianFunctionTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of JacobianFunction
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete
+/Users/kesina/eclipse-workspace/commons-mathNew/src/test/java/org/apache/commons/math4/analysis/differentiation/SparseGradientTestIT.java
+==============================
+SOURCE CODE STATUS
+==============================
+NO CHANGE IN SOURCE CODE of SparseGradient
+==============================
+TEST CODE STATUS
+==============================
+NO REQUIREMENTS WERE AFFECTED DUE TO THE CHANGE!
+NO TESTS NEED TO BE RE-RUN!
+Comparison complete

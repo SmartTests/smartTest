@@ -1,0 +1,179 @@
+1:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):82:verifyInputArray(a, c) |==> <NO-OP>
+2:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):83:new double[a.length] |==> null
+3:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):84:new double[c.length] |==> null
+4:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):85:0 |==> 1
+5:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):85:0 |==> -1
+6:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):85:0 |==> 1
+7:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):85:0 |==> -1
+8:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):85:System.arraycopy(a, 0, this.a, 0, a.length) |==> <NO-OP>
+9:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):86:0 |==> 1
+10:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):86:0 |==> -1
+11:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):86:0 |==> 1
+12:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):86:0 |==> -1
+13:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):86:System.arraycopy(c, 0, this.c, 0, c.length) |==> <NO-OP>
+14:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):87:false |==> true
+15:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@<init>(double[],double[]):87:coefficientsComputed = false |==> <NO-OP>
+16:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(double):97:evaluate(a, c, z) |==> 0.0
+17:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):105:verifyInputArray(a, c) |==> <NO-OP>
+18:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):107:c.length |==> 0
+19:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):108:new DerivativeStructure(t.getFreeParameters(), t.getOrder(), a[n]) |==> null
+20:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:1 |==> 0
+21:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:1 |==> -1
+22:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:n - 1 |==> n % 1
+23:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:n - 1 |==> n * 1
+24:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:n - 1 |==> n + 1
+25:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:n - 1 |==> n / 1
+26:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:0 |==> 1
+27:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:0 |==> -1
+28:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:i >= 0 |==> i == 0
+29:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:i >= 0 |==> i > 0
+30:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):109:i >= 0 |==> true
+31:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):110:value = t.subtract(c[i]).multiply(value).add(a[i]) |==> <NO-OP>
+32:EVR:<IDENTIFIER(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):113:value |==> null
+33:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@degree():123:c.length |==> 0
+34:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getNewtonCoefficients():134:new double[a.length] |==> null
+35:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getNewtonCoefficients():135:0 |==> 1
+36:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getNewtonCoefficients():135:0 |==> -1
+37:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getNewtonCoefficients():135:0 |==> 1
+38:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getNewtonCoefficients():135:0 |==> -1
+39:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getNewtonCoefficients():135:System.arraycopy(a, 0, out, 0, a.length) |==> <NO-OP>
+40:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getNewtonCoefficients():136:out |==> null
+41:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCenters():147:new double[c.length] |==> null
+42:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCenters():148:0 |==> 1
+43:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCenters():148:0 |==> -1
+44:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCenters():148:0 |==> 1
+45:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCenters():148:0 |==> -1
+46:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCenters():148:System.arraycopy(c, 0, out, 0, c.length) |==> <NO-OP>
+47:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCenters():149:out |==> null
+48:COR:coefficientsComputed:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():160:coefficientsComputed |==> false
+49:COR:coefficientsComputed:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():160:coefficientsComputed |==> true
+50:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():161:computeCoefficients() |==> <NO-OP>
+51:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():163:new double[coefficients.length] |==> null
+52:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():164:0 |==> 1
+53:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():164:0 |==> -1
+54:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():164:0 |==> 1
+55:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():164:0 |==> -1
+56:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():164:System.arraycopy(coefficients, 0, out, 0, coefficients.length) |==> <NO-OP>
+57:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@getCoefficients():165:out |==> null
+58:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):184:verifyInputArray(a, c) |==> <NO-OP>
+59:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):186:c.length |==> 0
+60:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):187:a[n] |==> 0.0
+61:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:1 |==> 0
+62:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:1 |==> -1
+63:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:n - 1 |==> n % 1
+64:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:n - 1 |==> n * 1
+65:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:n - 1 |==> n + 1
+66:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:n - 1 |==> n / 1
+67:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:0 |==> 1
+68:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:0 |==> -1
+69:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:i >= 0 |==> i == 0
+70:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:i >= 0 |==> i > 0
+71:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):188:i >= 0 |==> true
+72:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:z - c[i] |==> z % c[i]
+73:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:z - c[i] |==> z * c[i]
+74:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:z - c[i] |==> z + c[i]
+75:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:z - c[i] |==> z / c[i]
+76:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:(z - c[i]) * value |==> (z - c[i]) % value
+77:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:(z - c[i]) * value |==> (z - c[i]) + value
+78:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:(z - c[i]) * value |==> (z - c[i]) - value
+79:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:(z - c[i]) * value |==> (z - c[i]) / value
+80:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:a[i] + (z - c[i]) * value |==> a[i] % ((z - c[i]) * value)
+81:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:a[i] + (z - c[i]) * value |==> a[i] * ((z - c[i]) * value)
+82:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:a[i] + (z - c[i]) * value |==> a[i] - (z - c[i]) * value
+83:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:a[i] + (z - c[i]) * value |==> a[i] / ((z - c[i]) * value)
+84:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):189:value = a[i] + (z - c[i]) * value |==> <NO-OP>
+85:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@evaluate(double[],double[],double):192:value |==> 0.0
+86:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():200:degree() |==> 0
+87:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():202:1 |==> 0
+88:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():202:1 |==> -1
+89:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():202:n + 1 |==> n % 1
+90:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():202:n + 1 |==> n * 1
+91:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():202:n + 1 |==> n - 1
+92:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():202:n + 1 |==> n / 1
+93:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():202:coefficients = new double[n + 1] |==> <NO-OP>
+94:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():203:0 |==> 1
+95:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():203:0 |==> -1
+96:ROR:<=(int,int):<(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():203:i <= n |==> i < n
+97:ROR:<=(int,int):==(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():203:i <= n |==> i == n
+98:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():203:i <= n |==> true
+99:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():204:0.0 |==> 1.0
+100:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():204:0.0 |==> -1.0
+101:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():204:coefficients[i] = 0.0 |==> <NO-OP>
+102:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():207:0 |==> 1
+103:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():207:0 |==> -1
+104:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():207:coefficients[0] = a[n] |==> <NO-OP>
+105:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:1 |==> 0
+106:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:1 |==> -1
+107:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:n - 1 |==> n % 1
+108:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:n - 1 |==> n * 1
+109:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:n - 1 |==> n + 1
+110:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:n - 1 |==> n / 1
+111:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:0 |==> 1
+112:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:0 |==> -1
+113:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:i >= 0 |==> i == 0
+114:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:i >= 0 |==> i > 0
+115:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():208:i >= 0 |==> true
+116:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():209:n - i |==> n % i
+117:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():209:n - i |==> n * i
+118:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():209:n - i |==> n + i
+119:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():209:n - i |==> n / i
+120:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():209:0 |==> 1
+121:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():209:0 |==> -1
+122:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():209:j > 0 |==> j != 0
+123:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():209:j > 0 |==> j >= 0
+124:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():209:j > 0 |==> false
+125:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:1 |==> 0
+126:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:1 |==> -1
+127:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:j - 1 |==> j % 1
+128:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:j - 1 |==> j * 1
+129:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:j - 1 |==> j + 1
+130:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:j - 1 |==> j / 1
+131:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:c[i] * coefficients[j] |==> c[i] % coefficients[j]
+132:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:c[i] * coefficients[j] |==> c[i] + coefficients[j]
+133:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:c[i] * coefficients[j] |==> c[i] - coefficients[j]
+134:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:c[i] * coefficients[j] |==> c[i] / coefficients[j]
+135:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:coefficients[j - 1] - c[i] * coefficients[j] |==> coefficients[j - 1] % (c[i] * coefficients[j])
+136:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:coefficients[j - 1] - c[i] * coefficients[j] |==> coefficients[j - 1] * (c[i] * coefficients[j])
+137:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:coefficients[j - 1] - c[i] * coefficients[j] |==> coefficients[j - 1] + c[i] * coefficients[j]
+138:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:coefficients[j - 1] - c[i] * coefficients[j] |==> coefficients[j - 1] / (c[i] * coefficients[j])
+139:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():210:coefficients[j] = coefficients[j - 1] - c[i] * coefficients[j] |==> <NO-OP>
+140:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:0 |==> 1
+141:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:0 |==> -1
+142:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:0 |==> 1
+143:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:0 |==> -1
+144:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:c[i] * coefficients[0] |==> c[i] % coefficients[0]
+145:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:c[i] * coefficients[0] |==> c[i] + coefficients[0]
+146:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:c[i] * coefficients[0] |==> c[i] - coefficients[0]
+147:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:c[i] * coefficients[0] |==> c[i] / coefficients[0]
+148:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:a[i] - c[i] * coefficients[0] |==> a[i] % (c[i] * coefficients[0])
+149:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:a[i] - c[i] * coefficients[0] |==> a[i] * (c[i] * coefficients[0])
+150:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:a[i] - c[i] * coefficients[0] |==> a[i] + c[i] * coefficients[0]
+151:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:a[i] - c[i] * coefficients[0] |==> a[i] / (c[i] * coefficients[0])
+152:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():212:coefficients[0] = a[i] - c[i] * coefficients[0] |==> <NO-OP>
+153:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():215:true |==> false
+154:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@computeCoefficients():215:coefficientsComputed = true |==> <NO-OP>
+155:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):235:MathUtils.checkNotNull(a) |==> <NO-OP>
+156:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):236:MathUtils.checkNotNull(c) |==> <NO-OP>
+157:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:0 |==> 1
+158:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:0 |==> -1
+159:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:a.length == 0 |==> a.length <= 0
+160:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:a.length == 0 |==> a.length >= 0
+161:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:a.length == 0 |==> false
+162:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:0 |==> 1
+163:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:0 |==> -1
+164:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:c.length == 0 |==> c.length <= 0
+165:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:c.length == 0 |==> c.length >= 0
+166:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:c.length == 0 |==> false
+167:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:a.length == 0 || c.length == 0 |==> a.length == 0 != (c.length == 0)
+168:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:a.length == 0 || c.length == 0 |==> a.length == 0
+169:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:a.length == 0 || c.length == 0 |==> c.length == 0
+170:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):237:a.length == 0 || c.length == 0 |==> true
+171:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):240:1 |==> 0
+172:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):240:1 |==> -1
+173:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):240:c.length + 1 |==> c.length % 1
+174:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):240:c.length + 1 |==> c.length * 1
+175:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):240:c.length + 1 |==> c.length - 1
+176:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):240:c.length + 1 |==> c.length / 1
+177:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):240:a.length != c.length + 1 |==> a.length < c.length + 1
+178:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):240:a.length != c.length + 1 |==> a.length > c.length + 1
+179:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm@verifyInputArray(double[],double[]):240:a.length != c.length + 1 |==> true

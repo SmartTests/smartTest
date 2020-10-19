@@ -1,0 +1,57 @@
+digraph BisectionSolver_CFG {
+  // graph-vertices
+  v1  [label="37:  BisectionSolver ()"];
+  v2  [label="38:  this(DEFAULT_ABSOLUTE_ACCURACY)"];
+  v3  [label="45:  BisectionSolver (double absoluteAccuracy)"];
+  v4  [label="46:  super(absoluteAccuracy)"];
+  v5  [label="54:  BisectionSolver (double relativeAccuracy,  double absoluteAccuracy)"];
+  v6  [label="56:  super(relativeAccuracy, absoluteAccuracy)"];
+  v7  [label="63:  double doSolve()"];
+  v8  [label="65:  double min = getMin()"];
+  v9  [label="66:  double max = getMax()"];
+  v10  [label="67:  verifyInterval(min, max)"];
+  v11  [label="68:  final double absoluteAccuracy = getAbsoluteAccuracy()"];
+  v12  [label="69:  double m"];
+  v13  [label="70:  double fm"];
+  v14  [label="71:  double fmin"];
+  v15  [label="73:  while (true)"];
+  v16  [label="endwhile"];
+  v17  [label="74:  m = UnivariateSolverUtils.midpoint(min, max)"];
+  v18  [label="75:  fmin = computeObjectiveValue(min)"];
+  v19  [label="76:  fm = computeObjectiveValue(m)"];
+  v20  [label="78:  if (fm * fmin > 0)"];
+  v21  [label="80:  min = m"];
+  v22  [label="endif"];
+  v23  [label="83:  max = m"];
+  v24  [label="86:  if (FastMath.abs(max - min) <= absoluteAccuracy)"];
+  v25  [label="87:  m = UnivariateSolverUtils.midpoint(min, max)"];
+  v26  [label="88:  return m;"];
+  v27  [label="endif"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v5 -> v6;
+  v7 -> v8;
+  v8 -> v9;
+  v9 -> v10;
+  v10 -> v11;
+  v11 -> v12;
+  v12 -> v13;
+  v13 -> v14;
+  v14 -> v15;
+  v15 -> v16  [label="False"];
+  v15 -> v17  [label="True"];
+  v17 -> v18;
+  v18 -> v19;
+  v19 -> v20;
+  v20 -> v21  [label="True"];
+  v21 -> v22;
+  v20 -> v23  [label="False"];
+  v23 -> v22;
+  v22 -> v24;
+  v24 -> v25  [label="True"];
+  v25 -> v26;
+  v24 -> v27  [label="False"];
+  v27 -> v15;
+  // end-of-graph
+}

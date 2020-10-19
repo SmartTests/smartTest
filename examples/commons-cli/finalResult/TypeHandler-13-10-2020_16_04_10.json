@@ -1,0 +1,101 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "66",
+      "104",
+      "150",
+      "152",
+      "154",
+      "68"
+    ],
+    "sourceClass": "TypeHandler"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR17",
+      "TR7",
+      "TR6",
+      "TR15",
+      "TR14",
+      "TR5",
+      "TR11",
+      "TR10",
+      "TR19",
+      "TR31",
+      "TR4",
+      "TR16",
+      "TR13",
+      "TR2",
+      "TR20",
+      "TR12",
+      "TR9",
+      "TR18",
+      "TR8"
+    ],
+    "deletedTest": [
+      "testCreateValueFiles",
+      "testCreateValueInteger_failure",
+      "testCreateValueString",
+      "testCreateValueURL",
+      "testCreateValueNumber_Double",
+      "testCreateValueNumber_Long",
+      "testCreateValueDate",
+      "testCreateValueExistingFile",
+      "testCreateValueFile"
+    ],
+    "deletedRequirementYesTest": [
+      "TR3",
+      "TR32",
+      "TR33"
+    ],
+    "affectedTest": [
+      "testCreateValueFiles",
+      "testCreateValueInteger_failure",
+      "testCreateValueString",
+      "testCreateValueURL",
+      "testCreateValueURL_malformed",
+      "testCreateValueNumber_Double",
+      "testCreateValueNumber_Long",
+      "testCreateValueNumber_noNumber",
+      "testCreateValueClass",
+      "testCreateValueClass_notFound",
+      "testCreateValueDate",
+      "testCreateValueExistingFile",
+      "testCreateValueExistingFile_nonExistingFile",
+      "testCreateValueFile",
+      "testCreateValueObject_InstantiableClass",
+      "testCreateValueObject_notInstantiableClass",
+      "testCreateValueObject_unknownClass"
+    ],
+    "testReran": [
+      "testCreateValueFile",
+      "testCreateValueObject_unknownClass",
+      "testCreateValueClass_notFound",
+      "testCreateValueExistingFile_nonExistingFile",
+      "testCreateValueString",
+      "testCreateValueNumber_noNumber",
+      "testCreateValueDate",
+      "testCreateValueObject_InstantiableClass",
+      "testCreateValueInteger_failure",
+      "testCreateValueNumber_Long",
+      "testCreateValueObject_notInstantiableClass",
+      "testCreateValueClass",
+      "testCreateValueURL_malformed",
+      "testCreateValueNumber_Double",
+      "testCreateValueFiles",
+      "testCreateValueExistingFile",
+      "testCreateValueURL"
+    ],
+    "unsatisfiedRequirement": [
+      "TR3",
+      "TR31",
+      "TR4",
+      "TR2"
+    ],
+    "newTestRequirement": [
+      "TR20",
+      "TR19",
+      "TR32"
+    ]
+  }
+}

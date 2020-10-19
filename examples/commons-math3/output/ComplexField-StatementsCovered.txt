@@ -1,0 +1,16 @@
+
+testOne : getInstance()Lorg/apache/commons/math3/complex/ComplexField;=[47,48
+];;<clinit>()V=[71,72
+];;<init>(Lorg/apache/commons/math3/complex/ComplexField=null, <init>(Lorg/apache/commons/math3/complex/ComplexField$1;)V=[34
+];;<init>()V=[40,41
+41,42
+];;getOne()Lorg/apache/commons/math3/complex/Complex;=[52,53
+]
+
+testSerial : getInstance()Lorg/apache/commons/math3/complex/ComplexField;=[47,48
+];;readResolve()Ljava/lang/Object;=[80,81
+]
+
+testZero : getInstance()Lorg/apache/commons/math3/complex/ComplexField;=[47,48
+];;getZero()Lorg/apache/commons/math3/complex/Complex;=[57,58
+]

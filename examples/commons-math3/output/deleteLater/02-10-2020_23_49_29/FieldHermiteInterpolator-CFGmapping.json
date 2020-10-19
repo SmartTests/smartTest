@@ -1,0 +1,470 @@
+[
+  {
+    "v1": {
+      "line": "64",
+      "statement": "FieldHermiteInterpolator ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "65",
+      "statement": "this.abscissae  = new ArrayList<T>()"
+    }
+  },
+  {
+    "v3": {
+      "line": "66",
+      "statement": "this.topDiagonal  = new ArrayList<T[]>()"
+    }
+  },
+  {
+    "v4": {
+      "line": "67",
+      "statement": "this.bottomDiagonal = new ArrayList<T[]>()"
+    }
+  },
+  {
+    "v5": {
+      "line": "91",
+      "statement": "void addSamplePoint(final T x, final T[] ... value)"
+    }
+  },
+  {
+    "v6": {
+      "line": "95",
+      "statement": "MathUtils.checkNotNull(x)"
+    }
+  },
+  {
+    "v7": {
+      "line": "96",
+      "statement": "T factorial = x.getField().getOne()"
+    }
+  },
+  {
+    "v8": {
+      "line": "97",
+      "statement": "for (  int i = 0 ; i < value.length ;   ++i)"
+    }
+  },
+  {
+    "v11": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v12": {
+      "line": "99",
+      "statement": "final T[] y = value[i].clone()"
+    }
+  },
+  {
+    "v13": {
+      "line": "100",
+      "statement": "if (i > 1)"
+    }
+  },
+  {
+    "v14": {
+      "line": "101",
+      "statement": "factorial = factorial.multiply(i)"
+    }
+  },
+  {
+    "v15": {
+      "line": "102",
+      "statement": "final T inv = factorial.reciprocal()"
+    }
+  },
+  {
+    "v16": {
+      "line": "103",
+      "statement": "for (  int j = 0 ; j < y.length ;   ++j)"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v20": {
+      "line": "104",
+      "statement": "y[j] = y[j].multiply(inv)"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "109",
+      "statement": "final int n = abscissae.size()"
+    }
+  },
+  {
+    "v23": {
+      "line": "110",
+      "statement": "bottomDiagonal.add(n - i, y)"
+    }
+  },
+  {
+    "v24": {
+      "line": "111",
+      "statement": "T[] bottom0 = y"
+    }
+  },
+  {
+    "v25": {
+      "line": "112",
+      "statement": "for (  int j = i ; j < n ;   ++j)"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v29": {
+      "line": "113",
+      "statement": "final T[] bottom1 = bottomDiagonal.get(n - (j + 1))"
+    }
+  },
+  {
+    "v30": {
+      "line": "114",
+      "statement": "if (x.equals(abscissae.get(n - (j - 1))))"
+    }
+  },
+  {
+    "v31": {
+      "line": "115",
+      "statement": "throw new ZeroException(LocalizedFormats.DUPLICATED_ABSCISSA_DIVISION_BY_ZERO, x)"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v33": {
+      "line": "117",
+      "statement": "final T inv = x.subtract(abscissae.get(n - (j + 1))).reciprocal()"
+    }
+  },
+  {
+    "v34": {
+      "line": "118",
+      "statement": "for (  int k = 0 ; k < y.length ;   ++k)"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v38": {
+      "line": "119",
+      "statement": "bottom1[k] = inv.multiply(bottom0[k].subtract(bottom1[k]))"
+    }
+  },
+  {
+    "v39": {
+      "line": "121",
+      "statement": "bottom0 = bottom1"
+    }
+  },
+  {
+    "v40": {
+      "line": "125",
+      "statement": "topDiagonal.add(bottom0.clone())"
+    }
+  },
+  {
+    "v41": {
+      "line": "128",
+      "statement": "abscissae.add(x)"
+    }
+  },
+  {
+    "v42": {
+      "line": "140",
+      "statement": "T[] value(T x)"
+    }
+  },
+  {
+    "v43": {
+      "line": "143",
+      "statement": "MathUtils.checkNotNull(x)"
+    }
+  },
+  {
+    "v44": {
+      "line": "144",
+      "statement": "if (abscissae.isEmpty())"
+    }
+  },
+  {
+    "v45": {
+      "line": "145",
+      "statement": "throw new NoDataException(LocalizedFormats.EMPTY_INTERPOLATION_SAMPLE)"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v47": {
+      "line": "148",
+      "statement": "final T[] value = MathArrays.buildArray(x.getField(), topDiagonal.get(0).length)"
+    }
+  },
+  {
+    "v48": {
+      "line": "149",
+      "statement": "T valueCoeff = x.getField().getOne()"
+    }
+  },
+  {
+    "v49": {
+      "line": "150",
+      "statement": "for (  int i = 0 ; i < topDiagonal.size(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v53": {
+      "line": "151",
+      "statement": "T[] dividedDifference = topDiagonal.get(i)"
+    }
+  },
+  {
+    "v54": {
+      "line": "152",
+      "statement": "for (  int k = 0 ; k < value.length ;   ++k)"
+    }
+  },
+  {
+    "v57": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v58": {
+      "line": "153",
+      "statement": "value[k] = value[k].add(dividedDifference[k].multiply(valueCoeff))"
+    }
+  },
+  {
+    "v59": {
+      "line": "155",
+      "statement": "final T deltaX = x.subtract(abscissae.get(i))"
+    }
+  },
+  {
+    "v60": {
+      "line": "156",
+      "statement": "valueCoeff = valueCoeff.multiply(deltaX)"
+    }
+  },
+  {
+    "v61": {
+      "line": "159",
+      "statement": "return value"
+    }
+  },
+  {
+    "v62": {
+      "line": "171",
+      "statement": "T[][] derivatives(T x, int order)"
+    }
+  },
+  {
+    "v63": {
+      "line": "174",
+      "statement": "MathUtils.checkNotNull(x)"
+    }
+  },
+  {
+    "v64": {
+      "line": "175",
+      "statement": "if (abscissae.isEmpty())"
+    }
+  },
+  {
+    "v65": {
+      "line": "176",
+      "statement": "throw new NoDataException(LocalizedFormats.EMPTY_INTERPOLATION_SAMPLE)"
+    }
+  },
+  {
+    "v66": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v67": {
+      "line": "179",
+      "statement": "final T zero = x.getField().getZero()"
+    }
+  },
+  {
+    "v68": {
+      "line": "180",
+      "statement": "final T one  = x.getField().getOne()"
+    }
+  },
+  {
+    "v69": {
+      "line": "181",
+      "statement": "final T[] tj = MathArrays.buildArray(x.getField(), order + 1)"
+    }
+  },
+  {
+    "v70": {
+      "line": "182",
+      "statement": "tj[0] = zero"
+    }
+  },
+  {
+    "v71": {
+      "line": "183",
+      "statement": "for (  int i = 0 ; i < order ;   ++i)"
+    }
+  },
+  {
+    "v74": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v75": {
+      "line": "184",
+      "statement": "tj[i + 1] = tj[i].add(one)"
+    }
+  },
+  {
+    "v76": {
+      "line": "187",
+      "statement": "final T[][] derivatives = MathArrays.buildArray(x.getField(), order + 1, topDiagonal.get(0).length)"
+    }
+  },
+  {
+    "v77": {
+      "line": "189",
+      "statement": "final T[] valueCoeff = MathArrays.buildArray(x.getField(), order + 1)"
+    }
+  },
+  {
+    "v78": {
+      "line": "190",
+      "statement": "valueCoeff[0] = x.getField().getOne()"
+    }
+  },
+  {
+    "v79": {
+      "line": "191",
+      "statement": "for (  int i = 0 ; i < topDiagonal.size(  int i = 0 ;  ;   ++i) ;   ++i)"
+    }
+  },
+  {
+    "v82": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v83": {
+      "line": "192",
+      "statement": "T[] dividedDifference = topDiagonal.get(i)"
+    }
+  },
+  {
+    "v84": {
+      "line": "193",
+      "statement": "final T deltaX = x.subtract(abscissae.get(i))"
+    }
+  },
+  {
+    "v85": {
+      "line": "194",
+      "statement": "for (  int j = order ; j >= 0 ;   --j)"
+    }
+  },
+  {
+    "v88": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v89": {
+      "line": "195",
+      "statement": "for (  int k = 0 ; k < derivatives[j].length ;   ++k)"
+    }
+  },
+  {
+    "v92": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v93": {
+      "line": "196",
+      "statement": "derivatives[j][k] = derivatives[j][k].add(dividedDifference[k].multiply(valueCoeff[j]))"
+    }
+  },
+  {
+    "v94": {
+      "line": "199",
+      "statement": "valueCoeff[j] = valueCoeff[j].multiply(deltaX)"
+    }
+  },
+  {
+    "v95": {
+      "line": "200",
+      "statement": "if (j > 0)"
+    }
+  },
+  {
+    "v96": {
+      "line": "201",
+      "statement": "valueCoeff[j] = valueCoeff[j].add(tj[j].multiply(valueCoeff[j - 1]))"
+    }
+  },
+  {
+    "v97": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v98": {
+      "line": "206",
+      "statement": "return derivatives"
+    }
+  }
+]

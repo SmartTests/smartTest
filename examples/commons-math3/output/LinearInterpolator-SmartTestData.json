@@ -1,0 +1,89 @@
+[
+  {
+    "info": "25-09-2020_16_58_14"
+  },
+  {
+    "requirements": {
+      "TR1": "46,50",
+      "TR2": "50,51",
+      "TR3": "50,54",
+      "TR4": "54,55",
+      "TR5": "54,60",
+      "TR6": "60,62",
+      "TR7": "62,65",
+      "TR8": "65,66",
+      "TR9": "66,70",
+      "TR10": "66,67",
+      "TR11": "67,66",
+      "TR12": "70,71",
+      "TR13": "71,72",
+      "TR14": "72,78",
+      "TR15": "72,73",
+      "TR16": "73,74",
+      "TR17": "74,75",
+      "TR18": "75,72"
+    }
+  },
+  {
+    "testCoverage": {
+      "testIllegalArguments": [
+        "TR2",
+        "TR3",
+        "TR5",
+        "TR6",
+        "TR4"
+      ],
+      "testInterpolateLinear": [
+        "TR3",
+        "TR5",
+        "TR6",
+        "TR7",
+        "TR8",
+        "TR10",
+        "TR11",
+        "TR9",
+        "TR12",
+        "TR13",
+        "TR15",
+        "TR16",
+        "TR17",
+        "TR18",
+        "TR14"
+      ],
+      "testInterpolateLinearDegenerateThreeSegment": [
+        "TR3",
+        "TR5",
+        "TR6",
+        "TR7",
+        "TR8",
+        "TR10",
+        "TR11",
+        "TR9",
+        "TR12",
+        "TR13",
+        "TR15",
+        "TR16",
+        "TR17",
+        "TR18",
+        "TR14"
+      ],
+      "testInterpolateLinearDegenerateTwoSegment": [
+        "TR3",
+        "TR5",
+        "TR6",
+        "TR7",
+        "TR8",
+        "TR10",
+        "TR11",
+        "TR9",
+        "TR12",
+        "TR13",
+        "TR15",
+        "TR16",
+        "TR17",
+        "TR18",
+        "TR14"
+      ]
+    }
+  }
+]

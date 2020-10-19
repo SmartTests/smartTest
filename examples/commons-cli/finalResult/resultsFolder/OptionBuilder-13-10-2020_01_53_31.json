@@ -1,0 +1,25 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "98"
+    ],
+    "sourceClass": "OptionBuilder"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR10",
+      "TR11"
+    ],
+    "affectedTest": [
+      "testCompleteOption",
+      "testTwoCompleteOptions"
+    ],
+    "testReran": [
+      "testTwoCompleteOptions",
+      "testCompleteOption"
+    ],
+    "unsatisfiedRequirement": [
+      "TR10"
+    ]
+  }
+}

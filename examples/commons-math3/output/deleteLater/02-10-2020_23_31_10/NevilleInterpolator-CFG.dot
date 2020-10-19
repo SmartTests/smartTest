@@ -1,0 +1,8 @@
+digraph NevilleInterpolator_CFG {
+  // graph-vertices
+  v1  [label="55:  PolynomialFunctionLagrangeForm interpolate(double x[], double y[])"];
+  v2  [label="59:  return new PolynomialFunctionLagrangeForm(x, y);"];
+  // graph-edges
+  v1 -> v2;
+  // end-of-graph
+}

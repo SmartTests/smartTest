@@ -1,0 +1,134 @@
+[
+  {
+    "info": "13-10-2020_12_58_06"
+  },
+  {
+    "requirements": {
+      "TR1": "49,53",
+      "TR2": "53,55",
+      "TR3": "62,65",
+      "TR4": "71,74",
+      "TR5": "84,86",
+      "TR6": "86,89",
+      "TR7": "86,96",
+      "TR8": "89,90",
+      "TR9": "96,98",
+      "TR10": "96,102",
+      "TR11": "109,111",
+      "TR12": "117,119",
+      "TR13": "127,129",
+      "TR14": "138,140",
+      "TR15": "140,142",
+      "TR16": "142,144",
+      "TR17": "144,146",
+      "TR18": "146,173",
+      "TR19": "146,148",
+      "TR20": "148,150",
+      "TR21": "150,152",
+      "TR22": "150,157",
+      "TR23": "152,153",
+      "TR24": "153,161",
+      "TR25": "157,158",
+      "TR26": "158,161",
+      "TR27": "161,163",
+      "TR28": "161,167",
+      "TR29": "163,164",
+      "TR30": "164,167",
+      "TR31": "167,169",
+      "TR32": "167,146",
+      "TR33": "169,146",
+      "TR34": "173,175"
+    }
+  },
+  {
+    "testCoverage": {
+      "testGetNames": [
+        "TR2"
+      ],
+      "testNoOptionsExtraArgs": [
+        "TR6",
+        "TR8",
+        "TR2"
+      ],
+      "testSingleLongOption": [
+        "TR6",
+        "TR8",
+        "TR7",
+        "TR9"
+      ],
+      "testSingleOption": [
+        "TR6",
+        "TR8",
+        "TR2"
+      ],
+      "testSingleOptionFromGroup": [
+        "TR6",
+        "TR8",
+        "TR7",
+        "TR9",
+        "TR2"
+      ],
+      "testToString": [
+        "TR2",
+        "TR15",
+        "TR16",
+        "TR17",
+        "TR19",
+        "TR20",
+        "TR22",
+        "TR25",
+        "TR26",
+        "TR27",
+        "TR29",
+        "TR30",
+        "TR31",
+        "TR18",
+        "TR34"
+      ],
+      "testTwoLongOptionsFromGroup": [
+        "TR6",
+        "TR8",
+        "TR7",
+        "TR9",
+        "TR10",
+        "TR2"
+      ],
+      "testTwoOptionsFromDifferentGroup": [
+        "TR6",
+        "TR8",
+        "TR7",
+        "TR9",
+        "TR2"
+      ],
+      "testTwoOptionsFromGroup": [
+        "TR6",
+        "TR8",
+        "TR7",
+        "TR9",
+        "TR10",
+        "TR2"
+      ],
+      "testTwoOptionsFromGroupWithProperties": [
+        "TR6",
+        "TR8",
+        "TR7",
+        "TR9",
+        "TR2"
+      ],
+      "testTwoValidLongOptions": [
+        "TR6",
+        "TR8",
+        "TR7",
+        "TR9",
+        "TR2"
+      ],
+      "testTwoValidOptions": [
+        "TR6",
+        "TR8",
+        "TR7",
+        "TR9",
+        "TR2"
+      ]
+    }
+  }
+]

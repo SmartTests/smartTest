@@ -1,0 +1,11 @@
+
+testComparison : <init>()V=[32,33
+]
+
+testDerivativeComparison : <init>()V=[32,33
+];;value(Lorg/apache/commons/math3/analysis/differentiation/DerivativeStructure;)Lorg/apache/commons/math3/analysis/differentiation/DerivativeStructure;=[50,51
+]
+
+testDerivativesHighOrder : <init>()V=[32,33
+];;value(Lorg/apache/commons/math3/analysis/differentiation/DerivativeStructure;)Lorg/apache/commons/math3/analysis/differentiation/DerivativeStructure;=[50,51
+]

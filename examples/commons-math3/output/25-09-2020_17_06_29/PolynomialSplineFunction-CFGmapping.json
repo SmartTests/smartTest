@@ -1,0 +1,386 @@
+[
+  {
+    "v1": {
+      "line": "102",
+      "statement": "PolynomialSplineFunction (double knots[], PolynomialFunction polynomials[])"
+    }
+  },
+  {
+    "v2": {
+      "line": "105",
+      "statement": "if (knots == null || polynomials == null)"
+    }
+  },
+  {
+    "v3": {
+      "line": "107",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "109",
+      "statement": "if (knots.length < 2)"
+    }
+  },
+  {
+    "v6": {
+      "line": "110",
+      "statement": "throw new NumberIsTooSmallException(LocalizedFormats.NOT_ENOUGH_POINTS_IN_SPLINE_PARTITION, 2, knots.length, false)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "113",
+      "statement": "if (knots.length - 1 != polynomials.length)"
+    }
+  },
+  {
+    "v9": {
+      "line": "114",
+      "statement": "throw new DimensionMismatchException(polynomials.length, knots.length)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "116",
+      "statement": "MathArrays.checkOrder(knots)"
+    }
+  },
+  {
+    "v12": {
+      "line": "118",
+      "statement": "this.n = knots.length -1"
+    }
+  },
+  {
+    "v13": {
+      "line": "119",
+      "statement": "this.knots = new double[n + 1"
+    }
+  },
+  {
+    "v14": {
+      "line": "120",
+      "statement": "System.arraycopy(knots, 0, this.knots, 0, n + 1)"
+    }
+  },
+  {
+    "v15": {
+      "line": "121",
+      "statement": "this.polynomials = new PolynomialFunction[n"
+    }
+  },
+  {
+    "v16": {
+      "line": "122",
+      "statement": "System.arraycopy(polynomials, 0, this.polynomials, 0, n)"
+    }
+  },
+  {
+    "v17": {
+      "line": "136",
+      "statement": "double value(double v)"
+    }
+  },
+  {
+    "v18": {
+      "line": "137",
+      "statement": "if (v < knots[0] || v > knots[n])"
+    }
+  },
+  {
+    "v19": {
+      "line": "138",
+      "statement": "throw new OutOfRangeException(v, knots[0], knots[n])"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v21": {
+      "line": "140",
+      "statement": "int i = Arrays.binarySearch(knots, v)"
+    }
+  },
+  {
+    "v22": {
+      "line": "141",
+      "statement": "if (i < 0)"
+    }
+  },
+  {
+    "v23": {
+      "line": "142",
+      "statement": "i = -i - 2"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "147",
+      "statement": "if ( i >= polynomials.length )"
+    }
+  },
+  {
+    "v26": {
+      "line": "148",
+      "statement": "i--"
+    }
+  },
+  {
+    "v27": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v28": {
+      "line": "150",
+      "statement": "return polynomials[i].value(v - knots[i])"
+    }
+  },
+  {
+    "v29": {
+      "line": "158",
+      "statement": "UnivariateFunction derivative()"
+    }
+  },
+  {
+    "v30": {
+      "line": "159",
+      "statement": "return polynomialSplineDerivative()"
+    }
+  },
+  {
+    "v31": {
+      "line": "167",
+      "statement": "PolynomialSplineFunction polynomialSplineDerivative()"
+    }
+  },
+  {
+    "v32": {
+      "line": "168",
+      "statement": "PolynomialFunction derivativePolynomials[] = new PolynomialFunction[n"
+    }
+  },
+  {
+    "v33": {
+      "line": "169",
+      "statement": "for (  int i = 0 ; i < n ;   i++)"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v37": {
+      "line": "170",
+      "statement": "derivativePolynomials[i] = polynomials[i].polynomialDerivative()"
+    }
+  },
+  {
+    "v38": {
+      "line": "172",
+      "statement": "return new PolynomialSplineFunction(knots, derivativePolynomials)"
+    }
+  },
+  {
+    "v39": {
+      "line": "179",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v40": {
+      "line": "180",
+      "statement": "final double t0 = t.getValue()"
+    }
+  },
+  {
+    "v41": {
+      "line": "181",
+      "statement": "if (t0 < knots[0] || t0 > knots[n])"
+    }
+  },
+  {
+    "v42": {
+      "line": "182",
+      "statement": "throw new OutOfRangeException(t0, knots[0], knots[n])"
+    }
+  },
+  {
+    "v43": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v44": {
+      "line": "184",
+      "statement": "int i = Arrays.binarySearch(knots, t0)"
+    }
+  },
+  {
+    "v45": {
+      "line": "185",
+      "statement": "if (i < 0)"
+    }
+  },
+  {
+    "v46": {
+      "line": "186",
+      "statement": "i = -i - 2"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v48": {
+      "line": "191",
+      "statement": "if ( i >= polynomials.length )"
+    }
+  },
+  {
+    "v49": {
+      "line": "192",
+      "statement": "i--"
+    }
+  },
+  {
+    "v50": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v51": {
+      "line": "194",
+      "statement": "return polynomials[i].value(t.subtract(knots[i]))"
+    }
+  },
+  {
+    "v52": {
+      "line": "203",
+      "statement": "int getN()"
+    }
+  },
+  {
+    "v53": {
+      "line": "204",
+      "statement": "return n"
+    }
+  },
+  {
+    "v54": {
+      "line": "214",
+      "statement": "PolynomialFunction[] getPolynomials()"
+    }
+  },
+  {
+    "v55": {
+      "line": "215",
+      "statement": "PolynomialFunction p[] = new PolynomialFunction[n"
+    }
+  },
+  {
+    "v56": {
+      "line": "216",
+      "statement": "System.arraycopy(polynomials, 0, p, 0, n)"
+    }
+  },
+  {
+    "v57": {
+      "line": "217",
+      "statement": "return p"
+    }
+  },
+  {
+    "v58": {
+      "line": "227",
+      "statement": "double[] getKnots()"
+    }
+  },
+  {
+    "v59": {
+      "line": "228",
+      "statement": "double out[] = new double[n + 1"
+    }
+  },
+  {
+    "v60": {
+      "line": "229",
+      "statement": "System.arraycopy(knots, 0, out, 0, n + 1)"
+    }
+  },
+  {
+    "v61": {
+      "line": "230",
+      "statement": "return out"
+    }
+  },
+  {
+    "v62": {
+      "line": "239",
+      "statement": "boolean isValidPoint(double x)"
+    }
+  },
+  {
+    "v63": {
+      "line": "240",
+      "statement": "if (x < knots[0] || x > knots[n])"
+    }
+  },
+  {
+    "v64": {
+      "line": "242",
+      "statement": "return false"
+    }
+  },
+  {
+    "v65": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v66": {
+      "line": "244",
+      "statement": "return true"
+    }
+  }
+]

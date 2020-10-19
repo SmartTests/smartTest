@@ -1,0 +1,458 @@
+[
+  {
+    "v1": {
+      "line": "58",
+      "statement": "MullerSolver ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "59",
+      "statement": "this(DEFAULT_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "66",
+      "statement": "MullerSolver (double absoluteAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "67",
+      "statement": "super(absoluteAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "75",
+      "statement": "MullerSolver (double relativeAccuracy, double absoluteAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "77",
+      "statement": "super(relativeAccuracy, absoluteAccuracy)"
+    }
+  },
+  {
+    "v7": {
+      "line": "84",
+      "statement": "double doSolve()"
+    }
+  },
+  {
+    "v8": {
+      "line": "88",
+      "statement": "final double min = getMin()"
+    }
+  },
+  {
+    "v9": {
+      "line": "89",
+      "statement": "final double max = getMax()"
+    }
+  },
+  {
+    "v10": {
+      "line": "90",
+      "statement": "final double initial = getStartValue()"
+    }
+  },
+  {
+    "v11": {
+      "line": "92",
+      "statement": "final double functionValueAccuracy = getFunctionValueAccuracy()"
+    }
+  },
+  {
+    "v12": {
+      "line": "94",
+      "statement": "verifySequence(min, initial, max)"
+    }
+  },
+  {
+    "v13": {
+      "line": "97",
+      "statement": "final double fMin = computeObjectiveValue(min)"
+    }
+  },
+  {
+    "v14": {
+      "line": "98",
+      "statement": "if (FastMath.abs(fMin) < functionValueAccuracy)"
+    }
+  },
+  {
+    "v15": {
+      "line": "99",
+      "statement": "return min"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v17": {
+      "line": "101",
+      "statement": "final double fMax = computeObjectiveValue(max)"
+    }
+  },
+  {
+    "v18": {
+      "line": "102",
+      "statement": "if (FastMath.abs(fMax) < functionValueAccuracy)"
+    }
+  },
+  {
+    "v19": {
+      "line": "103",
+      "statement": "return max"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v21": {
+      "line": "105",
+      "statement": "final double fInitial = computeObjectiveValue(initial)"
+    }
+  },
+  {
+    "v22": {
+      "line": "106",
+      "statement": "if (FastMath.abs(fInitial) <  functionValueAccuracy)"
+    }
+  },
+  {
+    "v23": {
+      "line": "107",
+      "statement": "return initial"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "110",
+      "statement": "verifyBracketing(min, max)"
+    }
+  },
+  {
+    "v26": {
+      "line": "112",
+      "statement": "if (isBracketing(min, initial))"
+    }
+  },
+  {
+    "v27": {
+      "line": "113",
+      "statement": "return solve(min, initial, fMin, fInitial)"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "115",
+      "statement": "return solve(initial, max, fInitial, fMax)"
+    }
+  },
+  {
+    "v30": {
+      "line": "130",
+      "statement": "double solve(double min, double max,  double fMin, double fMax)"
+    }
+  },
+  {
+    "v31": {
+      "line": "133",
+      "statement": "final double relativeAccuracy = getRelativeAccuracy()"
+    }
+  },
+  {
+    "v32": {
+      "line": "134",
+      "statement": "final double absoluteAccuracy = getAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v33": {
+      "line": "135",
+      "statement": "final double functionValueAccuracy = getFunctionValueAccuracy()"
+    }
+  },
+  {
+    "v34": {
+      "line": "142",
+      "statement": "double x0 = min"
+    }
+  },
+  {
+    "v35": {
+      "line": "143",
+      "statement": "double y0 = fMin"
+    }
+  },
+  {
+    "v36": {
+      "line": "144",
+      "statement": "double x2 = max"
+    }
+  },
+  {
+    "v37": {
+      "line": "145",
+      "statement": "double y2 = fMax"
+    }
+  },
+  {
+    "v38": {
+      "line": "146",
+      "statement": "double x1 = 0.5 * (x0 + x2)"
+    }
+  },
+  {
+    "v39": {
+      "line": "147",
+      "statement": "double y1 = computeObjectiveValue(x1)"
+    }
+  },
+  {
+    "v40": {
+      "line": "149",
+      "statement": "double oldx = Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v41": {
+      "line": "150",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v43": {
+      "line": "155",
+      "statement": "final double d01 = (y1 - y0) / (x1 - x0)"
+    }
+  },
+  {
+    "v44": {
+      "line": "156",
+      "statement": "final double d12 = (y2 - y1) / (x2 - x1)"
+    }
+  },
+  {
+    "v45": {
+      "line": "157",
+      "statement": "final double d012 = (d12 - d01) / (x2 - x0)"
+    }
+  },
+  {
+    "v46": {
+      "line": "158",
+      "statement": "final double c1 = d01 + (x1 - x0) * d012"
+    }
+  },
+  {
+    "v47": {
+      "line": "159",
+      "statement": "final double delta = c1 * c1 - 4 * y1 * d012"
+    }
+  },
+  {
+    "v48": {
+      "line": "160",
+      "statement": "final double xplus = x1 + (-2.0 * y1) / (c1 + FastMath.sqrt(delta))"
+    }
+  },
+  {
+    "v49": {
+      "line": "161",
+      "statement": "final double xminus = x1 + (-2.0 * y1) / (c1 - FastMath.sqrt(delta))"
+    }
+  },
+  {
+    "v50": {
+      "line": "164",
+      "statement": "final double x = isSequence(x0, xplus, x2) ? xplus"
+    }
+  },
+  {
+    "v51": {
+      "line": "165",
+      "statement": "final double y = computeObjectiveValue(x)"
+    }
+  },
+  {
+    "v52": {
+      "line": "168",
+      "statement": "final double tolerance = FastMath.max(relativeAccuracy * FastMath.abs(x), absoluteAccuracy)"
+    }
+  },
+  {
+    "v53": {
+      "line": "169",
+      "statement": "if (FastMath.abs(x - oldx) <= tolerance || FastMath.abs(y) <= functionValueAccuracy)"
+    }
+  },
+  {
+    "v54": {
+      "line": "171",
+      "statement": "return x"
+    }
+  },
+  {
+    "v55": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v56": {
+      "line": "178",
+      "statement": "boolean bisect = (x < x1 && (x1 - x0) > 0.95 * (x2 - x0)) ||  (x > x1 && (x2 - x1) > 0.95 * (x2 - x0)) ||  (x == x1)"
+    }
+  },
+  {
+    "v57": {
+      "line": "182",
+      "statement": "if (!bisect)"
+    }
+  },
+  {
+    "v58": {
+      "line": "183",
+      "statement": "x0 = x < x1 ? x0"
+    }
+  },
+  {
+    "v59": {
+      "line": "184",
+      "statement": "y0 = x < x1 ? y0"
+    }
+  },
+  {
+    "v60": {
+      "line": "185",
+      "statement": "x2 = x > x1 ? x2"
+    }
+  },
+  {
+    "v61": {
+      "line": "186",
+      "statement": "y2 = x > x1 ? y2"
+    }
+  },
+  {
+    "v62": {
+      "line": "187",
+      "statement": "x1 = x"
+    }
+  },
+  {
+    "v63": {
+      "line": "187",
+      "statement": "y1 = y"
+    }
+  },
+  {
+    "v64": {
+      "line": "188",
+      "statement": "oldx = x"
+    }
+  },
+  {
+    "v65": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v66": {
+      "line": "190",
+      "statement": "double xm = 0.5 * (x0 + x2)"
+    }
+  },
+  {
+    "v67": {
+      "line": "191",
+      "statement": "double ym = computeObjectiveValue(xm)"
+    }
+  },
+  {
+    "v68": {
+      "line": "192",
+      "statement": "if (FastMath.signum(y0) + FastMath.signum(ym) == 0.0)"
+    }
+  },
+  {
+    "v69": {
+      "line": "193",
+      "statement": "x2 = xm"
+    }
+  },
+  {
+    "v70": {
+      "line": "193",
+      "statement": "y2 = ym"
+    }
+  },
+  {
+    "v71": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v72": {
+      "line": "195",
+      "statement": "x0 = xm"
+    }
+  },
+  {
+    "v73": {
+      "line": "195",
+      "statement": "y0 = ym"
+    }
+  },
+  {
+    "v74": {
+      "line": "197",
+      "statement": "x1 = 0.5 * (x0 + x2)"
+    }
+  },
+  {
+    "v75": {
+      "line": "198",
+      "statement": "y1 = computeObjectiveValue(x1)"
+    }
+  },
+  {
+    "v76": {
+      "line": "199",
+      "statement": "oldx = Double.POSITIVE_INFINITY"
+    }
+  }
+]

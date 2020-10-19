@@ -1,0 +1,45 @@
+1:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@<init>(double[],double[]):53:points.length != weights.length |==> points.length < weights.length
+2:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@<init>(double[],double[]):53:points.length != weights.length |==> points.length > weights.length
+3:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@<init>(double[],double[]):53:points.length != weights.length |==> true
+4:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@<init>(double[],double[]):58:true |==> false
+5:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@<init>(double[],double[]):58:true |==> false
+6:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@<init>(double[],double[]):58:MathArrays.checkOrder(points, MathArrays.OrderDirection.INCREASING, true, true) |==> <NO-OP>
+7:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@<init>(double[],double[]):60:points.clone() |==> null
+8:EVR:<METHOD_INVOCATION(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@<init>(double[],double[]):61:weights.clone() |==> null
+9:LVR:0:POS:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):90:0 |==> 1
+10:LVR:0:NEG:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):90:0 |==> -1
+11:LVR:0:POS:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):91:0 |==> 1
+12:LVR:0:NEG:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):91:0 |==> -1
+13:LVR:0:POS:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):92:0 |==> 1
+14:LVR:0:NEG:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):92:0 |==> -1
+15:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):92:i < points.length |==> i != points.length
+16:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):92:i < points.length |==> i <= points.length
+17:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):92:i < points.length |==> false
+18:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):93:points[i] |==> 0.0
+19:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):94:weights[i] |==> 0.0
+20:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):95:w * f.value(x) |==> w % f.value(x)
+21:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):95:w * f.value(x) |==> w + f.value(x)
+22:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):95:w * f.value(x) |==> w - f.value(x)
+23:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):95:w * f.value(x) |==> w / f.value(x)
+24:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):95:w * f.value(x) - c |==> w * f.value(x) % c
+25:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):95:w * f.value(x) - c |==> w * f.value(x) * c
+26:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):95:w * f.value(x) - c |==> w * f.value(x) + c
+27:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):95:w * f.value(x) - c |==> w * f.value(x) / c
+28:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):96:s + y |==> s % y
+29:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):96:s + y |==> s * y
+30:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):96:s + y |==> s - y
+31:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):96:s + y |==> s / y
+32:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):97:t - s |==> t % s
+33:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):97:t - s |==> t * s
+34:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):97:t - s |==> t + s
+35:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):97:t - s |==> t / s
+36:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):97:(t - s) - y |==> (t - s) % y
+37:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):97:(t - s) - y |==> (t - s) * y
+38:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):97:(t - s) - y |==> (t - s) + y
+39:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):97:(t - s) - y |==> (t - s) / y
+40:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):97:c = (t - s) - y |==> <NO-OP>
+41:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):98:s = t |==> <NO-OP>
+42:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@integrate(org.apache.commons.math3.analysis.UnivariateFunction):100:s |==> 0.0
+43:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@getNumberOfPoints():108:points.length |==> 0
+44:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@getPoint(int):118:points[index] |==> 0.0
+45:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator@getWeight(int):128:weights[index] |==> 0.0

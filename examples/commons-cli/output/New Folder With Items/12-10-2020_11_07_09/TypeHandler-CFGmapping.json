@@ -1,0 +1,494 @@
+[
+  {
+    "v1": {
+      "line": "47",
+      "statement": "Object createValue(final String str, final Object obj)"
+    }
+  },
+  {
+    "v2": {
+      "line": "49",
+      "statement": "return createValue(str, (Class<?>) obj)"
+    }
+  },
+  {
+    "v3": {
+      "line": "64",
+      "statement": "T createValue(final String str, final Class<T> clazz)"
+    }
+  },
+  {
+    "v4": {
+      "line": "66",
+      "statement": "if (PatternOptionBuilder.STRING_VALUE == clazz)"
+    }
+  },
+  {
+    "v5": {
+      "line": "68",
+      "statement": "return (T) str"
+    }
+  },
+  {
+    "v6": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v7": {
+      "line": "70",
+      "statement": "if (PatternOptionBuilder.OBJECT_VALUE == clazz)"
+    }
+  },
+  {
+    "v8": {
+      "line": "72",
+      "statement": "return (T) createObject(str)"
+    }
+  },
+  {
+    "v9": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v10": {
+      "line": "74",
+      "statement": "if (PatternOptionBuilder.NUMBER_VALUE == clazz)"
+    }
+  },
+  {
+    "v11": {
+      "line": "76",
+      "statement": "return (T) createNumber(str)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v13": {
+      "line": "78",
+      "statement": "if (PatternOptionBuilder.DATE_VALUE == clazz)"
+    }
+  },
+  {
+    "v14": {
+      "line": "80",
+      "statement": "return (T) createDate(str)"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "82",
+      "statement": "if (PatternOptionBuilder.CLASS_VALUE == clazz)"
+    }
+  },
+  {
+    "v17": {
+      "line": "84",
+      "statement": "return (T) createClass(str)"
+    }
+  },
+  {
+    "v18": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v19": {
+      "line": "86",
+      "statement": "if (PatternOptionBuilder.FILE_VALUE == clazz)"
+    }
+  },
+  {
+    "v20": {
+      "line": "88",
+      "statement": "return (T) createFile(str)"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "90",
+      "statement": "if (PatternOptionBuilder.EXISTING_FILE_VALUE == clazz)"
+    }
+  },
+  {
+    "v23": {
+      "line": "92",
+      "statement": "return (T) openFile(str)"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "94",
+      "statement": "if (PatternOptionBuilder.FILES_VALUE == clazz)"
+    }
+  },
+  {
+    "v26": {
+      "line": "96",
+      "statement": "return (T) createFiles(str)"
+    }
+  },
+  {
+    "v27": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v28": {
+      "line": "98",
+      "statement": "if (PatternOptionBuilder.URL_VALUE == clazz)"
+    }
+  },
+  {
+    "v29": {
+      "line": "100",
+      "statement": "return (T) createURL(str)"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v31": {
+      "line": "104",
+      "statement": "throw new ParseException('Unable to handle the class"
+    }
+  },
+  {
+    "v32": {
+      "line": "115",
+      "statement": "Object createObject(final String classname)"
+    }
+  },
+  {
+    "v33": {
+      "line": "117",
+      "statement": "Class<?> cl"
+    }
+  },
+  {
+    "v34": {
+      "line": "119",
+      "statement": "try"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v36": {
+      "line": "121",
+      "statement": "cl = Class.forName(classname)"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v38": {
+      "line": "123",
+      "statement": "catch (ClassNotFoundException cnfe)"
+    }
+  },
+  {
+    "v39": {
+      "line": "125",
+      "statement": "throw new ParseException('Unable to find the class"
+    }
+  },
+  {
+    "v40": {
+      "line": "128",
+      "statement": "try"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v42": {
+      "line": "130",
+      "statement": "return cl.newInstance()"
+    }
+  },
+  {
+    "v43": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v44": {
+      "line": "132",
+      "statement": "catch (Exception e)"
+    }
+  },
+  {
+    "v45": {
+      "line": "134",
+      "statement": "throw new ParseException(e.getClass().getName() + '; Unable to create an instance of"
+    }
+  },
+  {
+    "v46": {
+      "line": "146",
+      "statement": "Number createNumber(final String str)"
+    }
+  },
+  {
+    "v47": {
+      "line": "148",
+      "statement": "try"
+    }
+  },
+  {
+    "v48": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v49": {
+      "line": "150",
+      "statement": "if (str.indexOf('.') != -1)"
+    }
+  },
+  {
+    "v50": {
+      "line": "152",
+      "statement": "return Double.valueOf(str)"
+    }
+  },
+  {
+    "v51": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v52": {
+      "line": "154",
+      "statement": "return Long.valueOf(str)"
+    }
+  },
+  {
+    "v53": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v54": {
+      "line": "156",
+      "statement": "catch (NumberFormatException e)"
+    }
+  },
+  {
+    "v55": {
+      "line": "158",
+      "statement": "throw new ParseException(e.getMessage())"
+    }
+  },
+  {
+    "v56": {
+      "line": "169",
+      "statement": "Class<?> createClass(final String classname)"
+    }
+  },
+  {
+    "v57": {
+      "line": "171",
+      "statement": "try"
+    }
+  },
+  {
+    "v58": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v59": {
+      "line": "173",
+      "statement": "return Class.forName(classname)"
+    }
+  },
+  {
+    "v60": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v61": {
+      "line": "175",
+      "statement": "catch (ClassNotFoundException e)"
+    }
+  },
+  {
+    "v62": {
+      "line": "177",
+      "statement": "throw new ParseException('Unable to find the class"
+    }
+  },
+  {
+    "v63": {
+      "line": "192",
+      "statement": "Date createDate(final String str)"
+    }
+  },
+  {
+    "v64": {
+      "line": "194",
+      "statement": "throw new UnsupportedOperationException('Not yet implemented')"
+    }
+  },
+  {
+    "v65": {
+      "line": "204",
+      "statement": "URL createURL(final String str)"
+    }
+  },
+  {
+    "v66": {
+      "line": "206",
+      "statement": "try"
+    }
+  },
+  {
+    "v67": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v68": {
+      "line": "208",
+      "statement": "return new URL(str)"
+    }
+  },
+  {
+    "v69": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v70": {
+      "line": "210",
+      "statement": "catch (MalformedURLException e)"
+    }
+  },
+  {
+    "v71": {
+      "line": "212",
+      "statement": "throw new ParseException('Unable to parse the URL"
+    }
+  },
+  {
+    "v72": {
+      "line": "222",
+      "statement": "File createFile(final String str)"
+    }
+  },
+  {
+    "v73": {
+      "line": "224",
+      "statement": "return new File(str)"
+    }
+  },
+  {
+    "v74": {
+      "line": "234",
+      "statement": "FileInputStream openFile(String str)"
+    }
+  },
+  {
+    "v75": {
+      "line": "236",
+      "statement": "try"
+    }
+  },
+  {
+    "v76": {
+      "line": 0,
+      "statement": "\"end-try"
+    }
+  },
+  {
+    "v77": {
+      "line": "238",
+      "statement": "return new FileInputStream(str)"
+    }
+  },
+  {
+    "v78": {
+      "line": 0,
+      "statement": "\"end-catch"
+    }
+  },
+  {
+    "v79": {
+      "line": "240",
+      "statement": "catch (FileNotFoundException e)"
+    }
+  },
+  {
+    "v80": {
+      "line": "242",
+      "statement": "throw new ParseException('Unable to find file"
+    }
+  },
+  {
+    "v81": {
+      "line": "256",
+      "statement": "File[] createFiles(final String str)"
+    }
+  },
+  {
+    "v82": {
+      "line": "260",
+      "statement": "throw new UnsupportedOperationException('Not yet implemented')"
+    }
+  }
+]

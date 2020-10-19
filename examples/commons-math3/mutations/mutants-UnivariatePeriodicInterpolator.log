@@ -1,0 +1,70 @@
+1:EVR:<IDENTIFIER(org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@<init>(org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator,double,int):61:interpolator |==> null
+2:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@<init>(org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator,double,int):62:period |==> 0.0
+3:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@<init>(org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator,double,int):63:extend |==> 0
+4:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):88:xval.length < extend |==> xval.length != extend
+5:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):88:xval.length < extend |==> xval.length <= extend
+6:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):88:xval.length < extend |==> false
+7:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):89:true |==> false
+8:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):92:MathArrays.checkOrder(xval) |==> <NO-OP>
+9:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):93:0 |==> 1
+10:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):93:0 |==> -1
+11:LVR:POS:0:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:2 |==> 0
+12:LVR:POS:NEG:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:2 |==> -2
+13:AOR:*(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:extend * 2 |==> extend % 2
+14:AOR:*(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:extend * 2 |==> extend + 2
+15:AOR:*(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:extend * 2 |==> extend - 2
+16:AOR:*(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:extend * 2 |==> extend / 2
+17:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:xval.length + extend * 2 |==> xval.length % (extend * 2)
+18:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:xval.length + extend * 2 |==> xval.length * (extend * 2)
+19:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:xval.length + extend * 2 |==> xval.length - extend * 2
+20:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):95:xval.length + extend * 2 |==> xval.length / (extend * 2)
+21:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):96:new double[len] |==> null
+22:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):97:new double[len] |==> null
+23:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):98:0 |==> 1
+24:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):98:0 |==> -1
+25:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):98:i < xval.length |==> i != xval.length
+26:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):98:i < xval.length |==> i <= xval.length
+27:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):98:i < xval.length |==> false
+28:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):99:i + extend |==> i % extend
+29:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):99:i + extend |==> i * extend
+30:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):99:i + extend |==> i - extend
+31:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):99:i + extend |==> i / extend
+32:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):100:x[index] = MathUtils.reduce(xval[i], period, offset) |==> <NO-OP>
+33:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):101:y[index] = yval[i] |==> <NO-OP>
+34:LVR:0:POS:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):105:0 |==> 1
+35:LVR:0:NEG:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):105:0 |==> -1
+36:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):105:i < extend |==> i != extend
+37:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):105:i < extend |==> i <= extend
+38:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):105:i < extend |==> false
+39:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):106:xval.length - extend |==> xval.length % extend
+40:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):106:xval.length - extend |==> xval.length * extend
+41:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):106:xval.length - extend |==> xval.length + extend
+42:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):106:xval.length - extend |==> xval.length / extend
+43:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):106:xval.length - extend + i |==> (xval.length - extend) % i
+44:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):106:xval.length - extend + i |==> (xval.length - extend) * i
+45:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):106:xval.length - extend + i |==> xval.length - extend - i
+46:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):106:xval.length - extend + i |==> (xval.length - extend) / i
+47:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):107:MathUtils.reduce(xval[index], period, offset) - period |==> MathUtils.reduce(xval[index], period, offset) % period
+48:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):107:MathUtils.reduce(xval[index], period, offset) - period |==> MathUtils.reduce(xval[index], period, offset) * period
+49:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):107:MathUtils.reduce(xval[index], period, offset) - period |==> MathUtils.reduce(xval[index], period, offset) + period
+50:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):107:MathUtils.reduce(xval[index], period, offset) - period |==> MathUtils.reduce(xval[index], period, offset) / period
+51:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):107:x[i] = MathUtils.reduce(xval[index], period, offset) - period |==> <NO-OP>
+52:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):108:y[i] = yval[index] |==> <NO-OP>
+53:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):110:len - extend |==> len % extend
+54:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):110:len - extend |==> len * extend
+55:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):110:len - extend |==> len + extend
+56:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):110:len - extend |==> len / extend
+57:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):110:len - extend + i |==> (len - extend) % i
+58:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):110:len - extend + i |==> (len - extend) * i
+59:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):110:len - extend + i |==> len - extend - i
+60:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):110:len - extend + i |==> (len - extend) / i
+61:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):110:index = len - extend + i |==> <NO-OP>
+62:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):111:MathUtils.reduce(xval[i], period, offset) + period |==> MathUtils.reduce(xval[i], period, offset) % period
+63:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):111:MathUtils.reduce(xval[i], period, offset) + period |==> MathUtils.reduce(xval[i], period, offset) * period
+64:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):111:MathUtils.reduce(xval[i], period, offset) + period |==> MathUtils.reduce(xval[i], period, offset) - period
+65:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):111:MathUtils.reduce(xval[i], period, offset) + period |==> MathUtils.reduce(xval[i], period, offset) / period
+66:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):111:x[index] = MathUtils.reduce(xval[i], period, offset) + period |==> <NO-OP>
+67:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):112:y[index] = yval[i] |==> <NO-OP>
+68:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):115:MathArrays.sortInPlace(x, y) |==> <NO-OP>
+69:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.UnivariateFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator@interpolate(double[],double[]):117:interpolator.interpolate(x, y) |==> null
+70:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator$1@value(double):120:f.value(MathUtils.reduce(x, period, offset)) |==> 0.0

@@ -1,0 +1,61 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "219",
+      "207",
+      "228",
+      "214",
+      "216",
+      "205",
+      "210",
+      "227",
+      "212",
+      "224"
+    ],
+    "sourceClass": "DefaultParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR34",
+      "TR37",
+      "TR46",
+      "TR48"
+    ],
+    "deletedRequirementYesTest": [
+      "TR35",
+      "TR43",
+      "TR38",
+      "TR40",
+      "TR47",
+      "TR41",
+      "TR45",
+      "TR42",
+      "TR44",
+      "TR39",
+      "TR36"
+    ],
+    "affectedTest": [
+      "testPropertyOptionFlags",
+      "testPropertyOptionGroup",
+      "testPropertyOptionRequired",
+      "testPropertyOptionMultipleValues",
+      "testPropertyOptionSingularValue"
+    ],
+    "testReran": [
+      "testPropertyOptionFlags",
+      "testPropertyOptionRequired",
+      "testPropertyOptionMultipleValues",
+      "testPropertyOptionSingularValue",
+      "testPropertyOptionGroup"
+    ],
+    "unsatisfiedRequirement": [
+      "TR46",
+      "TR44",
+      "TR48",
+      "TR37"
+    ],
+    "newTestRequirement": [
+      "TR40"
+    ]
+  }
+}

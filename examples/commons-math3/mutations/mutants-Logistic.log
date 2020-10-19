@@ -1,0 +1,184 @@
+1:LVR:0:POS:org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):72:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):72:0 |==> -1
+3:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):72:n <= 0 |==> n < 0
+4:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):72:n <= 0 |==> n == 0
+5:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):72:n <= 0 |==> true
+6:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):76:k |==> 0.0
+7:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):77:m |==> 0.0
+8:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):78:b |==> 0.0
+9:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):79:q |==> 0.0
+10:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):80:a |==> 0.0
+11:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):81:1 |==> 0
+12:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):81:1 |==> -1
+13:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):81:1 / n |==> 1 % n
+14:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):81:1 / n |==> 1 * n
+15:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):81:1 / n |==> 1 + n
+16:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic@<init>(double,double,double,double,double,double):81:1 / n |==> 1 - n
+17:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double):86:m - x |==> m % x
+18:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double):86:m - x |==> m * x
+19:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double):86:m - x |==> m + x
+20:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double):86:m - x |==> m / x
+21:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.UnivariateFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logistic@derivative():94:FunctionUtils.toDifferentiableUnivariateFunction(this).derivative() |==> null
+22:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):127:validateParameters(param) |==> <NO-OP>
+23:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):128:1 |==> 0
+24:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):128:1 |==> -1
+25:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):128:param[1] - x |==> param[1] % x
+26:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):128:param[1] - x |==> param[1] * x
+27:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):128:param[1] - x |==> param[1] + x
+28:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):128:param[1] - x |==> param[1] / x
+29:LVR:0:POS:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):128:0 |==> 1
+30:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):128:0 |==> -1
+31:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):129:2 |==> 0
+32:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):129:2 |==> -2
+33:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):129:3 |==> 0
+34:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):129:3 |==> -3
+35:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:4 |==> 0
+36:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:4 |==> -4
+37:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:1 |==> 0
+38:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:1 |==> -1
+39:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:5 |==> 0
+40:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:5 |==> -5
+41:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:1 / param[5] |==> 1 % param[5]
+42:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:1 / param[5] |==> 1 * param[5]
+43:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:1 / param[5] |==> 1 + param[5]
+44:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@value(double,double[]):130:1 / param[5] |==> 1 - param[5]
+45:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):152:validateParameters(param) |==> <NO-OP>
+46:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):154:2 |==> 0
+47:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):154:2 |==> -2
+48:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):155:3 |==> 0
+49:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):155:3 |==> -3
+50:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):157:1 |==> 0
+51:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):157:1 |==> -1
+52:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):157:param[1] - x |==> param[1] % x
+53:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):157:param[1] - x |==> param[1] * x
+54:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):157:param[1] - x |==> param[1] + x
+55:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):157:param[1] - x |==> param[1] / x
+56:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):158:1 |==> 0
+57:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):158:1 |==> -1
+58:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):158:5 |==> 0
+59:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):158:5 |==> -5
+60:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):158:1 / param[5] |==> 1 % param[5]
+61:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):158:1 / param[5] |==> 1 * param[5]
+62:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):158:1 / param[5] |==> 1 + param[5]
+63:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):158:1 / param[5] |==> 1 - param[5]
+64:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):159:b * mMinusX |==> b % mMinusX
+65:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):159:b * mMinusX |==> b + mMinusX
+66:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):159:b * mMinusX |==> b - mMinusX
+67:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):159:b * mMinusX |==> b / mMinusX
+68:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):160:q * exp |==> q % exp
+69:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):160:q * exp |==> q + exp
+70:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):160:q * exp |==> q - exp
+71:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):160:q * exp |==> q / exp
+72:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):161:1 |==> 0
+73:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):161:1 |==> -1
+74:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):161:qExp + 1 |==> qExp % 1
+75:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):161:qExp + 1 |==> qExp * 1
+76:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):161:qExp + 1 |==> qExp - 1
+77:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):161:qExp + 1 |==> qExp / 1
+78:LVR:0:POS:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:0 |==> 1
+79:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:0 |==> -1
+80:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:4 |==> 0
+81:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:4 |==> -4
+82:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:param[0] - param[4] |==> param[0] % param[4]
+83:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:param[0] - param[4] |==> param[0] * param[4]
+84:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:param[0] - param[4] |==> param[0] + param[4]
+85:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:param[0] - param[4] |==> param[0] / param[4]
+86:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:(param[0] - param[4]) * oneOverN |==> (param[0] - param[4]) % oneOverN
+87:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:(param[0] - param[4]) * oneOverN |==> (param[0] - param[4]) + oneOverN
+88:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:(param[0] - param[4]) * oneOverN |==> (param[0] - param[4]) - oneOverN
+89:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:(param[0] - param[4]) * oneOverN |==> (param[0] - param[4]) / oneOverN
+90:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:(param[0] - param[4]) * oneOverN / FastMath.pow(qExp1, oneOverN) |==> (param[0] - param[4]) * oneOverN % FastMath.pow(qExp1, oneOverN)
+91:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:(param[0] - param[4]) * oneOverN / FastMath.pow(qExp1, oneOverN) |==> (param[0] - param[4]) * oneOverN * FastMath.pow(qExp1, oneOverN)
+92:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:(param[0] - param[4]) * oneOverN / FastMath.pow(qExp1, oneOverN) |==> (param[0] - param[4]) * oneOverN + FastMath.pow(qExp1, oneOverN)
+93:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):162:(param[0] - param[4]) * oneOverN / FastMath.pow(qExp1, oneOverN) |==> (param[0] - param[4]) * oneOverN - FastMath.pow(qExp1, oneOverN)
+94:ORU:-(double):+(double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):163:-factor1 |==> +factor1
+95:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):163:-factor1 / qExp1 |==> -factor1 % qExp1
+96:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):163:-factor1 / qExp1 |==> -factor1 * qExp1
+97:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):163:-factor1 / qExp1 |==> -factor1 + qExp1
+98:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):163:-factor1 / qExp1 |==> -factor1 - qExp1
+99:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):166:1 |==> 0
+100:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):166:1 |==> -1
+101:LVR:0:POS:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):166:0 |==> 1
+102:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):166:0 |==> -1
+103:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):167:factor2 * b |==> factor2 % b
+104:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):167:factor2 * b |==> factor2 + b
+105:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):167:factor2 * b |==> factor2 - b
+106:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):167:factor2 * b |==> factor2 / b
+107:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):167:factor2 * b * qExp |==> factor2 * b % qExp
+108:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):167:factor2 * b * qExp |==> factor2 * b + qExp
+109:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):167:factor2 * b * qExp |==> factor2 * b - qExp
+110:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):167:factor2 * b * qExp |==> factor2 * b / qExp
+111:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):168:factor2 * mMinusX |==> factor2 % mMinusX
+112:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):168:factor2 * mMinusX |==> factor2 + mMinusX
+113:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):168:factor2 * mMinusX |==> factor2 - mMinusX
+114:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):168:factor2 * mMinusX |==> factor2 / mMinusX
+115:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):168:factor2 * mMinusX * qExp |==> factor2 * mMinusX % qExp
+116:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):168:factor2 * mMinusX * qExp |==> factor2 * mMinusX + qExp
+117:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):168:factor2 * mMinusX * qExp |==> factor2 * mMinusX - qExp
+118:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):168:factor2 * mMinusX * qExp |==> factor2 * mMinusX / qExp
+119:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):169:factor2 * exp |==> factor2 % exp
+120:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):169:factor2 * exp |==> factor2 + exp
+121:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):169:factor2 * exp |==> factor2 - exp
+122:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):169:factor2 * exp |==> factor2 / exp
+123:LVR:0:POS:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):170:0 |==> 1
+124:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):170:0 |==> -1
+125:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):170:1 |==> 0
+126:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):170:1 |==> -1
+127:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):171:factor1 * Math.log(qExp1) |==> factor1 % Math.log(qExp1)
+128:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):171:factor1 * Math.log(qExp1) |==> factor1 + Math.log(qExp1)
+129:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):171:factor1 * Math.log(qExp1) |==> factor1 - Math.log(qExp1)
+130:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):171:factor1 * Math.log(qExp1) |==> factor1 / Math.log(qExp1)
+131:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):171:factor1 * Math.log(qExp1) * oneOverN |==> factor1 * Math.log(qExp1) % oneOverN
+132:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):171:factor1 * Math.log(qExp1) * oneOverN |==> factor1 * Math.log(qExp1) + oneOverN
+133:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):171:factor1 * Math.log(qExp1) * oneOverN |==> factor1 * Math.log(qExp1) - oneOverN
+134:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):171:factor1 * Math.log(qExp1) * oneOverN |==> factor1 * Math.log(qExp1) / oneOverN
+135:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.function.Logistic$Parametric@gradient(double,double[]):173:new double[]{gk, gm, gb, gq, ga, gn} |==> null
+136:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):192:param == null |==> false
+137:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):195:6 |==> 0
+138:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):195:6 |==> -6
+139:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):195:param.length != 6 |==> param.length < 6
+140:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):195:param.length != 6 |==> param.length > 6
+141:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):195:param.length != 6 |==> true
+142:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):196:6 |==> 0
+143:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):196:6 |==> -6
+144:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):198:5 |==> 0
+145:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):198:5 |==> -5
+146:LVR:0:POS:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):198:0 |==> 1
+147:LVR:0:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):198:0 |==> -1
+148:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):198:param[5] <= 0 |==> param[5] < 0
+149:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):198:param[5] <= 0 |==> param[5] == 0
+150:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):198:param[5] <= 0 |==> true
+151:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):199:5 |==> 0
+152:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic$Parametric@validateParameters(double[]):199:5 |==> -5
+153:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:k - a |==> k % a
+154:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:k - a |==> k * a
+155:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:k - a |==> k + a
+156:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:k - a |==> k / a
+157:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:1 |==> 0
+158:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:1 |==> -1
+159:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:b * mMinusX |==> b % mMinusX
+160:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:b * mMinusX |==> b + mMinusX
+161:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:b * mMinusX |==> b - mMinusX
+162:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:b * mMinusX |==> b / mMinusX
+163:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:q * FastMath.exp(b * mMinusX) |==> q % FastMath.exp(b * mMinusX)
+164:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:q * FastMath.exp(b * mMinusX) |==> q + FastMath.exp(b * mMinusX)
+165:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:q * FastMath.exp(b * mMinusX) |==> q - FastMath.exp(b * mMinusX)
+166:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:q * FastMath.exp(b * mMinusX) |==> q / FastMath.exp(b * mMinusX)
+167:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:1 + q * FastMath.exp(b * mMinusX) |==> 1 % (q * FastMath.exp(b * mMinusX))
+168:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:1 + q * FastMath.exp(b * mMinusX) |==> 1 * (q * FastMath.exp(b * mMinusX))
+169:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:1 + q * FastMath.exp(b * mMinusX) |==> 1 - q * FastMath.exp(b * mMinusX)
+170:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:1 + q * FastMath.exp(b * mMinusX) |==> 1 / (q * FastMath.exp(b * mMinusX))
+171:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:(k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN) |==> (k - a) % FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN)
+172:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:(k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN) |==> (k - a) * FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN)
+173:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:(k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN) |==> (k - a) + FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN)
+174:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:(k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN) |==> (k - a) - FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN)
+175:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:a + (k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN) |==> a % ((k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN))
+176:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:a + (k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN) |==> a * ((k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN))
+177:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:a + (k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN) |==> a - (k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN)
+178:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic@value(double,double,double,double,double,double):219:a + (k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN) |==> a / ((k - a) / FastMath.pow(1 + q * FastMath.exp(b * mMinusX), oneOverN))
+179:LVR:POS:0:org.apache.commons.math3.analysis.function.Logistic@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):226:1 |==> 0
+180:LVR:POS:NEG:org.apache.commons.math3.analysis.function.Logistic@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):226:1 |==> -1
+181:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.function.Logistic@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):226:k - a |==> k % a
+182:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.function.Logistic@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):226:k - a |==> k * a
+183:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.function.Logistic@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):226:k - a |==> k + a
+184:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.function.Logistic@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):226:k - a |==> k / a

@@ -1,0 +1,3 @@
+1:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sqrt@value(double):36:FastMath.sqrt(x) |==> 0.0
+2:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.UnivariateFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sqrt@derivative():44:FunctionUtils.toDifferentiableUnivariateFunction(this).derivative() |==> null
+3:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.function.Sqrt@value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure):51:t.sqrt() |==> null

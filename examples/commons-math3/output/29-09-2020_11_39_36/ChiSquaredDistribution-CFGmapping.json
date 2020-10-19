@@ -1,0 +1,194 @@
+[
+  {
+    "v1": {
+      "line": "47",
+      "statement": "ChiSquaredDistribution (double degreesOfFreedom)"
+    }
+  },
+  {
+    "v2": {
+      "line": "48",
+      "statement": "this(degreesOfFreedom, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "61",
+      "statement": "ChiSquaredDistribution (double degreesOfFreedom, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "63",
+      "statement": "this(new Well19937c(), degreesOfFreedom, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "73",
+      "statement": "ChiSquaredDistribution (RandomGenerator rng, double degreesOfFreedom)"
+    }
+  },
+  {
+    "v6": {
+      "line": "74",
+      "statement": "this(rng, degreesOfFreedom, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v7": {
+      "line": "88",
+      "statement": "ChiSquaredDistribution (RandomGenerator rng, double degreesOfFreedom, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "91",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v9": {
+      "line": "93",
+      "statement": "gamma = new GammaDistribution(degreesOfFreedom / 2, 2)"
+    }
+  },
+  {
+    "v10": {
+      "line": "94",
+      "statement": "solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v11": {
+      "line": "102",
+      "statement": "double getDegreesOfFreedom()"
+    }
+  },
+  {
+    "v12": {
+      "line": "103",
+      "statement": "return gamma.getShape() * 2.0"
+    }
+  },
+  {
+    "v13": {
+      "line": "107",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v14": {
+      "line": "108",
+      "statement": "return gamma.density(x)"
+    }
+  },
+  {
+    "v15": {
+      "line": "112",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v16": {
+      "line": "113",
+      "statement": "return gamma.cumulativeProbability(x)"
+    }
+  },
+  {
+    "v17": {
+      "line": "118",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v18": {
+      "line": "119",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v19": {
+      "line": "127",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v20": {
+      "line": "128",
+      "statement": "return getDegreesOfFreedom()"
+    }
+  },
+  {
+    "v21": {
+      "line": "136",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v22": {
+      "line": "137",
+      "statement": "return 2 * getDegreesOfFreedom()"
+    }
+  },
+  {
+    "v23": {
+      "line": "148",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v24": {
+      "line": "149",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v25": {
+      "line": "160",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v26": {
+      "line": "161",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v27": {
+      "line": "165",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v28": {
+      "line": "166",
+      "statement": "return true"
+    }
+  },
+  {
+    "v29": {
+      "line": "170",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v30": {
+      "line": "171",
+      "statement": "return false"
+    }
+  },
+  {
+    "v31": {
+      "line": "181",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v32": {
+      "line": "182",
+      "statement": "return true"
+    }
+  }
+]

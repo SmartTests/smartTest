@@ -1,0 +1,137 @@
+1:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader:39:UNDEFINED |==> 0
+2:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@read():58:super.read() |==> 0
+3:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == CR |==> current <= CR
+4:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == CR |==> current >= CR
+5:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == CR |==> false
+6:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == LF |==> current <= LF
+7:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == LF |==> current >= LF
+8:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == LF |==> false
+9:ROR:!=(int,int):<(int,int):org.apache.commons.csv.ExtendedBufferedReader@read():59:lastChar != CR |==> lastChar < CR
+10:ROR:!=(int,int):>(int,int):org.apache.commons.csv.ExtendedBufferedReader@read():59:lastChar != CR |==> lastChar > CR
+11:ROR:!=(int,int):TRUE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read():59:lastChar != CR |==> true
+12:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == LF && lastChar != CR |==> current == LF == (lastChar != CR)
+13:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == LF && lastChar != CR |==> false
+14:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == LF && lastChar != CR |==> current == LF
+15:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == LF && lastChar != CR |==> lastChar != CR
+16:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == CR || current == LF && lastChar != CR |==> current == CR != (current == LF && lastChar != CR)
+17:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == CR || current == LF && lastChar != CR |==> current == CR
+18:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == CR || current == LF && lastChar != CR |==> current == LF && lastChar != CR
+19:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@read():59:current == CR || current == LF && lastChar != CR |==> true
+20:STD:<INC>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@read():60:eolCounter++ |==> <NO-OP>
+21:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@read():62:lastChar = current |==> <NO-OP>
+22:STD:<INC>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@read():63:this.position++ |==> <NO-OP>
+23:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@read():64:lastChar |==> 0
+24:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@getLastChar():76:lastChar |==> 0
+25:LVR:0:POS:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):81:0 |==> 1
+26:LVR:0:NEG:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):81:0 |==> -1
+27:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):81:length == 0 |==> length <= 0
+28:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):81:length == 0 |==> length >= 0
+29:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):81:length == 0 |==> false
+30:LVR:0:POS:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):82:0 |==> 1
+31:LVR:0:NEG:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):82:0 |==> -1
+32:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):82:return Config.__M_NO == 0 && Config.COVERED(30, 31) ? 0 : Config.__M_NO == 31 ? -1 : Config.__M_NO == 30 ? 1 : 0; |==> <NO-OP>
+33:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):85:super.read(buf, offset, length) |==> 0
+34:LVR:0:POS:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):87:0 |==> 1
+35:LVR:0:NEG:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):87:0 |==> -1
+36:ROR:>(int,int):!=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):87:len > 0 |==> len != 0
+37:ROR:>(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):87:len > 0 |==> len >= 0
+38:ROR:>(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):87:len > 0 |==> false
+39:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):89:offset |==> 0
+40:AOR:+(int,int):%(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):89:offset + len |==> offset % len
+41:AOR:+(int,int):*(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):89:offset + len |==> offset * len
+42:AOR:+(int,int):-(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):89:offset + len |==> offset - len
+43:AOR:+(int,int):/(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):89:offset + len |==> offset / len
+44:ROR:<(int,int):!=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):89:i < offset + len |==> i != offset + len
+45:ROR:<(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):89:i < offset + len |==> i <= offset + len
+46:ROR:<(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):89:i < offset + len |==> false
+47:EVR:<ARRAY_ACCESS(char)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):90:buf[i] |==> 0
+48:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):91:ch == LF |==> ch <= LF
+49:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):91:ch == LF |==> ch >= LF
+50:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):91:ch == LF |==> false
+51:LVR:0:POS:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:0 |==> 1
+52:LVR:0:NEG:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:0 |==> -1
+53:ROR:>(int,int):!=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:i > 0 |==> i != 0
+54:ROR:>(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:i > 0 |==> i >= 0
+55:ROR:>(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:i > 0 |==> false
+56:LVR:POS:0:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:1 |==> 0
+57:LVR:POS:NEG:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:1 |==> -1
+58:AOR:-(int,int):%(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:i - 1 |==> i % 1
+59:AOR:-(int,int):*(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:i - 1 |==> i * 1
+60:AOR:-(int,int):+(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:i - 1 |==> i + 1
+61:AOR:-(int,int):/(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:i - 1 |==> i / 1
+62:ROR:!=(int,int):<(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:CR != (i > 0 ? buf[i - 1] : lastChar) |==> CR < (i > 0 ? buf[i - 1] : lastChar)
+63:ROR:!=(int,int):>(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:CR != (i > 0 ? buf[i - 1] : lastChar) |==> CR > (i > 0 ? buf[i - 1] : lastChar)
+64:ROR:!=(int,int):TRUE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):92:CR != (i > 0 ? buf[i - 1] : lastChar) |==> true
+65:STD:<INC>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):93:eolCounter++ |==> <NO-OP>
+66:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):95:ch == CR |==> ch <= CR
+67:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):95:ch == CR |==> ch >= CR
+68:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):95:ch == CR |==> false
+69:STD:<INC>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):96:eolCounter++ |==> <NO-OP>
+70:AOR:+(int,int):%(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:offset + len |==> offset % len
+71:AOR:+(int,int):*(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:offset + len |==> offset * len
+72:AOR:+(int,int):-(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:offset + len |==> offset - len
+73:AOR:+(int,int):/(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:offset + len |==> offset / len
+74:LVR:POS:0:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:1 |==> 0
+75:LVR:POS:NEG:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:1 |==> -1
+76:AOR:-(int,int):%(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:offset + len - 1 |==> (offset + len) % 1
+77:AOR:-(int,int):*(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:offset + len - 1 |==> (offset + len) * 1
+78:AOR:-(int,int):+(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:offset + len - 1 |==> offset + len + 1
+79:AOR:-(int,int):/(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:offset + len - 1 |==> (offset + len) / 1
+80:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):100:lastChar = buf[offset + len - 1] |==> <NO-OP>
+81:LVR:NEG:0:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):102:-1 |==> 0
+82:LVR:NEG:POS:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):102:-1 |==> 1
+83:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):102:len == -1 |==> len <= -1
+84:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):102:len == -1 |==> len >= -1
+85:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):102:len == -1 |==> false
+86:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):103:lastChar = END_OF_STREAM |==> <NO-OP>
+87:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):106:position += len |==> <NO-OP>
+88:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@read(char[],int,int):107:len |==> 0
+89:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@readLine():122:super.readLine() |==> null
+90:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.csv.ExtendedBufferedReader@readLine():124:line != null |==> true
+91:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@readLine():125:lastChar = LF |==> <NO-OP>
+92:STD:<INC>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@readLine():126:eolCounter++ |==> <NO-OP>
+93:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@readLine():128:lastChar = END_OF_STREAM |==> <NO-OP>
+94:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@readLine():131:line |==> null
+95:LVR:POS:0:org.apache.commons.csv.ExtendedBufferedReader@lookAhead():144:1 |==> 0
+96:LVR:POS:NEG:org.apache.commons.csv.ExtendedBufferedReader@lookAhead():144:1 |==> -1
+97:STD:<CALL>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@lookAhead():144:super.mark(1) |==> <NO-OP>
+98:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@lookAhead():145:super.read() |==> 0
+99:STD:<CALL>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@lookAhead():146:super.reset() |==> <NO-OP>
+100:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@lookAhead():148:c |==> 0
+101:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR |==> lastChar <= CR
+102:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR |==> lastChar >= CR
+103:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR |==> false
+104:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == LF |==> lastChar <= LF
+105:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == LF |==> lastChar >= LF
+106:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == LF |==> false
+107:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF |==> lastChar == CR != (lastChar == LF)
+108:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF |==> lastChar == CR
+109:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF |==> lastChar == LF
+110:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF |==> true
+111:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == UNDEFINED |==> lastChar <= UNDEFINED
+112:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == UNDEFINED |==> lastChar >= UNDEFINED
+113:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == UNDEFINED |==> false
+114:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF || lastChar == UNDEFINED |==> (lastChar == CR || lastChar == LF) != (lastChar == UNDEFINED)
+115:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF || lastChar == UNDEFINED |==> lastChar == CR || lastChar == LF
+116:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF || lastChar == UNDEFINED |==> lastChar == UNDEFINED
+117:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF || lastChar == UNDEFINED |==> true
+118:ROR:==(int,int):<=(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == END_OF_STREAM |==> lastChar <= END_OF_STREAM
+119:ROR:==(int,int):>=(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == END_OF_STREAM |==> lastChar >= END_OF_STREAM
+120:ROR:==(int,int):FALSE(int,int):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == END_OF_STREAM |==> false
+121:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF || lastChar == UNDEFINED || lastChar == END_OF_STREAM |==> (lastChar == CR || lastChar == LF || lastChar == UNDEFINED) != (lastChar == END_OF_STREAM)
+122:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF || lastChar == UNDEFINED || lastChar == END_OF_STREAM |==> lastChar == CR || lastChar == LF || lastChar == UNDEFINED
+123:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF || lastChar == UNDEFINED || lastChar == END_OF_STREAM |==> lastChar == END_OF_STREAM
+124:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():158:lastChar == CR || lastChar == LF || lastChar == UNDEFINED || lastChar == END_OF_STREAM |==> true
+125:STD:<RETURN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():159:return eolCounter; |==> <NO-OP>
+126:LVR:POS:0:org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():161:1 |==> 0
+127:LVR:POS:NEG:org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():161:1 |==> -1
+128:AOR:+(long,long):%(long,long):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():161:eolCounter + 1 |==> eolCounter % 1
+129:AOR:+(long,long):*(long,long):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():161:eolCounter + 1 |==> eolCounter * 1
+130:AOR:+(long,long):-(long,long):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():161:eolCounter + 1 |==> eolCounter - 1
+131:AOR:+(long,long):/(long,long):org.apache.commons.csv.ExtendedBufferedReader@getCurrentLineNumber():161:eolCounter + 1 |==> eolCounter / 1
+132:EVR:<MEMBER_SELECT(long)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@getPosition():170:this.position |==> 0L
+133:EVR:<IDENTIFIER(boolean)>:<DEFAULT>:org.apache.commons.csv.ExtendedBufferedReader@isClosed():174:closed |==> false
+134:LVR:TRUE:FALSE:org.apache.commons.csv.ExtendedBufferedReader@close():186:true |==> false
+135:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@close():186:closed = true |==> <NO-OP>
+136:STD:<ASSIGN>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@close():187:lastChar = END_OF_STREAM |==> <NO-OP>
+137:STD:<CALL>:<NO-OP>:org.apache.commons.csv.ExtendedBufferedReader@close():188:super.close() |==> <NO-OP>

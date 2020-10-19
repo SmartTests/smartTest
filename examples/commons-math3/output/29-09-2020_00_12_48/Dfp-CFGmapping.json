@@ -1,0 +1,9086 @@
+[
+  {
+    "v1": {
+      "line": "183",
+      "statement": "Dfp (final DfpField field)"
+    }
+  },
+  {
+    "v2": {
+      "line": "184",
+      "statement": "mant = new int[field.getRadixDigits()"
+    }
+  },
+  {
+    "v3": {
+      "line": "185",
+      "statement": "sign = 1"
+    }
+  },
+  {
+    "v4": {
+      "line": "186",
+      "statement": "exp = 0"
+    }
+  },
+  {
+    "v5": {
+      "line": "187",
+      "statement": "nans = FINITE"
+    }
+  },
+  {
+    "v6": {
+      "line": "188",
+      "statement": "this.field = field"
+    }
+  },
+  {
+    "v7": {
+      "line": "195",
+      "statement": "Dfp (final DfpField field, byte x)"
+    }
+  },
+  {
+    "v8": {
+      "line": "196",
+      "statement": "this(field, (long) x)"
+    }
+  },
+  {
+    "v9": {
+      "line": "203",
+      "statement": "Dfp (final DfpField field, int x)"
+    }
+  },
+  {
+    "v10": {
+      "line": "204",
+      "statement": "this(field, (long) x)"
+    }
+  },
+  {
+    "v11": {
+      "line": "211",
+      "statement": "Dfp (final DfpField field, long x)"
+    }
+  },
+  {
+    "v12": {
+      "line": "214",
+      "statement": "mant = new int[field.getRadixDigits()"
+    }
+  },
+  {
+    "v13": {
+      "line": "215",
+      "statement": "nans = FINITE"
+    }
+  },
+  {
+    "v14": {
+      "line": "216",
+      "statement": "this.field = field"
+    }
+  },
+  {
+    "v15": {
+      "line": "218",
+      "statement": "boolean isLongMin = false"
+    }
+  },
+  {
+    "v16": {
+      "line": "219",
+      "statement": "if (x == Long.MIN_VALUE)"
+    }
+  },
+  {
+    "v17": {
+      "line": "222",
+      "statement": "isLongMin = true"
+    }
+  },
+  {
+    "v18": {
+      "line": "223",
+      "statement": "++x"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "227",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v21": {
+      "line": "228",
+      "statement": "sign = -1"
+    }
+  },
+  {
+    "v22": {
+      "line": "229",
+      "statement": "x = -x"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v24": {
+      "line": "231",
+      "statement": "sign = 1"
+    }
+  },
+  {
+    "v25": {
+      "line": "234",
+      "statement": "exp = 0"
+    }
+  },
+  {
+    "v26": {
+      "line": "235",
+      "statement": "while (x != 0)"
+    }
+  },
+  {
+    "v27": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v28": {
+      "line": "236",
+      "statement": "System.arraycopy(mant, mant.length - exp, mant, mant.length - 1 - exp, exp)"
+    }
+  },
+  {
+    "v29": {
+      "line": "237",
+      "statement": "mant[mant.length - 1] = (int) (x % RADIX)"
+    }
+  },
+  {
+    "v30": {
+      "line": "238",
+      "statement": "x /= RADIX"
+    }
+  },
+  {
+    "v31": {
+      "line": "239",
+      "statement": "exp++"
+    }
+  },
+  {
+    "v32": {
+      "line": "242",
+      "statement": "if (isLongMin)"
+    }
+  },
+  {
+    "v33": {
+      "line": "245",
+      "statement": "for (  int i = 0 ; i < mant.length - 1 ;   i++)"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v37": {
+      "line": "246",
+      "statement": "if (mant[i] != 0)"
+    }
+  },
+  {
+    "v38": {
+      "line": "247",
+      "statement": "mant[i]++"
+    }
+  },
+  {
+    "v39": {
+      "line": "248",
+      "statement": "break"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v42": {
+      "line": "258",
+      "statement": "Dfp (final DfpField field, double x)"
+    }
+  },
+  {
+    "v43": {
+      "line": "261",
+      "statement": "mant = new int[field.getRadixDigits()"
+    }
+  },
+  {
+    "v44": {
+      "line": "262",
+      "statement": "sign = 1"
+    }
+  },
+  {
+    "v45": {
+      "line": "263",
+      "statement": "exp = 0"
+    }
+  },
+  {
+    "v46": {
+      "line": "264",
+      "statement": "nans = FINITE"
+    }
+  },
+  {
+    "v47": {
+      "line": "265",
+      "statement": "this.field = field"
+    }
+  },
+  {
+    "v48": {
+      "line": "267",
+      "statement": "long bits = Double.doubleToLongBits(x)"
+    }
+  },
+  {
+    "v49": {
+      "line": "268",
+      "statement": "long mantissa = bits & 0x000fffffffffffffL"
+    }
+  },
+  {
+    "v50": {
+      "line": "269",
+      "statement": "int exponent = (int) ((bits & 0x7ff0000000000000L) >> 52) - 1023"
+    }
+  },
+  {
+    "v51": {
+      "line": "271",
+      "statement": "if (exponent == -1023)"
+    }
+  },
+  {
+    "v52": {
+      "line": "273",
+      "statement": "if (x == 0)"
+    }
+  },
+  {
+    "v53": {
+      "line": "275",
+      "statement": "if ((bits & 0x8000000000000000L) != 0)"
+    }
+  },
+  {
+    "v54": {
+      "line": "276",
+      "statement": "sign = -1"
+    }
+  },
+  {
+    "v55": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v56": {
+      "line": "278",
+      "statement": "return"
+    }
+  },
+  {
+    "v57": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v58": {
+      "line": "281",
+      "statement": "exponent++"
+    }
+  },
+  {
+    "v59": {
+      "line": "284",
+      "statement": "while ( (mantissa & 0x0010000000000000L) == 0)"
+    }
+  },
+  {
+    "v60": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v61": {
+      "line": "285",
+      "statement": "exponent--"
+    }
+  },
+  {
+    "v62": {
+      "line": "286",
+      "statement": "mantissa <<= 1"
+    }
+  },
+  {
+    "v63": {
+      "line": "288",
+      "statement": "mantissa &= 0x000fffffffffffffL"
+    }
+  },
+  {
+    "v64": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v65": {
+      "line": "291",
+      "statement": "if (exponent == 1024)"
+    }
+  },
+  {
+    "v66": {
+      "line": "293",
+      "statement": "if (x != x)"
+    }
+  },
+  {
+    "v67": {
+      "line": "294",
+      "statement": "sign = (byte) 1"
+    }
+  },
+  {
+    "v68": {
+      "line": "295",
+      "statement": "nans = QNAN"
+    }
+  },
+  {
+    "v69": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v70": {
+      "line": "296",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v71": {
+      "line": "297",
+      "statement": "sign = (byte) -1"
+    }
+  },
+  {
+    "v72": {
+      "line": "298",
+      "statement": "nans = INFINITE"
+    }
+  },
+  {
+    "v73": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v74": {
+      "line": "300",
+      "statement": "sign = (byte) 1"
+    }
+  },
+  {
+    "v75": {
+      "line": "301",
+      "statement": "nans = INFINITE"
+    }
+  },
+  {
+    "v76": {
+      "line": "303",
+      "statement": "return"
+    }
+  },
+  {
+    "v77": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v78": {
+      "line": "306",
+      "statement": "Dfp xdfp = new Dfp(field, mantissa)"
+    }
+  },
+  {
+    "v79": {
+      "line": "307",
+      "statement": "xdfp = xdfp.divide(new Dfp(field, 4503599627370496l)).add(field.getOne())"
+    }
+  },
+  {
+    "v80": {
+      "line": "308",
+      "statement": "xdfp = xdfp.multiply(DfpMath.pow(field.getTwo(), exponent))"
+    }
+  },
+  {
+    "v81": {
+      "line": "310",
+      "statement": "if ((bits & 0x8000000000000000L) != 0)"
+    }
+  },
+  {
+    "v82": {
+      "line": "311",
+      "statement": "xdfp = xdfp.negate()"
+    }
+  },
+  {
+    "v83": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v84": {
+      "line": "314",
+      "statement": "System.arraycopy(xdfp.mant, 0, mant, 0, mant.length)"
+    }
+  },
+  {
+    "v85": {
+      "line": "315",
+      "statement": "sign = xdfp.sign"
+    }
+  },
+  {
+    "v86": {
+      "line": "316",
+      "statement": "exp  = xdfp.exp"
+    }
+  },
+  {
+    "v87": {
+      "line": "317",
+      "statement": "nans = xdfp.nans"
+    }
+  },
+  {
+    "v88": {
+      "line": "324",
+      "statement": "Dfp (final Dfp d)"
+    }
+  },
+  {
+    "v89": {
+      "line": "325",
+      "statement": "mant  = d.mant.clone()"
+    }
+  },
+  {
+    "v90": {
+      "line": "326",
+      "statement": "sign  = d.sign"
+    }
+  },
+  {
+    "v91": {
+      "line": "327",
+      "statement": "exp = d.exp"
+    }
+  },
+  {
+    "v92": {
+      "line": "328",
+      "statement": "nans  = d.nans"
+    }
+  },
+  {
+    "v93": {
+      "line": "329",
+      "statement": "field = d.field"
+    }
+  },
+  {
+    "v94": {
+      "line": "336",
+      "statement": "Dfp (final DfpField field, final String s)"
+    }
+  },
+  {
+    "v95": {
+      "line": "339",
+      "statement": "mant = new int[field.getRadixDigits()"
+    }
+  },
+  {
+    "v96": {
+      "line": "340",
+      "statement": "sign = 1"
+    }
+  },
+  {
+    "v97": {
+      "line": "341",
+      "statement": "exp = 0"
+    }
+  },
+  {
+    "v98": {
+      "line": "342",
+      "statement": "nans = FINITE"
+    }
+  },
+  {
+    "v99": {
+      "line": "343",
+      "statement": "this.field = field"
+    }
+  },
+  {
+    "v100": {
+      "line": "345",
+      "statement": "boolean decimalFound = false"
+    }
+  },
+  {
+    "v101": {
+      "line": "346",
+      "statement": "final int rsize = 4"
+    }
+  },
+  {
+    "v102": {
+      "line": "347",
+      "statement": "final int offset = 4"
+    }
+  },
+  {
+    "v103": {
+      "line": "348",
+      "statement": "final char[] striped = new char[getRadixDigits() * rsize + offset * 2"
+    }
+  },
+  {
+    "v104": {
+      "line": "351",
+      "statement": "if (s.equals(POS_INFINITY_STRING))"
+    }
+  },
+  {
+    "v105": {
+      "line": "352",
+      "statement": "sign = (byte) 1"
+    }
+  },
+  {
+    "v106": {
+      "line": "353",
+      "statement": "nans = INFINITE"
+    }
+  },
+  {
+    "v107": {
+      "line": "354",
+      "statement": "return"
+    }
+  },
+  {
+    "v108": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v109": {
+      "line": "357",
+      "statement": "if (s.equals(NEG_INFINITY_STRING))"
+    }
+  },
+  {
+    "v110": {
+      "line": "358",
+      "statement": "sign = (byte) -1"
+    }
+  },
+  {
+    "v111": {
+      "line": "359",
+      "statement": "nans = INFINITE"
+    }
+  },
+  {
+    "v112": {
+      "line": "360",
+      "statement": "return"
+    }
+  },
+  {
+    "v113": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v114": {
+      "line": "363",
+      "statement": "if (s.equals(NAN_STRING))"
+    }
+  },
+  {
+    "v115": {
+      "line": "364",
+      "statement": "sign = (byte) 1"
+    }
+  },
+  {
+    "v116": {
+      "line": "365",
+      "statement": "nans = QNAN"
+    }
+  },
+  {
+    "v117": {
+      "line": "366",
+      "statement": "return"
+    }
+  },
+  {
+    "v118": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v119": {
+      "line": "370",
+      "statement": "int p = s.indexOf('e')"
+    }
+  },
+  {
+    "v120": {
+      "line": "371",
+      "statement": "if (p == -1)"
+    }
+  },
+  {
+    "v121": {
+      "line": "372",
+      "statement": "p = s.indexOf('E')"
+    }
+  },
+  {
+    "v122": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v123": {
+      "line": "375",
+      "statement": "final String fpdecimal"
+    }
+  },
+  {
+    "v124": {
+      "line": "376",
+      "statement": "int sciexp = 0"
+    }
+  },
+  {
+    "v125": {
+      "line": "377",
+      "statement": "if (p != -1)"
+    }
+  },
+  {
+    "v126": {
+      "line": "379",
+      "statement": "fpdecimal = s.substring(0, p)"
+    }
+  },
+  {
+    "v127": {
+      "line": "380",
+      "statement": "String fpexp = s.substring(p+1)"
+    }
+  },
+  {
+    "v128": {
+      "line": "381",
+      "statement": "boolean negative = false"
+    }
+  },
+  {
+    "v129": {
+      "line": "383",
+      "statement": "for (  int i=0 ; i<fpexp.length(  int i=0 ;  ;   i++) ;   i++)"
+    }
+  },
+  {
+    "v132": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v133": {
+      "line": "385",
+      "statement": "if (fpexp.charAt(i) == '-')"
+    }
+  },
+  {
+    "v134": {
+      "line": "387",
+      "statement": "negative = true"
+    }
+  },
+  {
+    "v135": {
+      "line": "388",
+      "statement": "continue"
+    }
+  },
+  {
+    "v136": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v137": {
+      "line": "390",
+      "statement": "if (fpexp.charAt(i) >= '0' && fpexp.charAt(i) <= '9')"
+    }
+  },
+  {
+    "v138": {
+      "line": "391",
+      "statement": "sciexp = sciexp * 10 + fpexp.charAt(i) - '0'"
+    }
+  },
+  {
+    "v139": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v140": {
+      "line": "395",
+      "statement": "if (negative)"
+    }
+  },
+  {
+    "v141": {
+      "line": "396",
+      "statement": "sciexp = -sciexp"
+    }
+  },
+  {
+    "v142": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v143": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v144": {
+      "line": "400",
+      "statement": "fpdecimal = s"
+    }
+  },
+  {
+    "v145": {
+      "line": "404",
+      "statement": "if (fpdecimal.indexOf('-') !=  -1)"
+    }
+  },
+  {
+    "v146": {
+      "line": "405",
+      "statement": "sign = -1"
+    }
+  },
+  {
+    "v147": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v148": {
+      "line": "409",
+      "statement": "p = 0"
+    }
+  },
+  {
+    "v149": {
+      "line": "412",
+      "statement": "int decimalPos = 0"
+    }
+  },
+  {
+    "v151": {
+      "line": "413",
+      "statement": "for (   ;  ;  ;  ;    ; )"
+    }
+  },
+  {
+    "v152": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v153": {
+      "line": "414",
+      "statement": "if (fpdecimal.charAt(p) >= '1' && fpdecimal.charAt(p) <= '9')"
+    }
+  },
+  {
+    "v154": {
+      "line": "415",
+      "statement": "break"
+    }
+  },
+  {
+    "v155": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v156": {
+      "line": "418",
+      "statement": "if (decimalFound && fpdecimal.charAt(p) == '0')"
+    }
+  },
+  {
+    "v157": {
+      "line": "419",
+      "statement": "decimalPos--"
+    }
+  },
+  {
+    "v158": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v159": {
+      "line": "422",
+      "statement": "if (fpdecimal.charAt(p) == '.')"
+    }
+  },
+  {
+    "v160": {
+      "line": "423",
+      "statement": "decimalFound = true"
+    }
+  },
+  {
+    "v161": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v162": {
+      "line": "426",
+      "statement": "p++"
+    }
+  },
+  {
+    "v163": {
+      "line": "428",
+      "statement": "if (p == fpdecimal.length())"
+    }
+  },
+  {
+    "v164": {
+      "line": "429",
+      "statement": "break"
+    }
+  },
+  {
+    "v165": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v166": {
+      "line": "434",
+      "statement": "int q = offset"
+    }
+  },
+  {
+    "v167": {
+      "line": "435",
+      "statement": "striped[0] = '0'"
+    }
+  },
+  {
+    "v168": {
+      "line": "436",
+      "statement": "striped[1] = '0'"
+    }
+  },
+  {
+    "v169": {
+      "line": "437",
+      "statement": "striped[2] = '0'"
+    }
+  },
+  {
+    "v170": {
+      "line": "438",
+      "statement": "striped[3] = '0'"
+    }
+  },
+  {
+    "v171": {
+      "line": "439",
+      "statement": "int significantDigits=0"
+    }
+  },
+  {
+    "v173": {
+      "line": "440",
+      "statement": "for (   ;  ;  ;  ;    ; )"
+    }
+  },
+  {
+    "v174": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v175": {
+      "line": "441",
+      "statement": "if (p == (fpdecimal.length()))"
+    }
+  },
+  {
+    "v176": {
+      "line": "442",
+      "statement": "break"
+    }
+  },
+  {
+    "v177": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v178": {
+      "line": "446",
+      "statement": "if (q == mant.length*rsize+offset+1)"
+    }
+  },
+  {
+    "v179": {
+      "line": "447",
+      "statement": "break"
+    }
+  },
+  {
+    "v180": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v181": {
+      "line": "450",
+      "statement": "if (fpdecimal.charAt(p) == '.')"
+    }
+  },
+  {
+    "v182": {
+      "line": "451",
+      "statement": "decimalFound = true"
+    }
+  },
+  {
+    "v183": {
+      "line": "452",
+      "statement": "decimalPos = significantDigits"
+    }
+  },
+  {
+    "v184": {
+      "line": "453",
+      "statement": "p++"
+    }
+  },
+  {
+    "v185": {
+      "line": "454",
+      "statement": "continue"
+    }
+  },
+  {
+    "v186": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v187": {
+      "line": "457",
+      "statement": "if (fpdecimal.charAt(p) < '0' || fpdecimal.charAt(p) > '9')"
+    }
+  },
+  {
+    "v188": {
+      "line": "458",
+      "statement": "p++"
+    }
+  },
+  {
+    "v189": {
+      "line": "459",
+      "statement": "continue"
+    }
+  },
+  {
+    "v190": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v191": {
+      "line": "462",
+      "statement": "striped[q] = fpdecimal.charAt(p)"
+    }
+  },
+  {
+    "v192": {
+      "line": "463",
+      "statement": "q++"
+    }
+  },
+  {
+    "v193": {
+      "line": "464",
+      "statement": "p++"
+    }
+  },
+  {
+    "v194": {
+      "line": "465",
+      "statement": "significantDigits++"
+    }
+  },
+  {
+    "v195": {
+      "line": "470",
+      "statement": "if (decimalFound && q != offset)"
+    }
+  },
+  {
+    "v197": {
+      "line": "471",
+      "statement": "for (   ;  ;  ;  ;    ; )"
+    }
+  },
+  {
+    "v198": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v199": {
+      "line": "472",
+      "statement": "q--"
+    }
+  },
+  {
+    "v200": {
+      "line": "473",
+      "statement": "if (q == offset)"
+    }
+  },
+  {
+    "v201": {
+      "line": "474",
+      "statement": "break"
+    }
+  },
+  {
+    "v202": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v203": {
+      "line": "476",
+      "statement": "if (striped[q] == '0')"
+    }
+  },
+  {
+    "v204": {
+      "line": "477",
+      "statement": "significantDigits--"
+    }
+  },
+  {
+    "v205": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v206": {
+      "line": "479",
+      "statement": "break"
+    }
+  },
+  {
+    "v207": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v208": {
+      "line": "485",
+      "statement": "if (decimalFound && significantDigits == 0)"
+    }
+  },
+  {
+    "v209": {
+      "line": "486",
+      "statement": "decimalPos = 0"
+    }
+  },
+  {
+    "v210": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v211": {
+      "line": "490",
+      "statement": "if (!decimalFound)"
+    }
+  },
+  {
+    "v212": {
+      "line": "491",
+      "statement": "decimalPos = q-offset"
+    }
+  },
+  {
+    "v213": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v214": {
+      "line": "495",
+      "statement": "q = offset"
+    }
+  },
+  {
+    "v215": {
+      "line": "496",
+      "statement": "p = significantDigits-1+offset"
+    }
+  },
+  {
+    "v216": {
+      "line": "498",
+      "statement": "while (p > q)"
+    }
+  },
+  {
+    "v217": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v218": {
+      "line": "499",
+      "statement": "if (striped[p] != '0')"
+    }
+  },
+  {
+    "v219": {
+      "line": "500",
+      "statement": "break"
+    }
+  },
+  {
+    "v220": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v221": {
+      "line": "502",
+      "statement": "p--"
+    }
+  },
+  {
+    "v222": {
+      "line": "506",
+      "statement": "int i = ((rsize * 100) - decimalPos - sciexp % rsize) % rsize"
+    }
+  },
+  {
+    "v223": {
+      "line": "507",
+      "statement": "q -= i"
+    }
+  },
+  {
+    "v224": {
+      "line": "508",
+      "statement": "decimalPos += i"
+    }
+  },
+  {
+    "v225": {
+      "line": "511",
+      "statement": "while ((p - q) < (mant.length * rsize))"
+    }
+  },
+  {
+    "v226": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v227": {
+      "line": "512",
+      "statement": "for (  i = 0 ; i < rsize ;   i++)"
+    }
+  },
+  {
+    "v230": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v231": {
+      "line": "513",
+      "statement": "striped[++p] = '0'"
+    }
+  },
+  {
+    "v232": {
+      "line": "519",
+      "statement": "for (  i = mant.length - 1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v235": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v236": {
+      "line": "520",
+      "statement": "mant[i] = (striped[q] - '0') * 1000 + (striped[q+1] - '0') * 100  + (striped[q+2] - '0') * 10 + (striped[q+3] - '0')"
+    }
+  },
+  {
+    "v237": {
+      "line": "524",
+      "statement": "q += 4"
+    }
+  },
+  {
+    "v238": {
+      "line": "528",
+      "statement": "exp = (decimalPos+sciexp) / rsize"
+    }
+  },
+  {
+    "v239": {
+      "line": "530",
+      "statement": "if (q < striped.length)"
+    }
+  },
+  {
+    "v240": {
+      "line": "532",
+      "statement": "round((striped[q] - '0')*1000)"
+    }
+  },
+  {
+    "v241": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v242": {
+      "line": "543",
+      "statement": "Dfp (final DfpField field, final byte sign, final byte nans)"
+    }
+  },
+  {
+    "v243": {
+      "line": "544",
+      "statement": "this.field = field"
+    }
+  },
+  {
+    "v244": {
+      "line": "545",
+      "statement": "this.mant  = new int[field.getRadixDigits()"
+    }
+  },
+  {
+    "v245": {
+      "line": "546",
+      "statement": "this.sign  = sign"
+    }
+  },
+  {
+    "v246": {
+      "line": "547",
+      "statement": "this.exp = 0"
+    }
+  },
+  {
+    "v247": {
+      "line": "548",
+      "statement": "this.nans  = nans"
+    }
+  },
+  {
+    "v248": {
+      "line": "555",
+      "statement": "Dfp newInstance()"
+    }
+  },
+  {
+    "v249": {
+      "line": "556",
+      "statement": "return new Dfp(getField())"
+    }
+  },
+  {
+    "v250": {
+      "line": "563",
+      "statement": "Dfp newInstance(final byte x)"
+    }
+  },
+  {
+    "v251": {
+      "line": "564",
+      "statement": "return new Dfp(getField(), x)"
+    }
+  },
+  {
+    "v252": {
+      "line": "571",
+      "statement": "Dfp newInstance(final int x)"
+    }
+  },
+  {
+    "v253": {
+      "line": "572",
+      "statement": "return new Dfp(getField(), x)"
+    }
+  },
+  {
+    "v254": {
+      "line": "579",
+      "statement": "Dfp newInstance(final long x)"
+    }
+  },
+  {
+    "v255": {
+      "line": "580",
+      "statement": "return new Dfp(getField(), x)"
+    }
+  },
+  {
+    "v256": {
+      "line": "587",
+      "statement": "Dfp newInstance(final double x)"
+    }
+  },
+  {
+    "v257": {
+      "line": "588",
+      "statement": "return new Dfp(getField(), x)"
+    }
+  },
+  {
+    "v258": {
+      "line": "596",
+      "statement": "Dfp newInstance(final Dfp d)"
+    }
+  },
+  {
+    "v259": {
+      "line": "599",
+      "statement": "if (field.getRadixDigits() != d.field.getRadixDigits())"
+    }
+  },
+  {
+    "v260": {
+      "line": "600",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v261": {
+      "line": "601",
+      "statement": "final Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v262": {
+      "line": "602",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v263": {
+      "line": "603",
+      "statement": "return dotrap(DfpField.FLAG_INVALID, NEW_INSTANCE_TRAP, d, result)"
+    }
+  },
+  {
+    "v264": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v265": {
+      "line": "606",
+      "statement": "return new Dfp(d)"
+    }
+  },
+  {
+    "v266": {
+      "line": "615",
+      "statement": "Dfp newInstance(final String s)"
+    }
+  },
+  {
+    "v267": {
+      "line": "616",
+      "statement": "return new Dfp(field, s)"
+    }
+  },
+  {
+    "v268": {
+      "line": "625",
+      "statement": "Dfp newInstance(final byte sig, final byte code)"
+    }
+  },
+  {
+    "v269": {
+      "line": "626",
+      "statement": "return field.newDfp(sig, code)"
+    }
+  },
+  {
+    "v270": {
+      "line": "636",
+      "statement": "DfpField getField()"
+    }
+  },
+  {
+    "v271": {
+      "line": "637",
+      "statement": "return field"
+    }
+  },
+  {
+    "v272": {
+      "line": "643",
+      "statement": "int getRadixDigits()"
+    }
+  },
+  {
+    "v273": {
+      "line": "644",
+      "statement": "return field.getRadixDigits()"
+    }
+  },
+  {
+    "v274": {
+      "line": "650",
+      "statement": "Dfp getZero()"
+    }
+  },
+  {
+    "v275": {
+      "line": "651",
+      "statement": "return field.getZero()"
+    }
+  },
+  {
+    "v276": {
+      "line": "657",
+      "statement": "Dfp getOne()"
+    }
+  },
+  {
+    "v277": {
+      "line": "658",
+      "statement": "return field.getOne()"
+    }
+  },
+  {
+    "v278": {
+      "line": "664",
+      "statement": "Dfp getTwo()"
+    }
+  },
+  {
+    "v279": {
+      "line": "665",
+      "statement": "return field.getTwo()"
+    }
+  },
+  {
+    "v280": {
+      "line": "670",
+      "statement": "void shiftLeft()"
+    }
+  },
+  {
+    "v281": {
+      "line": "671",
+      "statement": "for (  int i = mant.length - 1 ; i > 0 ;   i--)"
+    }
+  },
+  {
+    "v284": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v285": {
+      "line": "672",
+      "statement": "mant[i] = mant[i-1"
+    }
+  },
+  {
+    "v286": {
+      "line": "674",
+      "statement": "mant[0] = 0"
+    }
+  },
+  {
+    "v287": {
+      "line": "675",
+      "statement": "exp--"
+    }
+  },
+  {
+    "v288": {
+      "line": "682",
+      "statement": "void shiftRight()"
+    }
+  },
+  {
+    "v289": {
+      "line": "683",
+      "statement": "for (  int i = 0 ; i < mant.length - 1 ;   i++)"
+    }
+  },
+  {
+    "v292": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v293": {
+      "line": "684",
+      "statement": "mant[i] = mant[i+1"
+    }
+  },
+  {
+    "v294": {
+      "line": "686",
+      "statement": "mant[mant.length - 1] = 0"
+    }
+  },
+  {
+    "v295": {
+      "line": "687",
+      "statement": "exp++"
+    }
+  },
+  {
+    "v296": {
+      "line": "698",
+      "statement": "int align(int e)"
+    }
+  },
+  {
+    "v297": {
+      "line": "699",
+      "statement": "int lostdigit = 0"
+    }
+  },
+  {
+    "v298": {
+      "line": "700",
+      "statement": "boolean inexact = false"
+    }
+  },
+  {
+    "v299": {
+      "line": "702",
+      "statement": "int diff = exp - e"
+    }
+  },
+  {
+    "v300": {
+      "line": "704",
+      "statement": "int adiff = diff"
+    }
+  },
+  {
+    "v301": {
+      "line": "705",
+      "statement": "if (adiff < 0)"
+    }
+  },
+  {
+    "v302": {
+      "line": "706",
+      "statement": "adiff = -adiff"
+    }
+  },
+  {
+    "v303": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v304": {
+      "line": "709",
+      "statement": "if (diff == 0)"
+    }
+  },
+  {
+    "v305": {
+      "line": "710",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v306": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v307": {
+      "line": "713",
+      "statement": "if (adiff > (mant.length + 1))"
+    }
+  },
+  {
+    "v308": {
+      "line": "715",
+      "statement": "Arrays.fill(mant, 0)"
+    }
+  },
+  {
+    "v309": {
+      "line": "716",
+      "statement": "exp = e"
+    }
+  },
+  {
+    "v310": {
+      "line": "718",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INEXACT)"
+    }
+  },
+  {
+    "v311": {
+      "line": "719",
+      "statement": "dotrap(DfpField.FLAG_INEXACT, ALIGN_TRAP, this, this)"
+    }
+  },
+  {
+    "v312": {
+      "line": "721",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v313": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v314": {
+      "line": "724",
+      "statement": "for (  int i = 0 ; i < adiff ;   i++)"
+    }
+  },
+  {
+    "v317": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v318": {
+      "line": "725",
+      "statement": "if (diff < 0)"
+    }
+  },
+  {
+    "v319": {
+      "line": "730",
+      "statement": "if (lostdigit != 0)"
+    }
+  },
+  {
+    "v320": {
+      "line": "731",
+      "statement": "inexact = true"
+    }
+  },
+  {
+    "v321": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v322": {
+      "line": "734",
+      "statement": "lostdigit = mant[0"
+    }
+  },
+  {
+    "v323": {
+      "line": "736",
+      "statement": "shiftRight()"
+    }
+  },
+  {
+    "v324": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v325": {
+      "line": "738",
+      "statement": "shiftLeft()"
+    }
+  },
+  {
+    "v326": {
+      "line": "742",
+      "statement": "if (inexact)"
+    }
+  },
+  {
+    "v327": {
+      "line": "743",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INEXACT)"
+    }
+  },
+  {
+    "v328": {
+      "line": "744",
+      "statement": "dotrap(DfpField.FLAG_INEXACT, ALIGN_TRAP, this, this)"
+    }
+  },
+  {
+    "v329": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v330": {
+      "line": "747",
+      "statement": "return lostdigit"
+    }
+  },
+  {
+    "v331": {
+      "line": "755",
+      "statement": "boolean lessThan(final Dfp x)"
+    }
+  },
+  {
+    "v332": {
+      "line": "758",
+      "statement": "if (field.getRadixDigits() != x.field.getRadixDigits())"
+    }
+  },
+  {
+    "v333": {
+      "line": "759",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v334": {
+      "line": "760",
+      "statement": "final Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v335": {
+      "line": "761",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v336": {
+      "line": "762",
+      "statement": "dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, x, result)"
+    }
+  },
+  {
+    "v337": {
+      "line": "763",
+      "statement": "return false"
+    }
+  },
+  {
+    "v338": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v339": {
+      "line": "767",
+      "statement": "if (isNaN() || x.isNaN())"
+    }
+  },
+  {
+    "v340": {
+      "line": "768",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v341": {
+      "line": "769",
+      "statement": "dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, x, newInstance(getZero()))"
+    }
+  },
+  {
+    "v342": {
+      "line": "770",
+      "statement": "return false"
+    }
+  },
+  {
+    "v343": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v344": {
+      "line": "773",
+      "statement": "return compare(this, x) < 0"
+    }
+  },
+  {
+    "v345": {
+      "line": "780",
+      "statement": "boolean greaterThan(final Dfp x)"
+    }
+  },
+  {
+    "v346": {
+      "line": "783",
+      "statement": "if (field.getRadixDigits() != x.field.getRadixDigits())"
+    }
+  },
+  {
+    "v347": {
+      "line": "784",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v348": {
+      "line": "785",
+      "statement": "final Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v349": {
+      "line": "786",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v350": {
+      "line": "787",
+      "statement": "dotrap(DfpField.FLAG_INVALID, GREATER_THAN_TRAP, x, result)"
+    }
+  },
+  {
+    "v351": {
+      "line": "788",
+      "statement": "return false"
+    }
+  },
+  {
+    "v352": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v353": {
+      "line": "792",
+      "statement": "if (isNaN() || x.isNaN())"
+    }
+  },
+  {
+    "v354": {
+      "line": "793",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v355": {
+      "line": "794",
+      "statement": "dotrap(DfpField.FLAG_INVALID, GREATER_THAN_TRAP, x, newInstance(getZero()))"
+    }
+  },
+  {
+    "v356": {
+      "line": "795",
+      "statement": "return false"
+    }
+  },
+  {
+    "v357": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v358": {
+      "line": "798",
+      "statement": "return compare(this, x) > 0"
+    }
+  },
+  {
+    "v359": {
+      "line": "804",
+      "statement": "boolean negativeOrNull()"
+    }
+  },
+  {
+    "v360": {
+      "line": "806",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v361": {
+      "line": "807",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v362": {
+      "line": "808",
+      "statement": "dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()))"
+    }
+  },
+  {
+    "v363": {
+      "line": "809",
+      "statement": "return false"
+    }
+  },
+  {
+    "v364": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v365": {
+      "line": "812",
+      "statement": "return (sign < 0) || ((mant[mant.length - 1] == 0) && !isInfinite())"
+    }
+  },
+  {
+    "v366": {
+      "line": "819",
+      "statement": "boolean strictlyNegative()"
+    }
+  },
+  {
+    "v367": {
+      "line": "821",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v368": {
+      "line": "822",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v369": {
+      "line": "823",
+      "statement": "dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()))"
+    }
+  },
+  {
+    "v370": {
+      "line": "824",
+      "statement": "return false"
+    }
+  },
+  {
+    "v371": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v372": {
+      "line": "827",
+      "statement": "return (sign < 0) && ((mant[mant.length - 1] != 0) || isInfinite())"
+    }
+  },
+  {
+    "v373": {
+      "line": "834",
+      "statement": "boolean positiveOrNull()"
+    }
+  },
+  {
+    "v374": {
+      "line": "836",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v375": {
+      "line": "837",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v376": {
+      "line": "838",
+      "statement": "dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()))"
+    }
+  },
+  {
+    "v377": {
+      "line": "839",
+      "statement": "return false"
+    }
+  },
+  {
+    "v378": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v379": {
+      "line": "842",
+      "statement": "return (sign > 0) || ((mant[mant.length - 1] == 0) && !isInfinite())"
+    }
+  },
+  {
+    "v380": {
+      "line": "849",
+      "statement": "boolean strictlyPositive()"
+    }
+  },
+  {
+    "v381": {
+      "line": "851",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v382": {
+      "line": "852",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v383": {
+      "line": "853",
+      "statement": "dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()))"
+    }
+  },
+  {
+    "v384": {
+      "line": "854",
+      "statement": "return false"
+    }
+  },
+  {
+    "v385": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v386": {
+      "line": "857",
+      "statement": "return (sign > 0) && ((mant[mant.length - 1] != 0) || isInfinite())"
+    }
+  },
+  {
+    "v387": {
+      "line": "865",
+      "statement": "Dfp abs()"
+    }
+  },
+  {
+    "v388": {
+      "line": "866",
+      "statement": "Dfp result = newInstance(this)"
+    }
+  },
+  {
+    "v389": {
+      "line": "867",
+      "statement": "result.sign = 1"
+    }
+  },
+  {
+    "v390": {
+      "line": "868",
+      "statement": "return result"
+    }
+  },
+  {
+    "v391": {
+      "line": "874",
+      "statement": "boolean isInfinite()"
+    }
+  },
+  {
+    "v392": {
+      "line": "875",
+      "statement": "return nans == INFINITE"
+    }
+  },
+  {
+    "v393": {
+      "line": "881",
+      "statement": "boolean isNaN()"
+    }
+  },
+  {
+    "v394": {
+      "line": "882",
+      "statement": "return (nans == QNAN) || (nans == SNAN)"
+    }
+  },
+  {
+    "v395": {
+      "line": "888",
+      "statement": "boolean isZero()"
+    }
+  },
+  {
+    "v396": {
+      "line": "890",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v397": {
+      "line": "891",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v398": {
+      "line": "892",
+      "statement": "dotrap(DfpField.FLAG_INVALID, LESS_THAN_TRAP, this, newInstance(getZero()))"
+    }
+  },
+  {
+    "v399": {
+      "line": "893",
+      "statement": "return false"
+    }
+  },
+  {
+    "v400": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v401": {
+      "line": "896",
+      "statement": "return (mant[mant.length - 1] == 0) && !isInfinite()"
+    }
+  },
+  {
+    "v402": {
+      "line": "905",
+      "statement": "boolean equals(final Object other)"
+    }
+  },
+  {
+    "v403": {
+      "line": "907",
+      "statement": "if (other instanceof Dfp)"
+    }
+  },
+  {
+    "v404": {
+      "line": "908",
+      "statement": "final Dfp x = (Dfp) other"
+    }
+  },
+  {
+    "v405": {
+      "line": "909",
+      "statement": "if (isNaN() || x.isNaN() || field.getRadixDigits() != x.field.getRadixDigits())"
+    }
+  },
+  {
+    "v406": {
+      "line": "910",
+      "statement": "return false"
+    }
+  },
+  {
+    "v407": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v408": {
+      "line": "913",
+      "statement": "return compare(this, x) == 0"
+    }
+  },
+  {
+    "v409": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v410": {
+      "line": "916",
+      "statement": "return false"
+    }
+  },
+  {
+    "v411": {
+      "line": "925",
+      "statement": "int hashCode()"
+    }
+  },
+  {
+    "v412": {
+      "line": "926",
+      "statement": "return 17 + (sign << 8) + (nans << 16) + exp + Arrays.hashCode(mant)"
+    }
+  },
+  {
+    "v413": {
+      "line": "933",
+      "statement": "boolean unequal(final Dfp x)"
+    }
+  },
+  {
+    "v414": {
+      "line": "934",
+      "statement": "if (isNaN() || x.isNaN() || field.getRadixDigits() != x.field.getRadixDigits())"
+    }
+  },
+  {
+    "v415": {
+      "line": "935",
+      "statement": "return false"
+    }
+  },
+  {
+    "v416": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v417": {
+      "line": "938",
+      "statement": "return greaterThan(x) || lessThan(x)"
+    }
+  },
+  {
+    "v418": {
+      "line": "947",
+      "statement": "int compare(final Dfp a, final Dfp b)"
+    }
+  },
+  {
+    "v419": {
+      "line": "949",
+      "statement": "if (a.mant[a.mant.length - 1] == 0 && b.mant[b.mant.length - 1] == 0 && a.nans == FINITE && b.nans == FINITE)"
+    }
+  },
+  {
+    "v420": {
+      "line": "951",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v421": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v422": {
+      "line": "954",
+      "statement": "if (a.sign != b.sign)"
+    }
+  },
+  {
+    "v423": {
+      "line": "955",
+      "statement": "if (a.sign == -1)"
+    }
+  },
+  {
+    "v424": {
+      "line": "956",
+      "statement": "return -1"
+    }
+  },
+  {
+    "v425": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v426": {
+      "line": "958",
+      "statement": "return 1"
+    }
+  },
+  {
+    "v427": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v428": {
+      "line": "963",
+      "statement": "if (a.nans == INFINITE && b.nans == FINITE)"
+    }
+  },
+  {
+    "v429": {
+      "line": "964",
+      "statement": "return a.sign"
+    }
+  },
+  {
+    "v430": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v431": {
+      "line": "967",
+      "statement": "if (a.nans == FINITE && b.nans == INFINITE)"
+    }
+  },
+  {
+    "v432": {
+      "line": "968",
+      "statement": "return -b.sign"
+    }
+  },
+  {
+    "v433": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v434": {
+      "line": "971",
+      "statement": "if (a.nans == INFINITE && b.nans == INFINITE)"
+    }
+  },
+  {
+    "v435": {
+      "line": "972",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v436": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v437": {
+      "line": "976",
+      "statement": "if (b.mant[b.mant.length-1] != 0 && a.mant[b.mant.length-1] != 0)"
+    }
+  },
+  {
+    "v438": {
+      "line": "977",
+      "statement": "if (a.exp < b.exp)"
+    }
+  },
+  {
+    "v439": {
+      "line": "978",
+      "statement": "return -a.sign"
+    }
+  },
+  {
+    "v440": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v441": {
+      "line": "981",
+      "statement": "if (a.exp > b.exp)"
+    }
+  },
+  {
+    "v442": {
+      "line": "982",
+      "statement": "return a.sign"
+    }
+  },
+  {
+    "v443": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v444": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v445": {
+      "line": "987",
+      "statement": "for (  int i = a.mant.length - 1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v448": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v449": {
+      "line": "988",
+      "statement": "if (a.mant[i] > b.mant[i])"
+    }
+  },
+  {
+    "v450": {
+      "line": "989",
+      "statement": "return a.sign"
+    }
+  },
+  {
+    "v451": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v452": {
+      "line": "992",
+      "statement": "if (a.mant[i] < b.mant[i])"
+    }
+  },
+  {
+    "v453": {
+      "line": "993",
+      "statement": "return -a.sign"
+    }
+  },
+  {
+    "v454": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v455": {
+      "line": "997",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v456": {
+      "line": "1007",
+      "statement": "Dfp rint()"
+    }
+  },
+  {
+    "v457": {
+      "line": "1008",
+      "statement": "return trunc(DfpField.RoundingMode.ROUND_HALF_EVEN)"
+    }
+  },
+  {
+    "v458": {
+      "line": "1016",
+      "statement": "Dfp floor()"
+    }
+  },
+  {
+    "v459": {
+      "line": "1017",
+      "statement": "return trunc(DfpField.RoundingMode.ROUND_FLOOR)"
+    }
+  },
+  {
+    "v460": {
+      "line": "1025",
+      "statement": "Dfp ceil()"
+    }
+  },
+  {
+    "v461": {
+      "line": "1026",
+      "statement": "return trunc(DfpField.RoundingMode.ROUND_CEIL)"
+    }
+  },
+  {
+    "v462": {
+      "line": "1034",
+      "statement": "Dfp remainder(final Dfp d)"
+    }
+  },
+  {
+    "v463": {
+      "line": "1036",
+      "statement": "final Dfp result = this.subtract(this.divide(d).rint().multiply(d))"
+    }
+  },
+  {
+    "v464": {
+      "line": "1039",
+      "statement": "if (result.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v465": {
+      "line": "1040",
+      "statement": "result.sign = sign"
+    }
+  },
+  {
+    "v466": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v467": {
+      "line": "1043",
+      "statement": "return result"
+    }
+  },
+  {
+    "v468": {
+      "line": "1051",
+      "statement": "Dfp trunc(final DfpField.RoundingMode rmode)"
+    }
+  },
+  {
+    "v469": {
+      "line": "1052",
+      "statement": "boolean changed = false"
+    }
+  },
+  {
+    "v470": {
+      "line": "1054",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v471": {
+      "line": "1055",
+      "statement": "return newInstance(this)"
+    }
+  },
+  {
+    "v472": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v473": {
+      "line": "1058",
+      "statement": "if (nans == INFINITE)"
+    }
+  },
+  {
+    "v474": {
+      "line": "1059",
+      "statement": "return newInstance(this)"
+    }
+  },
+  {
+    "v475": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v476": {
+      "line": "1062",
+      "statement": "if (mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v477": {
+      "line": "1064",
+      "statement": "return newInstance(this)"
+    }
+  },
+  {
+    "v478": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v479": {
+      "line": "1069",
+      "statement": "if (exp < 0)"
+    }
+  },
+  {
+    "v480": {
+      "line": "1070",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INEXACT)"
+    }
+  },
+  {
+    "v481": {
+      "line": "1071",
+      "statement": "Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v482": {
+      "line": "1072",
+      "statement": "result = dotrap(DfpField.FLAG_INEXACT, TRUNC_TRAP, this, result)"
+    }
+  },
+  {
+    "v483": {
+      "line": "1073",
+      "statement": "return result"
+    }
+  },
+  {
+    "v484": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v485": {
+      "line": "1080",
+      "statement": "if (exp >= mant.length)"
+    }
+  },
+  {
+    "v486": {
+      "line": "1081",
+      "statement": "return newInstance(this)"
+    }
+  },
+  {
+    "v487": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v488": {
+      "line": "1087",
+      "statement": "Dfp result = newInstance(this)"
+    }
+  },
+  {
+    "v489": {
+      "line": "1088",
+      "statement": "for (  int i = 0 ; i < mant.length-result.exp ;   i++)"
+    }
+  },
+  {
+    "v492": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v493": {
+      "line": "1089",
+      "statement": "changed |= result.mant[i] != 0"
+    }
+  },
+  {
+    "v494": {
+      "line": "1090",
+      "statement": "result.mant[i] = 0"
+    }
+  },
+  {
+    "v495": {
+      "line": "1093",
+      "statement": "if (changed)"
+    }
+  },
+  {
+    "v496": {
+      "line": "1094",
+      "statement": "switch (rmode)"
+    }
+  },
+  {
+    "v497": {
+      "line": 0,
+      "statement": "\"end-switch"
+    }
+  },
+  {
+    "v498": {
+      "line": "1095",
+      "statement": "case ROUND_FLOOR"
+    }
+  },
+  {
+    "v499": {
+      "line": "1096",
+      "statement": "if (result.sign == -1)"
+    }
+  },
+  {
+    "v500": {
+      "line": "1098",
+      "statement": "result = result.add(newInstance(-1))"
+    }
+  },
+  {
+    "v501": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v502": {
+      "line": "1100",
+      "statement": "break"
+    }
+  },
+  {
+    "v503": {
+      "line": "1102",
+      "statement": "case ROUND_CEIL"
+    }
+  },
+  {
+    "v504": {
+      "line": "1103",
+      "statement": "if (result.sign == 1)"
+    }
+  },
+  {
+    "v505": {
+      "line": "1105",
+      "statement": "result = result.add(getOne())"
+    }
+  },
+  {
+    "v506": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v507": {
+      "line": "1107",
+      "statement": "break"
+    }
+  },
+  {
+    "v508": {
+      "line": "1109",
+      "statement": "case ROUND_HALF_EVEN"
+    }
+  },
+  {
+    "v509": {
+      "line": "1110",
+      "statement": "default"
+    }
+  },
+  {
+    "v510": {
+      "line": "1111",
+      "statement": "final Dfp half = newInstance('0.5')"
+    }
+  },
+  {
+    "v511": {
+      "line": "1112",
+      "statement": "Dfp a = subtract(result)"
+    }
+  },
+  {
+    "v512": {
+      "line": "1113",
+      "statement": "a.sign = 1"
+    }
+  },
+  {
+    "v513": {
+      "line": "1114",
+      "statement": "if (a.greaterThan(half))"
+    }
+  },
+  {
+    "v514": {
+      "line": "1115",
+      "statement": "a = newInstance(getOne())"
+    }
+  },
+  {
+    "v515": {
+      "line": "1116",
+      "statement": "a.sign = sign"
+    }
+  },
+  {
+    "v516": {
+      "line": "1117",
+      "statement": "result = result.add(a)"
+    }
+  },
+  {
+    "v517": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v518": {
+      "line": "1121",
+      "statement": "if (a.equals(half) && result.exp > 0 && (result.mant[mant.length-result.exp]&1) != 0)"
+    }
+  },
+  {
+    "v519": {
+      "line": "1122",
+      "statement": "a = newInstance(getOne())"
+    }
+  },
+  {
+    "v520": {
+      "line": "1123",
+      "statement": "a.sign = sign"
+    }
+  },
+  {
+    "v521": {
+      "line": "1124",
+      "statement": "result = result.add(a)"
+    }
+  },
+  {
+    "v522": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v523": {
+      "line": "1126",
+      "statement": "break"
+    }
+  },
+  {
+    "v524": {
+      "line": "1129",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INEXACT)"
+    }
+  },
+  {
+    "v525": {
+      "line": "1130",
+      "statement": "result = dotrap(DfpField.FLAG_INEXACT, TRUNC_TRAP, this, result)"
+    }
+  },
+  {
+    "v526": {
+      "line": "1131",
+      "statement": "return result"
+    }
+  },
+  {
+    "v527": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v528": {
+      "line": "1134",
+      "statement": "return result"
+    }
+  },
+  {
+    "v529": {
+      "line": "1141",
+      "statement": "int intValue()"
+    }
+  },
+  {
+    "v530": {
+      "line": "1142",
+      "statement": "Dfp rounded"
+    }
+  },
+  {
+    "v531": {
+      "line": "1143",
+      "statement": "int result = 0"
+    }
+  },
+  {
+    "v532": {
+      "line": "1145",
+      "statement": "rounded = rint()"
+    }
+  },
+  {
+    "v533": {
+      "line": "1147",
+      "statement": "if (rounded.greaterThan(newInstance(2147483647)))"
+    }
+  },
+  {
+    "v534": {
+      "line": "1148",
+      "statement": "return 2147483647"
+    }
+  },
+  {
+    "v535": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v536": {
+      "line": "1151",
+      "statement": "if (rounded.lessThan(newInstance(-2147483648)))"
+    }
+  },
+  {
+    "v537": {
+      "line": "1152",
+      "statement": "return -2147483648"
+    }
+  },
+  {
+    "v538": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v539": {
+      "line": "1155",
+      "statement": "for (  int i = mant.length - 1 ; i >= mant.length - rounded.exp ;   i--)"
+    }
+  },
+  {
+    "v542": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v543": {
+      "line": "1156",
+      "statement": "result = result * RADIX + rounded.mant[i"
+    }
+  },
+  {
+    "v544": {
+      "line": "1159",
+      "statement": "if (rounded.sign == -1)"
+    }
+  },
+  {
+    "v545": {
+      "line": "1160",
+      "statement": "result = -result"
+    }
+  },
+  {
+    "v546": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v547": {
+      "line": "1163",
+      "statement": "return result"
+    }
+  },
+  {
+    "v548": {
+      "line": "1171",
+      "statement": "int log10K()"
+    }
+  },
+  {
+    "v549": {
+      "line": "1172",
+      "statement": "return exp - 1"
+    }
+  },
+  {
+    "v550": {
+      "line": "1179",
+      "statement": "Dfp power10K(final int e)"
+    }
+  },
+  {
+    "v551": {
+      "line": "1180",
+      "statement": "Dfp d = newInstance(getOne())"
+    }
+  },
+  {
+    "v552": {
+      "line": "1181",
+      "statement": "d.exp = e + 1"
+    }
+  },
+  {
+    "v553": {
+      "line": "1182",
+      "statement": "return d"
+    }
+  },
+  {
+    "v554": {
+      "line": "1189",
+      "statement": "int intLog10()"
+    }
+  },
+  {
+    "v555": {
+      "line": "1190",
+      "statement": "if (mant[mant.length-1] > 1000)"
+    }
+  },
+  {
+    "v556": {
+      "line": "1191",
+      "statement": "return exp * 4 - 1"
+    }
+  },
+  {
+    "v557": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v558": {
+      "line": "1193",
+      "statement": "if (mant[mant.length-1] > 100)"
+    }
+  },
+  {
+    "v559": {
+      "line": "1194",
+      "statement": "return exp * 4 - 2"
+    }
+  },
+  {
+    "v560": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v561": {
+      "line": "1196",
+      "statement": "if (mant[mant.length-1] > 10)"
+    }
+  },
+  {
+    "v562": {
+      "line": "1197",
+      "statement": "return exp * 4 - 3"
+    }
+  },
+  {
+    "v563": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v564": {
+      "line": "1199",
+      "statement": "return exp * 4 - 4"
+    }
+  },
+  {
+    "v565": {
+      "line": "1206",
+      "statement": "Dfp power10(final int e)"
+    }
+  },
+  {
+    "v566": {
+      "line": "1207",
+      "statement": "Dfp d = newInstance(getOne())"
+    }
+  },
+  {
+    "v567": {
+      "line": "1209",
+      "statement": "if (e >= 0)"
+    }
+  },
+  {
+    "v568": {
+      "line": "1210",
+      "statement": "d.exp = e / 4 + 1"
+    }
+  },
+  {
+    "v569": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v570": {
+      "line": "1212",
+      "statement": "d.exp = (e + 1) / 4"
+    }
+  },
+  {
+    "v571": {
+      "line": "1215",
+      "statement": "switch ((e % 4 + 4) % 4)"
+    }
+  },
+  {
+    "v572": {
+      "line": 0,
+      "statement": "\"end-switch"
+    }
+  },
+  {
+    "v573": {
+      "line": "1216",
+      "statement": "case 0"
+    }
+  },
+  {
+    "v574": {
+      "line": "1217",
+      "statement": "break"
+    }
+  },
+  {
+    "v575": {
+      "line": "1218",
+      "statement": "case 1"
+    }
+  },
+  {
+    "v576": {
+      "line": "1219",
+      "statement": "d = d.multiply(10)"
+    }
+  },
+  {
+    "v577": {
+      "line": "1220",
+      "statement": "break"
+    }
+  },
+  {
+    "v578": {
+      "line": "1221",
+      "statement": "case 2"
+    }
+  },
+  {
+    "v579": {
+      "line": "1222",
+      "statement": "d = d.multiply(100)"
+    }
+  },
+  {
+    "v580": {
+      "line": "1223",
+      "statement": "break"
+    }
+  },
+  {
+    "v581": {
+      "line": "1224",
+      "statement": "default"
+    }
+  },
+  {
+    "v582": {
+      "line": "1225",
+      "statement": "d = d.multiply(1000)"
+    }
+  },
+  {
+    "v583": {
+      "line": "1228",
+      "statement": "return d"
+    }
+  },
+  {
+    "v584": {
+      "line": "1237",
+      "statement": "int complement(int extra)"
+    }
+  },
+  {
+    "v585": {
+      "line": "1239",
+      "statement": "extra = RADIX-extra"
+    }
+  },
+  {
+    "v586": {
+      "line": "1240",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v589": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v590": {
+      "line": "1241",
+      "statement": "mant[i] = RADIX-mant[i]-1"
+    }
+  },
+  {
+    "v591": {
+      "line": "1244",
+      "statement": "int rh = extra / RADIX"
+    }
+  },
+  {
+    "v592": {
+      "line": "1245",
+      "statement": "extra = extra - rh * RADIX"
+    }
+  },
+  {
+    "v593": {
+      "line": "1246",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v596": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v597": {
+      "line": "1247",
+      "statement": "final int r = mant[i] + rh"
+    }
+  },
+  {
+    "v598": {
+      "line": "1248",
+      "statement": "rh = r / RADIX"
+    }
+  },
+  {
+    "v599": {
+      "line": "1249",
+      "statement": "mant[i] = r - rh * RADIX"
+    }
+  },
+  {
+    "v600": {
+      "line": "1252",
+      "statement": "return extra"
+    }
+  },
+  {
+    "v601": {
+      "line": "1259",
+      "statement": "Dfp add(final Dfp x)"
+    }
+  },
+  {
+    "v602": {
+      "line": "1262",
+      "statement": "if (field.getRadixDigits() != x.field.getRadixDigits())"
+    }
+  },
+  {
+    "v603": {
+      "line": "1263",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v604": {
+      "line": "1264",
+      "statement": "final Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v605": {
+      "line": "1265",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v606": {
+      "line": "1266",
+      "statement": "return dotrap(DfpField.FLAG_INVALID, ADD_TRAP, x, result)"
+    }
+  },
+  {
+    "v607": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v608": {
+      "line": "1270",
+      "statement": "if (nans != FINITE || x.nans != FINITE)"
+    }
+  },
+  {
+    "v609": {
+      "line": "1271",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v610": {
+      "line": "1272",
+      "statement": "return this"
+    }
+  },
+  {
+    "v611": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v612": {
+      "line": "1275",
+      "statement": "if (x.isNaN())"
+    }
+  },
+  {
+    "v613": {
+      "line": "1276",
+      "statement": "return x"
+    }
+  },
+  {
+    "v614": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v615": {
+      "line": "1279",
+      "statement": "if (nans == INFINITE && x.nans == FINITE)"
+    }
+  },
+  {
+    "v616": {
+      "line": "1280",
+      "statement": "return this"
+    }
+  },
+  {
+    "v617": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v618": {
+      "line": "1283",
+      "statement": "if (x.nans == INFINITE && nans == FINITE)"
+    }
+  },
+  {
+    "v619": {
+      "line": "1284",
+      "statement": "return x"
+    }
+  },
+  {
+    "v620": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v621": {
+      "line": "1287",
+      "statement": "if (x.nans == INFINITE && nans == INFINITE && sign == x.sign)"
+    }
+  },
+  {
+    "v622": {
+      "line": "1288",
+      "statement": "return x"
+    }
+  },
+  {
+    "v623": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v624": {
+      "line": "1291",
+      "statement": "if (x.nans == INFINITE && nans == INFINITE && sign != x.sign)"
+    }
+  },
+  {
+    "v625": {
+      "line": "1292",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v626": {
+      "line": "1293",
+      "statement": "Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v627": {
+      "line": "1294",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v628": {
+      "line": "1295",
+      "statement": "result = dotrap(DfpField.FLAG_INVALID, ADD_TRAP, x, result)"
+    }
+  },
+  {
+    "v629": {
+      "line": "1296",
+      "statement": "return result"
+    }
+  },
+  {
+    "v630": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v631": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v632": {
+      "line": "1301",
+      "statement": "Dfp a = newInstance(this)"
+    }
+  },
+  {
+    "v633": {
+      "line": "1302",
+      "statement": "Dfp b = newInstance(x)"
+    }
+  },
+  {
+    "v634": {
+      "line": "1305",
+      "statement": "Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v635": {
+      "line": "1308",
+      "statement": "final byte asign = a.sign"
+    }
+  },
+  {
+    "v636": {
+      "line": "1309",
+      "statement": "final byte bsign = b.sign"
+    }
+  },
+  {
+    "v637": {
+      "line": "1311",
+      "statement": "a.sign = 1"
+    }
+  },
+  {
+    "v638": {
+      "line": "1312",
+      "statement": "b.sign = 1"
+    }
+  },
+  {
+    "v639": {
+      "line": "1315",
+      "statement": "byte rsign = bsign"
+    }
+  },
+  {
+    "v640": {
+      "line": "1316",
+      "statement": "if (compare(a, b) > 0)"
+    }
+  },
+  {
+    "v641": {
+      "line": "1317",
+      "statement": "rsign = asign"
+    }
+  },
+  {
+    "v642": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v643": {
+      "line": "1323",
+      "statement": "if (b.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v644": {
+      "line": "1324",
+      "statement": "b.exp = a.exp"
+    }
+  },
+  {
+    "v645": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v646": {
+      "line": "1327",
+      "statement": "if (a.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v647": {
+      "line": "1328",
+      "statement": "a.exp = b.exp"
+    }
+  },
+  {
+    "v648": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v649": {
+      "line": "1332",
+      "statement": "int aextradigit = 0"
+    }
+  },
+  {
+    "v650": {
+      "line": "1333",
+      "statement": "int bextradigit = 0"
+    }
+  },
+  {
+    "v651": {
+      "line": "1334",
+      "statement": "if (a.exp < b.exp)"
+    }
+  },
+  {
+    "v652": {
+      "line": "1335",
+      "statement": "aextradigit = a.align(b.exp)"
+    }
+  },
+  {
+    "v653": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v654": {
+      "line": "1337",
+      "statement": "bextradigit = b.align(a.exp)"
+    }
+  },
+  {
+    "v655": {
+      "line": "1341",
+      "statement": "if (asign != bsign)"
+    }
+  },
+  {
+    "v656": {
+      "line": "1342",
+      "statement": "if (asign == rsign)"
+    }
+  },
+  {
+    "v657": {
+      "line": "1343",
+      "statement": "bextradigit = b.complement(bextradigit)"
+    }
+  },
+  {
+    "v658": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v659": {
+      "line": "1345",
+      "statement": "aextradigit = a.complement(aextradigit)"
+    }
+  },
+  {
+    "v660": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v661": {
+      "line": "1350",
+      "statement": "int rh = 0"
+    }
+  },
+  {
+    "v662": {
+      "line": "1351",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v665": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v666": {
+      "line": "1352",
+      "statement": "final int r = a.mant[i]+b.mant[i]+rh"
+    }
+  },
+  {
+    "v667": {
+      "line": "1353",
+      "statement": "rh = r / RADIX"
+    }
+  },
+  {
+    "v668": {
+      "line": "1354",
+      "statement": "result.mant[i] = r - rh * RADIX"
+    }
+  },
+  {
+    "v669": {
+      "line": "1356",
+      "statement": "result.exp = a.exp"
+    }
+  },
+  {
+    "v670": {
+      "line": "1357",
+      "statement": "result.sign = rsign"
+    }
+  },
+  {
+    "v671": {
+      "line": "1362",
+      "statement": "if (rh != 0 && (asign == bsign))"
+    }
+  },
+  {
+    "v672": {
+      "line": "1363",
+      "statement": "final int lostdigit = result.mant[0"
+    }
+  },
+  {
+    "v673": {
+      "line": "1364",
+      "statement": "result.shiftRight()"
+    }
+  },
+  {
+    "v674": {
+      "line": "1365",
+      "statement": "result.mant[mant.length-1] = rh"
+    }
+  },
+  {
+    "v675": {
+      "line": "1366",
+      "statement": "final int excp = result.round(lostdigit)"
+    }
+  },
+  {
+    "v676": {
+      "line": "1367",
+      "statement": "if (excp != 0)"
+    }
+  },
+  {
+    "v677": {
+      "line": "1368",
+      "statement": "result = dotrap(excp, ADD_TRAP, x, result)"
+    }
+  },
+  {
+    "v678": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v679": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v680": {
+      "line": "1373",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v683": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v684": {
+      "line": "1374",
+      "statement": "if (result.mant[mant.length-1] != 0)"
+    }
+  },
+  {
+    "v685": {
+      "line": "1375",
+      "statement": "break"
+    }
+  },
+  {
+    "v686": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v687": {
+      "line": "1377",
+      "statement": "result.shiftLeft()"
+    }
+  },
+  {
+    "v688": {
+      "line": "1378",
+      "statement": "if (i == 0)"
+    }
+  },
+  {
+    "v689": {
+      "line": "1379",
+      "statement": "result.mant[0] = aextradigit+bextradigit"
+    }
+  },
+  {
+    "v690": {
+      "line": "1380",
+      "statement": "aextradigit = 0"
+    }
+  },
+  {
+    "v691": {
+      "line": "1381",
+      "statement": "bextradigit = 0"
+    }
+  },
+  {
+    "v692": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v693": {
+      "line": "1386",
+      "statement": "if (result.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v694": {
+      "line": "1387",
+      "statement": "result.exp = 0"
+    }
+  },
+  {
+    "v695": {
+      "line": "1389",
+      "statement": "if (asign != bsign)"
+    }
+  },
+  {
+    "v696": {
+      "line": "1391",
+      "statement": "result.sign = 1"
+    }
+  },
+  {
+    "v697": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v698": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v699": {
+      "line": "1396",
+      "statement": "final int excp = result.round(aextradigit + bextradigit)"
+    }
+  },
+  {
+    "v700": {
+      "line": "1397",
+      "statement": "if (excp != 0)"
+    }
+  },
+  {
+    "v701": {
+      "line": "1398",
+      "statement": "result = dotrap(excp, ADD_TRAP, x, result)"
+    }
+  },
+  {
+    "v702": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v703": {
+      "line": "1401",
+      "statement": "return result"
+    }
+  },
+  {
+    "v704": {
+      "line": "1407",
+      "statement": "Dfp negate()"
+    }
+  },
+  {
+    "v705": {
+      "line": "1408",
+      "statement": "Dfp result = newInstance(this)"
+    }
+  },
+  {
+    "v706": {
+      "line": "1409",
+      "statement": "result.sign = (byte) - result.sign"
+    }
+  },
+  {
+    "v707": {
+      "line": "1410",
+      "statement": "return result"
+    }
+  },
+  {
+    "v708": {
+      "line": "1417",
+      "statement": "Dfp subtract(final Dfp x)"
+    }
+  },
+  {
+    "v709": {
+      "line": "1418",
+      "statement": "return add(x.negate())"
+    }
+  },
+  {
+    "v710": {
+      "line": "1425",
+      "statement": "int round(int n)"
+    }
+  },
+  {
+    "v711": {
+      "line": "1426",
+      "statement": "boolean inc = false"
+    }
+  },
+  {
+    "v712": {
+      "line": "1427",
+      "statement": "switch (field.getRoundingMode())"
+    }
+  },
+  {
+    "v713": {
+      "line": 0,
+      "statement": "\"end-switch"
+    }
+  },
+  {
+    "v714": {
+      "line": "1428",
+      "statement": "case ROUND_DOWN"
+    }
+  },
+  {
+    "v715": {
+      "line": "1429",
+      "statement": "inc = false"
+    }
+  },
+  {
+    "v716": {
+      "line": "1430",
+      "statement": "break"
+    }
+  },
+  {
+    "v717": {
+      "line": "1432",
+      "statement": "case ROUND_UP"
+    }
+  },
+  {
+    "v718": {
+      "line": "1433",
+      "statement": "inc = n != 0"
+    }
+  },
+  {
+    "v719": {
+      "line": "1434",
+      "statement": "break"
+    }
+  },
+  {
+    "v720": {
+      "line": "1436",
+      "statement": "case ROUND_HALF_UP"
+    }
+  },
+  {
+    "v721": {
+      "line": "1437",
+      "statement": "inc = n >= 5000"
+    }
+  },
+  {
+    "v722": {
+      "line": "1438",
+      "statement": "break"
+    }
+  },
+  {
+    "v723": {
+      "line": "1440",
+      "statement": "case ROUND_HALF_DOWN"
+    }
+  },
+  {
+    "v724": {
+      "line": "1441",
+      "statement": "inc = n > 5000"
+    }
+  },
+  {
+    "v725": {
+      "line": "1442",
+      "statement": "break"
+    }
+  },
+  {
+    "v726": {
+      "line": "1444",
+      "statement": "case ROUND_HALF_EVEN"
+    }
+  },
+  {
+    "v727": {
+      "line": "1445",
+      "statement": "inc = n > 5000 || (n == 5000 && (mant[0] & 1) == 1)"
+    }
+  },
+  {
+    "v728": {
+      "line": "1446",
+      "statement": "break"
+    }
+  },
+  {
+    "v729": {
+      "line": "1448",
+      "statement": "case ROUND_HALF_ODD"
+    }
+  },
+  {
+    "v730": {
+      "line": "1449",
+      "statement": "inc = n > 5000 || (n == 5000 && (mant[0] & 1) == 0)"
+    }
+  },
+  {
+    "v731": {
+      "line": "1450",
+      "statement": "break"
+    }
+  },
+  {
+    "v732": {
+      "line": "1452",
+      "statement": "case ROUND_CEIL"
+    }
+  },
+  {
+    "v733": {
+      "line": "1453",
+      "statement": "inc = sign == 1 && n != 0"
+    }
+  },
+  {
+    "v734": {
+      "line": "1454",
+      "statement": "break"
+    }
+  },
+  {
+    "v735": {
+      "line": "1456",
+      "statement": "case ROUND_FLOOR"
+    }
+  },
+  {
+    "v736": {
+      "line": "1457",
+      "statement": "default"
+    }
+  },
+  {
+    "v737": {
+      "line": "1458",
+      "statement": "inc = sign == -1 && n != 0"
+    }
+  },
+  {
+    "v738": {
+      "line": "1459",
+      "statement": "break"
+    }
+  },
+  {
+    "v739": {
+      "line": "1462",
+      "statement": "if (inc)"
+    }
+  },
+  {
+    "v740": {
+      "line": "1464",
+      "statement": "int rh = 1"
+    }
+  },
+  {
+    "v741": {
+      "line": "1465",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v744": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v745": {
+      "line": "1466",
+      "statement": "final int r = mant[i] + rh"
+    }
+  },
+  {
+    "v746": {
+      "line": "1467",
+      "statement": "rh = r / RADIX"
+    }
+  },
+  {
+    "v747": {
+      "line": "1468",
+      "statement": "mant[i] = r - rh * RADIX"
+    }
+  },
+  {
+    "v748": {
+      "line": "1471",
+      "statement": "if (rh != 0)"
+    }
+  },
+  {
+    "v749": {
+      "line": "1472",
+      "statement": "shiftRight()"
+    }
+  },
+  {
+    "v750": {
+      "line": "1473",
+      "statement": "mant[mant.length-1] = rh"
+    }
+  },
+  {
+    "v751": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v752": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v753": {
+      "line": "1478",
+      "statement": "if (exp < MIN_EXP)"
+    }
+  },
+  {
+    "v754": {
+      "line": "1480",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_UNDERFLOW)"
+    }
+  },
+  {
+    "v755": {
+      "line": "1481",
+      "statement": "return DfpField.FLAG_UNDERFLOW"
+    }
+  },
+  {
+    "v756": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v757": {
+      "line": "1484",
+      "statement": "if (exp > MAX_EXP)"
+    }
+  },
+  {
+    "v758": {
+      "line": "1486",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_OVERFLOW)"
+    }
+  },
+  {
+    "v759": {
+      "line": "1487",
+      "statement": "return DfpField.FLAG_OVERFLOW"
+    }
+  },
+  {
+    "v760": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v761": {
+      "line": "1490",
+      "statement": "if (n != 0)"
+    }
+  },
+  {
+    "v762": {
+      "line": "1492",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INEXACT)"
+    }
+  },
+  {
+    "v763": {
+      "line": "1493",
+      "statement": "return DfpField.FLAG_INEXACT"
+    }
+  },
+  {
+    "v764": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v765": {
+      "line": "1496",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v766": {
+      "line": "1504",
+      "statement": "Dfp multiply(final Dfp x)"
+    }
+  },
+  {
+    "v767": {
+      "line": "1507",
+      "statement": "if (field.getRadixDigits() != x.field.getRadixDigits())"
+    }
+  },
+  {
+    "v768": {
+      "line": "1508",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v769": {
+      "line": "1509",
+      "statement": "final Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v770": {
+      "line": "1510",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v771": {
+      "line": "1511",
+      "statement": "return dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, x, result)"
+    }
+  },
+  {
+    "v772": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v773": {
+      "line": "1514",
+      "statement": "Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v774": {
+      "line": "1517",
+      "statement": "if (nans != FINITE || x.nans != FINITE)"
+    }
+  },
+  {
+    "v775": {
+      "line": "1518",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v776": {
+      "line": "1519",
+      "statement": "return this"
+    }
+  },
+  {
+    "v777": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v778": {
+      "line": "1522",
+      "statement": "if (x.isNaN())"
+    }
+  },
+  {
+    "v779": {
+      "line": "1523",
+      "statement": "return x"
+    }
+  },
+  {
+    "v780": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v781": {
+      "line": "1526",
+      "statement": "if (nans == INFINITE && x.nans == FINITE && x.mant[mant.length-1] != 0)"
+    }
+  },
+  {
+    "v782": {
+      "line": "1527",
+      "statement": "result = newInstance(this)"
+    }
+  },
+  {
+    "v783": {
+      "line": "1528",
+      "statement": "result.sign = (byte) (sign * x.sign)"
+    }
+  },
+  {
+    "v784": {
+      "line": "1529",
+      "statement": "return result"
+    }
+  },
+  {
+    "v785": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v786": {
+      "line": "1532",
+      "statement": "if (x.nans == INFINITE && nans == FINITE && mant[mant.length-1] != 0)"
+    }
+  },
+  {
+    "v787": {
+      "line": "1533",
+      "statement": "result = newInstance(x)"
+    }
+  },
+  {
+    "v788": {
+      "line": "1534",
+      "statement": "result.sign = (byte) (sign * x.sign)"
+    }
+  },
+  {
+    "v789": {
+      "line": "1535",
+      "statement": "return result"
+    }
+  },
+  {
+    "v790": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v791": {
+      "line": "1538",
+      "statement": "if (x.nans == INFINITE && nans == INFINITE)"
+    }
+  },
+  {
+    "v792": {
+      "line": "1539",
+      "statement": "result = newInstance(this)"
+    }
+  },
+  {
+    "v793": {
+      "line": "1540",
+      "statement": "result.sign = (byte) (sign * x.sign)"
+    }
+  },
+  {
+    "v794": {
+      "line": "1541",
+      "statement": "return result"
+    }
+  },
+  {
+    "v795": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v796": {
+      "line": "1544",
+      "statement": "if ( (x.nans == INFINITE && nans == FINITE && mant[mant.length-1] == 0) || (nans == INFINITE && x.nans == FINITE && x.mant[mant.length-1] == 0) )"
+    }
+  },
+  {
+    "v797": {
+      "line": "1546",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v798": {
+      "line": "1547",
+      "statement": "result = newInstance(getZero())"
+    }
+  },
+  {
+    "v799": {
+      "line": "1548",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v800": {
+      "line": "1549",
+      "statement": "result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, x, result)"
+    }
+  },
+  {
+    "v801": {
+      "line": "1550",
+      "statement": "return result"
+    }
+  },
+  {
+    "v802": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v803": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v804": {
+      "line": "1554",
+      "statement": "int[] product = new int[mant.length*2"
+    }
+  },
+  {
+    "v805": {
+      "line": "1556",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v808": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v809": {
+      "line": "1557",
+      "statement": "int rh = 0"
+    }
+  },
+  {
+    "v810": {
+      "line": "1558",
+      "statement": "for (  int j=0 ; j<mant.length ;   j++)"
+    }
+  },
+  {
+    "v813": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v814": {
+      "line": "1559",
+      "statement": "int r = mant[i] * x.mant[j"
+    }
+  },
+  {
+    "v815": {
+      "line": "1560",
+      "statement": "r = r + product[i+j] + rh"
+    }
+  },
+  {
+    "v816": {
+      "line": "1562",
+      "statement": "rh = r / RADIX"
+    }
+  },
+  {
+    "v817": {
+      "line": "1563",
+      "statement": "product[i+j] = r - rh * RADIX"
+    }
+  },
+  {
+    "v818": {
+      "line": "1565",
+      "statement": "product[i+mant.length] = rh"
+    }
+  },
+  {
+    "v819": {
+      "line": "1569",
+      "statement": "int md = mant.length * 2 - 1"
+    }
+  },
+  {
+    "v820": {
+      "line": "1570",
+      "statement": "for (  int i = mant.length * 2 - 1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v823": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v824": {
+      "line": "1571",
+      "statement": "if (product[i] != 0)"
+    }
+  },
+  {
+    "v825": {
+      "line": "1572",
+      "statement": "md = i"
+    }
+  },
+  {
+    "v826": {
+      "line": "1573",
+      "statement": "break"
+    }
+  },
+  {
+    "v827": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v828": {
+      "line": "1578",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v831": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v832": {
+      "line": "1579",
+      "statement": "result.mant[mant.length - i - 1] = product[md - i"
+    }
+  },
+  {
+    "v833": {
+      "line": "1583",
+      "statement": "result.exp = exp + x.exp + md - 2 * mant.length + 1"
+    }
+  },
+  {
+    "v834": {
+      "line": "1584",
+      "statement": "result.sign = (byte)((sign == x.sign)?1"
+    }
+  },
+  {
+    "v835": {
+      "line": "1586",
+      "statement": "if (result.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v836": {
+      "line": "1588",
+      "statement": "result.exp = 0"
+    }
+  },
+  {
+    "v837": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v838": {
+      "line": "1591",
+      "statement": "final int excp"
+    }
+  },
+  {
+    "v839": {
+      "line": "1592",
+      "statement": "if (md > (mant.length-1))"
+    }
+  },
+  {
+    "v840": {
+      "line": "1593",
+      "statement": "excp = result.round(product[md-mant.length])"
+    }
+  },
+  {
+    "v841": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v842": {
+      "line": "1595",
+      "statement": "excp = result.round(0)"
+    }
+  },
+  {
+    "v843": {
+      "line": "1598",
+      "statement": "if (excp != 0)"
+    }
+  },
+  {
+    "v844": {
+      "line": "1599",
+      "statement": "result = dotrap(excp, MULTIPLY_TRAP, x, result)"
+    }
+  },
+  {
+    "v845": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v846": {
+      "line": "1602",
+      "statement": "return result"
+    }
+  },
+  {
+    "v847": {
+      "line": "1610",
+      "statement": "Dfp multiply(final int x)"
+    }
+  },
+  {
+    "v848": {
+      "line": "1611",
+      "statement": "if (x >= 0 && x < RADIX)"
+    }
+  },
+  {
+    "v849": {
+      "line": "1612",
+      "statement": "return multiplyFast(x)"
+    }
+  },
+  {
+    "v850": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v851": {
+      "line": "1614",
+      "statement": "return multiply(newInstance(x))"
+    }
+  },
+  {
+    "v852": {
+      "line": "1623",
+      "statement": "Dfp multiplyFast(final int x)"
+    }
+  },
+  {
+    "v853": {
+      "line": "1624",
+      "statement": "Dfp result = newInstance(this)"
+    }
+  },
+  {
+    "v854": {
+      "line": "1627",
+      "statement": "if (nans != FINITE)"
+    }
+  },
+  {
+    "v855": {
+      "line": "1628",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v856": {
+      "line": "1629",
+      "statement": "return this"
+    }
+  },
+  {
+    "v857": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v858": {
+      "line": "1632",
+      "statement": "if (nans == INFINITE && x != 0)"
+    }
+  },
+  {
+    "v859": {
+      "line": "1633",
+      "statement": "result = newInstance(this)"
+    }
+  },
+  {
+    "v860": {
+      "line": "1634",
+      "statement": "return result"
+    }
+  },
+  {
+    "v861": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v862": {
+      "line": "1637",
+      "statement": "if (nans == INFINITE && x == 0)"
+    }
+  },
+  {
+    "v863": {
+      "line": "1638",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v864": {
+      "line": "1639",
+      "statement": "result = newInstance(getZero())"
+    }
+  },
+  {
+    "v865": {
+      "line": "1640",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v866": {
+      "line": "1641",
+      "statement": "result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, newInstance(getZero()), result)"
+    }
+  },
+  {
+    "v867": {
+      "line": "1642",
+      "statement": "return result"
+    }
+  },
+  {
+    "v868": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v869": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v870": {
+      "line": "1647",
+      "statement": "if (x < 0 || x >= RADIX)"
+    }
+  },
+  {
+    "v871": {
+      "line": "1648",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v872": {
+      "line": "1649",
+      "statement": "result = newInstance(getZero())"
+    }
+  },
+  {
+    "v873": {
+      "line": "1650",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v874": {
+      "line": "1651",
+      "statement": "result = dotrap(DfpField.FLAG_INVALID, MULTIPLY_TRAP, result, result)"
+    }
+  },
+  {
+    "v875": {
+      "line": "1652",
+      "statement": "return result"
+    }
+  },
+  {
+    "v876": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v877": {
+      "line": "1655",
+      "statement": "int rh = 0"
+    }
+  },
+  {
+    "v878": {
+      "line": "1656",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v881": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v882": {
+      "line": "1657",
+      "statement": "final int r = mant[i] * x + rh"
+    }
+  },
+  {
+    "v883": {
+      "line": "1658",
+      "statement": "rh = r / RADIX"
+    }
+  },
+  {
+    "v884": {
+      "line": "1659",
+      "statement": "result.mant[i] = r - rh * RADIX"
+    }
+  },
+  {
+    "v885": {
+      "line": "1662",
+      "statement": "int lostdigit = 0"
+    }
+  },
+  {
+    "v886": {
+      "line": "1663",
+      "statement": "if (rh != 0)"
+    }
+  },
+  {
+    "v887": {
+      "line": "1664",
+      "statement": "lostdigit = result.mant[0"
+    }
+  },
+  {
+    "v888": {
+      "line": "1665",
+      "statement": "result.shiftRight()"
+    }
+  },
+  {
+    "v889": {
+      "line": "1666",
+      "statement": "result.mant[mant.length-1] = rh"
+    }
+  },
+  {
+    "v890": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v891": {
+      "line": "1669",
+      "statement": "if (result.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v892": {
+      "line": "1670",
+      "statement": "result.exp = 0"
+    }
+  },
+  {
+    "v893": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v894": {
+      "line": "1673",
+      "statement": "final int excp = result.round(lostdigit)"
+    }
+  },
+  {
+    "v895": {
+      "line": "1674",
+      "statement": "if (excp != 0)"
+    }
+  },
+  {
+    "v896": {
+      "line": "1675",
+      "statement": "result = dotrap(excp, MULTIPLY_TRAP, result, result)"
+    }
+  },
+  {
+    "v897": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v898": {
+      "line": "1678",
+      "statement": "return result"
+    }
+  },
+  {
+    "v899": {
+      "line": "1685",
+      "statement": "Dfp divide(Dfp divisor)"
+    }
+  },
+  {
+    "v900": {
+      "line": "1686",
+      "statement": "int dividend["
+    }
+  },
+  {
+    "v901": {
+      "line": "1687",
+      "statement": "int quotient["
+    }
+  },
+  {
+    "v902": {
+      "line": "1688",
+      "statement": "int remainder["
+    }
+  },
+  {
+    "v903": {
+      "line": "1689",
+      "statement": "int qd"
+    }
+  },
+  {
+    "v904": {
+      "line": "1690",
+      "statement": "int nsqd"
+    }
+  },
+  {
+    "v905": {
+      "line": "1691",
+      "statement": "int trial=0"
+    }
+  },
+  {
+    "v906": {
+      "line": "1692",
+      "statement": "int minadj"
+    }
+  },
+  {
+    "v907": {
+      "line": "1693",
+      "statement": "boolean trialgood"
+    }
+  },
+  {
+    "v908": {
+      "line": "1694",
+      "statement": "int md=0"
+    }
+  },
+  {
+    "v909": {
+      "line": "1695",
+      "statement": "int excp"
+    }
+  },
+  {
+    "v910": {
+      "line": "1698",
+      "statement": "if (field.getRadixDigits() != divisor.field.getRadixDigits())"
+    }
+  },
+  {
+    "v911": {
+      "line": "1699",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v912": {
+      "line": "1700",
+      "statement": "final Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v913": {
+      "line": "1701",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v914": {
+      "line": "1702",
+      "statement": "return dotrap(DfpField.FLAG_INVALID, DIVIDE_TRAP, divisor, result)"
+    }
+  },
+  {
+    "v915": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v916": {
+      "line": "1705",
+      "statement": "Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v917": {
+      "line": "1708",
+      "statement": "if (nans != FINITE || divisor.nans != FINITE)"
+    }
+  },
+  {
+    "v918": {
+      "line": "1709",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v919": {
+      "line": "1710",
+      "statement": "return this"
+    }
+  },
+  {
+    "v920": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v921": {
+      "line": "1713",
+      "statement": "if (divisor.isNaN())"
+    }
+  },
+  {
+    "v922": {
+      "line": "1714",
+      "statement": "return divisor"
+    }
+  },
+  {
+    "v923": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v924": {
+      "line": "1717",
+      "statement": "if (nans == INFINITE && divisor.nans == FINITE)"
+    }
+  },
+  {
+    "v925": {
+      "line": "1718",
+      "statement": "result = newInstance(this)"
+    }
+  },
+  {
+    "v926": {
+      "line": "1719",
+      "statement": "result.sign = (byte) (sign * divisor.sign)"
+    }
+  },
+  {
+    "v927": {
+      "line": "1720",
+      "statement": "return result"
+    }
+  },
+  {
+    "v928": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v929": {
+      "line": "1723",
+      "statement": "if (divisor.nans == INFINITE && nans == FINITE)"
+    }
+  },
+  {
+    "v930": {
+      "line": "1724",
+      "statement": "result = newInstance(getZero())"
+    }
+  },
+  {
+    "v931": {
+      "line": "1725",
+      "statement": "result.sign = (byte) (sign * divisor.sign)"
+    }
+  },
+  {
+    "v932": {
+      "line": "1726",
+      "statement": "return result"
+    }
+  },
+  {
+    "v933": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v934": {
+      "line": "1729",
+      "statement": "if (divisor.nans == INFINITE && nans == INFINITE)"
+    }
+  },
+  {
+    "v935": {
+      "line": "1730",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v936": {
+      "line": "1731",
+      "statement": "result = newInstance(getZero())"
+    }
+  },
+  {
+    "v937": {
+      "line": "1732",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v938": {
+      "line": "1733",
+      "statement": "result = dotrap(DfpField.FLAG_INVALID, DIVIDE_TRAP, divisor, result)"
+    }
+  },
+  {
+    "v939": {
+      "line": "1734",
+      "statement": "return result"
+    }
+  },
+  {
+    "v940": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v941": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v942": {
+      "line": "1739",
+      "statement": "if (divisor.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v943": {
+      "line": "1740",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_DIV_ZERO)"
+    }
+  },
+  {
+    "v944": {
+      "line": "1741",
+      "statement": "result = newInstance(getZero())"
+    }
+  },
+  {
+    "v945": {
+      "line": "1742",
+      "statement": "result.sign = (byte) (sign * divisor.sign)"
+    }
+  },
+  {
+    "v946": {
+      "line": "1743",
+      "statement": "result.nans = INFINITE"
+    }
+  },
+  {
+    "v947": {
+      "line": "1744",
+      "statement": "result = dotrap(DfpField.FLAG_DIV_ZERO, DIVIDE_TRAP, divisor, result)"
+    }
+  },
+  {
+    "v948": {
+      "line": "1745",
+      "statement": "return result"
+    }
+  },
+  {
+    "v949": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v950": {
+      "line": "1748",
+      "statement": "dividend = new int[mant.length+1"
+    }
+  },
+  {
+    "v951": {
+      "line": "1749",
+      "statement": "quotient = new int[mant.length+2"
+    }
+  },
+  {
+    "v952": {
+      "line": "1750",
+      "statement": "remainder = new int[mant.length+1"
+    }
+  },
+  {
+    "v953": {
+      "line": "1754",
+      "statement": "dividend[mant.length] = 0"
+    }
+  },
+  {
+    "v954": {
+      "line": "1755",
+      "statement": "quotient[mant.length] = 0"
+    }
+  },
+  {
+    "v955": {
+      "line": "1756",
+      "statement": "quotient[mant.length+1] = 0"
+    }
+  },
+  {
+    "v956": {
+      "line": "1757",
+      "statement": "remainder[mant.length] = 0"
+    }
+  },
+  {
+    "v957": {
+      "line": "1762",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v960": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v961": {
+      "line": "1763",
+      "statement": "dividend[i] = mant[i"
+    }
+  },
+  {
+    "v962": {
+      "line": "1764",
+      "statement": "quotient[i] = 0"
+    }
+  },
+  {
+    "v963": {
+      "line": "1765",
+      "statement": "remainder[i] = 0"
+    }
+  },
+  {
+    "v964": {
+      "line": "1769",
+      "statement": "nsqd = 0"
+    }
+  },
+  {
+    "v965": {
+      "line": "1770",
+      "statement": "for (  qd = mant.length+1 ; qd >= 0 ;   qd--)"
+    }
+  },
+  {
+    "v968": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v969": {
+      "line": "1774",
+      "statement": "final int divMsb = dividend[mant.length]*RADIX+dividend[mant.length-1"
+    }
+  },
+  {
+    "v970": {
+      "line": "1775",
+      "statement": "int min = divMsb / (divisor.mant[mant.length-1]+1)"
+    }
+  },
+  {
+    "v971": {
+      "line": "1776",
+      "statement": "int max = (divMsb + 1) / divisor.mant[mant.length-1"
+    }
+  },
+  {
+    "v972": {
+      "line": "1778",
+      "statement": "trialgood = false"
+    }
+  },
+  {
+    "v973": {
+      "line": "1779",
+      "statement": "while (!trialgood)"
+    }
+  },
+  {
+    "v974": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v975": {
+      "line": "1781",
+      "statement": "trial = (min+max)/2"
+    }
+  },
+  {
+    "v976": {
+      "line": "1784",
+      "statement": "int rh = 0"
+    }
+  },
+  {
+    "v977": {
+      "line": "1785",
+      "statement": "for (  int i = 0 ; i < mant.length + 1 ;   i++)"
+    }
+  },
+  {
+    "v980": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v981": {
+      "line": "1786",
+      "statement": "int dm = (i<mant.length)?divisor.mant[i]"
+    }
+  },
+  {
+    "v982": {
+      "line": "1787",
+      "statement": "final int r = (dm * trial) + rh"
+    }
+  },
+  {
+    "v983": {
+      "line": "1788",
+      "statement": "rh = r / RADIX"
+    }
+  },
+  {
+    "v984": {
+      "line": "1789",
+      "statement": "remainder[i] = r - rh * RADIX"
+    }
+  },
+  {
+    "v985": {
+      "line": "1793",
+      "statement": "rh = 1"
+    }
+  },
+  {
+    "v986": {
+      "line": "1794",
+      "statement": "for (  int i = 0 ; i < mant.length + 1 ;   i++)"
+    }
+  },
+  {
+    "v989": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v990": {
+      "line": "1795",
+      "statement": "final int r = ((RADIX-1) - remainder[i]) + dividend[i] + rh"
+    }
+  },
+  {
+    "v991": {
+      "line": "1796",
+      "statement": "rh = r / RADIX"
+    }
+  },
+  {
+    "v992": {
+      "line": "1797",
+      "statement": "remainder[i] = r - rh * RADIX"
+    }
+  },
+  {
+    "v993": {
+      "line": "1801",
+      "statement": "if (rh == 0)"
+    }
+  },
+  {
+    "v994": {
+      "line": "1803",
+      "statement": "max = trial-1"
+    }
+  },
+  {
+    "v995": {
+      "line": "1804",
+      "statement": "continue"
+    }
+  },
+  {
+    "v996": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v997": {
+      "line": "1808",
+      "statement": "minadj = (remainder[mant.length] * RADIX)+remainder[mant.length-1"
+    }
+  },
+  {
+    "v998": {
+      "line": "1809",
+      "statement": "minadj = minadj / (divisor.mant[mant.length-1]+1)"
+    }
+  },
+  {
+    "v999": {
+      "line": "1811",
+      "statement": "if (minadj >= 2)"
+    }
+  },
+  {
+    "v1000": {
+      "line": "1812",
+      "statement": "min = trial+minadj"
+    }
+  },
+  {
+    "v1001": {
+      "line": "1813",
+      "statement": "continue"
+    }
+  },
+  {
+    "v1002": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1003": {
+      "line": "1818",
+      "statement": "trialgood = false"
+    }
+  },
+  {
+    "v1004": {
+      "line": "1819",
+      "statement": "for (  int i = mant.length - 1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v1007": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1008": {
+      "line": "1820",
+      "statement": "if (divisor.mant[i] > remainder[i])"
+    }
+  },
+  {
+    "v1009": {
+      "line": "1821",
+      "statement": "trialgood = true"
+    }
+  },
+  {
+    "v1010": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1011": {
+      "line": "1823",
+      "statement": "if (divisor.mant[i] < remainder[i])"
+    }
+  },
+  {
+    "v1012": {
+      "line": "1824",
+      "statement": "break"
+    }
+  },
+  {
+    "v1013": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1014": {
+      "line": "1828",
+      "statement": "if (remainder[mant.length] != 0)"
+    }
+  },
+  {
+    "v1015": {
+      "line": "1829",
+      "statement": "trialgood = false"
+    }
+  },
+  {
+    "v1016": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1017": {
+      "line": "1832",
+      "statement": "if (trialgood == false)"
+    }
+  },
+  {
+    "v1018": {
+      "line": "1833",
+      "statement": "min = trial+1"
+    }
+  },
+  {
+    "v1019": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1020": {
+      "line": "1838",
+      "statement": "quotient[qd] = trial"
+    }
+  },
+  {
+    "v1021": {
+      "line": "1839",
+      "statement": "if (trial != 0 || nsqd != 0)"
+    }
+  },
+  {
+    "v1022": {
+      "line": "1840",
+      "statement": "nsqd++"
+    }
+  },
+  {
+    "v1023": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1024": {
+      "line": "1843",
+      "statement": "if (field.getRoundingMode() == DfpField.RoundingMode.ROUND_DOWN && nsqd == mant.length)"
+    }
+  },
+  {
+    "v1025": {
+      "line": "1845",
+      "statement": "break"
+    }
+  },
+  {
+    "v1026": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1027": {
+      "line": "1848",
+      "statement": "if (nsqd > mant.length)"
+    }
+  },
+  {
+    "v1028": {
+      "line": "1850",
+      "statement": "break"
+    }
+  },
+  {
+    "v1029": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1030": {
+      "line": "1854",
+      "statement": "dividend[0] = 0"
+    }
+  },
+  {
+    "v1031": {
+      "line": "1855",
+      "statement": "for (  int i = 0 ; i < mant.length ;   i++)"
+    }
+  },
+  {
+    "v1034": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1035": {
+      "line": "1856",
+      "statement": "dividend[i + 1] = remainder[i"
+    }
+  },
+  {
+    "v1036": {
+      "line": "1861",
+      "statement": "md = mant.length"
+    }
+  },
+  {
+    "v1037": {
+      "line": "1862",
+      "statement": "for (  int i = mant.length + 1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v1040": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1041": {
+      "line": "1863",
+      "statement": "if (quotient[i] != 0)"
+    }
+  },
+  {
+    "v1042": {
+      "line": "1864",
+      "statement": "md = i"
+    }
+  },
+  {
+    "v1043": {
+      "line": "1865",
+      "statement": "break"
+    }
+  },
+  {
+    "v1044": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1045": {
+      "line": "1870",
+      "statement": "for (  int i=0 ; i<mant.length ;   i++)"
+    }
+  },
+  {
+    "v1048": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1049": {
+      "line": "1871",
+      "statement": "result.mant[mant.length-i-1] = quotient[md-i"
+    }
+  },
+  {
+    "v1050": {
+      "line": "1875",
+      "statement": "result.exp = exp - divisor.exp + md - mant.length"
+    }
+  },
+  {
+    "v1051": {
+      "line": "1876",
+      "statement": "result.sign = (byte) ((sign == divisor.sign) ? 1"
+    }
+  },
+  {
+    "v1052": {
+      "line": "1878",
+      "statement": "if (result.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v1053": {
+      "line": "1879",
+      "statement": "result.exp = 0"
+    }
+  },
+  {
+    "v1054": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1055": {
+      "line": "1882",
+      "statement": "if (md > (mant.length-1))"
+    }
+  },
+  {
+    "v1056": {
+      "line": "1883",
+      "statement": "excp = result.round(quotient[md-mant.length])"
+    }
+  },
+  {
+    "v1057": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1058": {
+      "line": "1885",
+      "statement": "excp = result.round(0)"
+    }
+  },
+  {
+    "v1059": {
+      "line": "1888",
+      "statement": "if (excp != 0)"
+    }
+  },
+  {
+    "v1060": {
+      "line": "1889",
+      "statement": "result = dotrap(excp, DIVIDE_TRAP, divisor, result)"
+    }
+  },
+  {
+    "v1061": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1062": {
+      "line": "1892",
+      "statement": "return result"
+    }
+  },
+  {
+    "v1063": {
+      "line": "1900",
+      "statement": "Dfp divide(int divisor)"
+    }
+  },
+  {
+    "v1064": {
+      "line": "1903",
+      "statement": "if (nans != FINITE)"
+    }
+  },
+  {
+    "v1065": {
+      "line": "1904",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v1066": {
+      "line": "1905",
+      "statement": "return this"
+    }
+  },
+  {
+    "v1067": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1068": {
+      "line": "1908",
+      "statement": "if (nans == INFINITE)"
+    }
+  },
+  {
+    "v1069": {
+      "line": "1909",
+      "statement": "return newInstance(this)"
+    }
+  },
+  {
+    "v1070": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1071": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1072": {
+      "line": "1914",
+      "statement": "if (divisor == 0)"
+    }
+  },
+  {
+    "v1073": {
+      "line": "1915",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_DIV_ZERO)"
+    }
+  },
+  {
+    "v1074": {
+      "line": "1916",
+      "statement": "Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v1075": {
+      "line": "1917",
+      "statement": "result.sign = sign"
+    }
+  },
+  {
+    "v1076": {
+      "line": "1918",
+      "statement": "result.nans = INFINITE"
+    }
+  },
+  {
+    "v1077": {
+      "line": "1919",
+      "statement": "result = dotrap(DfpField.FLAG_DIV_ZERO, DIVIDE_TRAP, getZero(), result)"
+    }
+  },
+  {
+    "v1078": {
+      "line": "1920",
+      "statement": "return result"
+    }
+  },
+  {
+    "v1079": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1080": {
+      "line": "1924",
+      "statement": "if (divisor < 0 || divisor >= RADIX)"
+    }
+  },
+  {
+    "v1081": {
+      "line": "1925",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v1082": {
+      "line": "1926",
+      "statement": "Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v1083": {
+      "line": "1927",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v1084": {
+      "line": "1928",
+      "statement": "result = dotrap(DfpField.FLAG_INVALID, DIVIDE_TRAP, result, result)"
+    }
+  },
+  {
+    "v1085": {
+      "line": "1929",
+      "statement": "return result"
+    }
+  },
+  {
+    "v1086": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1087": {
+      "line": "1932",
+      "statement": "Dfp result = newInstance(this)"
+    }
+  },
+  {
+    "v1088": {
+      "line": "1934",
+      "statement": "int rl = 0"
+    }
+  },
+  {
+    "v1089": {
+      "line": "1935",
+      "statement": "for (  int i = mant.length-1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v1092": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1093": {
+      "line": "1936",
+      "statement": "final int r = rl*RADIX + result.mant[i"
+    }
+  },
+  {
+    "v1094": {
+      "line": "1937",
+      "statement": "final int rh = r / divisor"
+    }
+  },
+  {
+    "v1095": {
+      "line": "1938",
+      "statement": "rl = r - rh * divisor"
+    }
+  },
+  {
+    "v1096": {
+      "line": "1939",
+      "statement": "result.mant[i] = rh"
+    }
+  },
+  {
+    "v1097": {
+      "line": "1942",
+      "statement": "if (result.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v1098": {
+      "line": "1944",
+      "statement": "result.shiftLeft()"
+    }
+  },
+  {
+    "v1099": {
+      "line": "1945",
+      "statement": "final int r = rl * RADIX"
+    }
+  },
+  {
+    "v1100": {
+      "line": "1946",
+      "statement": "final int rh = r / divisor"
+    }
+  },
+  {
+    "v1101": {
+      "line": "1947",
+      "statement": "rl = r - rh * divisor"
+    }
+  },
+  {
+    "v1102": {
+      "line": "1948",
+      "statement": "result.mant[0] = rh"
+    }
+  },
+  {
+    "v1103": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1104": {
+      "line": "1951",
+      "statement": "final int excp = result.round(rl * RADIX / divisor)"
+    }
+  },
+  {
+    "v1105": {
+      "line": "1952",
+      "statement": "if (excp != 0)"
+    }
+  },
+  {
+    "v1106": {
+      "line": "1953",
+      "statement": "result = dotrap(excp, DIVIDE_TRAP, result, result)"
+    }
+  },
+  {
+    "v1107": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1108": {
+      "line": "1956",
+      "statement": "return result"
+    }
+  },
+  {
+    "v1109": {
+      "line": "1961",
+      "statement": "Dfp reciprocal()"
+    }
+  },
+  {
+    "v1110": {
+      "line": "1962",
+      "statement": "return field.getOne().divide(this)"
+    }
+  },
+  {
+    "v1111": {
+      "line": "1969",
+      "statement": "Dfp sqrt()"
+    }
+  },
+  {
+    "v1112": {
+      "line": "1972",
+      "statement": "if (nans == FINITE && mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v1113": {
+      "line": "1974",
+      "statement": "return newInstance(this)"
+    }
+  },
+  {
+    "v1114": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1115": {
+      "line": "1977",
+      "statement": "if (nans != FINITE)"
+    }
+  },
+  {
+    "v1116": {
+      "line": "1978",
+      "statement": "if (nans == INFINITE && sign == 1)"
+    }
+  },
+  {
+    "v1117": {
+      "line": "1980",
+      "statement": "return newInstance(this)"
+    }
+  },
+  {
+    "v1118": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1119": {
+      "line": "1983",
+      "statement": "if (nans == QNAN)"
+    }
+  },
+  {
+    "v1120": {
+      "line": "1984",
+      "statement": "return newInstance(this)"
+    }
+  },
+  {
+    "v1121": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1122": {
+      "line": "1987",
+      "statement": "if (nans == SNAN)"
+    }
+  },
+  {
+    "v1123": {
+      "line": "1988",
+      "statement": "Dfp result"
+    }
+  },
+  {
+    "v1124": {
+      "line": "1990",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v1125": {
+      "line": "1991",
+      "statement": "result = newInstance(this)"
+    }
+  },
+  {
+    "v1126": {
+      "line": "1992",
+      "statement": "result = dotrap(DfpField.FLAG_INVALID, SQRT_TRAP, null, result)"
+    }
+  },
+  {
+    "v1127": {
+      "line": "1993",
+      "statement": "return result"
+    }
+  },
+  {
+    "v1128": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1129": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1130": {
+      "line": "1997",
+      "statement": "if (sign == -1)"
+    }
+  },
+  {
+    "v1131": {
+      "line": "1999",
+      "statement": "Dfp result"
+    }
+  },
+  {
+    "v1132": {
+      "line": "2001",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v1133": {
+      "line": "2002",
+      "statement": "result = newInstance(this)"
+    }
+  },
+  {
+    "v1134": {
+      "line": "2003",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v1135": {
+      "line": "2004",
+      "statement": "result = dotrap(DfpField.FLAG_INVALID, SQRT_TRAP, null, result)"
+    }
+  },
+  {
+    "v1136": {
+      "line": "2005",
+      "statement": "return result"
+    }
+  },
+  {
+    "v1137": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1138": {
+      "line": "2008",
+      "statement": "Dfp x = newInstance(this)"
+    }
+  },
+  {
+    "v1139": {
+      "line": "2011",
+      "statement": "if (x.exp < -1 || x.exp > 1)"
+    }
+  },
+  {
+    "v1140": {
+      "line": "2012",
+      "statement": "x.exp = this.exp / 2"
+    }
+  },
+  {
+    "v1141": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1142": {
+      "line": "2016",
+      "statement": "switch (x.mant[mant.length-1] / 2000)"
+    }
+  },
+  {
+    "v1143": {
+      "line": 0,
+      "statement": "\"end-switch"
+    }
+  },
+  {
+    "v1144": {
+      "line": "2017",
+      "statement": "case 0"
+    }
+  },
+  {
+    "v1145": {
+      "line": "2018",
+      "statement": "x.mant[mant.length-1] = x.mant[mant.length-1]/2+1"
+    }
+  },
+  {
+    "v1146": {
+      "line": "2019",
+      "statement": "break"
+    }
+  },
+  {
+    "v1147": {
+      "line": "2020",
+      "statement": "case 2"
+    }
+  },
+  {
+    "v1148": {
+      "line": "2021",
+      "statement": "x.mant[mant.length-1] = 1500"
+    }
+  },
+  {
+    "v1149": {
+      "line": "2022",
+      "statement": "break"
+    }
+  },
+  {
+    "v1150": {
+      "line": "2023",
+      "statement": "case 3"
+    }
+  },
+  {
+    "v1151": {
+      "line": "2024",
+      "statement": "x.mant[mant.length-1] = 2200"
+    }
+  },
+  {
+    "v1152": {
+      "line": "2025",
+      "statement": "break"
+    }
+  },
+  {
+    "v1153": {
+      "line": "2026",
+      "statement": "default"
+    }
+  },
+  {
+    "v1154": {
+      "line": "2027",
+      "statement": "x.mant[mant.length-1] = 3000"
+    }
+  },
+  {
+    "v1155": {
+      "line": "2030",
+      "statement": "Dfp dx = newInstance(x)"
+    }
+  },
+  {
+    "v1156": {
+      "line": "2035",
+      "statement": "Dfp px  = getZero()"
+    }
+  },
+  {
+    "v1157": {
+      "line": "2036",
+      "statement": "Dfp ppx = getZero()"
+    }
+  },
+  {
+    "v1158": {
+      "line": "2037",
+      "statement": "while (x.unequal(px))"
+    }
+  },
+  {
+    "v1159": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v1160": {
+      "line": "2038",
+      "statement": "dx = newInstance(x)"
+    }
+  },
+  {
+    "v1161": {
+      "line": "2039",
+      "statement": "dx.sign = -1"
+    }
+  },
+  {
+    "v1162": {
+      "line": "2040",
+      "statement": "dx = dx.add(this.divide(x))"
+    }
+  },
+  {
+    "v1163": {
+      "line": "2041",
+      "statement": "dx = dx.divide(2)"
+    }
+  },
+  {
+    "v1164": {
+      "line": "2042",
+      "statement": "ppx = px"
+    }
+  },
+  {
+    "v1165": {
+      "line": "2043",
+      "statement": "px = x"
+    }
+  },
+  {
+    "v1166": {
+      "line": "2044",
+      "statement": "x = x.add(dx)"
+    }
+  },
+  {
+    "v1167": {
+      "line": "2046",
+      "statement": "if (x.equals(ppx))"
+    }
+  },
+  {
+    "v1168": {
+      "line": "2048",
+      "statement": "break"
+    }
+  },
+  {
+    "v1169": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1170": {
+      "line": "2053",
+      "statement": "if (dx.mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v1171": {
+      "line": "2054",
+      "statement": "break"
+    }
+  },
+  {
+    "v1172": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1173": {
+      "line": "2058",
+      "statement": "return x"
+    }
+  },
+  {
+    "v1174": {
+      "line": "2066",
+      "statement": "String toString()"
+    }
+  },
+  {
+    "v1175": {
+      "line": "2067",
+      "statement": "if (nans != FINITE)"
+    }
+  },
+  {
+    "v1176": {
+      "line": "2069",
+      "statement": "if (nans == INFINITE)"
+    }
+  },
+  {
+    "v1177": {
+      "line": "2070",
+      "statement": "return (sign < 0) ? NEG_INFINITY_STRING"
+    }
+  },
+  {
+    "v1178": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1179": {
+      "line": "2072",
+      "statement": "return NAN_STRING"
+    }
+  },
+  {
+    "v1180": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1181": {
+      "line": "2076",
+      "statement": "if (exp > mant.length || exp < -1)"
+    }
+  },
+  {
+    "v1182": {
+      "line": "2077",
+      "statement": "return dfp2sci()"
+    }
+  },
+  {
+    "v1183": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1184": {
+      "line": "2080",
+      "statement": "return dfp2string()"
+    }
+  },
+  {
+    "v1185": {
+      "line": "2087",
+      "statement": "String dfp2sci()"
+    }
+  },
+  {
+    "v1186": {
+      "line": "2088",
+      "statement": "char rawdigits[]  = new char[mant.length * 4"
+    }
+  },
+  {
+    "v1187": {
+      "line": "2089",
+      "statement": "char outputbuffer[] = new char[mant.length * 4 + 20"
+    }
+  },
+  {
+    "v1188": {
+      "line": "2090",
+      "statement": "int p"
+    }
+  },
+  {
+    "v1189": {
+      "line": "2091",
+      "statement": "int q"
+    }
+  },
+  {
+    "v1190": {
+      "line": "2092",
+      "statement": "int e"
+    }
+  },
+  {
+    "v1191": {
+      "line": "2093",
+      "statement": "int ae"
+    }
+  },
+  {
+    "v1192": {
+      "line": "2094",
+      "statement": "int shf"
+    }
+  },
+  {
+    "v1193": {
+      "line": "2097",
+      "statement": "p = 0"
+    }
+  },
+  {
+    "v1194": {
+      "line": "2098",
+      "statement": "for (  int i = mant.length - 1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v1197": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1198": {
+      "line": "2099",
+      "statement": "rawdigits[p++] = (char) ((mant[i] / 1000) + '0')"
+    }
+  },
+  {
+    "v1199": {
+      "line": "2100",
+      "statement": "rawdigits[p++] = (char) (((mant[i] / 100) %10) + '0')"
+    }
+  },
+  {
+    "v1200": {
+      "line": "2101",
+      "statement": "rawdigits[p++] = (char) (((mant[i] / 10) % 10) + '0')"
+    }
+  },
+  {
+    "v1201": {
+      "line": "2102",
+      "statement": "rawdigits[p++] = (char) (((mant[i]) % 10) + '0')"
+    }
+  },
+  {
+    "v1202": {
+      "line": "2106",
+      "statement": "for (  p = 0 ; p < rawdigits.length ;   p++)"
+    }
+  },
+  {
+    "v1205": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1206": {
+      "line": "2107",
+      "statement": "if (rawdigits[p] != '0')"
+    }
+  },
+  {
+    "v1207": {
+      "line": "2108",
+      "statement": "break"
+    }
+  },
+  {
+    "v1208": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1209": {
+      "line": "2111",
+      "statement": "shf = p"
+    }
+  },
+  {
+    "v1210": {
+      "line": "2114",
+      "statement": "q = 0"
+    }
+  },
+  {
+    "v1211": {
+      "line": "2115",
+      "statement": "if (sign == -1)"
+    }
+  },
+  {
+    "v1212": {
+      "line": "2116",
+      "statement": "outputbuffer[q++] = '-'"
+    }
+  },
+  {
+    "v1213": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1214": {
+      "line": "2119",
+      "statement": "if (p != rawdigits.length)"
+    }
+  },
+  {
+    "v1215": {
+      "line": "2121",
+      "statement": "outputbuffer[q++] = rawdigits[p++"
+    }
+  },
+  {
+    "v1216": {
+      "line": "2122",
+      "statement": "outputbuffer[q++] = '.'"
+    }
+  },
+  {
+    "v1217": {
+      "line": "2124",
+      "statement": "while (p<rawdigits.length)"
+    }
+  },
+  {
+    "v1218": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v1219": {
+      "line": "2125",
+      "statement": "outputbuffer[q++] = rawdigits[p++"
+    }
+  },
+  {
+    "v1220": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1221": {
+      "line": "2128",
+      "statement": "outputbuffer[q++] = '0'"
+    }
+  },
+  {
+    "v1222": {
+      "line": "2129",
+      "statement": "outputbuffer[q++] = '.'"
+    }
+  },
+  {
+    "v1223": {
+      "line": "2130",
+      "statement": "outputbuffer[q++] = '0'"
+    }
+  },
+  {
+    "v1224": {
+      "line": "2131",
+      "statement": "outputbuffer[q++] = 'e'"
+    }
+  },
+  {
+    "v1225": {
+      "line": "2132",
+      "statement": "outputbuffer[q++] = '0'"
+    }
+  },
+  {
+    "v1226": {
+      "line": "2133",
+      "statement": "return new String(outputbuffer, 0, 5)"
+    }
+  },
+  {
+    "v1227": {
+      "line": "2136",
+      "statement": "outputbuffer[q++] = 'e'"
+    }
+  },
+  {
+    "v1228": {
+      "line": "2140",
+      "statement": "e = exp * 4 - shf - 1"
+    }
+  },
+  {
+    "v1229": {
+      "line": "2141",
+      "statement": "ae = e"
+    }
+  },
+  {
+    "v1230": {
+      "line": "2142",
+      "statement": "if (e < 0)"
+    }
+  },
+  {
+    "v1231": {
+      "line": "2143",
+      "statement": "ae = -e"
+    }
+  },
+  {
+    "v1232": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1233": {
+      "line": "2147",
+      "statement": "for (  p = 1000000000 ; p > ae ;   p /= 10)"
+    }
+  },
+  {
+    "v1236": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1237": {
+      "line": "2151",
+      "statement": "if (e < 0)"
+    }
+  },
+  {
+    "v1238": {
+      "line": "2152",
+      "statement": "outputbuffer[q++] = '-'"
+    }
+  },
+  {
+    "v1239": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1240": {
+      "line": "2155",
+      "statement": "while (p > 0)"
+    }
+  },
+  {
+    "v1241": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v1242": {
+      "line": "2156",
+      "statement": "outputbuffer[q++] = (char)(ae / p + '0')"
+    }
+  },
+  {
+    "v1243": {
+      "line": "2157",
+      "statement": "ae = ae % p"
+    }
+  },
+  {
+    "v1244": {
+      "line": "2158",
+      "statement": "p = p / 10"
+    }
+  },
+  {
+    "v1245": {
+      "line": "2161",
+      "statement": "return new String(outputbuffer, 0, q)"
+    }
+  },
+  {
+    "v1246": {
+      "line": "2168",
+      "statement": "String dfp2string()"
+    }
+  },
+  {
+    "v1247": {
+      "line": "2169",
+      "statement": "char buffer[] = new char[mant.length*4 + 20"
+    }
+  },
+  {
+    "v1248": {
+      "line": "2170",
+      "statement": "int p = 1"
+    }
+  },
+  {
+    "v1249": {
+      "line": "2171",
+      "statement": "int q"
+    }
+  },
+  {
+    "v1250": {
+      "line": "2172",
+      "statement": "int e = exp"
+    }
+  },
+  {
+    "v1251": {
+      "line": "2173",
+      "statement": "boolean pointInserted = false"
+    }
+  },
+  {
+    "v1252": {
+      "line": "2175",
+      "statement": "buffer[0] = ' '"
+    }
+  },
+  {
+    "v1253": {
+      "line": "2177",
+      "statement": "if (e <= 0)"
+    }
+  },
+  {
+    "v1254": {
+      "line": "2178",
+      "statement": "buffer[p++] = '0'"
+    }
+  },
+  {
+    "v1255": {
+      "line": "2179",
+      "statement": "buffer[p++] = '.'"
+    }
+  },
+  {
+    "v1256": {
+      "line": "2180",
+      "statement": "pointInserted = true"
+    }
+  },
+  {
+    "v1257": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1258": {
+      "line": "2183",
+      "statement": "while (e < 0)"
+    }
+  },
+  {
+    "v1259": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v1260": {
+      "line": "2184",
+      "statement": "buffer[p++] = '0'"
+    }
+  },
+  {
+    "v1261": {
+      "line": "2185",
+      "statement": "buffer[p++] = '0'"
+    }
+  },
+  {
+    "v1262": {
+      "line": "2186",
+      "statement": "buffer[p++] = '0'"
+    }
+  },
+  {
+    "v1263": {
+      "line": "2187",
+      "statement": "buffer[p++] = '0'"
+    }
+  },
+  {
+    "v1264": {
+      "line": "2188",
+      "statement": "e++"
+    }
+  },
+  {
+    "v1265": {
+      "line": "2191",
+      "statement": "for (  int i = mant.length - 1 ; i >= 0 ;   i--)"
+    }
+  },
+  {
+    "v1268": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1269": {
+      "line": "2192",
+      "statement": "buffer[p++] = (char) ((mant[i] / 1000) + '0')"
+    }
+  },
+  {
+    "v1270": {
+      "line": "2193",
+      "statement": "buffer[p++] = (char) (((mant[i] / 100) % 10) + '0')"
+    }
+  },
+  {
+    "v1271": {
+      "line": "2194",
+      "statement": "buffer[p++] = (char) (((mant[i] / 10) % 10) + '0')"
+    }
+  },
+  {
+    "v1272": {
+      "line": "2195",
+      "statement": "buffer[p++] = (char) (((mant[i]) % 10) + '0')"
+    }
+  },
+  {
+    "v1273": {
+      "line": "2196",
+      "statement": "if (--e == 0)"
+    }
+  },
+  {
+    "v1274": {
+      "line": "2197",
+      "statement": "buffer[p++] = '.'"
+    }
+  },
+  {
+    "v1275": {
+      "line": "2198",
+      "statement": "pointInserted = true"
+    }
+  },
+  {
+    "v1276": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1277": {
+      "line": "2202",
+      "statement": "while (e > 0)"
+    }
+  },
+  {
+    "v1278": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v1279": {
+      "line": "2203",
+      "statement": "buffer[p++] = '0'"
+    }
+  },
+  {
+    "v1280": {
+      "line": "2204",
+      "statement": "buffer[p++] = '0'"
+    }
+  },
+  {
+    "v1281": {
+      "line": "2205",
+      "statement": "buffer[p++] = '0'"
+    }
+  },
+  {
+    "v1282": {
+      "line": "2206",
+      "statement": "buffer[p++] = '0'"
+    }
+  },
+  {
+    "v1283": {
+      "line": "2207",
+      "statement": "e--"
+    }
+  },
+  {
+    "v1284": {
+      "line": "2210",
+      "statement": "if (!pointInserted)"
+    }
+  },
+  {
+    "v1285": {
+      "line": "2212",
+      "statement": "buffer[p++] = '.'"
+    }
+  },
+  {
+    "v1286": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1287": {
+      "line": "2216",
+      "statement": "q = 1"
+    }
+  },
+  {
+    "v1288": {
+      "line": "2217",
+      "statement": "while (buffer[q] == '0')"
+    }
+  },
+  {
+    "v1289": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v1290": {
+      "line": "2218",
+      "statement": "q++"
+    }
+  },
+  {
+    "v1291": {
+      "line": "2220",
+      "statement": "if (buffer[q] == '.')"
+    }
+  },
+  {
+    "v1292": {
+      "line": "2221",
+      "statement": "q--"
+    }
+  },
+  {
+    "v1293": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1294": {
+      "line": "2225",
+      "statement": "while (buffer[p-1] == '0')"
+    }
+  },
+  {
+    "v1295": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v1296": {
+      "line": "2226",
+      "statement": "p--"
+    }
+  },
+  {
+    "v1297": {
+      "line": "2230",
+      "statement": "if (sign < 0)"
+    }
+  },
+  {
+    "v1298": {
+      "line": "2231",
+      "statement": "buffer[--q] = '-'"
+    }
+  },
+  {
+    "v1299": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1300": {
+      "line": "2234",
+      "statement": "return new String(buffer, q, p - q)"
+    }
+  },
+  {
+    "v1301": {
+      "line": "2245",
+      "statement": "Dfp dotrap(int type, String what, Dfp oper, Dfp result)"
+    }
+  },
+  {
+    "v1302": {
+      "line": "2246",
+      "statement": "Dfp def = result"
+    }
+  },
+  {
+    "v1303": {
+      "line": "2248",
+      "statement": "switch (type)"
+    }
+  },
+  {
+    "v1304": {
+      "line": 0,
+      "statement": "\"end-switch"
+    }
+  },
+  {
+    "v1305": {
+      "line": "2249",
+      "statement": "case DfpField.FLAG_INVALID"
+    }
+  },
+  {
+    "v1306": {
+      "line": "2250",
+      "statement": "def = newInstance(getZero())"
+    }
+  },
+  {
+    "v1307": {
+      "line": "2251",
+      "statement": "def.sign = result.sign"
+    }
+  },
+  {
+    "v1308": {
+      "line": "2252",
+      "statement": "def.nans = QNAN"
+    }
+  },
+  {
+    "v1309": {
+      "line": "2253",
+      "statement": "break"
+    }
+  },
+  {
+    "v1310": {
+      "line": "2255",
+      "statement": "case DfpField.FLAG_DIV_ZERO"
+    }
+  },
+  {
+    "v1311": {
+      "line": "2256",
+      "statement": "if (nans == FINITE && mant[mant.length-1] != 0)"
+    }
+  },
+  {
+    "v1312": {
+      "line": "2258",
+      "statement": "def = newInstance(getZero())"
+    }
+  },
+  {
+    "v1313": {
+      "line": "2259",
+      "statement": "def.sign = (byte)(sign*oper.sign)"
+    }
+  },
+  {
+    "v1314": {
+      "line": "2260",
+      "statement": "def.nans = INFINITE"
+    }
+  },
+  {
+    "v1315": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1316": {
+      "line": "2263",
+      "statement": "if (nans == FINITE && mant[mant.length-1] == 0)"
+    }
+  },
+  {
+    "v1317": {
+      "line": "2265",
+      "statement": "def = newInstance(getZero())"
+    }
+  },
+  {
+    "v1318": {
+      "line": "2266",
+      "statement": "def.nans = QNAN"
+    }
+  },
+  {
+    "v1319": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1320": {
+      "line": "2269",
+      "statement": "if (nans == INFINITE || nans == QNAN)"
+    }
+  },
+  {
+    "v1321": {
+      "line": "2270",
+      "statement": "def = newInstance(getZero())"
+    }
+  },
+  {
+    "v1322": {
+      "line": "2271",
+      "statement": "def.nans = QNAN"
+    }
+  },
+  {
+    "v1323": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1324": {
+      "line": "2274",
+      "statement": "if (nans == INFINITE || nans == SNAN)"
+    }
+  },
+  {
+    "v1325": {
+      "line": "2275",
+      "statement": "def = newInstance(getZero())"
+    }
+  },
+  {
+    "v1326": {
+      "line": "2276",
+      "statement": "def.nans = QNAN"
+    }
+  },
+  {
+    "v1327": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1328": {
+      "line": "2278",
+      "statement": "break"
+    }
+  },
+  {
+    "v1329": {
+      "line": "2280",
+      "statement": "case DfpField.FLAG_UNDERFLOW"
+    }
+  },
+  {
+    "v1330": {
+      "line": "2281",
+      "statement": "if ( (result.exp+mant.length) < MIN_EXP)"
+    }
+  },
+  {
+    "v1331": {
+      "line": "2282",
+      "statement": "def = newInstance(getZero())"
+    }
+  },
+  {
+    "v1332": {
+      "line": "2283",
+      "statement": "def.sign = result.sign"
+    }
+  },
+  {
+    "v1333": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1334": {
+      "line": "2285",
+      "statement": "def = newInstance(result)"
+    }
+  },
+  {
+    "v1335": {
+      "line": "2287",
+      "statement": "result.exp = result.exp + ERR_SCALE"
+    }
+  },
+  {
+    "v1336": {
+      "line": "2288",
+      "statement": "break"
+    }
+  },
+  {
+    "v1337": {
+      "line": "2290",
+      "statement": "case DfpField.FLAG_OVERFLOW"
+    }
+  },
+  {
+    "v1338": {
+      "line": "2291",
+      "statement": "result.exp = result.exp - ERR_SCALE"
+    }
+  },
+  {
+    "v1339": {
+      "line": "2292",
+      "statement": "def = newInstance(getZero())"
+    }
+  },
+  {
+    "v1340": {
+      "line": "2293",
+      "statement": "def.sign = result.sign"
+    }
+  },
+  {
+    "v1341": {
+      "line": "2294",
+      "statement": "def.nans = INFINITE"
+    }
+  },
+  {
+    "v1342": {
+      "line": "2295",
+      "statement": "break"
+    }
+  },
+  {
+    "v1343": {
+      "line": "2297",
+      "statement": "default"
+    }
+  },
+  {
+    "v1344": {
+      "line": "2297",
+      "statement": "def = result"
+    }
+  },
+  {
+    "v1345": {
+      "line": "2297",
+      "statement": "break"
+    }
+  },
+  {
+    "v1346": {
+      "line": "2300",
+      "statement": "return trap(type, what, oper, def, result)"
+    }
+  },
+  {
+    "v1347": {
+      "line": "2315",
+      "statement": "Dfp trap(int type, String what, Dfp oper, Dfp def, Dfp result)"
+    }
+  },
+  {
+    "v1348": {
+      "line": "2316",
+      "statement": "return def"
+    }
+  },
+  {
+    "v1349": {
+      "line": "2322",
+      "statement": "int classify()"
+    }
+  },
+  {
+    "v1350": {
+      "line": "2323",
+      "statement": "return nans"
+    }
+  },
+  {
+    "v1351": {
+      "line": "2332",
+      "statement": "Dfp copysign(final Dfp x, final Dfp y)"
+    }
+  },
+  {
+    "v1352": {
+      "line": "2333",
+      "statement": "Dfp result = x.newInstance(x)"
+    }
+  },
+  {
+    "v1353": {
+      "line": "2334",
+      "statement": "result.sign = y.sign"
+    }
+  },
+  {
+    "v1354": {
+      "line": "2335",
+      "statement": "return result"
+    }
+  },
+  {
+    "v1355": {
+      "line": "2343",
+      "statement": "Dfp nextAfter(final Dfp x)"
+    }
+  },
+  {
+    "v1356": {
+      "line": "2346",
+      "statement": "if (field.getRadixDigits() != x.field.getRadixDigits())"
+    }
+  },
+  {
+    "v1357": {
+      "line": "2347",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INVALID)"
+    }
+  },
+  {
+    "v1358": {
+      "line": "2348",
+      "statement": "final Dfp result = newInstance(getZero())"
+    }
+  },
+  {
+    "v1359": {
+      "line": "2349",
+      "statement": "result.nans = QNAN"
+    }
+  },
+  {
+    "v1360": {
+      "line": "2350",
+      "statement": "return dotrap(DfpField.FLAG_INVALID, NEXT_AFTER_TRAP, x, result)"
+    }
+  },
+  {
+    "v1361": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1362": {
+      "line": "2354",
+      "statement": "boolean up = false"
+    }
+  },
+  {
+    "v1363": {
+      "line": "2355",
+      "statement": "if (this.lessThan(x))"
+    }
+  },
+  {
+    "v1364": {
+      "line": "2356",
+      "statement": "up = true"
+    }
+  },
+  {
+    "v1365": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1366": {
+      "line": "2359",
+      "statement": "if (compare(this, x) == 0)"
+    }
+  },
+  {
+    "v1367": {
+      "line": "2360",
+      "statement": "return newInstance(x)"
+    }
+  },
+  {
+    "v1368": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1369": {
+      "line": "2363",
+      "statement": "if (lessThan(getZero()))"
+    }
+  },
+  {
+    "v1370": {
+      "line": "2364",
+      "statement": "up = !up"
+    }
+  },
+  {
+    "v1371": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1372": {
+      "line": "2367",
+      "statement": "final Dfp inc"
+    }
+  },
+  {
+    "v1373": {
+      "line": "2368",
+      "statement": "Dfp result"
+    }
+  },
+  {
+    "v1374": {
+      "line": "2369",
+      "statement": "if (up)"
+    }
+  },
+  {
+    "v1375": {
+      "line": "2370",
+      "statement": "inc = newInstance(getOne())"
+    }
+  },
+  {
+    "v1376": {
+      "line": "2371",
+      "statement": "inc.exp = this.exp-mant.length+1"
+    }
+  },
+  {
+    "v1377": {
+      "line": "2372",
+      "statement": "inc.sign = this.sign"
+    }
+  },
+  {
+    "v1378": {
+      "line": "2374",
+      "statement": "if (this.equals(getZero()))"
+    }
+  },
+  {
+    "v1379": {
+      "line": "2375",
+      "statement": "inc.exp = MIN_EXP-mant.length"
+    }
+  },
+  {
+    "v1380": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1381": {
+      "line": "2378",
+      "statement": "result = add(inc)"
+    }
+  },
+  {
+    "v1382": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1383": {
+      "line": "2380",
+      "statement": "inc = newInstance(getOne())"
+    }
+  },
+  {
+    "v1384": {
+      "line": "2381",
+      "statement": "inc.exp = this.exp"
+    }
+  },
+  {
+    "v1385": {
+      "line": "2382",
+      "statement": "inc.sign = this.sign"
+    }
+  },
+  {
+    "v1386": {
+      "line": "2384",
+      "statement": "if (this.equals(inc))"
+    }
+  },
+  {
+    "v1387": {
+      "line": "2385",
+      "statement": "inc.exp = this.exp-mant.length"
+    }
+  },
+  {
+    "v1388": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1389": {
+      "line": "2387",
+      "statement": "inc.exp = this.exp-mant.length+1"
+    }
+  },
+  {
+    "v1390": {
+      "line": "2390",
+      "statement": "if (this.equals(getZero()))"
+    }
+  },
+  {
+    "v1391": {
+      "line": "2391",
+      "statement": "inc.exp = MIN_EXP-mant.length"
+    }
+  },
+  {
+    "v1392": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1393": {
+      "line": "2394",
+      "statement": "result = this.subtract(inc)"
+    }
+  },
+  {
+    "v1394": {
+      "line": "2397",
+      "statement": "if (result.classify() == INFINITE && this.classify() != INFINITE)"
+    }
+  },
+  {
+    "v1395": {
+      "line": "2398",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INEXACT)"
+    }
+  },
+  {
+    "v1396": {
+      "line": "2399",
+      "statement": "result = dotrap(DfpField.FLAG_INEXACT, NEXT_AFTER_TRAP, x, result)"
+    }
+  },
+  {
+    "v1397": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1398": {
+      "line": "2402",
+      "statement": "if (result.equals(getZero()) && this.equals(getZero()) == false)"
+    }
+  },
+  {
+    "v1399": {
+      "line": "2403",
+      "statement": "field.setIEEEFlagsBits(DfpField.FLAG_INEXACT)"
+    }
+  },
+  {
+    "v1400": {
+      "line": "2404",
+      "statement": "result = dotrap(DfpField.FLAG_INEXACT, NEXT_AFTER_TRAP, x, result)"
+    }
+  },
+  {
+    "v1401": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1402": {
+      "line": "2407",
+      "statement": "return result"
+    }
+  },
+  {
+    "v1403": {
+      "line": "2415",
+      "statement": "double toDouble()"
+    }
+  },
+  {
+    "v1404": {
+      "line": "2417",
+      "statement": "if (isInfinite())"
+    }
+  },
+  {
+    "v1405": {
+      "line": "2418",
+      "statement": "if (lessThan(getZero()))"
+    }
+  },
+  {
+    "v1406": {
+      "line": "2419",
+      "statement": "return Double.NEGATIVE_INFINITY"
+    }
+  },
+  {
+    "v1407": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1408": {
+      "line": "2421",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v1409": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1410": {
+      "line": "2425",
+      "statement": "if (isNaN())"
+    }
+  },
+  {
+    "v1411": {
+      "line": "2426",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v1412": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1413": {
+      "line": "2429",
+      "statement": "Dfp y = this"
+    }
+  },
+  {
+    "v1414": {
+      "line": "2430",
+      "statement": "boolean negate = false"
+    }
+  },
+  {
+    "v1415": {
+      "line": "2431",
+      "statement": "int cmp0 = compare(this, getZero())"
+    }
+  },
+  {
+    "v1416": {
+      "line": "2432",
+      "statement": "if (cmp0 == 0)"
+    }
+  },
+  {
+    "v1417": {
+      "line": "2433",
+      "statement": "return sign < 0 ? -0.0"
+    }
+  },
+  {
+    "v1418": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1419": {
+      "line": "2434",
+      "statement": "if (cmp0 < 0)"
+    }
+  },
+  {
+    "v1420": {
+      "line": "2435",
+      "statement": "y = negate()"
+    }
+  },
+  {
+    "v1421": {
+      "line": "2436",
+      "statement": "negate = true"
+    }
+  },
+  {
+    "v1422": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1423": {
+      "line": "2441",
+      "statement": "int exponent = (int)(y.intLog10() * 3.32)"
+    }
+  },
+  {
+    "v1424": {
+      "line": "2442",
+      "statement": "if (exponent < 0)"
+    }
+  },
+  {
+    "v1425": {
+      "line": "2443",
+      "statement": "exponent--"
+    }
+  },
+  {
+    "v1426": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1427": {
+      "line": "2446",
+      "statement": "Dfp tempDfp = DfpMath.pow(getTwo(), exponent)"
+    }
+  },
+  {
+    "v1428": {
+      "line": "2447",
+      "statement": "while (tempDfp.lessThan(y) || tempDfp.equals(y))"
+    }
+  },
+  {
+    "v1429": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v1430": {
+      "line": "2448",
+      "statement": "tempDfp = tempDfp.multiply(2)"
+    }
+  },
+  {
+    "v1431": {
+      "line": "2449",
+      "statement": "exponent++"
+    }
+  },
+  {
+    "v1436": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1437": {
+      "line": "2460",
+      "statement": "if (exponent < -1074)"
+    }
+  },
+  {
+    "v1438": {
+      "line": "2461",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v1439": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1440": {
+      "line": "2464",
+      "statement": "if (exponent > 1023)"
+    }
+  },
+  {
+    "v1441": {
+      "line": "2465",
+      "statement": "return negate ? Double.NEGATIVE_INFINITY"
+    }
+  },
+  {
+    "v1442": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1443": {
+      "line": "2469",
+      "statement": "y = y.multiply(newInstance(4503599627370496l)).rint()"
+    }
+  },
+  {
+    "v1444": {
+      "line": "2470",
+      "statement": "String str = y.toString()"
+    }
+  },
+  {
+    "v1445": {
+      "line": "2471",
+      "statement": "str = str.substring(0, str.length()-1)"
+    }
+  },
+  {
+    "v1446": {
+      "line": "2472",
+      "statement": "long mantissa = Long.parseLong(str)"
+    }
+  },
+  {
+    "v1447": {
+      "line": "2474",
+      "statement": "if (mantissa == 4503599627370496L)"
+    }
+  },
+  {
+    "v1448": {
+      "line": "2476",
+      "statement": "mantissa = 0"
+    }
+  },
+  {
+    "v1449": {
+      "line": "2477",
+      "statement": "exponent++"
+    }
+  },
+  {
+    "v1450": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1451": {
+      "line": "2481",
+      "statement": "if (exponent <= -1023)"
+    }
+  },
+  {
+    "v1452": {
+      "line": "2482",
+      "statement": "exponent--"
+    }
+  },
+  {
+    "v1453": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1454": {
+      "line": "2485",
+      "statement": "while (exponent < -1023)"
+    }
+  },
+  {
+    "v1455": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v1456": {
+      "line": "2486",
+      "statement": "exponent++"
+    }
+  },
+  {
+    "v1457": {
+      "line": "2487",
+      "statement": "mantissa >>>= 1"
+    }
+  },
+  {
+    "v1458": {
+      "line": "2490",
+      "statement": "long bits = mantissa | ((exponent + 1023L) << 52)"
+    }
+  },
+  {
+    "v1459": {
+      "line": "2491",
+      "statement": "double x = Double.longBitsToDouble(bits)"
+    }
+  },
+  {
+    "v1460": {
+      "line": "2493",
+      "statement": "if (negate)"
+    }
+  },
+  {
+    "v1461": {
+      "line": "2494",
+      "statement": "x = -x"
+    }
+  },
+  {
+    "v1462": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1463": {
+      "line": "2497",
+      "statement": "return x"
+    }
+  },
+  {
+    "v1464": {
+      "line": "2505",
+      "statement": "double[] toSplitDouble()"
+    }
+  },
+  {
+    "v1465": {
+      "line": "2506",
+      "statement": "double split[] = new double[2"
+    }
+  },
+  {
+    "v1466": {
+      "line": "2507",
+      "statement": "long mask = 0xffffffffc0000000L"
+    }
+  },
+  {
+    "v1467": {
+      "line": "2509",
+      "statement": "split[0] = Double.longBitsToDouble(Double.doubleToLongBits(toDouble()) & mask)"
+    }
+  },
+  {
+    "v1468": {
+      "line": "2510",
+      "statement": "split[1] = subtract(newInstance(split[0])).toDouble()"
+    }
+  },
+  {
+    "v1469": {
+      "line": "2512",
+      "statement": "return split"
+    }
+  },
+  {
+    "v1470": {
+      "line": "2518",
+      "statement": "double getReal()"
+    }
+  },
+  {
+    "v1471": {
+      "line": "2519",
+      "statement": "return toDouble()"
+    }
+  },
+  {
+    "v1472": {
+      "line": "2525",
+      "statement": "Dfp add(final double a)"
+    }
+  },
+  {
+    "v1473": {
+      "line": "2526",
+      "statement": "return add(newInstance(a))"
+    }
+  },
+  {
+    "v1474": {
+      "line": "2532",
+      "statement": "Dfp subtract(final double a)"
+    }
+  },
+  {
+    "v1475": {
+      "line": "2533",
+      "statement": "return subtract(newInstance(a))"
+    }
+  },
+  {
+    "v1476": {
+      "line": "2539",
+      "statement": "Dfp multiply(final double a)"
+    }
+  },
+  {
+    "v1477": {
+      "line": "2540",
+      "statement": "return multiply(newInstance(a))"
+    }
+  },
+  {
+    "v1478": {
+      "line": "2546",
+      "statement": "Dfp divide(final double a)"
+    }
+  },
+  {
+    "v1479": {
+      "line": "2547",
+      "statement": "return divide(newInstance(a))"
+    }
+  },
+  {
+    "v1480": {
+      "line": "2553",
+      "statement": "Dfp remainder(final double a)"
+    }
+  },
+  {
+    "v1481": {
+      "line": "2554",
+      "statement": "return remainder(newInstance(a))"
+    }
+  },
+  {
+    "v1482": {
+      "line": "2560",
+      "statement": "long round()"
+    }
+  },
+  {
+    "v1483": {
+      "line": "2561",
+      "statement": "return FastMath.round(toDouble())"
+    }
+  },
+  {
+    "v1484": {
+      "line": "2567",
+      "statement": "Dfp signum()"
+    }
+  },
+  {
+    "v1485": {
+      "line": "2568",
+      "statement": "if (isNaN() || isZero())"
+    }
+  },
+  {
+    "v1486": {
+      "line": "2569",
+      "statement": "return this"
+    }
+  },
+  {
+    "v1487": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1488": {
+      "line": "2571",
+      "statement": "return newInstance(sign > 0 ? +1"
+    }
+  },
+  {
+    "v1489": {
+      "line": "2578",
+      "statement": "Dfp copySign(final Dfp s)"
+    }
+  },
+  {
+    "v1490": {
+      "line": "2579",
+      "statement": "if ((sign >= 0 && s.sign >= 0) || (sign < 0 && s.sign < 0))"
+    }
+  },
+  {
+    "v1491": {
+      "line": "2580",
+      "statement": "return this"
+    }
+  },
+  {
+    "v1492": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1493": {
+      "line": "2582",
+      "statement": "return negate()"
+    }
+  },
+  {
+    "v1494": {
+      "line": "2588",
+      "statement": "Dfp copySign(final double s)"
+    }
+  },
+  {
+    "v1495": {
+      "line": "2589",
+      "statement": "long sb = Double.doubleToLongBits(s)"
+    }
+  },
+  {
+    "v1496": {
+      "line": "2590",
+      "statement": "if ((sign >= 0 && sb >= 0) || (sign < 0 && sb < 0))"
+    }
+  },
+  {
+    "v1497": {
+      "line": "2591",
+      "statement": "return this"
+    }
+  },
+  {
+    "v1498": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1499": {
+      "line": "2593",
+      "statement": "return negate()"
+    }
+  },
+  {
+    "v1500": {
+      "line": "2599",
+      "statement": "Dfp scalb(final int n)"
+    }
+  },
+  {
+    "v1501": {
+      "line": "2600",
+      "statement": "return multiply(DfpMath.pow(getTwo(), n))"
+    }
+  },
+  {
+    "v1502": {
+      "line": "2606",
+      "statement": "Dfp hypot(final Dfp y)"
+    }
+  },
+  {
+    "v1503": {
+      "line": "2607",
+      "statement": "return multiply(this).add(y.multiply(y)).sqrt()"
+    }
+  },
+  {
+    "v1504": {
+      "line": "2613",
+      "statement": "Dfp cbrt()"
+    }
+  },
+  {
+    "v1505": {
+      "line": "2614",
+      "statement": "return rootN(3)"
+    }
+  },
+  {
+    "v1506": {
+      "line": "2620",
+      "statement": "Dfp rootN(final int n)"
+    }
+  },
+  {
+    "v1507": {
+      "line": "2621",
+      "statement": "return (sign >= 0) ?  DfpMath.pow(this, getOne().divide(n))"
+    }
+  },
+  {
+    "v1508": {
+      "line": "2629",
+      "statement": "Dfp pow(final double p)"
+    }
+  },
+  {
+    "v1509": {
+      "line": "2630",
+      "statement": "return DfpMath.pow(this, newInstance(p))"
+    }
+  },
+  {
+    "v1510": {
+      "line": "2636",
+      "statement": "Dfp pow(final int n)"
+    }
+  },
+  {
+    "v1511": {
+      "line": "2637",
+      "statement": "return DfpMath.pow(this, n)"
+    }
+  },
+  {
+    "v1512": {
+      "line": "2643",
+      "statement": "Dfp pow(final Dfp e)"
+    }
+  },
+  {
+    "v1513": {
+      "line": "2644",
+      "statement": "return DfpMath.pow(this, e)"
+    }
+  },
+  {
+    "v1514": {
+      "line": "2650",
+      "statement": "Dfp exp()"
+    }
+  },
+  {
+    "v1515": {
+      "line": "2651",
+      "statement": "return DfpMath.exp(this)"
+    }
+  },
+  {
+    "v1516": {
+      "line": "2657",
+      "statement": "Dfp expm1()"
+    }
+  },
+  {
+    "v1517": {
+      "line": "2658",
+      "statement": "return DfpMath.exp(this).subtract(getOne())"
+    }
+  },
+  {
+    "v1518": {
+      "line": "2664",
+      "statement": "Dfp log()"
+    }
+  },
+  {
+    "v1519": {
+      "line": "2665",
+      "statement": "return DfpMath.log(this)"
+    }
+  },
+  {
+    "v1520": {
+      "line": "2671",
+      "statement": "Dfp log1p()"
+    }
+  },
+  {
+    "v1521": {
+      "line": "2672",
+      "statement": "return DfpMath.log(this.add(getOne()))"
+    }
+  },
+  {
+    "v1522": {
+      "line": "2682",
+      "statement": "int log10()"
+    }
+  },
+  {
+    "v1523": {
+      "line": "2683",
+      "statement": "return intLog10()"
+    }
+  },
+  {
+    "v1524": {
+      "line": "2697",
+      "statement": "Dfp cos()"
+    }
+  },
+  {
+    "v1525": {
+      "line": "2698",
+      "statement": "return DfpMath.cos(this)"
+    }
+  },
+  {
+    "v1526": {
+      "line": "2704",
+      "statement": "Dfp sin()"
+    }
+  },
+  {
+    "v1527": {
+      "line": "2705",
+      "statement": "return DfpMath.sin(this)"
+    }
+  },
+  {
+    "v1528": {
+      "line": "2711",
+      "statement": "Dfp tan()"
+    }
+  },
+  {
+    "v1529": {
+      "line": "2712",
+      "statement": "return DfpMath.tan(this)"
+    }
+  },
+  {
+    "v1530": {
+      "line": "2718",
+      "statement": "Dfp acos()"
+    }
+  },
+  {
+    "v1531": {
+      "line": "2719",
+      "statement": "return DfpMath.acos(this)"
+    }
+  },
+  {
+    "v1532": {
+      "line": "2725",
+      "statement": "Dfp asin()"
+    }
+  },
+  {
+    "v1533": {
+      "line": "2726",
+      "statement": "return DfpMath.asin(this)"
+    }
+  },
+  {
+    "v1534": {
+      "line": "2732",
+      "statement": "Dfp atan()"
+    }
+  },
+  {
+    "v1535": {
+      "line": "2733",
+      "statement": "return DfpMath.atan(this)"
+    }
+  },
+  {
+    "v1536": {
+      "line": "2739",
+      "statement": "Dfp atan2(final Dfp x)"
+    }
+  },
+  {
+    "v1537": {
+      "line": "2743",
+      "statement": "final Dfp r = x.multiply(x).add(multiply(this)).sqrt()"
+    }
+  },
+  {
+    "v1538": {
+      "line": "2745",
+      "statement": "if (x.sign >= 0)"
+    }
+  },
+  {
+    "v1539": {
+      "line": "2748",
+      "statement": "return getTwo().multiply(divide(r.add(x)).atan())"
+    }
+  },
+  {
+    "v1540": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1541": {
+      "line": "2753",
+      "statement": "final Dfp tmp = getTwo().multiply(divide(r.subtract(x)).atan())"
+    }
+  },
+  {
+    "v1542": {
+      "line": "2754",
+      "statement": "final Dfp pmPi = newInstance((tmp.sign <= 0) ? -FastMath.PI"
+    }
+  },
+  {
+    "v1543": {
+      "line": "2755",
+      "statement": "return pmPi.subtract(tmp)"
+    }
+  },
+  {
+    "v1544": {
+      "line": "2764",
+      "statement": "Dfp cosh()"
+    }
+  },
+  {
+    "v1545": {
+      "line": "2765",
+      "statement": "return DfpMath.exp(this).add(DfpMath.exp(negate())).divide(2)"
+    }
+  },
+  {
+    "v1546": {
+      "line": "2771",
+      "statement": "Dfp sinh()"
+    }
+  },
+  {
+    "v1547": {
+      "line": "2772",
+      "statement": "return DfpMath.exp(this).subtract(DfpMath.exp(negate())).divide(2)"
+    }
+  },
+  {
+    "v1548": {
+      "line": "2778",
+      "statement": "Dfp tanh()"
+    }
+  },
+  {
+    "v1549": {
+      "line": "2779",
+      "statement": "final Dfp ePlus  = DfpMath.exp(this)"
+    }
+  },
+  {
+    "v1550": {
+      "line": "2780",
+      "statement": "final Dfp eMinus = DfpMath.exp(negate())"
+    }
+  },
+  {
+    "v1551": {
+      "line": "2781",
+      "statement": "return ePlus.subtract(eMinus).divide(ePlus.add(eMinus))"
+    }
+  },
+  {
+    "v1552": {
+      "line": "2787",
+      "statement": "Dfp acosh()"
+    }
+  },
+  {
+    "v1553": {
+      "line": "2788",
+      "statement": "return multiply(this).subtract(getOne()).sqrt().add(this).log()"
+    }
+  },
+  {
+    "v1554": {
+      "line": "2794",
+      "statement": "Dfp asinh()"
+    }
+  },
+  {
+    "v1555": {
+      "line": "2795",
+      "statement": "return multiply(this).add(getOne()).sqrt().add(this).log()"
+    }
+  },
+  {
+    "v1556": {
+      "line": "2801",
+      "statement": "Dfp atanh()"
+    }
+  },
+  {
+    "v1557": {
+      "line": "2802",
+      "statement": "return getOne().add(this).divide(getOne().subtract(this)).log().divide(2)"
+    }
+  },
+  {
+    "v1558": {
+      "line": "2808",
+      "statement": "Dfp linearCombination(final Dfp[] a, final Dfp[] b)"
+    }
+  },
+  {
+    "v1559": {
+      "line": "2810",
+      "statement": "if (a.length != b.length)"
+    }
+  },
+  {
+    "v1560": {
+      "line": "2811",
+      "statement": "throw new DimensionMismatchException(a.length, b.length)"
+    }
+  },
+  {
+    "v1561": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1562": {
+      "line": "2813",
+      "statement": "Dfp r = getZero()"
+    }
+  },
+  {
+    "v1563": {
+      "line": "2814",
+      "statement": "for (  int i = 0 ; i < a.length ;   ++i)"
+    }
+  },
+  {
+    "v1566": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1567": {
+      "line": "2815",
+      "statement": "r = r.add(a[i].multiply(b[i]))"
+    }
+  },
+  {
+    "v1568": {
+      "line": "2817",
+      "statement": "return r"
+    }
+  },
+  {
+    "v1569": {
+      "line": "2823",
+      "statement": "Dfp linearCombination(final double[] a, final Dfp[] b)"
+    }
+  },
+  {
+    "v1570": {
+      "line": "2825",
+      "statement": "if (a.length != b.length)"
+    }
+  },
+  {
+    "v1571": {
+      "line": "2826",
+      "statement": "throw new DimensionMismatchException(a.length, b.length)"
+    }
+  },
+  {
+    "v1572": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v1573": {
+      "line": "2828",
+      "statement": "Dfp r = getZero()"
+    }
+  },
+  {
+    "v1574": {
+      "line": "2829",
+      "statement": "for (  int i = 0 ; i < a.length ;   ++i)"
+    }
+  },
+  {
+    "v1577": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v1578": {
+      "line": "2830",
+      "statement": "r = r.add(b[i].multiply(a[i]))"
+    }
+  },
+  {
+    "v1579": {
+      "line": "2832",
+      "statement": "return r"
+    }
+  },
+  {
+    "v1580": {
+      "line": "2838",
+      "statement": "Dfp linearCombination(final Dfp a1, final Dfp b1, final Dfp a2, final Dfp b2)"
+    }
+  },
+  {
+    "v1581": {
+      "line": "2839",
+      "statement": "return a1.multiply(b1).add(a2.multiply(b2))"
+    }
+  },
+  {
+    "v1582": {
+      "line": "2845",
+      "statement": "Dfp linearCombination(final double a1, final Dfp b1, final double a2, final Dfp b2)"
+    }
+  },
+  {
+    "v1583": {
+      "line": "2846",
+      "statement": "return b1.multiply(a1).add(b2.multiply(a2))"
+    }
+  },
+  {
+    "v1584": {
+      "line": "2852",
+      "statement": "Dfp linearCombination(final Dfp a1, final Dfp b1,  final Dfp a2, final Dfp b2,  final Dfp a3, final Dfp b3)"
+    }
+  },
+  {
+    "v1585": {
+      "line": "2855",
+      "statement": "return a1.multiply(b1).add(a2.multiply(b2)).add(a3.multiply(b3))"
+    }
+  },
+  {
+    "v1586": {
+      "line": "2861",
+      "statement": "Dfp linearCombination(final double a1, final Dfp b1,  final double a2, final Dfp b2,  final double a3, final Dfp b3)"
+    }
+  },
+  {
+    "v1587": {
+      "line": "2864",
+      "statement": "return b1.multiply(a1).add(b2.multiply(a2)).add(b3.multiply(a3))"
+    }
+  },
+  {
+    "v1588": {
+      "line": "2870",
+      "statement": "Dfp linearCombination(final Dfp a1, final Dfp b1, final Dfp a2, final Dfp b2,  final Dfp a3, final Dfp b3, final Dfp a4, final Dfp b4)"
+    }
+  },
+  {
+    "v1589": {
+      "line": "2872",
+      "statement": "return a1.multiply(b1).add(a2.multiply(b2)).add(a3.multiply(b3)).add(a4.multiply(b4))"
+    }
+  },
+  {
+    "v1590": {
+      "line": "2878",
+      "statement": "Dfp linearCombination(final double a1, final Dfp b1, final double a2, final Dfp b2,  final double a3, final Dfp b3, final double a4, final Dfp b4)"
+    }
+  },
+  {
+    "v1591": {
+      "line": "2880",
+      "statement": "return b1.multiply(a1).add(b2.multiply(a2)).add(b3.multiply(a3)).add(b4.multiply(a4))"
+    }
+  }
+]

@@ -1,0 +1,49 @@
+
+findKnot : value(D)D=[136,137
+137,140
+140,141
+141,142
+142,147
+147,150
+141,147
+137,138
+]
+
+testConstructor : <init>([D[Lorg/apache/commons/math3/analysis/polynomials/PolynomialFunction;)V=[104,105
+105,109
+109,113
+113,116
+];;getKnots()[D=[227,228
+228,229
+229,230
+];;getPolynomials()[Lorg/apache/commons/math3/analysis/polynomials/PolynomialFunction;=[214,215
+215,216
+216,217
+];;getN()I=[203,204
+]
+
+testIsValidPoint : <init>([D[Lorg/apache/commons/math3/analysis/polynomials/PolynomialFunction;)V=[122,123
+];;isValidPoint(D)Z=[239,240
+240,244
+240,242
+];;value(D)D=[136,137
+137,140
+140,141
+141,147
+147,150
+147,148
+148,150
+141,142
+142,147
+137,138
+]
+
+testValues : <init>([D[Lorg/apache/commons/math3/analysis/polynomials/PolynomialFunction;)V=[121,122
+122,123
+];;derivative()Lorg/apache/commons/math3/analysis/UnivariateFunction;=[158,159
+];;polynomialSplineDerivative()Lorg/apache/commons/math3/analysis/polynomials/PolynomialSplineFunction;=[167,168
+168,169
+169,170
+170,169
+169,172
+]

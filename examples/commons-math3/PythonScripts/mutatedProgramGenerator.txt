@@ -1,0 +1,1 @@
+8===vim -c "156s/*/\/" -c ":w! /Users/kesina/eclipse-workspace/commons-mathNew/src/main/java/org/apache/commons/math4/analysis/differentiation/FiniteDifferencesDifferentiator.java" -c ":q!" /Users/kesina/eclipse-workspace/commons-mathNew/src/main/java/org/apache/commons/math4/analysis/differentiation-original/FiniteDifferencesDifferentiator.txt

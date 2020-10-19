@@ -1,0 +1,386 @@
+[
+  {
+    "v1": {
+      "line": "53",
+      "statement": "SmoothingPolynomialBicubicSplineInterpolator ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "54",
+      "statement": "this(3)"
+    }
+  },
+  {
+    "v3": {
+      "line": "61",
+      "statement": "SmoothingPolynomialBicubicSplineInterpolator (int degree)"
+    }
+  },
+  {
+    "v4": {
+      "line": "63",
+      "statement": "this(degree, degree)"
+    }
+  },
+  {
+    "v5": {
+      "line": "73",
+      "statement": "SmoothingPolynomialBicubicSplineInterpolator (int xDegree, int yDegree)"
+    }
+  },
+  {
+    "v6": {
+      "line": "75",
+      "statement": "if (xDegree < 0)"
+    }
+  },
+  {
+    "v7": {
+      "line": "76",
+      "statement": "throw new NotPositiveException(xDegree)"
+    }
+  },
+  {
+    "v8": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v9": {
+      "line": "78",
+      "statement": "if (yDegree < 0)"
+    }
+  },
+  {
+    "v10": {
+      "line": "79",
+      "statement": "throw new NotPositiveException(yDegree)"
+    }
+  },
+  {
+    "v11": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v12": {
+      "line": "81",
+      "statement": "this.xDegree = xDegree"
+    }
+  },
+  {
+    "v13": {
+      "line": "82",
+      "statement": "this.yDegree = yDegree"
+    }
+  },
+  {
+    "v14": {
+      "line": "84",
+      "statement": "final double safeFactor = 1e2"
+    }
+  },
+  {
+    "v15": {
+      "line": "85",
+      "statement": "final SimpleVectorValueChecker checker = new SimpleVectorValueChecker(safeFactor * Precision.EPSILON,  safeFactor * Precision.SAFE_MIN)"
+    }
+  },
+  {
+    "v16": {
+      "line": "88",
+      "statement": "xFitter = new PolynomialFitter(new GaussNewtonOptimizer(false, checker))"
+    }
+  },
+  {
+    "v17": {
+      "line": "89",
+      "statement": "yFitter = new PolynomialFitter(new GaussNewtonOptimizer(false, checker))"
+    }
+  },
+  {
+    "v18": {
+      "line": "96",
+      "statement": "BicubicSplineInterpolatingFunction interpolate(final double[] xval, final double[] yval, final double[][] fval)"
+    }
+  },
+  {
+    "v19": {
+      "line": "101",
+      "statement": "if (xval.length == 0 || yval.length == 0 || fval.length == 0)"
+    }
+  },
+  {
+    "v20": {
+      "line": "102",
+      "statement": "throw new NoDataException()"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "104",
+      "statement": "if (xval.length != fval.length)"
+    }
+  },
+  {
+    "v23": {
+      "line": "105",
+      "statement": "throw new DimensionMismatchException(xval.length, fval.length)"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "108",
+      "statement": "final int xLen = xval.length"
+    }
+  },
+  {
+    "v26": {
+      "line": "109",
+      "statement": "final int yLen = yval.length"
+    }
+  },
+  {
+    "v27": {
+      "line": "111",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v31": {
+      "line": "112",
+      "statement": "if (fval[i].length != yLen)"
+    }
+  },
+  {
+    "v32": {
+      "line": "113",
+      "statement": "throw new DimensionMismatchException(fval[i].length, yLen)"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v34": {
+      "line": "117",
+      "statement": "MathArrays.checkOrder(xval)"
+    }
+  },
+  {
+    "v35": {
+      "line": "118",
+      "statement": "MathArrays.checkOrder(yval)"
+    }
+  },
+  {
+    "v36": {
+      "line": "122",
+      "statement": "final PolynomialFunction[] yPolyX = new PolynomialFunction[yLen"
+    }
+  },
+  {
+    "v37": {
+      "line": "123",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v41": {
+      "line": "124",
+      "statement": "xFitter.clearObservations()"
+    }
+  },
+  {
+    "v42": {
+      "line": "125",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v45": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v46": {
+      "line": "126",
+      "statement": "xFitter.addObservedPoint(1, xval[i], fval[i][j])"
+    }
+  },
+  {
+    "v47": {
+      "line": "131",
+      "statement": "yPolyX[j] = new PolynomialFunction(xFitter.fit(new double[xDegree + 1]))"
+    }
+  },
+  {
+    "v48": {
+      "line": "136",
+      "statement": "final double[][] fval_1 = new double[xLen][yLen"
+    }
+  },
+  {
+    "v49": {
+      "line": "137",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v53": {
+      "line": "138",
+      "statement": "final PolynomialFunction f = yPolyX[j"
+    }
+  },
+  {
+    "v54": {
+      "line": "139",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v57": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v58": {
+      "line": "140",
+      "statement": "fval_1[i][j] = f.value(xval[i])"
+    }
+  },
+  {
+    "v59": {
+      "line": "146",
+      "statement": "final PolynomialFunction[] xPolyY = new PolynomialFunction[xLen"
+    }
+  },
+  {
+    "v60": {
+      "line": "147",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v63": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v64": {
+      "line": "148",
+      "statement": "yFitter.clearObservations()"
+    }
+  },
+  {
+    "v65": {
+      "line": "149",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v68": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v69": {
+      "line": "150",
+      "statement": "yFitter.addObservedPoint(1, yval[j], fval_1[i][j])"
+    }
+  },
+  {
+    "v70": {
+      "line": "155",
+      "statement": "xPolyY[i] = new PolynomialFunction(yFitter.fit(new double[yDegree + 1]))"
+    }
+  },
+  {
+    "v71": {
+      "line": "160",
+      "statement": "final double[][] fval_2 = new double[xLen][yLen"
+    }
+  },
+  {
+    "v72": {
+      "line": "161",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v75": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v76": {
+      "line": "162",
+      "statement": "final PolynomialFunction f = xPolyY[i"
+    }
+  },
+  {
+    "v77": {
+      "line": "163",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v80": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v81": {
+      "line": "164",
+      "statement": "fval_2[i][j] = f.value(yval[j])"
+    }
+  },
+  {
+    "v82": {
+      "line": "168",
+      "statement": "return super.interpolate(xval, yval, fval_2)"
+    }
+  }
+]

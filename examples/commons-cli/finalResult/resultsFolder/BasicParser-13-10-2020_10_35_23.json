@@ -1,0 +1,19 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "48"
+    ],
+    "sourceClass": "BasicParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR1"
+    ],
+    "unsatisfiedRequirement": [
+      "TR1"
+    ],
+    "newTestRequirement": [
+      "TR1"
+    ]
+  }
+}

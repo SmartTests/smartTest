@@ -1,0 +1,48 @@
+digraph LinearInterpolator_CFG {
+  // graph-vertices
+  v1  [label="46:  PolynomialSplineFunction interpolate(double x[], double y[])"];
+  v2  [label="50:  if (x.length != y.length)"];
+  v3  [label="51:  throw new DimensionMismatchException(x.length, y.length)"];
+  v4  [label="endif"];
+  v5  [label="54:  if (x.length < 2)"];
+  v6  [label="55:  throw new NumberIsTooSmallException(LocalizedFormats.NUMBER_OF_POINTS, x.length, 2, true)"];
+  v7  [label="endif"];
+  v8  [label="60:  int n = x.length - 1"];
+  v9  [label="62:  MathArrays.checkOrder(x)"];
+  v10  [label="65:  final double m[] = new double[n]"];
+  v11  [label="66:  for (  int i = 0 ; i < n ;   i++)"];
+  v14  [label="endfor"];
+  v15  [label="67:  m[i] = (y[i + 1] - y[i]) / (x[i + 1] - x[i])"];
+  v16  [label="70:  final PolynomialFunction polynomials[] = new PolynomialFunction[n]"];
+  v17  [label="71:  final double coefficients[] = new double[2]"];
+  v18  [label="72:  for (  int i = 0 ; i < n ;   i++)"];
+  v21  [label="endfor"];
+  v22  [label="73:  coefficients[0] = y[i]"];
+  v23  [label="74:  coefficients[1] = m[i]"];
+  v24  [label="75:  polynomials[i] = new PolynomialFunction(coefficients)"];
+  v25  [label="78:  return new PolynomialSplineFunction(x, polynomials);"];
+  // graph-edges
+  v1 -> v2;
+  v2 -> v3  [label="True"];
+  v2 -> v4  [label="False"];
+  v4 -> v5;
+  v5 -> v6  [label="True"];
+  v5 -> v7  [label="False"];
+  v7 -> v8;
+  v8 -> v9;
+  v9 -> v10;
+  v10 -> v11;
+  v11 -> v14  [label="False"];
+  v11 -> v15  [label="True"];
+  v15 -> v11;
+  v14 -> v16;
+  v16 -> v17;
+  v17 -> v18;
+  v18 -> v21  [label="False"];
+  v18 -> v22  [label="True"];
+  v22 -> v23;
+  v23 -> v24;
+  v24 -> v18;
+  v21 -> v25;
+  // end-of-graph
+}

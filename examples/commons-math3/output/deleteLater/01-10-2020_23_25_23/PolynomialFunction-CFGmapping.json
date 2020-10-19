@@ -1,0 +1,974 @@
+[
+  {
+    "v1": {
+      "line": "67",
+      "statement": "PolynomialFunction (double c[])"
+    }
+  },
+  {
+    "v2": {
+      "line": "69",
+      "statement": "super()"
+    }
+  },
+  {
+    "v3": {
+      "line": "70",
+      "statement": "MathUtils.checkNotNull(c)"
+    }
+  },
+  {
+    "v4": {
+      "line": "71",
+      "statement": "int n = c.length"
+    }
+  },
+  {
+    "v5": {
+      "line": "72",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v6": {
+      "line": "73",
+      "statement": "throw new NoDataException(LocalizedFormats.EMPTY_POLYNOMIALS_COEFFICIENTS_ARRAY)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "75",
+      "statement": "while ((n > 1) && (c[n - 1] == 0))"
+    }
+  },
+  {
+    "v9": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v10": {
+      "line": "78",
+      "statement": "this.coefficients = new double[n"
+    }
+  },
+  {
+    "v11": {
+      "line": "79",
+      "statement": "System.arraycopy(c, 0, this.coefficients, 0, n)"
+    }
+  },
+  {
+    "v12": {
+      "line": "93",
+      "statement": "double value(double x)"
+    }
+  },
+  {
+    "v13": {
+      "line": "94",
+      "statement": "return evaluate(coefficients, x)"
+    }
+  },
+  {
+    "v14": {
+      "line": "102",
+      "statement": "int degree()"
+    }
+  },
+  {
+    "v15": {
+      "line": "103",
+      "statement": "return coefficients.length - 1"
+    }
+  },
+  {
+    "v16": {
+      "line": "114",
+      "statement": "double[] getCoefficients()"
+    }
+  },
+  {
+    "v17": {
+      "line": "115",
+      "statement": "return coefficients.clone()"
+    }
+  },
+  {
+    "v18": {
+      "line": "128",
+      "statement": "double evaluate(double[] coefficients, double argument)"
+    }
+  },
+  {
+    "v19": {
+      "line": "130",
+      "statement": "MathUtils.checkNotNull(coefficients)"
+    }
+  },
+  {
+    "v20": {
+      "line": "131",
+      "statement": "int n = coefficients.length"
+    }
+  },
+  {
+    "v21": {
+      "line": "132",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v22": {
+      "line": "133",
+      "statement": "throw new NoDataException(LocalizedFormats.EMPTY_POLYNOMIALS_COEFFICIENTS_ARRAY)"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v24": {
+      "line": "135",
+      "statement": "double result = coefficients[n - 1"
+    }
+  },
+  {
+    "v25": {
+      "line": "136",
+      "statement": "for (  int j = n - 2 ; j >= 0 ;   j--)"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v29": {
+      "line": "137",
+      "statement": "result = argument * result + coefficients[j"
+    }
+  },
+  {
+    "v30": {
+      "line": "139",
+      "statement": "return result"
+    }
+  },
+  {
+    "v31": {
+      "line": "148",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v32": {
+      "line": "150",
+      "statement": "MathUtils.checkNotNull(coefficients)"
+    }
+  },
+  {
+    "v33": {
+      "line": "151",
+      "statement": "int n = coefficients.length"
+    }
+  },
+  {
+    "v34": {
+      "line": "152",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v35": {
+      "line": "153",
+      "statement": "throw new NoDataException(LocalizedFormats.EMPTY_POLYNOMIALS_COEFFICIENTS_ARRAY)"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v37": {
+      "line": "155",
+      "statement": "DerivativeStructure result = new DerivativeStructure(t.getFreeParameters(), t.getOrder(), coefficients[n - 1])"
+    }
+  },
+  {
+    "v38": {
+      "line": "157",
+      "statement": "for (  int j = n - 2 ; j >= 0 ;   j--)"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v42": {
+      "line": "158",
+      "statement": "result = result.multiply(t).add(coefficients[j])"
+    }
+  },
+  {
+    "v43": {
+      "line": "160",
+      "statement": "return result"
+    }
+  },
+  {
+    "v44": {
+      "line": "169",
+      "statement": "PolynomialFunction add(final PolynomialFunction p)"
+    }
+  },
+  {
+    "v45": {
+      "line": "171",
+      "statement": "final int lowLength  = FastMath.min(coefficients.length, p.coefficients.length)"
+    }
+  },
+  {
+    "v46": {
+      "line": "172",
+      "statement": "final int highLength = FastMath.max(coefficients.length, p.coefficients.length)"
+    }
+  },
+  {
+    "v47": {
+      "line": "175",
+      "statement": "double[] newCoefficients = new double[highLength"
+    }
+  },
+  {
+    "v48": {
+      "line": "176",
+      "statement": "for (  int i = 0 ; i < lowLength ;   ++i)"
+    }
+  },
+  {
+    "v51": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v52": {
+      "line": "177",
+      "statement": "newCoefficients[i] = coefficients[i] + p.coefficients[i"
+    }
+  },
+  {
+    "v53": {
+      "line": "179",
+      "statement": "System.arraycopy((coefficients.length < p.coefficients.length) ?  p.coefficients"
+    }
+  },
+  {
+    "v54": {
+      "line": "185",
+      "statement": "return new PolynomialFunction(newCoefficients)"
+    }
+  },
+  {
+    "v55": {
+      "line": "194",
+      "statement": "PolynomialFunction subtract(final PolynomialFunction p)"
+    }
+  },
+  {
+    "v56": {
+      "line": "196",
+      "statement": "int lowLength  = FastMath.min(coefficients.length, p.coefficients.length)"
+    }
+  },
+  {
+    "v57": {
+      "line": "197",
+      "statement": "int highLength = FastMath.max(coefficients.length, p.coefficients.length)"
+    }
+  },
+  {
+    "v58": {
+      "line": "200",
+      "statement": "double[] newCoefficients = new double[highLength"
+    }
+  },
+  {
+    "v59": {
+      "line": "201",
+      "statement": "for (  int i = 0 ; i < lowLength ;   ++i)"
+    }
+  },
+  {
+    "v62": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v63": {
+      "line": "202",
+      "statement": "newCoefficients[i] = coefficients[i] - p.coefficients[i"
+    }
+  },
+  {
+    "v64": {
+      "line": "204",
+      "statement": "if (coefficients.length < p.coefficients.length)"
+    }
+  },
+  {
+    "v65": {
+      "line": "205",
+      "statement": "for (  int i = lowLength ; i < highLength ;   ++i)"
+    }
+  },
+  {
+    "v68": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v69": {
+      "line": "206",
+      "statement": "newCoefficients[i] = -p.coefficients[i"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v71": {
+      "line": "209",
+      "statement": "System.arraycopy(coefficients, lowLength, newCoefficients, lowLength,  highLength - lowLength)"
+    }
+  },
+  {
+    "v72": {
+      "line": "213",
+      "statement": "return new PolynomialFunction(newCoefficients)"
+    }
+  },
+  {
+    "v73": {
+      "line": "221",
+      "statement": "PolynomialFunction negate()"
+    }
+  },
+  {
+    "v74": {
+      "line": "222",
+      "statement": "double[] newCoefficients = new double[coefficients.length"
+    }
+  },
+  {
+    "v75": {
+      "line": "223",
+      "statement": "for (  int i = 0 ; i < coefficients.length ;   ++i)"
+    }
+  },
+  {
+    "v78": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v79": {
+      "line": "224",
+      "statement": "newCoefficients[i] = -coefficients[i"
+    }
+  },
+  {
+    "v80": {
+      "line": "226",
+      "statement": "return new PolynomialFunction(newCoefficients)"
+    }
+  },
+  {
+    "v81": {
+      "line": "235",
+      "statement": "PolynomialFunction multiply(final PolynomialFunction p)"
+    }
+  },
+  {
+    "v82": {
+      "line": "236",
+      "statement": "double[] newCoefficients = new double[coefficients.length + p.coefficients.length - 1"
+    }
+  },
+  {
+    "v83": {
+      "line": "238",
+      "statement": "for (  int i = 0 ; i < newCoefficients.length ;   ++i)"
+    }
+  },
+  {
+    "v86": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v87": {
+      "line": "239",
+      "statement": "newCoefficients[i] = 0.0"
+    }
+  },
+  {
+    "v88": {
+      "line": "240",
+      "statement": "int j = FastMath.max(0, i + 1 - p.coefficients.length)"
+    }
+  },
+  {
+    "v89": {
+      "line": "241",
+      "statement": "for (j < FastMath.min(coefficients.length, i + 1))"
+    }
+  },
+  {
+    "v90": {
+      "line": "242",
+      "statement": "++j"
+    }
+  },
+  {
+    "v91": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v92": {
+      "line": "243",
+      "statement": "newCoefficients[i] += coefficients[j] * p.coefficients[i-j"
+    }
+  },
+  {
+    "v93": {
+      "line": "247",
+      "statement": "return new PolynomialFunction(newCoefficients)"
+    }
+  },
+  {
+    "v94": {
+      "line": "258",
+      "statement": "double[] differentiate(double[] coefficients)"
+    }
+  },
+  {
+    "v95": {
+      "line": "260",
+      "statement": "MathUtils.checkNotNull(coefficients)"
+    }
+  },
+  {
+    "v96": {
+      "line": "261",
+      "statement": "int n = coefficients.length"
+    }
+  },
+  {
+    "v97": {
+      "line": "262",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v98": {
+      "line": "263",
+      "statement": "throw new NoDataException(LocalizedFormats.EMPTY_POLYNOMIALS_COEFFICIENTS_ARRAY)"
+    }
+  },
+  {
+    "v99": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v100": {
+      "line": "265",
+      "statement": "if (n == 1)"
+    }
+  },
+  {
+    "v101": {
+      "line": "266",
+      "statement": "return new double[]{0}"
+    }
+  },
+  {
+    "v102": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v103": {
+      "line": "268",
+      "statement": "double[] result = new double[n - 1"
+    }
+  },
+  {
+    "v104": {
+      "line": "269",
+      "statement": "for (  int i = n - 1 ; i > 0 ;   i--)"
+    }
+  },
+  {
+    "v107": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v108": {
+      "line": "270",
+      "statement": "result[i - 1] = i * coefficients[i"
+    }
+  },
+  {
+    "v109": {
+      "line": "272",
+      "statement": "return result"
+    }
+  },
+  {
+    "v110": {
+      "line": "280",
+      "statement": "PolynomialFunction polynomialDerivative()"
+    }
+  },
+  {
+    "v111": {
+      "line": "281",
+      "statement": "return new PolynomialFunction(differentiate(coefficients))"
+    }
+  },
+  {
+    "v112": {
+      "line": "289",
+      "statement": "UnivariateFunction derivative()"
+    }
+  },
+  {
+    "v113": {
+      "line": "290",
+      "statement": "return polynomialDerivative()"
+    }
+  },
+  {
+    "v114": {
+      "line": "309",
+      "statement": "String toString()"
+    }
+  },
+  {
+    "v115": {
+      "line": "310",
+      "statement": "StringBuilder s = new StringBuilder()"
+    }
+  },
+  {
+    "v116": {
+      "line": "311",
+      "statement": "if (coefficients[0] == 0.0)"
+    }
+  },
+  {
+    "v117": {
+      "line": "312",
+      "statement": "if (coefficients.length == 1)"
+    }
+  },
+  {
+    "v118": {
+      "line": "313",
+      "statement": "return '0'"
+    }
+  },
+  {
+    "v119": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v120": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v121": {
+      "line": "316",
+      "statement": "s.append(toString(coefficients[0]))"
+    }
+  },
+  {
+    "v122": {
+      "line": "319",
+      "statement": "for (  int i = 1 ; i < coefficients.length ;   ++i)"
+    }
+  },
+  {
+    "v125": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v126": {
+      "line": "320",
+      "statement": "if (coefficients[i] != 0)"
+    }
+  },
+  {
+    "v127": {
+      "line": "321",
+      "statement": "if (s.length() > 0)"
+    }
+  },
+  {
+    "v128": {
+      "line": "322",
+      "statement": "if (coefficients[i] < 0)"
+    }
+  },
+  {
+    "v129": {
+      "line": "323",
+      "statement": "s.append(' - ')"
+    }
+  },
+  {
+    "v130": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v131": {
+      "line": "325",
+      "statement": "s.append(' + ')"
+    }
+  },
+  {
+    "v132": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v133": {
+      "line": "328",
+      "statement": "if (coefficients[i] < 0)"
+    }
+  },
+  {
+    "v134": {
+      "line": "329",
+      "statement": "s.append('-')"
+    }
+  },
+  {
+    "v135": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v136": {
+      "line": "333",
+      "statement": "double absAi = FastMath.abs(coefficients[i])"
+    }
+  },
+  {
+    "v137": {
+      "line": "334",
+      "statement": "if ((absAi - 1) != 0)"
+    }
+  },
+  {
+    "v138": {
+      "line": "335",
+      "statement": "s.append(toString(absAi))"
+    }
+  },
+  {
+    "v139": {
+      "line": "336",
+      "statement": "s.append(' ')"
+    }
+  },
+  {
+    "v140": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v141": {
+      "line": "339",
+      "statement": "s.append('x')"
+    }
+  },
+  {
+    "v142": {
+      "line": "340",
+      "statement": "if (i > 1)"
+    }
+  },
+  {
+    "v143": {
+      "line": "341",
+      "statement": "s.append('^')"
+    }
+  },
+  {
+    "v144": {
+      "line": "342",
+      "statement": "s.append(Integer.toString(i))"
+    }
+  },
+  {
+    "v145": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v146": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v147": {
+      "line": "347",
+      "statement": "return s.toString()"
+    }
+  },
+  {
+    "v148": {
+      "line": "356",
+      "statement": "String toString(double coeff)"
+    }
+  },
+  {
+    "v149": {
+      "line": "357",
+      "statement": "final String c = Double.toString(coeff)"
+    }
+  },
+  {
+    "v150": {
+      "line": "358",
+      "statement": "if (c.endsWith('.0'))"
+    }
+  },
+  {
+    "v151": {
+      "line": "359",
+      "statement": "return c.substring(0, c.length() - 2)"
+    }
+  },
+  {
+    "v152": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v153": {
+      "line": "361",
+      "statement": "return c"
+    }
+  },
+  {
+    "v154": {
+      "line": "367",
+      "statement": "int hashCode()"
+    }
+  },
+  {
+    "v155": {
+      "line": "368",
+      "statement": "final int prime = 31"
+    }
+  },
+  {
+    "v156": {
+      "line": "369",
+      "statement": "int result = 1"
+    }
+  },
+  {
+    "v157": {
+      "line": "370",
+      "statement": "result = prime * result + Arrays.hashCode(coefficients)"
+    }
+  },
+  {
+    "v158": {
+      "line": "371",
+      "statement": "return result"
+    }
+  },
+  {
+    "v159": {
+      "line": "376",
+      "statement": "boolean equals(Object obj)"
+    }
+  },
+  {
+    "v160": {
+      "line": "377",
+      "statement": "if (this == obj)"
+    }
+  },
+  {
+    "v161": {
+      "line": "378",
+      "statement": "return true"
+    }
+  },
+  {
+    "v162": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v163": {
+      "line": "380",
+      "statement": "if (!(obj instanceof PolynomialFunction))"
+    }
+  },
+  {
+    "v164": {
+      "line": "381",
+      "statement": "return false"
+    }
+  },
+  {
+    "v165": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v166": {
+      "line": "383",
+      "statement": "PolynomialFunction other = (PolynomialFunction) obj"
+    }
+  },
+  {
+    "v167": {
+      "line": "384",
+      "statement": "if (!Arrays.equals(coefficients, other.coefficients))"
+    }
+  },
+  {
+    "v168": {
+      "line": "385",
+      "statement": "return false"
+    }
+  },
+  {
+    "v169": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v170": {
+      "line": "387",
+      "statement": "return true"
+    }
+  },
+  {
+    "v171": {
+      "line": "397",
+      "statement": "double[] gradient(double x, double ... parameters)"
+    }
+  },
+  {
+    "v172": {
+      "line": "398",
+      "statement": "final double[] gradient = new double[parameters.length"
+    }
+  },
+  {
+    "v173": {
+      "line": "399",
+      "statement": "double xn = 1.0"
+    }
+  },
+  {
+    "v174": {
+      "line": "400",
+      "statement": "for (  int i = 0 ; i < parameters.length ;   ++i)"
+    }
+  },
+  {
+    "v177": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v178": {
+      "line": "401",
+      "statement": "gradient[i] = xn"
+    }
+  },
+  {
+    "v179": {
+      "line": "402",
+      "statement": "xn *= x"
+    }
+  },
+  {
+    "v180": {
+      "line": "404",
+      "statement": "return gradient"
+    }
+  },
+  {
+    "v181": {
+      "line": "408",
+      "statement": "double value(final double x, final double ... parameters)"
+    }
+  },
+  {
+    "v182": {
+      "line": "410",
+      "statement": "return PolynomialFunction.evaluate(parameters, x)"
+    }
+  }
+]

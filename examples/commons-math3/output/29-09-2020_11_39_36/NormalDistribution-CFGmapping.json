@@ -1,0 +1,386 @@
+[
+  {
+    "v1": {
+      "line": "59",
+      "statement": "NormalDistribution ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "60",
+      "statement": "this(0, 1)"
+    }
+  },
+  {
+    "v3": {
+      "line": "70",
+      "statement": "NormalDistribution (double mean, double sd)"
+    }
+  },
+  {
+    "v4": {
+      "line": "72",
+      "statement": "this(mean, sd, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v5": {
+      "line": "85",
+      "statement": "NormalDistribution (double mean, double sd, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "87",
+      "statement": "this(new Well19937c(), mean, sd, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v7": {
+      "line": "99",
+      "statement": "NormalDistribution (RandomGenerator rng, double mean, double sd)"
+    }
+  },
+  {
+    "v8": {
+      "line": "101",
+      "statement": "this(rng, mean, sd, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v9": {
+      "line": "114",
+      "statement": "NormalDistribution (RandomGenerator rng, double mean, double sd, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v10": {
+      "line": "119",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v11": {
+      "line": "121",
+      "statement": "if (sd <= 0)"
+    }
+  },
+  {
+    "v12": {
+      "line": "122",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.STANDARD_DEVIATION, sd)"
+    }
+  },
+  {
+    "v13": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v14": {
+      "line": "125",
+      "statement": "this.mean = mean"
+    }
+  },
+  {
+    "v15": {
+      "line": "126",
+      "statement": "standardDeviation = sd"
+    }
+  },
+  {
+    "v16": {
+      "line": "127",
+      "statement": "solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v17": {
+      "line": "135",
+      "statement": "double getMean()"
+    }
+  },
+  {
+    "v18": {
+      "line": "136",
+      "statement": "return mean"
+    }
+  },
+  {
+    "v19": {
+      "line": "144",
+      "statement": "double getStandardDeviation()"
+    }
+  },
+  {
+    "v20": {
+      "line": "145",
+      "statement": "return standardDeviation"
+    }
+  },
+  {
+    "v21": {
+      "line": "149",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v22": {
+      "line": "150",
+      "statement": "final double x0 = x - mean"
+    }
+  },
+  {
+    "v23": {
+      "line": "151",
+      "statement": "final double x1 = x0 / standardDeviation"
+    }
+  },
+  {
+    "v24": {
+      "line": "152",
+      "statement": "return FastMath.exp(-0.5 * x1 * x1) / (standardDeviation * SQRT2PI)"
+    }
+  },
+  {
+    "v25": {
+      "line": "162",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v26": {
+      "line": "163",
+      "statement": "final double dev = x - mean"
+    }
+  },
+  {
+    "v27": {
+      "line": "164",
+      "statement": "if (FastMath.abs(dev) > 40 * standardDeviation)"
+    }
+  },
+  {
+    "v28": {
+      "line": "165",
+      "statement": "return dev < 0 ? 0.0d"
+    }
+  },
+  {
+    "v29": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v30": {
+      "line": "167",
+      "statement": "return 0.5 * (1 + Erf.erf(dev / (standardDeviation * SQRT2)))"
+    }
+  },
+  {
+    "v31": {
+      "line": "174",
+      "statement": "double inverseCumulativeProbability(final double p)"
+    }
+  },
+  {
+    "v32": {
+      "line": "175",
+      "statement": "if (p < 0.0 || p > 1.0)"
+    }
+  },
+  {
+    "v33": {
+      "line": "176",
+      "statement": "throw new OutOfRangeException(p, 0, 1)"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v35": {
+      "line": "178",
+      "statement": "return mean + standardDeviation * SQRT2 * Erf.erfInv(2 * p - 1)"
+    }
+  },
+  {
+    "v36": {
+      "line": "187",
+      "statement": "double cumulativeProbability(double x0, double x1)"
+    }
+  },
+  {
+    "v37": {
+      "line": "189",
+      "statement": "return probability(x0, x1)"
+    }
+  },
+  {
+    "v38": {
+      "line": "194",
+      "statement": "double probability(double x0, double x1)"
+    }
+  },
+  {
+    "v39": {
+      "line": "197",
+      "statement": "if (x0 > x1)"
+    }
+  },
+  {
+    "v40": {
+      "line": "198",
+      "statement": "throw new NumberIsTooLargeException(LocalizedFormats.LOWER_ENDPOINT_ABOVE_UPPER_ENDPOINT, x0, x1, true)"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v42": {
+      "line": "201",
+      "statement": "final double denom = standardDeviation * SQRT2"
+    }
+  },
+  {
+    "v43": {
+      "line": "202",
+      "statement": "final double v0 = (x0 - mean) / denom"
+    }
+  },
+  {
+    "v44": {
+      "line": "203",
+      "statement": "final double v1 = (x1 - mean) / denom"
+    }
+  },
+  {
+    "v45": {
+      "line": "204",
+      "statement": "return 0.5 * Erf.erf(v0, v1)"
+    }
+  },
+  {
+    "v46": {
+      "line": "209",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v47": {
+      "line": "210",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v48": {
+      "line": "218",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v49": {
+      "line": "219",
+      "statement": "return getMean()"
+    }
+  },
+  {
+    "v50": {
+      "line": "227",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v51": {
+      "line": "228",
+      "statement": "final double s = getStandardDeviation()"
+    }
+  },
+  {
+    "v52": {
+      "line": "229",
+      "statement": "return s * s"
+    }
+  },
+  {
+    "v53": {
+      "line": "241",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v54": {
+      "line": "242",
+      "statement": "return Double.NEGATIVE_INFINITY"
+    }
+  },
+  {
+    "v55": {
+      "line": "254",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v56": {
+      "line": "255",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v57": {
+      "line": "259",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v58": {
+      "line": "260",
+      "statement": "return false"
+    }
+  },
+  {
+    "v59": {
+      "line": "264",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v60": {
+      "line": "265",
+      "statement": "return false"
+    }
+  },
+  {
+    "v61": {
+      "line": "275",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v62": {
+      "line": "276",
+      "statement": "return true"
+    }
+  },
+  {
+    "v63": {
+      "line": "281",
+      "statement": "double sample()"
+    }
+  },
+  {
+    "v64": {
+      "line": "282",
+      "statement": "return standardDeviation * random.nextGaussian() + mean"
+    }
+  }
+]

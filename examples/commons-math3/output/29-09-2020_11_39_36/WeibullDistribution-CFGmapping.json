@@ -1,0 +1,494 @@
+[
+  {
+    "v1": {
+      "line": "71",
+      "statement": "WeibullDistribution (double alpha, double beta)"
+    }
+  },
+  {
+    "v2": {
+      "line": "73",
+      "statement": "this(alpha, beta, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "89",
+      "statement": "WeibullDistribution (double alpha, double beta,  double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "91",
+      "statement": "this(new Well19937c(), alpha, beta, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "103",
+      "statement": "WeibullDistribution (RandomGenerator rng, double alpha, double beta)"
+    }
+  },
+  {
+    "v6": {
+      "line": "105",
+      "statement": "this(rng, alpha, beta, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v7": {
+      "line": "120",
+      "statement": "WeibullDistribution (RandomGenerator rng,  double alpha,  double beta,  double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "125",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v9": {
+      "line": "127",
+      "statement": "if (alpha <= 0)"
+    }
+  },
+  {
+    "v10": {
+      "line": "128",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.SHAPE,  alpha)"
+    }
+  },
+  {
+    "v11": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v12": {
+      "line": "131",
+      "statement": "if (beta <= 0)"
+    }
+  },
+  {
+    "v13": {
+      "line": "132",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.SCALE,  beta)"
+    }
+  },
+  {
+    "v14": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v15": {
+      "line": "135",
+      "statement": "scale = beta"
+    }
+  },
+  {
+    "v16": {
+      "line": "136",
+      "statement": "shape = alpha"
+    }
+  },
+  {
+    "v17": {
+      "line": "137",
+      "statement": "solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v18": {
+      "line": "145",
+      "statement": "double getShape()"
+    }
+  },
+  {
+    "v19": {
+      "line": "146",
+      "statement": "return shape"
+    }
+  },
+  {
+    "v20": {
+      "line": "154",
+      "statement": "double getScale()"
+    }
+  },
+  {
+    "v21": {
+      "line": "155",
+      "statement": "return scale"
+    }
+  },
+  {
+    "v22": {
+      "line": "159",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v23": {
+      "line": "160",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v24": {
+      "line": "161",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "164",
+      "statement": "final double xscale = x / scale"
+    }
+  },
+  {
+    "v27": {
+      "line": "165",
+      "statement": "final double xscalepow = FastMath.pow(xscale, shape - 1)"
+    }
+  },
+  {
+    "v28": {
+      "line": "172",
+      "statement": "final double xscalepowshape = xscalepow * xscale"
+    }
+  },
+  {
+    "v29": {
+      "line": "174",
+      "statement": "return (shape / scale) * xscalepow * FastMath.exp(-xscalepowshape)"
+    }
+  },
+  {
+    "v30": {
+      "line": "178",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v31": {
+      "line": "179",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v32": {
+      "line": "180",
+      "statement": "if (x <= 0.0)"
+    }
+  },
+  {
+    "v33": {
+      "line": "181",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v35": {
+      "line": "183",
+      "statement": "ret = 1.0 - FastMath.exp(-FastMath.pow(x / scale, shape))"
+    }
+  },
+  {
+    "v36": {
+      "line": "185",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v37": {
+      "line": "195",
+      "statement": "double inverseCumulativeProbability(double p)"
+    }
+  },
+  {
+    "v38": {
+      "line": "196",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v39": {
+      "line": "197",
+      "statement": "if (p < 0.0 || p > 1.0)"
+    }
+  },
+  {
+    "v40": {
+      "line": "198",
+      "statement": "throw new OutOfRangeException(p, 0.0, 1.0)"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v42": {
+      "line": "199",
+      "statement": "if (p == 0)"
+    }
+  },
+  {
+    "v43": {
+      "line": "200",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v45": {
+      "line": "201",
+      "statement": "if (p == 1)"
+    }
+  },
+  {
+    "v46": {
+      "line": "202",
+      "statement": "ret = Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v48": {
+      "line": "204",
+      "statement": "ret = scale * FastMath.pow(-FastMath.log(1.0 - p), 1.0 / shape)"
+    }
+  },
+  {
+    "v49": {
+      "line": "206",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v50": {
+      "line": "217",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v51": {
+      "line": "218",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v52": {
+      "line": "227",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v53": {
+      "line": "228",
+      "statement": "if (!numericalMeanIsCalculated)"
+    }
+  },
+  {
+    "v54": {
+      "line": "229",
+      "statement": "numericalMean = calculateNumericalMean()"
+    }
+  },
+  {
+    "v55": {
+      "line": "230",
+      "statement": "numericalMeanIsCalculated = true"
+    }
+  },
+  {
+    "v56": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v57": {
+      "line": "232",
+      "statement": "return numericalMean"
+    }
+  },
+  {
+    "v58": {
+      "line": "240",
+      "statement": "double calculateNumericalMean()"
+    }
+  },
+  {
+    "v59": {
+      "line": "241",
+      "statement": "final double sh = getShape()"
+    }
+  },
+  {
+    "v60": {
+      "line": "242",
+      "statement": "final double sc = getScale()"
+    }
+  },
+  {
+    "v61": {
+      "line": "244",
+      "statement": "return sc * FastMath.exp(Gamma.logGamma(1 + (1 / sh)))"
+    }
+  },
+  {
+    "v62": {
+      "line": "253",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v63": {
+      "line": "254",
+      "statement": "if (!numericalVarianceIsCalculated)"
+    }
+  },
+  {
+    "v64": {
+      "line": "255",
+      "statement": "numericalVariance = calculateNumericalVariance()"
+    }
+  },
+  {
+    "v65": {
+      "line": "256",
+      "statement": "numericalVarianceIsCalculated = true"
+    }
+  },
+  {
+    "v66": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v67": {
+      "line": "258",
+      "statement": "return numericalVariance"
+    }
+  },
+  {
+    "v68": {
+      "line": "266",
+      "statement": "double calculateNumericalVariance()"
+    }
+  },
+  {
+    "v69": {
+      "line": "267",
+      "statement": "final double sh = getShape()"
+    }
+  },
+  {
+    "v70": {
+      "line": "268",
+      "statement": "final double sc = getScale()"
+    }
+  },
+  {
+    "v71": {
+      "line": "269",
+      "statement": "final double mn = getNumericalMean()"
+    }
+  },
+  {
+    "v72": {
+      "line": "271",
+      "statement": "return (sc * sc) * FastMath.exp(Gamma.logGamma(1 + (2 / sh))) -  (mn * mn)"
+    }
+  },
+  {
+    "v73": {
+      "line": "282",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v74": {
+      "line": "283",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v75": {
+      "line": "295",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v76": {
+      "line": "296",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v77": {
+      "line": "300",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v78": {
+      "line": "301",
+      "statement": "return true"
+    }
+  },
+  {
+    "v79": {
+      "line": "305",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v80": {
+      "line": "306",
+      "statement": "return false"
+    }
+  },
+  {
+    "v81": {
+      "line": "316",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v82": {
+      "line": "317",
+      "statement": "return true"
+    }
+  }
+]

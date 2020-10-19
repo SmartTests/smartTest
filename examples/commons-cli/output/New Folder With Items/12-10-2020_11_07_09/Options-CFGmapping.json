@@ -1,0 +1,494 @@
+[
+  {
+    "v1": {
+      "line": "66",
+      "statement": "Options addOptionGroup(final OptionGroup group)"
+    }
+  },
+  {
+    "v2": {
+      "line": "68",
+      "statement": "if (group.isRequired())"
+    }
+  },
+  {
+    "v3": {
+      "line": "70",
+      "statement": "requiredOpts.add(group)"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "73",
+      "statement": "for (final Option option"
+    }
+  },
+  {
+    "v6": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v7": {
+      "line": "78",
+      "statement": "option.setRequired(false)"
+    }
+  },
+  {
+    "v8": {
+      "line": "79",
+      "statement": "addOption(option)"
+    }
+  },
+  {
+    "v9": {
+      "line": "81",
+      "statement": "optionGroups.put(option.getKey(), group)"
+    }
+  },
+  {
+    "v10": {
+      "line": "84",
+      "statement": "return this"
+    }
+  },
+  {
+    "v11": {
+      "line": "92",
+      "statement": "Collection<OptionGroup> getOptionGroups()"
+    }
+  },
+  {
+    "v12": {
+      "line": "94",
+      "statement": "return new HashSet<OptionGroup>(optionGroups.values())"
+    }
+  },
+  {
+    "v13": {
+      "line": "109",
+      "statement": "Options addOption(final String opt, final String description)"
+    }
+  },
+  {
+    "v14": {
+      "line": "111",
+      "statement": "addOption(opt, null, false, description)"
+    }
+  },
+  {
+    "v15": {
+      "line": "112",
+      "statement": "return this"
+    }
+  },
+  {
+    "v16": {
+      "line": "127",
+      "statement": "Options addOption(final String opt, final boolean hasArg, final String description)"
+    }
+  },
+  {
+    "v17": {
+      "line": "129",
+      "statement": "addOption(opt, null, hasArg, description)"
+    }
+  },
+  {
+    "v18": {
+      "line": "130",
+      "statement": "return this"
+    }
+  },
+  {
+    "v19": {
+      "line": "146",
+      "statement": "Options addOption(final String opt, final String longOpt, final boolean hasArg, final String description)"
+    }
+  },
+  {
+    "v20": {
+      "line": "148",
+      "statement": "addOption(new Option(opt, longOpt, hasArg, description))"
+    }
+  },
+  {
+    "v21": {
+      "line": "149",
+      "statement": "return this"
+    }
+  },
+  {
+    "v22": {
+      "line": "174",
+      "statement": "Options addRequiredOption(final String opt, final String longOpt, final boolean hasArg, final String description)"
+    }
+  },
+  {
+    "v23": {
+      "line": "176",
+      "statement": "final Option option = new Option(opt, longOpt, hasArg, description)"
+    }
+  },
+  {
+    "v24": {
+      "line": "177",
+      "statement": "option.setRequired(true)"
+    }
+  },
+  {
+    "v25": {
+      "line": "178",
+      "statement": "addOption(option)"
+    }
+  },
+  {
+    "v26": {
+      "line": "179",
+      "statement": "return this"
+    }
+  },
+  {
+    "v27": {
+      "line": "188",
+      "statement": "Options addOption(final Option opt)"
+    }
+  },
+  {
+    "v28": {
+      "line": "190",
+      "statement": "final String key = opt.getKey()"
+    }
+  },
+  {
+    "v29": {
+      "line": "193",
+      "statement": "if (opt.hasLongOpt())"
+    }
+  },
+  {
+    "v30": {
+      "line": "195",
+      "statement": "longOpts.put(opt.getLongOpt(), opt)"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "199",
+      "statement": "if (opt.isRequired())"
+    }
+  },
+  {
+    "v33": {
+      "line": "201",
+      "statement": "if (requiredOpts.contains(key))"
+    }
+  },
+  {
+    "v34": {
+      "line": "203",
+      "statement": "requiredOpts.remove(requiredOpts.indexOf(key))"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v36": {
+      "line": "205",
+      "statement": "requiredOpts.add(key)"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v38": {
+      "line": "208",
+      "statement": "shortOpts.put(key, opt)"
+    }
+  },
+  {
+    "v39": {
+      "line": "210",
+      "statement": "return this"
+    }
+  },
+  {
+    "v40": {
+      "line": "218",
+      "statement": "Collection<Option> getOptions()"
+    }
+  },
+  {
+    "v41": {
+      "line": "220",
+      "statement": "return Collections.unmodifiableCollection(helpOptions())"
+    }
+  },
+  {
+    "v42": {
+      "line": "228",
+      "statement": "List<Option> helpOptions()"
+    }
+  },
+  {
+    "v43": {
+      "line": "230",
+      "statement": "return new ArrayList<Option>(shortOpts.values())"
+    }
+  },
+  {
+    "v44": {
+      "line": "238",
+      "statement": "List getRequiredOptions()"
+    }
+  },
+  {
+    "v45": {
+      "line": "240",
+      "statement": "return Collections.unmodifiableList(requiredOpts)"
+    }
+  },
+  {
+    "v46": {
+      "line": "253",
+      "statement": "Option getOption(String opt)"
+    }
+  },
+  {
+    "v47": {
+      "line": "255",
+      "statement": "opt = Util.stripLeadingHyphens(opt)"
+    }
+  },
+  {
+    "v48": {
+      "line": "257",
+      "statement": "if (shortOpts.containsKey(opt))"
+    }
+  },
+  {
+    "v49": {
+      "line": "259",
+      "statement": "return shortOpts.get(opt)"
+    }
+  },
+  {
+    "v50": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v51": {
+      "line": "262",
+      "statement": "return longOpts.get(opt)"
+    }
+  },
+  {
+    "v52": {
+      "line": "272",
+      "statement": "List<String> getMatchingOptions(String opt)"
+    }
+  },
+  {
+    "v53": {
+      "line": "274",
+      "statement": "opt = Util.stripLeadingHyphens(opt)"
+    }
+  },
+  {
+    "v54": {
+      "line": "276",
+      "statement": "final List<String> matchingOpts = new ArrayList<String>()"
+    }
+  },
+  {
+    "v55": {
+      "line": "279",
+      "statement": "if (longOpts.keySet().contains(opt))"
+    }
+  },
+  {
+    "v56": {
+      "line": "281",
+      "statement": "return Collections.singletonList(opt)"
+    }
+  },
+  {
+    "v57": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v58": {
+      "line": "284",
+      "statement": "for (final String longOpt"
+    }
+  },
+  {
+    "v59": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v60": {
+      "line": "286",
+      "statement": "if (longOpt.startsWith(opt))"
+    }
+  },
+  {
+    "v61": {
+      "line": "288",
+      "statement": "matchingOpts.add(longOpt)"
+    }
+  },
+  {
+    "v62": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v63": {
+      "line": "292",
+      "statement": "return matchingOpts"
+    }
+  },
+  {
+    "v64": {
+      "line": "301",
+      "statement": "boolean hasOption(String opt)"
+    }
+  },
+  {
+    "v65": {
+      "line": "303",
+      "statement": "opt = Util.stripLeadingHyphens(opt)"
+    }
+  },
+  {
+    "v66": {
+      "line": "305",
+      "statement": "return shortOpts.containsKey(opt) || longOpts.containsKey(opt)"
+    }
+  },
+  {
+    "v67": {
+      "line": "315",
+      "statement": "boolean hasLongOption(String opt)"
+    }
+  },
+  {
+    "v68": {
+      "line": "317",
+      "statement": "opt = Util.stripLeadingHyphens(opt)"
+    }
+  },
+  {
+    "v69": {
+      "line": "319",
+      "statement": "return longOpts.containsKey(opt)"
+    }
+  },
+  {
+    "v70": {
+      "line": "329",
+      "statement": "boolean hasShortOption(String opt)"
+    }
+  },
+  {
+    "v71": {
+      "line": "331",
+      "statement": "opt = Util.stripLeadingHyphens(opt)"
+    }
+  },
+  {
+    "v72": {
+      "line": "333",
+      "statement": "return shortOpts.containsKey(opt)"
+    }
+  },
+  {
+    "v73": {
+      "line": "342",
+      "statement": "OptionGroup getOptionGroup(final Option opt)"
+    }
+  },
+  {
+    "v74": {
+      "line": "344",
+      "statement": "return optionGroups.get(opt.getKey())"
+    }
+  },
+  {
+    "v75": {
+      "line": "353",
+      "statement": "String toString()"
+    }
+  },
+  {
+    "v76": {
+      "line": "355",
+      "statement": "final StringBuilder buf = new StringBuilder()"
+    }
+  },
+  {
+    "v77": {
+      "line": "357",
+      "statement": "buf.append('[ Options"
+    }
+  },
+  {
+    "v78": {
+      "line": "358",
+      "statement": "buf.append(shortOpts.toString())"
+    }
+  },
+  {
+    "v79": {
+      "line": "359",
+      "statement": "buf.append(' ] [ long ')"
+    }
+  },
+  {
+    "v80": {
+      "line": "360",
+      "statement": "buf.append(longOpts)"
+    }
+  },
+  {
+    "v81": {
+      "line": "361",
+      "statement": "buf.append(' ]')"
+    }
+  },
+  {
+    "v82": {
+      "line": "363",
+      "statement": "return buf.toString()"
+    }
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "v1": {
+      "line": "59",
+      "statement": "BetaDistribution (double alpha, double beta)"
+    }
+  },
+  {
+    "v2": {
+      "line": "60",
+      "statement": "this(alpha, beta, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "73",
+      "statement": "BetaDistribution (double alpha, double beta, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "74",
+      "statement": "this(new Well19937c(), alpha, beta, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "85",
+      "statement": "BetaDistribution (RandomGenerator rng, double alpha, double beta)"
+    }
+  },
+  {
+    "v6": {
+      "line": "86",
+      "statement": "this(rng, alpha, beta, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v7": {
+      "line": "100",
+      "statement": "BetaDistribution (RandomGenerator rng, double alpha, double beta, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "104",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v9": {
+      "line": "106",
+      "statement": "this.alpha = alpha"
+    }
+  },
+  {
+    "v10": {
+      "line": "107",
+      "statement": "this.beta = beta"
+    }
+  },
+  {
+    "v11": {
+      "line": "108",
+      "statement": "z = Double.NaN"
+    }
+  },
+  {
+    "v12": {
+      "line": "109",
+      "statement": "solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v13": {
+      "line": "117",
+      "statement": "double getAlpha()"
+    }
+  },
+  {
+    "v14": {
+      "line": "118",
+      "statement": "return alpha"
+    }
+  },
+  {
+    "v15": {
+      "line": "126",
+      "statement": "double getBeta()"
+    }
+  },
+  {
+    "v16": {
+      "line": "127",
+      "statement": "return beta"
+    }
+  },
+  {
+    "v17": {
+      "line": "131",
+      "statement": "void recomputeZ()"
+    }
+  },
+  {
+    "v18": {
+      "line": "132",
+      "statement": "if (Double.isNaN(z))"
+    }
+  },
+  {
+    "v19": {
+      "line": "133",
+      "statement": "z = Gamma.logGamma(alpha) + Gamma.logGamma(beta) - Gamma.logGamma(alpha + beta)"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v21": {
+      "line": "138",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v22": {
+      "line": "139",
+      "statement": "recomputeZ()"
+    }
+  },
+  {
+    "v23": {
+      "line": "140",
+      "statement": "if (x < 0 || x > 1)"
+    }
+  },
+  {
+    "v24": {
+      "line": "141",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "142",
+      "statement": "if (x == 0)"
+    }
+  },
+  {
+    "v27": {
+      "line": "143",
+      "statement": "if (alpha < 1)"
+    }
+  },
+  {
+    "v28": {
+      "line": "144",
+      "statement": "throw new NumberIsTooSmallException(LocalizedFormats.CANNOT_COMPUTE_BETA_DENSITY_AT_0_FOR_SOME_ALPHA, alpha, 1, false)"
+    }
+  },
+  {
+    "v29": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v30": {
+      "line": "146",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "147",
+      "statement": "if (x == 1)"
+    }
+  },
+  {
+    "v33": {
+      "line": "148",
+      "statement": "if (beta < 1)"
+    }
+  },
+  {
+    "v34": {
+      "line": "149",
+      "statement": "throw new NumberIsTooSmallException(LocalizedFormats.CANNOT_COMPUTE_BETA_DENSITY_AT_1_FOR_SOME_BETA, beta, 1, false)"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v36": {
+      "line": "151",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v38": {
+      "line": "153",
+      "statement": "double logX = FastMath.log(x)"
+    }
+  },
+  {
+    "v39": {
+      "line": "154",
+      "statement": "double log1mX = FastMath.log1p(-x)"
+    }
+  },
+  {
+    "v40": {
+      "line": "155",
+      "statement": "return FastMath.exp((alpha - 1) * logX + (beta - 1) * log1mX - z)"
+    }
+  },
+  {
+    "v41": {
+      "line": "160",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v42": {
+      "line": "161",
+      "statement": "if (x <= 0)"
+    }
+  },
+  {
+    "v43": {
+      "line": "162",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v44": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v45": {
+      "line": "163",
+      "statement": "if (x >= 1)"
+    }
+  },
+  {
+    "v46": {
+      "line": "164",
+      "statement": "return 1"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v48": {
+      "line": "166",
+      "statement": "return Beta.regularizedBeta(x, alpha, beta)"
+    }
+  },
+  {
+    "v49": {
+      "line": "178",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v50": {
+      "line": "179",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v51": {
+      "line": "188",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v52": {
+      "line": "189",
+      "statement": "final double a = getAlpha()"
+    }
+  },
+  {
+    "v53": {
+      "line": "190",
+      "statement": "return a / (a + getBeta())"
+    }
+  },
+  {
+    "v54": {
+      "line": "200",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v55": {
+      "line": "201",
+      "statement": "final double a = getAlpha()"
+    }
+  },
+  {
+    "v56": {
+      "line": "202",
+      "statement": "final double b = getBeta()"
+    }
+  },
+  {
+    "v57": {
+      "line": "203",
+      "statement": "final double alphabetasum = a + b"
+    }
+  },
+  {
+    "v58": {
+      "line": "204",
+      "statement": "return (a * b) / ((alphabetasum * alphabetasum) * (alphabetasum + 1))"
+    }
+  },
+  {
+    "v59": {
+      "line": "214",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v60": {
+      "line": "215",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v61": {
+      "line": "225",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v62": {
+      "line": "226",
+      "statement": "return 1"
+    }
+  },
+  {
+    "v63": {
+      "line": "230",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v64": {
+      "line": "231",
+      "statement": "return false"
+    }
+  },
+  {
+    "v65": {
+      "line": "235",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v66": {
+      "line": "236",
+      "statement": "return false"
+    }
+  },
+  {
+    "v67": {
+      "line": "246",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v68": {
+      "line": "247",
+      "statement": "return true"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "112"
+    ],
+    "sourceClass": "PosixParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR10",
+      "TR12"
+    ],
+    "affectedTest": [
+      "testDoubleDash1",
+      "testSingleDash"
+    ],
+    "testReran": [
+      "testDoubleDash1",
+      "testSingleDash"
+    ]
+  }
+}

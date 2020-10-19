@@ -1,0 +1,26 @@
+1:EVR:<IDENTIFIER(org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction)>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.GradientFunction@<init>(org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction):38:f |==> null
+2:EVR:<NEW_ARRAY(org.apache.commons.math3.analysis.differentiation.DerivativeStructure[])>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):45:new DerivativeStructure[point.length] |==> null
+3:LVR:0:POS:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):46:0 |==> 1
+4:LVR:0:NEG:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):46:0 |==> -1
+5:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):46:i < point.length |==> i != point.length
+6:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):46:i < point.length |==> i <= point.length
+7:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):46:i < point.length |==> false
+8:LVR:POS:0:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):47:1 |==> 0
+9:LVR:POS:NEG:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):47:1 |==> -1
+10:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):47:dsX[i] = new DerivativeStructure(point.length, 1, i, point[i]) |==> <NO-OP>
+11:EVR:<METHOD_INVOCATION(org.apache.commons.math3.analysis.differentiation.DerivativeStructure)>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):51:f.value(dsX) |==> null
+12:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):54:new double[point.length] |==> null
+13:EVR:<NEW_ARRAY(int[])>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):55:new int[point.length] |==> null
+14:LVR:0:POS:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):56:0 |==> 1
+15:LVR:0:NEG:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):56:0 |==> -1
+16:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):56:i < point.length |==> i != point.length
+17:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):56:i < point.length |==> i <= point.length
+18:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):56:i < point.length |==> false
+19:LVR:POS:0:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):57:1 |==> 0
+20:LVR:POS:NEG:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):57:1 |==> -1
+21:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):57:orders[i] = 1 |==> <NO-OP>
+22:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):58:y[i] = dsY.getPartialDerivative(orders) |==> <NO-OP>
+23:LVR:0:POS:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):59:0 |==> 1
+24:LVR:0:NEG:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):59:0 |==> -1
+25:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):59:orders[i] = 0 |==> <NO-OP>
+26:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.differentiation.GradientFunction@value(double[]):62:y |==> null

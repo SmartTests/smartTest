@@ -1,0 +1,486 @@
+
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_37_31.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_38_49.json is good
+DefaultParser-13-10-2020_10_40_21.json ------- No test affected or reported. Matches
+DefaultParser-13-10-2020_10_40_22.json ------- No test affected or reported. Matches
+DefaultParser-13-10-2020_10_40_23.json ------- No test affected or reported. Matches
+DefaultParser-13-10-2020_10_40_24.json ------- No test affected or reported. Matches
+DefaultParser-13-10-2020_10_40_25.json ------- Line didn't match
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_41_45.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_43_05.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_44_24.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_45_47.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_47_20.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_48_57.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_49_05.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_50_32.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_52_03.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_53_18.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_54_29.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_55_35.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_56_37.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_57_36.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_58_42.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_59_38.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_10_59_49.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_00_01.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_00_14.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_00_24.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_00_33.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_00_42.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_00_51.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_00_59.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_01_08.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_01_16.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_01_25.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_01_34.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_01_43.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_01_51.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_02_00.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_02_10.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_02_19.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_02_28.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_02_34.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_02_39.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_02_45.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_02_51.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_02_57.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_03_03.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_03_08.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_03_14.json is good
+VERIFICATION DONE===========DefaultParser-13-10-2020_11_03_19.json is good
+
+
+
+CommandLine-13-10-2020_13_42_24.json ------- Line didn't match
+CommandLine-13-10-2020_13_42_25.json ------- Line didn't match
+CommandLine-13-10-2020_13_42_26.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_27.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_28.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_29.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_30.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_32.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_39.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_42.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_47.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_52.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_53.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_42_59.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_00.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_01.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_02.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_09.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_11.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_17.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_22.json ------- Line didn't match
+CommandLine-13-10-2020_13_43_23.json ------- Line didn't match
+CommandLine-13-10-2020_13_43_24.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_25.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_26.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_33.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_39.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_45.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_51.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_52.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_53.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_55.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_43_59.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_03.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_08.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_12.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_16.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_21.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_22.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_23.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_25.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_26.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_27.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_28.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_29.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_31.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_32.json ------------ Affected requirement didn't match
+CommandLine-13-10-2020_13_44_33.json ------- No test affected or reported. Matches
+CommandLine-13-10-2020_13_44_34.json ------- No test affected or reported. Matches
+
+
+VERIFICATION DONE===========GnuParser-13-10-2020_14_12_19.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_13_23.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_14_18.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_15_11.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_16_09.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_17_05.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_17_57.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_18_48.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_19_32.json is good 
+VERIFICATION DONE===========GnuParser-13-10-2020_14_20_26.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_21_17.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_21_33.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_21_48.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_22_04.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_22_56.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_23_48.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_24_04.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_24_57.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_25_48.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_26_39.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_27_32.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_28_26.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_29_12.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_29_30.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_29_49.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_30_08.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_30_27.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_30_47.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_31_06.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_31_25.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_31_43.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_32_35.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_33_33.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_33_52.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_34_13.json is good
+GnuParser-13-10-2020_14_34_34.json ------- Line didn't match
+VERIFICATION DONE===========GnuParser-13-10-2020_14_34_53.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_35_13.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_35_32.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_35_51.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_36_09.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_36_27.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_36_46.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_37_04.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_37_18.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_37_34.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_37_48.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_38_40.json is good
+VERIFICATION DONE===========GnuParser-13-10-2020_14_39_33.json is good
+
+
+
+
+
+
+
+
+
+
+HelpFormatter-13-10-2020_14_40_12.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_14.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_16.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_18.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_20.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_22.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_24.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_26.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_28.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_30.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_31.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_33.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_35.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_36.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_38.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_39.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_41.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_42.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_43.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_45.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_46.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_48.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_50.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_51.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_53.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_54.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_56.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_40_57.json ------- No test affected or reported. Matches
+VERIFICATION DONE===========HelpFormatter-13-10-2020_14_40_59.json is good
+VERIFICATION DONE===========HelpFormatter-13-10-2020_14_41_02.json is good
+HelpFormatter-13-10-2020_14_41_05.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_41_07.json ------- No test affected or reported. Matches
+HelpFormatter-13-10-2020_14_41_08.json ------- No test affected or reported. Matches
+VERIFICATION DONE===========HelpFormatter-13-10-2020_14_41_09.json is good
+VERIFICATION DONE===========HelpFormatter-13-10-2020_14_41_21.json is good
+VERIFICATION DONE===========HelpFormatter-13-10-2020_14_41_32.json is good
+VERIFICATION DONE===========HelpFormatter-13-10-2020_14_41_43.json is good
+VERIFICATION DONE===========HelpFormatter-13-10-2020_14_41_58.json is good
+VERIFICATION DONE===========HelpFormatter-13-10-2020_14_42_09.json is good
+VERIFICATION DONE===========HelpFormatter-13-10-2020_14_42_20.json is good
+
+
+
+OptionBuilder-13-10-2020_14_42_35.json ------- Line didn't match
+OptionBuilder-13-10-2020_14_42_37.json ------- Line didn't match
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_42_39.json is good 
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_42_41.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_43_04.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_43_23.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_43_39.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_43_55.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_44_11.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_44_27.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_44_43.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_45_00.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_45_16.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_45_33.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_45_49.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_05.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_10.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_15.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_21.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_26.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_34.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_42.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_43.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_44.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_45.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_46.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_47.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_48.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_49.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_50.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_54.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_46_57.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_02.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_03.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_04.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_05.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_06.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_07.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_08.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_11.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_15.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_17.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_20.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_21.json is good
+OptionBuilder-13-10-2020_14_47_22.json ------- Line didn't match
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_23.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_24.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_25.json is good
+VERIFICATION DONE===========OptionBuilder-13-10-2020_14_47_26.json is good
+
+
+
+OptionGroup-13-10-2020_14_47_30.json ------- Line didn't match
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_47_34.json is good 
+OptionGroup-13-10-2020_14_47_58.json ------- Line didn't match
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_48_18.json is good 
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_48_21.json is good 
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_48_23.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_48_40.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_48_57.json is good
+OptionGroup-13-10-2020_14_49_13.json ------- Line didn't match
+OptionGroup-13-10-2020_14_49_27.json ------- Line didn't match
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_49_41.json is good
+OptionGroup-13-10-2020_14_49_55.json ------- Line didn't match
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_50_10.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_50_24.json is good
+OptionGroup-13-10-2020_14_50_37.json ------- Line didn't match
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_50_40.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_50_42.json is good
+OptionGroup-13-10-2020_14_50_45.json ------- Line didn't match
+OptionGroup-13-10-2020_14_50_47.json ------- Line didn't match
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_50_49.json is good
+OptionGroup-13-10-2020_14_50_51.json ------- Line didn't match
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_50_54.json is good 
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_50_56.json is good 
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_50_58.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_51_01.json is good 
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_51_03.json is good 
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_51_05.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_51_08.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_51_10.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_51_12.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_51_14.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_51_17.json is good
+VERIFICATION DONE===========OptionGroup-13-10-2020_14_51_19.json is good 
+
+
+
+Options-13-10-2020_14_51_25.json ------- Line didn't match
+Options-13-10-2020_14_51_28.json ------- Line didn't match
+Options-13-10-2020_14_51_31.json ------- Line didn't match
+Options-13-10-2020_14_51_34.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_51_37.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_51_42.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_51_47.json is good
+Options-13-10-2020_14_51_50.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_51_54.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_51_57.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_52_01.json is good
+Options-13-10-2020_14_52_04.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_52_07.json is good
+Options-13-10-2020_14_52_10.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_52_12.json is good
+Options-13-10-2020_14_52_14.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_52_17.json is good
+Options-13-10-2020_14_52_22.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_52_27.json is good
+Options-13-10-2020_14_52_37.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_52_46.json is good
+Options-13-10-2020_14_52_48.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_52_51.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_52_54.json is good
+Options-13-10-2020_14_52_56.json ------- Line didn't match
+Options-13-10-2020_14_52_58.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_53_09.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_53_20.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_53_32.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_53_39.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_53_49.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_54_01.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_54_12.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_54_23.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_54_25.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_54_28.json is good
+Options-13-10-2020_14_54_39.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_54_50.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_54_52.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_54_55.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_54_57.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_55_03.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_55_08.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_55_13.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_55_18.json is good
+VERIFICATION DONE===========Options-13-10-2020_14_55_21.json is good
+Options-13-10-2020_14_55_23.json ------- Line didn't match
+VERIFICATION DONE===========Options-13-10-2020_14_55_26.json is good 
+VERIFICATION DONE===========Options-13-10-2020_14_55_29.json is good 
+
+
+
+
+PatternOptionBuilder-13-10-2020_14_55_46.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_48.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_49.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_50.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_52.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_53.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_54.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_55.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_56.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_58.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_55_59.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_56_00.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_56_01.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_02.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_03.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_04.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_56_05.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_56_06.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_07.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_11.json ------- No test affected or reported. Matches
+PatternOptionBuilder-13-10-2020_14_56_13.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_14.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_19.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_20.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_25.json ------- Line didn't match
+PatternOptionBuilder-13-10-2020_14_56_26.json ------- Line didn't match
+
+
+
+PosixParser-13-10-2020_14_56_31.json ------- Line didn't match
+PosixParser-13-10-2020_14_57_48.json ------- Line didn't match
+VERIFICATION DONE===========PosixParser-13-10-2020_14_58_59.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_00_12.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_01_23.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_02_35.json is good
+PosixParser-13-10-2020_15_03_46.json ------- Line didn't match
+PosixParser-13-10-2020_15_04_58.json ------- Line didn't match
+PosixParser-13-10-2020_15_06_09.json ------- Line didn't match
+PosixParser-13-10-2020_15_07_20.json ------- Line didn't match
+PosixParser-13-10-2020_15_08_30.json ------- Line didn't match
+VERIFICATION DONE===========PosixParser-13-10-2020_15_09_40.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_10_50.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_11_59.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_13_13.json is good
+PosixParser-13-10-2020_15_14_26.json ------- Line didn't match
+PosixParser-13-10-2020_15_15_38.json ------- Line didn't match
+PosixParser-13-10-2020_15_16_48.json ------- Line didn't match
+PosixParser-13-10-2020_15_17_59.json ------- Line didn't match
+PosixParser-13-10-2020_15_19_06.json ------- Line didn't match
+PosixParser-13-10-2020_15_20_16.json ------- Line didn't match
+PosixParser-13-10-2020_15_21_22.json ------- Line didn't match
+PosixParser-13-10-2020_15_22_29.json ------- Line didn't match
+VERIFICATION DONE===========PosixParser-13-10-2020_15_23_35.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_24_42.json is good 
+VERIFICATION DONE===========PosixParser-13-10-2020_15_25_51.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_27_02.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_28_13.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_29_22.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_30_40.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_31_49.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_32_56.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_34_06.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_35_17.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_36_26.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_37_32.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_38_41.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_39_50.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_40_59.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_42_08.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_43_17.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_44_27.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_45_36.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_46_44.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_47_53.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_49_02.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_50_12.json is good
+VERIFICATION DONE===========PosixParser-13-10-2020_15_51_23.json is good
+PosixParser-13-10-2020_15_52_34.json ------- No test affected or reported. Matches
+
+
+
+
+
+
+
+
+
+
+
+VERIFICATION DONE===========Util-13-10-2020_16_04_40.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_41.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_42.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_43.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_44.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_45.json is good
+Util-13-10-2020_16_04_46.json ------- Line didn't match
+VERIFICATION DONE===========Util-13-10-2020_16_04_46.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_47.json is good 
+VERIFICATION DONE===========Util-13-10-2020_16_04_48.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_49.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_50.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_51.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_52.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_53.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_54.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_55.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_56.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_57.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_58.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_04_59.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_00.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_01.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_01.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_02.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_03.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_04.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_05.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_06.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_07.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_07.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_08.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_09.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_10.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_11.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_12.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_12.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_13.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_14.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_15.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_16.json is good
+Util-13-10-2020_16_05_17.json ------- No test affected or reported. Matches
+VERIFICATION DONE===========Util-13-10-2020_16_05_18.json is good
+VERIFICATION DONE===========Util-13-10-2020_16_05_19.json is good
+Util-13-10-2020_16_05_20.json ------- No test affected or reported. Matches
+Util-13-10-2020_16_05_21.json ------- No test affected or reported. Matches
+Util-13-10-2020_16_05_22.json ------- No test affected or reported. Matches
+Util-13-10-2020_16_05_22.json ------- No test affected or reported. Matches
+Util-13-10-2020_16_05_23.json ------- No test affected or reported. Matches

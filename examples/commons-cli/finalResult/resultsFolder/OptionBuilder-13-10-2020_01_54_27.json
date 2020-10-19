@@ -1,0 +1,20 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "250"
+    ],
+    "sourceClass": "OptionBuilder"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR30",
+      "TR32",
+      "TR31"
+    ],
+    "unsatisfiedRequirement": [
+      "TR30",
+      "TR32",
+      "TR31"
+    ]
+  }
+}

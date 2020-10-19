@@ -1,0 +1,344 @@
+[
+  {
+    "v1": {
+      "line": "53",
+      "statement": "TDistribution (double degreesOfFreedom)"
+    }
+  },
+  {
+    "v2": {
+      "line": "55",
+      "statement": "this(degreesOfFreedom, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v3": {
+      "line": "69",
+      "statement": "TDistribution (double degreesOfFreedom, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "71",
+      "statement": "this(new Well19937c(), degreesOfFreedom, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v5": {
+      "line": "82",
+      "statement": "TDistribution (RandomGenerator rng, double degreesOfFreedom)"
+    }
+  },
+  {
+    "v6": {
+      "line": "84",
+      "statement": "this(rng, degreesOfFreedom, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v7": {
+      "line": "98",
+      "statement": "TDistribution (RandomGenerator rng,  double degreesOfFreedom,  double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "102",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v9": {
+      "line": "104",
+      "statement": "if (degreesOfFreedom <= 0)"
+    }
+  },
+  {
+    "v10": {
+      "line": "105",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.DEGREES_OF_FREEDOM,  degreesOfFreedom)"
+    }
+  },
+  {
+    "v11": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v12": {
+      "line": "108",
+      "statement": "this.degreesOfFreedom = degreesOfFreedom"
+    }
+  },
+  {
+    "v13": {
+      "line": "109",
+      "statement": "solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v14": {
+      "line": "117",
+      "statement": "double getDegreesOfFreedom()"
+    }
+  },
+  {
+    "v15": {
+      "line": "118",
+      "statement": "return degreesOfFreedom"
+    }
+  },
+  {
+    "v16": {
+      "line": "122",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v17": {
+      "line": "123",
+      "statement": "final double n = degreesOfFreedom"
+    }
+  },
+  {
+    "v18": {
+      "line": "124",
+      "statement": "final double nPlus1Over2 = (n + 1) / 2"
+    }
+  },
+  {
+    "v19": {
+      "line": "125",
+      "statement": "return FastMath.exp(Gamma.logGamma(nPlus1Over2) - 0.5 * (FastMath.log(FastMath.PI) +  FastMath.log(n)) - Gamma.logGamma(n / 2) - nPlus1Over2 * FastMath.log(1 + x * x / n))"
+    }
+  },
+  {
+    "v20": {
+      "line": "133",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v21": {
+      "line": "134",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v22": {
+      "line": "135",
+      "statement": "if (x == 0)"
+    }
+  },
+  {
+    "v23": {
+      "line": "136",
+      "statement": "ret = 0.5"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "138",
+      "statement": "double t = Beta.regularizedBeta( degreesOfFreedom / (degreesOfFreedom + (x * x)), 0.5 * degreesOfFreedom, 0.5)"
+    }
+  },
+  {
+    "v26": {
+      "line": "143",
+      "statement": "if (x < 0.0)"
+    }
+  },
+  {
+    "v27": {
+      "line": "144",
+      "statement": "ret = 0.5 * t"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "146",
+      "statement": "ret = 1.0 - 0.5 * t"
+    }
+  },
+  {
+    "v30": {
+      "line": "150",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v31": {
+      "line": "155",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v32": {
+      "line": "156",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v33": {
+      "line": "168",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v34": {
+      "line": "169",
+      "statement": "final double df = getDegreesOfFreedom()"
+    }
+  },
+  {
+    "v35": {
+      "line": "171",
+      "statement": "if (df > 1)"
+    }
+  },
+  {
+    "v36": {
+      "line": "172",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v38": {
+      "line": "175",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v39": {
+      "line": "189",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v40": {
+      "line": "190",
+      "statement": "final double df = getDegreesOfFreedom()"
+    }
+  },
+  {
+    "v41": {
+      "line": "192",
+      "statement": "if (df > 2)"
+    }
+  },
+  {
+    "v42": {
+      "line": "193",
+      "statement": "return df / (df - 2)"
+    }
+  },
+  {
+    "v43": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v44": {
+      "line": "196",
+      "statement": "if (df > 1 && df <= 2)"
+    }
+  },
+  {
+    "v45": {
+      "line": "197",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v47": {
+      "line": "200",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v48": {
+      "line": "212",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v49": {
+      "line": "213",
+      "statement": "return Double.NEGATIVE_INFINITY"
+    }
+  },
+  {
+    "v50": {
+      "line": "225",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v51": {
+      "line": "226",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v52": {
+      "line": "230",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v53": {
+      "line": "231",
+      "statement": "return false"
+    }
+  },
+  {
+    "v54": {
+      "line": "235",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v55": {
+      "line": "236",
+      "statement": "return false"
+    }
+  },
+  {
+    "v56": {
+      "line": "246",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v57": {
+      "line": "247",
+      "statement": "return true"
+    }
+  }
+]

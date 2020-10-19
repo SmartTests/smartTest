@@ -1,0 +1,31 @@
+1:LVR:POS:0:org.apache.commons.math3.distribution.ChiSquaredDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):93:2 |==> 0
+2:LVR:POS:NEG:org.apache.commons.math3.distribution.ChiSquaredDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):93:2 |==> -2
+3:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):93:degreesOfFreedom / 2 |==> degreesOfFreedom % 2
+4:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):93:degreesOfFreedom / 2 |==> degreesOfFreedom * 2
+5:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):93:degreesOfFreedom / 2 |==> degreesOfFreedom + 2
+6:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):93:degreesOfFreedom / 2 |==> degreesOfFreedom - 2
+7:LVR:POS:0:org.apache.commons.math3.distribution.ChiSquaredDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):93:2 |==> 0
+8:LVR:POS:NEG:org.apache.commons.math3.distribution.ChiSquaredDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):93:2 |==> -2
+9:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ChiSquaredDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):94:inverseCumAccuracy |==> 0.0
+10:LVR:POS:0:org.apache.commons.math3.distribution.ChiSquaredDistribution@getDegreesOfFreedom():103:2.0 |==> 0.0
+11:LVR:POS:NEG:org.apache.commons.math3.distribution.ChiSquaredDistribution@getDegreesOfFreedom():103:2.0 |==> -2.0
+12:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@getDegreesOfFreedom():103:gamma.getShape() * 2.0 |==> gamma.getShape() % 2.0
+13:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@getDegreesOfFreedom():103:gamma.getShape() * 2.0 |==> gamma.getShape() + 2.0
+14:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@getDegreesOfFreedom():103:gamma.getShape() * 2.0 |==> gamma.getShape() - 2.0
+15:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@getDegreesOfFreedom():103:gamma.getShape() * 2.0 |==> gamma.getShape() / 2.0
+16:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ChiSquaredDistribution@density(double):108:gamma.density(x) |==> 0.0
+17:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ChiSquaredDistribution@cumulativeProbability(double):113:gamma.cumulativeProbability(x) |==> 0.0
+18:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ChiSquaredDistribution@getSolverAbsoluteAccuracy():119:solverAbsoluteAccuracy |==> 0.0
+19:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ChiSquaredDistribution@getNumericalMean():128:getDegreesOfFreedom() |==> 0.0
+20:LVR:POS:0:org.apache.commons.math3.distribution.ChiSquaredDistribution@getNumericalVariance():137:2 |==> 0
+21:LVR:POS:NEG:org.apache.commons.math3.distribution.ChiSquaredDistribution@getNumericalVariance():137:2 |==> -2
+22:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@getNumericalVariance():137:2 * getDegreesOfFreedom() |==> 2 % getDegreesOfFreedom()
+23:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@getNumericalVariance():137:2 * getDegreesOfFreedom() |==> 2 + getDegreesOfFreedom()
+24:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@getNumericalVariance():137:2 * getDegreesOfFreedom() |==> 2 - getDegreesOfFreedom()
+25:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.ChiSquaredDistribution@getNumericalVariance():137:2 * getDegreesOfFreedom() |==> 2 / getDegreesOfFreedom()
+26:LVR:0:POS:org.apache.commons.math3.distribution.ChiSquaredDistribution@getSupportLowerBound():149:0 |==> 1
+27:LVR:0:NEG:org.apache.commons.math3.distribution.ChiSquaredDistribution@getSupportLowerBound():149:0 |==> -1
+28:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.ChiSquaredDistribution@getSupportUpperBound():161:Double.POSITIVE_INFINITY |==> 0.0
+29:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.ChiSquaredDistribution@isSupportLowerBoundInclusive():166:true |==> false
+30:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.ChiSquaredDistribution@isSupportUpperBoundInclusive():171:false |==> true
+31:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.ChiSquaredDistribution@isSupportConnected():182:true |==> false

@@ -1,0 +1,308 @@
+[
+  {
+    "v1": {
+      "line": "52",
+      "statement": "UniformRealDistribution ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "53",
+      "statement": "this(0, 1)"
+    }
+  },
+  {
+    "v3": {
+      "line": "64",
+      "statement": "UniformRealDistribution (double lower, double upper)"
+    }
+  },
+  {
+    "v4": {
+      "line": "66",
+      "statement": "this(new Well19937c(), lower, upper)"
+    }
+  },
+  {
+    "v5": {
+      "line": "80",
+      "statement": "UniformRealDistribution (double lower, double upper, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "82",
+      "statement": "this(new Well19937c(), lower, upper)"
+    }
+  },
+  {
+    "v7": {
+      "line": "99",
+      "statement": "UniformRealDistribution (RandomGenerator rng,  double lower,  double upper,  double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "103",
+      "statement": "this(rng, lower, upper)"
+    }
+  },
+  {
+    "v9": {
+      "line": "115",
+      "statement": "UniformRealDistribution (RandomGenerator rng,  double lower,  double upper)"
+    }
+  },
+  {
+    "v10": {
+      "line": "119",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v11": {
+      "line": "120",
+      "statement": "if (lower >= upper)"
+    }
+  },
+  {
+    "v12": {
+      "line": "121",
+      "statement": "throw new NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false)"
+    }
+  },
+  {
+    "v13": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v14": {
+      "line": "126",
+      "statement": "this.lower = lower"
+    }
+  },
+  {
+    "v15": {
+      "line": "127",
+      "statement": "this.upper = upper"
+    }
+  },
+  {
+    "v16": {
+      "line": "131",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v17": {
+      "line": "132",
+      "statement": "if (x < lower || x > upper)"
+    }
+  },
+  {
+    "v18": {
+      "line": "133",
+      "statement": "return 0.0"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "135",
+      "statement": "return 1 / (upper - lower)"
+    }
+  },
+  {
+    "v21": {
+      "line": "139",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v22": {
+      "line": "140",
+      "statement": "if (x <= lower)"
+    }
+  },
+  {
+    "v23": {
+      "line": "141",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "143",
+      "statement": "if (x >= upper)"
+    }
+  },
+  {
+    "v26": {
+      "line": "144",
+      "statement": "return 1"
+    }
+  },
+  {
+    "v27": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v28": {
+      "line": "146",
+      "statement": "return (x - lower) / (upper - lower)"
+    }
+  },
+  {
+    "v29": {
+      "line": "150",
+      "statement": "double inverseCumulativeProbability(final double p)"
+    }
+  },
+  {
+    "v30": {
+      "line": "152",
+      "statement": "if (p < 0.0 || p > 1.0)"
+    }
+  },
+  {
+    "v31": {
+      "line": "153",
+      "statement": "throw new OutOfRangeException(p, 0, 1)"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v33": {
+      "line": "155",
+      "statement": "return p * (upper - lower) + lower"
+    }
+  },
+  {
+    "v34": {
+      "line": "164",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v35": {
+      "line": "165",
+      "statement": "return 0.5 * (lower + upper)"
+    }
+  },
+  {
+    "v36": {
+      "line": "174",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v37": {
+      "line": "175",
+      "statement": "double ul = upper - lower"
+    }
+  },
+  {
+    "v38": {
+      "line": "176",
+      "statement": "return ul * ul / 12"
+    }
+  },
+  {
+    "v39": {
+      "line": "187",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v40": {
+      "line": "188",
+      "statement": "return lower"
+    }
+  },
+  {
+    "v41": {
+      "line": "199",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v42": {
+      "line": "200",
+      "statement": "return upper"
+    }
+  },
+  {
+    "v43": {
+      "line": "204",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v44": {
+      "line": "205",
+      "statement": "return true"
+    }
+  },
+  {
+    "v45": {
+      "line": "209",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v46": {
+      "line": "210",
+      "statement": "return true"
+    }
+  },
+  {
+    "v47": {
+      "line": "220",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v48": {
+      "line": "221",
+      "statement": "return true"
+    }
+  },
+  {
+    "v49": {
+      "line": "226",
+      "statement": "double sample()"
+    }
+  },
+  {
+    "v50": {
+      "line": "227",
+      "statement": "final double u = random.nextDouble()"
+    }
+  },
+  {
+    "v51": {
+      "line": "228",
+      "statement": "return u * upper + (1 - u) * lower"
+    }
+  }
+]

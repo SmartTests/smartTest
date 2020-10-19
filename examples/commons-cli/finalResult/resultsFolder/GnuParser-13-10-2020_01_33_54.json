@@ -1,0 +1,80 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "58"
+    ],
+    "sourceClass": "GnuParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR8",
+      "TR6"
+    ],
+    "affectedTest": [
+      "testArgumentStartingWithHyphen",
+      "testDoubleDash1",
+      "testLongWithEqualDoubleDash",
+      "testLongWithEqualSingleDash",
+      "testLongWithoutEqualDoubleDash",
+      "testMissingArg",
+      "testMissingRequiredGroup",
+      "testMissingRequiredOption",
+      "testMissingRequiredOptions",
+      "testMultiple",
+      "testMultipleWithLong",
+      "testNegativeArgument",
+      "testOptionAndRequiredOption",
+      "testOptionGroup",
+      "testOptionGroupLong",
+      "testPropertiesOption1",
+      "testPropertiesOption2",
+      "testPropertyOptionGroup",
+      "testReuseOptionsTwice",
+      "testShortWithEqual",
+      "testShortWithoutEqual",
+      "testSimpleLong",
+      "testSimpleShort",
+      "testSingleDash",
+      "testStopAtExpectedArg",
+      "testStopAtNonOptionLong",
+      "testStopAtNonOptionShort",
+      "testStopAtUnexpectedArg",
+      "testUnlimitedArgs",
+      "testUnrecognizedOption",
+      "testWithRequiredOption"
+    ],
+    "testReran": [
+      "testLongWithoutEqualDoubleDash",
+      "testUnrecognizedOption",
+      "testPropertyOptionGroup",
+      "testLongWithEqualDoubleDash",
+      "testOptionGroup",
+      "testMissingRequiredOption",
+      "testSimpleShort",
+      "testShortWithEqual",
+      "testSimpleLong",
+      "testMissingRequiredOptions",
+      "testSingleDash",
+      "testStopAtUnexpectedArg",
+      "testOptionGroupLong",
+      "testNegativeArgument",
+      "testDoubleDash1",
+      "testMultipleWithLong",
+      "testShortWithoutEqual",
+      "testStopAtNonOptionLong",
+      "testOptionAndRequiredOption",
+      "testWithRequiredOption",
+      "testPropertiesOption2",
+      "testMissingRequiredGroup",
+      "testMissingArg",
+      "testPropertiesOption1",
+      "testUnlimitedArgs",
+      "testMultiple",
+      "testLongWithEqualSingleDash",
+      "testStopAtNonOptionShort",
+      "testArgumentStartingWithHyphen",
+      "testReuseOptionsTwice",
+      "testStopAtExpectedArg"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "77"
+    ],
+    "sourceClass": "CommandLine"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR2"
+    ],
+    "unsatisfiedRequirement": [
+      "TR2"
+    ],
+    "newTestRequirement": [
+      "TR2"
+    ]
+  }
+}

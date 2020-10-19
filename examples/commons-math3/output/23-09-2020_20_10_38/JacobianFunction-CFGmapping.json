@@ -1,0 +1,110 @@
+[
+  {
+    "v1": {
+      "line": "39",
+      "statement": "JacobianFunction (final MultivariateDifferentiableVectorFunction f)"
+    }
+  },
+  {
+    "v2": {
+      "line": "40",
+      "statement": "this.f = f"
+    }
+  },
+  {
+    "v3": {
+      "line": "44",
+      "statement": "double[][] value(double[] point)"
+    }
+  },
+  {
+    "v4": {
+      "line": "47",
+      "statement": "final DerivativeStructure[] dsX = new DerivativeStructure[point.length"
+    }
+  },
+  {
+    "v5": {
+      "line": "48",
+      "statement": "for (  int i = 0 ; i < point.length ;   ++i)"
+    }
+  },
+  {
+    "v8": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v9": {
+      "line": "49",
+      "statement": "dsX[i] = new DerivativeStructure(point.length, 1, i, point[i])"
+    }
+  },
+  {
+    "v10": {
+      "line": "53",
+      "statement": "final DerivativeStructure[] dsY = f.value(dsX)"
+    }
+  },
+  {
+    "v11": {
+      "line": "56",
+      "statement": "final double[][] y = new double[dsY.length][point.length"
+    }
+  },
+  {
+    "v12": {
+      "line": "57",
+      "statement": "final int[] orders = new int[point.length"
+    }
+  },
+  {
+    "v13": {
+      "line": "58",
+      "statement": "for (  int i = 0 ; i < dsY.length ;   ++i)"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v17": {
+      "line": "59",
+      "statement": "for (  int j = 0 ; j < point.length ;   ++j)"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v21": {
+      "line": "60",
+      "statement": "orders[j] = 1"
+    }
+  },
+  {
+    "v22": {
+      "line": "61",
+      "statement": "y[i][j] = dsY[i].getPartialDerivative(orders)"
+    }
+  },
+  {
+    "v23": {
+      "line": "62",
+      "statement": "orders[j] = 0"
+    }
+  },
+  {
+    "v24": {
+      "line": "66",
+      "statement": "return y"
+    }
+  }
+]

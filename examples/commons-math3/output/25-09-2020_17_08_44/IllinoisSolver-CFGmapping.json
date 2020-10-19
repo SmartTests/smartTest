@@ -1,0 +1,50 @@
+[
+  {
+    "v1": {
+      "line": "47",
+      "statement": "IllinoisSolver ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "48",
+      "statement": "super(DEFAULT_ABSOLUTE_ACCURACY, Method.ILLINOIS)"
+    }
+  },
+  {
+    "v3": {
+      "line": "56",
+      "statement": "IllinoisSolver (final double absoluteAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "57",
+      "statement": "super(absoluteAccuracy, Method.ILLINOIS)"
+    }
+  },
+  {
+    "v5": {
+      "line": "66",
+      "statement": "IllinoisSolver (final double relativeAccuracy, final double absoluteAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "68",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, Method.ILLINOIS)"
+    }
+  },
+  {
+    "v7": {
+      "line": "78",
+      "statement": "IllinoisSolver (final double relativeAccuracy, final double absoluteAccuracy, final double functionValueAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "81",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy, Method.PEGASUS)"
+    }
+  }
+]

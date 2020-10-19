@@ -1,0 +1,17 @@
+[
+  {
+    "info": "25-09-2020_16_58_14"
+  },
+  {
+    "requirements": {
+      "TR1": "55,59"
+    }
+  },
+  {
+    "testCoverage": {
+      "testExpm1Function": [],
+      "testParameters": [],
+      "testSinFunction": []
+    }
+  }
+]

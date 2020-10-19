@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <!-- <parent>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-parent</artifactId>
+    <version>32</version>
+  </parent> -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.commons</groupId>
+  <artifactId>commons-math3</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <name>Commons Math</name>
+
+  <inceptionYear>2003</inceptionYear>
+  <description>The Math project is a library of lightweight, self-contained mathematics and statistics components addressing the most common practical problems not immediately available in the Java programming language or commons-lang.</description>
+
+  <url>http://commons.apache.org/proper/commons-math/</url>
+
+  <!-- <issueManagement>
+    <system>jira</system>
+    <url>http://issues.apache.org/jira/browse/MATH</url>
+  </issueManagement>
+
+  <scm>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/math/trunk</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/math/trunk</developerConnection>
+    <url>http://svn.apache.org/viewvc/commons/proper/math/trunk</url>
+  </scm>
+  
+  <distributionManagement>
+    <site>
+      <id>people.apache.org</id>
+      <name>Commons Math</name>
+      <url>scp://people.apache.org/www/commons.apache.org/math</url>
+    </site>
+  </distributionManagement> -->
+
+
+  <dependencies>
+  <dependency>
+		<groupId>org.ow2.asm</groupId>
+		<artifactId>asm-all</artifactId>
+		<version>5.0.3</version>
+		
+		</dependency> 
+		<dependency>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-failsafe-plugin</artifactId>
+		<version>2.18.1</version>
+		<exclusions>
+	        <exclusion>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>slf4j-api</artifactId>
+	        </exclusion>
+	        <exclusion>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>slf4j-jdk14</artifactId>
+	        </exclusion>
+	        <exclusion>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>slf4j-nop</artifactId>
+	        </exclusion>
+	       <exclusion>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>jcl-over-slf4j</artifactId>
+	        </exclusion>
+	        <exclusion>
+	         <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId></exclusion>
+	        </exclusions>
+		
+<!-- 	 <scope>test</scope>
+ --> </dependency>
+	<dependency>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+		<version>3.0.0-M4</version>
+		<type>maven-plugin</type>
+<!-- 		<scope>test</scope> 
+ -->		
+	</dependency> 
+ 
+ 
+  <!--  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.7.9</version>
+</dependency>  -->
+ <!-- <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.5</version>
+
+ <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-nop</artifactId>
+    <version>1.5.6</version>
+</dependency> -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+    </dependency>
+ 
+ 
+ 
+  </dependencies>
+
+  <properties>
+    <!-- Do not change: "math" is the name of the component even if the
+         name of the base package evolves with major release numbers
+         (see "commons.osgi.symbolicName", below). -->
+    <commons.componentid>math</commons.componentid>
+    <!-- This value must reflect the current name of the base package. -->
+    <commons.osgi.symbolicName>org.apache.commons.math3</commons.osgi.symbolicName>
+    <!-- do not use snapshot suffix here -->
+    <commons.release.version>3.3</commons.release.version>
+    <commons.release.desc>(requires Java 1.5+)</commons.release.desc>
+    <!-- <commons.rc.version>RC1</commons.rc.version> -->
+    <commons.binary.suffix>-bin</commons.binary.suffix>
+ 
+    <commons.release.2.version>2.2</commons.release.2.version>
+    <!-- override parent name, because 2.2 uses different artifactId -->
+    <commons.release.2.name>commons-math-${commons.release.2.version}</commons.release.2.name>
+    <commons.release.2.desc>(requires Java 1.5+)</commons.release.2.desc>
+    <commons.release.2.binary.suffix></commons.release.2.binary.suffix>
+ 
+    <commons.jira.id>MATH</commons.jira.id>
+    <commons.jira.pid>12310485</commons.jira.pid>
+    <commons.encoding>UTF-8</commons.encoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <math.pmd.version>2.7.1</math.pmd.version>
+    <math.findbugs.version>2.5.1</math.findbugs.version>
+    <math.checkstyle.version>2.9.1</math.checkstyle.version>
+    <!-- Temporary downdate: 0.6.3 uses different tags and CP32 was not updated -->
+    <commons.jacoco.version>0.6.2.201302030002</commons.jacoco.version>
+  </properties> 
+
+   <build>
+      <plugins>
+       <plugin><!-- Maven jar plugin added by Kesina for smart test. Create manifest.mf manually -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<archive>
+						<manifestFile>resources/META-INF/MANIFEST.MF</manifestFile>
+					</archive>
+				</configuration>
+		  </plugin>
+		  	
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5</version><!--  Used to be 3.1 changed for major -->
+            <configuration>
+              <source>${maven.compiler.target}</source>
+              <target>${maven.compiler.target}</target>
+            </configuration>
+          </plugin>
+          <plugin><!-- Failsafe plugin added by Kesina for smart test. -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.18.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration><!-- Unsure if -cp argument is needed  -->
+				 <argLine>-Xbootclasspath/a:${project.build.directory}/${project.build.finalName}.jar
+						-javaagent:${project.build.directory}/${project.build.finalName}.jar</argLine>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<minimizeJar>false</minimizeJar>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+        <plugin><!-- Surefire plugin added by Kesina for smart test. Not sure if it's needed -->
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M4</version>
+          
+<!--           ADDED BY ME
+ -->          
+            <configuration>
+            	<forkCount>3</forkCount>
+				<reuseForks>true</reuseForks>
+				<argLine>-Xmx1024m</argLine>
+           <!--  Fix for OpenJDK 8 now validating class-path attributes in Jar manifests.
+            See https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=912333#63 -->
+            	<useSystemClassLoader>true</useSystemClassLoader>
+             <!--  <includes>
+              
+                COMMENTED BY ME <include>**/*Test.java</include>
+                <include>**/*TestBinary.java</include>
+                <include>**/*TestPermutations.java</include> 
+              </includes>
+              <excludes>
+                <exclude>**/*AbstractTest.java</exclude>
+              </excludes> -->
+          </configuration>
+        </plugin>
+       
+    </plugins> 
+  </build> 
+
+ 
+</project>
+

@@ -1,0 +1,572 @@
+[
+  {
+    "v1": {
+      "line": "61",
+      "statement": "HypergeometricDistribution (int populationSize, int numberOfSuccesses, int sampleSize)"
+    }
+  },
+  {
+    "v2": {
+      "line": "63",
+      "statement": "this(new Well19937c(), populationSize, numberOfSuccesses, sampleSize)"
+    }
+  },
+  {
+    "v3": {
+      "line": "79",
+      "statement": "HypergeometricDistribution (RandomGenerator rng, int populationSize, int numberOfSuccesses, int sampleSize)"
+    }
+  },
+  {
+    "v4": {
+      "line": "84",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v5": {
+      "line": "86",
+      "statement": "if (populationSize <= 0)"
+    }
+  },
+  {
+    "v6": {
+      "line": "87",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.POPULATION_SIZE,  populationSize)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "90",
+      "statement": "if (numberOfSuccesses < 0)"
+    }
+  },
+  {
+    "v9": {
+      "line": "91",
+      "statement": "throw new NotPositiveException(LocalizedFormats.NUMBER_OF_SUCCESSES,  numberOfSuccesses)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "94",
+      "statement": "if (sampleSize < 0)"
+    }
+  },
+  {
+    "v12": {
+      "line": "95",
+      "statement": "throw new NotPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,  sampleSize)"
+    }
+  },
+  {
+    "v13": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v14": {
+      "line": "99",
+      "statement": "if (numberOfSuccesses > populationSize)"
+    }
+  },
+  {
+    "v15": {
+      "line": "100",
+      "statement": "throw new NumberIsTooLargeException(LocalizedFormats.NUMBER_OF_SUCCESS_LARGER_THAN_POPULATION_SIZE, numberOfSuccesses, populationSize, true)"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v17": {
+      "line": "103",
+      "statement": "if (sampleSize > populationSize)"
+    }
+  },
+  {
+    "v18": {
+      "line": "104",
+      "statement": "throw new NumberIsTooLargeException(LocalizedFormats.SAMPLE_SIZE_LARGER_THAN_POPULATION_SIZE, sampleSize, populationSize, true)"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "108",
+      "statement": "this.numberOfSuccesses = numberOfSuccesses"
+    }
+  },
+  {
+    "v21": {
+      "line": "109",
+      "statement": "this.populationSize = populationSize"
+    }
+  },
+  {
+    "v22": {
+      "line": "110",
+      "statement": "this.sampleSize = sampleSize"
+    }
+  },
+  {
+    "v23": {
+      "line": "114",
+      "statement": "double cumulativeProbability(int x)"
+    }
+  },
+  {
+    "v24": {
+      "line": "115",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v25": {
+      "line": "117",
+      "statement": "int[] domain = getDomain(populationSize, numberOfSuccesses, sampleSize)"
+    }
+  },
+  {
+    "v26": {
+      "line": "118",
+      "statement": "if (x < domain[0])"
+    }
+  },
+  {
+    "v27": {
+      "line": "119",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "120",
+      "statement": "if (x >= domain[1])"
+    }
+  },
+  {
+    "v30": {
+      "line": "121",
+      "statement": "ret = 1.0"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "123",
+      "statement": "ret = innerCumulativeProbability(domain[0], x, 1)"
+    }
+  },
+  {
+    "v33": {
+      "line": "126",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v34": {
+      "line": "138",
+      "statement": "int[] getDomain(int n, int m, int k)"
+    }
+  },
+  {
+    "v35": {
+      "line": "139",
+      "statement": "return new int[] { getLowerDomain(n, m, k), getUpperDomain(m, k) }"
+    }
+  },
+  {
+    "v36": {
+      "line": "151",
+      "statement": "int getLowerDomain(int n, int m, int k)"
+    }
+  },
+  {
+    "v37": {
+      "line": "152",
+      "statement": "return FastMath.max(0, m - (n - k))"
+    }
+  },
+  {
+    "v38": {
+      "line": "160",
+      "statement": "int getNumberOfSuccesses()"
+    }
+  },
+  {
+    "v39": {
+      "line": "161",
+      "statement": "return numberOfSuccesses"
+    }
+  },
+  {
+    "v40": {
+      "line": "169",
+      "statement": "int getPopulationSize()"
+    }
+  },
+  {
+    "v41": {
+      "line": "170",
+      "statement": "return populationSize"
+    }
+  },
+  {
+    "v42": {
+      "line": "178",
+      "statement": "int getSampleSize()"
+    }
+  },
+  {
+    "v43": {
+      "line": "179",
+      "statement": "return sampleSize"
+    }
+  },
+  {
+    "v44": {
+      "line": "190",
+      "statement": "int getUpperDomain(int m, int k)"
+    }
+  },
+  {
+    "v45": {
+      "line": "191",
+      "statement": "return FastMath.min(k, m)"
+    }
+  },
+  {
+    "v46": {
+      "line": "195",
+      "statement": "double probability(int x)"
+    }
+  },
+  {
+    "v47": {
+      "line": "196",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v48": {
+      "line": "198",
+      "statement": "int[] domain = getDomain(populationSize, numberOfSuccesses, sampleSize)"
+    }
+  },
+  {
+    "v49": {
+      "line": "199",
+      "statement": "if (x < domain[0] || x > domain[1])"
+    }
+  },
+  {
+    "v50": {
+      "line": "200",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v51": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v52": {
+      "line": "202",
+      "statement": "double p = (double) sampleSize / (double) populationSize"
+    }
+  },
+  {
+    "v53": {
+      "line": "203",
+      "statement": "double q = (double) (populationSize - sampleSize) / (double) populationSize"
+    }
+  },
+  {
+    "v54": {
+      "line": "204",
+      "statement": "double p1 = SaddlePointExpansion.logBinomialProbability(x, numberOfSuccesses, p, q)"
+    }
+  },
+  {
+    "v55": {
+      "line": "206",
+      "statement": "double p2 = SaddlePointExpansion.logBinomialProbability(sampleSize - x, populationSize - numberOfSuccesses, p, q)"
+    }
+  },
+  {
+    "v56": {
+      "line": "209",
+      "statement": "double p3 = SaddlePointExpansion.logBinomialProbability(sampleSize, populationSize, p, q)"
+    }
+  },
+  {
+    "v57": {
+      "line": "211",
+      "statement": "ret = FastMath.exp(p1 + p2 - p3)"
+    }
+  },
+  {
+    "v58": {
+      "line": "214",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v59": {
+      "line": "224",
+      "statement": "double upperCumulativeProbability(int x)"
+    }
+  },
+  {
+    "v60": {
+      "line": "225",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v61": {
+      "line": "227",
+      "statement": "final int[] domain = getDomain(populationSize, numberOfSuccesses, sampleSize)"
+    }
+  },
+  {
+    "v62": {
+      "line": "228",
+      "statement": "if (x <= domain[0])"
+    }
+  },
+  {
+    "v63": {
+      "line": "229",
+      "statement": "ret = 1.0"
+    }
+  },
+  {
+    "v64": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v65": {
+      "line": "230",
+      "statement": "if (x > domain[1])"
+    }
+  },
+  {
+    "v66": {
+      "line": "231",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v67": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v68": {
+      "line": "233",
+      "statement": "ret = innerCumulativeProbability(domain[1], x, -1)"
+    }
+  },
+  {
+    "v69": {
+      "line": "236",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v70": {
+      "line": "252",
+      "statement": "double innerCumulativeProbability(int x0, int x1, int dx)"
+    }
+  },
+  {
+    "v71": {
+      "line": "253",
+      "statement": "double ret = probability(x0)"
+    }
+  },
+  {
+    "v72": {
+      "line": "254",
+      "statement": "while (x0 != x1)"
+    }
+  },
+  {
+    "v73": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v74": {
+      "line": "255",
+      "statement": "x0 += dx"
+    }
+  },
+  {
+    "v75": {
+      "line": "256",
+      "statement": "ret += probability(x0)"
+    }
+  },
+  {
+    "v76": {
+      "line": "258",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v77": {
+      "line": "267",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v78": {
+      "line": "268",
+      "statement": "return getSampleSize() * (getNumberOfSuccesses() / (double) getPopulationSize())"
+    }
+  },
+  {
+    "v79": {
+      "line": "278",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v80": {
+      "line": "279",
+      "statement": "if (!numericalVarianceIsCalculated)"
+    }
+  },
+  {
+    "v81": {
+      "line": "280",
+      "statement": "numericalVariance = calculateNumericalVariance()"
+    }
+  },
+  {
+    "v82": {
+      "line": "281",
+      "statement": "numericalVarianceIsCalculated = true"
+    }
+  },
+  {
+    "v83": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v84": {
+      "line": "283",
+      "statement": "return numericalVariance"
+    }
+  },
+  {
+    "v85": {
+      "line": "291",
+      "statement": "double calculateNumericalVariance()"
+    }
+  },
+  {
+    "v86": {
+      "line": "292",
+      "statement": "final double N = getPopulationSize()"
+    }
+  },
+  {
+    "v87": {
+      "line": "293",
+      "statement": "final double m = getNumberOfSuccesses()"
+    }
+  },
+  {
+    "v88": {
+      "line": "294",
+      "statement": "final double n = getSampleSize()"
+    }
+  },
+  {
+    "v89": {
+      "line": "295",
+      "statement": "return (n * m * (N - n) * (N - m)) / (N * N * (N - 1))"
+    }
+  },
+  {
+    "v90": {
+      "line": "307",
+      "statement": "int getSupportLowerBound()"
+    }
+  },
+  {
+    "v91": {
+      "line": "308",
+      "statement": "return FastMath.max(0, getSampleSize() + getNumberOfSuccesses() - getPopulationSize())"
+    }
+  },
+  {
+    "v92": {
+      "line": "320",
+      "statement": "int getSupportUpperBound()"
+    }
+  },
+  {
+    "v93": {
+      "line": "321",
+      "statement": "return FastMath.min(getNumberOfSuccesses(), getSampleSize())"
+    }
+  },
+  {
+    "v94": {
+      "line": "331",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v95": {
+      "line": "332",
+      "statement": "return true"
+    }
+  }
+]

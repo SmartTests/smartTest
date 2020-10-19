@@ -1,0 +1,107 @@
+1:EVR:<NEW_CLASS(java.util.LinkedList<java.lang.String>)>:<DEFAULT>:org.apache.commons.cli.CommandLine:44:new LinkedList<String>() |==> null
+2:EVR:<NEW_CLASS(java.util.ArrayList<org.apache.commons.cli.Option>)>:<DEFAULT>:org.apache.commons.cli.CommandLine:47:new ArrayList<Option>() |==> null
+3:EVR:<METHOD_INVOCATION(boolean)>:<DEFAULT>:org.apache.commons.cli.CommandLine@hasOption(org.apache.commons.cli.Option):66:options.contains(opt) |==> false
+4:EVR:<METHOD_INVOCATION(boolean)>:<DEFAULT>:org.apache.commons.cli.CommandLine@hasOption(java.lang.String):77:hasOption(resolveOption(opt)) |==> false
+5:EVR:<METHOD_INVOCATION(boolean)>:<DEFAULT>:org.apache.commons.cli.CommandLine@hasOption(char):88:hasOption(String.valueOf(opt)) |==> false
+6:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionObject(java.lang.String):103:getParsedOptionValue(opt) |==> null
+7:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine@getOptionObject(java.lang.String):107:System.err.println("Exception found converting " + opt + " to desired type: " + pe.getMessage()) |==> <NO-OP>
+8:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.CommandLine@getParsedOptionValue(org.apache.commons.cli.Option):123:option == null |==> false
+9:STD:<RETURN>:<NO-OP>:org.apache.commons.cli.CommandLine@getParsedOptionValue(org.apache.commons.cli.Option):125:return null; |==> <NO-OP>
+10:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getParsedOptionValue(org.apache.commons.cli.Option):127:getOptionValue(option) |==> null
+11:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.CommandLine@getParsedOptionValue(org.apache.commons.cli.Option):128:res == null |==> false
+12:STD:<RETURN>:<NO-OP>:org.apache.commons.cli.CommandLine@getParsedOptionValue(org.apache.commons.cli.Option):130:return null; |==> <NO-OP>
+13:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getParsedOptionValue(org.apache.commons.cli.Option):132:TypeHandler.createValue(res, option.getType()) |==> null
+14:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getParsedOptionValue(java.lang.String):146:getParsedOptionValue(resolveOption(opt)) |==> null
+15:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getParsedOptionValue(char):160:getParsedOptionValue(String.valueOf(opt)) |==> null
+16:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionObject(char):172:getOptionObject(String.valueOf(opt)) |==> null
+17:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.CommandLine@getOptionValue(org.apache.commons.cli.Option):185:option == null |==> false
+18:STD:<RETURN>:<NO-OP>:org.apache.commons.cli.CommandLine@getOptionValue(org.apache.commons.cli.Option):187:return null; |==> <NO-OP>
+19:EVR:<METHOD_INVOCATION(java.lang.String[])>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionValue(org.apache.commons.cli.Option):189:getOptionValues(option) |==> null
+20:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.CommandLine@getOptionValue(org.apache.commons.cli.Option):190:values == null |==> false
+21:LVR:0:POS:org.apache.commons.cli.CommandLine@getOptionValue(org.apache.commons.cli.Option):190:0 |==> 1
+22:LVR:0:NEG:org.apache.commons.cli.CommandLine@getOptionValue(org.apache.commons.cli.Option):190:0 |==> -1
+23:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionValue(java.lang.String):202:getOptionValue(resolveOption(opt)) |==> null
+24:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionValue(char):214:getOptionValue(String.valueOf(opt)) |==> null
+25:EVR:<NEW_CLASS(java.util.ArrayList<java.lang.String>)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionValues(org.apache.commons.cli.Option):227:new ArrayList<String>() |==> null
+26:COR:processedOption.equals(option):TRUE:org.apache.commons.cli.CommandLine@getOptionValues(org.apache.commons.cli.Option):231:processedOption.equals(option) |==> false
+27:COR:processedOption.equals(option):FALSE:org.apache.commons.cli.CommandLine@getOptionValues(org.apache.commons.cli.Option):231:processedOption.equals(option) |==> true
+28:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine@getOptionValues(org.apache.commons.cli.Option):233:values.addAll(processedOption.getValuesList()) |==> <NO-OP>
+29:COR:values.isEmpty():TRUE:org.apache.commons.cli.CommandLine@getOptionValues(org.apache.commons.cli.Option):237:values.isEmpty() |==> false
+30:COR:values.isEmpty():FALSE:org.apache.commons.cli.CommandLine@getOptionValues(org.apache.commons.cli.Option):237:values.isEmpty() |==> true
+31:EVR:<METHOD_INVOCATION(java.lang.String[])>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionValues(java.lang.String):249:getOptionValues(resolveOption(opt)) |==> null
+32:STD:<ASSIGN>:<NO-OP>:org.apache.commons.cli.CommandLine@resolveOption(java.lang.String):260:opt = Util.stripLeadingHyphens(opt) |==> <NO-OP>
+33:COR:opt.equals(option.getOpt()):TRUE:org.apache.commons.cli.CommandLine@resolveOption(java.lang.String):263:opt.equals(option.getOpt()) |==> false
+34:COR:opt.equals(option.getOpt()):FALSE:org.apache.commons.cli.CommandLine@resolveOption(java.lang.String):263:opt.equals(option.getOpt()) |==> true
+35:STD:<RETURN>:<NO-OP>:org.apache.commons.cli.CommandLine@resolveOption(java.lang.String):265:return option; |==> <NO-OP>
+36:COR:opt.equals(option.getLongOpt()):TRUE:org.apache.commons.cli.CommandLine@resolveOption(java.lang.String):268:opt.equals(option.getLongOpt()) |==> false
+37:COR:opt.equals(option.getLongOpt()):FALSE:org.apache.commons.cli.CommandLine@resolveOption(java.lang.String):268:opt.equals(option.getLongOpt()) |==> true
+38:STD:<RETURN>:<NO-OP>:org.apache.commons.cli.CommandLine@resolveOption(java.lang.String):270:return option; |==> <NO-OP>
+39:EVR:<METHOD_INVOCATION(java.lang.String[])>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionValues(char):286:getOptionValues(String.valueOf(opt)) |==> null
+40:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionValue(org.apache.commons.cli.Option,java.lang.String):301:getOptionValue(option) |==> null
+41:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.cli.CommandLine@getOptionValue(org.apache.commons.cli.Option,java.lang.String):302:answer != null |==> true
+42:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionValue(java.lang.String,java.lang.String):316:getOptionValue(resolveOption(opt), defaultValue) |==> null
+43:EVR:<METHOD_INVOCATION(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionValue(char,java.lang.String):330:getOptionValue(String.valueOf(opt), defaultValue) |==> null
+44:EVR:<NEW_CLASS(java.util.Properties)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):348:new Properties() |==> null
+45:COR:processedOption.equals(option):TRUE:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):352:processedOption.equals(option) |==> false
+46:COR:processedOption.equals(option):FALSE:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):352:processedOption.equals(option) |==> true
+47:EVR:<METHOD_INVOCATION(java.util.List<java.lang.String>)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):354:processedOption.getValuesList() |==> null
+48:LVR:POS:0:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):355:2 |==> 0
+49:LVR:POS:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):355:2 |==> -2
+50:ROR:>=(int,int):==(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):355:values.size() >= 2 |==> values.size() == 2
+51:ROR:>=(int,int):>(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):355:values.size() >= 2 |==> values.size() > 2
+52:ROR:>=(int,int):TRUE(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):355:values.size() >= 2 |==> true
+53:LVR:0:POS:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):358:0 |==> 1
+54:LVR:0:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):358:0 |==> -1
+55:LVR:POS:0:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):358:1 |==> 0
+56:LVR:POS:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):358:1 |==> -1
+57:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):358:props.put(values.get(0), values.get(1)) |==> <NO-OP>
+58:LVR:POS:0:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):360:1 |==> 0
+59:LVR:POS:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):360:1 |==> -1
+60:ROR:==(int,int):<=(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):360:values.size() == 1 |==> values.size() <= 1
+61:ROR:==(int,int):>=(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):360:values.size() == 1 |==> values.size() >= 1
+62:ROR:==(int,int):FALSE(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):360:values.size() == 1 |==> false
+63:LVR:0:POS:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):363:0 |==> 1
+64:LVR:0:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):363:0 |==> -1
+65:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):363:props.put(values.get(0), "true") |==> <NO-OP>
+66:EVR:<IDENTIFIER(java.util.Properties)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionProperties(org.apache.commons.cli.Option):368:props |==> null
+67:EVR:<NEW_CLASS(java.util.Properties)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):386:new Properties() |==> null
+68:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):390:opt.equals(option.getOpt()) || opt.equals(option.getLongOpt()) |==> opt.equals(option.getOpt()) != opt.equals(option.getLongOpt())
+69:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):390:opt.equals(option.getOpt()) || opt.equals(option.getLongOpt()) |==> opt.equals(option.getOpt())
+70:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):390:opt.equals(option.getOpt()) || opt.equals(option.getLongOpt()) |==> opt.equals(option.getLongOpt())
+71:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):390:opt.equals(option.getOpt()) || opt.equals(option.getLongOpt()) |==> true
+72:EVR:<METHOD_INVOCATION(java.util.List<java.lang.String>)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):392:option.getValuesList() |==> null
+73:LVR:POS:0:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):393:2 |==> 0
+74:LVR:POS:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):393:2 |==> -2
+75:ROR:>=(int,int):==(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):393:values.size() >= 2 |==> values.size() == 2
+76:ROR:>=(int,int):>(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):393:values.size() >= 2 |==> values.size() > 2
+77:ROR:>=(int,int):TRUE(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):393:values.size() >= 2 |==> true
+78:LVR:0:POS:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):396:0 |==> 1
+79:LVR:0:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):396:0 |==> -1
+80:LVR:POS:0:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):396:1 |==> 0
+81:LVR:POS:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):396:1 |==> -1
+82:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):396:props.put(values.get(0), values.get(1)) |==> <NO-OP>
+83:LVR:POS:0:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):398:1 |==> 0
+84:LVR:POS:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):398:1 |==> -1
+85:ROR:==(int,int):<=(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):398:values.size() == 1 |==> values.size() <= 1
+86:ROR:==(int,int):>=(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):398:values.size() == 1 |==> values.size() >= 1
+87:ROR:==(int,int):FALSE(int,int):org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):398:values.size() == 1 |==> false
+88:LVR:0:POS:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):401:0 |==> 1
+89:LVR:0:NEG:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):401:0 |==> -1
+90:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):401:props.put(values.get(0), "true") |==> <NO-OP>
+91:EVR:<IDENTIFIER(java.util.Properties)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptionProperties(java.lang.String):406:props |==> null
+92:EVR:<NEW_ARRAY(java.lang.String[])>:<DEFAULT>:org.apache.commons.cli.CommandLine@getArgs():416:new String[args.size()] |==> null
+93:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine@getArgs():418:args.toArray(answer) |==> <NO-OP>
+94:EVR:<IDENTIFIER(java.lang.String[])>:<DEFAULT>:org.apache.commons.cli.CommandLine@getArgs():420:answer |==> null
+95:EVR:<IDENTIFIER(java.util.List<java.lang.String>)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getArgList():430:args |==> null
+96:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine@addArg(java.lang.String):462:args.add(arg) |==> <NO-OP>
+97:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine@addOption(org.apache.commons.cli.Option):472:options.add(opt) |==> <NO-OP>
+98:EVR:<METHOD_INVOCATION(java.util.Iterator<org.apache.commons.cli.Option>)>:<DEFAULT>:org.apache.commons.cli.CommandLine@iterator():483:options.iterator() |==> null
+99:EVR:<IDENTIFIER(java.util.List<org.apache.commons.cli.Option>)>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptions():493:options |==> null
+100:EVR:<NEW_ARRAY(org.apache.commons.cli.Option[])>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptions():496:new Option[processed.size()] |==> null
+101:EVR:<METHOD_INVOCATION(org.apache.commons.cli.Option[])>:<DEFAULT>:org.apache.commons.cli.CommandLine@getOptions():499:processed.toArray(optionsArray) |==> null
+102:EVR:<NEW_CLASS(org.apache.commons.cli.CommandLine)>:<DEFAULT>:org.apache.commons.cli.CommandLine$Builder:513:new CommandLine() |==> null
+103:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine$Builder@addOption(org.apache.commons.cli.Option):524:commandLine.addOption(opt) |==> <NO-OP>
+104:EVR:<IDENTIFIER(org.apache.commons.cli.CommandLine.Builder)>:<DEFAULT>:org.apache.commons.cli.CommandLine$Builder@addOption(org.apache.commons.cli.Option):525:this |==> null
+105:STD:<CALL>:<NO-OP>:org.apache.commons.cli.CommandLine$Builder@addArg(java.lang.String):537:commandLine.addArg(arg) |==> <NO-OP>
+106:EVR:<IDENTIFIER(org.apache.commons.cli.CommandLine.Builder)>:<DEFAULT>:org.apache.commons.cli.CommandLine$Builder@addArg(java.lang.String):538:this |==> null
+107:EVR:<IDENTIFIER(org.apache.commons.cli.CommandLine)>:<DEFAULT>:org.apache.commons.cli.CommandLine$Builder@build():543:commandLine |==> null

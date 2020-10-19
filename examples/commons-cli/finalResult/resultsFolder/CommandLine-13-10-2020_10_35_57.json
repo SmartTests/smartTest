@@ -1,0 +1,40 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "190",
+      "185",
+      "189",
+      "187"
+    ],
+    "sourceClass": "CommandLine"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR17"
+    ],
+    "deletedRequirementYesTest": [
+      "TR20",
+      "TR18",
+      "TR19"
+    ],
+    "affectedTest": [
+      "testNullhOption",
+      "testGetParsedOptionValue",
+      "testGetParsedOptionValueWithChar",
+      "testGetParsedOptionValueWithOption"
+    ],
+    "testReran": [
+      "testGetParsedOptionValueWithOption",
+      "testGetParsedOptionValueWithChar",
+      "testNullhOption",
+      "testGetParsedOptionValue"
+    ],
+    "unsatisfiedRequirement": [
+      "TR17"
+    ],
+    "newTestRequirement": [
+      "TR18",
+      "TR20"
+    ]
+  }
+}

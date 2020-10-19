@@ -1,0 +1,27 @@
+digraph ComplexUtils_CFG {
+  // graph-vertices
+  v1  [label="35:  ComplexUtils ()"];
+  v2  [label="62:  Complex polar2Complex(double r, double theta)"];
+  v3  [label="63:  if (r < 0)"];
+  v4  [label="64:  throw new MathIllegalArgumentException( LocalizedFormats.NEGATIVE_COMPLEX_MODULE, r)"];
+  v5  [label="endif"];
+  v6  [label="67:  return new Complex(r * FastMath.cos(theta), r * FastMath.sin(theta));"];
+  v7  [label="79:  Complex[] convertToComplex(double[] real)"];
+  v8  [label="80:  final Complex c[] = new Complex[real.length]"];
+  v9  [label="81:  for (  int i = 0 ; i < real.length ;   i++)"];
+  v12  [label="endfor"];
+  v13  [label="82:  c[i] = new Complex(real[i], 0)"];
+  v14  [label="85:  return c;"];
+  // graph-edges
+  v2 -> v3;
+  v3 -> v4  [label="True"];
+  v3 -> v5  [label="False"];
+  v5 -> v6;
+  v7 -> v8;
+  v8 -> v9;
+  v9 -> v12  [label="False"];
+  v9 -> v13  [label="True"];
+  v13 -> v9;
+  v12 -> v14;
+  // end-of-graph
+}

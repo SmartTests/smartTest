@@ -1,0 +1,113 @@
+1:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@<init>(double,double,int,int):64:maximalIterationCount > ROMBERG_MAX_ITERATIONS_COUNT |==> maximalIterationCount != ROMBERG_MAX_ITERATIONS_COUNT
+2:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@<init>(double,double,int,int):64:maximalIterationCount > ROMBERG_MAX_ITERATIONS_COUNT |==> maximalIterationCount >= ROMBERG_MAX_ITERATIONS_COUNT
+3:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@<init>(double,double,int,int):64:maximalIterationCount > ROMBERG_MAX_ITERATIONS_COUNT |==> false
+4:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.integration.RombergIntegrator@<init>(double,double,int,int):66:false |==> true
+5:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@<init>(int,int):86:maximalIterationCount > ROMBERG_MAX_ITERATIONS_COUNT |==> maximalIterationCount != ROMBERG_MAX_ITERATIONS_COUNT
+6:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@<init>(int,int):86:maximalIterationCount > ROMBERG_MAX_ITERATIONS_COUNT |==> maximalIterationCount >= ROMBERG_MAX_ITERATIONS_COUNT
+7:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@<init>(int,int):86:maximalIterationCount > ROMBERG_MAX_ITERATIONS_COUNT |==> false
+8:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.integration.RombergIntegrator@<init>(int,int):88:false |==> true
+9:LVR:POS:0:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():105:1 |==> 0
+10:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():105:1 |==> -1
+11:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():105:iterations.getMaximalCount() + 1 |==> iterations.getMaximalCount() % 1
+12:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():105:iterations.getMaximalCount() + 1 |==> iterations.getMaximalCount() * 1
+13:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():105:iterations.getMaximalCount() + 1 |==> iterations.getMaximalCount() - 1
+14:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():105:iterations.getMaximalCount() + 1 |==> iterations.getMaximalCount() / 1
+15:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():106:new double[m] |==> null
+16:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():107:new double[m] |==> null
+17:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.integration.TrapezoidIntegrator)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():109:new TrapezoidIntegrator() |==> null
+18:LVR:0:POS:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():110:0 |==> 1
+19:LVR:0:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():110:0 |==> -1
+20:LVR:0:POS:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():110:0 |==> 1
+21:LVR:0:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():110:0 |==> -1
+22:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():110:currentRow[0] = qtrap.stage(this, 0) |==> <NO-OP>
+23:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():111:iterations.incrementCount() |==> <NO-OP>
+24:LVR:0:POS:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():112:0 |==> 1
+25:LVR:0:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():112:0 |==> -1
+26:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():115:iterations.getCount() |==> 0
+27:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():118:previousRow |==> null
+28:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():119:previousRow = currentRow |==> <NO-OP>
+29:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():120:currentRow = tmpRow |==> <NO-OP>
+30:LVR:0:POS:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():122:0 |==> 1
+31:LVR:0:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():122:0 |==> -1
+32:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():122:currentRow[0] = qtrap.stage(this, i) |==> <NO-OP>
+33:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():123:iterations.incrementCount() |==> <NO-OP>
+34:LVR:POS:0:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():124:1 |==> 0
+35:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():124:1 |==> -1
+36:ROR:<=(int,int):<(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():124:j <= i |==> j < i
+37:ROR:<=(int,int):==(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():124:j <= i |==> j == i
+38:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():124:j <= i |==> true
+39:LVR:POS:0:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:1L |==> 0L
+40:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:1L |==> -1L
+41:LVR:POS:0:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:2 |==> 0
+42:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:2 |==> -2
+43:AOR:*(int,int):%(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:2 * j |==> 2 % j
+44:AOR:*(int,int):+(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:2 * j |==> 2 + j
+45:AOR:*(int,int):-(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:2 * j |==> 2 - j
+46:AOR:*(int,int):/(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:2 * j |==> 2 / j
+47:SOR:<<(long,int):>>(long,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:1L << (2 * j) |==> 1L >> (2 * j)
+48:SOR:<<(long,int):>>>(long,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:1L << (2 * j) |==> 1L >>> (2 * j)
+49:LVR:POS:0:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:1 |==> 0
+50:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:1 |==> -1
+51:AOR:-(long,long):%(long,long):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:(1L << (2 * j)) - 1 |==> (1L << (2 * j)) % 1
+52:AOR:-(long,long):*(long,long):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:(1L << (2 * j)) - 1 |==> (1L << (2 * j)) * 1
+53:AOR:-(long,long):+(long,long):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:(1L << (2 * j)) - 1 |==> (1L << (2 * j)) + 1
+54:AOR:-(long,long):/(long,long):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():126:(1L << (2 * j)) - 1 |==> (1L << (2 * j)) / 1
+55:LVR:POS:0:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():127:1 |==> 0
+56:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():127:1 |==> -1
+57:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():127:j - 1 |==> j % 1
+58:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():127:j - 1 |==> j * 1
+59:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():127:j - 1 |==> j + 1
+60:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():127:j - 1 |==> j / 1
+61:LVR:POS:0:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:1 |==> 0
+62:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:1 |==> -1
+63:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:j - 1 |==> j % 1
+64:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:j - 1 |==> j * 1
+65:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:j - 1 |==> j + 1
+66:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:j - 1 |==> j / 1
+67:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:tIJm1 - previousRow[j - 1] |==> tIJm1 % previousRow[j - 1]
+68:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:tIJm1 - previousRow[j - 1] |==> tIJm1 * previousRow[j - 1]
+69:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:tIJm1 - previousRow[j - 1] |==> tIJm1 + previousRow[j - 1]
+70:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:tIJm1 - previousRow[j - 1] |==> tIJm1 / previousRow[j - 1]
+71:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:(tIJm1 - previousRow[j - 1]) / r |==> (tIJm1 - previousRow[j - 1]) % r
+72:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:(tIJm1 - previousRow[j - 1]) / r |==> (tIJm1 - previousRow[j - 1]) * r
+73:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:(tIJm1 - previousRow[j - 1]) / r |==> (tIJm1 - previousRow[j - 1]) + r
+74:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:(tIJm1 - previousRow[j - 1]) / r |==> (tIJm1 - previousRow[j - 1]) - r
+75:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:tIJm1 + (tIJm1 - previousRow[j - 1]) / r |==> tIJm1 % ((tIJm1 - previousRow[j - 1]) / r)
+76:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:tIJm1 + (tIJm1 - previousRow[j - 1]) / r |==> tIJm1 * ((tIJm1 - previousRow[j - 1]) / r)
+77:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:tIJm1 + (tIJm1 - previousRow[j - 1]) / r |==> tIJm1 - (tIJm1 - previousRow[j - 1]) / r
+78:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:tIJm1 + (tIJm1 - previousRow[j - 1]) / r |==> tIJm1 / ((tIJm1 - previousRow[j - 1]) / r)
+79:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():128:currentRow[j] = tIJm1 + (tIJm1 - previousRow[j - 1]) / r |==> <NO-OP>
+80:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():130:currentRow[i] |==> 0.0
+81:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():131:i >= getMinimalIterationCount() |==> i == getMinimalIterationCount()
+82:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():131:i >= getMinimalIterationCount() |==> i > getMinimalIterationCount()
+83:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():131:i >= getMinimalIterationCount() |==> true
+84:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():132:s - olds |==> s % olds
+85:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():132:s - olds |==> s * olds
+86:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():132:s - olds |==> s + olds
+87:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():132:s - olds |==> s / olds
+88:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:FastMath.abs(olds) + FastMath.abs(s) |==> FastMath.abs(olds) % FastMath.abs(s)
+89:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:FastMath.abs(olds) + FastMath.abs(s) |==> FastMath.abs(olds) * FastMath.abs(s)
+90:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:FastMath.abs(olds) + FastMath.abs(s) |==> FastMath.abs(olds) - FastMath.abs(s)
+91:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:FastMath.abs(olds) + FastMath.abs(s) |==> FastMath.abs(olds) / FastMath.abs(s)
+92:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) |==> getRelativeAccuracy() % (FastMath.abs(olds) + FastMath.abs(s))
+93:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) |==> getRelativeAccuracy() + (FastMath.abs(olds) + FastMath.abs(s))
+94:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) |==> getRelativeAccuracy() - (FastMath.abs(olds) + FastMath.abs(s))
+95:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) |==> getRelativeAccuracy() / (FastMath.abs(olds) + FastMath.abs(s))
+96:LVR:POS:0:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:0.5 |==> 0.0
+97:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:0.5 |==> -0.5
+98:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) % 0.5
+99:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) + 0.5
+100:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) - 0.5
+101:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():133:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) / 0.5
+102:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:delta <= rLimit |==> delta < rLimit
+103:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:delta <= rLimit |==> delta == rLimit
+104:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:delta <= rLimit |==> true
+105:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:delta <= getAbsoluteAccuracy() |==> delta < getAbsoluteAccuracy()
+106:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:delta <= getAbsoluteAccuracy() |==> delta == getAbsoluteAccuracy()
+107:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:delta <= getAbsoluteAccuracy() |==> true
+108:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:(delta <= rLimit) || (delta <= getAbsoluteAccuracy()) |==> (delta <= rLimit) != (delta <= getAbsoluteAccuracy())
+109:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:(delta <= rLimit) || (delta <= getAbsoluteAccuracy()) |==> (delta <= rLimit)
+110:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:(delta <= rLimit) || (delta <= getAbsoluteAccuracy()) |==> (delta <= getAbsoluteAccuracy())
+111:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():134:(delta <= rLimit) || (delta <= getAbsoluteAccuracy()) |==> true
+112:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():135:return s; |==> <NO-OP>
+113:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.RombergIntegrator@doIntegrate():138:olds = s |==> <NO-OP>

@@ -1,0 +1,284 @@
+[
+  {
+    "v1": {
+      "line": "60",
+      "statement": "TrapezoidIntegrator (final double relativeAccuracy,  final double absoluteAccuracy,  final int minimalIterationCount,  final int maximalIterationCount)"
+    }
+  },
+  {
+    "v2": {
+      "line": "65",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v3": {
+      "line": "66",
+      "statement": "if (maximalIterationCount > TRAPEZOID_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v4": {
+      "line": "67",
+      "statement": "throw new NumberIsTooLargeException(maximalIterationCount, TRAPEZOID_MAX_ITERATIONS_COUNT, false)"
+    }
+  },
+  {
+    "v5": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v6": {
+      "line": "84",
+      "statement": "TrapezoidIntegrator (final int minimalIterationCount,  final int maximalIterationCount)"
+    }
+  },
+  {
+    "v7": {
+      "line": "87",
+      "statement": "super(minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v8": {
+      "line": "88",
+      "statement": "if (maximalIterationCount > TRAPEZOID_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v9": {
+      "line": "89",
+      "statement": "throw new NumberIsTooLargeException(maximalIterationCount, TRAPEZOID_MAX_ITERATIONS_COUNT, false)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "98",
+      "statement": "TrapezoidIntegrator ()"
+    }
+  },
+  {
+    "v12": {
+      "line": "99",
+      "statement": "super(DEFAULT_MIN_ITERATIONS_COUNT, TRAPEZOID_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v13": {
+      "line": "117",
+      "statement": "double stage(final BaseAbstractUnivariateIntegrator baseIntegrator, final int n)"
+    }
+  },
+  {
+    "v14": {
+      "line": "120",
+      "statement": "if (n == 0)"
+    }
+  },
+  {
+    "v15": {
+      "line": "121",
+      "statement": "final double max = baseIntegrator.getMax()"
+    }
+  },
+  {
+    "v16": {
+      "line": "122",
+      "statement": "final double min = baseIntegrator.getMin()"
+    }
+  },
+  {
+    "v17": {
+      "line": "123",
+      "statement": "s = 0.5 * (max - min) * (baseIntegrator.computeObjectiveValue(min) +  baseIntegrator.computeObjectiveValue(max))"
+    }
+  },
+  {
+    "v18": {
+      "line": "126",
+      "statement": "return s"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "128",
+      "statement": "final long np = 1L << (n-1)"
+    }
+  },
+  {
+    "v21": {
+      "line": "129",
+      "statement": "double sum = 0"
+    }
+  },
+  {
+    "v22": {
+      "line": "130",
+      "statement": "final double max = baseIntegrator.getMax()"
+    }
+  },
+  {
+    "v23": {
+      "line": "131",
+      "statement": "final double min = baseIntegrator.getMin()"
+    }
+  },
+  {
+    "v24": {
+      "line": "133",
+      "statement": "final double spacing = (max - min) / np"
+    }
+  },
+  {
+    "v25": {
+      "line": "134",
+      "statement": "double x = min + 0.5 * spacing"
+    }
+  },
+  {
+    "v26": {
+      "line": "135",
+      "statement": "for (  long i = 0 ; i < np ;   i++)"
+    }
+  },
+  {
+    "v29": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v30": {
+      "line": "136",
+      "statement": "sum += baseIntegrator.computeObjectiveValue(x)"
+    }
+  },
+  {
+    "v31": {
+      "line": "137",
+      "statement": "x += spacing"
+    }
+  },
+  {
+    "v32": {
+      "line": "140",
+      "statement": "s = 0.5 * (s + sum * spacing)"
+    }
+  },
+  {
+    "v33": {
+      "line": "141",
+      "statement": "return s"
+    }
+  },
+  {
+    "v34": {
+      "line": "147",
+      "statement": "double doIntegrate()"
+    }
+  },
+  {
+    "v35": {
+      "line": "150",
+      "statement": "double oldt = stage(this, 0)"
+    }
+  },
+  {
+    "v36": {
+      "line": "151",
+      "statement": "iterations.incrementCount()"
+    }
+  },
+  {
+    "v37": {
+      "line": "152",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v38": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v39": {
+      "line": "153",
+      "statement": "final int i = iterations.getCount()"
+    }
+  },
+  {
+    "v40": {
+      "line": "154",
+      "statement": "final double t = stage(this, i)"
+    }
+  },
+  {
+    "v41": {
+      "line": "155",
+      "statement": "if (i >= getMinimalIterationCount())"
+    }
+  },
+  {
+    "v42": {
+      "line": "156",
+      "statement": "final double delta = FastMath.abs(t - oldt)"
+    }
+  },
+  {
+    "v43": {
+      "line": "157",
+      "statement": "final double rLimit = getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) * 0.5"
+    }
+  },
+  {
+    "v44": {
+      "line": "159",
+      "statement": "if ((delta <= rLimit) || (delta <= getAbsoluteAccuracy()))"
+    }
+  },
+  {
+    "v45": {
+      "line": "160",
+      "statement": "return t"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v48": {
+      "line": "163",
+      "statement": "oldt = t"
+    }
+  },
+  {
+    "v49": {
+      "line": "164",
+      "statement": "iterations.incrementCount()"
+    }
+  }
+]

@@ -1,0 +1,1772 @@
+[
+  {
+    "v1": {
+      "line": "88",
+      "statement": "Complex (double real)"
+    }
+  },
+  {
+    "v2": {
+      "line": "89",
+      "statement": "this(real, 0.0)"
+    }
+  },
+  {
+    "v3": {
+      "line": "98",
+      "statement": "Complex (double real, double imaginary)"
+    }
+  },
+  {
+    "v4": {
+      "line": "99",
+      "statement": "this.real = real"
+    }
+  },
+  {
+    "v5": {
+      "line": "100",
+      "statement": "this.imaginary = imaginary"
+    }
+  },
+  {
+    "v6": {
+      "line": "102",
+      "statement": "isNaN = Double.isNaN(real) || Double.isNaN(imaginary)"
+    }
+  },
+  {
+    "v7": {
+      "line": "103",
+      "statement": "isInfinite = !isNaN && (Double.isInfinite(real) || Double.isInfinite(imaginary))"
+    }
+  },
+  {
+    "v8": {
+      "line": "115",
+      "statement": "double abs()"
+    }
+  },
+  {
+    "v9": {
+      "line": "116",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v10": {
+      "line": "117",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v11": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v12": {
+      "line": "119",
+      "statement": "if (isInfinite())"
+    }
+  },
+  {
+    "v13": {
+      "line": "120",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v14": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v15": {
+      "line": "122",
+      "statement": "if (FastMath.abs(real) < FastMath.abs(imaginary))"
+    }
+  },
+  {
+    "v16": {
+      "line": "123",
+      "statement": "if (imaginary == 0.0)"
+    }
+  },
+  {
+    "v17": {
+      "line": "124",
+      "statement": "return FastMath.abs(real)"
+    }
+  },
+  {
+    "v18": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v19": {
+      "line": "126",
+      "statement": "double q = real / imaginary"
+    }
+  },
+  {
+    "v20": {
+      "line": "127",
+      "statement": "return FastMath.abs(imaginary) * FastMath.sqrt(1 + q * q)"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "129",
+      "statement": "if (real == 0.0)"
+    }
+  },
+  {
+    "v23": {
+      "line": "130",
+      "statement": "return FastMath.abs(imaginary)"
+    }
+  },
+  {
+    "v24": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v25": {
+      "line": "132",
+      "statement": "double q = imaginary / real"
+    }
+  },
+  {
+    "v26": {
+      "line": "133",
+      "statement": "return FastMath.abs(real) * FastMath.sqrt(1 + q * q)"
+    }
+  },
+  {
+    "v27": {
+      "line": "156",
+      "statement": "Complex add(Complex addend)"
+    }
+  },
+  {
+    "v28": {
+      "line": "157",
+      "statement": "MathUtils.checkNotNull(addend)"
+    }
+  },
+  {
+    "v29": {
+      "line": "158",
+      "statement": "if (isNaN || addend.isNaN)"
+    }
+  },
+  {
+    "v30": {
+      "line": "159",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "162",
+      "statement": "return createComplex(real + addend.getReal(),  imaginary + addend.getImaginary())"
+    }
+  },
+  {
+    "v33": {
+      "line": "174",
+      "statement": "Complex add(double addend)"
+    }
+  },
+  {
+    "v34": {
+      "line": "175",
+      "statement": "if (isNaN || Double.isNaN(addend))"
+    }
+  },
+  {
+    "v35": {
+      "line": "176",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v37": {
+      "line": "179",
+      "statement": "return createComplex(real + addend, imaginary)"
+    }
+  },
+  {
+    "v38": {
+      "line": "196",
+      "statement": "Complex conjugate()"
+    }
+  },
+  {
+    "v39": {
+      "line": "197",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v40": {
+      "line": "198",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v42": {
+      "line": "201",
+      "statement": "return createComplex(real, -imaginary)"
+    }
+  },
+  {
+    "v43": {
+      "line": "246",
+      "statement": "Complex divide(Complex divisor)"
+    }
+  },
+  {
+    "v44": {
+      "line": "248",
+      "statement": "MathUtils.checkNotNull(divisor)"
+    }
+  },
+  {
+    "v45": {
+      "line": "249",
+      "statement": "if (isNaN || divisor.isNaN)"
+    }
+  },
+  {
+    "v46": {
+      "line": "250",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v48": {
+      "line": "253",
+      "statement": "final double c = divisor.getReal()"
+    }
+  },
+  {
+    "v49": {
+      "line": "254",
+      "statement": "final double d = divisor.getImaginary()"
+    }
+  },
+  {
+    "v50": {
+      "line": "255",
+      "statement": "if (c == 0.0 && d == 0.0)"
+    }
+  },
+  {
+    "v51": {
+      "line": "256",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v53": {
+      "line": "259",
+      "statement": "if (divisor.isInfinite() && !isInfinite())"
+    }
+  },
+  {
+    "v54": {
+      "line": "260",
+      "statement": "return ZERO"
+    }
+  },
+  {
+    "v55": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v56": {
+      "line": "263",
+      "statement": "if (FastMath.abs(c) < FastMath.abs(d))"
+    }
+  },
+  {
+    "v57": {
+      "line": "264",
+      "statement": "double q = c / d"
+    }
+  },
+  {
+    "v58": {
+      "line": "265",
+      "statement": "double denominator = c * q + d"
+    }
+  },
+  {
+    "v59": {
+      "line": "266",
+      "statement": "return createComplex((real * q + imaginary) / denominator, (imaginary * q - real) / denominator)"
+    }
+  },
+  {
+    "v60": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v61": {
+      "line": "269",
+      "statement": "double q = d / c"
+    }
+  },
+  {
+    "v62": {
+      "line": "270",
+      "statement": "double denominator = d * q + c"
+    }
+  },
+  {
+    "v63": {
+      "line": "271",
+      "statement": "return createComplex((imaginary * q + real) / denominator, (imaginary - real * q) / denominator)"
+    }
+  },
+  {
+    "v64": {
+      "line": "284",
+      "statement": "Complex divide(double divisor)"
+    }
+  },
+  {
+    "v65": {
+      "line": "285",
+      "statement": "if (isNaN || Double.isNaN(divisor))"
+    }
+  },
+  {
+    "v66": {
+      "line": "286",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v67": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v68": {
+      "line": "288",
+      "statement": "if (divisor == 0d)"
+    }
+  },
+  {
+    "v69": {
+      "line": "289",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v71": {
+      "line": "291",
+      "statement": "if (Double.isInfinite(divisor))"
+    }
+  },
+  {
+    "v72": {
+      "line": "292",
+      "statement": "return !isInfinite() ? ZERO"
+    }
+  },
+  {
+    "v73": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v74": {
+      "line": "294",
+      "statement": "return createComplex(real / divisor,  imaginary  / divisor)"
+    }
+  },
+  {
+    "v75": {
+      "line": "299",
+      "statement": "Complex reciprocal()"
+    }
+  },
+  {
+    "v76": {
+      "line": "300",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v77": {
+      "line": "301",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v78": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v79": {
+      "line": "304",
+      "statement": "if (real == 0.0 && imaginary == 0.0)"
+    }
+  },
+  {
+    "v80": {
+      "line": "305",
+      "statement": "return INF"
+    }
+  },
+  {
+    "v81": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v82": {
+      "line": "308",
+      "statement": "if (isInfinite)"
+    }
+  },
+  {
+    "v83": {
+      "line": "309",
+      "statement": "return ZERO"
+    }
+  },
+  {
+    "v84": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v85": {
+      "line": "312",
+      "statement": "if (FastMath.abs(real) < FastMath.abs(imaginary))"
+    }
+  },
+  {
+    "v86": {
+      "line": "313",
+      "statement": "double q = real / imaginary"
+    }
+  },
+  {
+    "v87": {
+      "line": "314",
+      "statement": "double scale = 1. / (real * q + imaginary)"
+    }
+  },
+  {
+    "v88": {
+      "line": "315",
+      "statement": "return createComplex(scale * q, -scale)"
+    }
+  },
+  {
+    "v89": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v90": {
+      "line": "317",
+      "statement": "double q = imaginary / real"
+    }
+  },
+  {
+    "v91": {
+      "line": "318",
+      "statement": "double scale = 1. / (imaginary * q + real)"
+    }
+  },
+  {
+    "v92": {
+      "line": "319",
+      "statement": "return createComplex(scale, -scale * q)"
+    }
+  },
+  {
+    "v93": {
+      "line": "339",
+      "statement": "boolean equals(Object other)"
+    }
+  },
+  {
+    "v94": {
+      "line": "340",
+      "statement": "if (this == other)"
+    }
+  },
+  {
+    "v95": {
+      "line": "341",
+      "statement": "return true"
+    }
+  },
+  {
+    "v96": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v97": {
+      "line": "343",
+      "statement": "if (other instanceof Complex)"
+    }
+  },
+  {
+    "v98": {
+      "line": "344",
+      "statement": "Complex c = (Complex)other"
+    }
+  },
+  {
+    "v99": {
+      "line": "345",
+      "statement": "if (c.isNaN)"
+    }
+  },
+  {
+    "v100": {
+      "line": "346",
+      "statement": "return isNaN"
+    }
+  },
+  {
+    "v101": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v102": {
+      "line": "348",
+      "statement": "return (real == c.real) && (imaginary == c.imaginary)"
+    }
+  },
+  {
+    "v103": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v104": {
+      "line": "351",
+      "statement": "return false"
+    }
+  },
+  {
+    "v105": {
+      "line": "362",
+      "statement": "int hashCode()"
+    }
+  },
+  {
+    "v106": {
+      "line": "363",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v107": {
+      "line": "364",
+      "statement": "return 7"
+    }
+  },
+  {
+    "v108": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v109": {
+      "line": "366",
+      "statement": "return 37 * (17 * MathUtils.hash(imaginary) + MathUtils.hash(real))"
+    }
+  },
+  {
+    "v110": {
+      "line": "375",
+      "statement": "double getImaginary()"
+    }
+  },
+  {
+    "v111": {
+      "line": "376",
+      "statement": "return imaginary"
+    }
+  },
+  {
+    "v112": {
+      "line": "384",
+      "statement": "double getReal()"
+    }
+  },
+  {
+    "v113": {
+      "line": "385",
+      "statement": "return real"
+    }
+  },
+  {
+    "v114": {
+      "line": "395",
+      "statement": "boolean isNaN()"
+    }
+  },
+  {
+    "v115": {
+      "line": "396",
+      "statement": "return isNaN"
+    }
+  },
+  {
+    "v116": {
+      "line": "408",
+      "statement": "boolean isInfinite()"
+    }
+  },
+  {
+    "v117": {
+      "line": "409",
+      "statement": "return isInfinite"
+    }
+  },
+  {
+    "v118": {
+      "line": "436",
+      "statement": "Complex multiply(Complex factor)"
+    }
+  },
+  {
+    "v119": {
+      "line": "438",
+      "statement": "MathUtils.checkNotNull(factor)"
+    }
+  },
+  {
+    "v120": {
+      "line": "439",
+      "statement": "if (isNaN || factor.isNaN)"
+    }
+  },
+  {
+    "v121": {
+      "line": "440",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v122": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v123": {
+      "line": "442",
+      "statement": "if (Double.isInfinite(real) || Double.isInfinite(imaginary) || Double.isInfinite(factor.real) || Double.isInfinite(factor.imaginary))"
+    }
+  },
+  {
+    "v124": {
+      "line": "447",
+      "statement": "return INF"
+    }
+  },
+  {
+    "v125": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v126": {
+      "line": "449",
+      "statement": "return createComplex(real * factor.real - imaginary * factor.imaginary,  real * factor.imaginary + imaginary * factor.real)"
+    }
+  },
+  {
+    "v127": {
+      "line": "461",
+      "statement": "Complex multiply(final int factor)"
+    }
+  },
+  {
+    "v128": {
+      "line": "462",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v129": {
+      "line": "463",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v130": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v131": {
+      "line": "465",
+      "statement": "if (Double.isInfinite(real) || Double.isInfinite(imaginary))"
+    }
+  },
+  {
+    "v132": {
+      "line": "467",
+      "statement": "return INF"
+    }
+  },
+  {
+    "v133": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v134": {
+      "line": "469",
+      "statement": "return createComplex(real * factor, imaginary * factor)"
+    }
+  },
+  {
+    "v135": {
+      "line": "480",
+      "statement": "Complex multiply(double factor)"
+    }
+  },
+  {
+    "v136": {
+      "line": "481",
+      "statement": "if (isNaN || Double.isNaN(factor))"
+    }
+  },
+  {
+    "v137": {
+      "line": "482",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v138": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v139": {
+      "line": "484",
+      "statement": "if (Double.isInfinite(real) || Double.isInfinite(imaginary) || Double.isInfinite(factor))"
+    }
+  },
+  {
+    "v140": {
+      "line": "488",
+      "statement": "return INF"
+    }
+  },
+  {
+    "v141": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v142": {
+      "line": "490",
+      "statement": "return createComplex(real * factor, imaginary * factor)"
+    }
+  },
+  {
+    "v143": {
+      "line": "500",
+      "statement": "Complex negate()"
+    }
+  },
+  {
+    "v144": {
+      "line": "501",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v145": {
+      "line": "502",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v146": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v147": {
+      "line": "505",
+      "statement": "return createComplex(-real, -imaginary)"
+    }
+  },
+  {
+    "v148": {
+      "line": "526",
+      "statement": "Complex subtract(Complex subtrahend)"
+    }
+  },
+  {
+    "v149": {
+      "line": "528",
+      "statement": "MathUtils.checkNotNull(subtrahend)"
+    }
+  },
+  {
+    "v150": {
+      "line": "529",
+      "statement": "if (isNaN || subtrahend.isNaN)"
+    }
+  },
+  {
+    "v151": {
+      "line": "530",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v152": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v153": {
+      "line": "533",
+      "statement": "return createComplex(real - subtrahend.getReal(),  imaginary - subtrahend.getImaginary())"
+    }
+  },
+  {
+    "v154": {
+      "line": "545",
+      "statement": "Complex subtract(double subtrahend)"
+    }
+  },
+  {
+    "v155": {
+      "line": "546",
+      "statement": "if (isNaN || Double.isNaN(subtrahend))"
+    }
+  },
+  {
+    "v156": {
+      "line": "547",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v157": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v158": {
+      "line": "549",
+      "statement": "return createComplex(real - subtrahend, imaginary)"
+    }
+  },
+  {
+    "v159": {
+      "line": "568",
+      "statement": "Complex acos()"
+    }
+  },
+  {
+    "v160": {
+      "line": "569",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v161": {
+      "line": "570",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v162": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v163": {
+      "line": "573",
+      "statement": "return this.add(this.sqrt1z().multiply(I)).log().multiply(I.negate())"
+    }
+  },
+  {
+    "v164": {
+      "line": "592",
+      "statement": "Complex asin()"
+    }
+  },
+  {
+    "v165": {
+      "line": "593",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v166": {
+      "line": "594",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v167": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v168": {
+      "line": "597",
+      "statement": "return sqrt1z().add(this.multiply(I)).log().multiply(I.negate())"
+    }
+  },
+  {
+    "v169": {
+      "line": "616",
+      "statement": "Complex atan()"
+    }
+  },
+  {
+    "v170": {
+      "line": "617",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v171": {
+      "line": "618",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v172": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v173": {
+      "line": "621",
+      "statement": "return this.add(I).divide(I.subtract(this)).log() .multiply(I.divide(createComplex(2.0, 0.0)))"
+    }
+  },
+  {
+    "v174": {
+      "line": "657",
+      "statement": "Complex cos()"
+    }
+  },
+  {
+    "v175": {
+      "line": "658",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v176": {
+      "line": "659",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v177": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v178": {
+      "line": "662",
+      "statement": "return createComplex(FastMath.cos(real) * FastMath.cosh(imaginary),  -FastMath.sin(real) * FastMath.sinh(imaginary))"
+    }
+  },
+  {
+    "v179": {
+      "line": "697",
+      "statement": "Complex cosh()"
+    }
+  },
+  {
+    "v180": {
+      "line": "698",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v181": {
+      "line": "699",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v182": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v183": {
+      "line": "702",
+      "statement": "return createComplex(FastMath.cosh(real) * FastMath.cos(imaginary),  FastMath.sinh(real) * FastMath.sin(imaginary))"
+    }
+  },
+  {
+    "v184": {
+      "line": "738",
+      "statement": "Complex exp()"
+    }
+  },
+  {
+    "v185": {
+      "line": "739",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v186": {
+      "line": "740",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v187": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v188": {
+      "line": "743",
+      "statement": "double expReal = FastMath.exp(real)"
+    }
+  },
+  {
+    "v189": {
+      "line": "744",
+      "statement": "return createComplex(expReal *  FastMath.cos(imaginary),  expReal * FastMath.sin(imaginary))"
+    }
+  },
+  {
+    "v190": {
+      "line": "783",
+      "statement": "Complex log()"
+    }
+  },
+  {
+    "v191": {
+      "line": "784",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v192": {
+      "line": "785",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v193": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v194": {
+      "line": "788",
+      "statement": "return createComplex(FastMath.log(abs()),  FastMath.atan2(imaginary, real))"
+    }
+  },
+  {
+    "v195": {
+      "line": "812",
+      "statement": "Complex pow(Complex x)"
+    }
+  },
+  {
+    "v196": {
+      "line": "814",
+      "statement": "MathUtils.checkNotNull(x)"
+    }
+  },
+  {
+    "v197": {
+      "line": "815",
+      "statement": "return this.log().multiply(x).exp()"
+    }
+  },
+  {
+    "v198": {
+      "line": "825",
+      "statement": "Complex pow(double x)"
+    }
+  },
+  {
+    "v199": {
+      "line": "826",
+      "statement": "return this.log().multiply(x).exp()"
+    }
+  },
+  {
+    "v200": {
+      "line": "861",
+      "statement": "Complex sin()"
+    }
+  },
+  {
+    "v201": {
+      "line": "862",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v202": {
+      "line": "863",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v203": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v204": {
+      "line": "866",
+      "statement": "return createComplex(FastMath.sin(real) * FastMath.cosh(imaginary),  FastMath.cos(real) * FastMath.sinh(imaginary))"
+    }
+  },
+  {
+    "v205": {
+      "line": "901",
+      "statement": "Complex sinh()"
+    }
+  },
+  {
+    "v206": {
+      "line": "902",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v207": {
+      "line": "903",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v208": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v209": {
+      "line": "906",
+      "statement": "return createComplex(FastMath.sinh(real) * FastMath.cos(imaginary), FastMath.cosh(real) * FastMath.sin(imaginary))"
+    }
+  },
+  {
+    "v210": {
+      "line": "944",
+      "statement": "Complex sqrt()"
+    }
+  },
+  {
+    "v211": {
+      "line": "945",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v212": {
+      "line": "946",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v213": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v214": {
+      "line": "949",
+      "statement": "if (real == 0.0 && imaginary == 0.0)"
+    }
+  },
+  {
+    "v215": {
+      "line": "950",
+      "statement": "return createComplex(0.0, 0.0)"
+    }
+  },
+  {
+    "v216": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v217": {
+      "line": "953",
+      "statement": "double t = FastMath.sqrt((FastMath.abs(real) + abs()) / 2.0)"
+    }
+  },
+  {
+    "v218": {
+      "line": "954",
+      "statement": "if (real >= 0.0)"
+    }
+  },
+  {
+    "v219": {
+      "line": "955",
+      "statement": "return createComplex(t, imaginary / (2.0 * t))"
+    }
+  },
+  {
+    "v220": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v221": {
+      "line": "957",
+      "statement": "return createComplex(FastMath.abs(imaginary) / (2.0 * t),  FastMath.copySign(1d, imaginary) * t)"
+    }
+  },
+  {
+    "v222": {
+      "line": "979",
+      "statement": "Complex sqrt1z()"
+    }
+  },
+  {
+    "v223": {
+      "line": "980",
+      "statement": "return createComplex(1.0, 0.0).subtract(this.multiply(this)).sqrt()"
+    }
+  },
+  {
+    "v224": {
+      "line": "1015",
+      "statement": "Complex tan()"
+    }
+  },
+  {
+    "v225": {
+      "line": "1016",
+      "statement": "if (isNaN || Double.isInfinite(real))"
+    }
+  },
+  {
+    "v226": {
+      "line": "1017",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v227": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v228": {
+      "line": "1019",
+      "statement": "if (imaginary > 20.0)"
+    }
+  },
+  {
+    "v229": {
+      "line": "1020",
+      "statement": "return createComplex(0.0, 1.0)"
+    }
+  },
+  {
+    "v230": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v231": {
+      "line": "1022",
+      "statement": "if (imaginary < -20.0)"
+    }
+  },
+  {
+    "v232": {
+      "line": "1023",
+      "statement": "return createComplex(0.0, -1.0)"
+    }
+  },
+  {
+    "v233": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v234": {
+      "line": "1026",
+      "statement": "double real2 = 2.0 * real"
+    }
+  },
+  {
+    "v235": {
+      "line": "1027",
+      "statement": "double imaginary2 = 2.0 * imaginary"
+    }
+  },
+  {
+    "v236": {
+      "line": "1028",
+      "statement": "double d = FastMath.cos(real2) + FastMath.cosh(imaginary2)"
+    }
+  },
+  {
+    "v237": {
+      "line": "1030",
+      "statement": "return createComplex(FastMath.sin(real2) / d,  FastMath.sinh(imaginary2) / d)"
+    }
+  },
+  {
+    "v238": {
+      "line": "1066",
+      "statement": "Complex tanh()"
+    }
+  },
+  {
+    "v239": {
+      "line": "1067",
+      "statement": "if (isNaN || Double.isInfinite(imaginary))"
+    }
+  },
+  {
+    "v240": {
+      "line": "1068",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v241": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v242": {
+      "line": "1070",
+      "statement": "if (real > 20.0)"
+    }
+  },
+  {
+    "v243": {
+      "line": "1071",
+      "statement": "return createComplex(1.0, 0.0)"
+    }
+  },
+  {
+    "v244": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v245": {
+      "line": "1073",
+      "statement": "if (real < -20.0)"
+    }
+  },
+  {
+    "v246": {
+      "line": "1074",
+      "statement": "return createComplex(-1.0, 0.0)"
+    }
+  },
+  {
+    "v247": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v248": {
+      "line": "1076",
+      "statement": "double real2 = 2.0 * real"
+    }
+  },
+  {
+    "v249": {
+      "line": "1077",
+      "statement": "double imaginary2 = 2.0 * imaginary"
+    }
+  },
+  {
+    "v250": {
+      "line": "1078",
+      "statement": "double d = FastMath.cosh(real2) + FastMath.cos(imaginary2)"
+    }
+  },
+  {
+    "v251": {
+      "line": "1080",
+      "statement": "return createComplex(FastMath.sinh(real2) / d,  FastMath.sin(imaginary2) / d)"
+    }
+  },
+  {
+    "v252": {
+      "line": "1103",
+      "statement": "double getArgument()"
+    }
+  },
+  {
+    "v253": {
+      "line": "1104",
+      "statement": "return FastMath.atan2(getImaginary(), getReal())"
+    }
+  },
+  {
+    "v254": {
+      "line": "1129",
+      "statement": "List<Complex> nthRoot(int n)"
+    }
+  },
+  {
+    "v255": {
+      "line": "1131",
+      "statement": "if (n <= 0)"
+    }
+  },
+  {
+    "v256": {
+      "line": "1132",
+      "statement": "throw new NotPositiveException(LocalizedFormats.CANNOT_COMPUTE_NTH_ROOT_FOR_NEGATIVE_N,  n)"
+    }
+  },
+  {
+    "v257": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v258": {
+      "line": "1136",
+      "statement": "final List<Complex> result = new ArrayList<Complex>()"
+    }
+  },
+  {
+    "v259": {
+      "line": "1138",
+      "statement": "if (isNaN)"
+    }
+  },
+  {
+    "v260": {
+      "line": "1139",
+      "statement": "result.add(NaN)"
+    }
+  },
+  {
+    "v261": {
+      "line": "1140",
+      "statement": "return result"
+    }
+  },
+  {
+    "v262": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v263": {
+      "line": "1142",
+      "statement": "if (isInfinite())"
+    }
+  },
+  {
+    "v264": {
+      "line": "1143",
+      "statement": "result.add(INF)"
+    }
+  },
+  {
+    "v265": {
+      "line": "1144",
+      "statement": "return result"
+    }
+  },
+  {
+    "v266": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v267": {
+      "line": "1148",
+      "statement": "final double nthRootOfAbs = FastMath.pow(abs(), 1.0 / n)"
+    }
+  },
+  {
+    "v268": {
+      "line": "1151",
+      "statement": "final double nthPhi = getArgument() / n"
+    }
+  },
+  {
+    "v269": {
+      "line": "1152",
+      "statement": "final double slice = 2 * FastMath.PI / n"
+    }
+  },
+  {
+    "v270": {
+      "line": "1153",
+      "statement": "double innerPart = nthPhi"
+    }
+  },
+  {
+    "v271": {
+      "line": "1154",
+      "statement": "for (  int k = 0 ; k < n ;   k++)"
+    }
+  },
+  {
+    "v274": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v275": {
+      "line": "1156",
+      "statement": "final double realPart = nthRootOfAbs *  FastMath.cos(innerPart)"
+    }
+  },
+  {
+    "v276": {
+      "line": "1157",
+      "statement": "final double imaginaryPart = nthRootOfAbs *  FastMath.sin(innerPart)"
+    }
+  },
+  {
+    "v277": {
+      "line": "1158",
+      "statement": "result.add(createComplex(realPart, imaginaryPart))"
+    }
+  },
+  {
+    "v278": {
+      "line": "1159",
+      "statement": "innerPart += slice"
+    }
+  },
+  {
+    "v279": {
+      "line": "1162",
+      "statement": "return result"
+    }
+  },
+  {
+    "v280": {
+      "line": "1174",
+      "statement": "Complex createComplex(double realPart, double imaginaryPart)"
+    }
+  },
+  {
+    "v281": {
+      "line": "1176",
+      "statement": "return new Complex(realPart, imaginaryPart)"
+    }
+  },
+  {
+    "v282": {
+      "line": "1186",
+      "statement": "Complex valueOf(double realPart, double imaginaryPart)"
+    }
+  },
+  {
+    "v283": {
+      "line": "1188",
+      "statement": "if (Double.isNaN(realPart) || Double.isNaN(imaginaryPart))"
+    }
+  },
+  {
+    "v284": {
+      "line": "1190",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v285": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v286": {
+      "line": "1192",
+      "statement": "return new Complex(realPart, imaginaryPart)"
+    }
+  },
+  {
+    "v287": {
+      "line": "1201",
+      "statement": "Complex valueOf(double realPart)"
+    }
+  },
+  {
+    "v288": {
+      "line": "1202",
+      "statement": "if (Double.isNaN(realPart))"
+    }
+  },
+  {
+    "v289": {
+      "line": "1203",
+      "statement": "return NaN"
+    }
+  },
+  {
+    "v290": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v291": {
+      "line": "1205",
+      "statement": "return new Complex(realPart)"
+    }
+  },
+  {
+    "v292": {
+      "line": "1216",
+      "statement": "Object readResolve()"
+    }
+  },
+  {
+    "v293": {
+      "line": "1217",
+      "statement": "return createComplex(real, imaginary)"
+    }
+  },
+  {
+    "v294": {
+      "line": "1221",
+      "statement": "ComplexField getField()"
+    }
+  },
+  {
+    "v295": {
+      "line": "1222",
+      "statement": "return ComplexField.getInstance()"
+    }
+  },
+  {
+    "v296": {
+      "line": "1227",
+      "statement": "String toString()"
+    }
+  },
+  {
+    "v297": {
+      "line": "1228",
+      "statement": "return '(' + real + ', ' + imaginary + ')'"
+    }
+  }
+]

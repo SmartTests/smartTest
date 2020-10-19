@@ -1,0 +1,57 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "208",
+      "210",
+      "201",
+      "203",
+      "205"
+    ],
+    "sourceClass": "Options"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR27",
+      "TR26"
+    ],
+    "deletedRequirementYesTest": [
+      "TR32",
+      "TR30",
+      "TR28",
+      "TR29",
+      "TR31"
+    ],
+    "affectedTest": [
+      "testDuplicateLong",
+      "testDuplicateSimple",
+      "testGetMatchingOpts",
+      "testGetOptionsGroups",
+      "testHelpOptions",
+      "testLong",
+      "testMissingOptionException",
+      "testMissingOptionsException",
+      "testSimple",
+      "testToString"
+    ],
+    "testReran": [
+      "testMissingOptionException",
+      "testMissingOptionsException",
+      "testDuplicateLong",
+      "testGetOptionsGroups",
+      "testGetMatchingOpts",
+      "testToString",
+      "testSimple",
+      "testLong",
+      "testDuplicateSimple",
+      "testHelpOptions"
+    ],
+    "unsatisfiedRequirement": [
+      "TR30",
+      "TR28"
+    ],
+    "newTestRequirement": [
+      "TR32",
+      "TR29"
+    ]
+  }
+}

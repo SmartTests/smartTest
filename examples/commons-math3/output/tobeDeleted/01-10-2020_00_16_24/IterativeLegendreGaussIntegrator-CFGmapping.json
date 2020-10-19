@@ -1,0 +1,230 @@
+[
+  {
+    "v1": {
+      "line": "69",
+      "statement": "IterativeLegendreGaussIntegrator (final int n, final double relativeAccuracy, final double absoluteAccuracy, final int minimalIterationCount, final int maximalIterationCount)"
+    }
+  },
+  {
+    "v2": {
+      "line": "75",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v3": {
+      "line": "76",
+      "statement": "if (n <= 0)"
+    }
+  },
+  {
+    "v4": {
+      "line": "77",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_POINTS, n)"
+    }
+  },
+  {
+    "v5": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v6": {
+      "line": "79",
+      "statement": "numberOfPoints = n"
+    }
+  },
+  {
+    "v7": {
+      "line": "90",
+      "statement": "IterativeLegendreGaussIntegrator (final int n, final double relativeAccuracy, final double absoluteAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "94",
+      "statement": "this(n, relativeAccuracy, absoluteAccuracy,  DEFAULT_MIN_ITERATIONS_COUNT, DEFAULT_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v9": {
+      "line": "110",
+      "statement": "IterativeLegendreGaussIntegrator (final int n, final int minimalIterationCount, final int maximalIterationCount)"
+    }
+  },
+  {
+    "v10": {
+      "line": "114",
+      "statement": "this(n, DEFAULT_RELATIVE_ACCURACY, DEFAULT_ABSOLUTE_ACCURACY,  minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v11": {
+      "line": "120",
+      "statement": "double doIntegrate()"
+    }
+  },
+  {
+    "v12": {
+      "line": "123",
+      "statement": "double oldt = stage(1)"
+    }
+  },
+  {
+    "v13": {
+      "line": "125",
+      "statement": "int n = 2"
+    }
+  },
+  {
+    "v14": {
+      "line": "126",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v16": {
+      "line": "128",
+      "statement": "final double t = stage(n)"
+    }
+  },
+  {
+    "v17": {
+      "line": "131",
+      "statement": "final double delta = FastMath.abs(t - oldt)"
+    }
+  },
+  {
+    "v18": {
+      "line": "132",
+      "statement": "final double limit = FastMath.max(getAbsoluteAccuracy(),  getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) * 0.5)"
+    }
+  },
+  {
+    "v19": {
+      "line": "137",
+      "statement": "if (iterations.getCount() + 1 >= getMinimalIterationCount() && delta <= limit)"
+    }
+  },
+  {
+    "v20": {
+      "line": "139",
+      "statement": "return t"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v22": {
+      "line": "143",
+      "statement": "final double ratio = FastMath.min(4, FastMath.pow(delta / limit, 0.5 / numberOfPoints))"
+    }
+  },
+  {
+    "v23": {
+      "line": "144",
+      "statement": "n = FastMath.max((int) (ratio * n), n + 1)"
+    }
+  },
+  {
+    "v24": {
+      "line": "145",
+      "statement": "oldt = t"
+    }
+  },
+  {
+    "v25": {
+      "line": "146",
+      "statement": "iterations.incrementCount()"
+    }
+  },
+  {
+    "v26": {
+      "line": "158",
+      "statement": "double stage(final int n)"
+    }
+  },
+  {
+    "v27": {
+      "line": "161",
+      "statement": "final UnivariateFunction f = new UnivariateFunction() { public double value(double x) throws MathIllegalArgumentException, TooManyEvaluationsException { return computeObjectiveValue(x); } }"
+    }
+  },
+  {
+    "v28": {
+      "line": "168",
+      "statement": "final double min = getMin()"
+    }
+  },
+  {
+    "v29": {
+      "line": "169",
+      "statement": "final double max = getMax()"
+    }
+  },
+  {
+    "v30": {
+      "line": "170",
+      "statement": "final double step = (max - min) / n"
+    }
+  },
+  {
+    "v31": {
+      "line": "172",
+      "statement": "double sum = 0"
+    }
+  },
+  {
+    "v32": {
+      "line": "173",
+      "statement": "for (  int i = 0 ; i < n ;   i++)"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v36": {
+      "line": "175",
+      "statement": "final double a = min + i * step"
+    }
+  },
+  {
+    "v37": {
+      "line": "176",
+      "statement": "final double b = a + step"
+    }
+  },
+  {
+    "v38": {
+      "line": "177",
+      "statement": "final GaussIntegrator g = FACTORY.legendreHighPrecision(numberOfPoints, a, b)"
+    }
+  },
+  {
+    "v39": {
+      "line": "178",
+      "statement": "sum += g.integrate(f)"
+    }
+  },
+  {
+    "v40": {
+      "line": "181",
+      "statement": "return sum"
+    }
+  }
+]

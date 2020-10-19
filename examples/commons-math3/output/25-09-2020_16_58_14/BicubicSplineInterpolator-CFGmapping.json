@@ -1,0 +1,362 @@
+[
+  {
+    "v1": {
+      "line": "38",
+      "statement": "BicubicSplineInterpolatingFunction interpolate(final double[] xval, final double[] yval, final double[][] fval)"
+    }
+  },
+  {
+    "v2": {
+      "line": "43",
+      "statement": "if (xval.length == 0 || yval.length == 0 || fval.length == 0)"
+    }
+  },
+  {
+    "v3": {
+      "line": "44",
+      "statement": "throw new NoDataException()"
+    }
+  },
+  {
+    "v4": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v5": {
+      "line": "46",
+      "statement": "if (xval.length != fval.length)"
+    }
+  },
+  {
+    "v6": {
+      "line": "47",
+      "statement": "throw new DimensionMismatchException(xval.length, fval.length)"
+    }
+  },
+  {
+    "v7": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v8": {
+      "line": "50",
+      "statement": "MathArrays.checkOrder(xval)"
+    }
+  },
+  {
+    "v9": {
+      "line": "51",
+      "statement": "MathArrays.checkOrder(yval)"
+    }
+  },
+  {
+    "v10": {
+      "line": "53",
+      "statement": "final int xLen = xval.length"
+    }
+  },
+  {
+    "v11": {
+      "line": "54",
+      "statement": "final int yLen = yval.length"
+    }
+  },
+  {
+    "v12": {
+      "line": "60",
+      "statement": "final double[][] fX = new double[yLen][xLen"
+    }
+  },
+  {
+    "v13": {
+      "line": "61",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v17": {
+      "line": "62",
+      "statement": "if (fval[i].length != yLen)"
+    }
+  },
+  {
+    "v18": {
+      "line": "63",
+      "statement": "throw new DimensionMismatchException(fval[i].length, yLen)"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "66",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v24": {
+      "line": "67",
+      "statement": "fX[j][i] = fval[i][j"
+    }
+  },
+  {
+    "v25": {
+      "line": "71",
+      "statement": "final SplineInterpolator spInterpolator = new SplineInterpolator()"
+    }
+  },
+  {
+    "v26": {
+      "line": "75",
+      "statement": "final PolynomialSplineFunction[] ySplineX = new PolynomialSplineFunction[yLen"
+    }
+  },
+  {
+    "v27": {
+      "line": "76",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v31": {
+      "line": "77",
+      "statement": "ySplineX[j] = spInterpolator.interpolate(xval, fX[j])"
+    }
+  },
+  {
+    "v32": {
+      "line": "82",
+      "statement": "final PolynomialSplineFunction[] xSplineY = new PolynomialSplineFunction[xLen"
+    }
+  },
+  {
+    "v33": {
+      "line": "83",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v37": {
+      "line": "84",
+      "statement": "xSplineY[i] = spInterpolator.interpolate(yval, fval[i])"
+    }
+  },
+  {
+    "v38": {
+      "line": "88",
+      "statement": "final double[][] dFdX = new double[xLen][yLen"
+    }
+  },
+  {
+    "v39": {
+      "line": "89",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v42": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v43": {
+      "line": "90",
+      "statement": "final UnivariateFunction f = ySplineX[j].derivative()"
+    }
+  },
+  {
+    "v44": {
+      "line": "91",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v47": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v48": {
+      "line": "92",
+      "statement": "dFdX[i][j] = f.value(xval[i])"
+    }
+  },
+  {
+    "v49": {
+      "line": "97",
+      "statement": "final double[][] dFdY = new double[xLen][yLen"
+    }
+  },
+  {
+    "v50": {
+      "line": "98",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v53": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v54": {
+      "line": "99",
+      "statement": "final UnivariateFunction f = xSplineY[i].derivative()"
+    }
+  },
+  {
+    "v55": {
+      "line": "100",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v58": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v59": {
+      "line": "101",
+      "statement": "dFdY[i][j] = f.value(yval[j])"
+    }
+  },
+  {
+    "v60": {
+      "line": "106",
+      "statement": "final double[][] d2FdXdY = new double[xLen][yLen"
+    }
+  },
+  {
+    "v61": {
+      "line": "107",
+      "statement": "for (  int i = 0 ; i < xLen ;   i++)"
+    }
+  },
+  {
+    "v64": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v65": {
+      "line": "108",
+      "statement": "final int nI = nextIndex(i, xLen)"
+    }
+  },
+  {
+    "v66": {
+      "line": "109",
+      "statement": "final int pI = previousIndex(i)"
+    }
+  },
+  {
+    "v67": {
+      "line": "110",
+      "statement": "for (  int j = 0 ; j < yLen ;   j++)"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v71": {
+      "line": "111",
+      "statement": "final int nJ = nextIndex(j, yLen)"
+    }
+  },
+  {
+    "v72": {
+      "line": "112",
+      "statement": "final int pJ = previousIndex(j)"
+    }
+  },
+  {
+    "v73": {
+      "line": "113",
+      "statement": "d2FdXdY[i][j] = (fval[nI][nJ] - fval[nI][pJ] -  fval[pI][nJ] + fval[pI][pJ]) / ((xval[nI] - xval[pI]) * (yval[nJ] - yval[pJ]))"
+    }
+  },
+  {
+    "v74": {
+      "line": "120",
+      "statement": "return new BicubicSplineInterpolatingFunction(xval, yval, fval, dFdX, dFdY, d2FdXdY)"
+    }
+  },
+  {
+    "v75": {
+      "line": "132",
+      "statement": "int nextIndex(int i, int max)"
+    }
+  },
+  {
+    "v76": {
+      "line": "133",
+      "statement": "final int index = i + 1"
+    }
+  },
+  {
+    "v77": {
+      "line": "134",
+      "statement": "return index < max ? index"
+    }
+  },
+  {
+    "v78": {
+      "line": "144",
+      "statement": "int previousIndex(int i)"
+    }
+  },
+  {
+    "v79": {
+      "line": "145",
+      "statement": "final int index = i - 1"
+    }
+  },
+  {
+    "v80": {
+      "line": "146",
+      "statement": "return index >= 0 ? index"
+    }
+  }
+]

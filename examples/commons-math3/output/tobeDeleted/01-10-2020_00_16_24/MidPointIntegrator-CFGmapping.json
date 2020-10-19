@@ -1,0 +1,242 @@
+[
+  {
+    "v1": {
+      "line": "57",
+      "statement": "MidPointIntegrator (final double relativeAccuracy, final double absoluteAccuracy, final int minimalIterationCount, final int maximalIterationCount)"
+    }
+  },
+  {
+    "v2": {
+      "line": "62",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v3": {
+      "line": "63",
+      "statement": "if (false)"
+    }
+  },
+  {
+    "v4": {
+      "line": "64",
+      "statement": "throw new NumberIsTooLargeException(maximalIterationCount, MIDPOINT_MAX_ITERATIONS_COUNT, false)"
+    }
+  },
+  {
+    "v5": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v6": {
+      "line": "81",
+      "statement": "MidPointIntegrator (final int minimalIterationCount, final int maximalIterationCount)"
+    }
+  },
+  {
+    "v7": {
+      "line": "84",
+      "statement": "super(minimalIterationCount, maximalIterationCount)"
+    }
+  },
+  {
+    "v8": {
+      "line": "85",
+      "statement": "if (maximalIterationCount > MIDPOINT_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v9": {
+      "line": "86",
+      "statement": "throw new NumberIsTooLargeException(maximalIterationCount, MIDPOINT_MAX_ITERATIONS_COUNT, false)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "95",
+      "statement": "MidPointIntegrator ()"
+    }
+  },
+  {
+    "v12": {
+      "line": "96",
+      "statement": "super(DEFAULT_MIN_ITERATIONS_COUNT, MIDPOINT_MAX_ITERATIONS_COUNT)"
+    }
+  },
+  {
+    "v13": {
+      "line": "118",
+      "statement": "double stage(final int n,  double previousStageResult,  double min,  double diffMaxMin)"
+    }
+  },
+  {
+    "v14": {
+      "line": "125",
+      "statement": "final long np = 1L << (n - 1)"
+    }
+  },
+  {
+    "v15": {
+      "line": "126",
+      "statement": "double sum = 0"
+    }
+  },
+  {
+    "v16": {
+      "line": "129",
+      "statement": "final double spacing = diffMaxMin / np"
+    }
+  },
+  {
+    "v17": {
+      "line": "132",
+      "statement": "double x = min + 0.5 * spacing"
+    }
+  },
+  {
+    "v18": {
+      "line": "133",
+      "statement": "for (  long i = 0 ; i < np ;   i++)"
+    }
+  },
+  {
+    "v21": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v22": {
+      "line": "134",
+      "statement": "sum += computeObjectiveValue(x)"
+    }
+  },
+  {
+    "v23": {
+      "line": "135",
+      "statement": "x += spacing"
+    }
+  },
+  {
+    "v24": {
+      "line": "138",
+      "statement": "return 0.5 * (previousStageResult + sum * spacing)"
+    }
+  },
+  {
+    "v25": {
+      "line": "144",
+      "statement": "double doIntegrate()"
+    }
+  },
+  {
+    "v26": {
+      "line": "147",
+      "statement": "final double min = getMin()"
+    }
+  },
+  {
+    "v27": {
+      "line": "148",
+      "statement": "final double diff = getMax() - min"
+    }
+  },
+  {
+    "v28": {
+      "line": "149",
+      "statement": "final double midPoint = min + 0.5 * diff"
+    }
+  },
+  {
+    "v29": {
+      "line": "151",
+      "statement": "double oldt = diff * computeObjectiveValue(midPoint)"
+    }
+  },
+  {
+    "v30": {
+      "line": "153",
+      "statement": "while (true)"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v32": {
+      "line": "154",
+      "statement": "iterations.incrementCount()"
+    }
+  },
+  {
+    "v33": {
+      "line": "155",
+      "statement": "final int i = iterations.getCount()"
+    }
+  },
+  {
+    "v34": {
+      "line": "156",
+      "statement": "final double t = stage(i, oldt, min, diff)"
+    }
+  },
+  {
+    "v35": {
+      "line": "157",
+      "statement": "if (i >= getMinimalIterationCount())"
+    }
+  },
+  {
+    "v36": {
+      "line": "158",
+      "statement": "final double delta = FastMath.abs(t - oldt)"
+    }
+  },
+  {
+    "v37": {
+      "line": "159",
+      "statement": "final double rLimit = getRelativeAccuracy() * (FastMath.abs(oldt) + FastMath.abs(t)) * 0.5"
+    }
+  },
+  {
+    "v38": {
+      "line": "161",
+      "statement": "if ((delta <= rLimit) || (delta <= getAbsoluteAccuracy()))"
+    }
+  },
+  {
+    "v39": {
+      "line": "162",
+      "statement": "return t"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v41": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v42": {
+      "line": "165",
+      "statement": "oldt = t"
+    }
+  }
+]

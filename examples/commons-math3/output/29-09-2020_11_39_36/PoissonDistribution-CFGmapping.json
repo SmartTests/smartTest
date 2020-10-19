@@ -1,0 +1,782 @@
+[
+  {
+    "v1": {
+      "line": "73",
+      "statement": "PoissonDistribution (double p)"
+    }
+  },
+  {
+    "v2": {
+      "line": "74",
+      "statement": "this(p, DEFAULT_EPSILON, DEFAULT_MAX_ITERATIONS)"
+    }
+  },
+  {
+    "v3": {
+      "line": "88",
+      "statement": "PoissonDistribution (double p, double epsilon, int maxIterations)"
+    }
+  },
+  {
+    "v4": {
+      "line": "90",
+      "statement": "this(new Well19937c(), p, epsilon, maxIterations)"
+    }
+  },
+  {
+    "v5": {
+      "line": "105",
+      "statement": "PoissonDistribution (RandomGenerator rng,  double p,  double epsilon,  int maxIterations)"
+    }
+  },
+  {
+    "v6": {
+      "line": "110",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v7": {
+      "line": "112",
+      "statement": "if (p <= 0)"
+    }
+  },
+  {
+    "v8": {
+      "line": "113",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.MEAN, p)"
+    }
+  },
+  {
+    "v9": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v10": {
+      "line": "115",
+      "statement": "mean = p"
+    }
+  },
+  {
+    "v11": {
+      "line": "116",
+      "statement": "this.epsilon = epsilon"
+    }
+  },
+  {
+    "v12": {
+      "line": "117",
+      "statement": "this.maxIterations = maxIterations"
+    }
+  },
+  {
+    "v13": {
+      "line": "120",
+      "statement": "normal = new NormalDistribution(rng, p, FastMath.sqrt(p), NormalDistribution.DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v14": {
+      "line": "122",
+      "statement": "exponential = new ExponentialDistribution(rng, 1, ExponentialDistribution.DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v15": {
+      "line": "135",
+      "statement": "PoissonDistribution (double p, double epsilon)"
+    }
+  },
+  {
+    "v16": {
+      "line": "137",
+      "statement": "this(p, epsilon, DEFAULT_MAX_ITERATIONS)"
+    }
+  },
+  {
+    "v17": {
+      "line": "149",
+      "statement": "PoissonDistribution (double p, int maxIterations)"
+    }
+  },
+  {
+    "v18": {
+      "line": "150",
+      "statement": "this(p, DEFAULT_EPSILON, maxIterations)"
+    }
+  },
+  {
+    "v19": {
+      "line": "158",
+      "statement": "double getMean()"
+    }
+  },
+  {
+    "v20": {
+      "line": "159",
+      "statement": "return mean"
+    }
+  },
+  {
+    "v21": {
+      "line": "163",
+      "statement": "double probability(int x)"
+    }
+  },
+  {
+    "v22": {
+      "line": "164",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v23": {
+      "line": "165",
+      "statement": "if (x < 0 || x == Integer.MAX_VALUE)"
+    }
+  },
+  {
+    "v24": {
+      "line": "166",
+      "statement": "ret = 0.0"
+    }
+  },
+  {
+    "v25": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v26": {
+      "line": "167",
+      "statement": "if (x == 0)"
+    }
+  },
+  {
+    "v27": {
+      "line": "168",
+      "statement": "ret = FastMath.exp(-mean)"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "170",
+      "statement": "ret = FastMath.exp(-SaddlePointExpansion.getStirlingError(x) - SaddlePointExpansion.getDeviancePart(x, mean)) / FastMath.sqrt(MathUtils.TWO_PI * x)"
+    }
+  },
+  {
+    "v30": {
+      "line": "174",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v31": {
+      "line": "178",
+      "statement": "double cumulativeProbability(int x)"
+    }
+  },
+  {
+    "v32": {
+      "line": "179",
+      "statement": "if (x < 0)"
+    }
+  },
+  {
+    "v33": {
+      "line": "180",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v35": {
+      "line": "182",
+      "statement": "if (x == Integer.MAX_VALUE)"
+    }
+  },
+  {
+    "v36": {
+      "line": "183",
+      "statement": "return 1"
+    }
+  },
+  {
+    "v37": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v38": {
+      "line": "185",
+      "statement": "return Gamma.regularizedGammaQ((double) x + 1, mean, epsilon,  maxIterations)"
+    }
+  },
+  {
+    "v39": {
+      "line": "200",
+      "statement": "double normalApproximateProbability(int x)"
+    }
+  },
+  {
+    "v40": {
+      "line": "202",
+      "statement": "return normal.cumulativeProbability(x + 0.5)"
+    }
+  },
+  {
+    "v41": {
+      "line": "210",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v42": {
+      "line": "211",
+      "statement": "return getMean()"
+    }
+  },
+  {
+    "v43": {
+      "line": "219",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v44": {
+      "line": "220",
+      "statement": "return getMean()"
+    }
+  },
+  {
+    "v45": {
+      "line": "230",
+      "statement": "int getSupportLowerBound()"
+    }
+  },
+  {
+    "v46": {
+      "line": "231",
+      "statement": "return 0"
+    }
+  },
+  {
+    "v47": {
+      "line": "244",
+      "statement": "int getSupportUpperBound()"
+    }
+  },
+  {
+    "v48": {
+      "line": "245",
+      "statement": "return Integer.MAX_VALUE"
+    }
+  },
+  {
+    "v49": {
+      "line": "255",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v50": {
+      "line": "256",
+      "statement": "return true"
+    }
+  },
+  {
+    "v51": {
+      "line": "282",
+      "statement": "int sample()"
+    }
+  },
+  {
+    "v52": {
+      "line": "283",
+      "statement": "return (int) FastMath.min(nextPoisson(mean), Integer.MAX_VALUE)"
+    }
+  },
+  {
+    "v53": {
+      "line": "290",
+      "statement": "long nextPoisson(double meanPoisson)"
+    }
+  },
+  {
+    "v54": {
+      "line": "291",
+      "statement": "final double pivot = 40.0d"
+    }
+  },
+  {
+    "v55": {
+      "line": "292",
+      "statement": "if (meanPoisson < pivot)"
+    }
+  },
+  {
+    "v56": {
+      "line": "293",
+      "statement": "double p = FastMath.exp(-meanPoisson)"
+    }
+  },
+  {
+    "v57": {
+      "line": "294",
+      "statement": "long n = 0"
+    }
+  },
+  {
+    "v58": {
+      "line": "295",
+      "statement": "double r = 1.0d"
+    }
+  },
+  {
+    "v59": {
+      "line": "296",
+      "statement": "double rnd = 1.0d"
+    }
+  },
+  {
+    "v60": {
+      "line": "298",
+      "statement": "while (n < 1000 * meanPoisson)"
+    }
+  },
+  {
+    "v61": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v62": {
+      "line": "299",
+      "statement": "rnd = random.nextDouble()"
+    }
+  },
+  {
+    "v63": {
+      "line": "300",
+      "statement": "r = r * rnd"
+    }
+  },
+  {
+    "v64": {
+      "line": "301",
+      "statement": "if (r >= p)"
+    }
+  },
+  {
+    "v65": {
+      "line": "302",
+      "statement": "n++"
+    }
+  },
+  {
+    "v66": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v67": {
+      "line": "304",
+      "statement": "return n"
+    }
+  },
+  {
+    "v68": {
+      "line": "307",
+      "statement": "return n"
+    }
+  },
+  {
+    "v69": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v70": {
+      "line": "309",
+      "statement": "final double lambda = FastMath.floor(meanPoisson)"
+    }
+  },
+  {
+    "v71": {
+      "line": "310",
+      "statement": "final double lambdaFractional = meanPoisson - lambda"
+    }
+  },
+  {
+    "v72": {
+      "line": "311",
+      "statement": "final double logLambda = FastMath.log(lambda)"
+    }
+  },
+  {
+    "v73": {
+      "line": "312",
+      "statement": "final double logLambdaFactorial = CombinatoricsUtils.factorialLog((int) lambda)"
+    }
+  },
+  {
+    "v74": {
+      "line": "313",
+      "statement": "final long y2 = lambdaFractional < Double.MIN_VALUE ? 0"
+    }
+  },
+  {
+    "v75": {
+      "line": "314",
+      "statement": "final double delta = FastMath.sqrt(lambda * FastMath.log(32 * lambda / FastMath.PI + 1))"
+    }
+  },
+  {
+    "v76": {
+      "line": "315",
+      "statement": "final double halfDelta = delta / 2"
+    }
+  },
+  {
+    "v77": {
+      "line": "316",
+      "statement": "final double twolpd = 2 * lambda + delta"
+    }
+  },
+  {
+    "v78": {
+      "line": "317",
+      "statement": "final double a1 = FastMath.sqrt(FastMath.PI * twolpd) * FastMath.exp(1 / 8 * lambda)"
+    }
+  },
+  {
+    "v79": {
+      "line": "318",
+      "statement": "final double a2 = (twolpd / delta) * FastMath.exp(-delta * (1 + delta) / twolpd)"
+    }
+  },
+  {
+    "v80": {
+      "line": "319",
+      "statement": "final double aSum = a1 + a2 + 1"
+    }
+  },
+  {
+    "v81": {
+      "line": "320",
+      "statement": "final double p1 = a1 / aSum"
+    }
+  },
+  {
+    "v82": {
+      "line": "321",
+      "statement": "final double p2 = a2 / aSum"
+    }
+  },
+  {
+    "v83": {
+      "line": "322",
+      "statement": "final double c1 = 1 / (8 * lambda)"
+    }
+  },
+  {
+    "v84": {
+      "line": "324",
+      "statement": "double x = 0"
+    }
+  },
+  {
+    "v85": {
+      "line": "325",
+      "statement": "double y = 0"
+    }
+  },
+  {
+    "v86": {
+      "line": "326",
+      "statement": "double v = 0"
+    }
+  },
+  {
+    "v87": {
+      "line": "327",
+      "statement": "int a = 0"
+    }
+  },
+  {
+    "v88": {
+      "line": "328",
+      "statement": "double t = 0"
+    }
+  },
+  {
+    "v89": {
+      "line": "329",
+      "statement": "double qr = 0"
+    }
+  },
+  {
+    "v90": {
+      "line": "330",
+      "statement": "double qa = 0"
+    }
+  },
+  {
+    "v92": {
+      "line": "331",
+      "statement": "for (   ;  ;  ;  ;    ; )"
+    }
+  },
+  {
+    "v93": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v94": {
+      "line": "332",
+      "statement": "final double u = random.nextDouble()"
+    }
+  },
+  {
+    "v95": {
+      "line": "333",
+      "statement": "if (u <= p1)"
+    }
+  },
+  {
+    "v96": {
+      "line": "334",
+      "statement": "final double n = random.nextGaussian()"
+    }
+  },
+  {
+    "v97": {
+      "line": "335",
+      "statement": "x = n * FastMath.sqrt(lambda + halfDelta) - 0.5d"
+    }
+  },
+  {
+    "v98": {
+      "line": "336",
+      "statement": "if (x > delta || x < -lambda)"
+    }
+  },
+  {
+    "v99": {
+      "line": "337",
+      "statement": "continue"
+    }
+  },
+  {
+    "v100": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v101": {
+      "line": "339",
+      "statement": "y = x < 0 ? FastMath.floor(x)"
+    }
+  },
+  {
+    "v102": {
+      "line": "340",
+      "statement": "final double e = exponential.sample()"
+    }
+  },
+  {
+    "v103": {
+      "line": "341",
+      "statement": "v = -e - (n * n / 2) + c1"
+    }
+  },
+  {
+    "v104": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v105": {
+      "line": "343",
+      "statement": "if (u > p1 + p2)"
+    }
+  },
+  {
+    "v106": {
+      "line": "344",
+      "statement": "y = lambda"
+    }
+  },
+  {
+    "v107": {
+      "line": "345",
+      "statement": "break"
+    }
+  },
+  {
+    "v108": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v109": {
+      "line": "347",
+      "statement": "x = delta + (twolpd / delta) * exponential.sample()"
+    }
+  },
+  {
+    "v110": {
+      "line": "348",
+      "statement": "y = FastMath.ceil(x)"
+    }
+  },
+  {
+    "v111": {
+      "line": "349",
+      "statement": "v = -exponential.sample() - delta * (x + 1) / twolpd"
+    }
+  },
+  {
+    "v112": {
+      "line": "352",
+      "statement": "a = x < 0 ? 1"
+    }
+  },
+  {
+    "v113": {
+      "line": "353",
+      "statement": "t = y * (y + 1) / (2 * lambda)"
+    }
+  },
+  {
+    "v114": {
+      "line": "354",
+      "statement": "if (v < -t && a == 0)"
+    }
+  },
+  {
+    "v115": {
+      "line": "355",
+      "statement": "y = lambda + y"
+    }
+  },
+  {
+    "v116": {
+      "line": "356",
+      "statement": "break"
+    }
+  },
+  {
+    "v117": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v118": {
+      "line": "358",
+      "statement": "qr = t * ((2 * y + 1) / (6 * lambda) - 1)"
+    }
+  },
+  {
+    "v119": {
+      "line": "359",
+      "statement": "qa = qr - (t * t) / (3 * (lambda + a * (y + 1)))"
+    }
+  },
+  {
+    "v120": {
+      "line": "360",
+      "statement": "if (v < qa)"
+    }
+  },
+  {
+    "v121": {
+      "line": "361",
+      "statement": "y = lambda + y"
+    }
+  },
+  {
+    "v122": {
+      "line": "362",
+      "statement": "break"
+    }
+  },
+  {
+    "v123": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v124": {
+      "line": "364",
+      "statement": "if (v > qr)"
+    }
+  },
+  {
+    "v125": {
+      "line": "365",
+      "statement": "continue"
+    }
+  },
+  {
+    "v126": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v127": {
+      "line": "367",
+      "statement": "if (v < y * logLambda - CombinatoricsUtils.factorialLog((int) (y + lambda)) + logLambdaFactorial)"
+    }
+  },
+  {
+    "v128": {
+      "line": "368",
+      "statement": "y = lambda + y"
+    }
+  },
+  {
+    "v129": {
+      "line": "369",
+      "statement": "break"
+    }
+  },
+  {
+    "v130": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v131": {
+      "line": "372",
+      "statement": "return y2 + (long) y"
+    }
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "157"
+    ],
+    "sourceClass": "DefaultParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR13",
+      "TR14"
+    ],
+    "affectedTest": [
+      "testMissingRequiredGroup",
+      "testOptionGroup",
+      "testOptionGroupLong",
+      "testPropertyOptionGroup"
+    ],
+    "testReran": [
+      "testOptionGroupLong",
+      "testPropertyOptionGroup",
+      "testMissingRequiredGroup",
+      "testOptionGroup"
+    ],
+    "unsatisfiedRequirement": [
+      "TR14"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+digraph Sqrt_CFG {
+  // graph-vertices
+  v1  [label="35:  double value(double x)"];
+  v2  [label="36:  return FastMath.sqrt(x);"];
+  v3  [label="43:  UnivariateFunction derivative()"];
+  v4  [label="44:  return FunctionUtils.toDifferentiableUnivariateFunction(this).derivative();"];
+  v5  [label="50:  DerivativeStructure value(final DerivativeStructure t)"];
+  v6  [label="51:  return t.sqrt();"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v5 -> v6;
+  // end-of-graph
+}

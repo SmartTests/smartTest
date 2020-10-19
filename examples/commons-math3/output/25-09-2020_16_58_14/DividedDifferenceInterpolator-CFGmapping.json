@@ -1,0 +1,122 @@
+[
+  {
+    "v1": {
+      "line": "55",
+      "statement": "PolynomialFunctionNewtonForm interpolate(double x[], double y[])"
+    }
+  },
+  {
+    "v2": {
+      "line": "64",
+      "statement": "PolynomialFunctionLagrangeForm.verifyInterpolationArray(x, y, true)"
+    }
+  },
+  {
+    "v3": {
+      "line": "74",
+      "statement": "final double[] c = new double[x.length-1"
+    }
+  },
+  {
+    "v4": {
+      "line": "75",
+      "statement": "System.arraycopy(x, 0, c, 0, c.length)"
+    }
+  },
+  {
+    "v5": {
+      "line": "77",
+      "statement": "final double[] a = computeDividedDifference(x, y)"
+    }
+  },
+  {
+    "v6": {
+      "line": "78",
+      "statement": "return new PolynomialFunctionNewtonForm(a, c)"
+    }
+  },
+  {
+    "v7": {
+      "line": "99",
+      "statement": "double[] computeDividedDifference(final double x[], final double y[])"
+    }
+  },
+  {
+    "v8": {
+      "line": "103",
+      "statement": "PolynomialFunctionLagrangeForm.verifyInterpolationArray(x, y, true)"
+    }
+  },
+  {
+    "v9": {
+      "line": "105",
+      "statement": "final double[] divdiff = y.clone()"
+    }
+  },
+  {
+    "v10": {
+      "line": "107",
+      "statement": "final int n = x.length"
+    }
+  },
+  {
+    "v11": {
+      "line": "108",
+      "statement": "final double[] a = new double [n"
+    }
+  },
+  {
+    "v12": {
+      "line": "109",
+      "statement": "a[0] = divdiff[0"
+    }
+  },
+  {
+    "v13": {
+      "line": "110",
+      "statement": "for (  int i = 1 ; i < n ;   i++)"
+    }
+  },
+  {
+    "v16": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v17": {
+      "line": "111",
+      "statement": "for (  int j = 0 ; j < n-i ;   j++)"
+    }
+  },
+  {
+    "v20": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v21": {
+      "line": "112",
+      "statement": "final double denominator = x[j+i] - x[j"
+    }
+  },
+  {
+    "v22": {
+      "line": "113",
+      "statement": "divdiff[j] = (divdiff[j+1] - divdiff[j]) / denominator"
+    }
+  },
+  {
+    "v23": {
+      "line": "115",
+      "statement": "a[i] = divdiff[0"
+    }
+  },
+  {
+    "v24": {
+      "line": "118",
+      "statement": "return a"
+    }
+  }
+]

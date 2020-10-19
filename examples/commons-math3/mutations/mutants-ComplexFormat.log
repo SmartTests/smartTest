@@ -1,0 +1,133 @@
+1:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>():55:DEFAULT_IMAGINARY_CHARACTER |==> null
+2:EVR:<METHOD_INVOCATION(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>():56:CompositeFormat.getDefaultNumberFormat() |==> null
+3:EVR:<IDENTIFIER(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>():57:imaginaryFormat |==> null
+4:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.complex.ComplexFormat@<init>(java.text.NumberFormat):67:format == null |==> false
+5:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>(java.text.NumberFormat):70:DEFAULT_IMAGINARY_CHARACTER |==> null
+6:EVR:<IDENTIFIER(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>(java.text.NumberFormat):71:format |==> null
+7:EVR:<IDENTIFIER(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>(java.text.NumberFormat):72:format |==> null
+8:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.complex.ComplexFormat@<init>(java.text.NumberFormat,java.text.NumberFormat):85:imaginaryFormat == null |==> false
+9:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.complex.ComplexFormat@<init>(java.text.NumberFormat,java.text.NumberFormat):88:realFormat == null |==> false
+10:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>(java.text.NumberFormat,java.text.NumberFormat):92:DEFAULT_IMAGINARY_CHARACTER |==> null
+11:EVR:<IDENTIFIER(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>(java.text.NumberFormat,java.text.NumberFormat):93:imaginaryFormat |==> null
+12:EVR:<IDENTIFIER(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>(java.text.NumberFormat,java.text.NumberFormat):94:realFormat |==> null
+13:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):146:imaginaryCharacter == null |==> false
+14:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):149:0 |==> 1
+15:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):149:0 |==> -1
+16:ROR:==(int,int):<=(int,int):org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):149:imaginaryCharacter.length() == 0 |==> imaginaryCharacter.length() <= 0
+17:ROR:==(int,int):>=(int,int):org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):149:imaginaryCharacter.length() == 0 |==> imaginaryCharacter.length() >= 0
+18:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):149:imaginaryCharacter.length() == 0 |==> false
+19:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):152:imaginaryFormat == null |==> false
+20:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):155:realFormat == null |==> false
+21:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):159:imaginaryCharacter |==> null
+22:EVR:<IDENTIFIER(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):160:imaginaryFormat |==> null
+23:EVR:<IDENTIFIER(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@<init>(java.lang.String,java.text.NumberFormat,java.text.NumberFormat):161:realFormat |==> null
+24:EVR:<METHOD_INVOCATION(java.util.Locale[])>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@getAvailableLocales():170:NumberFormat.getAvailableLocales() |==> null
+25:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex):180:0 |==> 1
+26:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex):180:0 |==> -1
+27:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@format(java.lang.Double):190:0 |==> 1
+28:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@format(java.lang.Double):190:0 |==> -1
+29:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@format(java.lang.Double):190:0 |==> 1
+30:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@format(java.lang.Double):190:0 |==> -1
+31:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):204:0 |==> 1
+32:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):204:0 |==> -1
+33:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):204:pos.setBeginIndex(0) |==> <NO-OP>
+34:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):205:0 |==> 1
+35:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):205:0 |==> -1
+36:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):205:pos.setEndIndex(0) |==> <NO-OP>
+37:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):208:complex.getReal() |==> 0.0
+38:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):209:CompositeFormat.formatDouble(re, getRealFormat(), toAppendTo, pos) |==> <NO-OP>
+39:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):212:complex.getImaginary() |==> 0.0
+40:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):214:0.0 |==> 1.0
+41:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):214:0.0 |==> -1.0
+42:ROR:<(double,double):!=(double,double):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):214:im < 0.0 |==> im != 0.0
+43:ROR:<(double,double):<=(double,double):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):214:im < 0.0 |==> im <= 0.0
+44:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):214:im < 0.0 |==> false
+45:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):215:toAppendTo.append(" - ") |==> <NO-OP>
+46:ORU:-(double):+(double):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):216:-im |==> +im
+47:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):217:toAppendTo.append(imAppendTo) |==> <NO-OP>
+48:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):218:toAppendTo.append(getImaginaryCharacter()) |==> <NO-OP>
+49:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):219:0.0 |==> 1.0
+50:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):219:0.0 |==> -1.0
+51:ROR:>(double,double):!=(double,double):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):219:im > 0.0 |==> im != 0.0
+52:ROR:>(double,double):>=(double,double):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):219:im > 0.0 |==> im >= 0.0
+53:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):219:im > 0.0 |==> false
+54:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):219:im > 0.0 || Double.isNaN(im) |==> im > 0.0 != Double.isNaN(im)
+55:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):219:im > 0.0 || Double.isNaN(im) |==> im > 0.0
+56:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):219:im > 0.0 || Double.isNaN(im) |==> Double.isNaN(im)
+57:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):219:im > 0.0 || Double.isNaN(im) |==> true
+58:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):220:toAppendTo.append(" + ") |==> <NO-OP>
+59:EVR:<METHOD_INVOCATION(java.lang.StringBuffer)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):221:formatImaginary(im, new StringBuffer(), pos) |==> null
+60:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):222:toAppendTo.append(imAppendTo) |==> <NO-OP>
+61:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):223:toAppendTo.append(getImaginaryCharacter()) |==> <NO-OP>
+62:EVR:<IDENTIFIER(java.lang.StringBuffer)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@format(org.apache.commons.math3.complex.Complex,java.lang.StringBuffer,java.text.FieldPosition):226:toAppendTo |==> null
+63:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):241:0 |==> 1
+64:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):241:0 |==> -1
+65:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):241:pos.setBeginIndex(0) |==> <NO-OP>
+66:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):242:0 |==> 1
+67:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):242:0 |==> -1
+68:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):242:pos.setEndIndex(0) |==> <NO-OP>
+69:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):244:CompositeFormat.formatDouble(absIm, getImaginaryFormat(), toAppendTo, pos) |==> <NO-OP>
+70:COR:toAppendTo.toString().equals("1"):TRUE:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):245:toAppendTo.toString().equals("1") |==> false
+71:COR:toAppendTo.toString().equals("1"):FALSE:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):245:toAppendTo.toString().equals("1") |==> true
+72:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):247:0 |==> 1
+73:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):247:0 |==> -1
+74:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):247:toAppendTo.setLength(0) |==> <NO-OP>
+75:EVR:<IDENTIFIER(java.lang.StringBuffer)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@formatImaginary(double,java.lang.StringBuffer,java.text.FieldPosition):250:toAppendTo |==> null
+76:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition):273:ret = format((Complex)obj, toAppendTo, pos) |==> <NO-OP>
+77:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition):275:0.0 |==> 1.0
+78:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition):275:0.0 |==> -1.0
+79:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition):275:ret = format(new Complex(((Number)obj).doubleValue(), 0.0), toAppendTo, pos) |==> <NO-OP>
+80:EVR:<IDENTIFIER(java.lang.StringBuffer)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition):282:ret |==> null
+81:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@getImaginaryCharacter():290:imaginaryCharacter |==> null
+82:EVR:<IDENTIFIER(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@getImaginaryFormat():298:imaginaryFormat |==> null
+83:EVR:<METHOD_INVOCATION(org.apache.commons.math3.complex.ComplexFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@getInstance():306:getInstance(Locale.getDefault()) |==> null
+84:EVR:<METHOD_INVOCATION(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@getInstance(java.util.Locale):315:CompositeFormat.getDefaultNumberFormat(locale) |==> null
+85:EVR:<NEW_CLASS(org.apache.commons.math3.complex.ComplexFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@getInstance(java.util.Locale):316:new ComplexFormat(f) |==> null
+86:EVR:<METHOD_INVOCATION(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@getInstance(java.lang.String,java.util.Locale):331:CompositeFormat.getDefaultNumberFormat(locale) |==> null
+87:EVR:<NEW_CLASS(org.apache.commons.math3.complex.ComplexFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@getInstance(java.lang.String,java.util.Locale):332:new ComplexFormat(imaginaryCharacter, f) |==> null
+88:EVR:<IDENTIFIER(java.text.NumberFormat)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@getRealFormat():340:realFormat |==> null
+89:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String):352:0 |==> 1
+90:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String):352:0 |==> -1
+91:EVR:<METHOD_INVOCATION(org.apache.commons.math3.complex.Complex)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String):353:parse(source, parsePosition) |==> null
+92:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String):354:0 |==> 1
+93:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String):354:0 |==> -1
+94:ROR:==(int,int):<=(int,int):org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String):354:parsePosition.getIndex() == 0 |==> parsePosition.getIndex() <= 0
+95:ROR:==(int,int):>=(int,int):org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String):354:parsePosition.getIndex() == 0 |==> parsePosition.getIndex() >= 0
+96:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String):354:parsePosition.getIndex() == 0 |==> false
+97:EVR:<IDENTIFIER(org.apache.commons.math3.complex.Complex)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String):359:result |==> null
+98:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):370:pos.getIndex() |==> 0
+99:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):373:CompositeFormat.parseAndIgnoreWhitespace(source, pos) |==> <NO-OP>
+100:EVR:<METHOD_INVOCATION(java.lang.Number)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):376:CompositeFormat.parseNumber(source, getRealFormat(), pos) |==> null
+101:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):377:re == null |==> false
+102:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):380:pos.setIndex(initialIndex) |==> <NO-OP>
+103:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):381:return null; |==> <NO-OP>
+104:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):385:pos.getIndex() |==> 0
+105:EVR:<METHOD_INVOCATION(char)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):386:CompositeFormat.parseNextCharacter(source, pos) |==> 0
+106:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):387:0 |==> 1
+107:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):387:0 |==> -1
+108:LVR:0:POS:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):392:0.0 |==> 1.0
+109:LVR:0:NEG:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):392:0.0 |==> -1.0
+110:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):392:return new Complex(re.doubleValue(), Config.__M_NO == 0 && Config.COVERED(108, 109) ? 0.0 : Config.__M_NO == 109 ? -1.0 : Config.__M_NO == 108 ? 1.0 : 0.0); |==> <NO-OP>
+111:LVR:NEG:0:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):394:-1 |==> 0
+112:LVR:NEG:POS:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):394:-1 |==> 1
+113:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):394:sign = -1 |==> <NO-OP>
+114:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):395:break; |==> <NO-OP>
+115:LVR:POS:0:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):397:1 |==> 0
+116:LVR:POS:NEG:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):397:1 |==> -1
+117:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):397:sign = 1 |==> <NO-OP>
+118:STD:<BREAK>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):398:break; |==> <NO-OP>
+119:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):403:pos.setIndex(initialIndex) |==> <NO-OP>
+120:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):404:pos.setErrorIndex(startIndex) |==> <NO-OP>
+121:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):405:return null; |==> <NO-OP>
+122:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):409:CompositeFormat.parseAndIgnoreWhitespace(source, pos) |==> <NO-OP>
+123:EVR:<METHOD_INVOCATION(java.lang.Number)>:<DEFAULT>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):412:CompositeFormat.parseNumber(source, getRealFormat(), pos) |==> null
+124:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):413:im == null |==> false
+125:STD:<CALL>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):416:pos.setIndex(initialIndex) |==> <NO-OP>
+126:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):417:return null; |==> <NO-OP>
+127:COR:CompositeFormat.parseFixedstring(source, getImaginaryCharacter(), pos):TRUE:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):421:CompositeFormat.parseFixedstring(source, getImaginaryCharacter(), pos) |==> false
+128:COR:CompositeFormat.parseFixedstring(source, getImaginaryCharacter(), pos):FALSE:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):421:CompositeFormat.parseFixedstring(source, getImaginaryCharacter(), pos) |==> true
+129:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):422:return null; |==> <NO-OP>
+130:AOR:*(double,double):%(double,double):org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):425:im.doubleValue() * sign |==> im.doubleValue() % sign
+131:AOR:*(double,double):+(double,double):org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):425:im.doubleValue() * sign |==> im.doubleValue() + sign
+132:AOR:*(double,double):-(double,double):org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):425:im.doubleValue() * sign |==> im.doubleValue() - sign
+133:AOR:*(double,double):/(double,double):org.apache.commons.math3.complex.ComplexFormat@parse(java.lang.String,java.text.ParsePosition):425:im.doubleValue() * sign |==> im.doubleValue() / sign

@@ -1,0 +1,42 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "119"
+    ],
+    "sourceClass": "PosixParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR16",
+      "TR15"
+    ],
+    "affectedTest": [
+      "testAmbiguousPartialLongOption1",
+      "testAmbiguousPartialLongOption3",
+      "testDoubleDash1",
+      "testLongWithEqualDoubleDash",
+      "testLongWithoutEqualDoubleDash",
+      "testMultipleWithLong",
+      "testOptionGroupLong",
+      "testSimpleLong",
+      "testSingleDash",
+      "testStopAtNonOptionLong",
+      "testUnambiguousPartialLongOption1",
+      "testUnambiguousPartialLongOption3"
+    ],
+    "testReran": [
+      "testLongWithEqualDoubleDash",
+      "testAmbiguousPartialLongOption3",
+      "testOptionGroupLong",
+      "testLongWithoutEqualDoubleDash",
+      "testSingleDash",
+      "testDoubleDash1",
+      "testUnambiguousPartialLongOption1",
+      "testSimpleLong",
+      "testAmbiguousPartialLongOption1",
+      "testStopAtNonOptionLong",
+      "testMultipleWithLong",
+      "testUnambiguousPartialLongOption3"
+    ]
+  }
+}

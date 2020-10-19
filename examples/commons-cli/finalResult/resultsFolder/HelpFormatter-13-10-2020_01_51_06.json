@@ -1,0 +1,34 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "542"
+    ],
+    "sourceClass": "HelpFormatter"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR30",
+      "TR31",
+      "TR32"
+    ],
+    "affectedTest": [
+      "testPrintHelpWithEmptySyntax",
+      "testHeaderStartingWithLineSeparator",
+      "testHelpWithLongOptSeparator",
+      "testIndentedHeaderAndFooter",
+      "testOptionWithoutShortFormat",
+      "testOptionWithoutShortFormat2"
+    ],
+    "testReran": [
+      "testOptionWithoutShortFormat2",
+      "testIndentedHeaderAndFooter",
+      "testHelpWithLongOptSeparator",
+      "testPrintHelpWithEmptySyntax",
+      "testHeaderStartingWithLineSeparator",
+      "testOptionWithoutShortFormat"
+    ],
+    "unsatisfiedRequirement": [
+      "TR30"
+    ]
+  }
+}

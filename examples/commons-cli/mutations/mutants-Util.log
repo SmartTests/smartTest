@@ -1,0 +1,54 @@
+1:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):35:str == null |==> false
+2:STD:<RETURN>:<NO-OP>:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):37:return null; |==> <NO-OP>
+3:COR:str.startsWith("--"):TRUE:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):39:str.startsWith("--") |==> false
+4:COR:str.startsWith("--"):FALSE:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):39:str.startsWith("--") |==> true
+5:LVR:POS:0:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):41:2 |==> 0
+6:LVR:POS:NEG:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):41:2 |==> -2
+7:STD:<RETURN>:<NO-OP>:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):41:return str.substring(Config.__M_NO == 0 && Config.COVERED(5, 6) ? 2 : Config.__M_NO == 6 ? -2 : Config.__M_NO == 5 ? 0 : 2, str.length()); |==> <NO-OP>
+8:COR:str.startsWith("-"):TRUE:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):43:str.startsWith("-") |==> false
+9:COR:str.startsWith("-"):FALSE:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):43:str.startsWith("-") |==> true
+10:LVR:POS:0:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):45:1 |==> 0
+11:LVR:POS:NEG:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):45:1 |==> -1
+12:STD:<RETURN>:<NO-OP>:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):45:return str.substring(Config.__M_NO == 0 && Config.COVERED(10, 11) ? 1 : Config.__M_NO == 11 ? -1 : Config.__M_NO == 10 ? 0 : 1, str.length()); |==> <NO-OP>
+13:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.Util@stripLeadingHyphens(java.lang.String):48:str |==> null
+14:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):62:str.length() |==> 0
+15:LVR:POS:0:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:1 |==> 0
+16:LVR:POS:NEG:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:1 |==> -1
+17:ROR:>(int,int):!=(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 |==> length != 1
+18:ROR:>(int,int):>=(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 |==> length >= 1
+19:ROR:>(int,int):FALSE(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 |==> false
+20:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") |==> length > 1 == str.startsWith("\"")
+21:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") |==> false
+22:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") |==> length > 1
+23:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") |==> str.startsWith("\"")
+24:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") && str.endsWith("\"") |==> (length > 1 && str.startsWith("\"")) == str.endsWith("\"")
+25:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") && str.endsWith("\"") |==> false
+26:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") && str.endsWith("\"") |==> length > 1 && str.startsWith("\"")
+27:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") && str.endsWith("\"") |==> str.endsWith("\"")
+28:LVR:POS:0:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:1 |==> 0
+29:LVR:POS:NEG:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:1 |==> -1
+30:LVR:POS:0:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:1 |==> 0
+31:LVR:POS:NEG:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:1 |==> -1
+32:AOR:-(int,int):%(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length - 1 |==> length % 1
+33:AOR:-(int,int):*(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length - 1 |==> length * 1
+34:AOR:-(int,int):+(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length - 1 |==> length + 1
+35:AOR:-(int,int):/(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length - 1 |==> length / 1
+36:LVR:NEG:0:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:-1 |==> 0
+37:LVR:NEG:POS:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:-1 |==> 1
+38:ROR:==(int,int):<=(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:str.substring(1, length - 1).indexOf('\"') == -1 |==> str.substring(1, length - 1).indexOf('\"') <= -1
+39:ROR:==(int,int):>=(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:str.substring(1, length - 1).indexOf('\"') == -1 |==> str.substring(1, length - 1).indexOf('\"') >= -1
+40:ROR:==(int,int):FALSE(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:str.substring(1, length - 1).indexOf('\"') == -1 |==> false
+41:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") && str.endsWith("\"") && str.substring(1, length - 1).indexOf('\"') == -1 |==> (length > 1 && str.startsWith("\"") && str.endsWith("\"")) == (str.substring(1, length - 1).indexOf('\"') == -1)
+42:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") && str.endsWith("\"") && str.substring(1, length - 1).indexOf('\"') == -1 |==> false
+43:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") && str.endsWith("\"") && str.substring(1, length - 1).indexOf('\"') == -1 |==> length > 1 && str.startsWith("\"") && str.endsWith("\"")
+44:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):63:length > 1 && str.startsWith("\"") && str.endsWith("\"") && str.substring(1, length - 1).indexOf('\"') == -1 |==> str.substring(1, length - 1).indexOf('\"') == -1
+45:LVR:POS:0:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):65:1 |==> 0
+46:LVR:POS:NEG:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):65:1 |==> -1
+47:LVR:POS:0:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):65:1 |==> 0
+48:LVR:POS:NEG:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):65:1 |==> -1
+49:AOR:-(int,int):%(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):65:length - 1 |==> length % 1
+50:AOR:-(int,int):*(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):65:length - 1 |==> length * 1
+51:AOR:-(int,int):+(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):65:length - 1 |==> length + 1
+52:AOR:-(int,int):/(int,int):org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):65:length - 1 |==> length / 1
+53:STD:<ASSIGN>:<NO-OP>:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):65:str = str.substring(1, length - 1) |==> <NO-OP>
+54:EVR:<IDENTIFIER(java.lang.String)>:<DEFAULT>:org.apache.commons.cli.Util@stripLeadingAndTrailingQuotes(java.lang.String):68:str |==> null

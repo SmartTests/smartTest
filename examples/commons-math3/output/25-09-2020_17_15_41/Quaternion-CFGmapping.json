@@ -1,0 +1,638 @@
+[
+  {
+    "v1": {
+      "line": "69",
+      "statement": "Quaternion (final double a, final double b, final double c, final double d)"
+    }
+  },
+  {
+    "v2": {
+      "line": "73",
+      "statement": "this.q0 = a"
+    }
+  },
+  {
+    "v3": {
+      "line": "74",
+      "statement": "this.q1 = b"
+    }
+  },
+  {
+    "v4": {
+      "line": "75",
+      "statement": "this.q2 = c"
+    }
+  },
+  {
+    "v5": {
+      "line": "76",
+      "statement": "this.q3 = d"
+    }
+  },
+  {
+    "v6": {
+      "line": "87",
+      "statement": "Quaternion (final double scalar, final double[] v)"
+    }
+  },
+  {
+    "v7": {
+      "line": "90",
+      "statement": "if (v.length != 3)"
+    }
+  },
+  {
+    "v8": {
+      "line": "91",
+      "statement": "throw new DimensionMismatchException(v.length, 3)"
+    }
+  },
+  {
+    "v9": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v10": {
+      "line": "93",
+      "statement": "this.q0 = scalar"
+    }
+  },
+  {
+    "v11": {
+      "line": "94",
+      "statement": "this.q1 = v[0"
+    }
+  },
+  {
+    "v12": {
+      "line": "95",
+      "statement": "this.q2 = v[1"
+    }
+  },
+  {
+    "v13": {
+      "line": "96",
+      "statement": "this.q3 = v[2"
+    }
+  },
+  {
+    "v14": {
+      "line": "105",
+      "statement": "Quaternion (final double[] v)"
+    }
+  },
+  {
+    "v15": {
+      "line": "106",
+      "statement": "this(0, v)"
+    }
+  },
+  {
+    "v16": {
+      "line": "114",
+      "statement": "Quaternion getConjugate()"
+    }
+  },
+  {
+    "v17": {
+      "line": "115",
+      "statement": "return new Quaternion(q0, -q1, -q2, -q3)"
+    }
+  },
+  {
+    "v18": {
+      "line": "125",
+      "statement": "Quaternion multiply(final Quaternion q1, final Quaternion q2)"
+    }
+  },
+  {
+    "v19": {
+      "line": "127",
+      "statement": "final double q1a = q1.getQ0()"
+    }
+  },
+  {
+    "v20": {
+      "line": "128",
+      "statement": "final double q1b = q1.getQ1()"
+    }
+  },
+  {
+    "v21": {
+      "line": "129",
+      "statement": "final double q1c = q1.getQ2()"
+    }
+  },
+  {
+    "v22": {
+      "line": "130",
+      "statement": "final double q1d = q1.getQ3()"
+    }
+  },
+  {
+    "v23": {
+      "line": "133",
+      "statement": "final double q2a = q2.getQ0()"
+    }
+  },
+  {
+    "v24": {
+      "line": "134",
+      "statement": "final double q2b = q2.getQ1()"
+    }
+  },
+  {
+    "v25": {
+      "line": "135",
+      "statement": "final double q2c = q2.getQ2()"
+    }
+  },
+  {
+    "v26": {
+      "line": "136",
+      "statement": "final double q2d = q2.getQ3()"
+    }
+  },
+  {
+    "v27": {
+      "line": "139",
+      "statement": "final double w = q1a * q2a - q1b * q2b - q1c * q2c - q1d * q2d"
+    }
+  },
+  {
+    "v28": {
+      "line": "140",
+      "statement": "final double x = q1a * q2b + q1b * q2a + q1c * q2d - q1d * q2c"
+    }
+  },
+  {
+    "v29": {
+      "line": "141",
+      "statement": "final double y = q1a * q2c - q1b * q2d + q1c * q2a + q1d * q2b"
+    }
+  },
+  {
+    "v30": {
+      "line": "142",
+      "statement": "final double z = q1a * q2d + q1b * q2c - q1c * q2b + q1d * q2a"
+    }
+  },
+  {
+    "v31": {
+      "line": "144",
+      "statement": "return new Quaternion(w, x, y, z)"
+    }
+  },
+  {
+    "v32": {
+      "line": "153",
+      "statement": "Quaternion multiply(final Quaternion q)"
+    }
+  },
+  {
+    "v33": {
+      "line": "154",
+      "statement": "return multiply(this, q)"
+    }
+  },
+  {
+    "v34": {
+      "line": "164",
+      "statement": "Quaternion add(final Quaternion q1,  final Quaternion q2)"
+    }
+  },
+  {
+    "v35": {
+      "line": "166",
+      "statement": "return new Quaternion(q1.getQ0() + q2.getQ0(), q1.getQ1() + q2.getQ1(), q1.getQ2() + q2.getQ2(), q1.getQ3() + q2.getQ3())"
+    }
+  },
+  {
+    "v36": {
+      "line": "178",
+      "statement": "Quaternion add(final Quaternion q)"
+    }
+  },
+  {
+    "v37": {
+      "line": "179",
+      "statement": "return add(this, q)"
+    }
+  },
+  {
+    "v38": {
+      "line": "189",
+      "statement": "Quaternion subtract(final Quaternion q1, final Quaternion q2)"
+    }
+  },
+  {
+    "v39": {
+      "line": "191",
+      "statement": "return new Quaternion(q1.getQ0() - q2.getQ0(), q1.getQ1() - q2.getQ1(), q1.getQ2() - q2.getQ2(), q1.getQ3() - q2.getQ3())"
+    }
+  },
+  {
+    "v40": {
+      "line": "203",
+      "statement": "Quaternion subtract(final Quaternion q)"
+    }
+  },
+  {
+    "v41": {
+      "line": "204",
+      "statement": "return subtract(this, q)"
+    }
+  },
+  {
+    "v42": {
+      "line": "214",
+      "statement": "double dotProduct(final Quaternion q1, final Quaternion q2)"
+    }
+  },
+  {
+    "v43": {
+      "line": "216",
+      "statement": "return q1.getQ0() * q2.getQ0() + q1.getQ1() * q2.getQ1() + q1.getQ2() * q2.getQ2() + q1.getQ3() * q2.getQ3()"
+    }
+  },
+  {
+    "v44": {
+      "line": "228",
+      "statement": "double dotProduct(final Quaternion q)"
+    }
+  },
+  {
+    "v45": {
+      "line": "229",
+      "statement": "return dotProduct(this, q)"
+    }
+  },
+  {
+    "v46": {
+      "line": "237",
+      "statement": "double getNorm()"
+    }
+  },
+  {
+    "v47": {
+      "line": "238",
+      "statement": "return FastMath.sqrt(q0 * q0 +  q1 * q1 +  q2 * q2 +  q3 * q3)"
+    }
+  },
+  {
+    "v48": {
+      "line": "251",
+      "statement": "Quaternion normalize()"
+    }
+  },
+  {
+    "v49": {
+      "line": "252",
+      "statement": "final double norm = getNorm()"
+    }
+  },
+  {
+    "v50": {
+      "line": "254",
+      "statement": "if (norm < Precision.SAFE_MIN)"
+    }
+  },
+  {
+    "v51": {
+      "line": "255",
+      "statement": "throw new ZeroException(LocalizedFormats.NORM, norm)"
+    }
+  },
+  {
+    "v52": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v53": {
+      "line": "258",
+      "statement": "return new Quaternion(q0 / norm, q1 / norm, q2 / norm, q3 / norm)"
+    }
+  },
+  {
+    "v54": {
+      "line": "268",
+      "statement": "boolean equals(Object other)"
+    }
+  },
+  {
+    "v55": {
+      "line": "269",
+      "statement": "if (this == other)"
+    }
+  },
+  {
+    "v56": {
+      "line": "270",
+      "statement": "return true"
+    }
+  },
+  {
+    "v57": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v58": {
+      "line": "272",
+      "statement": "if (other instanceof Quaternion)"
+    }
+  },
+  {
+    "v59": {
+      "line": "273",
+      "statement": "final Quaternion q = (Quaternion) other"
+    }
+  },
+  {
+    "v60": {
+      "line": "274",
+      "statement": "return q0 == q.getQ0() && q1 == q.getQ1() && q2 == q.getQ2() && q3 == q.getQ3()"
+    }
+  },
+  {
+    "v61": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v62": {
+      "line": "280",
+      "statement": "return false"
+    }
+  },
+  {
+    "v63": {
+      "line": "287",
+      "statement": "int hashCode()"
+    }
+  },
+  {
+    "v64": {
+      "line": "289",
+      "statement": "int result = 17"
+    }
+  },
+  {
+    "v65": {
+      "line": "290",
+      "statement": "for (double comp"
+    }
+  },
+  {
+    "v66": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v67": {
+      "line": "291",
+      "statement": "final int c = MathUtils.hash(comp)"
+    }
+  },
+  {
+    "v68": {
+      "line": "292",
+      "statement": "result = 31 * result + c"
+    }
+  },
+  {
+    "v69": {
+      "line": "294",
+      "statement": "return result"
+    }
+  },
+  {
+    "v70": {
+      "line": "306",
+      "statement": "boolean equals(final Quaternion q, final double eps)"
+    }
+  },
+  {
+    "v71": {
+      "line": "308",
+      "statement": "return Precision.equals(q0, q.getQ0(), eps) && Precision.equals(q1, q.getQ1(), eps) && Precision.equals(q2, q.getQ2(), eps) && Precision.equals(q3, q.getQ3(), eps)"
+    }
+  },
+  {
+    "v72": {
+      "line": "322",
+      "statement": "boolean isUnitQuaternion(double eps)"
+    }
+  },
+  {
+    "v73": {
+      "line": "323",
+      "statement": "return Precision.equals(getNorm(), 1d, eps)"
+    }
+  },
+  {
+    "v74": {
+      "line": "333",
+      "statement": "boolean isPureQuaternion(double eps)"
+    }
+  },
+  {
+    "v75": {
+      "line": "334",
+      "statement": "return FastMath.abs(getQ0()) <= eps"
+    }
+  },
+  {
+    "v76": {
+      "line": "342",
+      "statement": "Quaternion getPositivePolarForm()"
+    }
+  },
+  {
+    "v77": {
+      "line": "343",
+      "statement": "if (getQ0() < 0)"
+    }
+  },
+  {
+    "v78": {
+      "line": "344",
+      "statement": "final Quaternion unitQ = normalize()"
+    }
+  },
+  {
+    "v79": {
+      "line": "347",
+      "statement": "return new Quaternion(-unitQ.getQ0(), -unitQ.getQ1(), -unitQ.getQ2(), -unitQ.getQ3())"
+    }
+  },
+  {
+    "v80": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v81": {
+      "line": "352",
+      "statement": "return this.normalize()"
+    }
+  },
+  {
+    "v82": {
+      "line": "363",
+      "statement": "Quaternion getInverse()"
+    }
+  },
+  {
+    "v83": {
+      "line": "364",
+      "statement": "final double squareNorm = q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3"
+    }
+  },
+  {
+    "v84": {
+      "line": "365",
+      "statement": "if (squareNorm < Precision.SAFE_MIN)"
+    }
+  },
+  {
+    "v85": {
+      "line": "366",
+      "statement": "throw new ZeroException(LocalizedFormats.NORM, squareNorm)"
+    }
+  },
+  {
+    "v86": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v87": {
+      "line": "369",
+      "statement": "return new Quaternion(q0 / squareNorm, -q1 / squareNorm, -q2 / squareNorm, -q3 / squareNorm)"
+    }
+  },
+  {
+    "v88": {
+      "line": "380",
+      "statement": "double getQ0()"
+    }
+  },
+  {
+    "v89": {
+      "line": "381",
+      "statement": "return q0"
+    }
+  },
+  {
+    "v90": {
+      "line": "390",
+      "statement": "double getQ1()"
+    }
+  },
+  {
+    "v91": {
+      "line": "391",
+      "statement": "return q1"
+    }
+  },
+  {
+    "v92": {
+      "line": "400",
+      "statement": "double getQ2()"
+    }
+  },
+  {
+    "v93": {
+      "line": "401",
+      "statement": "return q2"
+    }
+  },
+  {
+    "v94": {
+      "line": "410",
+      "statement": "double getQ3()"
+    }
+  },
+  {
+    "v95": {
+      "line": "411",
+      "statement": "return q3"
+    }
+  },
+  {
+    "v96": {
+      "line": "420",
+      "statement": "double getScalarPart()"
+    }
+  },
+  {
+    "v97": {
+      "line": "421",
+      "statement": "return getQ0()"
+    }
+  },
+  {
+    "v98": {
+      "line": "432",
+      "statement": "double[] getVectorPart()"
+    }
+  },
+  {
+    "v99": {
+      "line": "433",
+      "statement": "return new double[] { getQ1(), getQ2(), getQ3() }"
+    }
+  },
+  {
+    "v100": {
+      "line": "442",
+      "statement": "Quaternion multiply(final double alpha)"
+    }
+  },
+  {
+    "v101": {
+      "line": "443",
+      "statement": "return new Quaternion(alpha * q0, alpha * q1, alpha * q2, alpha * q3)"
+    }
+  },
+  {
+    "v102": {
+      "line": "453",
+      "statement": "String toString()"
+    }
+  },
+  {
+    "v103": {
+      "line": "454",
+      "statement": "final String sp = ' '"
+    }
+  },
+  {
+    "v104": {
+      "line": "455",
+      "statement": "final StringBuilder s = new StringBuilder()"
+    }
+  },
+  {
+    "v105": {
+      "line": "456",
+      "statement": "s.append('[') .append(q0).append(sp) .append(q1).append(sp) .append(q2).append(sp) .append(q3) .append(']')"
+    }
+  },
+  {
+    "v106": {
+      "line": "463",
+      "statement": "return s.toString()"
+    }
+  }
+]

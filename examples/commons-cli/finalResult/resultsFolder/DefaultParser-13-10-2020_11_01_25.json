@@ -1,0 +1,32 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "207"
+    ],
+    "sourceClass": "DefaultParser"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR36",
+      "TR35",
+      "TR37"
+    ],
+    "affectedTest": [
+      "testPropertyOptionFlags",
+      "testPropertyOptionGroup",
+      "testPropertyOptionMultipleValues",
+      "testPropertyOptionRequired",
+      "testPropertyOptionSingularValue"
+    ],
+    "testReran": [
+      "testPropertyOptionGroup",
+      "testPropertyOptionFlags",
+      "testPropertyOptionSingularValue",
+      "testPropertyOptionMultipleValues",
+      "testPropertyOptionRequired"
+    ],
+    "unsatisfiedRequirement": [
+      "TR37"
+    ]
+  }
+}

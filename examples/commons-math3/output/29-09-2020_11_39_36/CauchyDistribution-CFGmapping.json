@@ -1,0 +1,326 @@
+[
+  {
+    "v1": {
+      "line": "53",
+      "statement": "CauchyDistribution ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "54",
+      "statement": "this(0, 1)"
+    }
+  },
+  {
+    "v3": {
+      "line": "63",
+      "statement": "CauchyDistribution (double median, double scale)"
+    }
+  },
+  {
+    "v4": {
+      "line": "64",
+      "statement": "this(median, scale, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v5": {
+      "line": "78",
+      "statement": "CauchyDistribution (double median, double scale, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "80",
+      "statement": "this(new Well19937c(), median, scale, inverseCumAccuracy)"
+    }
+  },
+  {
+    "v7": {
+      "line": "92",
+      "statement": "CauchyDistribution (RandomGenerator rng, double median, double scale)"
+    }
+  },
+  {
+    "v8": {
+      "line": "93",
+      "statement": "this(rng, median, scale, DEFAULT_INVERSE_ABSOLUTE_ACCURACY)"
+    }
+  },
+  {
+    "v9": {
+      "line": "108",
+      "statement": "CauchyDistribution (RandomGenerator rng, double median, double scale, double inverseCumAccuracy)"
+    }
+  },
+  {
+    "v10": {
+      "line": "112",
+      "statement": "super(rng)"
+    }
+  },
+  {
+    "v11": {
+      "line": "113",
+      "statement": "if (scale <= 0)"
+    }
+  },
+  {
+    "v12": {
+      "line": "114",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.SCALE, scale)"
+    }
+  },
+  {
+    "v13": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v14": {
+      "line": "116",
+      "statement": "this.scale = scale"
+    }
+  },
+  {
+    "v15": {
+      "line": "117",
+      "statement": "this.median = median"
+    }
+  },
+  {
+    "v16": {
+      "line": "118",
+      "statement": "solverAbsoluteAccuracy = inverseCumAccuracy"
+    }
+  },
+  {
+    "v17": {
+      "line": "122",
+      "statement": "double cumulativeProbability(double x)"
+    }
+  },
+  {
+    "v18": {
+      "line": "123",
+      "statement": "return 0.5 + (FastMath.atan((x - median) / scale) / FastMath.PI)"
+    }
+  },
+  {
+    "v19": {
+      "line": "131",
+      "statement": "double getMedian()"
+    }
+  },
+  {
+    "v20": {
+      "line": "132",
+      "statement": "return median"
+    }
+  },
+  {
+    "v21": {
+      "line": "140",
+      "statement": "double getScale()"
+    }
+  },
+  {
+    "v22": {
+      "line": "141",
+      "statement": "return scale"
+    }
+  },
+  {
+    "v23": {
+      "line": "145",
+      "statement": "double density(double x)"
+    }
+  },
+  {
+    "v24": {
+      "line": "146",
+      "statement": "final double dev = x - median"
+    }
+  },
+  {
+    "v25": {
+      "line": "147",
+      "statement": "return (1 / FastMath.PI) * (scale / (dev * dev + scale * scale))"
+    }
+  },
+  {
+    "v26": {
+      "line": "157",
+      "statement": "double inverseCumulativeProbability(double p)"
+    }
+  },
+  {
+    "v27": {
+      "line": "158",
+      "statement": "double ret"
+    }
+  },
+  {
+    "v28": {
+      "line": "159",
+      "statement": "if (p < 0 || p > 1)"
+    }
+  },
+  {
+    "v29": {
+      "line": "160",
+      "statement": "throw new OutOfRangeException(p, 0, 1)"
+    }
+  },
+  {
+    "v30": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v31": {
+      "line": "161",
+      "statement": "if (p == 0)"
+    }
+  },
+  {
+    "v32": {
+      "line": "162",
+      "statement": "ret = Double.NEGATIVE_INFINITY"
+    }
+  },
+  {
+    "v33": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v34": {
+      "line": "163",
+      "statement": "if (p == 1)"
+    }
+  },
+  {
+    "v35": {
+      "line": "164",
+      "statement": "ret = Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v37": {
+      "line": "166",
+      "statement": "ret = median + scale * FastMath.tan(FastMath.PI * (p - .5))"
+    }
+  },
+  {
+    "v38": {
+      "line": "168",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v39": {
+      "line": "173",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v40": {
+      "line": "174",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v41": {
+      "line": "184",
+      "statement": "double getNumericalMean()"
+    }
+  },
+  {
+    "v42": {
+      "line": "185",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v43": {
+      "line": "195",
+      "statement": "double getNumericalVariance()"
+    }
+  },
+  {
+    "v44": {
+      "line": "196",
+      "statement": "return Double.NaN"
+    }
+  },
+  {
+    "v45": {
+      "line": "207",
+      "statement": "double getSupportLowerBound()"
+    }
+  },
+  {
+    "v46": {
+      "line": "208",
+      "statement": "return Double.NEGATIVE_INFINITY"
+    }
+  },
+  {
+    "v47": {
+      "line": "219",
+      "statement": "double getSupportUpperBound()"
+    }
+  },
+  {
+    "v48": {
+      "line": "220",
+      "statement": "return Double.POSITIVE_INFINITY"
+    }
+  },
+  {
+    "v49": {
+      "line": "224",
+      "statement": "boolean isSupportLowerBoundInclusive()"
+    }
+  },
+  {
+    "v50": {
+      "line": "225",
+      "statement": "return false"
+    }
+  },
+  {
+    "v51": {
+      "line": "229",
+      "statement": "boolean isSupportUpperBoundInclusive()"
+    }
+  },
+  {
+    "v52": {
+      "line": "230",
+      "statement": "return false"
+    }
+  },
+  {
+    "v53": {
+      "line": "240",
+      "statement": "boolean isSupportConnected()"
+    }
+  },
+  {
+    "v54": {
+      "line": "241",
+      "statement": "return true"
+    }
+  }
+]

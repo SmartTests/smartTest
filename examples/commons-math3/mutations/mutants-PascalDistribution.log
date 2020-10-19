@@ -1,0 +1,119 @@
+1:LVR:0:POS:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):105:0 |==> 1
+2:LVR:0:NEG:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):105:0 |==> -1
+3:ROR:<=(int,int):<(int,int):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):105:r <= 0 |==> r < 0
+4:ROR:<=(int,int):==(int,int):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):105:r <= 0 |==> r == 0
+5:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):105:r <= 0 |==> true
+6:LVR:0:POS:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:0 |==> 1
+7:LVR:0:NEG:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:0 |==> -1
+8:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p < 0 |==> p != 0
+9:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p < 0 |==> p <= 0
+10:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p < 0 |==> false
+11:LVR:POS:0:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:1 |==> 0
+12:LVR:POS:NEG:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:1 |==> -1
+13:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p > 1 |==> p != 1
+14:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p > 1 |==> p >= 1
+15:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p > 1 |==> false
+16:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p < 0 || p > 1 |==> p < 0 != p > 1
+17:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p < 0 || p > 1 |==> p < 0
+18:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p < 0 || p > 1 |==> p > 1
+19:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):109:p < 0 || p > 1 |==> true
+20:LVR:0:POS:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):110:0 |==> 1
+21:LVR:0:NEG:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):110:0 |==> -1
+22:LVR:POS:0:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):110:1 |==> 0
+23:LVR:POS:NEG:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):110:1 |==> -1
+24:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):113:r |==> 0
+25:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,int,double):114:p |==> 0.0
+26:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@getNumberOfSuccesses():123:numberOfSuccesses |==> 0
+27:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@getProbabilityOfSuccess():132:probabilityOfSuccess |==> 0.0
+28:LVR:0:POS:org.apache.commons.math3.distribution.PascalDistribution@probability(int):138:0 |==> 1
+29:LVR:0:NEG:org.apache.commons.math3.distribution.PascalDistribution@probability(int):138:0 |==> -1
+30:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):138:x < 0 |==> x != 0
+31:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):138:x < 0 |==> x <= 0
+32:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):138:x < 0 |==> false
+33:LVR:0:POS:org.apache.commons.math3.distribution.PascalDistribution@probability(int):139:0.0 |==> 1.0
+34:LVR:0:NEG:org.apache.commons.math3.distribution.PascalDistribution@probability(int):139:0.0 |==> -1.0
+35:AOR:+(int,int):%(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:x + numberOfSuccesses |==> x % numberOfSuccesses
+36:AOR:+(int,int):*(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:x + numberOfSuccesses |==> x * numberOfSuccesses
+37:AOR:+(int,int):-(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:x + numberOfSuccesses |==> x - numberOfSuccesses
+38:AOR:+(int,int):/(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:x + numberOfSuccesses |==> x / numberOfSuccesses
+39:LVR:POS:0:org.apache.commons.math3.distribution.PascalDistribution@probability(int):142:1 |==> 0
+40:LVR:POS:NEG:org.apache.commons.math3.distribution.PascalDistribution@probability(int):142:1 |==> -1
+41:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:x + numberOfSuccesses - 1 |==> (x + numberOfSuccesses) % 1
+42:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:x + numberOfSuccesses - 1 |==> (x + numberOfSuccesses) * 1
+43:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:x + numberOfSuccesses - 1 |==> x + numberOfSuccesses + 1
+44:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:x + numberOfSuccesses - 1 |==> (x + numberOfSuccesses) / 1
+45:LVR:POS:0:org.apache.commons.math3.distribution.PascalDistribution@probability(int):142:1 |==> 0
+46:LVR:POS:NEG:org.apache.commons.math3.distribution.PascalDistribution@probability(int):142:1 |==> -1
+47:AOR:-(int,int):%(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):142:numberOfSuccesses - 1 |==> numberOfSuccesses % 1
+48:AOR:-(int,int):*(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):142:numberOfSuccesses - 1 |==> numberOfSuccesses * 1
+49:AOR:-(int,int):+(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):142:numberOfSuccesses - 1 |==> numberOfSuccesses + 1
+50:AOR:-(int,int):/(int,int):org.apache.commons.math3.distribution.PascalDistribution@probability(int):142:numberOfSuccesses - 1 |==> numberOfSuccesses / 1
+51:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) |==> CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) % FastMath.pow(probabilityOfSuccess, numberOfSuccesses)
+52:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) |==> CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) + FastMath.pow(probabilityOfSuccess, numberOfSuccesses)
+53:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) |==> CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) - FastMath.pow(probabilityOfSuccess, numberOfSuccesses)
+54:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) |==> CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) / FastMath.pow(probabilityOfSuccess, numberOfSuccesses)
+55:LVR:POS:0:org.apache.commons.math3.distribution.PascalDistribution@probability(int):144:1.0 |==> 0.0
+56:LVR:POS:NEG:org.apache.commons.math3.distribution.PascalDistribution@probability(int):144:1.0 |==> -1.0
+57:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):144:1.0 - probabilityOfSuccess |==> 1.0 % probabilityOfSuccess
+58:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):144:1.0 - probabilityOfSuccess |==> 1.0 * probabilityOfSuccess
+59:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):144:1.0 - probabilityOfSuccess |==> 1.0 + probabilityOfSuccess
+60:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):144:1.0 - probabilityOfSuccess |==> 1.0 / probabilityOfSuccess
+61:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) * FastMath.pow(1.0 - probabilityOfSuccess, x) |==> CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) % FastMath.pow(1.0 - probabilityOfSuccess, x)
+62:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) * FastMath.pow(1.0 - probabilityOfSuccess, x) |==> CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) + FastMath.pow(1.0 - probabilityOfSuccess, x)
+63:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) * FastMath.pow(1.0 - probabilityOfSuccess, x) |==> CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) - FastMath.pow(1.0 - probabilityOfSuccess, x)
+64:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PascalDistribution@probability(int):141:CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) * FastMath.pow(1.0 - probabilityOfSuccess, x) |==> CombinatoricsUtils.binomialCoefficientDouble(x + numberOfSuccesses - 1, numberOfSuccesses - 1) * FastMath.pow(probabilityOfSuccess, numberOfSuccesses) / FastMath.pow(1.0 - probabilityOfSuccess, x)
+65:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@probability(int):146:ret |==> 0.0
+66:LVR:0:POS:org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):152:0 |==> 1
+67:LVR:0:NEG:org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):152:0 |==> -1
+68:ROR:<(int,int):!=(int,int):org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):152:x < 0 |==> x != 0
+69:ROR:<(int,int):<=(int,int):org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):152:x < 0 |==> x <= 0
+70:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):152:x < 0 |==> false
+71:LVR:0:POS:org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):153:0.0 |==> 1.0
+72:LVR:0:NEG:org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):153:0.0 |==> -1.0
+73:LVR:POS:0:org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):156:1.0 |==> 0.0
+74:LVR:POS:NEG:org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):156:1.0 |==> -1.0
+75:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):156:x + 1.0 |==> x % 1.0
+76:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):156:x + 1.0 |==> x * 1.0
+77:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):156:x + 1.0 |==> x - 1.0
+78:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):156:x + 1.0 |==> x / 1.0
+79:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@cumulativeProbability(int):158:ret |==> 0.0
+80:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():168:getProbabilityOfSuccess() |==> 0.0
+81:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():169:getNumberOfSuccesses() |==> 0
+82:LVR:POS:0:org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:1 |==> 0
+83:LVR:POS:NEG:org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:1 |==> -1
+84:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:1 - p |==> 1 % p
+85:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:1 - p |==> 1 * p
+86:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:1 - p |==> 1 + p
+87:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:1 - p |==> 1 / p
+88:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:r * (1 - p) |==> r % (1 - p)
+89:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:r * (1 - p) |==> r + (1 - p)
+90:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:r * (1 - p) |==> r - (1 - p)
+91:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:r * (1 - p) |==> r / (1 - p)
+92:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:(r * (1 - p)) / p |==> (r * (1 - p)) % p
+93:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:(r * (1 - p)) / p |==> (r * (1 - p)) * p
+94:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:(r * (1 - p)) / p |==> (r * (1 - p)) + p
+95:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalMean():170:(r * (1 - p)) / p |==> (r * (1 - p)) - p
+96:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():180:getProbabilityOfSuccess() |==> 0.0
+97:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():181:getNumberOfSuccesses() |==> 0
+98:LVR:POS:0:org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:1 |==> 0
+99:LVR:POS:NEG:org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:1 |==> -1
+100:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:1 - p |==> 1 % p
+101:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:1 - p |==> 1 * p
+102:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:1 - p |==> 1 + p
+103:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:1 - p |==> 1 / p
+104:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:r * (1 - p) |==> r % (1 - p)
+105:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:r * (1 - p) |==> r + (1 - p)
+106:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:r * (1 - p) |==> r - (1 - p)
+107:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:r * (1 - p) |==> r / (1 - p)
+108:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:p * p |==> p % p
+109:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:p * p |==> p + p
+110:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:p * p |==> p - p
+111:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:p * p |==> p / p
+112:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:r * (1 - p) / (p * p) |==> r * (1 - p) % (p * p)
+113:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:r * (1 - p) / (p * p) |==> r * (1 - p) * (p * p)
+114:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:r * (1 - p) / (p * p) |==> r * (1 - p) + (p * p)
+115:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.PascalDistribution@getNumericalVariance():182:r * (1 - p) / (p * p) |==> r * (1 - p) - (p * p)
+116:LVR:0:POS:org.apache.commons.math3.distribution.PascalDistribution@getSupportLowerBound():193:0 |==> 1
+117:LVR:0:NEG:org.apache.commons.math3.distribution.PascalDistribution@getSupportLowerBound():193:0 |==> -1
+118:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.distribution.PascalDistribution@getSupportUpperBound():206:Integer.MAX_VALUE |==> 0
+119:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.PascalDistribution@isSupportConnected():217:true |==> false

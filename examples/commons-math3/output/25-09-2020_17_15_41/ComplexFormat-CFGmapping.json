@@ -1,0 +1,848 @@
+[
+  {
+    "v1": {
+      "line": "54",
+      "statement": "ComplexFormat ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "55",
+      "statement": "this.imaginaryCharacter = DEFAULT_IMAGINARY_CHARACTER"
+    }
+  },
+  {
+    "v3": {
+      "line": "56",
+      "statement": "this.imaginaryFormat = CompositeFormat.getDefaultNumberFormat()"
+    }
+  },
+  {
+    "v4": {
+      "line": "57",
+      "statement": "this.realFormat = imaginaryFormat"
+    }
+  },
+  {
+    "v5": {
+      "line": "66",
+      "statement": "ComplexFormat (NumberFormat format)"
+    }
+  },
+  {
+    "v6": {
+      "line": "67",
+      "statement": "if (format == null)"
+    }
+  },
+  {
+    "v7": {
+      "line": "68",
+      "statement": "throw new NullArgumentException(LocalizedFormats.IMAGINARY_FORMAT)"
+    }
+  },
+  {
+    "v8": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v9": {
+      "line": "70",
+      "statement": "this.imaginaryCharacter = DEFAULT_IMAGINARY_CHARACTER"
+    }
+  },
+  {
+    "v10": {
+      "line": "71",
+      "statement": "this.imaginaryFormat = format"
+    }
+  },
+  {
+    "v11": {
+      "line": "72",
+      "statement": "this.realFormat = format"
+    }
+  },
+  {
+    "v12": {
+      "line": "83",
+      "statement": "ComplexFormat (NumberFormat realFormat, NumberFormat imaginaryFormat)"
+    }
+  },
+  {
+    "v13": {
+      "line": "85",
+      "statement": "if (imaginaryFormat == null)"
+    }
+  },
+  {
+    "v14": {
+      "line": "86",
+      "statement": "throw new NullArgumentException(LocalizedFormats.IMAGINARY_FORMAT)"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "88",
+      "statement": "if (realFormat == null)"
+    }
+  },
+  {
+    "v17": {
+      "line": "89",
+      "statement": "throw new NullArgumentException(LocalizedFormats.REAL_FORMAT)"
+    }
+  },
+  {
+    "v18": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v19": {
+      "line": "92",
+      "statement": "this.imaginaryCharacter = DEFAULT_IMAGINARY_CHARACTER"
+    }
+  },
+  {
+    "v20": {
+      "line": "93",
+      "statement": "this.imaginaryFormat = imaginaryFormat"
+    }
+  },
+  {
+    "v21": {
+      "line": "94",
+      "statement": "this.realFormat = realFormat"
+    }
+  },
+  {
+    "v22": {
+      "line": "106",
+      "statement": "ComplexFormat (String imaginaryCharacter)"
+    }
+  },
+  {
+    "v23": {
+      "line": "108",
+      "statement": "this(imaginaryCharacter, CompositeFormat.getDefaultNumberFormat())"
+    }
+  },
+  {
+    "v24": {
+      "line": "122",
+      "statement": "ComplexFormat (String imaginaryCharacter, NumberFormat format)"
+    }
+  },
+  {
+    "v25": {
+      "line": "124",
+      "statement": "this(imaginaryCharacter, format, format)"
+    }
+  },
+  {
+    "v26": {
+      "line": "142",
+      "statement": "ComplexFormat (String imaginaryCharacter,  NumberFormat realFormat,  NumberFormat imaginaryFormat)"
+    }
+  },
+  {
+    "v27": {
+      "line": "146",
+      "statement": "if (imaginaryCharacter == null)"
+    }
+  },
+  {
+    "v28": {
+      "line": "147",
+      "statement": "throw new NullArgumentException()"
+    }
+  },
+  {
+    "v29": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v30": {
+      "line": "149",
+      "statement": "if (imaginaryCharacter.length() == 0)"
+    }
+  },
+  {
+    "v31": {
+      "line": "150",
+      "statement": "throw new NoDataException()"
+    }
+  },
+  {
+    "v32": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v33": {
+      "line": "152",
+      "statement": "if (imaginaryFormat == null)"
+    }
+  },
+  {
+    "v34": {
+      "line": "153",
+      "statement": "throw new NullArgumentException(LocalizedFormats.IMAGINARY_FORMAT)"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v36": {
+      "line": "155",
+      "statement": "if (realFormat == null)"
+    }
+  },
+  {
+    "v37": {
+      "line": "156",
+      "statement": "throw new NullArgumentException(LocalizedFormats.REAL_FORMAT)"
+    }
+  },
+  {
+    "v38": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v39": {
+      "line": "159",
+      "statement": "this.imaginaryCharacter = imaginaryCharacter"
+    }
+  },
+  {
+    "v40": {
+      "line": "160",
+      "statement": "this.imaginaryFormat = imaginaryFormat"
+    }
+  },
+  {
+    "v41": {
+      "line": "161",
+      "statement": "this.realFormat = realFormat"
+    }
+  },
+  {
+    "v42": {
+      "line": "169",
+      "statement": "Locale[] getAvailableLocales()"
+    }
+  },
+  {
+    "v43": {
+      "line": "170",
+      "statement": "return NumberFormat.getAvailableLocales()"
+    }
+  },
+  {
+    "v44": {
+      "line": "179",
+      "statement": "String format(Complex c)"
+    }
+  },
+  {
+    "v45": {
+      "line": "180",
+      "statement": "return format(c, new StringBuffer(), new FieldPosition(0)).toString()"
+    }
+  },
+  {
+    "v46": {
+      "line": "189",
+      "statement": "String format(Double c)"
+    }
+  },
+  {
+    "v47": {
+      "line": "190",
+      "statement": "return format(new Complex(c, 0), new StringBuffer(), new FieldPosition(0)).toString()"
+    }
+  },
+  {
+    "v48": {
+      "line": "202",
+      "statement": "StringBuffer format(Complex complex, StringBuffer toAppendTo,  FieldPosition pos)"
+    }
+  },
+  {
+    "v49": {
+      "line": "204",
+      "statement": "pos.setBeginIndex(0)"
+    }
+  },
+  {
+    "v50": {
+      "line": "205",
+      "statement": "pos.setEndIndex(0)"
+    }
+  },
+  {
+    "v51": {
+      "line": "208",
+      "statement": "double re = complex.getReal()"
+    }
+  },
+  {
+    "v52": {
+      "line": "209",
+      "statement": "CompositeFormat.formatDouble(re, getRealFormat(), toAppendTo, pos)"
+    }
+  },
+  {
+    "v53": {
+      "line": "212",
+      "statement": "double im = complex.getImaginary()"
+    }
+  },
+  {
+    "v54": {
+      "line": "213",
+      "statement": "StringBuffer imAppendTo"
+    }
+  },
+  {
+    "v55": {
+      "line": "214",
+      "statement": "if (im < 0.0)"
+    }
+  },
+  {
+    "v56": {
+      "line": "215",
+      "statement": "toAppendTo.append(' - ')"
+    }
+  },
+  {
+    "v57": {
+      "line": "216",
+      "statement": "imAppendTo = formatImaginary(-im, new StringBuffer(), pos)"
+    }
+  },
+  {
+    "v58": {
+      "line": "217",
+      "statement": "toAppendTo.append(imAppendTo)"
+    }
+  },
+  {
+    "v59": {
+      "line": "218",
+      "statement": "toAppendTo.append(getImaginaryCharacter())"
+    }
+  },
+  {
+    "v60": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v61": {
+      "line": "219",
+      "statement": "if (im > 0.0 || Double.isNaN(im))"
+    }
+  },
+  {
+    "v62": {
+      "line": "220",
+      "statement": "toAppendTo.append(' + ')"
+    }
+  },
+  {
+    "v63": {
+      "line": "221",
+      "statement": "imAppendTo = formatImaginary(im, new StringBuffer(), pos)"
+    }
+  },
+  {
+    "v64": {
+      "line": "222",
+      "statement": "toAppendTo.append(imAppendTo)"
+    }
+  },
+  {
+    "v65": {
+      "line": "223",
+      "statement": "toAppendTo.append(getImaginaryCharacter())"
+    }
+  },
+  {
+    "v66": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v67": {
+      "line": "226",
+      "statement": "return toAppendTo"
+    }
+  },
+  {
+    "v68": {
+      "line": "238",
+      "statement": "StringBuffer formatImaginary(double absIm,  StringBuffer toAppendTo,  FieldPosition pos)"
+    }
+  },
+  {
+    "v69": {
+      "line": "241",
+      "statement": "pos.setBeginIndex(0)"
+    }
+  },
+  {
+    "v70": {
+      "line": "242",
+      "statement": "pos.setEndIndex(0)"
+    }
+  },
+  {
+    "v71": {
+      "line": "244",
+      "statement": "CompositeFormat.formatDouble(absIm, getImaginaryFormat(), toAppendTo, pos)"
+    }
+  },
+  {
+    "v72": {
+      "line": "245",
+      "statement": "if (toAppendTo.toString().equals('1'))"
+    }
+  },
+  {
+    "v73": {
+      "line": "247",
+      "statement": "toAppendTo.setLength(0)"
+    }
+  },
+  {
+    "v74": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v75": {
+      "line": "250",
+      "statement": "return toAppendTo"
+    }
+  },
+  {
+    "v76": {
+      "line": "266",
+      "statement": "StringBuffer format(Object obj, StringBuffer toAppendTo,  FieldPosition pos)"
+    }
+  },
+  {
+    "v77": {
+      "line": "270",
+      "statement": "StringBuffer ret = null"
+    }
+  },
+  {
+    "v78": {
+      "line": "272",
+      "statement": "if (obj instanceof Complex)"
+    }
+  },
+  {
+    "v79": {
+      "line": "273",
+      "statement": "ret = format( (Complex)obj, toAppendTo, pos)"
+    }
+  },
+  {
+    "v80": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v81": {
+      "line": "274",
+      "statement": "if (obj instanceof Number)"
+    }
+  },
+  {
+    "v82": {
+      "line": "275",
+      "statement": "ret = format(new Complex(((Number)obj).doubleValue(), 0.0),  toAppendTo, pos)"
+    }
+  },
+  {
+    "v83": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v84": {
+      "line": "278",
+      "statement": "throw new MathIllegalArgumentException(LocalizedFormats.CANNOT_FORMAT_INSTANCE_AS_COMPLEX,  obj.getClass().getName())"
+    }
+  },
+  {
+    "v85": {
+      "line": "282",
+      "statement": "return ret"
+    }
+  },
+  {
+    "v86": {
+      "line": "289",
+      "statement": "String getImaginaryCharacter()"
+    }
+  },
+  {
+    "v87": {
+      "line": "290",
+      "statement": "return imaginaryCharacter"
+    }
+  },
+  {
+    "v88": {
+      "line": "297",
+      "statement": "NumberFormat getImaginaryFormat()"
+    }
+  },
+  {
+    "v89": {
+      "line": "298",
+      "statement": "return imaginaryFormat"
+    }
+  },
+  {
+    "v90": {
+      "line": "305",
+      "statement": "ComplexFormat getInstance()"
+    }
+  },
+  {
+    "v91": {
+      "line": "306",
+      "statement": "return getInstance(Locale.getDefault())"
+    }
+  },
+  {
+    "v92": {
+      "line": "314",
+      "statement": "ComplexFormat getInstance(Locale locale)"
+    }
+  },
+  {
+    "v93": {
+      "line": "315",
+      "statement": "NumberFormat f = CompositeFormat.getDefaultNumberFormat(locale)"
+    }
+  },
+  {
+    "v94": {
+      "line": "316",
+      "statement": "return new ComplexFormat(f)"
+    }
+  },
+  {
+    "v95": {
+      "line": "329",
+      "statement": "ComplexFormat getInstance(String imaginaryCharacter, Locale locale)"
+    }
+  },
+  {
+    "v96": {
+      "line": "331",
+      "statement": "NumberFormat f = CompositeFormat.getDefaultNumberFormat(locale)"
+    }
+  },
+  {
+    "v97": {
+      "line": "332",
+      "statement": "return new ComplexFormat(imaginaryCharacter, f)"
+    }
+  },
+  {
+    "v98": {
+      "line": "339",
+      "statement": "NumberFormat getRealFormat()"
+    }
+  },
+  {
+    "v99": {
+      "line": "340",
+      "statement": "return realFormat"
+    }
+  },
+  {
+    "v100": {
+      "line": "351",
+      "statement": "Complex parse(String source)"
+    }
+  },
+  {
+    "v101": {
+      "line": "352",
+      "statement": "ParsePosition parsePosition = new ParsePosition(0)"
+    }
+  },
+  {
+    "v102": {
+      "line": "353",
+      "statement": "Complex result = parse(source, parsePosition)"
+    }
+  },
+  {
+    "v103": {
+      "line": "354",
+      "statement": "if (parsePosition.getIndex() == 0)"
+    }
+  },
+  {
+    "v104": {
+      "line": "355",
+      "statement": "throw new MathParseException(source,  parsePosition.getErrorIndex(),  Complex.class)"
+    }
+  },
+  {
+    "v105": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v106": {
+      "line": "359",
+      "statement": "return result"
+    }
+  },
+  {
+    "v107": {
+      "line": "369",
+      "statement": "Complex parse(String source, ParsePosition pos)"
+    }
+  },
+  {
+    "v108": {
+      "line": "370",
+      "statement": "int initialIndex = pos.getIndex()"
+    }
+  },
+  {
+    "v109": {
+      "line": "373",
+      "statement": "CompositeFormat.parseAndIgnoreWhitespace(source, pos)"
+    }
+  },
+  {
+    "v110": {
+      "line": "376",
+      "statement": "Number re = CompositeFormat.parseNumber(source, getRealFormat(), pos)"
+    }
+  },
+  {
+    "v111": {
+      "line": "377",
+      "statement": "if (re == null)"
+    }
+  },
+  {
+    "v112": {
+      "line": "380",
+      "statement": "pos.setIndex(initialIndex)"
+    }
+  },
+  {
+    "v113": {
+      "line": "381",
+      "statement": "return null"
+    }
+  },
+  {
+    "v114": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v115": {
+      "line": "385",
+      "statement": "int startIndex = pos.getIndex()"
+    }
+  },
+  {
+    "v116": {
+      "line": "386",
+      "statement": "char c = CompositeFormat.parseNextCharacter(source, pos)"
+    }
+  },
+  {
+    "v117": {
+      "line": "387",
+      "statement": "int sign = 0"
+    }
+  },
+  {
+    "v118": {
+      "line": "388",
+      "statement": "switch (c)"
+    }
+  },
+  {
+    "v119": {
+      "line": 0,
+      "statement": "\"end-switch"
+    }
+  },
+  {
+    "v120": {
+      "line": "389",
+      "statement": "case 0"
+    }
+  },
+  {
+    "v121": {
+      "line": "392",
+      "statement": "return new Complex(re.doubleValue(), 0.0)"
+    }
+  },
+  {
+    "v122": {
+      "line": "393",
+      "statement": "case '-'"
+    }
+  },
+  {
+    "v123": {
+      "line": "394",
+      "statement": "sign = -1"
+    }
+  },
+  {
+    "v124": {
+      "line": "395",
+      "statement": "break"
+    }
+  },
+  {
+    "v125": {
+      "line": "396",
+      "statement": "case '+'"
+    }
+  },
+  {
+    "v126": {
+      "line": "397",
+      "statement": "sign = 1"
+    }
+  },
+  {
+    "v127": {
+      "line": "398",
+      "statement": "break"
+    }
+  },
+  {
+    "v128": {
+      "line": "399",
+      "statement": "default"
+    }
+  },
+  {
+    "v129": {
+      "line": "403",
+      "statement": "pos.setIndex(initialIndex)"
+    }
+  },
+  {
+    "v130": {
+      "line": "404",
+      "statement": "pos.setErrorIndex(startIndex)"
+    }
+  },
+  {
+    "v131": {
+      "line": "405",
+      "statement": "return null"
+    }
+  },
+  {
+    "v132": {
+      "line": "409",
+      "statement": "CompositeFormat.parseAndIgnoreWhitespace(source, pos)"
+    }
+  },
+  {
+    "v133": {
+      "line": "412",
+      "statement": "Number im = CompositeFormat.parseNumber(source, getRealFormat(), pos)"
+    }
+  },
+  {
+    "v134": {
+      "line": "413",
+      "statement": "if (im == null)"
+    }
+  },
+  {
+    "v135": {
+      "line": "416",
+      "statement": "pos.setIndex(initialIndex)"
+    }
+  },
+  {
+    "v136": {
+      "line": "417",
+      "statement": "return null"
+    }
+  },
+  {
+    "v137": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v138": {
+      "line": "421",
+      "statement": "if (!CompositeFormat.parseFixedstring(source, getImaginaryCharacter(), pos))"
+    }
+  },
+  {
+    "v139": {
+      "line": "422",
+      "statement": "return null"
+    }
+  },
+  {
+    "v140": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v141": {
+      "line": "425",
+      "statement": "return new Complex(re.doubleValue(), im.doubleValue() * sign)"
+    }
+  }
+]

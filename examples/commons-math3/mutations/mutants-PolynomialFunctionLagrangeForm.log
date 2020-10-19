@@ -1,0 +1,340 @@
+1:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):74:new double[x.length] |==> null
+2:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):75:new double[y.length] |==> null
+3:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):76:0 |==> 1
+4:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):76:0 |==> -1
+5:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):76:0 |==> 1
+6:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):76:0 |==> -1
+7:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):76:System.arraycopy(x, 0, this.x, 0, x.length) |==> <NO-OP>
+8:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):77:0 |==> 1
+9:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):77:0 |==> -1
+10:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):77:0 |==> 1
+11:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):77:0 |==> -1
+12:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):77:System.arraycopy(y, 0, this.y, 0, y.length) |==> <NO-OP>
+13:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):78:false |==> true
+14:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):78:coefficientsComputed = false |==> <NO-OP>
+15:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):80:false |==> true
+16:COR:verifyInterpolationArray(x, y, false):TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):80:verifyInterpolationArray(x, y, false) |==> false
+17:COR:verifyInterpolationArray(x, y, false):FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):80:verifyInterpolationArray(x, y, false) |==> true
+18:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):81:MathArrays.sortInPlace(this.x, this.y) |==> <NO-OP>
+19:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):83:true |==> false
+20:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@<init>(double[],double[]):83:verifyInterpolationArray(this.x, this.y, true) |==> <NO-OP>
+21:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@value(double):100:evaluateInternal(x, y, z) |==> 0.0
+22:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@degree():109:1 |==> 0
+23:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@degree():109:1 |==> -1
+24:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@degree():109:x.length - 1 |==> x.length % 1
+25:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@degree():109:x.length - 1 |==> x.length * 1
+26:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@degree():109:x.length - 1 |==> x.length + 1
+27:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@degree():109:x.length - 1 |==> x.length / 1
+28:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingPoints():120:new double[x.length] |==> null
+29:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingPoints():121:0 |==> 1
+30:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingPoints():121:0 |==> -1
+31:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingPoints():121:0 |==> 1
+32:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingPoints():121:0 |==> -1
+33:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingPoints():121:System.arraycopy(x, 0, out, 0, x.length) |==> <NO-OP>
+34:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingPoints():122:out |==> null
+35:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingValues():133:new double[y.length] |==> null
+36:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingValues():134:0 |==> 1
+37:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingValues():134:0 |==> -1
+38:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingValues():134:0 |==> 1
+39:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingValues():134:0 |==> -1
+40:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingValues():134:System.arraycopy(y, 0, out, 0, y.length) |==> <NO-OP>
+41:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getInterpolatingValues():135:out |==> null
+42:COR:coefficientsComputed:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():149:coefficientsComputed |==> false
+43:COR:coefficientsComputed:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():149:coefficientsComputed |==> true
+44:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():150:computeCoefficients() |==> <NO-OP>
+45:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():152:new double[coefficients.length] |==> null
+46:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():153:0 |==> 1
+47:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():153:0 |==> -1
+48:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():153:0 |==> 1
+49:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():153:0 |==> -1
+50:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():153:System.arraycopy(coefficients, 0, out, 0, coefficients.length) |==> <NO-OP>
+51:EVR:<IDENTIFIER(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@getCoefficients():154:out |==> null
+52:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):175:false |==> true
+53:COR:verifyInterpolationArray(x, y, false):TRUE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):175:verifyInterpolationArray(x, y, false) |==> false
+54:COR:verifyInterpolationArray(x, y, false):FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):175:verifyInterpolationArray(x, y, false) |==> true
+55:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):176:return evaluateInternal(x, y, z); |==> <NO-OP>
+56:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):180:new double[x.length] |==> null
+57:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):181:new double[y.length] |==> null
+58:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):182:0 |==> 1
+59:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):182:0 |==> -1
+60:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):182:0 |==> 1
+61:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):182:0 |==> -1
+62:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):182:System.arraycopy(x, 0, xNew, 0, x.length) |==> <NO-OP>
+63:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):183:0 |==> 1
+64:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):183:0 |==> -1
+65:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):183:0 |==> 1
+66:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):183:0 |==> -1
+67:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):183:System.arraycopy(y, 0, yNew, 0, y.length) |==> <NO-OP>
+68:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):185:MathArrays.sortInPlace(xNew, yNew) |==> <NO-OP>
+69:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):187:true |==> false
+70:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):187:verifyInterpolationArray(xNew, yNew, true) |==> <NO-OP>
+71:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluate(double[],double[],double):188:evaluateInternal(xNew, yNew, z) |==> 0.0
+72:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):208:0 |==> 1
+73:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):208:0 |==> -1
+74:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):209:x.length |==> 0
+75:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):210:new double[n] |==> null
+76:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):211:new double[n] |==> null
+77:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):212:Double.POSITIVE_INFINITY |==> 0.0
+78:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):213:0 |==> 1
+79:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):213:0 |==> -1
+80:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):213:i < n |==> i != n
+81:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):213:i < n |==> i <= n
+82:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):213:i < n |==> false
+83:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):215:c[i] = y[i] |==> <NO-OP>
+84:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):216:d[i] = y[i] |==> <NO-OP>
+85:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):218:z - x[i] |==> z % x[i]
+86:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):218:z - x[i] |==> z * x[i]
+87:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):218:z - x[i] |==> z + x[i]
+88:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):218:z - x[i] |==> z / x[i]
+89:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):219:dist < min_dist |==> dist != min_dist
+90:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):219:dist < min_dist |==> dist <= min_dist
+91:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):219:dist < min_dist |==> false
+92:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):220:nearest = i |==> <NO-OP>
+93:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):221:min_dist = dist |==> <NO-OP>
+94:EVR:<ARRAY_ACCESS(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):226:y[nearest] |==> 0.0
+95:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):228:1 |==> 0
+96:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):228:1 |==> -1
+97:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):228:i < n |==> i != n
+98:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):228:i < n |==> i <= n
+99:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):228:i < n |==> false
+100:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):229:0 |==> 1
+101:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):229:0 |==> -1
+102:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):229:n - i |==> n % i
+103:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):229:n - i |==> n * i
+104:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):229:n - i |==> n + i
+105:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):229:n - i |==> n / i
+106:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):229:j < n - i |==> j != n - i
+107:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):229:j < n - i |==> j <= n - i
+108:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):229:j < n - i |==> false
+109:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):230:x[j] - z |==> x[j] % z
+110:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):230:x[j] - z |==> x[j] * z
+111:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):230:x[j] - z |==> x[j] + z
+112:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):230:x[j] - z |==> x[j] / z
+113:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):231:i + j |==> i % j
+114:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):231:i + j |==> i * j
+115:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):231:i + j |==> i - j
+116:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):231:i + j |==> i / j
+117:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):231:x[i + j] - z |==> x[i + j] % z
+118:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):231:x[i + j] - z |==> x[i + j] * z
+119:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):231:x[i + j] - z |==> x[i + j] + z
+120:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):231:x[i + j] - z |==> x[i + j] / z
+121:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):232:i + j |==> i % j
+122:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):232:i + j |==> i * j
+123:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):232:i + j |==> i - j
+124:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):232:i + j |==> i / j
+125:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):232:x[j] - x[i + j] |==> x[j] % x[i + j]
+126:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):232:x[j] - x[i + j] |==> x[j] * x[i + j]
+127:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):232:x[j] - x[i + j] |==> x[j] + x[i + j]
+128:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):232:x[j] - x[i + j] |==> x[j] / x[i + j]
+129:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:1 |==> 0
+130:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:1 |==> -1
+131:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:j + 1 |==> j % 1
+132:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:j + 1 |==> j * 1
+133:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:j + 1 |==> j - 1
+134:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:j + 1 |==> j / 1
+135:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:c[j + 1] - d[j] |==> c[j + 1] % d[j]
+136:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:c[j + 1] - d[j] |==> c[j + 1] * d[j]
+137:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:c[j + 1] - d[j] |==> c[j + 1] + d[j]
+138:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:c[j + 1] - d[j] |==> c[j + 1] / d[j]
+139:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:(c[j + 1] - d[j]) / divider |==> (c[j + 1] - d[j]) % divider
+140:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:(c[j + 1] - d[j]) / divider |==> (c[j + 1] - d[j]) * divider
+141:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:(c[j + 1] - d[j]) / divider |==> (c[j + 1] - d[j]) + divider
+142:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):234:(c[j + 1] - d[j]) / divider |==> (c[j + 1] - d[j]) - divider
+143:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):235:tc * w |==> tc % w
+144:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):235:tc * w |==> tc + w
+145:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):235:tc * w |==> tc - w
+146:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):235:tc * w |==> tc / w
+147:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):235:c[j] = tc * w |==> <NO-OP>
+148:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):236:td * w |==> td % w
+149:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):236:td * w |==> td + w
+150:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):236:td * w |==> td - w
+151:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):236:td * w |==> td / w
+152:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):236:d[j] = td * w |==> <NO-OP>
+153:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:0.5 |==> 0.0
+154:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:0.5 |==> -0.5
+155:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:n - i |==> n % i
+156:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:n - i |==> n * i
+157:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:n - i |==> n + i
+158:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:n - i |==> n / i
+159:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:1 |==> 0
+160:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:1 |==> -1
+161:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:n - i + 1 |==> (n - i) % 1
+162:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:n - i + 1 |==> (n - i) * 1
+163:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:n - i + 1 |==> n - i - 1
+164:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:n - i + 1 |==> (n - i) / 1
+165:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:0.5 * (n - i + 1) |==> 0.5 % (n - i + 1)
+166:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:0.5 * (n - i + 1) |==> 0.5 + (n - i + 1)
+167:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:0.5 * (n - i + 1) |==> 0.5 - (n - i + 1)
+168:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:0.5 * (n - i + 1) |==> 0.5 / (n - i + 1)
+169:ROR:<(double,double):!=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:nearest < 0.5 * (n - i + 1) |==> nearest != 0.5 * (n - i + 1)
+170:ROR:<(double,double):<=(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:nearest < 0.5 * (n - i + 1) |==> nearest <= 0.5 * (n - i + 1)
+171:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):239:nearest < 0.5 * (n - i + 1) |==> false
+172:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):240:value += c[nearest] |==> <NO-OP>
+173:STD:<DEC>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):242:nearest-- |==> <NO-OP>
+174:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):243:value += d[nearest] |==> <NO-OP>
+175:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@evaluateInternal(double[],double[],double):247:value |==> 0.0
+176:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():257:1 |==> 0
+177:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():257:1 |==> -1
+178:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():257:degree() + 1 |==> degree() % 1
+179:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():257:degree() + 1 |==> degree() * 1
+180:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():257:degree() + 1 |==> degree() - 1
+181:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():257:degree() + 1 |==> degree() / 1
+182:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():258:coefficients = new double[n] |==> <NO-OP>
+183:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():259:0 |==> 1
+184:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():259:0 |==> -1
+185:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():259:i < n |==> i != n
+186:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():259:i < n |==> i <= n
+187:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():259:i < n |==> false
+188:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():260:0.0 |==> 1.0
+189:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():260:0.0 |==> -1.0
+190:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():260:coefficients[i] = 0.0 |==> <NO-OP>
+191:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():264:1 |==> 0
+192:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():264:1 |==> -1
+193:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():264:n + 1 |==> n % 1
+194:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():264:n + 1 |==> n * 1
+195:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():264:n + 1 |==> n - 1
+196:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():264:n + 1 |==> n / 1
+197:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():265:0 |==> 1
+198:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():265:0 |==> -1
+199:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():265:1.0 |==> 0.0
+200:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():265:1.0 |==> -1.0
+201:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():265:c[0] = 1.0 |==> <NO-OP>
+202:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():266:0 |==> 1
+203:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():266:0 |==> -1
+204:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():266:i < n |==> i != n
+205:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():266:i < n |==> i <= n
+206:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():266:i < n |==> false
+207:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():267:i |==> 0
+208:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():267:0 |==> 1
+209:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():267:0 |==> -1
+210:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():267:j > 0 |==> j != 0
+211:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():267:j > 0 |==> j >= 0
+212:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():267:j > 0 |==> false
+213:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:1 |==> 0
+214:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:1 |==> -1
+215:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:j - 1 |==> j % 1
+216:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:j - 1 |==> j * 1
+217:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:j - 1 |==> j + 1
+218:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:j - 1 |==> j / 1
+219:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:c[j] * x[i] |==> c[j] % x[i]
+220:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:c[j] * x[i] |==> c[j] + x[i]
+221:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:c[j] * x[i] |==> c[j] - x[i]
+222:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:c[j] * x[i] |==> c[j] / x[i]
+223:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:c[j - 1] - c[j] * x[i] |==> c[j - 1] % (c[j] * x[i])
+224:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:c[j - 1] - c[j] * x[i] |==> c[j - 1] * (c[j] * x[i])
+225:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:c[j - 1] - c[j] * x[i] |==> c[j - 1] + c[j] * x[i]
+226:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:c[j - 1] - c[j] * x[i] |==> c[j - 1] / (c[j] * x[i])
+227:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():268:c[j] = c[j - 1] - c[j] * x[i] |==> <NO-OP>
+228:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():270:0 |==> 1
+229:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():270:0 |==> -1
+230:ORU:-(double):+(double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():270:-x[i] |==> +x[i]
+231:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():270:c[0] *= -x[i] |==> <NO-OP>
+232:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():271:1 |==> 0
+233:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():271:1 |==> -1
+234:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():271:i + 1 |==> i % 1
+235:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():271:i + 1 |==> i * 1
+236:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():271:i + 1 |==> i - 1
+237:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():271:i + 1 |==> i / 1
+238:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():271:1 |==> 0
+239:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():271:1 |==> -1
+240:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():271:c[i + 1] = 1 |==> <NO-OP>
+241:EVR:<NEW_ARRAY(double[])>:<DEFAULT>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():274:new double[n] |==> null
+242:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():275:0 |==> 1
+243:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():275:0 |==> -1
+244:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():275:i < n |==> i != n
+245:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():275:i < n |==> i <= n
+246:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():275:i < n |==> false
+247:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():277:1 |==> 0
+248:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():277:1 |==> -1
+249:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():278:0 |==> 1
+250:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():278:0 |==> -1
+251:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():278:j < n |==> j != n
+252:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():278:j < n |==> j <= n
+253:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():278:j < n |==> false
+254:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():279:i != j |==> i < j
+255:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():279:i != j |==> i > j
+256:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():279:i != j |==> true
+257:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():280:x[i] - x[j] |==> x[i] % x[j]
+258:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():280:x[i] - x[j] |==> x[i] * x[j]
+259:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():280:x[i] - x[j] |==> x[i] + x[j]
+260:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():280:x[i] - x[j] |==> x[i] / x[j]
+261:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():280:d *= x[i] - x[j] |==> <NO-OP>
+262:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():283:y[i] / d |==> y[i] % d
+263:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():283:y[i] / d |==> y[i] * d
+264:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():283:y[i] / d |==> y[i] + d
+265:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():283:y[i] / d |==> y[i] - d
+266:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():287:1 |==> 0
+267:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():287:1 |==> -1
+268:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():287:n - 1 |==> n % 1
+269:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():287:n - 1 |==> n * 1
+270:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():287:n - 1 |==> n + 1
+271:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():287:n - 1 |==> n / 1
+272:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():287:tc[n - 1] = c[n] |==> <NO-OP>
+273:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:1 |==> 0
+274:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:1 |==> -1
+275:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:n - 1 |==> n % 1
+276:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:n - 1 |==> n * 1
+277:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:n - 1 |==> n + 1
+278:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:n - 1 |==> n / 1
+279:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:1 |==> 0
+280:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:1 |==> -1
+281:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:n - 1 |==> n % 1
+282:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:n - 1 |==> n * 1
+283:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:n - 1 |==> n + 1
+284:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:n - 1 |==> n / 1
+285:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:t * tc[n - 1] |==> t % tc[n - 1]
+286:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:t * tc[n - 1] |==> t + tc[n - 1]
+287:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:t * tc[n - 1] |==> t - tc[n - 1]
+288:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:t * tc[n - 1] |==> t / tc[n - 1]
+289:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():288:coefficients[n - 1] += t * tc[n - 1] |==> <NO-OP>
+290:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:2 |==> 0
+291:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:2 |==> -2
+292:AOR:-(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:n - 2 |==> n % 2
+293:AOR:-(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:n - 2 |==> n * 2
+294:AOR:-(int,int):+(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:n - 2 |==> n + 2
+295:AOR:-(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:n - 2 |==> n / 2
+296:LVR:0:POS:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:0 |==> 1
+297:LVR:0:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:0 |==> -1
+298:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:j >= 0 |==> j == 0
+299:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:j >= 0 |==> j > 0
+300:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():289:j >= 0 |==> true
+301:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:1 |==> 0
+302:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:1 |==> -1
+303:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:j + 1 |==> j % 1
+304:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:j + 1 |==> j * 1
+305:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:j + 1 |==> j - 1
+306:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:j + 1 |==> j / 1
+307:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:1 |==> 0
+308:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:1 |==> -1
+309:AOR:+(int,int):%(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:j + 1 |==> j % 1
+310:AOR:+(int,int):*(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:j + 1 |==> j * 1
+311:AOR:+(int,int):-(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:j + 1 |==> j - 1
+312:AOR:+(int,int):/(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:j + 1 |==> j / 1
+313:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:tc[j + 1] * x[i] |==> tc[j + 1] % x[i]
+314:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:tc[j + 1] * x[i] |==> tc[j + 1] + x[i]
+315:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:tc[j + 1] * x[i] |==> tc[j + 1] - x[i]
+316:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:tc[j + 1] * x[i] |==> tc[j + 1] / x[i]
+317:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:c[j + 1] + tc[j + 1] * x[i] |==> c[j + 1] % (tc[j + 1] * x[i])
+318:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:c[j + 1] + tc[j + 1] * x[i] |==> c[j + 1] * (tc[j + 1] * x[i])
+319:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:c[j + 1] + tc[j + 1] * x[i] |==> c[j + 1] - tc[j + 1] * x[i]
+320:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:c[j + 1] + tc[j + 1] * x[i] |==> c[j + 1] / (tc[j + 1] * x[i])
+321:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():290:tc[j] = c[j + 1] + tc[j + 1] * x[i] |==> <NO-OP>
+322:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():291:t * tc[j] |==> t % tc[j]
+323:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():291:t * tc[j] |==> t + tc[j]
+324:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():291:t * tc[j] |==> t - tc[j]
+325:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():291:t * tc[j] |==> t / tc[j]
+326:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():291:coefficients[j] += t * tc[j] |==> <NO-OP>
+327:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():295:true |==> false
+328:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@computeCoefficients():295:coefficientsComputed = true |==> <NO-OP>
+329:ROR:!=(int,int):<(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):318:x.length != y.length |==> x.length < y.length
+330:ROR:!=(int,int):>(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):318:x.length != y.length |==> x.length > y.length
+331:ROR:!=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):318:x.length != y.length |==> true
+332:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):321:2 |==> 0
+333:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):321:2 |==> -2
+334:ROR:<(int,int):!=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):321:x.length < 2 |==> x.length != 2
+335:ROR:<(int,int):<=(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):321:x.length < 2 |==> x.length <= 2
+336:ROR:<(int,int):FALSE(int,int):org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):321:x.length < 2 |==> false
+337:LVR:POS:0:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):322:2 |==> 0
+338:LVR:POS:NEG:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):322:2 |==> -2
+339:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):322:true |==> false
+340:LVR:TRUE:FALSE:org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm@verifyInterpolationArray(double[],double[],boolean):325:true |==> false

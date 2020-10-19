@@ -1,0 +1,50 @@
+[
+  {
+    "v1": {
+      "line": "49",
+      "statement": "PegasusSolver ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "50",
+      "statement": "super(DEFAULT_ABSOLUTE_ACCURACY, Method.PEGASUS)"
+    }
+  },
+  {
+    "v3": {
+      "line": "58",
+      "statement": "PegasusSolver (final double absoluteAccuracy)"
+    }
+  },
+  {
+    "v4": {
+      "line": "59",
+      "statement": "super(absoluteAccuracy, Method.PEGASUS)"
+    }
+  },
+  {
+    "v5": {
+      "line": "68",
+      "statement": "PegasusSolver (final double relativeAccuracy,  final double absoluteAccuracy)"
+    }
+  },
+  {
+    "v6": {
+      "line": "70",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, Method.PEGASUS)"
+    }
+  },
+  {
+    "v7": {
+      "line": "80",
+      "statement": "PegasusSolver (final double relativeAccuracy,  final double absoluteAccuracy,  final double functionValueAccuracy)"
+    }
+  },
+  {
+    "v8": {
+      "line": "83",
+      "statement": "super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy, Method.PEGASUS)"
+    }
+  }
+]

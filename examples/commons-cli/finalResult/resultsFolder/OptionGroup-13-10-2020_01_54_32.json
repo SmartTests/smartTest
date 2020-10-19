@@ -1,0 +1,45 @@
+{
+  "sourceCodeStatus": {
+    "line": [
+      "53"
+    ],
+    "sourceClass": "OptionGroup"
+  },
+  "testCodeStatus": {
+    "affectedReq": [
+      "TR2",
+      "TR1"
+    ],
+    "affectedTest": [
+      "testGetNames",
+      "testNoOptionsExtraArgs",
+      "testSingleLongOption",
+      "testSingleOption",
+      "testSingleOptionFromGroup",
+      "testToString",
+      "testTwoLongOptionsFromGroup",
+      "testTwoOptionsFromDifferentGroup",
+      "testTwoOptionsFromGroup",
+      "testTwoOptionsFromGroupWithProperties",
+      "testTwoValidLongOptions",
+      "testTwoValidOptions"
+    ],
+    "testReran": [
+      "testTwoLongOptionsFromGroup",
+      "testTwoOptionsFromDifferentGroup",
+      "testTwoOptionsFromGroupWithProperties",
+      "testSingleLongOption",
+      "testTwoValidLongOptions",
+      "testSingleOption",
+      "testTwoOptionsFromGroup",
+      "testNoOptionsExtraArgs",
+      "testSingleOptionFromGroup",
+      "testTwoValidOptions",
+      "testToString",
+      "testGetNames"
+    ],
+    "unsatisfiedRequirement": [
+      "TR1"
+    ]
+  }
+}

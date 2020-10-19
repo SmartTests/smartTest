@@ -1,0 +1,79 @@
+
+testDerivative : <init>(DDD)V=[53,54
+54,55
+55,56
+56,57
+57,58
+];;value(Lorg/apache/commons/math3/analysis/differentiation/DerivativeStructure;)Lorg/apache/commons/math3/analysis/differentiation/DerivativeStructure;=[166,167
+167,168
+168,170
+170,171
+171,172
+172,180
+]
+
+testParametricGradient : <init>()V=[81,82
+];;gradient(D[D)[D=[115,116
+116,118
+118,119
+119,120
+120,122
+122,123
+123,124
+124,125
+125,127
+];;validateParameters([D)V=[142,143
+143,146
+146,149
+];;value(DD)D=[158,159
+]
+
+testParametricUsage1 : <init>()V=[81,82
+];;value(D[D)D=[95,96
+];;validateParameters([D)V=[142,143
+143,144
+]
+
+testParametricUsage2 : <init>()V=[81,82
+];;value(D[D)D=[95,96
+];;validateParameters([D)V=[142,143
+143,146
+146,147
+]
+
+testParametricUsage3 : <init>()V=[81,82
+];;gradient(D[D)[D=[115,116
+];;validateParameters([D)V=[142,143
+143,144
+]
+
+testParametricUsage4 : <init>()V=[81,82
+];;gradient(D[D)[D=[115,116
+];;validateParameters([D)V=[142,143
+143,146
+146,147
+]
+
+testParametricValue : <init>(DDD)V=[53,54
+54,55
+55,56
+56,57
+57,58
+];;<init>()V=[81,82
+];;value(D)D=[61,62
+];;value(DD)D=[158,159
+];;value(D[D)D=[95,96
+96,97
+];;validateParameters([D)V=[142,143
+143,146
+146,149
+]
+
+testSomeValues : <init>(DDD)V=[53,54
+54,55
+55,56
+56,57
+57,58
+];;value(D)D=[61,62
+];;value(DD)D=[158,159
+]

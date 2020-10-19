@@ -1,0 +1,85 @@
+1:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LevyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):53:mu |==> 0.0
+2:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LevyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):54:c |==> 0.0
+3:LVR:POS:0:org.apache.commons.math3.distribution.LevyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):55:0.5 |==> 0.0
+4:LVR:POS:NEG:org.apache.commons.math3.distribution.LevyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):55:0.5 |==> -0.5
+5:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):55:0.5 * c |==> 0.5 % c
+6:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):55:0.5 * c |==> 0.5 + c
+7:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LevyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):55:0.5 * c |==> 0.5 - c
+8:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LevyDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double):55:0.5 * c |==> 0.5 / c
+9:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):73:x < mu |==> x != mu
+10:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):73:x < mu |==> x <= mu
+11:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):73:x < mu |==> false
+12:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.LevyDistribution@density(double):74:return Double.NaN; |==> <NO-OP>
+13:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):77:x - mu |==> x % mu
+14:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):77:x - mu |==> x * mu
+15:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):77:x - mu |==> x + mu
+16:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):77:x - mu |==> x / mu
+17:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):78:halfC / delta |==> halfC % delta
+18:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):78:halfC / delta |==> halfC * delta
+19:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):78:halfC / delta |==> halfC + delta
+20:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):78:halfC / delta |==> halfC - delta
+21:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:f / FastMath.PI |==> f % FastMath.PI
+22:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:f / FastMath.PI |==> f * FastMath.PI
+23:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:f / FastMath.PI |==> f + FastMath.PI
+24:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:f / FastMath.PI |==> f - FastMath.PI
+25:ORU:-(double):+(double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:-f |==> +f
+26:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) |==> FastMath.sqrt(f / FastMath.PI) % FastMath.exp(-f)
+27:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) |==> FastMath.sqrt(f / FastMath.PI) + FastMath.exp(-f)
+28:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) |==> FastMath.sqrt(f / FastMath.PI) - FastMath.exp(-f)
+29:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) |==> FastMath.sqrt(f / FastMath.PI) / FastMath.exp(-f)
+30:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) / delta |==> FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) % delta
+31:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) / delta |==> FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) * delta
+32:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) / delta |==> FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) + delta
+33:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LevyDistribution@density(double):79:FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) / delta |==> FastMath.sqrt(f / FastMath.PI) * FastMath.exp(-f) - delta
+34:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):91:x < mu |==> x != mu
+35:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):91:x < mu |==> x <= mu
+36:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):91:x < mu |==> false
+37:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):92:return Double.NaN; |==> <NO-OP>
+38:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):94:x - mu |==> x % mu
+39:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):94:x - mu |==> x * mu
+40:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):94:x - mu |==> x + mu
+41:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):94:x - mu |==> x / mu
+42:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):94:halfC / (x - mu) |==> halfC % (x - mu)
+43:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):94:halfC / (x - mu) |==> halfC * (x - mu)
+44:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):94:halfC / (x - mu) |==> halfC + (x - mu)
+45:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LevyDistribution@cumulativeProbability(double):94:halfC / (x - mu) |==> halfC - (x - mu)
+46:LVR:0:POS:org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:0.0 |==> 1.0
+47:LVR:0:NEG:org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:0.0 |==> -1.0
+48:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p < 0.0 |==> p != 0.0
+49:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p < 0.0 |==> p <= 0.0
+50:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p < 0.0 |==> false
+51:LVR:POS:0:org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:1.0 |==> 0.0
+52:LVR:POS:NEG:org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:1.0 |==> -1.0
+53:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p > 1.0 |==> p != 1.0
+54:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p > 1.0 |==> p >= 1.0
+55:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p > 1.0 |==> false
+56:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p < 0.0 || p > 1.0 |==> p < 0.0 != p > 1.0
+57:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p < 0.0 || p > 1.0 |==> p < 0.0
+58:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p < 0.0 || p > 1.0 |==> p > 1.0
+59:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):100:p < 0.0 || p > 1.0 |==> true
+60:LVR:0:POS:org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):101:0 |==> 1
+61:LVR:0:NEG:org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):101:0 |==> -1
+62:LVR:POS:0:org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):101:1 |==> 0
+63:LVR:POS:NEG:org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):101:1 |==> -1
+64:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):103:Erf.erfcInv(p) |==> 0.0
+65:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:t * t |==> t % t
+66:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:t * t |==> t + t
+67:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:t * t |==> t - t
+68:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:t * t |==> t / t
+69:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:halfC / (t * t) |==> halfC % (t * t)
+70:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:halfC / (t * t) |==> halfC * (t * t)
+71:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:halfC / (t * t) |==> halfC + (t * t)
+72:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:halfC / (t * t) |==> halfC - (t * t)
+73:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:mu + halfC / (t * t) |==> mu % (halfC / (t * t))
+74:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:mu + halfC / (t * t) |==> mu * (halfC / (t * t))
+75:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:mu + halfC / (t * t) |==> mu - halfC / (t * t)
+76:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.LevyDistribution@inverseCumulativeProbability(double):104:mu + halfC / (t * t) |==> mu / (halfC / (t * t))
+77:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LevyDistribution@getScale():111:c |==> 0.0
+78:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LevyDistribution@getLocation():118:mu |==> 0.0
+79:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LevyDistribution@getNumericalMean():123:Double.POSITIVE_INFINITY |==> 0.0
+80:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LevyDistribution@getNumericalVariance():128:Double.POSITIVE_INFINITY |==> 0.0
+81:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LevyDistribution@getSupportLowerBound():133:mu |==> 0.0
+82:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LevyDistribution@getSupportUpperBound():138:Double.POSITIVE_INFINITY |==> 0.0
+83:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.LevyDistribution@isSupportLowerBoundInclusive():145:false |==> true
+84:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.LevyDistribution@isSupportUpperBoundInclusive():151:false |==> true
+85:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.LevyDistribution@isSupportConnected():156:true |==> false

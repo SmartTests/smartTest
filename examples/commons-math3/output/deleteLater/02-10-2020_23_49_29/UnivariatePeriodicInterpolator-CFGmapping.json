@@ -1,0 +1,188 @@
+[
+  {
+    "v1": {
+      "line": "58",
+      "statement": "UnivariatePeriodicInterpolator (UnivariateInterpolator interpolator, double period, int extend)"
+    }
+  },
+  {
+    "v2": {
+      "line": "61",
+      "statement": "this.interpolator = null"
+    }
+  },
+  {
+    "v3": {
+      "line": "62",
+      "statement": "this.period = period"
+    }
+  },
+  {
+    "v4": {
+      "line": "63",
+      "statement": "this.extend = extend"
+    }
+  },
+  {
+    "v5": {
+      "line": "74",
+      "statement": "UnivariatePeriodicInterpolator (UnivariateInterpolator interpolator, double period)"
+    }
+  },
+  {
+    "v6": {
+      "line": "76",
+      "statement": "this(interpolator, period, DEFAULT_EXTEND)"
+    }
+  },
+  {
+    "v7": {
+      "line": "85",
+      "statement": "UnivariateFunction interpolate(double[] xval, double[] yval)"
+    }
+  },
+  {
+    "v8": {
+      "line": "88",
+      "statement": "if (xval.length < extend)"
+    }
+  },
+  {
+    "v9": {
+      "line": "89",
+      "statement": "throw new NumberIsTooSmallException(xval.length, extend, true)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "92",
+      "statement": "MathArrays.checkOrder(xval)"
+    }
+  },
+  {
+    "v12": {
+      "line": "93",
+      "statement": "final double offset = xval[0"
+    }
+  },
+  {
+    "v13": {
+      "line": "95",
+      "statement": "final int len = xval.length + extend * 2"
+    }
+  },
+  {
+    "v14": {
+      "line": "96",
+      "statement": "final double[] x = new double[len"
+    }
+  },
+  {
+    "v15": {
+      "line": "97",
+      "statement": "final double[] y = new double[len"
+    }
+  },
+  {
+    "v16": {
+      "line": "98",
+      "statement": "for (  int i = 0 ; i < xval.length ;   i++)"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v20": {
+      "line": "99",
+      "statement": "final int index = i + extend"
+    }
+  },
+  {
+    "v21": {
+      "line": "100",
+      "statement": "x[index] = MathUtils.reduce(xval[i], period, offset)"
+    }
+  },
+  {
+    "v22": {
+      "line": "101",
+      "statement": "y[index] = yval[i"
+    }
+  },
+  {
+    "v23": {
+      "line": "105",
+      "statement": "for (  int i = 0 ; i < extend ;   i++)"
+    }
+  },
+  {
+    "v26": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v27": {
+      "line": "106",
+      "statement": "int index = xval.length - extend + i"
+    }
+  },
+  {
+    "v28": {
+      "line": "107",
+      "statement": "x[i] = MathUtils.reduce(xval[index], period, offset) - period"
+    }
+  },
+  {
+    "v29": {
+      "line": "108",
+      "statement": "y[i] = yval[index"
+    }
+  },
+  {
+    "v30": {
+      "line": "110",
+      "statement": "index = len - extend + i"
+    }
+  },
+  {
+    "v31": {
+      "line": "111",
+      "statement": "x[index] = MathUtils.reduce(xval[i], period, offset) + period"
+    }
+  },
+  {
+    "v32": {
+      "line": "112",
+      "statement": "y[index] = yval[i"
+    }
+  },
+  {
+    "v33": {
+      "line": "115",
+      "statement": "MathArrays.sortInPlace(x, y)"
+    }
+  },
+  {
+    "v34": {
+      "line": "117",
+      "statement": "final UnivariateFunction f = interpolator.interpolate(x, y)"
+    }
+  },
+  {
+    "v35": {
+      "line": "118",
+      "statement": "return new UnivariateFunction() { public double value(final double x) throws MathIllegalArgumentException { return f.value(MathUtils.reduce(x, period, offset)); } }"
+    }
+  }
+]

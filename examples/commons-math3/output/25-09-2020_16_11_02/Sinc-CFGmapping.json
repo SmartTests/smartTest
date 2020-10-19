@@ -1,0 +1,380 @@
+[
+  {
+    "v1": {
+      "line": "71",
+      "statement": "Sinc ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "72",
+      "statement": "this(false)"
+    }
+  },
+  {
+    "v3": {
+      "line": "81",
+      "statement": "Sinc (boolean normalized)"
+    }
+  },
+  {
+    "v4": {
+      "line": "82",
+      "statement": "this.normalized = normalized"
+    }
+  },
+  {
+    "v5": {
+      "line": "86",
+      "statement": "double value(final double x)"
+    }
+  },
+  {
+    "v6": {
+      "line": "87",
+      "statement": "final double scaledX = normalized ? FastMath.PI * x"
+    }
+  },
+  {
+    "v7": {
+      "line": "88",
+      "statement": "if (FastMath.abs(scaledX) <= SHORTCUT)"
+    }
+  },
+  {
+    "v8": {
+      "line": "90",
+      "statement": "final double scaledX2 = scaledX * scaledX"
+    }
+  },
+  {
+    "v9": {
+      "line": "91",
+      "statement": "return ((scaledX2 - 20) * scaledX2 + 120) / 120"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "94",
+      "statement": "return FastMath.sin(scaledX) / scaledX"
+    }
+  },
+  {
+    "v12": {
+      "line": "102",
+      "statement": "UnivariateFunction derivative()"
+    }
+  },
+  {
+    "v13": {
+      "line": "103",
+      "statement": "return FunctionUtils.toDifferentiableUnivariateFunction(this).derivative()"
+    }
+  },
+  {
+    "v14": {
+      "line": "109",
+      "statement": "DerivativeStructure value(final DerivativeStructure t)"
+    }
+  },
+  {
+    "v15": {
+      "line": "112",
+      "statement": "final double scaledX  = (normalized ? FastMath.PI"
+    }
+  },
+  {
+    "v16": {
+      "line": "113",
+      "statement": "final double scaledX2 = scaledX * scaledX"
+    }
+  },
+  {
+    "v17": {
+      "line": "115",
+      "statement": "double[] f = new double[t.getOrder() + 1"
+    }
+  },
+  {
+    "v18": {
+      "line": "117",
+      "statement": "if (FastMath.abs(scaledX) <= SHORTCUT)"
+    }
+  },
+  {
+    "v19": {
+      "line": "119",
+      "statement": "for (  int i = 0 ; i < f.length ;   ++i)"
+    }
+  },
+  {
+    "v22": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v23": {
+      "line": "120",
+      "statement": "final int k = i / 2"
+    }
+  },
+  {
+    "v24": {
+      "line": "121",
+      "statement": "if ((i & 0x1) == 0)"
+    }
+  },
+  {
+    "v25": {
+      "line": "123",
+      "statement": "f[i] = (((k & 0x1) == 0) ? 1"
+    }
+  },
+  {
+    "v26": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v27": {
+      "line": "127",
+      "statement": "f[i] = (((k & 0x1) == 0) ? -scaledX"
+    }
+  },
+  {
+    "v28": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v29": {
+      "line": "134",
+      "statement": "final double inv = 1 / scaledX"
+    }
+  },
+  {
+    "v30": {
+      "line": "135",
+      "statement": "final double cos = FastMath.cos(scaledX)"
+    }
+  },
+  {
+    "v31": {
+      "line": "136",
+      "statement": "final double sin = FastMath.sin(scaledX)"
+    }
+  },
+  {
+    "v32": {
+      "line": "138",
+      "statement": "f[0] = inv * sin"
+    }
+  },
+  {
+    "v33": {
+      "line": "150",
+      "statement": "final double[] sc = new double[f.length"
+    }
+  },
+  {
+    "v34": {
+      "line": "151",
+      "statement": "sc[0] = 1"
+    }
+  },
+  {
+    "v35": {
+      "line": "153",
+      "statement": "double coeff = inv"
+    }
+  },
+  {
+    "v36": {
+      "line": "154",
+      "statement": "for (  int n = 1 ; n < f.length ;   ++n)"
+    }
+  },
+  {
+    "v39": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v40": {
+      "line": "156",
+      "statement": "double s = 0"
+    }
+  },
+  {
+    "v41": {
+      "line": "157",
+      "statement": "double c = 0"
+    }
+  },
+  {
+    "v42": {
+      "line": "160",
+      "statement": "final int kStart"
+    }
+  },
+  {
+    "v43": {
+      "line": "161",
+      "statement": "if ((n & 0x1) == 0)"
+    }
+  },
+  {
+    "v44": {
+      "line": "163",
+      "statement": "sc[n] = 0"
+    }
+  },
+  {
+    "v45": {
+      "line": "164",
+      "statement": "kStart = n"
+    }
+  },
+  {
+    "v46": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v47": {
+      "line": "167",
+      "statement": "sc[n] = sc[n - 1"
+    }
+  },
+  {
+    "v48": {
+      "line": "168",
+      "statement": "c = sc[n"
+    }
+  },
+  {
+    "v49": {
+      "line": "169",
+      "statement": "kStart = n - 1"
+    }
+  },
+  {
+    "v50": {
+      "line": "173",
+      "statement": "for (  int k = kStart ; k > 1 ;   k -= 2)"
+    }
+  },
+  {
+    "v53": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v54": {
+      "line": "176",
+      "statement": "sc[k] = (k - n) * sc[k] - sc[k - 1"
+    }
+  },
+  {
+    "v55": {
+      "line": "177",
+      "statement": "s = s * scaledX2 + sc[k"
+    }
+  },
+  {
+    "v56": {
+      "line": "180",
+      "statement": "sc[k - 1] = (k - 1 - n) * sc[k - 1] + sc[k -2"
+    }
+  },
+  {
+    "v57": {
+      "line": "181",
+      "statement": "c = c * scaledX2 + sc[k - 1"
+    }
+  },
+  {
+    "v58": {
+      "line": "184",
+      "statement": "sc[0] *= -n"
+    }
+  },
+  {
+    "v59": {
+      "line": "185",
+      "statement": "s  = s * scaledX2 + sc[0"
+    }
+  },
+  {
+    "v60": {
+      "line": "187",
+      "statement": "coeff *= inv"
+    }
+  },
+  {
+    "v61": {
+      "line": "188",
+      "statement": "f[n] = coeff * (s * sin + c * scaledX * cos)"
+    }
+  },
+  {
+    "v62": {
+      "line": "194",
+      "statement": "if (normalized)"
+    }
+  },
+  {
+    "v63": {
+      "line": "195",
+      "statement": "double scale = FastMath.PI"
+    }
+  },
+  {
+    "v64": {
+      "line": "196",
+      "statement": "for (  int i = 1 ; i < f.length ;   ++i)"
+    }
+  },
+  {
+    "v67": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v68": {
+      "line": "197",
+      "statement": "f[i]  *= scale"
+    }
+  },
+  {
+    "v69": {
+      "line": "198",
+      "statement": "scale *= FastMath.PI"
+    }
+  },
+  {
+    "v70": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v71": {
+      "line": "202",
+      "statement": "return t.compose(f)"
+    }
+  }
+]

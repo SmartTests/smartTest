@@ -1,0 +1,91 @@
+1:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@<init>(double,double,int,int):63:maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT |==> maximalIterationCount != SIMPSON_MAX_ITERATIONS_COUNT
+2:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@<init>(double,double,int,int):63:maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT |==> maximalIterationCount >= SIMPSON_MAX_ITERATIONS_COUNT
+3:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@<init>(double,double,int,int):63:maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT |==> false
+4:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@<init>(double,double,int,int):65:false |==> true
+5:ROR:>(int,int):!=(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@<init>(int,int):85:maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT |==> maximalIterationCount != SIMPSON_MAX_ITERATIONS_COUNT
+6:ROR:>(int,int):>=(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@<init>(int,int):85:maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT |==> maximalIterationCount >= SIMPSON_MAX_ITERATIONS_COUNT
+7:ROR:>(int,int):FALSE(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@<init>(int,int):85:maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT |==> false
+8:LVR:FALSE:TRUE:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@<init>(int,int):87:false |==> true
+9:EVR:<NEW_CLASS(org.apache.commons.math3.analysis.integration.TrapezoidIntegrator)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():104:new TrapezoidIntegrator() |==> null
+10:LVR:POS:0:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():105:1 |==> 0
+11:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():105:1 |==> -1
+12:ROR:==(int,int):<=(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():105:getMinimalIterationCount() == 1 |==> getMinimalIterationCount() <= 1
+13:ROR:==(int,int):>=(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():105:getMinimalIterationCount() == 1 |==> getMinimalIterationCount() >= 1
+14:ROR:==(int,int):FALSE(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():105:getMinimalIterationCount() == 1 |==> false
+15:LVR:POS:0:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 |==> 0
+16:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 |==> -4
+17:LVR:POS:0:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:1 |==> 0
+18:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:1 |==> -1
+19:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 * qtrap.stage(this, 1) |==> 4 % qtrap.stage(this, 1)
+20:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 * qtrap.stage(this, 1) |==> 4 + qtrap.stage(this, 1)
+21:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 * qtrap.stage(this, 1) |==> 4 - qtrap.stage(this, 1)
+22:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 * qtrap.stage(this, 1) |==> 4 / qtrap.stage(this, 1)
+23:LVR:0:POS:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:0 |==> 1
+24:LVR:0:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:0 |==> -1
+25:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 * qtrap.stage(this, 1) - qtrap.stage(this, 0) |==> 4 * qtrap.stage(this, 1) % qtrap.stage(this, 0)
+26:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 * qtrap.stage(this, 1) - qtrap.stage(this, 0) |==> 4 * qtrap.stage(this, 1) * qtrap.stage(this, 0)
+27:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 * qtrap.stage(this, 1) - qtrap.stage(this, 0) |==> 4 * qtrap.stage(this, 1) + qtrap.stage(this, 0)
+28:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:4 * qtrap.stage(this, 1) - qtrap.stage(this, 0) |==> 4 * qtrap.stage(this, 1) / qtrap.stage(this, 0)
+29:LVR:POS:0:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:3.0 |==> 0.0
+30:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:3.0 |==> -3.0
+31:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:(4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) / 3.0 |==> (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) % 3.0
+32:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:(4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) / 3.0 |==> (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) * 3.0
+33:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:(4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) / 3.0 |==> (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) + 3.0
+34:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:(4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) / 3.0 |==> (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) - 3.0
+35:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():106:return Config.__M_NO == 34 ? (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) - 3.0 : Config.__M_NO == 33 ? (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) + 3.0 : Config.__M_NO == 32 ? (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) * 3.0 : Config.__M_NO == 31 ? (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) % 3.0 : Config.__M_NO == 0 && Config.COVERED(31, 34) ? (4 * qtrap.stage(this, 1) - qtrap.stage(this, 0)) / 3.0 : (Config.__M_NO == 28 ? 4 * qtrap.stage(this, 1) / qtrap.stage(this, 0) : Config.__M_NO == 27 ? 4 * qtrap.stage(this, 1) + qtrap.stage(this, 0) : Config.__M_NO == 26 ? 4 * qtrap.stage(this, 1) * qtrap.stage(this, 0) : Config.__M_NO == 25 ? 4 * qtrap.stage(this, 1) % qtrap.stage(this, 0) : Config.__M_NO == 0 && Config.COVERED(25, 28) ? 4 * qtrap.stage(this, 1) - qtrap.stage(this, 0) : (Config.__M_NO == 22 ? 4 / qtrap.stage(this, 1) : Config.__M_NO == 21 ? 4 - qtrap.stage(this, 1) : Config.__M_NO == 20 ? 4 + qtrap.stage(this, 1) : Config.__M_NO == 19 ? 4 % qtrap.stage(this, 1) : Config.__M_NO == 0 && Config.COVERED(19, 22) ? 4 * qtrap.stage(this, 1) : (Config.__M_NO == 0 && Config.COVERED(15, 16) ? 4 : Config.__M_NO == 16 ? -4 : Config.__M_NO == 15 ? 0 : 4) * qtrap.stage(this, Config.__M_NO == 0 && Config.COVERED(17, 18) ? 1 : Config.__M_NO == 18 ? -1 : Config.__M_NO == 17 ? 0 : 1)) - qtrap.stage(this, Config.__M_NO == 0 && Config.COVERED(23, 24) ? 0 : Config.__M_NO == 24 ? -1 : Config.__M_NO == 23 ? 1 : 0)) / (Config.__M_NO == 0 && Config.COVERED(29, 30) ? 3.0 : Config.__M_NO == 30 ? -3.0 : Config.__M_NO == 29 ? 0.0 : 3.0); |==> <NO-OP>
+36:LVR:0:POS:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():110:0 |==> 1
+37:LVR:0:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():110:0 |==> -1
+38:LVR:0:POS:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():111:0 |==> 1
+39:LVR:0:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():111:0 |==> -1
+40:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():113:qtrap.stage(this, iterations.getCount()) |==> 0.0
+41:STD:<CALL>:<NO-OP>:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():114:iterations.incrementCount() |==> <NO-OP>
+42:LVR:POS:0:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 |==> 0
+43:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 |==> -4
+44:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 * t |==> 4 % t
+45:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 * t |==> 4 + t
+46:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 * t |==> 4 - t
+47:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 * t |==> 4 / t
+48:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 * t - oldt |==> 4 * t % oldt
+49:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 * t - oldt |==> 4 * t * oldt
+50:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 * t - oldt |==> 4 * t + oldt
+51:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:4 * t - oldt |==> 4 * t / oldt
+52:LVR:POS:0:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:3.0 |==> 0.0
+53:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:3.0 |==> -3.0
+54:AOR:/(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:(4 * t - oldt) / 3.0 |==> (4 * t - oldt) % 3.0
+55:AOR:/(double,double):*(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:(4 * t - oldt) / 3.0 |==> (4 * t - oldt) * 3.0
+56:AOR:/(double,double):+(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:(4 * t - oldt) / 3.0 |==> (4 * t - oldt) + 3.0
+57:AOR:/(double,double):-(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():115:(4 * t - oldt) / 3.0 |==> (4 * t - oldt) - 3.0
+58:ROR:>=(int,int):==(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():116:iterations.getCount() >= getMinimalIterationCount() |==> iterations.getCount() == getMinimalIterationCount()
+59:ROR:>=(int,int):>(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():116:iterations.getCount() >= getMinimalIterationCount() |==> iterations.getCount() > getMinimalIterationCount()
+60:ROR:>=(int,int):TRUE(int,int):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():116:iterations.getCount() >= getMinimalIterationCount() |==> true
+61:AOR:-(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():117:s - olds |==> s % olds
+62:AOR:-(double,double):*(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():117:s - olds |==> s * olds
+63:AOR:-(double,double):+(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():117:s - olds |==> s + olds
+64:AOR:-(double,double):/(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():117:s - olds |==> s / olds
+65:AOR:+(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:FastMath.abs(olds) + FastMath.abs(s) |==> FastMath.abs(olds) % FastMath.abs(s)
+66:AOR:+(double,double):*(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:FastMath.abs(olds) + FastMath.abs(s) |==> FastMath.abs(olds) * FastMath.abs(s)
+67:AOR:+(double,double):-(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:FastMath.abs(olds) + FastMath.abs(s) |==> FastMath.abs(olds) - FastMath.abs(s)
+68:AOR:+(double,double):/(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:FastMath.abs(olds) + FastMath.abs(s) |==> FastMath.abs(olds) / FastMath.abs(s)
+69:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) |==> getRelativeAccuracy() % (FastMath.abs(olds) + FastMath.abs(s))
+70:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) |==> getRelativeAccuracy() + (FastMath.abs(olds) + FastMath.abs(s))
+71:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) |==> getRelativeAccuracy() - (FastMath.abs(olds) + FastMath.abs(s))
+72:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) |==> getRelativeAccuracy() / (FastMath.abs(olds) + FastMath.abs(s))
+73:LVR:POS:0:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:0.5 |==> 0.0
+74:LVR:POS:NEG:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:0.5 |==> -0.5
+75:AOR:*(double,double):%(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) % 0.5
+76:AOR:*(double,double):+(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) + 0.5
+77:AOR:*(double,double):-(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) - 0.5
+78:AOR:*(double,double):/(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():119:getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) * 0.5 |==> getRelativeAccuracy() * (FastMath.abs(olds) + FastMath.abs(s)) / 0.5
+79:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:delta <= rLimit |==> delta < rLimit
+80:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:delta <= rLimit |==> delta == rLimit
+81:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:delta <= rLimit |==> true
+82:ROR:<=(double,double):<(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:delta <= getAbsoluteAccuracy() |==> delta < getAbsoluteAccuracy()
+83:ROR:<=(double,double):==(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:delta <= getAbsoluteAccuracy() |==> delta == getAbsoluteAccuracy()
+84:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:delta <= getAbsoluteAccuracy() |==> true
+85:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:(delta <= rLimit) || (delta <= getAbsoluteAccuracy()) |==> (delta <= rLimit) != (delta <= getAbsoluteAccuracy())
+86:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:(delta <= rLimit) || (delta <= getAbsoluteAccuracy()) |==> (delta <= rLimit)
+87:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:(delta <= rLimit) || (delta <= getAbsoluteAccuracy()) |==> (delta <= getAbsoluteAccuracy())
+88:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():120:(delta <= rLimit) || (delta <= getAbsoluteAccuracy()) |==> true
+89:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():121:return s; |==> <NO-OP>
+90:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():124:olds = s |==> <NO-OP>
+91:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math3.analysis.integration.SimpsonIntegrator@doIntegrate():125:oldt = t |==> <NO-OP>

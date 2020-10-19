@@ -1,0 +1,500 @@
+[
+  {
+    "v1": {
+      "line": "67",
+      "statement": "AbstractRealDistribution ()"
+    }
+  },
+  {
+    "v2": {
+      "line": "70",
+      "statement": "random = null"
+    }
+  },
+  {
+    "v3": {
+      "line": "76",
+      "statement": "AbstractRealDistribution (RandomGenerator rng)"
+    }
+  },
+  {
+    "v4": {
+      "line": "77",
+      "statement": "random = rng"
+    }
+  },
+  {
+    "v5": {
+      "line": "90",
+      "statement": "double cumulativeProbability(double x0, double x1)"
+    }
+  },
+  {
+    "v6": {
+      "line": "91",
+      "statement": "return probability(x0, x1)"
+    }
+  },
+  {
+    "v7": {
+      "line": "110",
+      "statement": "double probability(double x0, double x1)"
+    }
+  },
+  {
+    "v8": {
+      "line": "112",
+      "statement": "if (x0 > x1)"
+    }
+  },
+  {
+    "v9": {
+      "line": "113",
+      "statement": "throw new NumberIsTooLargeException(LocalizedFormats.LOWER_ENDPOINT_ABOVE_UPPER_ENDPOINT, x0, x1, true)"
+    }
+  },
+  {
+    "v10": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v11": {
+      "line": "116",
+      "statement": "return cumulativeProbability(x1) - cumulativeProbability(x0)"
+    }
+  },
+  {
+    "v12": {
+      "line": "128",
+      "statement": "double inverseCumulativeProbability(final double p)"
+    }
+  },
+  {
+    "v13": {
+      "line": "157",
+      "statement": "if (p < 0.0 || p > 1.0)"
+    }
+  },
+  {
+    "v14": {
+      "line": "158",
+      "statement": "throw new OutOfRangeException(p, 0, 1)"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "161",
+      "statement": "double lowerBound = getSupportLowerBound()"
+    }
+  },
+  {
+    "v17": {
+      "line": "162",
+      "statement": "if (p == 0.0)"
+    }
+  },
+  {
+    "v18": {
+      "line": "163",
+      "statement": "return lowerBound"
+    }
+  },
+  {
+    "v19": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v20": {
+      "line": "166",
+      "statement": "double upperBound = getSupportUpperBound()"
+    }
+  },
+  {
+    "v21": {
+      "line": "167",
+      "statement": "if (p == 1.0)"
+    }
+  },
+  {
+    "v22": {
+      "line": "168",
+      "statement": "return upperBound"
+    }
+  },
+  {
+    "v23": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v24": {
+      "line": "171",
+      "statement": "final double mu = getNumericalMean()"
+    }
+  },
+  {
+    "v25": {
+      "line": "172",
+      "statement": "final double sig = FastMath.sqrt(getNumericalVariance())"
+    }
+  },
+  {
+    "v26": {
+      "line": "173",
+      "statement": "final boolean chebyshevApplies"
+    }
+  },
+  {
+    "v27": {
+      "line": "174",
+      "statement": "chebyshevApplies = !(Double.isInfinite(mu) || Double.isNaN(mu) ||  Double.isInfinite(sig) || Double.isNaN(sig))"
+    }
+  },
+  {
+    "v28": {
+      "line": "177",
+      "statement": "if (lowerBound == Double.NEGATIVE_INFINITY)"
+    }
+  },
+  {
+    "v29": {
+      "line": "178",
+      "statement": "if (chebyshevApplies)"
+    }
+  },
+  {
+    "v30": {
+      "line": "179",
+      "statement": "lowerBound = mu - sig * FastMath.sqrt((1. - p) / p)"
+    }
+  },
+  {
+    "v31": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v32": {
+      "line": "181",
+      "statement": "lowerBound = -1.0"
+    }
+  },
+  {
+    "v33": {
+      "line": "182",
+      "statement": "while (cumulativeProbability(lowerBound) >= p)"
+    }
+  },
+  {
+    "v34": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v35": {
+      "line": "183",
+      "statement": "lowerBound *= 2.0"
+    }
+  },
+  {
+    "v36": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v37": {
+      "line": "188",
+      "statement": "if (upperBound == Double.POSITIVE_INFINITY)"
+    }
+  },
+  {
+    "v38": {
+      "line": "189",
+      "statement": "if (chebyshevApplies)"
+    }
+  },
+  {
+    "v39": {
+      "line": "190",
+      "statement": "upperBound = mu + sig * FastMath.sqrt(p / (1. - p))"
+    }
+  },
+  {
+    "v40": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v41": {
+      "line": "192",
+      "statement": "upperBound = 1.0"
+    }
+  },
+  {
+    "v42": {
+      "line": "193",
+      "statement": "while (cumulativeProbability(upperBound) < p)"
+    }
+  },
+  {
+    "v43": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v44": {
+      "line": "194",
+      "statement": "upperBound *= 2.0"
+    }
+  },
+  {
+    "v45": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v46": {
+      "line": "199",
+      "statement": "final UnivariateFunction toSolve = new UnivariateFunction() {  public double value(final double x) { return cumulativeProbability(x) - p; } }"
+    }
+  },
+  {
+    "v47": {
+      "line": "206",
+      "statement": "double x = UnivariateSolverUtils.solve(toSolve,  lowerBound,  upperBound,  getSolverAbsoluteAccuracy())"
+    }
+  },
+  {
+    "v48": {
+      "line": "211",
+      "statement": "if (!isSupportConnected())"
+    }
+  },
+  {
+    "v49": {
+      "line": "213",
+      "statement": "final double dx = getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v50": {
+      "line": "214",
+      "statement": "if (x - dx >= getSupportLowerBound())"
+    }
+  },
+  {
+    "v51": {
+      "line": "215",
+      "statement": "double px = cumulativeProbability(x)"
+    }
+  },
+  {
+    "v52": {
+      "line": "216",
+      "statement": "if (cumulativeProbability(x - dx) == px)"
+    }
+  },
+  {
+    "v53": {
+      "line": "217",
+      "statement": "upperBound = x"
+    }
+  },
+  {
+    "v54": {
+      "line": "218",
+      "statement": "while (upperBound - lowerBound > dx)"
+    }
+  },
+  {
+    "v55": {
+      "line": 0,
+      "statement": "\"endwhile"
+    }
+  },
+  {
+    "v56": {
+      "line": "219",
+      "statement": "final double midPoint = 0.5 * (lowerBound + upperBound)"
+    }
+  },
+  {
+    "v57": {
+      "line": "220",
+      "statement": "if (cumulativeProbability(midPoint) < px)"
+    }
+  },
+  {
+    "v58": {
+      "line": "221",
+      "statement": "lowerBound = midPoint"
+    }
+  },
+  {
+    "v59": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v60": {
+      "line": "223",
+      "statement": "upperBound = midPoint"
+    }
+  },
+  {
+    "v61": {
+      "line": "226",
+      "statement": "return upperBound"
+    }
+  },
+  {
+    "v62": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v63": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v64": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v65": {
+      "line": "230",
+      "statement": "return x"
+    }
+  },
+  {
+    "v66": {
+      "line": "240",
+      "statement": "double getSolverAbsoluteAccuracy()"
+    }
+  },
+  {
+    "v67": {
+      "line": "241",
+      "statement": "return solverAbsoluteAccuracy"
+    }
+  },
+  {
+    "v68": {
+      "line": "245",
+      "statement": "void reseedRandomGenerator(long seed)"
+    }
+  },
+  {
+    "v69": {
+      "line": "246",
+      "statement": "random.setSeed(seed)"
+    }
+  },
+  {
+    "v70": {
+      "line": "247",
+      "statement": "randomData.reSeed(seed)"
+    }
+  },
+  {
+    "v71": {
+      "line": "258",
+      "statement": "double sample()"
+    }
+  },
+  {
+    "v72": {
+      "line": "259",
+      "statement": "return inverseCumulativeProbability(random.nextDouble())"
+    }
+  },
+  {
+    "v73": {
+      "line": "268",
+      "statement": "double[] sample(int sampleSize)"
+    }
+  },
+  {
+    "v74": {
+      "line": "269",
+      "statement": "if (sampleSize <= 0)"
+    }
+  },
+  {
+    "v75": {
+      "line": "270",
+      "statement": "throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES, sampleSize)"
+    }
+  },
+  {
+    "v76": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v77": {
+      "line": "273",
+      "statement": "double[] out = new double[sampleSize"
+    }
+  },
+  {
+    "v78": {
+      "line": "274",
+      "statement": "for (  int i = 0 ; i < sampleSize ;   i++)"
+    }
+  },
+  {
+    "v81": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v82": {
+      "line": "275",
+      "statement": "out[i] = sample()"
+    }
+  },
+  {
+    "v83": {
+      "line": "277",
+      "statement": "return out"
+    }
+  },
+  {
+    "v84": {
+      "line": "286",
+      "statement": "double probability(double x)"
+    }
+  },
+  {
+    "v85": {
+      "line": "287",
+      "statement": "return 0d"
+    }
+  }
+]

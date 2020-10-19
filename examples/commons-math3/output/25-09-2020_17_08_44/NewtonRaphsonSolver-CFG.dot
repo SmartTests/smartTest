@@ -1,0 +1,40 @@
+digraph NewtonRaphsonSolver_CFG {
+  // graph-vertices
+  v1  [label="40:  NewtonRaphsonSolver ()"];
+  v2  [label="41:  this(DEFAULT_ABSOLUTE_ACCURACY)"];
+  v3  [label="48:  NewtonRaphsonSolver (double absoluteAccuracy)"];
+  v4  [label="49:  super(absoluteAccuracy)"];
+  v5  [label="66:  double solve(int maxEval, final UnivariateDifferentiableFunction f, final double min, final double max)"];
+  v6  [label="69:  return super.solve(maxEval, f, UnivariateSolverUtils.midpoint(min, max));"];
+  v7  [label="76:  double doSolve()"];
+  v8  [label="78:  final double startValue = getStartValue()"];
+  v9  [label="79:  final double absoluteAccuracy = getAbsoluteAccuracy()"];
+  v10  [label="81:  double x0 = startValue"];
+  v11  [label="82:  double x1"];
+  v12  [label="83:  while (true)"];
+  v13  [label="endwhile"];
+  v14  [label="84:  final DerivativeStructure y0 = computeObjectiveValueAndDerivative(x0)"];
+  v15  [label="85:  x1 = x0 - (y0.getValue() / y0.getPartialDerivative(1))"];
+  v16  [label="86:  if (FastMath.abs(x1 - x0) <= absoluteAccuracy)"];
+  v17  [label="87:  return x1;"];
+  v18  [label="endif"];
+  v19  [label="90:  x0 = x1"];
+  // graph-edges
+  v1 -> v2;
+  v3 -> v4;
+  v5 -> v6;
+  v7 -> v8;
+  v8 -> v9;
+  v9 -> v10;
+  v10 -> v11;
+  v11 -> v12;
+  v12 -> v13  [label="False"];
+  v12 -> v14  [label="True"];
+  v14 -> v15;
+  v15 -> v16;
+  v16 -> v17  [label="True"];
+  v16 -> v18  [label="False"];
+  v18 -> v19;
+  v19 -> v12;
+  // end-of-graph
+}

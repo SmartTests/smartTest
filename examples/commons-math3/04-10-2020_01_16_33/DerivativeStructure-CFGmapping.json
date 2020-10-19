@@ -1,0 +1,2282 @@
+[
+  {
+    "v1": {
+      "line": "76",
+      "statement": "DerivativeStructure (final DSCompiler compiler)"
+    }
+  },
+  {
+    "v2": {
+      "line": "78",
+      "statement": "this.data = new double[compiler.getSize()"
+    }
+  },
+  {
+    "v3": {
+      "line": "86",
+      "statement": "DerivativeStructure (final int parameters, final int order)"
+    }
+  },
+  {
+    "v4": {
+      "line": "88",
+      "statement": "this(DSCompiler.getCompiler(parameters, order))"
+    }
+  },
+  {
+    "v5": {
+      "line": "98",
+      "statement": "DerivativeStructure (final int parameters, final int order, final double value)"
+    }
+  },
+  {
+    "v6": {
+      "line": "100",
+      "statement": "this(parameters, order)"
+    }
+  },
+  {
+    "v7": {
+      "line": "101",
+      "statement": "this.data[0] = value"
+    }
+  },
+  {
+    "v8": {
+      "line": "116",
+      "statement": "DerivativeStructure (final int parameters, final int order,  final int index, final double value)"
+    }
+  },
+  {
+    "v9": {
+      "line": "119",
+      "statement": "this(parameters, order, value)"
+    }
+  },
+  {
+    "v10": {
+      "line": "121",
+      "statement": "if (index >= parameters)"
+    }
+  },
+  {
+    "v11": {
+      "line": "122",
+      "statement": "throw new NumberIsTooLargeException(index, parameters, false)"
+    }
+  },
+  {
+    "v12": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v13": {
+      "line": "125",
+      "statement": "if (order > 0)"
+    }
+  },
+  {
+    "v14": {
+      "line": "127",
+      "statement": "data[DSCompiler.getCompiler(index, order).getSize()] = 1.0"
+    }
+  },
+  {
+    "v15": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v16": {
+      "line": "140",
+      "statement": "DerivativeStructure (final double a1, final DerivativeStructure ds1,  final double a2, final DerivativeStructure ds2)"
+    }
+  },
+  {
+    "v17": {
+      "line": "143",
+      "statement": "this(ds1.compiler)"
+    }
+  },
+  {
+    "v18": {
+      "line": "144",
+      "statement": "compiler.checkCompatibility(ds2.compiler)"
+    }
+  },
+  {
+    "v19": {
+      "line": "145",
+      "statement": "compiler.linearCombination(a1, ds1.data, 0, a2, ds2.data, 0, data, 0)"
+    }
+  },
+  {
+    "v20": {
+      "line": "158",
+      "statement": "DerivativeStructure (final double a1, final DerivativeStructure ds1,  final double a2, final DerivativeStructure ds2,  final double a3, final DerivativeStructure ds3)"
+    }
+  },
+  {
+    "v21": {
+      "line": "162",
+      "statement": "this(ds1.compiler)"
+    }
+  },
+  {
+    "v22": {
+      "line": "163",
+      "statement": "compiler.checkCompatibility(ds2.compiler)"
+    }
+  },
+  {
+    "v23": {
+      "line": "164",
+      "statement": "compiler.checkCompatibility(ds3.compiler)"
+    }
+  },
+  {
+    "v24": {
+      "line": "165",
+      "statement": "compiler.linearCombination(a1, ds1.data, 0, a2, ds2.data, 0, a3, ds3.data, 0, data, 0)"
+    }
+  },
+  {
+    "v25": {
+      "line": "180",
+      "statement": "DerivativeStructure (final double a1, final DerivativeStructure ds1,  final double a2, final DerivativeStructure ds2,  final double a3, final DerivativeStructure ds3,  final double a4, final DerivativeStructure ds4)"
+    }
+  },
+  {
+    "v26": {
+      "line": "185",
+      "statement": "this(ds1.compiler)"
+    }
+  },
+  {
+    "v27": {
+      "line": "186",
+      "statement": "compiler.checkCompatibility(ds2.compiler)"
+    }
+  },
+  {
+    "v28": {
+      "line": "187",
+      "statement": "compiler.checkCompatibility(ds3.compiler)"
+    }
+  },
+  {
+    "v29": {
+      "line": "188",
+      "statement": "compiler.checkCompatibility(ds4.compiler)"
+    }
+  },
+  {
+    "v30": {
+      "line": "189",
+      "statement": "compiler.linearCombination(a1, ds1.data, 0, a2, ds2.data, 0,  a3, ds3.data, 0, a4, ds4.data, 0,  data, 0)"
+    }
+  },
+  {
+    "v31": {
+      "line": "204",
+      "statement": "DerivativeStructure (final int parameters, final int order, final double ... derivatives)"
+    }
+  },
+  {
+    "v32": {
+      "line": "206",
+      "statement": "this(parameters, order)"
+    }
+  },
+  {
+    "v33": {
+      "line": "207",
+      "statement": "if (derivatives.length != data.length)"
+    }
+  },
+  {
+    "v34": {
+      "line": "208",
+      "statement": "throw new DimensionMismatchException(derivatives.length, data.length)"
+    }
+  },
+  {
+    "v35": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v36": {
+      "line": "210",
+      "statement": "System.arraycopy(derivatives, 0, data, 0, data.length)"
+    }
+  },
+  {
+    "v37": {
+      "line": "216",
+      "statement": "DerivativeStructure (final DerivativeStructure ds)"
+    }
+  },
+  {
+    "v38": {
+      "line": "217",
+      "statement": "this.compiler = ds.compiler"
+    }
+  },
+  {
+    "v39": {
+      "line": "218",
+      "statement": "this.data = ds.data.clone()"
+    }
+  },
+  {
+    "v40": {
+      "line": "224",
+      "statement": "int getFreeParameters()"
+    }
+  },
+  {
+    "v41": {
+      "line": "225",
+      "statement": "return compiler.getFreeParameters()"
+    }
+  },
+  {
+    "v42": {
+      "line": "231",
+      "statement": "int getOrder()"
+    }
+  },
+  {
+    "v43": {
+      "line": "232",
+      "statement": "return compiler.getOrder()"
+    }
+  },
+  {
+    "v44": {
+      "line": "245",
+      "statement": "DerivativeStructure createConstant(final double c)"
+    }
+  },
+  {
+    "v45": {
+      "line": "246",
+      "statement": "return new DerivativeStructure(getFreeParameters(), getOrder(), c)"
+    }
+  },
+  {
+    "v46": {
+      "line": "252",
+      "statement": "double getReal()"
+    }
+  },
+  {
+    "v47": {
+      "line": "253",
+      "statement": "return data[0"
+    }
+  },
+  {
+    "v48": {
+      "line": "260",
+      "statement": "double getValue()"
+    }
+  },
+  {
+    "v49": {
+      "line": "261",
+      "statement": "return data[0"
+    }
+  },
+  {
+    "v50": {
+      "line": "274",
+      "statement": "double getPartialDerivative(final int ... orders)"
+    }
+  },
+  {
+    "v51": {
+      "line": "276",
+      "statement": "return data[compiler.getPartialDerivativeIndex(orders)"
+    }
+  },
+  {
+    "v52": {
+      "line": "283",
+      "statement": "double[] getAllDerivatives()"
+    }
+  },
+  {
+    "v53": {
+      "line": "284",
+      "statement": "return data.clone()"
+    }
+  },
+  {
+    "v54": {
+      "line": "290",
+      "statement": "DerivativeStructure add(final double a)"
+    }
+  },
+  {
+    "v55": {
+      "line": "291",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(this)"
+    }
+  },
+  {
+    "v56": {
+      "line": "292",
+      "statement": "ds.data[0] += a"
+    }
+  },
+  {
+    "v57": {
+      "line": "293",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v58": {
+      "line": "300",
+      "statement": "DerivativeStructure add(final DerivativeStructure a)"
+    }
+  },
+  {
+    "v59": {
+      "line": "302",
+      "statement": "compiler.checkCompatibility(a.compiler)"
+    }
+  },
+  {
+    "v60": {
+      "line": "303",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(this)"
+    }
+  },
+  {
+    "v61": {
+      "line": "304",
+      "statement": "compiler.add(data, 0, a.data, 0, ds.data, 0)"
+    }
+  },
+  {
+    "v62": {
+      "line": "305",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v63": {
+      "line": "311",
+      "statement": "DerivativeStructure subtract(final double a)"
+    }
+  },
+  {
+    "v64": {
+      "line": "312",
+      "statement": "return add(-a)"
+    }
+  },
+  {
+    "v65": {
+      "line": "319",
+      "statement": "DerivativeStructure subtract(final DerivativeStructure a)"
+    }
+  },
+  {
+    "v66": {
+      "line": "321",
+      "statement": "compiler.checkCompatibility(a.compiler)"
+    }
+  },
+  {
+    "v67": {
+      "line": "322",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(this)"
+    }
+  },
+  {
+    "v68": {
+      "line": "323",
+      "statement": "compiler.subtract(data, 0, a.data, 0, ds.data, 0)"
+    }
+  },
+  {
+    "v69": {
+      "line": "324",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v70": {
+      "line": "328",
+      "statement": "DerivativeStructure multiply(final int n)"
+    }
+  },
+  {
+    "v71": {
+      "line": "329",
+      "statement": "return multiply((double) n)"
+    }
+  },
+  {
+    "v72": {
+      "line": "335",
+      "statement": "DerivativeStructure multiply(final double a)"
+    }
+  },
+  {
+    "v73": {
+      "line": "336",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(this)"
+    }
+  },
+  {
+    "v74": {
+      "line": "337",
+      "statement": "for (  int i = 0 ; i < ds.data.length ;   ++i)"
+    }
+  },
+  {
+    "v77": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v78": {
+      "line": "338",
+      "statement": "ds.data[i] *= a"
+    }
+  },
+  {
+    "v79": {
+      "line": "340",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v80": {
+      "line": "347",
+      "statement": "DerivativeStructure multiply(final DerivativeStructure a)"
+    }
+  },
+  {
+    "v81": {
+      "line": "349",
+      "statement": "compiler.checkCompatibility(a.compiler)"
+    }
+  },
+  {
+    "v82": {
+      "line": "350",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v83": {
+      "line": "351",
+      "statement": "compiler.multiply(data, 0, a.data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v84": {
+      "line": "352",
+      "statement": "return result"
+    }
+  },
+  {
+    "v85": {
+      "line": "358",
+      "statement": "DerivativeStructure divide(final double a)"
+    }
+  },
+  {
+    "v86": {
+      "line": "359",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(this)"
+    }
+  },
+  {
+    "v87": {
+      "line": "360",
+      "statement": "for (  int i = 0 ; i < ds.data.length ;   ++i)"
+    }
+  },
+  {
+    "v90": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v91": {
+      "line": "361",
+      "statement": "ds.data[i] /= a"
+    }
+  },
+  {
+    "v92": {
+      "line": "363",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v93": {
+      "line": "370",
+      "statement": "DerivativeStructure divide(final DerivativeStructure a)"
+    }
+  },
+  {
+    "v94": {
+      "line": "372",
+      "statement": "compiler.checkCompatibility(a.compiler)"
+    }
+  },
+  {
+    "v95": {
+      "line": "373",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v96": {
+      "line": "374",
+      "statement": "compiler.divide(data, 0, a.data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v97": {
+      "line": "375",
+      "statement": "return result"
+    }
+  },
+  {
+    "v98": {
+      "line": "379",
+      "statement": "DerivativeStructure remainder(final double a)"
+    }
+  },
+  {
+    "v99": {
+      "line": "380",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(this)"
+    }
+  },
+  {
+    "v100": {
+      "line": "381",
+      "statement": "ds.data[0] = FastMath.IEEEremainder(ds.data[0], a)"
+    }
+  },
+  {
+    "v101": {
+      "line": "382",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v102": {
+      "line": "390",
+      "statement": "DerivativeStructure remainder(final DerivativeStructure a)"
+    }
+  },
+  {
+    "v103": {
+      "line": "392",
+      "statement": "compiler.checkCompatibility(a.compiler)"
+    }
+  },
+  {
+    "v104": {
+      "line": "393",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v105": {
+      "line": "394",
+      "statement": "compiler.remainder(data, 0, a.data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v106": {
+      "line": "395",
+      "statement": "return result"
+    }
+  },
+  {
+    "v107": {
+      "line": "399",
+      "statement": "DerivativeStructure negate()"
+    }
+  },
+  {
+    "v108": {
+      "line": "400",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v109": {
+      "line": "401",
+      "statement": "for (  int i = 0 ; i < ds.data.length ;   ++i)"
+    }
+  },
+  {
+    "v112": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v113": {
+      "line": "402",
+      "statement": "ds.data[i] = -data[i"
+    }
+  },
+  {
+    "v114": {
+      "line": "404",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v115": {
+      "line": "410",
+      "statement": "DerivativeStructure abs()"
+    }
+  },
+  {
+    "v116": {
+      "line": "411",
+      "statement": "if (Double.doubleToLongBits(data[0]) < 0)"
+    }
+  },
+  {
+    "v117": {
+      "line": "413",
+      "statement": "return negate()"
+    }
+  },
+  {
+    "v118": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v119": {
+      "line": "415",
+      "statement": "return this"
+    }
+  },
+  {
+    "v120": {
+      "line": "422",
+      "statement": "DerivativeStructure ceil()"
+    }
+  },
+  {
+    "v121": {
+      "line": "423",
+      "statement": "return new DerivativeStructure(compiler.getFreeParameters(),  compiler.getOrder(),  FastMath.ceil(data[0]))"
+    }
+  },
+  {
+    "v122": {
+      "line": "431",
+      "statement": "DerivativeStructure floor()"
+    }
+  },
+  {
+    "v123": {
+      "line": "432",
+      "statement": "return new DerivativeStructure(compiler.getFreeParameters(),  compiler.getOrder(),  FastMath.floor(data[0]))"
+    }
+  },
+  {
+    "v124": {
+      "line": "440",
+      "statement": "DerivativeStructure rint()"
+    }
+  },
+  {
+    "v125": {
+      "line": "441",
+      "statement": "return new DerivativeStructure(compiler.getFreeParameters(),  compiler.getOrder(),  FastMath.rint(data[0]))"
+    }
+  },
+  {
+    "v126": {
+      "line": "447",
+      "statement": "long round()"
+    }
+  },
+  {
+    "v127": {
+      "line": "448",
+      "statement": "return FastMath.round(data[0])"
+    }
+  },
+  {
+    "v128": {
+      "line": "454",
+      "statement": "DerivativeStructure signum()"
+    }
+  },
+  {
+    "v129": {
+      "line": "455",
+      "statement": "return new DerivativeStructure(compiler.getFreeParameters(),  compiler.getOrder(),  FastMath.signum(data[0]))"
+    }
+  },
+  {
+    "v130": {
+      "line": "463",
+      "statement": "DerivativeStructure copySign(final DerivativeStructure sign)"
+    }
+  },
+  {
+    "v131": {
+      "line": "464",
+      "statement": "long m = Double.doubleToLongBits(data[0])"
+    }
+  },
+  {
+    "v132": {
+      "line": "465",
+      "statement": "long s = Double.doubleToLongBits(sign.data[0])"
+    }
+  },
+  {
+    "v133": {
+      "line": "466",
+      "statement": "if ((m >= 0 && s >= 0) || (m < 0 && s < 0))"
+    }
+  },
+  {
+    "v134": {
+      "line": "467",
+      "statement": "return this"
+    }
+  },
+  {
+    "v135": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v136": {
+      "line": "469",
+      "statement": "return negate()"
+    }
+  },
+  {
+    "v137": {
+      "line": "475",
+      "statement": "DerivativeStructure copySign(final double sign)"
+    }
+  },
+  {
+    "v138": {
+      "line": "476",
+      "statement": "long m = Double.doubleToLongBits(data[0])"
+    }
+  },
+  {
+    "v139": {
+      "line": "477",
+      "statement": "long s = Double.doubleToLongBits(sign)"
+    }
+  },
+  {
+    "v140": {
+      "line": "478",
+      "statement": "if ((m >= 0 && s >= 0) || (m < 0 && s < 0))"
+    }
+  },
+  {
+    "v141": {
+      "line": "479",
+      "statement": "return this"
+    }
+  },
+  {
+    "v142": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v143": {
+      "line": "481",
+      "statement": "return negate()"
+    }
+  },
+  {
+    "v144": {
+      "line": "492",
+      "statement": "int getExponent()"
+    }
+  },
+  {
+    "v145": {
+      "line": "493",
+      "statement": "return FastMath.getExponent(data[0])"
+    }
+  },
+  {
+    "v146": {
+      "line": "499",
+      "statement": "DerivativeStructure scalb(final int n)"
+    }
+  },
+  {
+    "v147": {
+      "line": "500",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v148": {
+      "line": "501",
+      "statement": "for (  int i = 0 ; i < ds.data.length ;   ++i)"
+    }
+  },
+  {
+    "v151": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v152": {
+      "line": "502",
+      "statement": "ds.data[i] = FastMath.scalb(data[i], n)"
+    }
+  },
+  {
+    "v153": {
+      "line": "504",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v154": {
+      "line": "512",
+      "statement": "DerivativeStructure hypot(final DerivativeStructure y)"
+    }
+  },
+  {
+    "v155": {
+      "line": "515",
+      "statement": "compiler.checkCompatibility(y.compiler)"
+    }
+  },
+  {
+    "v156": {
+      "line": "517",
+      "statement": "if (Double.isInfinite(data[0]) || Double.isInfinite(y.data[0]))"
+    }
+  },
+  {
+    "v157": {
+      "line": "518",
+      "statement": "return new DerivativeStructure(compiler.getFreeParameters(),  compiler.getFreeParameters(),  Double.POSITIVE_INFINITY)"
+    }
+  },
+  {
+    "v158": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v159": {
+      "line": "521",
+      "statement": "if (Double.isNaN(data[0]) || Double.isNaN(y.data[0]))"
+    }
+  },
+  {
+    "v160": {
+      "line": "522",
+      "statement": "return new DerivativeStructure(compiler.getFreeParameters(),  compiler.getFreeParameters(),  Double.NaN)"
+    }
+  },
+  {
+    "v161": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v162": {
+      "line": "527",
+      "statement": "final int expX = getExponent()"
+    }
+  },
+  {
+    "v163": {
+      "line": "528",
+      "statement": "final int expY = y.getExponent()"
+    }
+  },
+  {
+    "v164": {
+      "line": "529",
+      "statement": "if (expX > expY + 27)"
+    }
+  },
+  {
+    "v165": {
+      "line": "531",
+      "statement": "return abs()"
+    }
+  },
+  {
+    "v166": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v167": {
+      "line": "532",
+      "statement": "if (expY > expX + 27)"
+    }
+  },
+  {
+    "v168": {
+      "line": "534",
+      "statement": "return y.abs()"
+    }
+  },
+  {
+    "v169": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v170": {
+      "line": "538",
+      "statement": "final int middleExp = (expX + expY) / 2"
+    }
+  },
+  {
+    "v171": {
+      "line": "541",
+      "statement": "final DerivativeStructure scaledX = scalb(-middleExp)"
+    }
+  },
+  {
+    "v172": {
+      "line": "542",
+      "statement": "final DerivativeStructure scaledY = y.scalb(-middleExp)"
+    }
+  },
+  {
+    "v173": {
+      "line": "545",
+      "statement": "final DerivativeStructure scaledH = scaledX.multiply(scaledX).add(scaledY.multiply(scaledY)).sqrt()"
+    }
+  },
+  {
+    "v174": {
+      "line": "549",
+      "statement": "return scaledH.scalb(middleExp)"
+    }
+  },
+  {
+    "v175": {
+      "line": "573",
+      "statement": "DerivativeStructure hypot(final DerivativeStructure x, final DerivativeStructure y)"
+    }
+  },
+  {
+    "v176": {
+      "line": "575",
+      "statement": "return x.hypot(y)"
+    }
+  },
+  {
+    "v177": {
+      "line": "586",
+      "statement": "DerivativeStructure compose(final double ... f)"
+    }
+  },
+  {
+    "v178": {
+      "line": "588",
+      "statement": "if (f.length != getOrder() + 1)"
+    }
+  },
+  {
+    "v179": {
+      "line": "589",
+      "statement": "throw new DimensionMismatchException(f.length, getOrder() + 1)"
+    }
+  },
+  {
+    "v180": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v181": {
+      "line": "591",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v182": {
+      "line": "592",
+      "statement": "compiler.compose(data, 0, f, result.data, 0)"
+    }
+  },
+  {
+    "v183": {
+      "line": "593",
+      "statement": "return result"
+    }
+  },
+  {
+    "v184": {
+      "line": "597",
+      "statement": "DerivativeStructure reciprocal()"
+    }
+  },
+  {
+    "v185": {
+      "line": "598",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v186": {
+      "line": "599",
+      "statement": "compiler.pow(data, 0, -1, result.data, 0)"
+    }
+  },
+  {
+    "v187": {
+      "line": "600",
+      "statement": "return result"
+    }
+  },
+  {
+    "v188": {
+      "line": "606",
+      "statement": "DerivativeStructure sqrt()"
+    }
+  },
+  {
+    "v189": {
+      "line": "607",
+      "statement": "return rootN(2)"
+    }
+  },
+  {
+    "v190": {
+      "line": "613",
+      "statement": "DerivativeStructure cbrt()"
+    }
+  },
+  {
+    "v191": {
+      "line": "614",
+      "statement": "return rootN(3)"
+    }
+  },
+  {
+    "v192": {
+      "line": "620",
+      "statement": "DerivativeStructure rootN(final int n)"
+    }
+  },
+  {
+    "v193": {
+      "line": "621",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v194": {
+      "line": "622",
+      "statement": "compiler.rootN(data, 0, n, result.data, 0)"
+    }
+  },
+  {
+    "v195": {
+      "line": "623",
+      "statement": "return result"
+    }
+  },
+  {
+    "v196": {
+      "line": "627",
+      "statement": "Field<DerivativeStructure> getField()"
+    }
+  },
+  {
+    "v197": {
+      "line": "628",
+      "statement": "return new Field<DerivativeStructure>() {  /** {@inheritDoc} */ public DerivativeStructure getZero() { return new DerivativeStructure(compiler.getFreeParameters(), compiler.getOrder(), 0.0); }  /** {@inheritDoc} */ public DerivativeStructure getOne() { return new DerivativeStructure(compiler.getFreeParameters(), compiler.getOrder(), 1.0); }  /** {@inheritDoc} */ public Class<? extends FieldElement<DerivativeStructure>> getRuntimeClass() { return DerivativeStructure.class; }  }"
+    }
+  },
+  {
+    "v198": {
+      "line": "654",
+      "statement": "DerivativeStructure pow(final double a, final DerivativeStructure x)"
+    }
+  },
+  {
+    "v199": {
+      "line": "655",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(x.compiler)"
+    }
+  },
+  {
+    "v200": {
+      "line": "656",
+      "statement": "x.compiler.pow(a, x.data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v201": {
+      "line": "657",
+      "statement": "return result"
+    }
+  },
+  {
+    "v202": {
+      "line": "663",
+      "statement": "DerivativeStructure pow(final double p)"
+    }
+  },
+  {
+    "v203": {
+      "line": "664",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v204": {
+      "line": "665",
+      "statement": "compiler.pow(data, 0, p, result.data, 0)"
+    }
+  },
+  {
+    "v205": {
+      "line": "666",
+      "statement": "return result"
+    }
+  },
+  {
+    "v206": {
+      "line": "672",
+      "statement": "DerivativeStructure pow(final int n)"
+    }
+  },
+  {
+    "v207": {
+      "line": "673",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v208": {
+      "line": "674",
+      "statement": "compiler.pow(data, 0, n, result.data, 0)"
+    }
+  },
+  {
+    "v209": {
+      "line": "675",
+      "statement": "return result"
+    }
+  },
+  {
+    "v210": {
+      "line": "683",
+      "statement": "DerivativeStructure pow(final DerivativeStructure e)"
+    }
+  },
+  {
+    "v211": {
+      "line": "685",
+      "statement": "compiler.checkCompatibility(e.compiler)"
+    }
+  },
+  {
+    "v212": {
+      "line": "686",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v213": {
+      "line": "687",
+      "statement": "compiler.pow(data, 0, e.data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v214": {
+      "line": "688",
+      "statement": "return result"
+    }
+  },
+  {
+    "v215": {
+      "line": "694",
+      "statement": "DerivativeStructure exp()"
+    }
+  },
+  {
+    "v216": {
+      "line": "695",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v217": {
+      "line": "696",
+      "statement": "compiler.exp(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v218": {
+      "line": "697",
+      "statement": "return result"
+    }
+  },
+  {
+    "v219": {
+      "line": "703",
+      "statement": "DerivativeStructure expm1()"
+    }
+  },
+  {
+    "v220": {
+      "line": "704",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v221": {
+      "line": "705",
+      "statement": "compiler.expm1(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v222": {
+      "line": "706",
+      "statement": "return result"
+    }
+  },
+  {
+    "v223": {
+      "line": "712",
+      "statement": "DerivativeStructure log()"
+    }
+  },
+  {
+    "v224": {
+      "line": "713",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v225": {
+      "line": "714",
+      "statement": "compiler.log(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v226": {
+      "line": "715",
+      "statement": "return result"
+    }
+  },
+  {
+    "v227": {
+      "line": "721",
+      "statement": "DerivativeStructure log1p()"
+    }
+  },
+  {
+    "v228": {
+      "line": "722",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v229": {
+      "line": "723",
+      "statement": "compiler.log1p(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v230": {
+      "line": "724",
+      "statement": "return result"
+    }
+  },
+  {
+    "v231": {
+      "line": "730",
+      "statement": "DerivativeStructure log10()"
+    }
+  },
+  {
+    "v232": {
+      "line": "731",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v233": {
+      "line": "732",
+      "statement": "compiler.log10(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v234": {
+      "line": "733",
+      "statement": "return result"
+    }
+  },
+  {
+    "v235": {
+      "line": "739",
+      "statement": "DerivativeStructure cos()"
+    }
+  },
+  {
+    "v236": {
+      "line": "740",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v237": {
+      "line": "741",
+      "statement": "compiler.cos(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v238": {
+      "line": "742",
+      "statement": "return result"
+    }
+  },
+  {
+    "v239": {
+      "line": "748",
+      "statement": "DerivativeStructure sin()"
+    }
+  },
+  {
+    "v240": {
+      "line": "749",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v241": {
+      "line": "750",
+      "statement": "compiler.sin(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v242": {
+      "line": "751",
+      "statement": "return result"
+    }
+  },
+  {
+    "v243": {
+      "line": "757",
+      "statement": "DerivativeStructure tan()"
+    }
+  },
+  {
+    "v244": {
+      "line": "758",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v245": {
+      "line": "759",
+      "statement": "compiler.tan(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v246": {
+      "line": "760",
+      "statement": "return result"
+    }
+  },
+  {
+    "v247": {
+      "line": "766",
+      "statement": "DerivativeStructure acos()"
+    }
+  },
+  {
+    "v248": {
+      "line": "767",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v249": {
+      "line": "768",
+      "statement": "compiler.acos(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v250": {
+      "line": "769",
+      "statement": "return result"
+    }
+  },
+  {
+    "v251": {
+      "line": "775",
+      "statement": "DerivativeStructure asin()"
+    }
+  },
+  {
+    "v252": {
+      "line": "776",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v253": {
+      "line": "777",
+      "statement": "compiler.asin(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v254": {
+      "line": "778",
+      "statement": "return result"
+    }
+  },
+  {
+    "v255": {
+      "line": "784",
+      "statement": "DerivativeStructure atan()"
+    }
+  },
+  {
+    "v256": {
+      "line": "785",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v257": {
+      "line": "786",
+      "statement": "compiler.atan(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v258": {
+      "line": "787",
+      "statement": "return result"
+    }
+  },
+  {
+    "v259": {
+      "line": "793",
+      "statement": "DerivativeStructure atan2(final DerivativeStructure x)"
+    }
+  },
+  {
+    "v260": {
+      "line": "795",
+      "statement": "compiler.checkCompatibility(x.compiler)"
+    }
+  },
+  {
+    "v261": {
+      "line": "796",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v262": {
+      "line": "797",
+      "statement": "compiler.atan2(data, 0, x.data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v263": {
+      "line": "798",
+      "statement": "return result"
+    }
+  },
+  {
+    "v264": {
+      "line": "809",
+      "statement": "DerivativeStructure atan2(final DerivativeStructure y, final DerivativeStructure x)"
+    }
+  },
+  {
+    "v265": {
+      "line": "811",
+      "statement": "return y.atan2(x)"
+    }
+  },
+  {
+    "v266": {
+      "line": "817",
+      "statement": "DerivativeStructure cosh()"
+    }
+  },
+  {
+    "v267": {
+      "line": "818",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v268": {
+      "line": "819",
+      "statement": "compiler.cosh(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v269": {
+      "line": "820",
+      "statement": "return result"
+    }
+  },
+  {
+    "v270": {
+      "line": "826",
+      "statement": "DerivativeStructure sinh()"
+    }
+  },
+  {
+    "v271": {
+      "line": "827",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v272": {
+      "line": "828",
+      "statement": "compiler.sinh(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v273": {
+      "line": "829",
+      "statement": "return result"
+    }
+  },
+  {
+    "v274": {
+      "line": "835",
+      "statement": "DerivativeStructure tanh()"
+    }
+  },
+  {
+    "v275": {
+      "line": "836",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v276": {
+      "line": "837",
+      "statement": "compiler.tanh(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v277": {
+      "line": "838",
+      "statement": "return result"
+    }
+  },
+  {
+    "v278": {
+      "line": "844",
+      "statement": "DerivativeStructure acosh()"
+    }
+  },
+  {
+    "v279": {
+      "line": "845",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v280": {
+      "line": "846",
+      "statement": "compiler.acosh(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v281": {
+      "line": "847",
+      "statement": "return result"
+    }
+  },
+  {
+    "v282": {
+      "line": "853",
+      "statement": "DerivativeStructure asinh()"
+    }
+  },
+  {
+    "v283": {
+      "line": "854",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v284": {
+      "line": "855",
+      "statement": "compiler.asinh(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v285": {
+      "line": "856",
+      "statement": "return result"
+    }
+  },
+  {
+    "v286": {
+      "line": "862",
+      "statement": "DerivativeStructure atanh()"
+    }
+  },
+  {
+    "v287": {
+      "line": "863",
+      "statement": "final DerivativeStructure result = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v288": {
+      "line": "864",
+      "statement": "compiler.atanh(data, 0, result.data, 0)"
+    }
+  },
+  {
+    "v289": {
+      "line": "865",
+      "statement": "return result"
+    }
+  },
+  {
+    "v290": {
+      "line": "871",
+      "statement": "DerivativeStructure toDegrees()"
+    }
+  },
+  {
+    "v291": {
+      "line": "872",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v292": {
+      "line": "873",
+      "statement": "for (  int i = 0 ; i < ds.data.length ;   ++i)"
+    }
+  },
+  {
+    "v295": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v296": {
+      "line": "874",
+      "statement": "ds.data[i] = FastMath.toDegrees(data[i])"
+    }
+  },
+  {
+    "v297": {
+      "line": "876",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v298": {
+      "line": "882",
+      "statement": "DerivativeStructure toRadians()"
+    }
+  },
+  {
+    "v299": {
+      "line": "883",
+      "statement": "final DerivativeStructure ds = new DerivativeStructure(compiler)"
+    }
+  },
+  {
+    "v300": {
+      "line": "884",
+      "statement": "for (  int i = 0 ; i < ds.data.length ;   ++i)"
+    }
+  },
+  {
+    "v303": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v304": {
+      "line": "885",
+      "statement": "ds.data[i] = FastMath.toRadians(data[i])"
+    }
+  },
+  {
+    "v305": {
+      "line": "887",
+      "statement": "return ds"
+    }
+  },
+  {
+    "v306": {
+      "line": "895",
+      "statement": "double taylor(final double ... delta)"
+    }
+  },
+  {
+    "v307": {
+      "line": "896",
+      "statement": "return compiler.taylor(data, 0, delta)"
+    }
+  },
+  {
+    "v308": {
+      "line": "904",
+      "statement": "DerivativeStructure linearCombination(final DerivativeStructure[] a, final DerivativeStructure[] b)"
+    }
+  },
+  {
+    "v309": {
+      "line": "908",
+      "statement": "final double[] aDouble = new double[a.length"
+    }
+  },
+  {
+    "v310": {
+      "line": "909",
+      "statement": "for (  int i = 0 ; i < a.length ;   ++i)"
+    }
+  },
+  {
+    "v313": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v314": {
+      "line": "910",
+      "statement": "aDouble[i] = a[i].getValue()"
+    }
+  },
+  {
+    "v315": {
+      "line": "912",
+      "statement": "final double[] bDouble = new double[b.length"
+    }
+  },
+  {
+    "v316": {
+      "line": "913",
+      "statement": "for (  int i = 0 ; i < b.length ;   ++i)"
+    }
+  },
+  {
+    "v319": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v320": {
+      "line": "914",
+      "statement": "bDouble[i] = b[i].getValue()"
+    }
+  },
+  {
+    "v321": {
+      "line": "916",
+      "statement": "final double accurateValue = MathArrays.linearCombination(aDouble, bDouble)"
+    }
+  },
+  {
+    "v322": {
+      "line": "919",
+      "statement": "DerivativeStructure simpleValue = a[0].getField().getZero()"
+    }
+  },
+  {
+    "v323": {
+      "line": "920",
+      "statement": "for (  int i = 0 ; i < a.length ;   ++i)"
+    }
+  },
+  {
+    "v326": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v327": {
+      "line": "921",
+      "statement": "simpleValue = simpleValue.add(a[i].multiply(b[i]))"
+    }
+  },
+  {
+    "v328": {
+      "line": "925",
+      "statement": "final double[] all = simpleValue.getAllDerivatives()"
+    }
+  },
+  {
+    "v329": {
+      "line": "926",
+      "statement": "all[0] = accurateValue"
+    }
+  },
+  {
+    "v330": {
+      "line": "927",
+      "statement": "return new DerivativeStructure(simpleValue.getFreeParameters(), simpleValue.getOrder(), all)"
+    }
+  },
+  {
+    "v331": {
+      "line": "936",
+      "statement": "DerivativeStructure linearCombination(final double[] a, final DerivativeStructure[] b)"
+    }
+  },
+  {
+    "v332": {
+      "line": "940",
+      "statement": "final double[] bDouble = new double[b.length"
+    }
+  },
+  {
+    "v333": {
+      "line": "941",
+      "statement": "for (  int i = 0 ; i < b.length ;   ++i)"
+    }
+  },
+  {
+    "v336": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v337": {
+      "line": "942",
+      "statement": "bDouble[i] = b[i].getValue()"
+    }
+  },
+  {
+    "v338": {
+      "line": "944",
+      "statement": "final double accurateValue = MathArrays.linearCombination(a, bDouble)"
+    }
+  },
+  {
+    "v339": {
+      "line": "947",
+      "statement": "DerivativeStructure simpleValue = b[0].getField().getZero()"
+    }
+  },
+  {
+    "v340": {
+      "line": "948",
+      "statement": "for (  int i = 0 ; i < a.length ;   ++i)"
+    }
+  },
+  {
+    "v343": {
+      "line": 0,
+      "statement": "\"endfor"
+    }
+  },
+  {
+    "v344": {
+      "line": "949",
+      "statement": "simpleValue = simpleValue.add(b[i].multiply(a[i]))"
+    }
+  },
+  {
+    "v345": {
+      "line": "953",
+      "statement": "final double[] all = simpleValue.getAllDerivatives()"
+    }
+  },
+  {
+    "v346": {
+      "line": "954",
+      "statement": "all[0] = accurateValue"
+    }
+  },
+  {
+    "v347": {
+      "line": "955",
+      "statement": "return new DerivativeStructure(simpleValue.getFreeParameters(), simpleValue.getOrder(), all)"
+    }
+  },
+  {
+    "v348": {
+      "line": "964",
+      "statement": "DerivativeStructure linearCombination(final DerivativeStructure a1, final DerivativeStructure b1,  final DerivativeStructure a2, final DerivativeStructure b2)"
+    }
+  },
+  {
+    "v349": {
+      "line": "969",
+      "statement": "final double accurateValue = MathArrays.linearCombination(a1.getValue(), b1.getValue(), a2.getValue(), b2.getValue())"
+    }
+  },
+  {
+    "v350": {
+      "line": "973",
+      "statement": "final DerivativeStructure simpleValue = a1.multiply(b1).add(a2.multiply(b2))"
+    }
+  },
+  {
+    "v351": {
+      "line": "976",
+      "statement": "final double[] all = simpleValue.getAllDerivatives()"
+    }
+  },
+  {
+    "v352": {
+      "line": "977",
+      "statement": "all[0] = accurateValue"
+    }
+  },
+  {
+    "v353": {
+      "line": "978",
+      "statement": "return new DerivativeStructure(getFreeParameters(), getOrder(), all)"
+    }
+  },
+  {
+    "v354": {
+      "line": "987",
+      "statement": "DerivativeStructure linearCombination(final double a1, final DerivativeStructure b1,  final double a2, final DerivativeStructure b2)"
+    }
+  },
+  {
+    "v355": {
+      "line": "992",
+      "statement": "final double accurateValue = MathArrays.linearCombination(a1, b1.getValue(), a2, b2.getValue())"
+    }
+  },
+  {
+    "v356": {
+      "line": "996",
+      "statement": "final DerivativeStructure simpleValue = b1.multiply(a1).add(b2.multiply(a2))"
+    }
+  },
+  {
+    "v357": {
+      "line": "999",
+      "statement": "final double[] all = simpleValue.getAllDerivatives()"
+    }
+  },
+  {
+    "v358": {
+      "line": "1000",
+      "statement": "all[0] = accurateValue"
+    }
+  },
+  {
+    "v359": {
+      "line": "1001",
+      "statement": "return new DerivativeStructure(getFreeParameters(), getOrder(), all)"
+    }
+  },
+  {
+    "v360": {
+      "line": "1010",
+      "statement": "DerivativeStructure linearCombination(final DerivativeStructure a1, final DerivativeStructure b1,  final DerivativeStructure a2, final DerivativeStructure b2,  final DerivativeStructure a3, final DerivativeStructure b3)"
+    }
+  },
+  {
+    "v361": {
+      "line": "1016",
+      "statement": "final double accurateValue = MathArrays.linearCombination(a1.getValue(), b1.getValue(), a2.getValue(), b2.getValue(), a3.getValue(), b3.getValue())"
+    }
+  },
+  {
+    "v362": {
+      "line": "1021",
+      "statement": "final DerivativeStructure simpleValue = a1.multiply(b1).add(a2.multiply(b2)).add(a3.multiply(b3))"
+    }
+  },
+  {
+    "v363": {
+      "line": "1024",
+      "statement": "final double[] all = simpleValue.getAllDerivatives()"
+    }
+  },
+  {
+    "v364": {
+      "line": "1025",
+      "statement": "all[0] = accurateValue"
+    }
+  },
+  {
+    "v365": {
+      "line": "1026",
+      "statement": "return new DerivativeStructure(getFreeParameters(), getOrder(), all)"
+    }
+  },
+  {
+    "v366": {
+      "line": "1035",
+      "statement": "DerivativeStructure linearCombination(final double a1, final DerivativeStructure b1,  final double a2, final DerivativeStructure b2,  final double a3, final DerivativeStructure b3)"
+    }
+  },
+  {
+    "v367": {
+      "line": "1041",
+      "statement": "final double accurateValue = MathArrays.linearCombination(a1, b1.getValue(), a2, b2.getValue(), a3, b3.getValue())"
+    }
+  },
+  {
+    "v368": {
+      "line": "1046",
+      "statement": "final DerivativeStructure simpleValue = b1.multiply(a1).add(b2.multiply(a2)).add(b3.multiply(a3))"
+    }
+  },
+  {
+    "v369": {
+      "line": "1049",
+      "statement": "final double[] all = simpleValue.getAllDerivatives()"
+    }
+  },
+  {
+    "v370": {
+      "line": "1050",
+      "statement": "all[0] = accurateValue"
+    }
+  },
+  {
+    "v371": {
+      "line": "1051",
+      "statement": "return new DerivativeStructure(getFreeParameters(), getOrder(), all)"
+    }
+  },
+  {
+    "v372": {
+      "line": "1060",
+      "statement": "DerivativeStructure linearCombination(final DerivativeStructure a1, final DerivativeStructure b1,  final DerivativeStructure a2, final DerivativeStructure b2,  final DerivativeStructure a3, final DerivativeStructure b3,  final DerivativeStructure a4, final DerivativeStructure b4)"
+    }
+  },
+  {
+    "v373": {
+      "line": "1067",
+      "statement": "final double accurateValue = MathArrays.linearCombination(a1.getValue(), b1.getValue(), a2.getValue(), b2.getValue(), a3.getValue(), b3.getValue(), a4.getValue(), b4.getValue())"
+    }
+  },
+  {
+    "v374": {
+      "line": "1073",
+      "statement": "final DerivativeStructure simpleValue = a1.multiply(b1).add(a2.multiply(b2)).add(a3.multiply(b3)).add(a4.multiply(b4))"
+    }
+  },
+  {
+    "v375": {
+      "line": "1076",
+      "statement": "final double[] all = simpleValue.getAllDerivatives()"
+    }
+  },
+  {
+    "v376": {
+      "line": "1077",
+      "statement": "all[0] = accurateValue"
+    }
+  },
+  {
+    "v377": {
+      "line": "1078",
+      "statement": "return new DerivativeStructure(getFreeParameters(), getOrder(), all)"
+    }
+  },
+  {
+    "v378": {
+      "line": "1087",
+      "statement": "DerivativeStructure linearCombination(final double a1, final DerivativeStructure b1,  final double a2, final DerivativeStructure b2,  final double a3, final DerivativeStructure b3,  final double a4, final DerivativeStructure b4)"
+    }
+  },
+  {
+    "v379": {
+      "line": "1094",
+      "statement": "final double accurateValue = MathArrays.linearCombination(a1, b1.getValue(), a2, b2.getValue(), a3, b3.getValue(), a4, b4.getValue())"
+    }
+  },
+  {
+    "v380": {
+      "line": "1100",
+      "statement": "final DerivativeStructure simpleValue = b1.multiply(a1).add(b2.multiply(a2)).add(b3.multiply(a3)).add(b4.multiply(a4))"
+    }
+  },
+  {
+    "v381": {
+      "line": "1103",
+      "statement": "final double[] all = simpleValue.getAllDerivatives()"
+    }
+  },
+  {
+    "v382": {
+      "line": "1104",
+      "statement": "all[0] = accurateValue"
+    }
+  },
+  {
+    "v383": {
+      "line": "1105",
+      "statement": "return new DerivativeStructure(getFreeParameters(), getOrder(), all)"
+    }
+  },
+  {
+    "v384": {
+      "line": "1120",
+      "statement": "boolean equals(Object other)"
+    }
+  },
+  {
+    "v385": {
+      "line": "1122",
+      "statement": "if (this == other)"
+    }
+  },
+  {
+    "v386": {
+      "line": "1123",
+      "statement": "return true"
+    }
+  },
+  {
+    "v387": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v388": {
+      "line": "1126",
+      "statement": "if (other instanceof DerivativeStructure)"
+    }
+  },
+  {
+    "v389": {
+      "line": "1127",
+      "statement": "final DerivativeStructure rhs = (DerivativeStructure)other"
+    }
+  },
+  {
+    "v390": {
+      "line": "1128",
+      "statement": "return (getFreeParameters() == rhs.getFreeParameters()) &&  (getOrder() == rhs.getOrder()) &&  MathArrays.equals(data, rhs.data)"
+    }
+  },
+  {
+    "v391": {
+      "line": 0,
+      "statement": "\"endif"
+    }
+  },
+  {
+    "v392": {
+      "line": "1133",
+      "statement": "return false"
+    }
+  },
+  {
+    "v393": {
+      "line": "1143",
+      "statement": "int hashCode()"
+    }
+  },
+  {
+    "v394": {
+      "line": "1144",
+      "statement": "return 227 + 229 * getFreeParameters() + 233 * getOrder() + 239 * MathUtils.hash(data)"
+    }
+  },
+  {
+    "v395": {
+      "line": "1151",
+      "statement": "Object writeReplace()"
+    }
+  },
+  {
+    "v396": {
+      "line": "1152",
+      "statement": "return new DataTransferObject(compiler.getFreeParameters(), compiler.getOrder(), data)"
+    }
+  },
+  {
+    "v397": {
+      "line": "1181",
+      "statement": "DataTransferObject (final int variables, final int order, final double[] data)"
+    }
+  },
+  {
+    "v398": {
+      "line": "1182",
+      "statement": "this.variables = variables"
+    }
+  },
+  {
+    "v399": {
+      "line": "1183",
+      "statement": "this.order = order"
+    }
+  },
+  {
+    "v400": {
+      "line": "1184",
+      "statement": "this.data  = data"
+    }
+  },
+  {
+    "v401": {
+      "line": "1190",
+      "statement": "Object readResolve()"
+    }
+  },
+  {
+    "v402": {
+      "line": "1191",
+      "statement": "return new DerivativeStructure(variables, order, data)"
+    }
+  }
+]

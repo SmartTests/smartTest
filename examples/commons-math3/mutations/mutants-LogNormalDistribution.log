@@ -1,0 +1,214 @@
+1:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution:64:2 |==> 0
+2:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution:64:2 |==> -2
+3:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution:64:2 * FastMath.PI |==> 2 % FastMath.PI
+4:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution:64:2 * FastMath.PI |==> 2 + FastMath.PI
+5:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution:64:2 * FastMath.PI |==> 2 - FastMath.PI
+6:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution:64:2 * FastMath.PI |==> 2 / FastMath.PI
+7:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution:67:2.0 |==> 0.0
+8:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution:67:2.0 |==> -2.0
+9:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@<init>():86:0 |==> 1
+10:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@<init>():86:0 |==> -1
+11:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@<init>():86:1 |==> 0
+12:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@<init>():86:1 |==> -1
+13:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):146:0 |==> 1
+14:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):146:0 |==> -1
+15:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):146:shape <= 0 |==> shape < 0
+16:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):146:shape <= 0 |==> shape == 0
+17:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):146:shape <= 0 |==> true
+18:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):150:scale |==> 0.0
+19:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):151:shape |==> 0.0
+20:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@<init>(org.apache.commons.math3.random.RandomGenerator,double,double,double):152:inverseCumAccuracy |==> 0.0
+21:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@getScale():161:scale |==> 0.0
+22:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@getShape():170:shape |==> 0.0
+23:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@density(double):185:0 |==> 1
+24:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@density(double):185:0 |==> -1
+25:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):185:x <= 0 |==> x < 0
+26:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):185:x <= 0 |==> x == 0
+27:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):185:x <= 0 |==> true
+28:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@density(double):186:0 |==> 1
+29:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@density(double):186:0 |==> -1
+30:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.LogNormalDistribution@density(double):186:return Config.__M_NO == 0 && Config.COVERED(28, 29) ? 0 : Config.__M_NO == 29 ? -1 : Config.__M_NO == 28 ? 1 : 0; |==> <NO-OP>
+31:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):188:FastMath.log(x) - scale |==> FastMath.log(x) % scale
+32:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):188:FastMath.log(x) - scale |==> FastMath.log(x) * scale
+33:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):188:FastMath.log(x) - scale |==> FastMath.log(x) + scale
+34:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):188:FastMath.log(x) - scale |==> FastMath.log(x) / scale
+35:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):189:x0 / shape |==> x0 % shape
+36:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):189:x0 / shape |==> x0 * shape
+37:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):189:x0 / shape |==> x0 + shape
+38:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):189:x0 / shape |==> x0 - shape
+39:ORU:-(double):+(double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:-0.5 |==> +0.5
+40:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:0.5 |==> 0.0
+41:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:0.5 |==> -0.5
+42:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:-0.5 * x1 |==> -0.5 % x1
+43:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:-0.5 * x1 |==> -0.5 + x1
+44:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:-0.5 * x1 |==> -0.5 - x1
+45:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:-0.5 * x1 |==> -0.5 / x1
+46:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:-0.5 * x1 * x1 |==> -0.5 * x1 % x1
+47:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:-0.5 * x1 * x1 |==> -0.5 * x1 + x1
+48:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:-0.5 * x1 * x1 |==> -0.5 * x1 - x1
+49:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:-0.5 * x1 * x1 |==> -0.5 * x1 / x1
+50:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:shape * SQRT2PI |==> shape % SQRT2PI
+51:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:shape * SQRT2PI |==> shape + SQRT2PI
+52:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:shape * SQRT2PI |==> shape - SQRT2PI
+53:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:shape * SQRT2PI |==> shape / SQRT2PI
+54:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:shape * SQRT2PI * x |==> shape * SQRT2PI % x
+55:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:shape * SQRT2PI * x |==> shape * SQRT2PI + x
+56:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:shape * SQRT2PI * x |==> shape * SQRT2PI - x
+57:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:shape * SQRT2PI * x |==> shape * SQRT2PI / x
+58:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:FastMath.exp(-0.5 * x1 * x1) / (shape * SQRT2PI * x) |==> FastMath.exp(-0.5 * x1 * x1) % (shape * SQRT2PI * x)
+59:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:FastMath.exp(-0.5 * x1 * x1) / (shape * SQRT2PI * x) |==> FastMath.exp(-0.5 * x1 * x1) * (shape * SQRT2PI * x)
+60:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:FastMath.exp(-0.5 * x1 * x1) / (shape * SQRT2PI * x) |==> FastMath.exp(-0.5 * x1 * x1) + (shape * SQRT2PI * x)
+61:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@density(double):190:FastMath.exp(-0.5 * x1 * x1) / (shape * SQRT2PI * x) |==> FastMath.exp(-0.5 * x1 * x1) - (shape * SQRT2PI * x)
+62:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):209:0 |==> 1
+63:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):209:0 |==> -1
+64:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):209:x <= 0 |==> x < 0
+65:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):209:x <= 0 |==> x == 0
+66:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):209:x <= 0 |==> true
+67:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):210:0 |==> 1
+68:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):210:0 |==> -1
+69:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):210:return Config.__M_NO == 0 && Config.COVERED(67, 68) ? 0 : Config.__M_NO == 68 ? -1 : Config.__M_NO == 67 ? 1 : 0; |==> <NO-OP>
+70:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):212:FastMath.log(x) - scale |==> FastMath.log(x) % scale
+71:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):212:FastMath.log(x) - scale |==> FastMath.log(x) * scale
+72:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):212:FastMath.log(x) - scale |==> FastMath.log(x) + scale
+73:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):212:FastMath.log(x) - scale |==> FastMath.log(x) / scale
+74:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):213:40 |==> 0
+75:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):213:40 |==> -40
+76:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):213:40 * shape |==> 40 % shape
+77:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):213:40 * shape |==> 40 + shape
+78:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):213:40 * shape |==> 40 - shape
+79:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):213:40 * shape |==> 40 / shape
+80:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):213:FastMath.abs(dev) > 40 * shape |==> FastMath.abs(dev) != 40 * shape
+81:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):213:FastMath.abs(dev) > 40 * shape |==> FastMath.abs(dev) >= 40 * shape
+82:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):213:FastMath.abs(dev) > 40 * shape |==> false
+83:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:0 |==> 1
+84:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:0 |==> -1
+85:ROR:<(double,double):!=(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:dev < 0 |==> dev != 0
+86:ROR:<(double,double):<=(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:dev < 0 |==> dev <= 0
+87:ROR:<(double,double):FALSE(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:dev < 0 |==> false
+88:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:0.0 |==> 1.0
+89:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:0.0 |==> -1.0
+90:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:1.0 |==> 0.0
+91:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:1.0 |==> -1.0
+92:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):214:return Config.__M_NO == 87 ? false : Config.__M_NO == 86 ? dev <= 0 : Config.__M_NO == 85 ? dev != 0 : Config.__M_NO == 0 && Config.COVERED(85, 87) ? dev < 0 : dev < (Config.__M_NO == 0 && Config.COVERED(83, 84) ? 0 : Config.__M_NO == 84 ? -1 : Config.__M_NO == 83 ? 1 : 0) ? Config.__M_NO == 0 && Config.COVERED(88, 89) ? 0.0 : Config.__M_NO == 89 ? -1.0 : Config.__M_NO == 88 ? 1.0 : 0.0 : Config.__M_NO == 0 && Config.COVERED(90, 91) ? 1.0 : Config.__M_NO == 91 ? -1.0 : Config.__M_NO == 90 ? 0.0 : 1.0; |==> <NO-OP>
+93:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 |==> 0.0
+94:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 |==> -0.5
+95:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 |==> 0.0
+96:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 |==> -0.5
+97:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:shape * SQRT2 |==> shape % SQRT2
+98:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:shape * SQRT2 |==> shape + SQRT2
+99:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:shape * SQRT2 |==> shape - SQRT2
+100:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:shape * SQRT2 |==> shape / SQRT2
+101:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:dev / (shape * SQRT2) |==> dev % (shape * SQRT2)
+102:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:dev / (shape * SQRT2) |==> dev * (shape * SQRT2)
+103:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:dev / (shape * SQRT2) |==> dev + (shape * SQRT2)
+104:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:dev / (shape * SQRT2) |==> dev - (shape * SQRT2)
+105:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 * Erf.erf(dev / (shape * SQRT2)) |==> 0.5 % Erf.erf(dev / (shape * SQRT2))
+106:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 * Erf.erf(dev / (shape * SQRT2)) |==> 0.5 + Erf.erf(dev / (shape * SQRT2))
+107:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 * Erf.erf(dev / (shape * SQRT2)) |==> 0.5 - Erf.erf(dev / (shape * SQRT2))
+108:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 * Erf.erf(dev / (shape * SQRT2)) |==> 0.5 / Erf.erf(dev / (shape * SQRT2))
+109:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 + 0.5 * Erf.erf(dev / (shape * SQRT2)) |==> 0.5 % (0.5 * Erf.erf(dev / (shape * SQRT2)))
+110:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 + 0.5 * Erf.erf(dev / (shape * SQRT2)) |==> 0.5 * (0.5 * Erf.erf(dev / (shape * SQRT2)))
+111:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 + 0.5 * Erf.erf(dev / (shape * SQRT2)) |==> 0.5 - 0.5 * Erf.erf(dev / (shape * SQRT2))
+112:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double):216:0.5 + 0.5 * Erf.erf(dev / (shape * SQRT2)) |==> 0.5 / (0.5 * Erf.erf(dev / (shape * SQRT2)))
+113:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@cumulativeProbability(double,double):227:probability(x0, x1) |==> 0.0
+114:ROR:>(double,double):!=(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):235:x0 > x1 |==> x0 != x1
+115:ROR:>(double,double):>=(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):235:x0 > x1 |==> x0 >= x1
+116:ROR:>(double,double):FALSE(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):235:x0 > x1 |==> false
+117:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):237:true |==> false
+118:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:0 |==> 1
+119:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:0 |==> -1
+120:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x0 <= 0 |==> x0 < 0
+121:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x0 <= 0 |==> x0 == 0
+122:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x0 <= 0 |==> true
+123:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:0 |==> 1
+124:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:0 |==> -1
+125:ROR:<=(double,double):<(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x1 <= 0 |==> x1 < 0
+126:ROR:<=(double,double):==(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x1 <= 0 |==> x1 == 0
+127:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x1 <= 0 |==> true
+128:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x0 <= 0 || x1 <= 0 |==> x0 <= 0 != x1 <= 0
+129:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x0 <= 0 || x1 <= 0 |==> x0 <= 0
+130:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x0 <= 0 || x1 <= 0 |==> x1 <= 0
+131:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):239:x0 <= 0 || x1 <= 0 |==> true
+132:STD:<RETURN>:<NO-OP>:org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):240:return super.probability(x0, x1); |==> <NO-OP>
+133:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):242:shape * SQRT2 |==> shape % SQRT2
+134:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):242:shape * SQRT2 |==> shape + SQRT2
+135:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):242:shape * SQRT2 |==> shape - SQRT2
+136:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):242:shape * SQRT2 |==> shape / SQRT2
+137:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):243:FastMath.log(x0) - scale |==> FastMath.log(x0) % scale
+138:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):243:FastMath.log(x0) - scale |==> FastMath.log(x0) * scale
+139:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):243:FastMath.log(x0) - scale |==> FastMath.log(x0) + scale
+140:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):243:FastMath.log(x0) - scale |==> FastMath.log(x0) / scale
+141:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):243:(FastMath.log(x0) - scale) / denom |==> (FastMath.log(x0) - scale) % denom
+142:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):243:(FastMath.log(x0) - scale) / denom |==> (FastMath.log(x0) - scale) * denom
+143:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):243:(FastMath.log(x0) - scale) / denom |==> (FastMath.log(x0) - scale) + denom
+144:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):243:(FastMath.log(x0) - scale) / denom |==> (FastMath.log(x0) - scale) - denom
+145:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):244:FastMath.log(x1) - scale |==> FastMath.log(x1) % scale
+146:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):244:FastMath.log(x1) - scale |==> FastMath.log(x1) * scale
+147:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):244:FastMath.log(x1) - scale |==> FastMath.log(x1) + scale
+148:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):244:FastMath.log(x1) - scale |==> FastMath.log(x1) / scale
+149:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):244:(FastMath.log(x1) - scale) / denom |==> (FastMath.log(x1) - scale) % denom
+150:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):244:(FastMath.log(x1) - scale) / denom |==> (FastMath.log(x1) - scale) * denom
+151:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):244:(FastMath.log(x1) - scale) / denom |==> (FastMath.log(x1) - scale) + denom
+152:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):244:(FastMath.log(x1) - scale) / denom |==> (FastMath.log(x1) - scale) - denom
+153:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):245:0.5 |==> 0.0
+154:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):245:0.5 |==> -0.5
+155:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):245:0.5 * Erf.erf(v0, v1) |==> 0.5 % Erf.erf(v0, v1)
+156:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):245:0.5 * Erf.erf(v0, v1) |==> 0.5 + Erf.erf(v0, v1)
+157:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):245:0.5 * Erf.erf(v0, v1) |==> 0.5 - Erf.erf(v0, v1)
+158:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@probability(double,double):245:0.5 * Erf.erf(v0, v1) |==> 0.5 / Erf.erf(v0, v1)
+159:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@getSolverAbsoluteAccuracy():251:solverAbsoluteAccuracy |==> 0.0
+160:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():261:shape |==> 0.0
+161:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:s * s |==> s % s
+162:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:s * s |==> s + s
+163:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:s * s |==> s - s
+164:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:s * s |==> s / s
+165:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:2 |==> 0
+166:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:2 |==> -2
+167:AOR:/(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:s * s / 2 |==> s * s % 2
+168:AOR:/(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:s * s / 2 |==> s * s * 2
+169:AOR:/(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:s * s / 2 |==> s * s + 2
+170:AOR:/(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:s * s / 2 |==> s * s - 2
+171:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:scale + (s * s / 2) |==> scale % (s * s / 2)
+172:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:scale + (s * s / 2) |==> scale * (s * s / 2)
+173:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:scale + (s * s / 2) |==> scale - (s * s / 2)
+174:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalMean():262:scale + (s * s / 2) |==> scale / (s * s / 2)
+175:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():272:shape |==> 0.0
+176:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():273:s * s |==> s % s
+177:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():273:s * s |==> s + s
+178:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():273:s * s |==> s - s
+179:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():273:s * s |==> s / s
+180:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:1 |==> 0
+181:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:1 |==> -1
+182:AOR:-(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:FastMath.exp(ss) - 1 |==> FastMath.exp(ss) % 1
+183:AOR:-(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:FastMath.exp(ss) - 1 |==> FastMath.exp(ss) * 1
+184:AOR:-(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:FastMath.exp(ss) - 1 |==> FastMath.exp(ss) + 1
+185:AOR:-(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:FastMath.exp(ss) - 1 |==> FastMath.exp(ss) / 1
+186:LVR:POS:0:org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 |==> 0
+187:LVR:POS:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 |==> -2
+188:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 * scale |==> 2 % scale
+189:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 * scale |==> 2 + scale
+190:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 * scale |==> 2 - scale
+191:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 * scale |==> 2 / scale
+192:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 * scale + ss |==> 2 * scale % ss
+193:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 * scale + ss |==> 2 * scale * ss
+194:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 * scale + ss |==> 2 * scale - ss
+195:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:2 * scale + ss |==> 2 * scale / ss
+196:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:(FastMath.exp(ss) - 1) * FastMath.exp(2 * scale + ss) |==> (FastMath.exp(ss) - 1) % FastMath.exp(2 * scale + ss)
+197:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:(FastMath.exp(ss) - 1) * FastMath.exp(2 * scale + ss) |==> (FastMath.exp(ss) - 1) + FastMath.exp(2 * scale + ss)
+198:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:(FastMath.exp(ss) - 1) * FastMath.exp(2 * scale + ss) |==> (FastMath.exp(ss) - 1) - FastMath.exp(2 * scale + ss)
+199:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@getNumericalVariance():274:(FastMath.exp(ss) - 1) * FastMath.exp(2 * scale + ss) |==> (FastMath.exp(ss) - 1) / FastMath.exp(2 * scale + ss)
+200:LVR:0:POS:org.apache.commons.math3.distribution.LogNormalDistribution@getSupportLowerBound():285:0 |==> 1
+201:LVR:0:NEG:org.apache.commons.math3.distribution.LogNormalDistribution@getSupportLowerBound():285:0 |==> -1
+202:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@getSupportUpperBound():298:Double.POSITIVE_INFINITY |==> 0.0
+203:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.LogNormalDistribution@isSupportLowerBoundInclusive():303:true |==> false
+204:LVR:FALSE:TRUE:org.apache.commons.math3.distribution.LogNormalDistribution@isSupportUpperBoundInclusive():308:false |==> true
+205:LVR:TRUE:FALSE:org.apache.commons.math3.distribution.LogNormalDistribution@isSupportConnected():319:true |==> false
+206:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.apache.commons.math3.distribution.LogNormalDistribution@sample():325:random.nextGaussian() |==> 0.0
+207:AOR:*(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@sample():326:shape * n |==> shape % n
+208:AOR:*(double,double):+(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@sample():326:shape * n |==> shape + n
+209:AOR:*(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@sample():326:shape * n |==> shape - n
+210:AOR:*(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@sample():326:shape * n |==> shape / n
+211:AOR:+(double,double):%(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@sample():326:scale + shape * n |==> scale % (shape * n)
+212:AOR:+(double,double):*(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@sample():326:scale + shape * n |==> scale * (shape * n)
+213:AOR:+(double,double):-(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@sample():326:scale + shape * n |==> scale - shape * n
+214:AOR:+(double,double):/(double,double):org.apache.commons.math3.distribution.LogNormalDistribution@sample():326:scale + shape * n |==> scale / (shape * n)
