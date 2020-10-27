@@ -1,0 +1,19 @@
+Important tools used and dependencies:
+
+1. Progex to generate CFGs.
+2. Major to generate mutations
+3. Projects used are from defects4j git clones.
+4. Add the package for smartProject and required dependencies in pom.xml, add resource/MANIFEST.MF, change test to TestIT.java
+
+
+Steps:
+1. Copy smartTest package, add dependency in pom for it, add resource/MANIFEST.MF and premain information in the manifest file, change test files form xTest.java to xTestIT.java
+2. Move pythonScripts, progex code to the project folder
+3. Create output, mutations, Original, finalResult folders in project and log/verification.log, outputOfProgexOnMutated.json files in the project. This is where the output data and intermediate data is currently directed.
+4. Go to pythonScript folder and run "bash runProgex.sh <completePathToSourceCode> original" to create CFG for initial version and track statement coverage for the tests.
+5. Switch java version to 7 and create mutations with generateMutations.sh. Command for generating mutants with major javac -cp <pathToClass> -XMutator:"ALL" <pathToSourceCode> -J-Dmajor.export.mutants=true
+6. Copy mutations and log to mutations folder
+7. Switch java version to 9 and run python3 createOutputFromMutation.py (might need change  in project names or output directory)
+8. Create verification script to verify the result. The format is "python3 verifyingScriptGenerator <numberOfMutationsUsed> <packageName> <sourceClass> <folderWithCFGForChangedVersion>". 
+9. Replace the java file with original content at the end of analysis to not create mutations in two files at once.
+
